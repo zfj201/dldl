@@ -1,0 +1,26 @@
+{
+  "time": "2026-10-11T01:57:25.239106",
+  "pid": 12496,
+  "modules": [
+    {
+      "name": "libcocos2dlua.so",
+      "base": "0x7ba641f000",
+      "entry_hex": "82010090ff8300d163c599524337af72424447f9f37b00a9f30300aa400040f9",
+      "slot": "0x7ba73b8a88",
+      "context": "0x7c5d707c90",
+      "state": "0x7ba641f000",
+      "status": "0x5a",
+      "counter": 240
+    },
+    {
+      "name": "libFairGuard.so",
+      "base": "0x7ba44bd000",
+      "entry_hex": "82010090ff8300d163c599524337af72424447f9f37b00a9f30300aa400040f9",
+      "slot": "0x7ba499aa88",
+      "context": "0x7c5d708c60",
+      "state": "0x7ba44bd000",
+      "status": "0x40",
+      "counter": 73
+    }
+  ]
+}

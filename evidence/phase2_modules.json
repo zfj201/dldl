@@ -1,0 +1,3122 @@
+[
+  {
+    "logical": "config/checkin_data.luac",
+    "asset": "assets/res/9/7/8703c4cc31b6e1d719e340b799ae4ab1",
+    "encrypted_sha256": "33d1b4d6515162960cd2655ffcc7cafbbb6b6153a39cdd2d86e02ec9aedbb18d",
+    "status": "decoded",
+    "size": 28259,
+    "sha256": "c9800fabc3045acf32d08b4450cb6beeeee2e4faee904f9db2a8ee26a8772979",
+    "path": "recovered/phase2/lua/config/checkin_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/welfare_data.luac",
+    "asset": "assets/res/b/c/b30ebe05f4feb0163592a6c9d37bf088",
+    "encrypted_sha256": "a3a29e3987557091bbf759f26624a950506490e07541c5dfb99a9be845a45fc9",
+    "status": "decoded",
+    "size": 941,
+    "sha256": "82d6df79e8caf8534b115e8273b7700ef7c84b21644d68065106c15129e611b8",
+    "path": "recovered/phase2/lua/config/welfare_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/godpalace/godpalace_controller.luac",
+    "asset": "assets/res/d/8/fcf52052d171dd9aa825c03671569b2b",
+    "encrypted_sha256": "8ab567631a7551d4e0b1c9a40de474054c01041ca03919d2b05be6c5c4bd34e8",
+    "status": "decoded",
+    "size": 24071,
+    "sha256": "6cd4d9fd5d7d7eca559e5b9a24ead07914d6b0b06df6e7517bca00b445bde858",
+    "path": "recovered/phase2/lua/game/godpalace/godpalace_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/godpalace/godpalace_event.luac",
+    "asset": "assets/res/9/4/546f72e3ea77169d51d50b8f4841eca6",
+    "encrypted_sha256": "98a9bdf67d9eaf9cdc42bf0d2e8d9714fef1ed392187bdf359c556aadea683e4",
+    "status": "decoded",
+    "size": 1970,
+    "sha256": "7d147248348d2062bf7f27b67f304f4b9498afcdc7445539eb5b379d52771df2",
+    "path": "recovered/phase2/lua/game/godpalace/godpalace_event.luac",
+    "head_hex": "476f6450616c6163654576656e74203d"
+  },
+  {
+    "logical": "game/godpalace/godpalace_model.luac",
+    "asset": "assets/res/6/b/138060ce40e3aafbd7a52f95e2b62598",
+    "encrypted_sha256": "6f10e70b19f430d76f50082865bee2ab3a9d61437e5cba6ecb20a9a8226b52dd",
+    "status": "decoded",
+    "size": 30329,
+    "sha256": "875967e9bbc40a0d4aca4f987645c898a6bc45039cbc319756cf177cc2b08531",
+    "path": "recovered/phase2/lua/game/godpalace/godpalace_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/godpalace/view/godpalace_worship_window.luac",
+    "asset": "assets/res/c/f/d745bbfbec2d029914b8c60bc3183e32",
+    "encrypted_sha256": "14586c239a70f5d903c56d98105f77c26574250a747115778e0f2590f9d0d820",
+    "status": "decoded",
+    "size": 7516,
+    "sha256": "118cab25a073fcb574a1ca35e4eaf8e31f8fe4ff7c2be805ca6075a2cee9f366",
+    "path": "recovered/phase2/lua/game/godpalace/view/godpalace_worship_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/onekeyburden/onekeyburden_const.luac",
+    "asset": "assets/res/b/e/36386281916fc49381e10b9094ab0213",
+    "encrypted_sha256": "f3bc84c8f473ed45ee7989211690fd87dc2d57648e88662586dad5521b1a2f00",
+    "status": "decoded",
+    "size": 30226,
+    "sha256": "531c73ecf68bd62fb1d852dd3b0dbee26edce09bf8e970112d9506d0e1d8ce63",
+    "path": "recovered/phase2/lua/game/onekeyburden/onekeyburden_const.luac",
+    "head_hex": "4f6e654b657942757264656e436f6e73"
+  },
+  {
+    "logical": "game/onekeyburden/onekeyburden_controller.luac",
+    "asset": "assets/res/f/3/7cf0d8ede55988a88e942ae89813e151",
+    "encrypted_sha256": "68c747ab9d88597c421938b596fb94ba82fc2aa446d9e356b9526891fad6f0e2",
+    "status": "decoded",
+    "size": 5437,
+    "sha256": "71fa0f639cdcf03fcdc88d24eaf90b48b8177f5d69704526b27c55ee05d86c23",
+    "path": "recovered/phase2/lua/game/onekeyburden/onekeyburden_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/onekeyburden/onekeyburden_event.luac",
+    "asset": "assets/res/6/d/a26f0dda05680c8895fd88f627d78d86",
+    "encrypted_sha256": "9555487aa273f56a034707fadc1d88b3bcced460278dcf79369034054a983670",
+    "status": "decoded",
+    "size": 418,
+    "sha256": "f5f1b4d77bc184b7472309ef43a181265dfaf20034684b5b3a1880bbf29b6382",
+    "path": "recovered/phase2/lua/game/onekeyburden/onekeyburden_event.luac",
+    "head_hex": "4f6e654b657942757264656e4576656e"
+  },
+  {
+    "logical": "game/onekeyburden/onekeyburden_model.luac",
+    "asset": "assets/res/c/7/97a67be854d4d1c32ae7fd2d0296ca37",
+    "encrypted_sha256": "776d704658c69e5bca891c1707d0fd3d64d6b39ffbda0cb0cb0026ea68156c2a",
+    "status": "decoded",
+    "size": 1675,
+    "sha256": "67155e717d2ffa902941942b1ade299dcfbab298da0fc19523eeab8b71d0bc92",
+    "path": "recovered/phase2/lua/game/onekeyburden/onekeyburden_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/onekeyburden/view/onekeyburden_auto_window.luac",
+    "asset": "assets/res/d/0/d7280a2b31782f5521a7d355cea041d5",
+    "encrypted_sha256": "02264d2f3087832254b11aaf4d9e2982da87685ce17df9a436182b81337e8dc8",
+    "status": "decoded",
+    "size": 11689,
+    "sha256": "7abe61910700a67834b2f4ce4544747536664622e3fafad16af4c9bdb7a0283d",
+    "path": "recovered/phase2/lua/game/onekeyburden/view/onekeyburden_auto_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/onekeyburden/view/onekeyburden_main_window.luac",
+    "asset": "assets/res/b/b/af469477d499e861cd1b729f4bb61577",
+    "encrypted_sha256": "3f2aa43994d2c11bb916c970420016454ffb4bf4372424d6d54714b0c4c80658",
+    "status": "decoded",
+    "size": 32136,
+    "sha256": "862c69285acd2031939d13f465afa003b763f9f8b999e0ac0188f709eac10a08",
+    "path": "recovered/phase2/lua/game/onekeyburden/view/onekeyburden_main_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/partnersummon/partnersummon_const.luac",
+    "asset": "assets/res/0/1/c405886010bc86cc74f9ac6985e18e0b",
+    "encrypted_sha256": "1209a94bfbba82f07330ce37be53f521224daa3ed81d9a066f5af5cc934fe29a",
+    "status": "decoded",
+    "size": 4214,
+    "sha256": "48ec1c1bbc4946579801cd528895493a5fa33435c56a134bea40ce678082ad4d",
+    "path": "recovered/phase2/lua/game/partnersummon/partnersummon_const.luac",
+    "head_hex": "0d0a506172746e657273756d6d6f6e43"
+  },
+  {
+    "logical": "game/partnersummon/partnersummon_controller.luac",
+    "asset": "assets/res/0/0/005e7970e2c702b3507a15bbd22076de",
+    "encrypted_sha256": "9c589d400ebafabdf1adb2927e4e167cb806443675b06ce0bb60c0b0366756f3",
+    "status": "decoded",
+    "size": 31958,
+    "sha256": "6e798822d5ca303515f75a13b3c7ee983175b3ad5dcbd82d99cf71435465009c",
+    "path": "recovered/phase2/lua/game/partnersummon/partnersummon_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/partnersummon/partnersummon_event.luac",
+    "asset": "assets/res/c/a/0c9c377512a20a436cb9ae437aaaa67c",
+    "encrypted_sha256": "643f16aa572b49132858f91b21119beb1fa28706a47023734c350d2ffb9659a4",
+    "status": "decoded",
+    "size": 1505,
+    "sha256": "a590f9de2fba8f5086d33a18f44da631e630b53f5b15d00df11b867b73aa2acb",
+    "path": "recovered/phase2/lua/game/partnersummon/partnersummon_event.luac",
+    "head_hex": "506172746e657273756d6d6f6e457665"
+  },
+  {
+    "logical": "game/partnersummon/partnersummon_model.luac",
+    "asset": "assets/res/3/6/a6eaf76c119683cbeb7798ef7324c4b4",
+    "encrypted_sha256": "235978476b244e3d99df82f39b6881484f8c3931acb4eb1716195a1e6a7df510",
+    "status": "decoded",
+    "size": 15004,
+    "sha256": "7b6c45cc7f50d323e1c685b46ee09e131a273566648dcf56660c54590d37f73b",
+    "path": "recovered/phase2/lua/game/partnersummon/partnersummon_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/partnersummon/view/normal_summon_panel.luac",
+    "asset": "assets/res/6/e/e614ce3d672b4a2946778b41984bbbbf",
+    "encrypted_sha256": "febc54b3f38f7a5d88656895b9b86b2e7c41247141d3cf847620c428de884d02",
+    "status": "decoded",
+    "size": 55962,
+    "sha256": "805156a248491d62b64cd68a252e9022db83153942358a542bed3187cbd46a29",
+    "path": "recovered/phase2/lua/game/partnersummon/view/normal_summon_panel.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/welfare/view/sign_panel.luac",
+    "asset": "assets/res/2/f/f235cbe21c0d604f777fe28e57fa3554",
+    "encrypted_sha256": "cec42ea79a11b90bb37e124db9e49a36550eabcb8e99128a5023c377b6d73cff",
+    "status": "decoded",
+    "size": 35557,
+    "sha256": "bc005f9543006563a58d3c84e646645d0e0defb06775ae786df1218e16e79a34",
+    "path": "recovered/phase2/lua/game/welfare/view/sign_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/welfare/welfare_constants.luac",
+    "asset": "assets/res/1/1/e87597008956919ba45cd5d6179ad354",
+    "encrypted_sha256": "a16d11512cda2d4de189f04b5324ed6f643c6cb09a691901f9b8b6bb38089487",
+    "status": "decoded",
+    "size": 7388,
+    "sha256": "a62981edae14f2bfd83cb7c48f37b81dfd5798a00ec9dc619a03a16d169cde74",
+    "path": "recovered/phase2/lua/game/welfare/welfare_constants.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/welfare/welfare_controller.luac",
+    "asset": "assets/res/7/3/e81660b00dc42d8d9794369f195b0a00",
+    "encrypted_sha256": "f4cef541c83ac40ef566454654ba405e71c747f43ff93ba0e29c410b17702683",
+    "status": "decoded",
+    "size": 40255,
+    "sha256": "02e8bfb830dfe11fc68662ad6c335f0a4c17eb5bf083c0f8bbc7ee3c4cf6be81",
+    "path": "recovered/phase2/lua/game/welfare/welfare_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/welfare/welfare_event.luac",
+    "asset": "assets/res/f/e/1ff8fd21b0bec995daaf9d9e96fb5b09",
+    "encrypted_sha256": "4ed49cbd30c86c35f6b75125353a46db47e6ad1bcc640ac0d51059de29658500",
+    "status": "decoded",
+    "size": 2197,
+    "sha256": "bb8f56858e52a385fa17ccab2565f7b8d82151e463eff1ea94254f878d88fe05",
+    "path": "recovered/phase2/lua/game/welfare/welfare_event.luac",
+    "head_hex": "57656c666172654576656e74203d2057"
+  },
+  {
+    "logical": "game/welfare/welfare_model.luac",
+    "asset": "assets/res/1/4/48cd5676d3fa211ea1850447930e4677",
+    "encrypted_sha256": "06b0ac40a2f950c83d4997c8980b17717576612306e8fceb647aa1c0ad9cfbc7",
+    "status": "decoded",
+    "size": 20858,
+    "sha256": "9c42f5cf9267fd605187fba8226ae8b887845fec64f5d0a3e8bb57e00b6f9c2b",
+    "path": "recovered/phase2/lua/game/welfare/welfare_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/dailyplay_data.luac",
+    "asset": "assets/res/c/c/59fb43e251f9000bce0b82c5514756c6",
+    "encrypted_sha256": "185450c9c98795688e3fcdc08c1c6c5ad65c0fed41a87fc0d72db3b8e0c00160",
+    "status": "decoded",
+    "size": 2880,
+    "sha256": "280960c0e135396a5ce032bf1144e80083044e08071a1c0cef9251e74869853b",
+    "path": "recovered/phase2/lua/config/dailyplay_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/function_data.luac",
+    "asset": "assets/res/f/7/649b5175a742260ca9367cfc0164e6f8",
+    "encrypted_sha256": "0e789e1fa93b5130d47591d0555d370754f1b204ecae305cfffacdd0de42e36f",
+    "status": "decoded",
+    "size": 59569,
+    "sha256": "fcf2df6cc9b2bdfd01f41b29139ee790ee0436843a6b8d9972434c152a258ed7",
+    "path": "recovered/phase2/lua/config/function_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/function_entrancegroup_data.luac",
+    "asset": "assets/res/e/6/c30c6fd4b3034a31dfa18f103f2e4a74",
+    "encrypted_sha256": "36442e426a44031f1d11e5f77ca3eaf5a6b8d2e4ed11a11a8e903be04aee6085",
+    "status": "decoded",
+    "size": 9829,
+    "sha256": "0c3fbb969842f2e152301d8e72f4b54e2d7371752369142497a195cb15801009",
+    "path": "recovered/phase2/lua/config/function_entrancegroup_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/god_palace_data.luac",
+    "asset": "assets/res/a/a/a902c5a418598ea87b58afb1aa94b77c",
+    "encrypted_sha256": "610c83e040933bca65aad9177f93cd1508fa4bc5540f9f38de0d622ca0295d1d",
+    "status": "decoded",
+    "size": 688007,
+    "sha256": "a853d6992cdeb43a279cebb10346d36cc621237fe8f0f9530cd30b1f7e84f60f",
+    "path": "recovered/phase2/lua/config/god_palace_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/simplify_data.luac",
+    "asset": "assets/res/3/0/025600f7f0039cafa84c39304e783974",
+    "encrypted_sha256": "a4142445c105d9f58256d10ebb7c18bb2766921bac6e0296ed31ea79deecc6d6",
+    "status": "decoded",
+    "size": 6772,
+    "sha256": "586923d946f22272a53de3c5b67515c3e36756e3f9d03160e639f0cb59963321",
+    "path": "recovered/phase2/lua/config/simplify_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mainui/mainui_const.luac",
+    "asset": "assets/res/a/e/c9494658d402e88041af231bf84fafb7",
+    "encrypted_sha256": "8a0d87258b2d1ecd13e37a0f4080c27734ab7296d0b9f633f752e625f42c600c",
+    "status": "decoded",
+    "size": 15445,
+    "sha256": "9b9fa53d0c9d62e4493c283209c0064fc28b8cea330ed62beb20a227397fc447",
+    "path": "recovered/phase2/lua/game/mainui/mainui_const.luac",
+    "head_hex": "4d61696e7569436f6e7374203d204d61"
+  },
+  {
+    "logical": "config/dungeon_heaven_data.luac",
+    "asset": "assets/res/2/c/d692ac60e22ac2c4bb974ba5391e6e07",
+    "encrypted_sha256": "83f32dc536ac261e3d794fb7ca9b83f434902b8f0a5dac644a57d615a6951ac9",
+    "status": "decoded",
+    "size": 308611,
+    "sha256": "2f2d0e4e769add9662e446286f35830f7134679557962d99359012a08105555c",
+    "path": "recovered/phase2/lua/config/dungeon_heaven_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/primus_data.luac",
+    "asset": "assets/res/a/f/7f180400aad750361f8007d5d70f2418",
+    "encrypted_sha256": "11fa02cd6c59f948ec3cf9f7ed4622b4f4455fbbe65505c30d62ce773dfaa1fd",
+    "status": "decoded",
+    "size": 11294,
+    "sha256": "b8b08ee64506f25fba19a534f61c184c922e7ee7a2a48e1acb7c3df3214a7c57",
+    "path": "recovered/phase2/lua/config/primus_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/summon_data.luac",
+    "asset": "assets/res/c/c/1fb47ca078b6bdfeba0e6f7d8c175451",
+    "encrypted_sha256": "a99dce9d820fd094a1eb62235b93d3ca841d03c5a66e283960f678ad9cd996bd",
+    "status": "decoded",
+    "size": 36657,
+    "sha256": "b14439100c5a358b3cb9c6fbddd5224c7c4bc726b015e3c9d8650d7919ac7b0e",
+    "path": "recovered/phase2/lua/config/summon_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/trials_data.luac",
+    "asset": "assets/res/e/f/f3f634fbc6c3d2379c2e7ddfff6eebbe",
+    "encrypted_sha256": "ca321105ec87f0e1ec18f1a5e968bdd3d5e8701daee904ea6a72e2ef62f8571c",
+    "status": "decoded",
+    "size": 60211,
+    "sha256": "a0bae8326e34901d0703a8a3cc8c1c903fd155043d06e3fce46ad5a6d5e494f6",
+    "path": "recovered/phase2/lua/config/trials_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/action/action_controller.luac",
+    "asset": "assets/res/4/d/9895b84d7a3ef470e03fd848dfeb19d8",
+    "encrypted_sha256": "b03a94ca4ba27e538279628a1d7d2b0173ef77fa69ffe51bb00050ae5d23be44",
+    "status": "decoded",
+    "size": 243075,
+    "sha256": "2d235ed24e441eff7024820f9a872f895ec76877d55a13e015986be7b01e083e",
+    "path": "recovered/phase2/lua/game/action/action_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/actioneventorder/actioneventorder_controller.luac",
+    "asset": "assets/res/9/b/164c693bfbeff63311fa9b37cd0a8255",
+    "encrypted_sha256": "9d9a4261147978dac855f43c5cc358e775db8ca7ea31da18fc2e42b0ccd3fac9",
+    "status": "decoded",
+    "size": 5240,
+    "sha256": "e39daca49b3292a948dc6863f571a487ad3f69bff7df3732c07636ff7170cab9",
+    "path": "recovered/phase2/lua/game/actioneventorder/actioneventorder_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/actionorderaction/actionorderaction_controller.luac",
+    "asset": "assets/res/c/f/4b5841fd7f0239c2cd7e630eb19d86c3",
+    "encrypted_sha256": "ced9a637202a49107eea16a7232b6e0833981e7327d24f1bdc074cbae3cb8c12",
+    "status": "decoded",
+    "size": 6107,
+    "sha256": "922f938c4b4b6d96d09e93e068697d148df12491505472af210ef11b547b46c6",
+    "path": "recovered/phase2/lua/game/actionorderaction/actionorderaction_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/actionskindiscountshop/action_skin_discount_shop_controller.luac",
+    "asset": "assets/res/f/d/1d78bb5aa7e48b0ada9745ddc6cfdcfe",
+    "encrypted_sha256": "c71d7f29171710289421972086f5d925e8b817b944207e96ce9badbbddf349e6",
+    "status": "decoded",
+    "size": 1539,
+    "sha256": "9c3d6cf682b3f883be8e8a67ad970dc5ad3c568f41be0718bc031256facdd96a",
+    "path": "recovered/phase2/lua/game/actionskindiscountshop/action_skin_discount_shop_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e79aaee8"
+  },
+  {
+    "logical": "game/actiontermbegins/actiontermbegins_controller.luac",
+    "asset": "assets/res/f/9/00dae09292498cf3a781906c4a53a7f2",
+    "encrypted_sha256": "06e74794a844b1bb49e66491e6e725ecd497c4ab0a609f1ff33461d073454727",
+    "status": "decoded",
+    "size": 9380,
+    "sha256": "f288889eb6a4799e1027711bd7b6dbabd80ff1d3ecfeda75047d3a1332bb42e2",
+    "path": "recovered/phase2/lua/game/actiontermbegins/actiontermbegins_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/arenamanypeople/arenamanypeople_controller.luac",
+    "asset": "assets/res/c/0/e3e0ca595032f0b901c74391e823516f",
+    "encrypted_sha256": "42ec0a1349cc08bdd0596ec0816353d8e5f648b449d36976fa6064b3932b41c3",
+    "status": "decoded",
+    "size": 16941,
+    "sha256": "b7d5457da545c3682a6ee8d1d28f907b8ae22b6b9ea390e46750aa3f1e81feef",
+    "path": "recovered/phase2/lua/game/arenamanypeople/arenamanypeople_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/backpack/backpack_controller.luac",
+    "asset": "assets/res/6/a/916ad8ce7645775c878bc51a3b6f7e8f",
+    "encrypted_sha256": "9c4413194e3190b6c8cfac4fdfae5315f9f3705cc0e9810d37b9ae7191afad8f",
+    "status": "decoded",
+    "size": 40297,
+    "sha256": "cf74e8ebb69d0e8d59b1be19c8fc2e5dba9a598804b382b5cff3d47f4ebfbb31",
+    "path": "recovered/phase2/lua/game/backpack/backpack_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/barrage/barrage_controller.luac",
+    "asset": "assets/res/2/9/1385549188d862d9ca303aa8d82619eb",
+    "encrypted_sha256": "6a57778e1fa77d2845b970842540077feb4d321a52c8f2186177ab7507b73aa6",
+    "status": "decoded",
+    "size": 8431,
+    "sha256": "423397753fd47dd0b12dcb81321fe5860609f7174b39c735a45049b68e706c23",
+    "path": "recovered/phase2/lua/game/barrage/barrage_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/battle/battle_controller.luac",
+    "asset": "assets/res/9/0/c80e48c3b23c1c237e0e72044ebd9cd1",
+    "encrypted_sha256": "9385b8aa5e01ad9629480470073ec43ebcb91181119cf1ddf739d8837b50fb68",
+    "status": "decoded",
+    "size": 51305,
+    "sha256": "9015aa46328657d86f2cd5f171df3dedc294f666a4b9680fd359a4646ea758c9",
+    "path": "recovered/phase2/lua/game/battle/battle_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/birthdaymoney/birthdaymoney_controller.luac",
+    "asset": "assets/res/d/9/d69b41c971c50fb4d9dee5f0649d86bc",
+    "encrypted_sha256": "59c5cfc193ed136f6648567507d754060019967915ee38458690e739e9e2c5fc",
+    "status": "decoded",
+    "size": 6855,
+    "sha256": "6a412d3dab868d71c2d66ac8336e61fcdbdfce6d7d98c4d6ec0b6f24279cfa7b",
+    "path": "recovered/phase2/lua/game/birthdaymoney/birthdaymoney_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/boss_hunt/boss_hunt_controller.luac",
+    "asset": "assets/res/8/4/7adcb848cdc69ce48c2fc537a50a7a79",
+    "encrypted_sha256": "e0422dbd3c44f7bac17276a39632ab332c2ab04e145966c290738f3c189d5f67",
+    "status": "decoded",
+    "size": 59346,
+    "sha256": "dec4e4e419c3d816166a01b5d09f223a2e5b9702b159930b34353e345e829b3c",
+    "path": "recovered/phase2/lua/game/boss_hunt/boss_hunt_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/canyon/canyon_controller.luac",
+    "asset": "assets/res/4/f/af2570b38ffd09aca97f0286e7743a5a",
+    "encrypted_sha256": "7a3146c847e15e2a94bc23e9334c64b2507112da86aec1b17a57868793195941",
+    "status": "decoded",
+    "size": 7416,
+    "sha256": "f5b98a2d7cab00a6c2c099e80acbb6a2615f6d4cc5e35349db93476551fffb90",
+    "path": "recovered/phase2/lua/game/canyon/canyon_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/catchfairygrass/catchfairygrass_controller.luac",
+    "asset": "assets/res/4/2/b71a82629467e7d5d751c94256ad9b8f",
+    "encrypted_sha256": "bc5edd4f16bac22a4920b9113e98730f685d08ad4eb5b7dde43df51fe74d72f3",
+    "status": "decoded",
+    "size": 5462,
+    "sha256": "033f7a56d84dd567d8ad40bc12a50f1e3d7e34d2122ab1ee6416490a1c36c9c6",
+    "path": "recovered/phase2/lua/game/catchfairygrass/catchfairygrass_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/champion/champion_controller.luac",
+    "asset": "assets/res/a/a/672e5a460d04c3b656499c6b18a73285",
+    "encrypted_sha256": "001ccbe5043c017466bcc05b338fbdcf948f06b6103ff823b0d72c993a7fb711",
+    "status": "decoded",
+    "size": 23821,
+    "sha256": "bd683325ad20e60e43aa179535a33aa3c3e982658a2ab2d3447962a395d8d9ef",
+    "path": "recovered/phase2/lua/game/champion/champion_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/chat/chat_controller.luac",
+    "asset": "assets/res/4/4/ddc0d6b14bc3333448072688a2ac1239",
+    "encrypted_sha256": "64cad245dcad4d94b619ecb67ee80a3343026ff31db0a5149c9653e1ff72649f",
+    "status": "decoded",
+    "size": 38590,
+    "sha256": "67297aed3cfe9e66f316a4e336b18034e8afe9beb5f8bd9754a51250286a6c43",
+    "path": "recovered/phase2/lua/game/chat/chat_controller.luac",
+    "head_hex": "2d2d5b5b0d0a202020202a20e7b1bbe6"
+  },
+  {
+    "logical": "game/common_expansion_task/common_expansion_task_controller.luac",
+    "asset": "assets/res/0/3/c4094d6dac2e0b66d5ad60e3a63a4011",
+    "encrypted_sha256": "b1b55c60766c44c6c21eb0e9b51cd212df96896b8a4569d944270bf38952ed8f",
+    "status": "decoded",
+    "size": 1893,
+    "sha256": "4984a1b37b711ed8c5412af729634bfdeaef49bf95a93b32586ece5bbecacc8a",
+    "path": "recovered/phase2/lua/game/common_expansion_task/common_expansion_task_controller.luac",
+    "head_hex": "2d2d5b5b0a09617574686f723a207761"
+  },
+  {
+    "logical": "game/common_gift_shop/common_gift_shop_controller.luac",
+    "asset": "assets/res/6/c/297de19ad5f380c854685e85c7dba9d3",
+    "encrypted_sha256": "ec70f4ede70cdba0c4f7ba496cffe372d1dab56e2f2372ceda7a3398219c770e",
+    "status": "decoded",
+    "size": 3591,
+    "sha256": "a66f6801cf780586b822acb9694aa997e2014ca41b7e78f6377b6c8e33d7dd0f",
+    "path": "recovered/phase2/lua/game/common_gift_shop/common_gift_shop_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/common_history_video/common_history_video_controller.luac",
+    "asset": "assets/res/4/7/707048cf26419650996cb37531f902e3",
+    "encrypted_sha256": "a98cf94e6fb17d5aa9841b7afe728951117f00730e20d18887ba7bcb2f73fbe8",
+    "status": "decoded",
+    "size": 2620,
+    "sha256": "6d47720d6e9f4dc515a915831572997509689b0c237a8b352b654975898c4e33",
+    "path": "recovered/phase2/lua/game/common_history_video/common_history_video_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/common_order/common_order_controller.luac",
+    "asset": "assets/res/3/3/e7369553c760774f9b8ef6634653e2e2",
+    "encrypted_sha256": "552ffd3849902630f0748256b2082f718a429f8419d168f440a6aa0d8d7a00fd",
+    "status": "decoded",
+    "size": 5629,
+    "sha256": "40acacbc4e6ac02d1bef3d8e33f91a19634db3a575fe947fb5f4054eb5aa2627",
+    "path": "recovered/phase2/lua/game/common_order/common_order_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/common_task/common_task_controller.luac",
+    "asset": "assets/res/a/8/9390337f116bb5fd08d55af49a5aea22",
+    "encrypted_sha256": "12b5e6bf97e20baf077e5ad9e77df498d1b2340b4081d804066f4df4db870343",
+    "status": "decoded",
+    "size": 1830,
+    "sha256": "c2efb7dc1fa1550e0ccf6f19638545c6b290757bdf34bcbe3abbd6d24feaf69f",
+    "path": "recovered/phase2/lua/game/common_task/common_task_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/commonprivilege/common_privilege_controller.luac",
+    "asset": "assets/res/a/8/a485c1938b33494319dda8bac2057f37",
+    "encrypted_sha256": "f9672ee0ac5e9c432b76897643ab675fd6a217d0a2017b86e09c7aa5fa9454c5",
+    "status": "decoded",
+    "size": 2433,
+    "sha256": "3f9f530668c6fd7d918256f9aacdc047c9c997d72741db34da9e4fe7b4f08296",
+    "path": "recovered/phase2/lua/game/commonprivilege/common_privilege_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/component/component_controller.luac",
+    "asset": "assets/res/0/b/a9b598f3e8deabba365dad04bf60c132",
+    "encrypted_sha256": "febc9ee082d41a792cc756a42b90a3913f7ba16c00409c06edf8adde59894510",
+    "status": "decoded",
+    "size": 1844,
+    "sha256": "ee9c911a84cce95560dd2bf081c094fec9a0d67d812508010373844ddb9f8a64",
+    "path": "recovered/phase2/lua/game/component/component_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/compositefish/compositefish_controller.luac",
+    "asset": "assets/res/4/a/04acc5013651fa3a61661e9def561f21",
+    "encrypted_sha256": "106be59c50ded87f5157ae41e0b43d1570ba8755d61c3ba8800ae64b268192da",
+    "status": "decoded",
+    "size": 3202,
+    "sha256": "88fd513425d0578c959e2ca32b10377128dc7aed2360d556e260c2a4a5246019",
+    "path": "recovered/phase2/lua/game/compositefish/compositefish_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/crossarena/crossarena_controller.luac",
+    "asset": "assets/res/b/9/1d46078687df1a2ffa790ab92b9b7440",
+    "encrypted_sha256": "00ada628239a44fd47836fd76d01587b976840c43bed9bd812504f1380620567",
+    "status": "decoded",
+    "size": 13632,
+    "sha256": "2ebbf7bf49b8dda8ad03228e828cefb7c575afb183c99b4596b599bd3228c1d3",
+    "path": "recovered/phase2/lua/game/crossarena/crossarena_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/crosschampion/crosschampion_controller.luac",
+    "asset": "assets/res/0/d/10e468b4d96cd80978df734c626709a6",
+    "encrypted_sha256": "055f05c30329b5c0b836b62b4cda017bcf041bbd95c43a8d54925090f2325e42",
+    "status": "decoded",
+    "size": 9782,
+    "sha256": "7bd45147a372c2c52378acb387892d45dffb417f2b79a33164afdfbaa68252cf",
+    "path": "recovered/phase2/lua/game/crosschampion/crosschampion_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/crossground/crossground_controller.luac",
+    "asset": "assets/res/3/7/3e75a987963543571a3e35695d9d2616",
+    "encrypted_sha256": "a3b2f567bdb6f78e0ccdca502b826142d6cd4aa419b7c9390a869502104302b5",
+    "status": "decoded",
+    "size": 2219,
+    "sha256": "6434357f2af875bdf478531ae66b4fbc69c9c699f8975bc9c3baa2d7bb2a20c4",
+    "path": "recovered/phase2/lua/game/crossground/crossground_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/crossshow/crossshow_controller.luac",
+    "asset": "assets/res/e/f/ebffb7f2e4eff84db589c08de2f75efd",
+    "encrypted_sha256": "a7ba3c81f80b6b8da128f838fbbb0f3a95a9722dda2628f3d96e7f0410edf835",
+    "status": "decoded",
+    "size": 2605,
+    "sha256": "3c00f91adacdbfbd586fd5930a48af1614fa54a4ebe35c77fdd23d7c343c7d90",
+    "path": "recovered/phase2/lua/game/crossshow/crossshow_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/cycleactivity/cycle_activity_controller.luac",
+    "asset": "assets/res/3/b/38fa3f4af15cba7b6967066642daac35",
+    "encrypted_sha256": "b8d0d561fed885e40249c24c33867df4b38c15c92754518c35b13d8170f8778e",
+    "status": "decoded",
+    "size": 10600,
+    "sha256": "0886934b7bbdfd9ac863dc26e133d41020d571f374922758c6ba00670454ca31",
+    "path": "recovered/phase2/lua/game/cycleactivity/cycle_activity_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/danmatch/danmatch_controller.luac",
+    "asset": "assets/res/4/a/ecceca8f9779b8682a8a1da33efa48fc",
+    "encrypted_sha256": "c9bfbdab8b23cad7e99c8f094bfc244973ffe8cb0f246622023cf6c08285b89a",
+    "status": "decoded",
+    "size": 17858,
+    "sha256": "e15b6592a22cac1fcfb00d4247714800c6ed72624a88ee3e34b168e422dacefd",
+    "path": "recovered/phase2/lua/game/danmatch/danmatch_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/daycharge/daycharge_controller.luac",
+    "asset": "assets/res/a/5/e15af28793941505931908307d4a418b",
+    "encrypted_sha256": "3e7fe3d363469568347a26ffd342e81fef9372943911990742c8de875f4cd72b",
+    "status": "decoded",
+    "size": 1796,
+    "sha256": "58933bcfd3dd3ac7233147826ee6340b2d0e9c9a145ba60cc97da9933ae69787",
+    "path": "recovered/phase2/lua/game/daycharge/daycharge_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/deathbompve/deathbompve_controller.luac",
+    "asset": "assets/res/f/d/4df88091db43e36e3a7d68a90a8f7a5b",
+    "encrypted_sha256": "aede5a0170cabfd9ffc5e30458201e6fc8fe796dd57d677b25829ff83839aef4",
+    "status": "decoded",
+    "size": 12182,
+    "sha256": "6b10a6434c13ca3b8e28ce4d06e75dd6aa79d4657a5404b9857fa9f7f3aa7208",
+    "path": "recovered/phase2/lua/game/deathbompve/deathbompve_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/deathbornavatar/deathbornavatar_controller.luac",
+    "asset": "assets/res/1/0/5449308aecf0845aa03cc682b16f944c",
+    "encrypted_sha256": "19f63cf8b498a34ee3c3a4171292926c352f6e268d3dd11613a28e369ea528a3",
+    "status": "decoded",
+    "size": 8813,
+    "sha256": "cd1ff00a0f966154c84307766c5c1936a3c5db969661228efd52b06cfb094f26",
+    "path": "recovered/phase2/lua/game/deathbornavatar/deathbornavatar_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/deathbornform/deathborn_form_controller.luac",
+    "asset": "assets/res/9/e/bb1ac6ec4d5a9c41fb1463835b1c03e9",
+    "encrypted_sha256": "a100e31cb177de4f769f65fbd44e07f7e138fbf1c66402520be703deb45da169",
+    "status": "decoded",
+    "size": 12370,
+    "sha256": "00595f87d91e164ad80165a4950a079a21f364cd9bf818716aa7f1f34191c9e9",
+    "path": "recovered/phase2/lua/game/deathbornform/deathborn_form_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e6af81e7"
+  },
+  {
+    "logical": "game/dial_action/dial_action_controller.luac",
+    "asset": "assets/res/6/7/fd59fff8b71f6aa71b2ec28765a55447",
+    "encrypted_sha256": "f9302aa4f7d658cc23b4c84371d4274c444a7d727b7ebb9e7d42592d1c933bf1",
+    "status": "decoded",
+    "size": 4500,
+    "sha256": "6fa49e8176655c74a41d464c1baf880c634844845d4d618438493077add8967f",
+    "path": "recovered/phase2/lua/game/dial_action/dial_action_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/directbuying/directbuying_controller.luac",
+    "asset": "assets/res/3/3/df141a6bd85225989031073ce8b9e9ab",
+    "encrypted_sha256": "fd8e4540229bbd3ea397925910a0d02e164a207f8c68b6b02d9721060b8b9e4f",
+    "status": "decoded",
+    "size": 1089,
+    "sha256": "9439350b6f260b54dc351eeac0398fe4c3708dd99f504dd55881f5965ef84944",
+    "path": "recovered/phase2/lua/game/directbuying/directbuying_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/divinitychallenge/divinitychallenge_controller.luac",
+    "asset": "assets/res/1/2/b91c17e2d087379c58850499a7003661",
+    "encrypted_sha256": "c51c95ee77492754eb66273ba334c166e6972bfd59e069c52ab9cd7c01533ff5",
+    "status": "decoded",
+    "size": 5834,
+    "sha256": "f530bacebfeb245ba41352b98814681ba8d64870b0f34d7277bc82c6e4409752",
+    "path": "recovered/phase2/lua/game/divinitychallenge/divinitychallenge_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/doublegodpvp/doublegodpvp_controller.luac",
+    "asset": "assets/res/c/4/5c420087ba7643bebc808026422cd0fe",
+    "encrypted_sha256": "5a6cedb2b1e252388be1cb2dc01c95200091747637cad581e5040c81e1e40d09",
+    "status": "decoded",
+    "size": 11790,
+    "sha256": "fca5d71336731460527d349893c93366fa89e7348cbf8a5e45a8e7e8450a9b21",
+    "path": "recovered/phase2/lua/game/doublegodpvp/doublegodpvp_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/douway/douway_controller.luac",
+    "asset": "assets/res/8/2/9ac621a3093967a8c2bde4501844fbd0",
+    "encrypted_sha256": "0498b8e2ad91f329d06c3a1dc08e6ba66d7bfb6984dec26c4a3e5219d0039b20",
+    "status": "decoded",
+    "size": 5509,
+    "sha256": "d0637ea7913215c4315f8658c6208e1d8a2fb84715606e9912f6016fa9a33a11",
+    "path": "recovered/phase2/lua/game/douway/douway_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/element/element_controller.luac",
+    "asset": "assets/res/4/4/9d5d5cf5089f29f4e4459f3f5f95a8be",
+    "encrypted_sha256": "db3d71e5d2ca0e3058b0423ea98569d2e407522be4a404d066d56ff5ecf0067e",
+    "status": "decoded",
+    "size": 9661,
+    "sha256": "f2c13772bf9221f2cbb6b371c4ca6c1ab75e070cf2183696d357f6061019a87d",
+    "path": "recovered/phase2/lua/game/element/element_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elfin/elfin_controller.luac",
+    "asset": "assets/res/d/6/59b204a2e877996e45dcaddb4e872e2c",
+    "encrypted_sha256": "6aa0ee5713c1509b58a1b0a57be046a8711d5fba9c6b5c0f49aa808c2ed5e15a",
+    "status": "decoded",
+    "size": 15807,
+    "sha256": "e041fe4de3f443628123b4b2770408c5c3059e7555819ee0f4a22ac090f68622",
+    "path": "recovered/phase2/lua/game/elfin/elfin_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/elitematch_controller.luac",
+    "asset": "assets/res/1/2/24fc864c1375b27411a15feb17c36ac6",
+    "encrypted_sha256": "4b86ad70c471bfc6217b8ec2a496ba62d498e628e933e8d23da2866ef5e53828",
+    "status": "decoded",
+    "size": 22879,
+    "sha256": "f46c3953a9997db7f6358e2ff229c5727ba4ce345b8ddec6024dff638d4cb968",
+    "path": "recovered/phase2/lua/game/elitematch/elitematch_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitesummon/elitesummon_controller.luac",
+    "asset": "assets/res/d/5/d31da51d5e8f6ef8e7b78d1258ec59bc",
+    "encrypted_sha256": "6bb4074c8b57ce211ec1de7c94b043b152876aaf573970b6ae85b6c5411861db",
+    "status": "decoded",
+    "size": 3565,
+    "sha256": "6624fff5e162cbbcac36c744adfecb5bd1b17b57b20f8b07e0e2a9ba8b986e90",
+    "path": "recovered/phase2/lua/game/elitesummon/elitesummon_controller.luac",
+    "head_hex": "2d2d2a2a2a2a2a2a2a2a20e69687e4bb"
+  },
+  {
+    "logical": "game/endless_trail/endless_trail_controller.luac",
+    "asset": "assets/res/3/5/57795b5a27d3b504effd4a6676f872c4",
+    "encrypted_sha256": "bdea75e2de49e5b9a1aa508e433af337a78f5b9ae7626d2740015af7b95e51b2",
+    "status": "decoded",
+    "size": 19951,
+    "sha256": "a77d33f98c4f1fd7de99c5a5e8e3e1974d210dc67fd2c60bbf273091bb4f3d9a",
+    "path": "recovered/phase2/lua/game/endless_trail/endless_trail_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/endlessaction/endlessaction_controller.luac",
+    "asset": "assets/res/d/0/92d1c6bd1dddeb2bf8b7b045757b5468",
+    "encrypted_sha256": "6252de414e96c6b51ff6ebc84b4ed0eb52898cadb6739810ac4fe5dfaafe831d",
+    "status": "decoded",
+    "size": 7224,
+    "sha256": "f8cf3d5cf4e1d9083d944920983e557cb67e803be97c655a4cd38120e6d02b1f",
+    "path": "recovered/phase2/lua/game/endlessaction/endlessaction_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/entrancegroup/entrancegroup_controller.luac",
+    "asset": "assets/res/5/9/5e55ddc257e8a9c58e80c144fac36223",
+    "encrypted_sha256": "2dd9a2fe45d0c533dd3665616d190af38c75ea1a8c77fb346389937dd70d45c9",
+    "status": "decoded",
+    "size": 3497,
+    "sha256": "1b1e9d6ae29b97d870362c227e1464e8ac7ce7ec8ac88763b2f7d521b81a95e6",
+    "path": "recovered/phase2/lua/game/entrancegroup/entrancegroup_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/equipsuit/equipsuit_controller.luac",
+    "asset": "assets/res/4/5/5e2b7a36b8f449ab3f4bb936b8d1248b",
+    "encrypted_sha256": "c48a553b85960a95b2187f5999883484683e2bff8244428aa1b22d2f4a54a311",
+    "status": "decoded",
+    "size": 3716,
+    "sha256": "fbf3bcfdedff1dcf72dc3eaaf2c9415aeba0b3e5b6f7e03f52fa4d4a8c2858b1",
+    "path": "recovered/phase2/lua/game/equipsuit/equipsuit_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/esecsice/esecsice_controller.luac",
+    "asset": "assets/res/d/f/fe3ac62cf5f8a129d90d35db05789a38",
+    "encrypted_sha256": "269a69afb5ad07376547eced2c5999210528fdf9fe93542388583d2b09d1b03a",
+    "status": "decoded",
+    "size": 2861,
+    "sha256": "95e9ce8e01aa6f12f761e608e1bc0464f94de7a6f4746c21b86b3702c226c10d",
+    "path": "recovered/phase2/lua/game/esecsice/esecsice_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/expansion/expansion_controller.luac",
+    "asset": "assets/res/c/c/bcfb5cb7fe7c99d1782d5c33dde1c01f",
+    "encrypted_sha256": "7858f29c1423d62f320877254aaf689e736eea7ff18ab4bde9726d17e263c23b",
+    "status": "decoded",
+    "size": 4818,
+    "sha256": "75abf3ef0880a81e7bbe17f1bb5c13e01790455b867e47d99063d22ff537e80a",
+    "path": "recovered/phase2/lua/game/expansion/expansion_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/expansionjoker/expansion_joker_controller.luac",
+    "asset": "assets/res/9/f/8889bf637f996f3f96193c49713f728e",
+    "encrypted_sha256": "3144224c06b2867ea4ee93fb54695efa6210973a8951e3b12c0071ed74c3dcb4",
+    "status": "decoded",
+    "size": 4824,
+    "sha256": "f17c9d59798f5ef7484133011d3a5b711ced500b8279665fae38fa49105e8501",
+    "path": "recovered/phase2/lua/game/expansionjoker/expansion_joker_controller.luac",
+    "head_hex": "2d2d2a2a2a2a2a2a2a2a20e69687e4bb"
+  },
+  {
+    "logical": "game/expansionjoker/joker_bag_controller.luac",
+    "asset": "assets/res/c/2/a2ab43a420e4909837d589b8c5446c57",
+    "encrypted_sha256": "899c57fd00cc2e4ec76c2db1a1d660347ed8828815cbcec58df582ba25e42096",
+    "status": "decoded",
+    "size": 6167,
+    "sha256": "6ac7342a935c0c8ea269bedf8baa38d2a91b787ccffcf546b5927790846f2470",
+    "path": "recovered/phase2/lua/game/expansionjoker/joker_bag_controller.luac",
+    "head_hex": "2d2d2a2a2a2a2a2a2a2a20e69687e4bb"
+  },
+  {
+    "logical": "game/expansionjoker/joker_charge_controller.luac",
+    "asset": "assets/res/a/8/bcca448f48ac12db8514718ace420f08",
+    "encrypted_sha256": "52da10280ce101e878c7e2d7172a49d9446b1187f7752dbcb5c5d002df2e3e9e",
+    "status": "decoded",
+    "size": 3001,
+    "sha256": "8650d8ede0b4e3d1bfae909e29a5fd3c5a900291e0e3cd44af712aad90cee4b2",
+    "path": "recovered/phase2/lua/game/expansionjoker/joker_charge_controller.luac",
+    "head_hex": "4a6f6b6572436861726765436f6e7472"
+  },
+  {
+    "logical": "game/expansionjoker/joker_endless_controller.luac",
+    "asset": "assets/res/4/a/f730a11842589a9c42672901828f1fa1",
+    "encrypted_sha256": "04df048413c33023ddeedcc29b0162ef5ae8f6a9419c1a9e99c3af04bcd8b092",
+    "status": "decoded",
+    "size": 3261,
+    "sha256": "fdedcde712a99da1903564a92bb8aa7d62f01c407bf8540c1d78861f3f9c3c09",
+    "path": "recovered/phase2/lua/game/expansionjoker/joker_endless_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e5b08fe4"
+  },
+  {
+    "logical": "game/expansionjoker/joker_pve_controller.luac",
+    "asset": "assets/res/7/2/9267a150ec415124d0bb8ca84372f57a",
+    "encrypted_sha256": "73de3f970ff7f00523ee16b6dcab298beef72cf0f4912c42da7256ba85c8d5ad",
+    "status": "decoded",
+    "size": 2924,
+    "sha256": "be2cf19fe6a3a0ea29dbc9387b9a5ad0bf651553080ac40398c766992bc8a88e",
+    "path": "recovered/phase2/lua/game/expansionjoker/joker_pve_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e5b08fe4"
+  },
+  {
+    "logical": "game/expansionjoker/joker_raise_controller.luac",
+    "asset": "assets/res/9/f/fecafe94d7960f6409e91a99b86ba3eb",
+    "encrypted_sha256": "7c73359e9be2f09774a7b1c624566be41c5a4eed9e2baab1006a50761462cea5",
+    "status": "decoded",
+    "size": 2409,
+    "sha256": "4190e866398238a6782cafe64cf9222da0dce3bc773cd0de7ab1e12311c001fa",
+    "path": "recovered/phase2/lua/game/expansionjoker/joker_raise_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e5b08fe4"
+  },
+  {
+    "logical": "game/expansionjoker/joker_summon_controller.luac",
+    "asset": "assets/res/c/0/7eac8c32fbc03f64d60d886698207099",
+    "encrypted_sha256": "a79115d69faeb9a70efb8d9e56b847d293f7867bfa053fc2f9f7f5b7217cb715",
+    "status": "decoded",
+    "size": 10099,
+    "sha256": "ec0eacae0f7549b130a5a01120f6b0687f26bc11163a6a4c2b2695a96429fe81",
+    "path": "recovered/phase2/lua/game/expansionjoker/joker_summon_controller.luac",
+    "head_hex": "2d2d2a2a2a2a2a2a2a2a20e69687e4bb"
+  },
+  {
+    "logical": "game/expansionjoker/joker_task_controller.luac",
+    "asset": "assets/res/2/2/528b4f2224728889d80a471de0e09854",
+    "encrypted_sha256": "647881d6ca772fcda01d66dae2ace2490e3eb6155bb32f307903ac227c6e49c5",
+    "status": "decoded",
+    "size": 4708,
+    "sha256": "9b05ff3b72fed39eb0c3cb78530a30151f9e2e240d165147827064de30bd4ea9",
+    "path": "recovered/phase2/lua/game/expansionjoker/joker_task_controller.luac",
+    "head_hex": "2d2d2a2a2a2a2a2a2a2a20e69687e4bb"
+  },
+  {
+    "logical": "game/explore/explore_controller.luac",
+    "asset": "assets/res/e/b/7e179351eda49c234fee9fccc3bbbd77",
+    "encrypted_sha256": "ec183b5a9e0de396668596d6610fe64a72ed4a6f9dc508d91a1410d27312f471",
+    "status": "decoded",
+    "size": 13782,
+    "sha256": "afea5c82e4a3339f9096b469aedfa2398bf2bea042b7e399fe107b8b7cfa37c4",
+    "path": "recovered/phase2/lua/game/explore/explore_controller.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/festivalaction/festivalaction_controller.luac",
+    "asset": "assets/res/9/3/9029f3f226126006db2980dc93e16be3",
+    "encrypted_sha256": "1fc6cfada4b9fc33e8fe611ca3b95355e8516fbeb49931c0e48c827942930eaf",
+    "status": "decoded",
+    "size": 8022,
+    "sha256": "db663427c41e40eea34f3b9c09d30d030651f1b47d3f5472c7d4a06ffb9806a9",
+    "path": "recovered/phase2/lua/game/festivalaction/festivalaction_controller.luac",
+    "head_hex": "2d2d2a2a2a2a2a2a2a2a20e69687e4bb"
+  },
+  {
+    "logical": "game/fishing/fishing_controller.luac",
+    "asset": "assets/res/5/5/1a1a7595ee50286ba9bd95e7bc64dce9",
+    "encrypted_sha256": "32c72c6c6c7bf9c73e1a54979d49c1cccbbf951acc5f5f67330f9942a39a0e17",
+    "status": "decoded",
+    "size": 14787,
+    "sha256": "55d6afbc5649c8b2e86b810122b6da7ceba88f0a9f3f40e8aeab3ded14ebbf7a",
+    "path": "recovered/phase2/lua/game/fishing/fishing_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e99293e9"
+  },
+  {
+    "logical": "game/forgehouse/forgehouse_controller.luac",
+    "asset": "assets/res/6/9/eb32d914a850600e7448edc924be781d",
+    "encrypted_sha256": "7a6835cbed3e58d9942c66802af9f0fb26e241955b6fc07dc7b3ef834f6ccfe5",
+    "status": "decoded",
+    "size": 13390,
+    "sha256": "7d091070985d91edcaba573b31afca0703db723199648f175718a56ccc1a45f7",
+    "path": "recovered/phase2/lua/game/forgehouse/forgehouse_controller.luac",
+    "head_hex": "466f726765486f757365436f6e74726f"
+  },
+  {
+    "logical": "game/formation/formation_controller.luac",
+    "asset": "assets/res/3/9/c805cd79a4e9ee5c900c313a698b0246",
+    "encrypted_sha256": "cfea1e8b1303feeedc51afc517b809294a4584048463a413ec20a83015c42afe",
+    "status": "decoded",
+    "size": 7346,
+    "sha256": "6899cc2b51a043674bd8cf026612ff358b7cefa9daf3e9f3a04bb2a5ee96ddcf",
+    "path": "recovered/phase2/lua/game/formation/formation_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/formpreset/formpreset_controller.luac",
+    "asset": "assets/res/e/e/6e4a6c54c34724825ea17fc50d8e47ef",
+    "encrypted_sha256": "b944ad3214eba446f0b152a933b9b08faed117b60a8d94a323a03b6d6b37f223",
+    "status": "decoded",
+    "size": 9723,
+    "sha256": "2cc0fd4f5ab8b44ab0f537da74a9911438349c52a29c493c2280d9468e935351",
+    "path": "recovered/phase2/lua/game/formpreset/formpreset_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e998b5e5"
+  },
+  {
+    "logical": "game/friend/friend_controller.luac",
+    "asset": "assets/res/a/5/2203161c4bcae8cbc6856c0b6704cf5a",
+    "encrypted_sha256": "9d355d954e4bbd0c189491539e4569727f2c68fd9b4e218ec86b039616834e20",
+    "status": "decoded",
+    "size": 37527,
+    "sha256": "d606dc9290b91549827ee3974f10b3f116433bb82b252e00b1a830746fc55871",
+    "path": "recovered/phase2/lua/game/friend/friend_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/gameforeshow/game_foreshow_controller.luac",
+    "asset": "assets/res/e/b/773fe37cb7bee24ff898b49fee2414d6",
+    "encrypted_sha256": "7d4328e6dc0b18dea9dbf488b70f88ab6ba77b2653df6dd692efcbf726217848",
+    "status": "decoded",
+    "size": 10733,
+    "sha256": "be8149b9882aa25b6407ec699c22b5321e2f24f47392451c6f845b5417d03817",
+    "path": "recovered/phase2/lua/game/gameforeshow/game_foreshow_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/giantwoodforest/giantwoodforest_controller.luac",
+    "asset": "assets/res/c/4/caf0dffa340e1cd9de8d63f4606a5e41",
+    "encrypted_sha256": "ad02fb1c7ad19bc348244d5f47506f1b4db56b5214e79d90ff1e3ffaddbe65ac",
+    "status": "decoded",
+    "size": 19382,
+    "sha256": "a482694ea36136632c0a0f15917ec561d76c28e2589c6a9e95298a39f0a0f457",
+    "path": "recovered/phase2/lua/game/giantwoodforest/giantwoodforest_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/godruins/god_ruins_controller.luac",
+    "asset": "assets/res/6/4/cf18ef8c4d2d48d4e766ae2b9e569cfe",
+    "encrypted_sha256": "ae540e7652c667e7cc441e7e90db2c72bf36e6c10a453fab86442c154f31654a",
+    "status": "decoded",
+    "size": 7357,
+    "sha256": "566cf1bb59c648cc98ca577716a5f0f9490a8e249c01f8c87d810275a38a8e80",
+    "path": "recovered/phase2/lua/game/godruins/god_ruins_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/godteamboss/god_team_boss_controller.luac",
+    "asset": "assets/res/9/8/3716cf25ae983b297eea0a402fdd7e41",
+    "encrypted_sha256": "a22594465750dbd4f5f9e61ddad14e3d5b472d71450ca03bc1374d22ff333adc",
+    "status": "decoded",
+    "size": 26708,
+    "sha256": "6d6d7cbfe873f58d266ef62e9027c235429a0b96f2a6aefba84a992fe08b3bd9",
+    "path": "recovered/phase2/lua/game/godteamboss/god_team_boss_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/godworld/godworld_controller.luac",
+    "asset": "assets/res/9/c/be2c2f5797b09f83c857a824d7effbe5",
+    "encrypted_sha256": "ecc0eea77ae2308f61f9783cbe100242781ddc2cbc1891a7e6468b63a4621930",
+    "status": "decoded",
+    "size": 4238,
+    "sha256": "40a43a1b7412b00d3da028fe05808c9558696666e40d3b82f9eddaa0b4608555",
+    "path": "recovered/phase2/lua/game/godworld/godworld_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/guardian/guardian_controller.luac",
+    "asset": "assets/res/f/0/830306060200ff24a430aeda086d49f4",
+    "encrypted_sha256": "9371c5d0e804eebf3981bb27ccbc1e9f0ed6222130342bb66d90dd018e44b65e",
+    "status": "decoded",
+    "size": 8843,
+    "sha256": "d3b88c503a1925cd319aebd0c40017c412d3cea3c066f1e2ea0ea841103875e6",
+    "path": "recovered/phase2/lua/game/guardian/guardian_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/guide/guide_controller.luac",
+    "asset": "assets/res/8/9/ad7d40c8d434b0988983b18dd147281c",
+    "encrypted_sha256": "615fb9f31d86a06f17ec0aede46146436ac49f48682fa2bc2e8e917346066307",
+    "status": "decoded",
+    "size": 63106,
+    "sha256": "5d75b28e30b40d6bf445a679a92ade2d3aba230b3b8316d7121376adb938b4b5",
+    "path": "recovered/phase2/lua/game/guide/guide_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/guild/guild_controller.luac",
+    "asset": "assets/res/4/3/933fb9bb136733b494b726e64da484da",
+    "encrypted_sha256": "ad986049b50786735e04b67075b32a1c8103b1e34c7c2aa258aea43705da7f5d",
+    "status": "decoded",
+    "size": 48783,
+    "sha256": "33115a3bdbc7691aa71cc959a2adf4e42c7f4c461c3e55aaa4b4a0ff737e9b0f",
+    "path": "recovered/phase2/lua/game/guild/guild_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/guildboss/guildboss_controller.luac",
+    "asset": "assets/res/0/7/a167995450531430393b89fcda747afc",
+    "encrypted_sha256": "59a3788ac81e221ed4292a4a6b67d977c9e760ffafc140aaba63c96dc134c1af",
+    "status": "decoded",
+    "size": 16982,
+    "sha256": "33e5a2ffe57c7058a1fd839657166de57b94e295879c755358fb10b96d9965a7",
+    "path": "recovered/phase2/lua/game/guildboss/guildboss_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/guildmarketplace/guildmarketplace_controller.luac",
+    "asset": "assets/res/b/0/5b1343ea7a09fda765883096b8220889",
+    "encrypted_sha256": "a124638b02dc8dbc329620659fb8919054255eb5ff9e80f598bf3bfc833f8b8f",
+    "status": "decoded",
+    "size": 5596,
+    "sha256": "7d34beccc2fc0e0416a84b4780d7df9e1e4725f4a65ea1327ab5b532fa335d89",
+    "path": "recovered/phase2/lua/game/guildmarketplace/guildmarketplace_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/guildscene/guildscene_controller.luac",
+    "asset": "assets/res/1/b/abb8f04c958316bb0462ea8a4eca9b8b",
+    "encrypted_sha256": "d17717321447e01384e364f834feb6fa4641c3de394b4be55953475794d8e94c",
+    "status": "decoded",
+    "size": 84398,
+    "sha256": "e43569b6a6524ccc45c7fd7bfdccef7156a4cad2c11df1b1e0e49ecb19287e69",
+    "path": "recovered/phase2/lua/game/guildscene/guildscene_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/guildsecretarea/guildsecretarea_controller.luac",
+    "asset": "assets/res/f/0/bd49ec96f9d5c27a65e7d88fa7031c88",
+    "encrypted_sha256": "8f7e94821d78836bf2e96077687c133f6bfd925fa57baab3ecfca657a5c831b8",
+    "status": "decoded",
+    "size": 8133,
+    "sha256": "1098acbdfcf3c693ff039974f2d7d7ed6f7899eaf01fd25659513794ecdbe1ae",
+    "path": "recovered/phase2/lua/game/guildsecretarea/guildsecretarea_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/guildskill/guildskill_controller.luac",
+    "asset": "assets/res/2/3/05cfbb7ad2bf3f7a7a8cb37584cc709e",
+    "encrypted_sha256": "bf37f80c88b3c37abb582afad3822f63e2458b1fb47cef980835c6792dc6d945",
+    "status": "decoded",
+    "size": 7861,
+    "sha256": "44fe97aa919353831a8126f0390a7ef2a2e3d4355022d0dbe0cdfdd8724b543c",
+    "path": "recovered/phase2/lua/game/guildskill/guildskill_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/gururec/gururec_controller.luac",
+    "asset": "assets/res/4/0/d374d52c5f3c5c10a586474208132517",
+    "encrypted_sha256": "036539cf050d68b495cc69e45e2e31766cd97ec2be5548fa0b2a98176bfaf6ce",
+    "status": "decoded",
+    "size": 5773,
+    "sha256": "e1bfe573ee16bcd4bbf69e9a42a3e9380d29c0ba430eeb4320329116f51abd29",
+    "path": "recovered/phase2/lua/game/gururec/gururec_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/halidom/halidom_controller.luac",
+    "asset": "assets/res/9/3/d424f09601096b2bbdef6e33c7e844c3",
+    "encrypted_sha256": "aac6c74112ebf9fd3de74af395bc158537efcf6b3be1defc86d3926af5767c1c",
+    "status": "decoded",
+    "size": 6873,
+    "sha256": "3041d77ef44d7761dd1b04b10082c37519658f0540057a05a2bc833ceaed85ef",
+    "path": "recovered/phase2/lua/game/halidom/halidom_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hangup/hangup_controller.luac",
+    "asset": "assets/res/c/5/1ff4d9c399f0b113d6df85c6b271c2f2",
+    "encrypted_sha256": "265361ca0d60002565607dca253bf1229657508e034823b795c2296f824ec5ff",
+    "status": "decoded",
+    "size": 1736,
+    "sha256": "285a6873418fa258944771e2316ee2f4b181d873afba9208a9b1c3bd57f63bc6",
+    "path": "recovered/phase2/lua/game/hangup/hangup_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/heaven/heaven_controller.luac",
+    "asset": "assets/res/6/0/dc5181ec0d039352502262a39472ed21",
+    "encrypted_sha256": "3e7c1a122ec81fda5e7fdbbd2d84da29aeda8941dd5535f7aeed437fd2eaeed3",
+    "status": "decoded",
+    "size": 11727,
+    "sha256": "1ba615205ffe99e84aaff7d7fc91989dcb48909ca19988cbf128a0ea64bcff2f",
+    "path": "recovered/phase2/lua/game/heaven/heaven_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/hero_controller.luac",
+    "asset": "assets/res/c/4/0c8c7c716c4c4905d321761f4f71c103",
+    "encrypted_sha256": "1a024f678d87cbcdcd7fce68b895573bf0b9a45290af4599ee65b11eec76736e",
+    "status": "decoded",
+    "size": 143285,
+    "sha256": "a700a2978fffaf3dee541c22460b905263dcd69651e00220a880eec9380394a4",
+    "path": "recovered/phase2/lua/game/hero/hero_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/hero_god_controller.luac",
+    "asset": "assets/res/e/6/84a7de687abe89b47fb8a2dccf8c6d76",
+    "encrypted_sha256": "a4a41ee48abf31e91fa92b6f2128de19f3b3152eb7cc08618711d91304d66dfe",
+    "status": "decoded",
+    "size": 14942,
+    "sha256": "15f3f1794cb1a3a7eb5b51c385c45016adc81f53f7ea632d56891c36327d8f15",
+    "path": "recovered/phase2/lua/game/hero/hero_god_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/hero_link_controller.luac",
+    "asset": "assets/res/9/7/fa918640546bd84f65bc07376909b1cb",
+    "encrypted_sha256": "81d911db4bdb92c223d9472719d25af1c7e6dba8212b39dc970331e608133168",
+    "status": "decoded",
+    "size": 3383,
+    "sha256": "b513def329286c432fd4696990557d0aedc57279d349973f3c299860c2152b0b",
+    "path": "recovered/phase2/lua/game/hero/hero_link_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/heroexpedit/heroexpedit_controller.luac",
+    "asset": "assets/res/b/7/8495860587ab84fdb0e9c9c4250daa0a",
+    "encrypted_sha256": "c941340bad15735b130e6c5bd24df546106cc10a66a649a10b0c7457730d8cb1",
+    "status": "decoded",
+    "size": 12483,
+    "sha256": "6ccae284f1076c75fd68777309d30efbe6c943b49cc8a580017e1eed477b2f77",
+    "path": "recovered/phase2/lua/game/heroexpedit/heroexpedit_controller.luac",
+    "head_hex": "4865726f45787065646974436f6e7472"
+  },
+  {
+    "logical": "game/heroshowboss/heroshowboss_controller.luac",
+    "asset": "assets/res/1/5/045d55a419e479661928975e4e9f47bf",
+    "encrypted_sha256": "05ec72f3636e2202cfc7d2734d98a3c779fcc25fed7d4b090ea5c4689383639a",
+    "status": "decoded",
+    "size": 3940,
+    "sha256": "9bf2f0caf91d2e6869dbb852722bbac9ed72848f31fc7f95d886d97a2d9f183d",
+    "path": "recovered/phase2/lua/game/heroshowboss/heroshowboss_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/herostory/herostory_controller.luac",
+    "asset": "assets/res/1/d/10090da7b5f841b3d1f78b89ae96dbcc",
+    "encrypted_sha256": "52d3f4a24564d341bf9318659cb4f836cd541b58ef433aab7a517fef9b2e2805",
+    "status": "decoded",
+    "size": 7065,
+    "sha256": "fc2c2b115ed8ed16d8ba404917c20a2f9e90cb6d74fba75abdf4adf89c2a805a",
+    "path": "recovered/phase2/lua/game/herostory/herostory_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/herotrialchallge/herotrialchallge_controller.luac",
+    "asset": "assets/res/8/2/f35ef7eaf08e763832f1c5d229491708",
+    "encrypted_sha256": "dc191302105c3f909fc3a0828eb23e06145dd90f922c15717f6233fcf60d59ac",
+    "status": "decoded",
+    "size": 5965,
+    "sha256": "84df0882e34271c80a46389e4070012230fa17fd9f70ee4cb59d7d40fdbb0baa",
+    "path": "recovered/phase2/lua/game/herotrialchallge/herotrialchallge_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hiddenjigsaw/hiddenjigsaw_controller.luac",
+    "asset": "assets/res/8/a/2ea00d0a084565a3947c23c51e384185",
+    "encrypted_sha256": "203022effd58cf59d6381ba9fb4fbc4a84c3baa9f0276daaaf96e9094fe3cb83",
+    "status": "decoded",
+    "size": 5698,
+    "sha256": "9aafabb90af6d813167e0590d4aa10bca0b13acd7a46e0cdfb86c96cc5a80783",
+    "path": "recovered/phase2/lua/game/hiddenjigsaw/hiddenjigsaw_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/holidaynewboss/holidaynewboss_controller.luac",
+    "asset": "assets/res/5/a/7c40643aa99367ed664df78538c65c3a",
+    "encrypted_sha256": "46218c87f9d80c6f6f05894d3410db22e9518d37f2dfdd11cf06cdfa5c7348b2",
+    "status": "decoded",
+    "size": 12234,
+    "sha256": "1dead555fd491b3da0f7e8b25d2e79036b48ee294b12fdfe2802f72e48ed9d29",
+    "path": "recovered/phase2/lua/game/holidaynewboss/holidaynewboss_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/holypillartrial/holy_pillar_trial_controller.luac",
+    "asset": "assets/res/c/b/02fb296a944bb4cd387ac97cc53acc1c",
+    "encrypted_sha256": "5647bc1d0f89436e0b6ea9ef9990ab17c061d5934ed4494229e5a06d105ce4af",
+    "status": "decoded",
+    "size": 7961,
+    "sha256": "5c2fd85dadccb1c8d19eddb0770981425ca62a7bb5a1b53ac212a92f9509c46c",
+    "path": "recovered/phase2/lua/game/holypillartrial/holy_pillar_trial_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e59ca3e6"
+  },
+  {
+    "logical": "game/internalaffairs/internal_affairs_controller.luac",
+    "asset": "assets/res/2/3/3f9f0b79e364b9ed2816f03e626e7ab1",
+    "encrypted_sha256": "91d65dba5ab587d45cb5aea42401db3b121de5b3825fbfc6d3e94bcce128729b",
+    "status": "decoded",
+    "size": 5846,
+    "sha256": "0fce480c94053d820b34e1bcc1ab5790776320d8a0df32ce6baf0e0f49bd16fc",
+    "path": "recovered/phase2/lua/game/internalaffairs/internal_affairs_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/islandarena/islandarena_controller.luac",
+    "asset": "assets/res/7/3/afc86244c849702683d7f972c128bc0c",
+    "encrypted_sha256": "41903886c2813fdb9a97c3fb605cad950611ed6e07219eeaa322a9e3a7a28561",
+    "status": "decoded",
+    "size": 23657,
+    "sha256": "b178073f324cc74bf824fe8870edbc326a0b9b6060bae3cf06e10e8c707ba526",
+    "path": "recovered/phase2/lua/game/islandarena/islandarena_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/itemheroexchange/item_hero_exchange_controller.luac",
+    "asset": "assets/res/5/a/514473272af3b6a3df5fa706e7bff543",
+    "encrypted_sha256": "800d5bb9426e4c160199c4794be22614330e189704df476743486e09f497a1db",
+    "status": "decoded",
+    "size": 3187,
+    "sha256": "a7a969bd551e5b3c55f384e6ac33ce2cb91c6ee7ae04c0f2e708525fb313f89e",
+    "path": "recovered/phase2/lua/game/itemheroexchange/item_hero_exchange_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/jewel/jewel_controller.luac",
+    "asset": "assets/res/d/1/9dbd863857f8121b9d2b0e185d19924b",
+    "encrypted_sha256": "f832c805939695c648f02ed4e24276ee724033aedf7eb7ec8c06d1a875c8dad1",
+    "status": "decoded",
+    "size": 9942,
+    "sha256": "9c62f4ec16d8c5f9135e306eb11aa4770fe8379dcdc8e78ea4cc2ca5bcf791d5",
+    "path": "recovered/phase2/lua/game/jewel/jewel_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/jialingpass/jialingpass_controller.luac",
+    "asset": "assets/res/e/f/5fd2095f9fe172c69f47d4f446d57359",
+    "encrypted_sha256": "66b841b17592e4cd70e347e65e51949f7ca9684f519ca4e18b55506316209fbc",
+    "status": "decoded",
+    "size": 9142,
+    "sha256": "991e787015a53734ca3f7f707a7f904c8e59c9ddfbc5744c9542c19215788abb",
+    "path": "recovered/phase2/lua/game/jialingpass/jialingpass_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/ladder/ladder_controller.luac",
+    "asset": "assets/res/d/1/7552c71610007b3d3f89fbae0fb820ea",
+    "encrypted_sha256": "851c597c9c5c8c5dba4c2969a1121e8487e7b8548cd139ee87625a96dbf797e5",
+    "status": "decoded",
+    "size": 15446,
+    "sha256": "a816bbfd2382eba3cf84eb66db1552643c83af5cc83c4562f3af414cca96c91e",
+    "path": "recovered/phase2/lua/game/ladder/ladder_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/ladderplus/ladderplus_controller.luac",
+    "asset": "assets/res/0/f/666e8089742e5c84936f6f6c973d40d9",
+    "encrypted_sha256": "ed32e6f82870e8ce58c2d5b19b79080e59823238bfbb5c61022fa80b39fdbcf0",
+    "status": "decoded",
+    "size": 13596,
+    "sha256": "49f078365f9c4c2c5317ab76baf104e4f9612918ef6c71883a0c3c9e641a6c4d",
+    "path": "recovered/phase2/lua/game/ladderplus/ladderplus_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/leader/leader_controller.luac",
+    "asset": "assets/res/3/1/82868a325f3a4dd1f741cb4ee1a01540",
+    "encrypted_sha256": "dfdac9f86b4034e79796e85ad46b72b179ddb084debc487a82c81430aafa0751",
+    "status": "decoded",
+    "size": 21247,
+    "sha256": "ef91bb97696c26b109e06dfd49f8b7fb6c0c8243e71695e0074eed7e6a7433fe",
+    "path": "recovered/phase2/lua/game/leader/leader_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/leaguepk/leaguepk_controller.luac",
+    "asset": "assets/res/d/4/6243e02e8f4424df61c4c78f895de807",
+    "encrypted_sha256": "b3726821c838453a07a2f57764e173acdb0678dc20d7c26660807a635b702256",
+    "status": "decoded",
+    "size": 19691,
+    "sha256": "139caa9d07a7b6ab8c75ba1e5fe76ec553fc4d39427fb99481d2f4a3c4efdb97",
+    "path": "recovered/phase2/lua/game/leaguepk/leaguepk_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/levupgrade/levupgrade_controller.luac",
+    "asset": "assets/res/2/3/73442b3abb6789101355e708237363f5",
+    "encrypted_sha256": "9db2adbdd154270f428ac713a2e07271183a0e87e1d8a16397b3add9c09a20c7",
+    "status": "decoded",
+    "size": 2763,
+    "sha256": "18191a18c1ab6bd16dd0f3da87dce2f26881d44e3280ab37bdddbcbb0826a675",
+    "path": "recovered/phase2/lua/game/levupgrade/levupgrade_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/login/login_controller.luac",
+    "asset": "assets/res/8/9/cd80ebb94064fb48b56a026a8300957a",
+    "encrypted_sha256": "9a52ae6a6e448eb68ee1bf88371fa9106a6aa3caf397e49e7e11c7683c171536",
+    "status": "decoded",
+    "size": 32582,
+    "sha256": "fb0c33d6463a54ec99ffcfac368010cb764160c1881f7e907469c761c318e412",
+    "path": "recovered/phase2/lua/game/login/login_controller.luac",
+    "head_hex": "2d2d5b5b0a202020202a20e7b1bbe6b3"
+  },
+  {
+    "logical": "game/loginactionpush/login_action_push_controller.luac",
+    "asset": "assets/res/2/0/6c2c0c8b33302db8a41e3c659003313d",
+    "encrypted_sha256": "25cdd5bdb403dc564a1e1214b9eff3f668322f3b33a5d27d291e7e03ffa0ce5e",
+    "status": "decoded",
+    "size": 2404,
+    "sha256": "5ead645d80f9b3c4addb39ba2445b70609e2cbf786b397793a4c3834ab972335",
+    "path": "recovered/phase2/lua/game/loginactionpush/login_action_push_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/look/look_controller.luac",
+    "asset": "assets/res/5/7/75de1c570bf1cb234ab57361a4522b98",
+    "encrypted_sha256": "df459aa6be16c45651fa06dae0c07bd9c2ac3ed4738f9fd7682d5570f4be09ff",
+    "status": "decoded",
+    "size": 2222,
+    "sha256": "0c7c117eab3b9cb8a407d092c2946837146e387264ee61cdba8017c9ce4d07ab",
+    "path": "recovered/phase2/lua/game/look/look_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mail/mail_controller.luac",
+    "asset": "assets/res/7/f/736afffef2e0554007f13281896223fe",
+    "encrypted_sha256": "1c8d98e6afaf1fa9c74c972cb4cd12819e685c8500a22f30c4983d79ad67d217",
+    "status": "decoded",
+    "size": 7608,
+    "sha256": "f452659083fbc64404524452a30675e08aa6a9c5766db74a1be9d1be5460e430",
+    "path": "recovered/phase2/lua/game/mail/mail_controller.luac",
+    "head_hex": "2d2d5b5b0a202020202a20e7b1bbe6b3"
+  },
+  {
+    "logical": "game/mainui/mainui_controller.luac",
+    "asset": "assets/res/1/1/20f83c6c4a91347312110290207c40bf",
+    "encrypted_sha256": "ccb54425d70fe97fee111ccea13d69b6fab26790fe7f21576b73a9d6aeb5d3b8",
+    "status": "decoded",
+    "size": 97754,
+    "sha256": "ba8151cbcbcfc89168e6217b8c57f109e996ef0ed96741e666947ae8037f22b1",
+    "path": "recovered/phase2/lua/game/mainui/mainui_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mall/mall_controller.luac",
+    "asset": "assets/res/f/f/2f9ff0f6055af2da4e36bacc89d0ceff",
+    "encrypted_sha256": "efc222b9d9c5e9a093c5cdb8f6b091d9c523a3002b966971f30f540dd3b2d683",
+    "status": "decoded",
+    "size": 17648,
+    "sha256": "c7f2442c386a153bdb718a4703398e49084ebac96a3fff1e54dd0e4b97875f30",
+    "path": "recovered/phase2/lua/game/mall/mall_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/manydraw/manydraw_controller.luac",
+    "asset": "assets/res/7/7/7da8ad6322707b97d894bfaf0a3d4073",
+    "encrypted_sha256": "c931b448d4c63f3c7ab39d74f16996297c08fdacb2cab3f55cf8d41174fd1a8a",
+    "status": "decoded",
+    "size": 2554,
+    "sha256": "e43d726bb2a5fe1264d461847533ee6dfeafef66bcd1212e00fb22079304a33b",
+    "path": "recovered/phase2/lua/game/manydraw/manydraw_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/map/scene_controller.luac",
+    "asset": "assets/res/3/5/91c7a83aa50db65e35f040dcd33a919f",
+    "encrypted_sha256": "8521fa5f7d9c795c0de11614fc91d5da53aa4ad9c7ff6225d1e82ef0537f9ca5",
+    "status": "decoded",
+    "size": 12721,
+    "sha256": "bcd9473e7477290bdab83ea67d80d334241acdb034b2061b289b2f1878f00501",
+    "path": "recovered/phase2/lua/game/map/scene_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/matchgame/matchgame_controller.luac",
+    "asset": "assets/res/f/c/476a745fa1c853fdfb6e790d768c3a60",
+    "encrypted_sha256": "a71229ffc17854f7e6dce455aadfe2bb07f596b82efd3565fad03aa0802da57a",
+    "status": "decoded",
+    "size": 391,
+    "sha256": "d3e09eaad5574c76c2732b5ddd3d84383684fdf558778ce55741084e0d1bfc96",
+    "path": "recovered/phase2/lua/game/matchgame/matchgame_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e4b889e6"
+  },
+  {
+    "logical": "game/mimicrydreamland/mimicrydreamland_controller.luac",
+    "asset": "assets/res/c/2/97167e326d4d7bf8c771a93020cad3e3",
+    "encrypted_sha256": "0b6b7538451fc5644c677b670261590a0ed155c1f7a9b8aa6fd0cec41a507703",
+    "status": "decoded",
+    "size": 10443,
+    "sha256": "a7b70e5058a241d1865d0c643f984791ae8307d86bd015f2444466e1a57ba8ee",
+    "path": "recovered/phase2/lua/game/mimicrydreamland/mimicrydreamland_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mine/mine_controller.luac",
+    "asset": "assets/res/4/7/2fec24111aaf40ca401be72f214d7117",
+    "encrypted_sha256": "b7a019a27483401044ac51a509fa8ef55ac612a5336f4ad6fbb877a612fb19c6",
+    "status": "decoded",
+    "size": 18548,
+    "sha256": "d4dbe7838055e28d6f3e816678f126ac31acbc07aa5fd5dfef44deffa9d49fea",
+    "path": "recovered/phase2/lua/game/mine/mine_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/minigames/minigames_controller.luac",
+    "asset": "assets/res/6/a/4651798cc5e225244a55ace023e3aa87",
+    "encrypted_sha256": "47f0dfc41ab48a49208b1e9fbc306ca197cfb5811f99287a2c378b0a84caf551",
+    "status": "decoded",
+    "size": 6980,
+    "sha256": "07dd82f8762184f12ce3d55820d5ece580d63751b6971c2194bb092854d03e70",
+    "path": "recovered/phase2/lua/game/minigames/minigames_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/moneyboss/moneyboss_controller.luac",
+    "asset": "assets/res/e/b/fdf8c1f15941f3fce1809b76d5ce6be0",
+    "encrypted_sha256": "835a71d55890e560a06cb844f12ba16c0ef447de0260e4a7288e8115c233db9b",
+    "status": "decoded",
+    "size": 5381,
+    "sha256": "037b4b7b318b7c11d2bfbae42072ad936faa4d9a3187903333906357da36ac11",
+    "path": "recovered/phase2/lua/game/moneyboss/moneyboss_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mooncake/mooncake_controller.luac",
+    "asset": "assets/res/6/e/912d167e5eac9e6e54888e1c9e326cd6",
+    "encrypted_sha256": "d32adf3af40b07e4979c3f095de4363b3c0ded3e4c8d8b5347053360b22e076c",
+    "status": "decoded",
+    "size": 3296,
+    "sha256": "9c750205cd7eee884da88125fa6f5de34fdd17e3f5e8a7e117bec543f4f301a8",
+    "path": "recovered/phase2/lua/game/mooncake/mooncake_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/newarena/newarena_controller.luac",
+    "asset": "assets/res/7/2/f6772d37e122109a20cd87fa6f15ef49",
+    "encrypted_sha256": "8bbd83a95bc987f7cbd97c2c1c935bc30fa0f92a0a48213eaa8427a069902efd",
+    "status": "decoded",
+    "size": 3738,
+    "sha256": "0697bed137637fa9c89c201261a074cf3b01118195db6d99941ad3cb5d1642ff",
+    "path": "recovered/phase2/lua/game/newarena/newarena_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/newfirstcharge/newfirstcharge_controller.luac",
+    "asset": "assets/res/3/3/3fb3b8acd810d334afc33c98f25034a0",
+    "encrypted_sha256": "7fe57c94eb3c6557d93fae3f5069d0779841eb1c6c105169e82dba4c3b4289bb",
+    "status": "decoded",
+    "size": 10730,
+    "sha256": "972b4ac899fe2357142894ac986698d5db6b8161e8be6089d0b6fd99d701864b",
+    "path": "recovered/phase2/lua/game/newfirstcharge/newfirstcharge_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/noble/noble_controller.luac",
+    "asset": "assets/res/2/9/189c21e6a16aecc89480017b135bd7a0",
+    "encrypted_sha256": "ca7865aab83c81644995ee35a1a55e209b3385a4330a001e03717bc18ab99e36",
+    "status": "decoded",
+    "size": 4061,
+    "sha256": "19740e6fbd9b0865ce207b63f21f49277c4ef01f0ee0c7666aa5b4df4381556c",
+    "path": "recovered/phase2/lua/game/noble/noble_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/notice/notice_controller.luac",
+    "asset": "assets/res/b/9/35622f910054675c3cb14b6d7c9dd37c",
+    "encrypted_sha256": "52d4e845b6cef5dc745d82589f399d31119b6cba581f797942ff065a584a1ddc",
+    "status": "decoded",
+    "size": 5133,
+    "sha256": "9600f52ef8f895c1efc843e6a7f720dd86fc55637372e8dea5d2b04a4c0c4fc3",
+    "path": "recovered/phase2/lua/game/notice/notice_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/noticeaction/noticeaction_controller.luac",
+    "asset": "assets/res/0/0/2d2c369ae2c0cff51bf660eb9e45ef06",
+    "encrypted_sha256": "c7fa8193a793876d84a79601e47078b25b4f6b325476da6431bc0e3b06f92965",
+    "status": "decoded",
+    "size": 4323,
+    "sha256": "29701166426494223e06832a2d498eecc75ff43e07d89c32f57e208795e9c3db",
+    "path": "recovered/phase2/lua/game/noticeaction/noticeaction_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/onlinegift/onlinegift_controller.luac",
+    "asset": "assets/res/9/4/a742e7fca1cf50427be26b59b57f6285",
+    "encrypted_sha256": "ff380d663e749e61d15eeffbe2b6df975453e108b01ac82dca80975155f00e49",
+    "status": "decoded",
+    "size": 2975,
+    "sha256": "39d018289c15605485d47811f50b96acdc71d44e283699ae3e595950299ec24f",
+    "path": "recovered/phase2/lua/game/onlinegift/onlinegift_controller.luac",
+    "head_hex": "4f6e6c696e6547696674436f6e74726f"
+  },
+  {
+    "logical": "game/orderaction/orderaction_controller.luac",
+    "asset": "assets/res/c/d/38ad1b3ce121bb3a44f4bfd2778c2d37",
+    "encrypted_sha256": "0aaa534b03b23c9192f341ca920ef0c0f821f9c5c4f0240b8de3565e6afc7790",
+    "status": "decoded",
+    "size": 8572,
+    "sha256": "500897a9dead1ad21129f301657388e7274be71b4bf27afb26b89392c630bb41",
+    "path": "recovered/phase2/lua/game/orderaction/orderaction_controller.luac",
+    "head_hex": "2d2d2a2a2a2a2a2a2a2a20e69687e4bb"
+  },
+  {
+    "logical": "game/peakvs/peakvs_controller.luac",
+    "asset": "assets/res/2/0/f06f6f24e41f9b0d845f16c8902b02ab",
+    "encrypted_sha256": "780638279d8b4b6818bc76aa0c1dc1f0ab288050024b32c5472db623a6355043",
+    "status": "decoded",
+    "size": 18505,
+    "sha256": "43c9cd1f1dd4a0fdd8d7a1f44d99e5dec3732b5580895e6620f2d8121afe3000",
+    "path": "recovered/phase2/lua/game/peakvs/peakvs_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/personalspace/personalspace_controller.luac",
+    "asset": "assets/res/5/3/df6a9e396a0131e36d3eb55f311346c2",
+    "encrypted_sha256": "00c597b0c2cc49bfdf90b974d7960bf098b13fb3db56ae23baa0614c0066e3ca",
+    "status": "decoded",
+    "size": 31655,
+    "sha256": "8bfdd17bb278db6f026e3ae38e121dc9754e87dc8e39aa94b0ade71715d3c231",
+    "path": "recovered/phase2/lua/game/personalspace/personalspace_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/pinkdiamonds/pinkdiamonds_controller.luac",
+    "asset": "assets/res/1/f/67c5203f5510f438f1ffe581b140e528",
+    "encrypted_sha256": "829cb63ef96b8b37d92aae81387e66ebadba992aff6df5dd464ca818286d81cf",
+    "status": "decoded",
+    "size": 2067,
+    "sha256": "5855a8f651a038191365ea7360f42f41b87c11e194b01a4fe9ce0fb324847416",
+    "path": "recovered/phase2/lua/game/pinkdiamonds/pinkdiamonds_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/planes/planes_controller.luac",
+    "asset": "assets/res/6/e/faf2609599928dc54639cf313fe9f5fa",
+    "encrypted_sha256": "fb52845a88b42a3be1d550b6d38034163bb659e0cd3feb6a4a30aa464e8568b4",
+    "status": "decoded",
+    "size": 30152,
+    "sha256": "f75a40c5c9cff9374f1d4fc45a6064d99f88900c43b7b5561df484b80fd38dc8",
+    "path": "recovered/phase2/lua/game/planes/planes_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/platforminterface/platform_interface_controller.luac",
+    "asset": "assets/res/5/3/03a0b52b7d40bd026d245681cbff6aeb",
+    "encrypted_sha256": "f6d9f8fb65571ea11582925d5c0e0d5a87c3f598e2ff39e61ea94e955379bea2",
+    "status": "decoded",
+    "size": 7258,
+    "sha256": "6c2ef7a2ebb3cb76de2cd7b00f60ef1f098a88f7b083056b594f57fbe81db84c",
+    "path": "recovered/phase2/lua/game/platforminterface/platform_interface_controller.luac",
+    "head_hex": "0a2d2d202d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/playerreturn/playerreturn_controller.luac",
+    "asset": "assets/res/8/2/f42d67bc4c6249d24b6e8592c83ed4ba",
+    "encrypted_sha256": "0f778c69a388ffb87dcc452a98e8f5a2e203b00f90de2b860995e03876cc2524",
+    "status": "decoded",
+    "size": 9814,
+    "sha256": "fd77c7439be4e2e7544469fb7c8cafa0d5df262c006932a66d16653845a7937e",
+    "path": "recovered/phase2/lua/game/playerreturn/playerreturn_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/pokergame/pokergame_controller.luac",
+    "asset": "assets/res/c/f/ae391aeccd8bb678b97ab3f02c438176",
+    "encrypted_sha256": "cb41d7c447fd7f2127cbb391a9c6f091b5c431560f41f0e6e234942eb1d97e64",
+    "status": "decoded",
+    "size": 9127,
+    "sha256": "8a2dbea4e3a706ac95e5736952a6cd744f27c59a608aecfa3162c544aa46b1eb",
+    "path": "recovered/phase2/lua/game/pokergame/pokergame_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e5b08fe4"
+  },
+  {
+    "logical": "game/poseidontrail/poseidontrail_controller.luac",
+    "asset": "assets/res/2/e/4402548242e4ff60aa41a42674c0a699",
+    "encrypted_sha256": "0e79eda732945325c8ed1ca743e8e661c67f171f0f4cfdbd0b22e1190c9eb340",
+    "status": "decoded",
+    "size": 42559,
+    "sha256": "8e24f0cc7a13a38350c91af0b7b5cfcff0ca0f8c22b4c4d45945b82dfca8df7c",
+    "path": "recovered/phase2/lua/game/poseidontrail/poseidontrail_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/preregister/pre_register_controller.luac",
+    "asset": "assets/res/b/e/84d25ebea6f29ea8a648f092b31ff95f",
+    "encrypted_sha256": "d13af243f60bc0690f927151bd9035c3ab9439905748942d2bd945b2499e9b0a",
+    "status": "decoded",
+    "size": 24872,
+    "sha256": "921a9e6d960994ef011dd0b08aec061bffca6594542813faada1b6bea038f5f1",
+    "path": "recovered/phase2/lua/game/preregister/pre_register_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/primus/primus_controller.luac",
+    "asset": "assets/res/9/4/8c4a941d53968dd7976655c4a0970644",
+    "encrypted_sha256": "d63379e948842c3fd89b0763629562268f9afd8332dea0e4df55c1a8104b1206",
+    "status": "decoded",
+    "size": 6752,
+    "sha256": "e66342407229acde8399ac147b9558caad1e4da25b45a99903c77bc6558d0dc3",
+    "path": "recovered/phase2/lua/game/primus/primus_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/profiler/profiler_controller.luac",
+    "asset": "assets/res/b/4/4f1bee7138ab649b52214aae0f6b254a",
+    "encrypted_sha256": "4f45b7ae27e802180dead51c77d40d8983c3fb05e1165339f52eb1c0ddc95c39",
+    "status": "decoded",
+    "size": 2574,
+    "sha256": "63dd6ae1bf8b7f65e37c4c97792f4be08c83737dca0b2e7acd4430327975a310",
+    "path": "recovered/phase2/lua/game/profiler/profiler_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/prompt/prompt_controller.luac",
+    "asset": "assets/res/9/1/b041918ada5397774f94cda7a2281d1e",
+    "encrypted_sha256": "6a00f67ebf288842d905d63ce7f8e09aa47480239d1db52c476aa13e583fa600",
+    "status": "decoded",
+    "size": 5879,
+    "sha256": "c85ebe9fe6e00b837c94708cd886dd60574d95612651c375252b8ff76c2ab82c",
+    "path": "recovered/phase2/lua/game/prompt/prompt_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/qixipuzzle/qixipuzzle_controller.luac",
+    "asset": "assets/res/1/a/93ceae01860a1d059f2b08217c988272",
+    "encrypted_sha256": "28d36dfee0ce5bbc2b11f7af83f58cd2015770c94e0afc7a672f2bcd33695bf7",
+    "status": "decoded",
+    "size": 4173,
+    "sha256": "a45cc64d209fc6b5f7ade5b6d127154f8557439f34772ec8bd956ffb927cfd90",
+    "path": "recovered/phase2/lua/game/qixipuzzle/qixipuzzle_controller.luac",
+    "head_hex": "0a5169786950757a7a6c65436f6e7472"
+  },
+  {
+    "logical": "game/rank/rank_controller.luac",
+    "asset": "assets/res/3/4/2afe359ad440b9a43143eb05bcd369a2",
+    "encrypted_sha256": "73450f66f71bcf60b24555331538c22d738ec5ef8036e0e0a064f3a3cf2dac6b",
+    "status": "decoded",
+    "size": 17170,
+    "sha256": "6bde522b844b4f5ce71a32801ceff76c899ec25867272d5cfd6be02738cb024f",
+    "path": "recovered/phase2/lua/game/rank/rank_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/redbag/redbag_controller.luac",
+    "asset": "assets/res/8/c/7cb3140b8f385283cc60edd8d9ef51cd",
+    "encrypted_sha256": "7d98e8de291e534bd88423be4cd5d480bd6e0b6489bb1edc65109d820dde7ae9",
+    "status": "decoded",
+    "size": 10495,
+    "sha256": "931e645479a4fd13a04b5182b5674e24b89cddb54ff59a908926358a11c41565",
+    "path": "recovered/phase2/lua/game/redbag/redbag_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/redenvelope/redenvelope_controller.luac",
+    "asset": "assets/res/c/8/da08f4db58df83c53cfcc5212bb6dbb1",
+    "encrypted_sha256": "a45a9a928d2c968c5e778a0718d193122ff3cb823a50380ca2cfcadf9aa1d482",
+    "status": "decoded",
+    "size": 5949,
+    "sha256": "56741176ceaa26e53ddbf5b080057019fc9968532defba8fd42f1a29c0643544",
+    "path": "recovered/phase2/lua/game/redenvelope/redenvelope_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/relics/relics_controller.luac",
+    "asset": "assets/res/2/2/3d8a0692917b8a9a0486d323e73a226a",
+    "encrypted_sha256": "da47e5d096968aec048e0d1d5bab6aff3dc153748dd76239c0ea587589a0e20c",
+    "status": "decoded",
+    "size": 9907,
+    "sha256": "aff001f6e2b431231e1663da079dcbeb5723e21c18974710b4acda24c7a39618",
+    "path": "recovered/phase2/lua/game/relics/relics_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/resonate/resonate_controller.luac",
+    "asset": "assets/res/1/1/81a1e1dc04ac1f881d76e5301c546840",
+    "encrypted_sha256": "3ea05f92330796d670695938eaf43b24759c6a2e698d2bf70db9b327371d62dd",
+    "status": "decoded",
+    "size": 23965,
+    "sha256": "f90ff63583770e2f11c5b552d006da063d8f58de8f3f84bde52d98fd0d634e09",
+    "path": "recovered/phase2/lua/game/resonate/resonate_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/richman/richman_controller.luac",
+    "asset": "assets/res/3/5/ecdf79857cd89f7df7625f6bf6353394",
+    "encrypted_sha256": "1a5725e398ef4c5ebfa588d56f6d013b08b9a4bd5752487ddecb273b2795ad56",
+    "status": "decoded",
+    "size": 17092,
+    "sha256": "a987953cdf9fa5c0a22855706ca8415cf7cbfc57a6a11539fe35c8a8a1120e6a",
+    "path": "recovered/phase2/lua/game/richman/richman_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/richman/richman_out_controller.luac",
+    "asset": "assets/res/2/9/2f1aa29f73f93bc659d8c1b32b27a3b9",
+    "encrypted_sha256": "6a9e9cac79771aa91f0caab9ae0a537fb8aa7e4b1875763ca0984cd1e2d2a9d9",
+    "status": "decoded",
+    "size": 4724,
+    "sha256": "5155bb343db3d75c911932971a49c7e4ca8164bca4ca96adbe6d6409c4cbe52d",
+    "path": "recovered/phase2/lua/game/richman/richman_out_controller.luac",
+    "head_hex": "2d2d5b5b0940646573633a20e5a4a7e5"
+  },
+  {
+    "logical": "game/role/role_controller.luac",
+    "asset": "assets/res/1/2/e636a6787126206ea41dd61aab59bfb7",
+    "encrypted_sha256": "615a04750155bea050b07c39340e448d38612d8cdc85e356c3b5f0d802a4e3db",
+    "status": "decoded",
+    "size": 51493,
+    "sha256": "006e8b561bbab8b4658adecf9625d1dc28532a2c53bc53cb4a1a912c186e12ae",
+    "path": "recovered/phase2/lua/game/role/role_controller.luac",
+    "head_hex": "2d2d5b5b0a202020202a20e7b1bbe6b3"
+  },
+  {
+    "logical": "game/role/role_red_controller.luac",
+    "asset": "assets/res/7/1/e4fe1487751d0e282a5370f7a6e5f866",
+    "encrypted_sha256": "35a5352e0afb01f39584c4d07bc173cfd6b29f15956498eb964ca1701f767ec3",
+    "status": "decoded",
+    "size": 1873,
+    "sha256": "f8a40d358232f8d8ad1261798aa1eaabd39539e5aa3ab904477cd540c9a54849",
+    "path": "recovered/phase2/lua/game/role/role_red_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/rolescene/rolescene_controller.luac",
+    "asset": "assets/res/9/1/b113549caf0b22b1023a873da552088d",
+    "encrypted_sha256": "46d43e4473c71f58bfa58762327d17dd1856738bb98c63cf44bd71f42a557ecc",
+    "status": "decoded",
+    "size": 9260,
+    "sha256": "a58c5d2ff9b12919f7370e352b837a208b0a3e381b527b84ce9c6797fe37429d",
+    "path": "recovered/phase2/lua/game/rolescene/rolescene_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/scene/main_scene_controller.luac",
+    "asset": "assets/res/b/4/b023b28d46bc901a0e72d4494b7b1d2e",
+    "encrypted_sha256": "5c5309d8da0407cc53cf41dc0e4b4969eedcff1bcac0dd331c83b84e6b622cae",
+    "status": "decoded",
+    "size": 34878,
+    "sha256": "109b8695f63d8e4000d9c397c62a50ae39900cb2cfc1272bd9c6eeb1604fe324",
+    "path": "recovered/phase2/lua/game/scene/main_scene_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/seagodaction/seagodaction_controller.luac",
+    "asset": "assets/res/4/b/ed2dc7b3d47a1f734434fb93292bbf94",
+    "encrypted_sha256": "760d742975485eb396b1f1c75701af080f545a4ddea4261788ae61f04e783a19",
+    "status": "decoded",
+    "size": 3505,
+    "sha256": "6f65586473407b1ddb5c906b861ad0e45ee9aae9f867e580ac256c5e22ce9b63",
+    "path": "recovered/phase2/lua/game/seagodaction/seagodaction_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/secretzone/secretzone_controller.luac",
+    "asset": "assets/res/f/8/bd1627e32af15087d3063346e241c131",
+    "encrypted_sha256": "fe0a09cb8c54080732db2acc16dd30b28c5859af36d4ac5eadcd97aa42e5dee9",
+    "status": "decoded",
+    "size": 14779,
+    "sha256": "df16049d141ff39aecdcac584e67fe504cb2c171d126d2a80592a91f00450c69",
+    "path": "recovered/phase2/lua/game/secretzone/secretzone_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/sevengoal/action_seven_goal_controller.luac",
+    "asset": "assets/res/d/e/70f98ee2f24d8aef716ae00e6ee84fa8",
+    "encrypted_sha256": "8a08e4dbef5322c1e0aa4215970a2491c1c2d10915451dcbe3ba23ef04fa16a8",
+    "status": "decoded",
+    "size": 3766,
+    "sha256": "5928778238693555483f86bcdd713412823b9a84bd78b4f414b7814eceac8fea",
+    "path": "recovered/phase2/lua/game/sevengoal/action_seven_goal_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/shrekschool/shrekschool_controller.luac",
+    "asset": "assets/res/0/8/6b7b80028d114b4bc1cac89c193ed935",
+    "encrypted_sha256": "b8ab3e298742b33e15cd92892fcb185baf2991c6f79328d7fcd8f9b931b98e55",
+    "status": "decoded",
+    "size": 15965,
+    "sha256": "b82126502148712e82dd35ed6181b0b0114b81177c467b32f5c1271b9249b74a",
+    "path": "recovered/phase2/lua/game/shrekschool/shrekschool_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/snowy/snowy_controller.luac",
+    "asset": "assets/res/2/9/ca74749f9c808e390245439123163426",
+    "encrypted_sha256": "28382e328e25272702dabac4c7f48e09503d6e1da6eafe7f0a887cc084ef8419",
+    "status": "decoded",
+    "size": 28463,
+    "sha256": "93567c597b8c819e263e2f8ff001303f5708b90c2cc4ecf657c5c3c385fb4177",
+    "path": "recovered/phase2/lua/game/snowy/snowy_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/snowy/snowypve_controller.luac",
+    "asset": "assets/res/1/2/679311ff4992ee7ca1b9d182732f33c1",
+    "encrypted_sha256": "9adc1eb7b435e0d155c863cfd68dab554cd42d30268e46d15f47464d513a3981",
+    "status": "decoded",
+    "size": 9521,
+    "sha256": "9d3ef91f3e0b8ddbcda2cd6fab1cdaa6718c624978800739b1e92d6327746520",
+    "path": "recovered/phase2/lua/game/snowy/snowypve_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/snowy/snowypvp_controller.luac",
+    "asset": "assets/res/c/8/04c38688b0a728f8df6ad237e2af7926",
+    "encrypted_sha256": "8b26ed1b437b4d4e2cbb790aca3ec7c15de696ee2e924ea2bbb71d74593d5bc3",
+    "status": "decoded",
+    "size": 13859,
+    "sha256": "a4054ed1b7cef6d2932c55b79aa20edf0b746f019990a6819dba12d21040915f",
+    "path": "recovered/phase2/lua/game/snowy/snowypvp_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/soul/soul_controller.luac",
+    "asset": "assets/res/2/2/897521b7bc5dd044f33d35254bb2633b",
+    "encrypted_sha256": "8b53720dce67fe3d0891697be9eb9b6f68e2c5f913865c0f432c4312f899712b",
+    "status": "decoded",
+    "size": 57059,
+    "sha256": "785699a57b97f046b051713b90239738a183895588ba92d83d7973438a770637",
+    "path": "recovered/phase2/lua/game/soul/soul_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/soulbeast/soulbeast_controller.luac",
+    "asset": "assets/res/c/c/443bdcff59acaca5b1ed341679403462",
+    "encrypted_sha256": "824ef8fa94c271924d82f8a7a92e5cc2ce7ccc6c5708774702ad6706290524e1",
+    "status": "decoded",
+    "size": 26274,
+    "sha256": "9b879dc11c63f2e9376742f8584dd4b66438dbf1c2ef72720df36e845f0a0e2a",
+    "path": "recovered/phase2/lua/game/soulbeast/soulbeast_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/soulbeastdraw/soulbeastdraw_controller.luac",
+    "asset": "assets/res/7/8/e74d32ff1b6557d82431ba941cdedb8e",
+    "encrypted_sha256": "5b412c4a7755de336880480fcee30eb3c75a8ead39fe03db9c73317ebf9398b3",
+    "status": "decoded",
+    "size": 2555,
+    "sha256": "624359828977ffa75587e4b36b71eb7b2b97cf9ecc7fc39fe9abaf985ed9728c",
+    "path": "recovered/phase2/lua/game/soulbeastdraw/soulbeastdraw_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/soulbody/soulbody_controller.luac",
+    "asset": "assets/res/d/d/47f6ed6e95d68e6d52897091d39f6b95",
+    "encrypted_sha256": "5d7aaa15a866bccfb2a9f858e5b7449da1ef97a7f8e610c7dac8f612bdba8fdb",
+    "status": "decoded",
+    "size": 11813,
+    "sha256": "670279ccd2cbe3c41864bc4fe450207f63f28df90f1f55769db22ec043cbfbdc",
+    "path": "recovered/phase2/lua/game/soulbody/soulbody_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/soulguider/soulguider_controller.luac",
+    "asset": "assets/res/e/9/d8e9c338be97f521d3789cd9719a6d2b",
+    "encrypted_sha256": "28d076f076753550774b91a0c80ef3f6c58c6fe469a486304b4ccd734bdcc7d7",
+    "status": "decoded",
+    "size": 12236,
+    "sha256": "4f4625d058947ecaa894e87f169d7d4f37cb7b58d44a24fc5012377b71d09a19",
+    "path": "recovered/phase2/lua/game/soulguider/soulguider_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/soulguidersp/soulguidersp_controller.luac",
+    "asset": "assets/res/6/2/da722d5e1cd6fa22343e54cbc2c37f97",
+    "encrypted_sha256": "63be52d29091481ce646d603a87eb7bfe31b51883354ab4733addc5e182467a9",
+    "status": "decoded",
+    "size": 17028,
+    "sha256": "b24cefc34524022f0ad96177cec390b61f20db063bab9ab1672bc5ffae52b1f4",
+    "path": "recovered/phase2/lua/game/soulguidersp/soulguidersp_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/sparkleforest/sparkleforest_controller.luac",
+    "asset": "assets/res/5/5/33ab2a56d0c52feb6629b5864080d581",
+    "encrypted_sha256": "156ab16eac76d7de1174340521b460caffeb40b602e7e506aaff0c451765f91d",
+    "status": "decoded",
+    "size": 17939,
+    "sha256": "7dae41efda0df4282e2482cf544d51e3c4b57769b42884ff13f791b892dbc776",
+    "path": "recovered/phase2/lua/game/sparkleforest/sparkleforest_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/spiritpalace/spiritpalace_controller.luac",
+    "asset": "assets/res/0/d/5c37877d32a414236b650d641682ad96",
+    "encrypted_sha256": "383e2eead1674c7a69b4176f2e5e3c3f91fb6141bc57bcdb37920b9b6291b5d2",
+    "status": "decoded",
+    "size": 6079,
+    "sha256": "bdc735c1f0f7083a1796a95711025f1831fb2a68d1c97162425eddffa7c3551a",
+    "path": "recovered/phase2/lua/game/spiritpalace/spiritpalace_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/statistic/statistic_controller.luac",
+    "asset": "assets/res/7/c/939f07eec819bfae35b505df984432d9",
+    "encrypted_sha256": "bdf211df39fb356cc84fd90fdf3ef1c78e416e8a3e7d9c82887e299e0e375477",
+    "status": "decoded",
+    "size": 4650,
+    "sha256": "22662d42b08042c2394afaf04e007e08db9440384e4ff2cbc807ac08f74b2cfb",
+    "path": "recovered/phase2/lua/game/statistic/statistic_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/story/story_controller.luac",
+    "asset": "assets/res/b/3/0608aea14bfb58984348f2b1bbef66bd",
+    "encrypted_sha256": "d01d13a43562e660115f3cfdaae3e48d30475a01e2c71a7d334b679fc008e981",
+    "status": "decoded",
+    "size": 14096,
+    "sha256": "517698632bfce4af8bbc2820c40b21350bbed2ea10f3a433e5dceb0dd480a32a",
+    "path": "recovered/phase2/lua/game/story/story_controller.luac",
+    "head_hex": "2d2d5b5b0d0a202020202a20e7b1bbe6"
+  },
+  {
+    "logical": "game/strangetalk/strange_talk_controller.luac",
+    "asset": "assets/res/1/a/7aa8316a80321d97d33967b766ce9381",
+    "encrypted_sha256": "c1bcae64ed8d4ee1d91549996afa2631f6d677731f2a9531a992c14ff24683d8",
+    "status": "decoded",
+    "size": 6660,
+    "sha256": "c091210916d702a83e72d8d31cbf2776960a02647d27c7d1b74e5de46f002655",
+    "path": "recovered/phase2/lua/game/strangetalk/strange_talk_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/stronger/stronger_controller.luac",
+    "asset": "assets/res/2/7/ee8a7d45cb7a620c42767d60b8432dee",
+    "encrypted_sha256": "eb653099cf4750c7261622528aaad7e4be34e65f23f7042833cbda74dafa3540",
+    "status": "decoded",
+    "size": 6919,
+    "sha256": "e1e3402a006cb0cae41e60f53320a5c0ef0931e5b2d85f8122561947d6c5f8a6",
+    "path": "recovered/phase2/lua/game/stronger/stronger_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/sudokuaction/sudokuaction_controller.luac",
+    "asset": "assets/res/6/f/886ac1743c34dff887f652d9128ab67f",
+    "encrypted_sha256": "7dc43d31e5351a00a699e1756dd19be388d2390113b9d1fca116a6de2c24d40e",
+    "status": "decoded",
+    "size": 4246,
+    "sha256": "aa1c5a08778deb113bc90370f103b5cacbd5f08eb9ae368b1aa336ab8f9105e2",
+    "path": "recovered/phase2/lua/game/sudokuaction/sudokuaction_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/suitshop/suitshop_controller.luac",
+    "asset": "assets/res/b/3/3b34ca404bcb11d3d560b211babc5d22",
+    "encrypted_sha256": "41383f5158e22278a783a12b7a1a887358c2d107eee26f7708eb20f36743109c",
+    "status": "decoded",
+    "size": 1376,
+    "sha256": "76d823d1ae3f2e5f20d0369a80f2f02629971e107f6f7c6e643ce2cdaa0724d9",
+    "path": "recovered/phase2/lua/game/suitshop/suitshop_controller.luac",
+    "head_hex": "2d2d2a2a2a2a2a2a2a2a20e69687e4bb"
+  },
+  {
+    "logical": "game/tangsanboss/tangsanboss_controller.luac",
+    "asset": "assets/res/8/a/cbfc84e78c1b0ef36505c96da4d2a09b",
+    "encrypted_sha256": "453d5fc00e358149cb2f1c8e5bdf7f3a47fe59589fe95e1875a08562b8b2efd8",
+    "status": "decoded",
+    "size": 6492,
+    "sha256": "3212154d283ce8f83515d3fde6594a9051278f6626dcb7d9cd0feb7e67df1f7a",
+    "path": "recovered/phase2/lua/game/tangsanboss/tangsanboss_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/task/task_controller.luac",
+    "asset": "assets/res/3/c/6c93d7536bbeb33eca03c87ff08c242d",
+    "encrypted_sha256": "6598fe61ab3a5ce1a11014f0c1958c395336d7825be598f70e7c0ed736f33a18",
+    "status": "decoded",
+    "size": 16408,
+    "sha256": "c3675c891dedc2775f20a3120029e4f68fa4fdedd58efd4bc112a08256a3223d",
+    "path": "recovered/phase2/lua/game/task/task_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/teampvp/teampvp_controller.luac",
+    "asset": "assets/res/8/0/056c0f8b0313293bdb38597008680758",
+    "encrypted_sha256": "91ba565d18c52e6d78254c49541b4156a60191bfe99a782c988275e135b450a7",
+    "status": "decoded",
+    "size": 24546,
+    "sha256": "536c31c04b4cf1ce0d07466d3c3210feaf76812b7f351f3ab6ca9dfcf5a47363",
+    "path": "recovered/phase2/lua/game/teampvp/teampvp_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/timedoor/timedoor_controller.luac",
+    "asset": "assets/res/b/e/c1243b5d329074ec3dbe5bd42af36804",
+    "encrypted_sha256": "6070e71b10e16c8e6a16ff02afab90e87adf7c3bec38c914e5b1dbdddcdb9c0f",
+    "status": "decoded",
+    "size": 16218,
+    "sha256": "8c862b6eea4aff7e898cd86273d002dc4253025e3df5479c227732a8a07ee532",
+    "path": "recovered/phase2/lua/game/timedoor/timedoor_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/timesummon/timesummon_controller.luac",
+    "asset": "assets/res/b/8/3d051fa79f90b165cbebe1ed828e43be",
+    "encrypted_sha256": "4297794f5562d3e595f981693473cc5a70978510d32b27ae76fdf191ddaf7699",
+    "status": "decoded",
+    "size": 11005,
+    "sha256": "9e7d57a45b80bebd6571cbcbf8b3cd6ddf60599558c3a463e4f2c35fb3decca0",
+    "path": "recovered/phase2/lua/game/timesummon/timesummon_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/tips/tips_controller.luac",
+    "asset": "assets/res/a/e/9e091bdc10a965e1b841d2a62ebcfa75",
+    "encrypted_sha256": "ef7af85552b02562c0f23714a77fe489bfd6dddf2eedce80b586171ce189ded8",
+    "status": "decoded",
+    "size": 6075,
+    "sha256": "ed5b9f18b0d67dcf03db8eef9933eba192750ecc39717991b8d3d853ef82d8d7",
+    "path": "recovered/phase2/lua/game/tips/tips_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/twogodsbattle/two_gods_battle_controller.luac",
+    "asset": "assets/res/0/d/7d936e939a48d0f622accf90c8291c37",
+    "encrypted_sha256": "86ab9adeb1eef609bb5697c960c1c6a82bd189b9a483e5724e965814b0aa69ab",
+    "status": "decoded",
+    "size": 44580,
+    "sha256": "e1000ef029e5c5c01ff1589a842d5ce714eb135daabea2c01a1cef5e04aa6083",
+    "path": "recovered/phase2/lua/game/twogodsbattle/two_gods_battle_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/twogodsbattle/two_gods_pve_controller.luac",
+    "asset": "assets/res/f/4/9f61f333cff4646f03e47f666d489af8",
+    "encrypted_sha256": "f49405d6e0317c0e007759672c0d476447e5499adcb9ec39382bece3f978c34e",
+    "status": "decoded",
+    "size": 17453,
+    "sha256": "44303bd3a66791e4d289a34554bc59393b3dae75827a2ef4547f2b1db326ad1e",
+    "path": "recovered/phase2/lua/game/twogodsbattle/two_gods_pve_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/unionwar/unionwar_controller.luac",
+    "asset": "assets/res/4/3/38c284ea8a59ebeb6c3d4fe5c6ac768e",
+    "encrypted_sha256": "3b6c9d5e99b8e5ab5214123dfef23b7589aebb0cd386b16987db922a066f287a",
+    "status": "decoded",
+    "size": 11620,
+    "sha256": "4d52ac23acb4fceb2708ba01422b8eefc0907945c3f59b3c2e0987a8b49f0d67",
+    "path": "recovered/phase2/lua/game/unionwar/unionwar_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/vedio/vedio_controller.luac",
+    "asset": "assets/res/0/8/563b0a998e1a0f5cabdd1054bae0ea8c",
+    "encrypted_sha256": "b7603ef48938407c816e7a71bc4d4c36c5c9438c468c83086b1553678852ba80",
+    "status": "decoded",
+    "size": 10087,
+    "sha256": "21e7652832bc1aab146d5a3d7dfacba8906acf2781ce9d04fef3ad1922a5c8c4",
+    "path": "recovered/phase2/lua/game/vedio/vedio_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/vip/vip_controller.luac",
+    "asset": "assets/res/8/a/49aabd61311281f8a21f127ba7294d38",
+    "encrypted_sha256": "91ddbaec47b27834406e58b78f161644023034662e9e9e8fae560f468cd078a7",
+    "status": "decoded",
+    "size": 18795,
+    "sha256": "bbc3b9b0322c69acfbfa9c4b978c1075cd2c91f5a638597a4808c41f4b1a89e3",
+    "path": "recovered/phase2/lua/game/vip/vip_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/voyage/voyage_controller.luac",
+    "asset": "assets/res/1/0/7742129413f9a5e38cf0e045c6f12af0",
+    "encrypted_sha256": "1136c10bb9d2bae7d91944d54dc918458f132f3d042d2ba028281da26aad5ffb",
+    "status": "decoded",
+    "size": 7473,
+    "sha256": "ca02acdb1f2aeb6eb09c43d25c058468ca03a27b3e1dfb6a7ce635cd6dbea76e",
+    "path": "recovered/phase2/lua/game/voyage/voyage_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/wallbulletin/wallbulletin_controller.luac",
+    "asset": "assets/res/6/f/f376eca6d8684fe6cd705771c39d47a8",
+    "encrypted_sha256": "110ba284f1c361eb6fcf69d7e900e53e8fee4e8a47005b0d14083daca51efca3",
+    "status": "decoded",
+    "size": 3644,
+    "sha256": "a25fc632a08ffc86d07ae338cc1cc253b252e811d6d8148d322e27d0de88ea56",
+    "path": "recovered/phase2/lua/game/wallbulletin/wallbulletin_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/warorder/warorder_controller.luac",
+    "asset": "assets/res/0/a/fe5fcfcf1ea21d5e97a327691f0f39cb",
+    "encrypted_sha256": "73909525138b4f411bfb297eed6de2a8f2331e680f4cd2c370db07da753792bf",
+    "status": "decoded",
+    "size": 8943,
+    "sha256": "0d0b4865d9ed29b839d96e7f84e09b2b62f1e7948f72f6ba7626a8cd9bdb540b",
+    "path": "recovered/phase2/lua/game/warorder/warorder_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/waste_area/waste_area_controller.luac",
+    "asset": "assets/res/8/8/8d19b41bf18585a54b6115c48dcc8f49",
+    "encrypted_sha256": "fe2e98ef9eb4efa407edc55fef40c02d3ce5f97937c3d19a3feb45e04ab682b4",
+    "status": "decoded",
+    "size": 28941,
+    "sha256": "be1d4cf52715f60c755c59a140db7b0923b78ac13ab956aab4ae7c5f796f4df2",
+    "path": "recovered/phase2/lua/game/waste_area/waste_area_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/wholeboss/wholeboss_controller.luac",
+    "asset": "assets/res/6/2/b6d3d7f06155ab8e385b242557145a9a",
+    "encrypted_sha256": "fa7f6d8127acd1269e0f441840a53e7bd08dbbf83d0ff333614226b2c602ab13",
+    "status": "decoded",
+    "size": 13289,
+    "sha256": "1f39cb50032e52d15888e1d5313d3efd7552eec44a200de06ed912235aa9e6a1",
+    "path": "recovered/phase2/lua/game/wholeboss/wholeboss_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/wrestling/wrestling_controller.luac",
+    "asset": "assets/res/7/5/7fb57d8f988a045c0efc582e115748f8",
+    "encrypted_sha256": "84fae393053b8f40e75eb9e097c7c644b7aa38cc056ffc112a4639d22d15a96d",
+    "status": "decoded",
+    "size": 6086,
+    "sha256": "0981d34e8d2b372db3e0453237f7cbb14170fa80bdbff113b8ebae38f3d7115a",
+    "path": "recovered/phase2/lua/game/wrestling/wrestling_controller.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/city_data.luac",
+    "asset": "assets/res/3/7/11cd6bd82e10ca435d79d302033534b2",
+    "encrypted_sha256": "7c5e8b876a281151f066728762896843f3520f62faacc81a3da2f7eb0d8073a7",
+    "status": "decoded",
+    "size": 2307,
+    "sha256": "d43e8195e24d8a394154fd355161a56db4297251dc6edea08c5b83ee26a16aa1",
+    "path": "recovered/phase2/lua/config/city_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/god_world_data.luac",
+    "asset": "assets/res/4/7/71dceb030a2877c9bd46533f169689b2",
+    "encrypted_sha256": "fc7f63bfa6797ca7212ebdfb97657df4890506fe7911f66f76c7b891317e42a3",
+    "status": "decoded",
+    "size": 7051,
+    "sha256": "192497e56578388f16e53ead84d651b1feab969aaba0b8e11daeee44b0107d7c",
+    "path": "recovered/phase2/lua/config/god_world_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/main_scene_data.luac",
+    "asset": "assets/res/7/c/c08b5dd1ec238e5db21a84d775683f57",
+    "encrypted_sha256": "4bc9e2077c2bf0e65ff4240fdb6233dc4ae99a1f8bd3f017c158db4a77e1e089",
+    "status": "decoded",
+    "size": 9381,
+    "sha256": "d51abfbcaf99cb0de1c849994be86658adf2b231429e10b35d410ddded1e721a",
+    "path": "recovered/phase2/lua/config/main_scene_data.luac",
+    "head_hex": "4d61696e5363656e6544617461203d20"
+  },
+  {
+    "logical": "config/misc_data.luac",
+    "asset": "assets/res/b/4/389f581210bc410d268ff777e836a11c",
+    "encrypted_sha256": "efe55e0e4df75f93e23a80184dc3a56948114086ff48b93e2777ec895e39856d",
+    "status": "decoded",
+    "size": 64254,
+    "sha256": "927152041c81510b5ca86b528f4d6a41c723766a58b0ed5d1029bcbdce410fc6",
+    "path": "recovered/phase2/lua/config/misc_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/recruit_data.luac",
+    "asset": "assets/res/8/8/f74c87d7d8a2fc5b952fba41e514b68e",
+    "encrypted_sha256": "94146229678aa674461fe33c5a263ca393a75d6512e81ddeb12dbc1ac1ca7aec",
+    "status": "decoded",
+    "size": 27446,
+    "sha256": "d40efeb76c4b00bd0adffb82504c82eae560fc54ab04bc639350177d6aab4c78",
+    "path": "recovered/phase2/lua/config/recruit_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/source_data.luac",
+    "asset": "assets/res/6/f/ec87c492772898a6069cd83b8fbdfe9f",
+    "encrypted_sha256": "e632b96f7d4885e766d662ebf9538f0a1aeb48c3c29633ddc5654f9e07f53145",
+    "status": "decoded",
+    "size": 106595,
+    "sha256": "0ffcc26430fb70f87e4432a07e96a80a77c221c39c1e13252ae7f1db8fe92a9e",
+    "path": "recovered/phase2/lua/config/source_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/heaven/heaven_const.luac",
+    "asset": "assets/res/9/4/cdb51c49388f84249b246993cd7f79e7",
+    "encrypted_sha256": "251dfbece3f3b7f956920bf8240134251a75fd688fd61280ee1853370622e8e2",
+    "status": "decoded",
+    "size": 3873,
+    "sha256": "51579ec69bc76d90179abf67e758196ae54d3e87b5469c8ea142965f542af061",
+    "path": "recovered/phase2/lua/game/heaven/heaven_const.luac",
+    "head_hex": "48656176656e436f6e7374203d204865"
+  },
+  {
+    "logical": "game/heaven/heaven_event.luac",
+    "asset": "assets/res/6/3/da30821c06e56288b19f89354d5af0a2",
+    "encrypted_sha256": "260dd4d81390dc327869ed16fd0ee4d93c4b416167f62c9e84d2cbe59a563b24",
+    "status": "decoded",
+    "size": 1474,
+    "sha256": "bc2b2df54313472944355ac402821edfe7b44156670c8c108d273b03c9cc1e77",
+    "path": "recovered/phase2/lua/game/heaven/heaven_event.luac",
+    "head_hex": "48656176656e4576656e74203d204865"
+  },
+  {
+    "logical": "game/heaven/heaven_model.luac",
+    "asset": "assets/res/0/d/0c39a8e0da7be24bd625354710f4b509",
+    "encrypted_sha256": "e028c198d15279225384e86373dc46c66ad89b282d788ddb1fa1341e2d14d93f",
+    "status": "decoded",
+    "size": 15675,
+    "sha256": "4f8bb8a0de3a7b1b486eec8106e4ed440d3070eed17840a411147d8620aac5ce",
+    "path": "recovered/phase2/lua/game/heaven/heaven_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/heaven/view/heaven_main_window.luac",
+    "asset": "assets/res/0/1/947cd10e32b382fec9a4d586b077c1ee",
+    "encrypted_sha256": "d2e21114a47e9db1c010fd6bd3917b348f00066980ad9c0900b185dd70d27690",
+    "status": "decoded",
+    "size": 10586,
+    "sha256": "124cf64bb03a779b8d78d98c3f5fefd852fc1cb814394982cdf6687e20f7d2a7",
+    "path": "recovered/phase2/lua/game/heaven/view/heaven_main_window.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/heaven/view/heaven_sweep_award_window.luac",
+    "asset": "assets/res/1/8/8601979f54100716e2f878158dc4eec9",
+    "encrypted_sha256": "6a35e63e0475615632896c07b7c5062171c3908ad31ce8cfb559dc299dfa14f0",
+    "status": "decoded",
+    "size": 10349,
+    "sha256": "344c37c95dcadd4ac1ed6c664c9463e7bf8d32a7a39cb5a4c882687b530f63ac",
+    "path": "recovered/phase2/lua/game/heaven/view/heaven_sweep_award_window.luac",
+    "head_hex": "202d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/primus/primus_event.luac",
+    "asset": "assets/res/f/5/f175e0de5bd84a073f31784e50caeded",
+    "encrypted_sha256": "a811ca9a2bb8e933c861e9df52714feb7a3bf305d31d3908d7fd905e07af7425",
+    "status": "decoded",
+    "size": 127,
+    "sha256": "2e5402502aa7c5efb2af6741b05fa8d3a2e5a10118be01e2a7a197c1e9e0cbf2",
+    "path": "recovered/phase2/lua/game/primus/primus_event.luac",
+    "head_hex": "5072696d75734576656e74203d205072"
+  },
+  {
+    "logical": "game/primus/primus_model.luac",
+    "asset": "assets/res/c/0/008b8eec96a2e0159793ca934eb5ac0d",
+    "encrypted_sha256": "0cf5091926db38501911730e9b8d1a21673e03be2acab9363f17e35fc3b83853",
+    "status": "decoded",
+    "size": 2028,
+    "sha256": "3353408c01b5607e10097eaffed89ba8c4907e2fdb965d102235238982f8e0d9",
+    "path": "recovered/phase2/lua/game/primus/primus_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/activity_data.luac",
+    "asset": "assets/res/9/1/e3377486f01f850a79c249011d2d3911",
+    "encrypted_sha256": "761c10909dd135512961fcedbfec62b4a474f5848a4c442073b260c490f85969",
+    "status": "decoded",
+    "size": 15802,
+    "sha256": "d0ad509fcea0882635fb37b953731e8dfda436cde52d41060ef0c440f62832e0",
+    "path": "recovered/phase2/lua/config/activity_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_champion_data.luac",
+    "asset": "assets/res/3/f/d048f62671836ce0368c6b6f76da2390",
+    "encrypted_sha256": "a61f5c385f676024cc0481265c8592e7b6acedd9a0376c41df56d24e2adaa5a3",
+    "status": "decoded",
+    "size": 28120,
+    "sha256": "e6dd0f527f0295148e6cf9e4f035cf05de2f31925f417c1a1955e6c000b279fb",
+    "path": "recovered/phase2/lua/config/arena_champion_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_cluster_champion_data.luac",
+    "asset": "assets/res/4/4/a94b8cb46d845934ea6e3ed4fb8ad830",
+    "encrypted_sha256": "6481fed7f3be13bcec108ec4006a6ac967a5649a9442405354da75bbf4087365",
+    "status": "decoded",
+    "size": 6995,
+    "sha256": "a111ffc4bc8d7f2df01001c57b2ebc2f73bcae165de2f03e4a84ccc7a7b650b0",
+    "path": "recovered/phase2/lua/config/arena_cluster_champion_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_cluster_data.luac",
+    "asset": "assets/res/d/8/4854c37c72c9849dd193fa835c0c768f",
+    "encrypted_sha256": "fef89a9512f2dbb434df89a9894f46444b79811437f35ed8454e25c54ffbe0d6",
+    "status": "decoded",
+    "size": 7016,
+    "sha256": "7fb4f72c017d51058a13fc0117161b03b0fa19af8a4c66f1474bde2787eaa136",
+    "path": "recovered/phase2/lua/config/arena_cluster_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_data.luac",
+    "asset": "assets/res/a/9/71da73873020a759740c2674792cd328",
+    "encrypted_sha256": "9b610fc118d685d482d1e9e061b188c465494645a2224f647ffc5c2885bd31cd",
+    "status": "decoded",
+    "size": 7870,
+    "sha256": "5dd23749517d7f53cb3a806e2ebc20d1dc9b177ee5c5d5e823eaed42b2942e35",
+    "path": "recovered/phase2/lua/config/arena_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_elite_data.luac",
+    "asset": "assets/res/7/1/c79bb163d16aac13ab837e189c702a2c",
+    "encrypted_sha256": "00c692b5b31e7aec5699f326ec38be0d7a620cab8782d0448e1c90437796e327",
+    "status": "decoded",
+    "size": 32029,
+    "sha256": "5215c72766b41ecc249878fc93314571bda9b6f27a89b0bee5a413e63d33558b",
+    "path": "recovered/phase2/lua/config/arena_elite_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_elite_war_order_data.luac",
+    "asset": "assets/res/0/8/1565e5872c710b80cc2dc09878e5a68e",
+    "encrypted_sha256": "4fcfed794d86685fa89f6049f255bca354d96ca9478faa20bc5102196ede4c2a",
+    "status": "decoded",
+    "size": 5610,
+    "sha256": "d8a4f2aaedcda61277612e4e8ea737747dd37ab31c7b9c08a88281c906b3debc",
+    "path": "recovered/phase2/lua/config/arena_elite_war_order_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_level_champion_data.luac",
+    "asset": "assets/res/9/4/e99de937e0febb4f4ce1d4a6f99758a0",
+    "encrypted_sha256": "082f8f2d722585e44dd50b530c89a106cf7b032e244266bbc1985ecb25685ed9",
+    "status": "decoded",
+    "size": 10317,
+    "sha256": "d9c8d11b8f6070ade7d8e8f817e043252007016588d14597a47723e50b70ee17",
+    "path": "recovered/phase2/lua/config/arena_level_champion_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_level_data.luac",
+    "asset": "assets/res/9/4/fb16f3c5cfca5a2df7804930f4b4c4b7",
+    "encrypted_sha256": "b1840ce3489aacc2444bc971ac5e2398a77f94f2e6a0f631d273b7c9b1890341",
+    "status": "decoded",
+    "size": 34708,
+    "sha256": "0728ffdcf8b45e624d49d6346d28467b64d55877229856e79591a87e39b4898e",
+    "path": "recovered/phase2/lua/config/arena_level_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_level_war_order_data.luac",
+    "asset": "assets/res/d/d/fd7850adde4af15d3b96efdd5c2a60ca",
+    "encrypted_sha256": "4adad0414f99e09b6efa0aa7c8146248f015d5b32877c606b21ec429e3753369",
+    "status": "decoded",
+    "size": 7184,
+    "sha256": "af4bce7d644de39025486b97f98cd6a0a009ac9babb31fc7a48c77d9f9f03100",
+    "path": "recovered/phase2/lua/config/arena_level_war_order_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_mine_data.luac",
+    "asset": "assets/res/e/6/ebce64816b0073e2a55e6843cb56cf16",
+    "encrypted_sha256": "11d0ac277f557461513d39baf35f38e0740147c9a9a952645add305bb68b9b76",
+    "status": "decoded",
+    "size": 30861,
+    "sha256": "71ef8ba4f7426b17d93d8c17e856418ea8fdf690be69d6cb9847e1c6622d24f3",
+    "path": "recovered/phase2/lua/config/arena_mine_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_soul_data.luac",
+    "asset": "assets/res/0/0/5f8809096377bb9f304c05ededf97722",
+    "encrypted_sha256": "d3cfadbd06acddc6efc64415e996d8092a3c1b6cd6c466bd26d5f1b265f8f745",
+    "status": "decoded",
+    "size": 29932,
+    "sha256": "7100376a09705b725e79bd3f2aa952ba17606903c8aab448989b30c05d3d8bba",
+    "path": "recovered/phase2/lua/config/arena_soul_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/arena_team_data.luac",
+    "asset": "assets/res/8/7/ad8cb84f9484de73e3fa1aeb8d13b398",
+    "encrypted_sha256": "66134798a2c68681d593e97773f181d0938315718ce52302f59ae55924bfc796",
+    "status": "decoded",
+    "size": 29263,
+    "sha256": "b58c20f5a391cad0164559c258a09946e798d4d74104e384086403ad1f8db979",
+    "path": "recovered/phase2/lua/config/arena_team_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/common_quest_data.luac",
+    "asset": "assets/res/8/0/8289b328877e05e0e7639bdc088c0db4",
+    "encrypted_sha256": "f6d7addc0bb73239ce4f31e979c63baed5b1c23ce42ec58292e1ea9faee9c652",
+    "status": "decoded",
+    "size": 20979,
+    "sha256": "4addacdc499371a30a466e4c8b86ef3a7e58d20602800d4d735b263b3d7d436d",
+    "path": "recovered/phase2/lua/config/common_quest_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/cross_ground_data.luac",
+    "asset": "assets/res/5/b/e5291eb479cff4fc9943e0bb6dbfa031",
+    "encrypted_sha256": "7c474b666efa10b458cdb9683d6c77d40a1b0a9fc8a11fec1170ccd0453c622e",
+    "status": "decoded",
+    "size": 1627,
+    "sha256": "65dbc43a8a6ea3520199908dba69a0073b27fe58967c17beb381d32e941d1da4",
+    "path": "recovered/phase2/lua/config/cross_ground_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/cross_show_data.luac",
+    "asset": "assets/res/e/2/7c75cf2da97d85771a12db83e37f22ba",
+    "encrypted_sha256": "348787e380c4849c4703066041d1583378dc0064d0ce31f7d26ea279568a653b",
+    "status": "decoded",
+    "size": 4107,
+    "sha256": "232e0d36a50d13a6f58e3ee11be5d910177e3989dd9fc455fdd0b6b5c52c26ed",
+    "path": "recovered/phase2/lua/config/cross_show_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/element_temple_data.luac",
+    "asset": "assets/res/a/6/ad3f3842ffd94efb396a81f86db66079",
+    "encrypted_sha256": "986b280d5018d09a2ea3d3d3f00c76524d7f6e6b012999cd56bc542f04cb5547",
+    "status": "decoded",
+    "size": 64542,
+    "sha256": "e2499efdf64e9c7ec4386c96b2d6bfe931c8744f46155ba826db818bbbc893a4",
+    "path": "recovered/phase2/lua/config/element_temple_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/god_boss_data.luac",
+    "asset": "assets/res/6/3/ca3ab5693b64ae551807db1ae6d6295b",
+    "encrypted_sha256": "ced4b8bb6f7fe8b9d370b58bb37c67c138200a309b9f03ca3a3f9b0bc87987cd",
+    "status": "decoded",
+    "size": 66112,
+    "sha256": "6ffe2a11a49ed6ae3a0d5babae2fc2194d53bb01d3ae2216ca9c90bc0d0acc25",
+    "path": "recovered/phase2/lua/config/god_boss_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/loading_desc_data.luac",
+    "asset": "assets/res/0/6/a8381a3bbf2629a32af50b68d267e6bd",
+    "encrypted_sha256": "40d918ac6b88f27d1c928173c8e46f254a11cb8ab1f44e0b84af42dbf6558cde",
+    "status": "decoded",
+    "size": 1526,
+    "sha256": "ddb7e3b0786cae86274ce5eaeba64229dd815ab2805f46fc2e36d5298dd18cef",
+    "path": "recovered/phase2/lua/config/loading_desc_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/notice_data.luac",
+    "asset": "assets/res/1/c/0be9a21d13d023f8feceded79bf34de8",
+    "encrypted_sha256": "86ff4710a7b99d90e060fc9efafffd5d63bf367eac5d8b657594b63a9ef23b98",
+    "status": "decoded",
+    "size": 295571,
+    "sha256": "cf18ab43d4822407cd465aca55d680d34e4cea5c7ac379231fbe964f30b11ba3",
+    "path": "recovered/phase2/lua/config/notice_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/partner_try_data.luac",
+    "asset": "assets/res/b/4/48a1c9159f173a07b95ee83c675fe57c",
+    "encrypted_sha256": "fd0d1822b2572d736c38f6302293563a4f569c8f37ede37d5d1a193731afe13e",
+    "status": "decoded",
+    "size": 2862,
+    "sha256": "053a6098842f7f587a78ebeb98130f408d3021029f824249dc9e1114e4e5f80a",
+    "path": "recovered/phase2/lua/config/partner_try_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/rank_data.luac",
+    "asset": "assets/res/f/8/5ac1dac68ce7caf3d88a6c921b117464",
+    "encrypted_sha256": "8c6aceee9f859705935efa14b83a16f52b1fa23f31951ff479e1c2df69871996",
+    "status": "decoded",
+    "size": 73170,
+    "sha256": "43a1ec980b4a40a16416ed49d8a8e9ad188d5eceb1edc7e440333e1ed4416413",
+    "path": "recovered/phase2/lua/config/rank_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/stronger_data.luac",
+    "asset": "assets/res/2/f/ee39685f478f6e7467daa72eb3974ca1",
+    "encrypted_sha256": "740f3c9846eb457c311f9a56f22cad3922f58bf973e6eba515ed2f5e8df09b34",
+    "status": "decoded",
+    "size": 178359,
+    "sha256": "8035c60b0eac4a37b39f2818e5e1b28e758654e901410e71cc19b07ce0ba0354",
+    "path": "recovered/phase2/lua/config/stronger_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/temple_boss_data.luac",
+    "asset": "assets/res/2/2/297b67a92705e22f182c3c652b5acfc5",
+    "encrypted_sha256": "ca7d7651f4764386162ad2e640a7e8ba81ea540937338f22f05044b1b0c4b8d8",
+    "status": "decoded",
+    "size": 93286,
+    "sha256": "bf11fa1c1c0908f6cf62d220b34d477ff96d2186c228208e7dc8836cd9903e0f",
+    "path": "recovered/phase2/lua/config/temple_boss_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/time_door_data.luac",
+    "asset": "assets/res/9/a/4b23dab774c9fe7cf67c9a0b3a9ef135",
+    "encrypted_sha256": "75ce4bd9a4fe52d69bd763a3ebb7b38a42d8937ea7a176c8899e9d6e89dc1cf9",
+    "status": "decoded",
+    "size": 240299,
+    "sha256": "7b55d598bfabed96ce321e9e4c081e024d7f923b81aae91612c6408de873efb5",
+    "path": "recovered/phase2/lua/config/time_door_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/trial_quest_data.luac",
+    "asset": "assets/res/6/8/bc608475574159f8491679aaff6155be",
+    "encrypted_sha256": "3a3dd2cacb2c819cb62b93dd05414de4acd8682537a1b662b0c34ec8f6933579",
+    "status": "decoded",
+    "size": 6484,
+    "sha256": "f4caac05839d20c475df4861d5c805203ee42fcaff140f4e84aefb1045c912b6",
+    "path": "recovered/phase2/lua/config/trial_quest_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/week_calendar_data.luac",
+    "asset": "assets/res/2/5/2759f8d2b66159d5e44ecef6887e1722",
+    "encrypted_sha256": "03fc4f46b0b3b3d6d6a3edddc5979ffe426523004179291f416d3c6d58b4ea3c",
+    "status": "decoded",
+    "size": 6405,
+    "sha256": "200be1fae9ea710bc71dbe2d0afeef3c5148b149743afa76e361c52f9d536900",
+    "path": "recovered/phase2/lua/config/week_calendar_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/zs_war_data.luac",
+    "asset": "assets/res/e/d/567538e231a1d916dea9e141426e03cf",
+    "encrypted_sha256": "8b3ea4ca33a60856c264a06658393937ddb2d5428da03ca4429d53b072da9807",
+    "status": "decoded",
+    "size": 13306,
+    "sha256": "1c0fac3f955accd7e7024db2cca32a2d08ab4086f3ecf4171c1f258c772c7d2e",
+    "path": "recovered/phase2/lua/config/zs_war_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/rolescene/rolescene_model.luac",
+    "asset": "assets/res/5/7/55ba87e1c0d9eed254e134d9f1e0179e",
+    "encrypted_sha256": "f9104770ed2cc5156474396d2aaa3a4eee6e6758ba6c59e57169008d67756aeb",
+    "status": "decoded",
+    "size": 22272,
+    "sha256": "839d9adf9e6bdcac3e51115c10443c9f63950aa733d418f4f135807720306786",
+    "path": "recovered/phase2/lua/game/rolescene/rolescene_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "base/basecontroller.luac",
+    "asset": "assets/res/6/0/70468c84c320ea7475774c0676eb9b34",
+    "encrypted_sha256": "9d4181090ecbda3daeb4a8c1a0a339cc0c565cadbce7ce30805080d5eddf48b0",
+    "status": "decoded",
+    "size": 9598,
+    "sha256": "d8965271a40b1f383c55327e95c2ff0db59ae57525bda330f50c0cf78d0bdaae",
+    "path": "recovered/phase2/lua/base/basecontroller.luac",
+    "head_hex": "0a2d2d5b5b0ae58a9fe883bd3a20e58d"
+  },
+  {
+    "logical": "sys/net/gamenet.luac",
+    "asset": "assets/res/d/4/4e49f92d79531d51cf92d84e41f28ce3",
+    "encrypted_sha256": "a585de4e4cf60256b77aa616c6c8d010282c72d335d0306db72d65697064e8e6",
+    "status": "decoded",
+    "size": 13850,
+    "sha256": "8924bdbb955ce4a1e5668f66892a9e0d02f96f97c04aae2192840f165ce0d35e",
+    "path": "recovered/phase2/lua/sys/net/gamenet.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "sys/net/proto_mate.luac",
+    "asset": "assets/res/c/5/ff19d5a68f098107fad6c8da27fa821d",
+    "encrypted_sha256": "208a5b6404a55829283f9a4fdb9ea734cc3ee3fc1c67dfebfa4065854454cfc3",
+    "status": "decoded",
+    "size": 1549968,
+    "sha256": "88d8fa6c9249dd883d1749a9af9595d0e34e8c64440e4b3efc2cd91683acdaf8",
+    "path": "recovered/phase2/lua/sys/net/proto_mate.luac",
+    "head_hex": "2d2d20e5aea2e688b7e7abafe58d8fe8"
+  },
+  {
+    "logical": "game/vip/view/time_limit_gift.luac",
+    "asset": "assets/res/7/0/e271552c7484bd5f9e89b05a1bc094dc",
+    "encrypted_sha256": "8a8d50fe9777dac668b9a6bd4515ed1278c0cbcc1c02825c3e79e8dc6ae16536",
+    "status": "decoded",
+    "size": 27654,
+    "sha256": "8ec6f41eed79e8a3bf996ab5f2adf39b6240a09eea1a02051d8ce9c2c40f9889",
+    "path": "recovered/phase2/lua/game/vip/view/time_limit_gift.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/vip/vip_const.luac",
+    "asset": "assets/res/7/f/735f7c294b99a7f20342f0c97e3340de",
+    "encrypted_sha256": "9c38e105226363be2725bb7c4c6f43057c343b911101aa69d3cf4a44ecfde03d",
+    "status": "decoded",
+    "size": 6822,
+    "sha256": "fd3d7007190f55149ff3d0c45ae36d118d56e1b4d16c85599b4b223b23d18ebf",
+    "path": "recovered/phase2/lua/game/vip/vip_const.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/vip/vip_event.luac",
+    "asset": "assets/res/4/a/5a73ccdea074ae42b8c7089374ae9f6e",
+    "encrypted_sha256": "6605de90737a149796e5cc0bf54792b55a5d9bb32b721a98374dd153dcf9c2c5",
+    "status": "decoded",
+    "size": 1278,
+    "sha256": "ba7219d5f34c273de805c2c365216e865b9a38cd57c4d20ac7940b6826168bec",
+    "path": "recovered/phase2/lua/game/vip/vip_event.luac",
+    "head_hex": "5669704576656e74203d205669704576"
+  },
+  {
+    "logical": "game/vip/vip_model.luac",
+    "asset": "assets/res/d/7/dfa2d17eb37b19899de4aa7d56fcddfc",
+    "encrypted_sha256": "d731b2ad8e93ac16cc7d22fe4ebaea69b41e05534c6b42ba78492b7b691ed9b3",
+    "status": "decoded",
+    "size": 21906,
+    "sha256": "c46efd24ccca534141ed43f90e57ab171d74a04ad3f6f2393f412f1828147d2a",
+    "path": "recovered/phase2/lua/game/vip/vip_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/welfare/view/every_day_gift_panel.luac",
+    "asset": "assets/res/2/e/8eb1391972f5e5ac820de422cde2f6d1",
+    "encrypted_sha256": "ad95c3d2000fa2f180f48ae45a0337146727e55f55cb39a4d3da5a3372f6c117",
+    "status": "decoded",
+    "size": 14807,
+    "sha256": "7953e85131c9532b564d10160d1f9c87b56c660012d7a2ce9abaea2601303f45",
+    "path": "recovered/phase2/lua/game/welfare/view/every_day_gift_panel.luac",
+    "head_hex": "2d2d5b5b0d0a2020202040646573633a"
+  },
+  {
+    "logical": "cocos/init.luac",
+    "asset": "assets/res/2/9/a325a787c7931edd43c0e02d4dd589c0",
+    "encrypted_sha256": "a5639290eb47fb76ff7ed50276e7d1be36a0b6ced649c3b0672b168c62c35842",
+    "status": "decoded",
+    "size": 3198,
+    "sha256": "9881d0a654f56ab0b9f626251d9320541c03e796f36dd81374fe76120a74174f",
+    "path": "recovered/phase2/lua/cocos/init.luac",
+    "head_hex": "2d2d5b5b0a0a436f7079726967687420"
+  },
+  {
+    "logical": "config_init.luac",
+    "asset": "assets/res/2/c/5d0826a99f7b5ecfee6670bab9200950",
+    "encrypted_sha256": "10f674421e8954bc9b3162b75146a8ea961ce405b8ea0d600a13b8bbfa9e0c22",
+    "status": "decoded",
+    "size": 1036,
+    "sha256": "7fa150045bef834aef38f9676ece622d64b34c25b3330571f95d8ad9ab56a8c1",
+    "path": "recovered/phase2/lua/config_init.luac",
+    "head_hex": "0a2d2d2030202d2064697361626c6520"
+  },
+  {
+    "logical": "game_start.luac",
+    "asset": "assets/res/a/6/6b49281baea43a9f6f72801a663543ee",
+    "encrypted_sha256": "b51a295e71c15ec527502f39570a9d69c13d30f4b5f827a2ee62f4639fb77085",
+    "status": "decoded",
+    "size": 9379,
+    "sha256": "227a7efe5a171c522caa4ce0b59b7380fc76c9c7d29dfad9a70276c9a45dbed7",
+    "path": "recovered/phase2/lua/game_start.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "main.luac",
+    "asset": "assets/res/2/9/23b94a99e64a7251e85a2e4c39e5f966",
+    "encrypted_sha256": "79af296a1fa1ddb252670c861f0e2ab38d14dd85d861b8179af5d8a73c7ed6fe",
+    "status": "decoded",
+    "size": 5317,
+    "sha256": "c5ccb5617a63ee07d8f42fb7f5f32b438a344a72b61f9b726d468f42018a8bf9",
+    "path": "recovered/phase2/lua/main.luac",
+    "head_hex": "2d2d20e6b3a8e6848f20e69687e4bbb6"
+  },
+  {
+    "logical": "sdk_function.luac",
+    "asset": "assets/res/e/e/d6efddf67894eed3015de2f88361c71a",
+    "encrypted_sha256": "560b45a9fa2c8e1e833f6e9e6eb334fc87ab15d2faf96c2e5a79baaddee4e656",
+    "status": "decoded",
+    "size": 34293,
+    "sha256": "105338167fe43844592f73c506db8b949f978ae197f612304ca5275ed9a595b0",
+    "path": "recovered/phase2/lua/sdk_function.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/lev_upgrade_data.luac",
+    "asset": "assets/res/6/5/ebcb0a42d691ed5ab36850656c9a094e",
+    "encrypted_sha256": "543c1880703acb458c9501699421fd238dd31405b9b3b21942d305915e51a601",
+    "status": "decoded",
+    "size": 18239,
+    "sha256": "341f71f6451fdfedbe33653232420fb7beebf268e152faf96a060e798a742452",
+    "path": "recovered/phase2/lua/config/lev_upgrade_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/hero_calculate.luac",
+    "asset": "assets/res/8/5/414c626c78078f956a4707e47820ec26",
+    "encrypted_sha256": "ddef4edd859bc08d8b72cf1476f67c06643db603d53c083f5350301b695f454b",
+    "status": "decoded",
+    "size": 56109,
+    "sha256": "9cf6aa9e70f68c37e5206b6a1b52498a5c8854a5ff1159571291ea1dd9ad3a90",
+    "path": "recovered/phase2/lua/game/hero/hero_calculate.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/hero_const.luac",
+    "asset": "assets/res/a/4/4552b5f3d45ff8f246b3a4ecfa6b7fc2",
+    "encrypted_sha256": "4735715af82a96a410d2433305c76496a292040b9124ac8318a704161f29c860",
+    "status": "decoded",
+    "size": 28571,
+    "sha256": "ec540bbe77acff061f09e4b70370494b7e3a3f071c0d0142984b0473e80965bb",
+    "path": "recovered/phase2/lua/game/hero/hero_const.luac",
+    "head_hex": "2d2de88bb1e99b8428e4bc99e4bcb429"
+  },
+  {
+    "logical": "game/hero/hero_event.luac",
+    "asset": "assets/res/3/6/de6e8d56bbdcf35267b797222b58dd66",
+    "encrypted_sha256": "7a998f38e7ae73a593d806f37bb8e4ff1593bf18c58818b53c4682844a93a1a9",
+    "status": "decoded",
+    "size": 10912,
+    "sha256": "4ef6984bcba5772dd372e77ddd64514ef36b94cdf38a309ae3bb752f1f34205b",
+    "path": "recovered/phase2/lua/game/hero/hero_event.luac",
+    "head_hex": "4865726f4576656e74203d204865726f"
+  },
+  {
+    "logical": "game/hero/hero_model.luac",
+    "asset": "assets/res/d/c/cd1765cc5e02ebd97bd6c84a8c0bac98",
+    "encrypted_sha256": "22fc3a57705540b67713938b3ce586edc5d7f05c365d42993e1e3ae4617b06f6",
+    "status": "decoded",
+    "size": 197913,
+    "sha256": "aa685502847a5e0eb12cbfff63a3bc32f23d378c55847da1d9f3892682b0f7b7",
+    "path": "recovered/phase2/lua/game/hero/hero_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/hero_vo.luac",
+    "asset": "assets/res/d/f/106f554ca1fb1d4bf6b8adef26b637b8",
+    "encrypted_sha256": "c14598d3b00ced0273db8b58b529e1e66fd27d57163b7153c31b0a076967b79e",
+    "status": "decoded",
+    "size": 45273,
+    "sha256": "1158d07bdb56e3eff9d6d9db37300aed47c9f353cf0e80168969a508472d112b",
+    "path": "recovered/phase2/lua/game/hero/hero_vo.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/hero_vo_ex.luac",
+    "asset": "assets/res/2/e/b1ee6b0e48574fe051cc10fec375e29f",
+    "encrypted_sha256": "b51e3ffc1995e3b093fb40042f2e6cbd361000024c3c4ea1b4c2f8d21ec483cb",
+    "status": "decoded",
+    "size": 1885,
+    "sha256": "ffc9864e7dc2e4dd34973c2fc03c086bf0d3081f7970f55c3e555b1f72ae160e",
+    "path": "recovered/phase2/lua/game/hero/hero_vo_ex.luac",
+    "head_hex": "4865726f566f4578203d204865726f56"
+  },
+  {
+    "logical": "game/hero/view/hero_info_soul_bone_panel.luac",
+    "asset": "assets/res/e/e/7aa84606e3e2c923338823f29faedc28",
+    "encrypted_sha256": "037f93073683b6a3d1118911e7a56728d79cc6c86b267090353c7935680a24c8",
+    "status": "decoded",
+    "size": 8347,
+    "sha256": "7014fd5a8ab4858f64067c99a98781991474c67bca6416744513846afacf51f3",
+    "path": "recovered/phase2/lua/game/hero/view/hero_info_soul_bone_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mainui/view/arena_loop_challenge_buy.luac",
+    "asset": "assets/res/9/3/b5e31f5eb97332ec554ca3154ba561c3",
+    "encrypted_sha256": "4e17ce2ec4efeb799aa0dee442f24b82c0b3c9165cc7897db3e74785da471e49",
+    "status": "decoded",
+    "size": 13642,
+    "sha256": "1f7992f4e13f5ce452d12f53723fc1f21aae611c2022be4a8a243ef23c786ee9",
+    "path": "recovered/phase2/lua/game/mainui/view/arena_loop_challenge_buy.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/newarena/newarena_const.luac",
+    "asset": "assets/res/d/d/aebfe8acbd7cde25229c9520b902da9c",
+    "encrypted_sha256": "adc88a924b54bb0c6aadc0ed7534b0cc1fd44d952921f7d3e0fc0dafe92056b0",
+    "status": "decoded",
+    "size": 340,
+    "sha256": "a7a45c19d5425b85527394b217d147a4ee1177d9ce0a14c2f8b1af3f13f922b7",
+    "path": "recovered/phase2/lua/game/newarena/newarena_const.luac",
+    "head_hex": "0d0a0d0a4e65774172656e614964203d"
+  },
+  {
+    "logical": "game/newarena/newarena_event.luac",
+    "asset": "assets/res/2/6/4f343df0585f02df9560e0d3d71d2803",
+    "encrypted_sha256": "7ba7f4e7b675cb2343c8191a9b73f62545776f954653dc92aa5b5357b5ecc9c8",
+    "status": "decoded",
+    "size": 36,
+    "sha256": "dd6ad9cd3bfb286ab468ebb5661bd7e6a45a4c2c3ebd4b5e354371d82e67e6eb",
+    "path": "recovered/phase2/lua/game/newarena/newarena_event.luac",
+    "head_hex": "4e65776172656e614576656e74203d20"
+  },
+  {
+    "logical": "game/newarena/newarena_model.luac",
+    "asset": "assets/res/0/e/e2ebeeffc40506b5ef7e08a28a8703d0",
+    "encrypted_sha256": "f3414442fdc3de684b3bccb61389f622b95bd23394299ed120f6c0c37d4cee09",
+    "status": "decoded",
+    "size": 595,
+    "sha256": "10c8618d542ab22277c24b13cd97a403eada53d7df88fa90909d2da1482bdb58",
+    "path": "recovered/phase2/lua/game/newarena/newarena_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/newarena/view/newarena_explain_rewards_window.luac",
+    "asset": "assets/res/d/0/c5c92f30edc139e2212fa5c9c7aeda72",
+    "encrypted_sha256": "f219d34d1bf0c3fa830f1aa69bfc5eed0b490949822c78661bf748d654561ed8",
+    "status": "decoded",
+    "size": 4297,
+    "sha256": "99d18674e8953c1f5ad1e56ab5e3a79d482bb397b57af0babf041dc7794092fb",
+    "path": "recovered/phase2/lua/game/newarena/view/newarena_explain_rewards_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/newarena/view/newarena_main_item.luac",
+    "asset": "assets/res/7/e/3f228a1b6ed4eb52cd9819a0a47ee8a3",
+    "encrypted_sha256": "d90f258208445afa48b436a35e70791c07357ef150fd48bc542fe78000fab1d6",
+    "status": "decoded",
+    "size": 16849,
+    "sha256": "044ebc52336e914a5b325d1bccbf39892e2995fabdd690e146cd7840281f45cf",
+    "path": "recovered/phase2/lua/game/newarena/view/newarena_main_item.luac",
+    "head_hex": "4e65776172656e614d61696e4974656d"
+  },
+  {
+    "logical": "game/newarena/view/newarena_main_window.luac",
+    "asset": "assets/res/0/3/24f8236249e46f3819946301ed46202e",
+    "encrypted_sha256": "ef5ba3d133e00677b7a978d1e287e742fd7366ca77542067453f1207223b8288",
+    "status": "decoded",
+    "size": 6882,
+    "sha256": "4e4f50185f10e6ddecf849815d3750b9edd21e6c7724ba2a8efa10f2a119076f",
+    "path": "recovered/phase2/lua/game/newarena/view/newarena_main_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/elitematch_const.luac",
+    "asset": "assets/res/2/f/995ff85fc7147ed31f264aa76c447e1e",
+    "encrypted_sha256": "20b362688f4fb1ca6e4dd6e847afe7772137786bedf51d8cb726b86211d78b1f",
+    "status": "decoded",
+    "size": 3397,
+    "sha256": "1325fb7549bfa2ed8fc317768e97a15fac1778bfd29c08ac04724718f4690add",
+    "path": "recovered/phase2/lua/game/elitematch/elitematch_const.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/elitematch_event.luac",
+    "asset": "assets/res/b/b/9bb9f0334158aefd70fb4b19ee773feb",
+    "encrypted_sha256": "a2ef4f69a9aab95bd85f1124a1b440bab2e12f2eecafcfebcf4c589721eb2ebe",
+    "status": "decoded",
+    "size": 2662,
+    "sha256": "a9a3af686710a2dc49ed16d478b51107cefdb0386ed5e1154edfda772e919522",
+    "path": "recovered/phase2/lua/game/elitematch/elitematch_event.luac",
+    "head_hex": "456c6974656d617463684576656e7420"
+  },
+  {
+    "logical": "game/elitematch/elitematch_model.luac",
+    "asset": "assets/res/6/c/7901158ccd379ddafc2bdcd0508c2695",
+    "encrypted_sha256": "2af327ad14dfccab34c3848b9976ee483e1651b3222fa323675a2fe3d49ddb01",
+    "status": "decoded",
+    "size": 14544,
+    "sha256": "298de5db18d5611dd2be9184b6610d5b88db3078debb1a5f92459c2321d9d642",
+    "path": "recovered/phase2/lua/game/elitematch/elitematch_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/choose_face_panel.luac",
+    "asset": "assets/res/4/5/848124b6e579c4d4bc84b2b3dc55eeda",
+    "encrypted_sha256": "0a17480ca902c2ce404b73b912112a3c0ee85c9c04357762de99ceb1afbdb7e0",
+    "status": "decoded",
+    "size": 14922,
+    "sha256": "ad6bfd12b0da3ea057a1ea638510154cdb04304cff6ca0a3fcded4daa792f217",
+    "path": "recovered/phase2/lua/game/elitematch/view/choose_face_panel.luac",
+    "head_hex": "200d0a0d0a2d2d202d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_buy_token_window.luac",
+    "asset": "assets/res/1/b/0a7f2b7ee41cd1eb24fa87c110f77e1d",
+    "encrypted_sha256": "3e12397eb0092cb5490f841e0c8c8c08756ea151ea3663864f75425e739ac2d6",
+    "status": "decoded",
+    "size": 5550,
+    "sha256": "36e92e5400e524ee842800f5e261ecd427f46484b633cfb98bcecc7cd918e4a9",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_buy_token_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_challenge_times_window.luac",
+    "asset": "assets/res/f/e/d2bc7db5d1f35f432b5620dfd3e3fe8d",
+    "encrypted_sha256": "015a89c2cedc62641ae74cf7efd6241522480324842a75f30af61b3db9497bed",
+    "status": "decoded",
+    "size": 10477,
+    "sha256": "600962fbbac3ac982e277748acf4ba20327c9ecb4e91f6d5f15ca4e0e6deb51d",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_challenge_times_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_fight_ready_window.luac",
+    "asset": "assets/res/9/7/96ef005775e16408637bec0e7f0b8df8",
+    "encrypted_sha256": "b931cacf7f9af37e73a7524f706a82fc010159d02b0719866d622f9501569ee8",
+    "status": "decoded",
+    "size": 45258,
+    "sha256": "9130fd5361d3b2b2fb8abc6185800161ef64242272c47d6163f6006c04cb0431",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_fight_ready_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_fight_record_item.luac",
+    "asset": "assets/res/3/2/d1b1c368c37c494a6246a236c5552d05",
+    "encrypted_sha256": "e71671a1008ca2ba8ad775ac894b4c53e3bd5340a1d33586c31f87a99bde680a",
+    "status": "decoded",
+    "size": 9883,
+    "sha256": "20d74ed26622a56019e168a123a2dcf91dc8d525de56c7e3b0d9be206dfd2aa0",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_fight_record_item.luac",
+    "head_hex": "0d0a6c6f63616c20636f6e74726f6c6c"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_fight_record_panel.luac",
+    "asset": "assets/res/7/4/7324cf519fa3fda448b415331cc10e70",
+    "encrypted_sha256": "bb40099f0f46eba9cf992e6278f7e2d055b3e0de054a02b23eb8de4751d5fd5d",
+    "status": "decoded",
+    "size": 10888,
+    "sha256": "ce600e429a86c31d8cd65b56e56a4bcf186f6101feaf6f5b9e3a973bf95b2b97",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_fight_record_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_hot_battle_window.luac",
+    "asset": "assets/res/4/4/2ea93a3f504f848e4722a982f791bab0",
+    "encrypted_sha256": "f87272210ecacbb9843794eeb7724562812413daf5280a9815b880fedc204598",
+    "status": "decoded",
+    "size": 5678,
+    "sha256": "a5adf98c38b0de9195a4a44ab22e664b64810122537572ed7afcf5ee2898d555",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_hot_battle_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_integral_panel.luac",
+    "asset": "assets/res/c/5/87bf3f449357f5c48acd03818c28dd7a",
+    "encrypted_sha256": "549e592a93833a54debd62253f493d717778d58ab1f1a3460e8e42b6b8897e1f",
+    "status": "decoded",
+    "size": 29235,
+    "sha256": "b3b8de31b1f8355663d5d57b6c0846f455527198ef25aabcf7a60a7dd5a41f8f",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_integral_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_main_panel.luac",
+    "asset": "assets/res/6/6/70fd42e4b5636243bd677327f943e349",
+    "encrypted_sha256": "07443e837b37b4f7b6b426e02a1964455f5faac3c9e8cab06c7ac8377e000139",
+    "status": "decoded",
+    "size": 40621,
+    "sha256": "8e743add1b5ddce34ce356119825b5909ee3d38bedf549a60571e7041d226579",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_main_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_main_window.luac",
+    "asset": "assets/res/4/f/40e84ff4ff988c8aadafab3c7098ebab",
+    "encrypted_sha256": "f28b10c0535778fcc0d8d237cfdcc0ad4260d3cd237e24e8f97124fc443682c0",
+    "status": "decoded",
+    "size": 5590,
+    "sha256": "b5bb3d8ab8db6e74c99b79ae8adc72cb37173f927dd4513463035fdf4c576c65",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_main_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_matching_window.luac",
+    "asset": "assets/res/3/0/ee8dd3aa2196da5031cab6b7cf37af50",
+    "encrypted_sha256": "28a849324ccd19e9d9bea06585c29fb936abcd63b59f9e42500c439e69517cae",
+    "status": "decoded",
+    "size": 5608,
+    "sha256": "e0dec49a8049898d57b34456ef5b1868b3172ae237615ca18bf60980471645a1",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_matching_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_personal_info_panel.luac",
+    "asset": "assets/res/1/4/215f185e39b2cf2f82e482930a3f8a07",
+    "encrypted_sha256": "94aae595413686698a37025f448a49eb1262549d69e2a9a9b3b5380fda44a6a2",
+    "status": "decoded",
+    "size": 26272,
+    "sha256": "c9102141cc653de78404ac6d0ff9859b207b8a3ba64158960b77d6ad3cb9a493",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_personal_info_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_record_detail_window.luac",
+    "asset": "assets/res/0/0/870221e0524c66fc0f71e851afe40504",
+    "encrypted_sha256": "baba1de22307abdb20497cc518b33119e3eb48e300d2486c6e46d5953a5d5148",
+    "status": "decoded",
+    "size": 20116,
+    "sha256": "bbdbdd072dce0d9e919e0825e157336ac1a364434659bc38ebde91f3bd21f368",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_record_detail_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_record_window.luac",
+    "asset": "assets/res/e/4/eb8c1e5db444392ce803a181e567043e",
+    "encrypted_sha256": "28078d1843ba313c8ec217f9025978e2312e9b081ff56ef6f6f6448962b35485",
+    "status": "decoded",
+    "size": 6573,
+    "sha256": "a8b7394fc8cc0c9b12586c19e6aa80866d94452d0f19be040009431508dd4452",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_record_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_reward_window.luac",
+    "asset": "assets/res/4/b/ed4c42a271046cb095071ae23cfa0d10",
+    "encrypted_sha256": "aac19ebd2cbf53f88346f6745af0f988b608b753c37ef239eeaf3b8fa2f5c657",
+    "status": "decoded",
+    "size": 8851,
+    "sha256": "4d8e11d5eaa163cf8f518d0540cb3c057d6515eb128c586053ab05ad1834d942",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_reward_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_scene_info_panel.luac",
+    "asset": "assets/res/5/c/9c859b5802abeb25be5c09dc9dd47d1a",
+    "encrypted_sha256": "630c3cca9f070996cd000a8ed0ebeb92810c99bba72e787c5edbc60148e068b1",
+    "status": "decoded",
+    "size": 10059,
+    "sha256": "f00db95ae7d86c8e645df37b9d7b1dc91dc2daf9ecf5447543754b1d3a733b20",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_scene_info_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_scene_up_info_window.luac",
+    "asset": "assets/res/b/9/9ab429d66dff3a8510d0968bbaafdfe6",
+    "encrypted_sha256": "d12bce11d5fcda367096aa97e2c74e35d8aa95ab6121941f51b234746c32766f",
+    "status": "decoded",
+    "size": 5864,
+    "sha256": "16ad658ce1b6fc60aec94900906bb96f3ed1859cbcd96ff64a585c6a4d396c1f",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_scene_up_info_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_token_window.luac",
+    "asset": "assets/res/b/f/16fdceaddbc033709edce1db4a52ff20",
+    "encrypted_sha256": "dcb7a7603d0efd57c28f80569cfb5495dc4de7995546c7df5d9da69588ad5bff",
+    "status": "decoded",
+    "size": 17648,
+    "sha256": "c3a2d11ca76ee535a6dd4e02d940742e4a9c73f735386f9b7b5209de97ead26e",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_token_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/elitematch/view/elitematch_top_show_panel.luac",
+    "asset": "assets/res/9/9/0b6377328d319e08f2498c20c1e2edfd",
+    "encrypted_sha256": "3f333e3e1dc158b3e89e59643c554fe4bb34dd63ce8ccb3d4ee4f3bb1d688a16",
+    "status": "decoded",
+    "size": 17545,
+    "sha256": "31d29ae31df325223901d38f56b6a32876d583afb3f56dacacba2c1fd91a3cab",
+    "path": "recovered/phase2/lua/game/elitematch/view/elitematch_top_show_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "config/partner_holy_eqm_data.luac",
+    "asset": "assets/res/b/6/e6b78176e664fb37fbbc52743efc545d",
+    "encrypted_sha256": "a0fdc8458311bacc628b4c8994adc10323238eea9984bd1bbf1873e3ae1a598d",
+    "status": "decoded",
+    "size": 594356,
+    "sha256": "70eb84d05d44b4c7a9b6577beef2b2eed249cd37b9af15e6101d07947aa3d9eb",
+    "path": "recovered/phase2/lua/config/partner_holy_eqm_data.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/view/holyequipment/holyequipment_intensify_view.luac",
+    "asset": "assets/res/a/9/297a9ead722a2ed187cc0fad3dfc4769",
+    "encrypted_sha256": "a242a7b2f38606ec8245dcbee2f4669f7c06066b3705e7d4e4aaf9738f1586bd",
+    "status": "decoded",
+    "size": 19060,
+    "sha256": "0b92bba2424e5d6a50980f7c1c34af4795683dd6c2464d9d68a1dad6dd914715",
+    "path": "recovered/phase2/lua/game/hero/view/holyequipment/holyequipment_intensify_view.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/view/holyequipment/holyequipment_main_panel.luac",
+    "asset": "assets/res/6/e/0fb126e1b052f88e75da6f95677c5f86",
+    "encrypted_sha256": "e0952eb1f69dfc8d1a9222573e2bf80954b9fed17c0292f1649092bc22d1b222",
+    "status": "decoded",
+    "size": 6089,
+    "sha256": "9af869c9bb714f7fb9af69bfa4266bfc2a994ffb960fde6158160b91dabc762d",
+    "path": "recovered/phase2/lua/game/hero/view/holyequipment/holyequipment_main_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/view/holyequipment/holyequipment_strong_panel.luac",
+    "asset": "assets/res/5/6/3e687130ff59a66b09fe61e92e988a20",
+    "encrypted_sha256": "f142663456dde9a059495355e9644b1574b5532fc9a208afe60e64c218c2c1ce",
+    "status": "decoded",
+    "size": 54182,
+    "sha256": "0b0b7cd47d69fcbecea5a9ec8d66fed3a4905a9d5773a1e592caa7ce1b53649c",
+    "path": "recovered/phase2/lua/game/hero/view/holyequipment/holyequipment_strong_panel.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/hero/view/holyequipment/intensify_active_window.luac",
+    "asset": "assets/res/d/3/972b6d783c3767de4525f7a4c97091cc",
+    "encrypted_sha256": "6a97e9c40ff08d328ffdb78fa6890d47ffe7af2ffda39d6baa79ff927a7bb4a3",
+    "status": "decoded",
+    "size": 6511,
+    "sha256": "b8a9c52ce9260735f22e359e75e048ecb63147b8d11e629c1c573dc4e8c16e9a",
+    "path": "recovered/phase2/lua/game/hero/view/holyequipment/intensify_active_window.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  }
+]

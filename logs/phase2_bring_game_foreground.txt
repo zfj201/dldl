@@ -1,0 +1,1 @@
+Starting: Intent { cmp=com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity }

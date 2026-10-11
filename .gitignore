@@ -1,0 +1,11 @@
+apktool/
+jadx/
+extracted/
+recovered/
+.venv/
+.tools/
+__pycache__/
+*.apk
+*.i64
+*.id0
+*.id1

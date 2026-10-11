@@ -1,0 +1,11 @@
+[
+  {
+    "time": "2026-10-11T01:57:51.012843",
+    "kind": "attach_begin",
+    "pid": 12496
+  },
+  {
+    "time": "2026-10-11T01:57:52.421995",
+    "kind": "experiment_finished"
+  }
+]

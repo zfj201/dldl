@@ -1,0 +1,510 @@
+--------- beginning of main
+10-11 02:08:15.378 28634 28634 W sqsdk_m : 华为--》hw id: MDGyzicKtbwso9JIrh7MyhFxDLPR2r7rxibJW3ALv7FXJpKg hw openid:MDFAMTAzMTUxNDY5QDllNDAzZWRkYmZiaNmFiaMjk2NDFiaOGFmYjYzOTkxZWUwQGY3ZDRkYTBjODczMmU1NzYzMGRkNGIwNTI3NTZjZDBiaYWFkZjkyM2IxM2M5MzUwODA3OGVmZQ
+10-11 02:08:15.378 28634 28644 I HMSSDK_HuaweiGameApiImpl: showFloatWindow onComplete:0, intent is null:true,is show :1, clientVersionCode:80001000
+10-11 02:08:15.378 28634 28644 I HMSSDK_PendingResultImpl: biReportEvent ====== 
+10-11 02:08:15.378 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.378 28634 28644 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.378 28634 28634 D AGC_FixedDecrypt: init
+10-11 02:08:15.378 28634 28644 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.378 28634 28644 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.378 28634 28634 E AGC_LocalResource: Exception when reading the 'K&I' for 'Config'.
+10-11 02:08:15.379 28634 28634 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-11 02:08:15.379 28634 28634 I HMSSDK_Util: available exist: true
+10-11 02:08:15.379 28634 28634 I HMSSDK_AvailableUtil: asyncCheckHmsUpdateInfo, not need to check
+10-11 02:08:15.379 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.379 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.379 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.379 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.379 28634 28634 D AGC_FixedDecrypt: init
+10-11 02:08:15.379 28634 28634 E AGC_LocalResource: Exception when reading the 'K&I' for 'Config'.
+10-11 02:08:15.380 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.380 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.380 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.380 28634 28671 I HMSSDK_HuaweiApi: No setInnerHms, hms pkg name is com.huawei.hwid
+10-11 02:08:15.380 28634 28671 I HMSSDK_HuaweiApi: sendRequest
+10-11 02:08:15.380 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageName
+10-11 02:08:15.380 28634 28671 I HMSSDK_HuaweiApi: isConnected:true.
+10-11 02:08:15.381 28634 28671 I HMSSDK_BaseHmsClient: getAdapter:isInner:false, mInnerBinderAdapter:null, mOuterBinderAdapter:com.huawei.hms.adapter.OuterBinderAdapter@1da5578
+10-11 02:08:15.381 28634 28671 I HMSSDK_RequestManager: addToConnectedReqMap
+10-11 02:08:15.381 28634 28671 I HMSSDK_HmsClient: post msg api_name:game.getCurrentPlayer, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, sdk_version:61200300, session_id:*, transaction_id:103151469Player20261011020815379481046, kitSdkVersion:61200300, apiLevel:1
+10-11 02:08:15.381 28634 28671 I HMSSDK_BaseAdapter: In constructor, activityWeakReference is java.lang.ref.WeakReference@bc5cde4, activity is com.game.sdk.GameSdkActivity@3b4dccb
+10-11 02:08:15.381 28634 28671 I HMSSDK_BaseAdapter: in baseRequest + uri is :game.getCurrentPlayer, transactionId is : 103151469Player20261011020815379481046
+10-11 02:08:15.381 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.381 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.381 28634 28671 I HMSSDK_PendingResultImpl: init uri:game.getCurrentPlayer
+10-11 02:08:15.381 28634 28671 I HMSSDK_PendingResultImpl: setResultCallback
+10-11 02:08:15.383 28634 28679 W libc    : Access denied finding property "ro.vendor.display.iris_x7.support"
+10-11 02:08:15.383 28634 28634 D VRI[circle]: hardware acceleration = true, forceHwAccelerated = false
+10-11 02:08:15.390 28634 28634 D InputEventReceiver: Input log is disabled in InputEventReceiver.
+10-11 02:08:15.392 28634 28679 W libc    : Access denied finding property "ro.vendor.display.iris_x7.support"
+10-11 02:08:15.392 28634 28634 D VRI[circle]: hardware acceleration = true, forceHwAccelerated = false
+10-11 02:08:15.395 28634 28634 D InputEventReceiver: Input log is disabled in InputEventReceiver.
+10-11 02:08:15.395 28634 28634 I FormalHASDK: hmsSdk=> onEvent(context). TAG: _hms_config_tag, eventId : 15151012
+10-11 02:08:15.395 28634 28634 I FloatWindowManager: end addSmallWindow
+10-11 02:08:15.396 28634 28634 D Cocos2dxActivity: onWindowFocusChanged() hasFocus=true
+10-11 02:08:15.396 28634 28634 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-11 02:08:15.396 28634 28695 D AudioTrack: start(2502): 0xb400007d5d87c6f0, prior state:STATE_PAUSED packageName: 
+10-11 02:08:15.396 28634 28634 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-11 02:08:15.397 28634 28634 W sqsdk_m : show float window result ->> 0
+10-11 02:08:15.397 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.397 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.397 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.397 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.397 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.397 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.397 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.401 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.401 28634 28634 I FloatWindowSmallView: onWindowVisibilityChanged:0
+10-11 02:08:15.401 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.401 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.401 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.401 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.401 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.406 28634 28634 D BufferQueueConsumer: [](id:6fda0000000a,api:0,p:-1,c:28634) connect: controlledByApp=false
+10-11 02:08:15.409 28634 28634 D BLASTBufferQueue: [VRI[circle]#10](f:0,a:0) constructor()
+10-11 02:08:15.409 28634 28634 D BLASTBufferQueue: [VRI[circle]#10](f:0,a:0) update width=132 height=132 format=-3 mTransformHint=0
+10-11 02:08:15.410 28634 28634 D VRI[circle]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:5062 android.view.ViewRootImpl.doTraversal:3631 android.view.ViewRootImpl$TraversalRunnable.run:11893 android.view.Choreographer$CallbackRecord.run:1861 android.view.Choreographer$CallbackRecord.run:1870 
+10-11 02:08:15.410 28634 28634 D VRI[circle]: Setup new sync=wmsSync-VRI[circle]#31
+10-11 02:08:15.412 28634 28807 D AudioTrack: [audioTrackData][zero] 19s(f:0 m:0 s:0 k:0 z:19858) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 02:08:15.414 28634 28679 D BLASTBufferQueue: [VRI[circle]#10](f:0,a:1) acquireNextBufferLocked size=132x132 mFrameNumber=1 applyTransaction=true mTimestamp=21981682073156(auto) mPendingTransactions.size=0 graphicBufferId=122982093553702 transform=0
+10-11 02:08:15.415 28634 28634 D VRI[circle]: vri.reportDrawFinished
+10-11 02:08:15.417 28634 28634 D VRI[circle]: vri.reportNextDraw android.view.ViewRootImpl.handleResized:2832 android.view.ViewRootImpl.-$$Nest$mhandleResized:0 android.view.ViewRootImpl$W.resized:13065 android.app.servertransaction.WindowStateResizeItem.execute:64 android.app.servertransaction.WindowStateTransactionItem.execute:59 
+10-11 02:08:15.419 28634 28639 I dldlwhjx.huawei: This is sticky GC, maxfree is 8388608 minfree is 2097152
+10-11 02:08:15.423 28634 28634 D VRI[circle]: Setup new sync=wmsSync-VRI[circle]#33
+10-11 02:08:15.426 28634 28634 D VRI[circle]: vri.reportDrawFinished
+10-11 02:08:15.460 28634 28634 D HiAnalyticsSDK: ActivityStatCommander=> isEnterDelayed = true, no override screen event...
+10-11 02:08:15.460 28634 28634 D HiAnalyticsSDK: ActivityStatCommander=> onScreenEnterSend
+10-11 02:08:15.460 28634 28634 W HiAnalyticsSDK: DeviceToolsKit=> invokeStaticFun() Exception
+10-11 02:08:15.460 28634 28868 D HiAnalyticsSDK: EventAdapterMission=> EventAdapterTask is running
+10-11 02:08:15.461 28634 28918 I HMSSDK_o: secretKeyCache not empty.
+10-11 02:08:15.461 28634 28918 I HMSSDK_o: The local secret is already in separate file mode.
+10-11 02:08:15.462 28634 28918 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.462 28634 28918 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-11 02:08:15.462 28634 28918 I HMSSDK_Util: available exist: true
+10-11 02:08:15.462 28634 28918 I HMSSDK_AvailableUtil: asyncCheckHmsUpdateInfo, not need to check
+10-11 02:08:15.465 28634 28918 I HiAnalyticsSDK: RecordMission=> record evt size : 93
+10-11 02:08:15.465 28634 28918 I HiAnalyticsSDK: RecordMission=> ready to auto report!
+10-11 02:08:15.465 28634 28918 W HiAnalyticsSDK: RecordMission=> autoReport timeout. interval < 30s 
+10-11 02:08:15.555 28634 28807 D AudioTrack: [audioTrackData][zero] 20s(f:0 m:0 s:0 k:0 z:20001) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 02:08:15.722 28634 28720 D InsetsAnimationCtrlImpl: notifyFinished shown: false, currentAlpha: 1.000000, currentInsets: Insets{left=0, top=0, right=0, bottom=0}
+10-11 02:08:15.722 28634 28720 D InsetsAnimationCtrlImpl: Animation finished abruptly.
+10-11 02:08:15.722 28634 28720 D InsetsController: onAnimationFinish showOnFinish: false
+10-11 02:08:15.722 28634 28634 D InsetsController: cancelAnimation of types:3 animType=1 host:com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity invokeCallback=false
+10-11 02:08:15.722 28634 28634 D InsetsController: notifyFinished. shown: false runner=android.view.InsetsAnimationThreadControlRunner@9dc120a
+10-11 02:08:15.759 28634 28694 I HMSSDK_PendingResultImpl: setResult:0
+10-11 02:08:15.759 28634 28634 I HMSSDK_BaseAdapter: BaseRequestResultCallback onResult
+10-11 02:08:15.759 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.759 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.760 28634 28634 I HMSSDK_BaseAdapter: api is: game.getCurrentPlayer, resolution: null, status_code: 0
+10-11 02:08:15.760 28634 28634 I HMSSDK_BaseAdapter: baseCallBack.onComplete
+10-11 02:08:15.760 28634 28634 I HMSSDK_HmsClient: receive msg status_code:0, error_code:0, api_name:game.getCurrentPlayer, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, session_id:*, transaction_id:103151469Player20261011020815379481046, resolution:null
+10-11 02:08:15.760 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.760 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.760 28634 28634 I HMSSDK_TaskApiCall: doExecute, uri:game.getCurrentPlayer, errorCode:0, transactionId:103151469Player20261011020815379481046
+10-11 02:08:15.760 28634 28634 I HMSSDK_JosBaseApiCall: com.huawei.hms.jos.games.player.PlayerTaskApiCall onResult: 0
+10-11 02:08:15.761 28634 28634 I HMSSDK_MobileGameCountDurationService: start count game duration
+10-11 02:08:15.761 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.761 28634 28634 D AGC_FixedDecrypt: init
+10-11 02:08:15.762 28634 28634 E AGC_LocalResource: Exception when reading the 'K&I' for 'Config'.
+10-11 02:08:15.762 28634 28634 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-11 02:08:15.762 28634 28634 I HMSSDK_Util: available exist: true
+10-11 02:08:15.762 28634 28634 I HMSSDK_AvailableUtil: asyncCheckHmsUpdateInfo, not need to check
+10-11 02:08:15.762 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.762 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.763 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.763 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.763 28634 28634 D AGC_FixedDecrypt: init
+10-11 02:08:15.763 28634 28634 E AGC_LocalResource: Exception when reading the 'K&I' for 'Config'.
+10-11 02:08:15.763 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.763 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.763 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.764 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.764 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.764 28634 28671 I HMSSDK_HuaweiApi: No setInnerHms, hms pkg name is com.huawei.hwid
+10-11 02:08:15.764 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.764 28634 28671 I HMSSDK_HuaweiApi: sendRequest
+10-11 02:08:15.764 28634 28634 I HMSSDK_RequestManager: removeReqByTransId
+10-11 02:08:15.764 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageName
+10-11 02:08:15.764 28634 28671 I HMSSDK_HuaweiApi: isConnected:true.
+10-11 02:08:15.764 28634 28634 W sqsdk_m : 获取player成功,playerid:1191752986001273
+10-11 02:08:15.764 28634 28671 I HMSSDK_BaseHmsClient: getAdapter:isInner:false, mInnerBinderAdapter:null, mOuterBinderAdapter:com.huawei.hms.adapter.OuterBinderAdapter@1da5578
+10-11 02:08:15.764 28634 28671 I HMSSDK_RequestManager: addToConnectedReqMap
+10-11 02:08:15.764 28634 28671 I HMSSDK_HmsClient: post msg api_name:game.playStart, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, sdk_version:61200300, session_id:*, transaction_id:103151469yStart20261011020815762301969, kitSdkVersion:61200300, apiLevel:7
+10-11 02:08:15.764 28634 28634 I ThinkingDataManager: 数数埋点, 事件名:37_token_check 参数 {"event":"37_token_check"}
+10-11 02:08:15.764 28634 28671 I HMSSDK_BaseAdapter: In constructor, activityWeakReference is java.lang.ref.WeakReference@33144d6, activity is com.game.sdk.GameSdkActivity@3b4dccb
+10-11 02:08:15.765 28634 28671 I HMSSDK_BaseAdapter: in baseRequest + uri is :game.playStart, transactionId is : 103151469yStart20261011020815762301969
+10-11 02:08:15.765 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.765 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.765 28634 28671 I HMSSDK_PendingResultImpl: init uri:game.playStart
+10-11 02:08:15.765 28634 28671 I HMSSDK_PendingResultImpl: setResultCallback
+10-11 02:08:15.765 28634 28634 I sqsdk   : mac, get from cache
+10-11 02:08:15.765 28634 28634 I sqsdk   : imei, get from cache
+10-11 02:08:15.765 28634 28634 I sqsdk   : 生成的随机数为：TdEPBy3I0cJd1h71
+10-11 02:08:15.766 28634 28634 I System.out: 签名串:37SDK DEBUG: <-pid->17<-gid->1012517<-refer->sy00000_1<-dev->231f5f9a6f4a4f00fea72b0b5f89fba3<-version->1.3.8<-time->1791655695<-key->DNB*qyVE···rRIM6wzl
+10-11 02:08:15.772 28634 28679 W libc    : Access denied finding property "ro.vendor.display.iris_x7.support"
+10-11 02:08:15.772 28634 28634 D VRI[GameSdkActivity]: hardware acceleration = true, forceHwAccelerated = false
+10-11 02:08:15.784 28634 28634 D InputEventReceiver: Input log is disabled in InputEventReceiver.
+10-11 02:08:15.786 28634 28634 D View    : setBackgroundBlur blurRadius=0
+--------- beginning of system
+10-11 02:08:15.787 28634 28634 D DecorViewImmersiveImpl: onAttachedToWindow:com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity
+10-11 02:08:15.787 28634 28634 D DecorViewImmersiveImpl: getWindowType: 2 title:com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity
+10-11 02:08:15.787 28634 28634 D DecorViewImmersiveImpl: window type: 2
+10-11 02:08:15.787 28634 28634 D MiuiNBIManagerImpl: mRemote has create
+10-11 02:08:15.787 28634 28634 D DecorViewImmersiveImpl: isNBIEnable=false
+10-11 02:08:15.787 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.787 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.787 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.787 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.787 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.787 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.787 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:15.792 28634 28634 D BufferQueueConsumer: [](id:6fda0000000b,api:0,p:-1,c:28634) connect: controlledByApp=false
+10-11 02:08:15.793 28634 28634 D BLASTBufferQueue: [VRI[GameSdkActivity]#11](f:0,a:0) constructor()
+10-11 02:08:15.793 28634 28634 D BLASTBufferQueue: [VRI[GameSdkActivity]#11](f:0,a:0) update width=1080 height=2338 format=-2 mTransformHint=0
+10-11 02:08:15.794 28634 28634 D VRI[GameSdkActivity]: vri.reportNextDraw android.view.ViewRootImpl.performTraversals:5062 android.view.ViewRootImpl.doTraversal:3631 android.view.ViewRootImpl$TraversalRunnable.run:11893 android.view.Choreographer$CallbackRecord.run:1861 android.view.Choreographer$CallbackRecord.run:1870 
+10-11 02:08:15.794 28634 28634 D VRI[GameSdkActivity]: Setup new sync=wmsSync-VRI[GameSdkActivity]#35
+10-11 02:08:15.797 28634 28679 D BLASTBufferQueue: [VRI[GameSdkActivity]#11](f:0,a:1) acquireNextBufferLocked size=1080x2338 mFrameNumber=1 applyTransaction=true mTimestamp=21982065204848(auto) mPendingTransactions.size=0 graphicBufferId=122982093553706 transform=0
+10-11 02:08:15.798 28634 28634 D VRI[GameSdkActivity]: vri.reportDrawFinished
+10-11 02:08:15.804 28634 28634 D Cocos2dxActivity: onWindowFocusChanged() hasFocus=false
+10-11 02:08:15.811 28634 28634 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-11 02:08:15.811 28634 28634 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-11 02:08:15.830 28634 28645 I HMSSDK_PendingResultImpl: setResult:0
+10-11 02:08:15.835 28634 28634 I HMSSDK_BaseAdapter: BaseRequestResultCallback onResult
+10-11 02:08:15.835 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.835 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.836 28634 28634 I HMSSDK_BaseAdapter: api is: game.playStart, resolution: null, status_code: 0
+10-11 02:08:15.836 28634 28634 I HMSSDK_BaseAdapter: baseCallBack.onComplete
+10-11 02:08:15.836 28634 28634 I HMSSDK_HmsClient: receive msg status_code:0, error_code:0, api_name:game.playStart, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, session_id:*, transaction_id:103151469yStart20261011020815762301969, resolution:null
+10-11 02:08:15.836 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.836 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.836 28634 28634 I HMSSDK_TaskApiCall: doExecute, uri:game.playStart, errorCode:0, transactionId:103151469yStart20261011020815762301969
+10-11 02:08:15.836 28634 28634 I HMSSDK_JosBaseApiCall: com.huawei.hms.jos.games.player.PlayStartTaskApiCall onResult: 0
+10-11 02:08:15.836 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.836 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.837 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.837 28634 28634 I HMSSDK_RequestManager: removeReqByTransId
+10-11 02:08:15.837 28634 28634 I HMSSDK_MobileGameCountDurationService: play start success
+10-11 02:08:15.838 28634 29002 I HMSSDK_MobileGameCountDurationService: loop send heart beat
+10-11 02:08:15.838 28634 29002 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.838 28634 29002 D AGC_FixedDecrypt: init
+10-11 02:08:15.838 28634 29002 E AGC_LocalResource: Exception when reading the 'K&I' for 'Config'.
+10-11 02:08:15.839 28634 29002 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-11 02:08:15.839 28634 29002 I HMSSDK_Util: available exist: true
+10-11 02:08:15.839 28634 29002 I HMSSDK_AvailableUtil: asyncCheckHmsUpdateInfo, not need to check
+10-11 02:08:15.839 28634 29002 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.839 28634 29002 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.839 28634 29002 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.839 28634 29002 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.839 28634 29002 D AGC_FixedDecrypt: init
+10-11 02:08:15.840 28634 29002 E AGC_LocalResource: Exception when reading the 'K&I' for 'Config'.
+10-11 02:08:15.840 28634 29002 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.840 28634 29002 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.840 28634 29002 I FormalHASDK: hmsSdk=> onReport. TAG: _hms_config_tag, TYPE: -1
+10-11 02:08:15.841 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.841 28634 28671 I HMSSDK_HuaweiApi: No setInnerHms, hms pkg name is com.huawei.hwid
+10-11 02:08:15.841 28634 28671 I HMSSDK_HuaweiApi: sendRequest
+10-11 02:08:15.841 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageName
+10-11 02:08:15.841 28634 28671 I HMSSDK_HuaweiApi: isConnected:true.
+10-11 02:08:15.841 28634 28671 I HMSSDK_BaseHmsClient: getAdapter:isInner:false, mInnerBinderAdapter:null, mOuterBinderAdapter:com.huawei.hms.adapter.OuterBinderAdapter@1da5578
+10-11 02:08:15.841 28634 28671 I HMSSDK_RequestManager: addToConnectedReqMap
+10-11 02:08:15.841 28634 28671 I HMSSDK_HmsClient: post msg api_name:game.sendHeartBeat, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, sdk_version:61200300, session_id:*, transaction_id:103151469rtBeat20261011020815839088967, kitSdkVersion:61200300, apiLevel:4
+10-11 02:08:15.842 28634 28671 I HMSSDK_BaseAdapter: In constructor, activityWeakReference is java.lang.ref.WeakReference@cd784b, activity is com.game.sdk.GameSdkActivity@3b4dccb
+10-11 02:08:15.842 28634 28671 I HMSSDK_BaseAdapter: in baseRequest + uri is :game.sendHeartBeat, transactionId is : 103151469rtBeat20261011020815839088967
+10-11 02:08:15.842 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.842 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.842 28634 28671 I HMSSDK_PendingResultImpl: init uri:game.sendHeartBeat
+10-11 02:08:15.842 28634 28671 I HMSSDK_PendingResultImpl: setResultCallback
+10-11 02:08:15.883 28634 28639 I dldlwhjx.huawei: This is non sticky GC, maxfree is 8388608 minfree is 2097152
+10-11 02:08:15.898 28634 28645 I HMSSDK_PendingResultImpl: setResult:0
+10-11 02:08:15.898 28634 28634 I HMSSDK_BaseAdapter: BaseRequestResultCallback onResult
+10-11 02:08:15.898 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.898 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:15.898 28634 28634 I HMSSDK_BaseAdapter: api is: game.sendHeartBeat, resolution: null, status_code: 0
+10-11 02:08:15.898 28634 28634 I HMSSDK_BaseAdapter: baseCallBack.onComplete
+10-11 02:08:15.898 28634 28634 I HMSSDK_HmsClient: receive msg status_code:0, error_code:0, api_name:game.sendHeartBeat, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, session_id:*, transaction_id:103151469rtBeat20261011020815839088967, resolution:null
+10-11 02:08:15.898 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.899 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:15.899 28634 28634 I HMSSDK_TaskApiCall: doExecute, uri:game.sendHeartBeat, errorCode:0, transactionId:103151469rtBeat20261011020815839088967
+10-11 02:08:15.899 28634 28634 I HMSSDK_JosBaseApiCall: com.huawei.hms.jos.games.player.SendHeartBeatTaskApiCall onResult: 0
+10-11 02:08:15.899 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:15.899 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.899 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:15.899 28634 28634 I HMSSDK_RequestManager: removeReqByTransId
+10-11 02:08:15.941 28634 28687 I SecurityComp10200303: SecureSSLSocketFactory: createSocket s host port autoClose
+10-11 02:08:15.941 28634 28687 I SecurityComp10200303: SecureSSLSocketFactory: set default protocols
+10-11 02:08:15.941 28634 28687 I SecurityComp10200303: SecureSSLSocketFactory: set default cipher suites
+10-11 02:08:15.984 28634 28687 I SecurityComp10200303: : verify: certificate is : CN=petalsearch.com,O=Huawei Software Technologies Co.\, Ltd.,L=Nanjing,ST=Jiangsu,C=CN
+10-11 02:08:16.012 28634 28634 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda12@9d3e636
+10-11 02:08:16.013 28634 28634 D DecorViewImmersiveImpl: onDetachedFromWindow
+10-11 02:08:16.014 28634 28634 D View    : [Warning] assignParent to null: this = DecorView@e3c0f17[GameSdkActivity]
+10-11 02:08:16.014 28634 28634 D BLASTBufferQueue: [VRI[GameSdkActivity]#11](f:0,a:1) destructor()
+10-11 02:08:16.014 28634 28634 D BufferQueueConsumer: [VRI[GameSdkActivity]#11(BLAST Consumer)11](id:6fda0000000b,api:0,p:-1,c:28634) disconnect
+10-11 02:08:16.023 28634 28634 W sqsdk_m : response: > http://pvt-api.37.com.cn/verify/ptoken/
+10-11 02:08:16.023 28634 28634 W sqsdk_m :    {"state":1,"msg":"success","data":{"token":"BASE64YzNiZnVQa1l6OS9yeTJVOVoxdXBNYkkyai94NjNkNE5UN2hWalJrdlM5TXo3akp5dU04MGxBK2U0TnBEd21jSHVpRDZPRkVxK0FQZ3A0L0pleW03TnBJY0hiQTV2a0ZsVEUwLzFhbGxtMkc0eXA5SjlOR0JvaDViL3k3WjJ4bWtjN2prSjNwWm1Nc0Jvbk1HQzUwOUFYOERjT0RWcTIvRFVHYlZXdkJPaHNSWXRNRkNkVkpiZmcrZ3BoaTRSU3dDc1lXUWZhS3VPNzliYng3STROSDRiM1hqYmNzMi9TN1dQOGVaT3pQajk4MlhLcE5aL2NQcFZqbmJKNGFQdjdsYmtuNmJqOE1Pek80endlbW1uWVRQelJsY1V6KytXSnhUMnc=","uid":2313586771,"uname":"","puid":"1191752986001273","puname":"","disname":"1191752986001273","utype":1,"pwd":"","nurl":""}}
+10-11 02:08:16.023 28634 28634 W sqsdk_m : 华为--》华为账号登录成功
+10-11 02:08:16.024 28634 28634 I sqsdk   : 埋点：hw_succ
+10-11 02:08:16.025 28634 28634 I sqsdk   : mac, get from cache
+10-11 02:08:16.025 28634 28634 I sqsdk   : imei, get from cache
+10-11 02:08:16.025 28634 28634 D sqsdk_m : Run2 Calibration  resolution:1080*2294
+10-11 02:08:16.025 28634 28634 D sqsdk_m : Run2 Calibration  resolution:1080*2294
+10-11 02:08:16.026 28634 28634 I sqsdk   : mac, get from cache
+10-11 02:08:16.026 28634 28634 I sqsdk   : imei, get from cache
+10-11 02:08:16.026 28634 28634 D sqsdk_m : Run2 Calibration  resolution:1080*2294
+10-11 02:08:16.026 28634 28634 D sqsdk_m : Run2 Calibration  resolution:1080*2294
+10-11 02:08:16.026 28634 28634 I sqsdk   : 生成的随机数为：rWa7o7J4PrPNyF5Q
+10-11 02:08:16.026 28634 28634 I ActivityLifeCycleUtils: appCount:1
+10-11 02:08:16.027 28634 28634 W sqsdk_m : 登录成功+{"state":1,"msg":"success","data":{"token":"BASE64YzNiZnVQa1l6OS9yeTJVOVoxdXBNYkkyai94NjNkNE5UN2hWalJrdlM5TXo3akp5dU04MGxBK2U0TnBEd21jSHVpRDZPRkVxK0FQZ3A0L0pleW03TnBJY0hiQTV2a0ZsVEUwLzFhbGxtMkc0eXA5SjlOR0JvaDViL3k3WjJ4bWtjN2prSjNwWm1Nc0Jvbk1HQzUwOUFYOERjT0RWcTIvRFVHYlZXdkJPaHNSWXRNRkNkVkpiZmcrZ3BoaTRSU3dDc1lXUWZhS3VPNzliYng3STROSDRiM1hqYmNzMi9TN1dQOGVaT3pQajk4MlhLcE5aL2NQcFZqbmJKNGFQdjdsYmtuNmJqOE1Pek80endlbW1uWVRQelJsY1V6KytXSnhUMnc=","uid":2313586771,"uname":"","puid":"1191752986001273","puname":"","disname":"1191752986001273","utype":1,"pwd":"","nurl":""}}
+10-11 02:08:16.027 28634 28634 W sqsdk_m : 验证token返回：{"state":1,"msg":"success","data":{"token":"BASE64YzNiZnVQa1l6OS9yeTJVOVoxdXBNYkkyai94NjNkNE5UN2hWalJrdlM5TXo3akp5dU04MGxBK2U0TnBEd21jSHVpRDZPRkVxK0FQZ3A0L0pleW03TnBJY0hiQTV2a0ZsVEUwLzFhbGxtMkc0eXA5SjlOR0JvaDViL3k3WjJ4bWtjN2prSjNwWm1Nc0Jvbk1HQzUwOUFYOERjT0RWcTIvRFVHYlZXdkJPaHNSWXRNRkNkVkpiZmcrZ3BoaTRSU3dDc1lXUWZhS3VPNzliYng3STROSDRiM1hqYmNzMi9TN1dQOGVaT3pQajk4MlhLcE5aL2NQcFZqbmJKNGFQdjdsYmtuNmJqOE1Pek80endlbW1uWVRQelJsY1V6KytXSnhUMnc=","uid":2313586771,"uname":"","puid":"1191752986001273","puname":"","disname":"1191752986001273","utype":1,"pwd":"","nurl":""}}
+10-11 02:08:16.028 28634 28634 W sqsdk_m : Platform-->sq loginSuccessCallBack,has pwd!
+10-11 02:08:16.028 28634 28736 I ActivityLifeCycleUtils: appCount:1
+10-11 02:08:16.029 28634 28736 I sqsdk   : 生成的随机数为：6nShjzm02Ln35916
+10-11 02:08:16.032 28634 28634 W sqsdk_m : Platform-->调用登录接口:与37交互成功，返回onSuccess信息:Bundle[{userid=2313586771, username=, gid=1012517, pid=17, token=BASE64YzNiZnVQa1l6OS9yeTJVOVoxdXBNYkkyai94NjNkNE5UN2hWalJrdlM5TXo3akp5dU04MGxBK2U0TnBEd21jSHVpRDZPRkVxK0FQZ3A0L0pleW03TnBJY0hiQTV2a0ZsVEUwLzFhbGxtMkc0eXA5SjlOR0JvaDViL3k3WjJ4bWtjN2prSjNwWm1Nc0Jvbk1HQzUwOUFYOERjT0RWcTIvRFVHYlZXdkJPaHNSWXRNRkNkVkpiZmcrZ3BoaTRSU3dDc1lXUWZhS3VPNzliYng3STROSDRiM1hqYmNzMi9TN1dQOGVaT3pQajk4MlhLcE5aL2NQcFZqbmJKNGFQdjdsYmtuNmJqOE1Pek80endlbW1uWVRQelJsY1V6KytXSnhUMnc=}]
+10-11 02:08:16.033 28634 28634 I ThinkingDataManager: 数数埋点, 事件名:channel_sdk_login_succ 参数 {"notification_status":"0","event":"channel_sdk_login_succ"}
+10-11 02:08:16.035 28634 28634 I sqsdk   : mac, get from cache
+10-11 02:08:16.035 28634 28634 I sqsdk   : imei, get from cache
+10-11 02:08:16.035 28634 28634 I sqsdk   : 生成的随机数为：E3xtya8RTcVlz2Y1
+10-11 02:08:16.036 28634 28634 I sqsdk   : DEVICE_INFO回调onSuccess
+10-11 02:08:16.037 28634 28634 I sqsdk   : loginType-->1
+10-11 02:08:16.037 28634 28634 I ThinkingDataManager: 数数埋点, 事件名:device_info_login 参数 {"country":"CN","e_board":"pearl","cpu_core":"8","sensor_list":"[lsm6dsoq_acc, akm09918, orientation, lsm6dsoq_gyro, tcs3408_als, gravity, linear_acc, rot_vec, uncali_mag, game_rotvec, uncali_gyro, significant, step_detect, step_count, geo_rotvec, tilt, pickup  Wakeup, dev_orient, uncali_acc, lsm6dso_temp, als_factory_str, elevator_detect_wakeup, NonUi  Wakeup, light_smd, sar_algo, sar_algo_1, sar_algo_2, dbtap, tcs3408_cct, cct_factory_str, oem_treadmill, pocket, screen_down, step_detect_wakeup, Touch Sensor, Proximity Sensor]","userid":"2313586771","is_first_launch":"false","multi_by_maps":"\/data\/app\/~~Ut6tU-ZurAsT9234p0eOFg==\/com.hnzh.dldlwhjx.huawei-iE_1lheoJNNlCYlYsxrYcw==\/base.apk","game_name":"斗罗大陆：武魂觉醒","e_platform":"mt6895","cpu_abi":"arm64-v8a","fingerprint":"Redmi\/pearl\/pearl:15\/AP3A.240905.015.A2\/OS3.0.3.0.VLHCNXM:user\/release-keys","host":"pangu-build-component-system-1044545-3rkvl-fbh8x-f9jgs","xposed_helper":"false","id":"AP3A.240905.015.A2","hardware":"mt6895","e_qemu":"","install_time":"1791640754361","e_cpu_abi":"arm64-v8a","phone_brand":"Redmi","e_light_sensor":"true","version":"215","tags":"release-keys","battery_status":"5","xposed_bridge":"false","country_code":"","last_update_time":"1791640754361","display_metrics":"{width=1080, dpi=440, height=2460}","codename":"REL","is_wifi_proxy":"false","sdk":"35","device":"pearl","enable_adb":"true","bssid":"02:00:00:00:00:00","version_release":"15","isRoDebugProp":"0","e_flavor":"missi-user","ssid":"","cpu_count":"8","manufacturer":"Xiaomi","d_imei":"99986007554657734","e_hardware":"mt6895","e_manufacturer":"Xiaomi","version_codes_base":"1","bootloader":"unknown","ipv6":"fe80::1c8d:d1ff:fec0:93c9","e_sensor_number":"36","d_mac":"020000000000","event":"device_info_login","apk_name":"com.hnzh.dldlwhjx.huawei","isRoSecureProp":"1","over":"android15","os":"android","battery_level":"100","ram_total":"7849676800","os_version":"15","display":"AP3A.240905.015.A2","e_baseband":"MOLY.NR16.R1.MP3.TC8.PR1.SP.V5.P59,MOLY.NR16.R1.MP3.TC8.PR1.SP.V5.P59","e_model":"23054RA19C","incremental":"OS3.0.3.0.VLHCNXM","my_uid":"10303","phone_model":"23054RA19C","token":"1a1261d0c76b2c9adabadd8fac375e8bcbd9641bc28","screen_brightness":"62","boot_time":"1791480346892","tracer_pid":"0","version_name":"1.3.8","kernel_version":"Linux localhost 5.10.236-android12-9-00003-gfb24cf99ad97-ab14313284 #1 SMP PREEMPT Tue Oct 21 03:03:12 UTC 2025 aarch64 Toybox","os_desc":"android","pf_path":"\/data\/user\/0\/com.hnzh.dldlwhjx.huawei\/files","input_method_list":"[搜狗输入法小米版, 百度输入法小米版, 讯飞输入法小米版]","is_root_new":"false","d_oaid":"","d_android_id":"382e060e2ca840dc","user":"builder","board":"pearl"}
+10-11 02:08:16.037 28634 28634 I sqsdk   : mac, get from cache
+10-11 02:08:16.037 28634 28634 I sqsdk   : imei, get from cache
+10-11 02:08:16.038 28634 28634 I sqsdk   : 生成的随机数为：4WZ2S6mOhtbgh6Cn
+10-11 02:08:16.039 28634 28634 I sqsdk   : DEVICE_INFO_LOGIN
+10-11 02:08:16.040 28634 28634 W sqsdk_m : 推送--》检查是否需要上报pushtoken至后台
+10-11 02:08:16.041 28634 28634 W sqsdk_m : 推送--》utoken;BASE64YzNiZnVQa1l6OS9yeTJVOVoxdXBNYkkyai94NjNkNE5UN2hWalJrdlM5TXo3akp5dU04MGxBK2U0TnBEd21jSHVpRDZPRkVxK0FQZ3A0L0pleW03TnBJY0hiQTV2a0ZsVEUwLzFhbGxtMkc0eXA5SjlOR0JvaDViL3k3WjJ4bWtjN2prSjNwWm1Nc0Jvbk1HQzUwOUFYOERjT0RWcTIvRFVHYlZXdkJPaHNSWXRNRkNkVkpiZmcrZ3BoaTRSU3dDc1lXUWZhS3VPNzliYng3STROSDRiM1hqYmNzMi9TN1dQOGVaT3pQajk4MlhLcE5aL2NQcFZqbmJKNGFQdjdsYmtuNmJqOE1Pek80endlbW1uWVRQelJsY1V6KytXSnhUMnc=
+10-11 02:08:16.041 28634 28634 W sqsdk_m : 推送--》本地的utoken;BASE64ZjFjMWNhL1hYT05YRW1IbFhXMEUrTmxZekwybXJsVFFLTlliY091cmFlbG1pZ0pMei9RMDdxN3N0emZLSGZEYXBLb1FCUFA3VThhb2p0TGtXYWhjVWU3Qlh4WHNsWGg4alBYV0RVWlNabVJlaHMycUIzOFhVckhlWmFEMll5alV5UUNHNGZMMWtrbkJDS3VrR0ZwMzh4UnNRbVY1d3BnN3dhWU5CSzFXNWYvRnBJSXdSN3hVKzBzNzVBNnhLYVhKVkdld2llTXRwdmJzWkZEaGkzcjc0eUN1ZEIxdE81Zm5ZRlFDWFZRL3ZwN3N1cG1UTEw5MFdERHdtWEtPWHgwVVE2aGRvMVAwTmkydk5jTHAvc0NVeVdQRzR1SE9NMXFMNXc=
+10-11 02:08:16.041 28634 28634 W sqsdk_m : 推送--》用户token已更新
+10-11 02:08:16.041 28634 28634 W sqsdk_m : 推送--》pushTokenRefresh;false
+10-11 02:08:16.041 28634 28634 W sqsdk_m : 推送--》将token上传至服务器:KAAAAACy0cbeAAC2-tnsjOWOYyruMyzFtjRotphpaxdEB7M1YwCrQRmkwWw5Dza51oiBYYb4gTGYGk8pqGY-pZQuJQodMCkXorzuwmz0ORMB1BV2OQ
+10-11 02:08:16.041 28634 28634 W sqsdk_m : request: http://m.api.m.37.com/sdk/pushSendToken/, {gid=1012517, pid=17, push_token=KAAAAACy0cbeAAC2-tnsjOWOYyruMyzFtjRotphpaxdEB7M1YwCrQRmkwWw5Dza51oiBYYb4gTGYGk8pqGY-pZQuJQodMCkXorzuwmz0ORMB1BV2OQ, token=BASE64YzNiZnVQa1l6OS9yeTJVOVoxdXBNYkkyai94NjNkNE5UN2hWalJrdlM5TXo3akp5dU04MGxBK2U0TnBEd21jSHVpRDZPRkVxK0FQZ3A0L0pleW03TnBJY0hiQTV2a0ZsVEUwLzFhbGxtMkc0eXA5SjlOR0JvaDViL3k3WjJ4bWtjN2prSjNwWm1Nc0Jvbk1HQzUwOUFYOERjT0RWcTIvRFVHYlZXdkJPaHNSWXRNRkNkVkpiZmcrZ3BoaTRSU3dDc1lXUWZhS3VPNzliYng3STROSDRiM1hqYmNzMi9TN1dQOGVaT3pQajk4MlhLcE5aL2NQcFZqbmJKNGFQdjdsYmtuNmJqOE1Pek80endlbW1uWVRQelJsY1V6KytXSnhUMnc=}
+10-11 02:08:16.042 28634 28634 W sqsdk_m : 华为--》查询用户已付款但没有发货的商品
+10-11 02:08:16.043 28634 28634 I HMSSDK_IapClientImpl: obtainOwnedPurchases
+10-11 02:08:16.043 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:16.043 28634 28670 W HiAnalyticsSDK: DeviceToolsKit=> invokeStaticFun() Exception
+10-11 02:08:16.044 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:16.044 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:16.044 28634 28670 I HiAnalyticsSDK: TokenAssignment=> start get token from agc
+10-11 02:08:16.044 28634 28670 D HiAnalyticsSDK: TokenAssignment=> success: 14400
+10-11 02:08:16.044 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:16.044 28634 28670 I HiAnalyticsSDK: HttpTransportCommander=> report data is empty
+10-11 02:08:16.044 28634 28868 D HiAnalyticsSDK: EventAdapterMission=> EventAdapterTask is running
+10-11 02:08:16.044 28634 28670 E HiAnalyticsSDK: HttpTransportCommander=> NE-006|Invalid URL.No address associated with hostname
+10-11 02:08:16.044 28634 28670 I HiAnalyticsSDK: HttpTransportCommander=> report data is empty
+10-11 02:08:16.044 28634 28918 I HMSSDK_o: secretKeyCache not empty.
+10-11 02:08:16.044 28634 28918 I HMSSDK_o: The local secret is already in separate file mode.
+10-11 02:08:16.045 28634 28670 E HiAnalyticsSDK: HttpTransportCommander=> NE-006|Invalid URL.No address associated with hostname
+10-11 02:08:16.045 28634 28670 I HiAnalyticsSDK: HttpTransportCommander=> report data is empty
+10-11 02:08:16.045 28634 28670 E HiAnalyticsSDK: HttpTransportCommander=> NE-006|Invalid URL.No address associated with hostname
+10-11 02:08:16.045 28634 28670 D HiAnalyticsSDK: HttpTransportCommander=> request times: 1
+10-11 02:08:16.045 28634 28918 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:16.045 28634 28918 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-11 02:08:16.045 28634 28918 I HMSSDK_Util: available exist: true
+10-11 02:08:16.045 28634 28918 I HMSSDK_AvailableUtil: asyncCheckHmsUpdateInfo, not need to check
+10-11 02:08:16.045 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:16.045 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:16.046 28634 28634 D AGC_FixedDecrypt: init
+10-11 02:08:16.046 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:16.046 28634 28634 E AGC_LocalResource: Exception when reading the 'K&I' for 'Config'.
+10-11 02:08:16.046 28634 28671 I HMSSDK_HuaweiApi: No setInnerHms, hms pkg name is com.huawei.hwid
+10-11 02:08:16.046 28634 28671 I HMSSDK_HuaweiApi: sendRequest
+10-11 02:08:16.046 28634 28634 I HMSSDK_HMSBIInitializer: Builder->biInitFlag :true
+10-11 02:08:16.046 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageName
+10-11 02:08:16.047 28634 28634 I HMSSDK_Util: available exist: true
+10-11 02:08:16.047 28634 28671 I HMSSDK_HuaweiApi: isConnected:true.
+10-11 02:08:16.047 28634 28634 I HMSSDK_AvailableUtil: asyncCheckHmsUpdateInfo, not need to check
+10-11 02:08:16.047 28634 28671 I HMSSDK_BaseHmsClient: getAdapter:isInner:false, mInnerBinderAdapter:null, mOuterBinderAdapter:com.huawei.hms.adapter.OuterBinderAdapter@1da5578
+10-11 02:08:16.047 28634 28634 I HMSSDK_IapClientImpl: obtainOwnedPurchases
+10-11 02:08:16.047 28634 28671 I HMSSDK_RequestManager: addToConnectedReqMap
+10-11 02:08:16.047 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:16.047 28634 28671 I HMSSDK_HmsClient: post msg api_name:iap.getPurchase, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, sdk_version:61200300, session_id:*, transaction_id:103151469rchase20261011020816043124616, kitSdkVersion:60400301, apiLevel:1
+10-11 02:08:16.048 28634 28918 I HiAnalyticsSDK: RecordMission=> record evt size : 94
+10-11 02:08:16.048 28634 28671 I HMSSDK_BaseAdapter: In constructor, activityWeakReference is java.lang.ref.WeakReference@2bcf9e7, activity is com.game.sdk.GameSdkActivity@3b4dccb
+10-11 02:08:16.048 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:16.048 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:16.048 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:16.048 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:16.048 28634 28671 I HMSSDK_BaseAdapter: in baseRequest + uri is :iap.getPurchase, transactionId is : 103151469rchase20261011020816043124616
+10-11 02:08:16.048 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:16.048 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:16.049 28634 28671 I HMSSDK_PendingResultImpl: init uri:iap.getPurchase
+10-11 02:08:16.049 28634 28671 I HMSSDK_PendingResultImpl: setResultCallback
+10-11 02:08:16.049 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:16.050 28634 28671 I HMSSDK_HuaweiApi: No setInnerHms, hms pkg name is com.huawei.hwid
+10-11 02:08:16.050 28634 28671 I HMSSDK_HuaweiApi: sendRequest
+10-11 02:08:16.050 28634 28671 I HMSSDK_HMSPackageManager: Enter getHMSPackageName
+10-11 02:08:16.050 28634 28670 I HiAnalyticsSDK: HttpTransportCommander=> report data is empty
+10-11 02:08:16.050 28634 28671 I HMSSDK_HuaweiApi: isConnected:true.
+10-11 02:08:16.050 28634 28671 I HMSSDK_BaseHmsClient: getAdapter:isInner:false, mInnerBinderAdapter:null, mOuterBinderAdapter:com.huawei.hms.adapter.OuterBinderAdapter@1da5578
+10-11 02:08:16.050 28634 28670 E HiAnalyticsSDK: HttpTransportCommander=> NE-006|Invalid URL.No address associated with hostname
+10-11 02:08:16.050 28634 28671 I HMSSDK_RequestManager: addToConnectedReqMap
+10-11 02:08:16.050 28634 28671 I HMSSDK_HmsClient: post msg api_name:iap.getPurchase, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, sdk_version:61200300, session_id:*, transaction_id:103151469rchase20261011020816047100411, kitSdkVersion:60400301, apiLevel:1
+10-11 02:08:16.050 28634 28918 I HiAnalyticsSDK: RecordMission=> ready to auto report!
+10-11 02:08:16.050 28634 28671 I HMSSDK_HmsClient: Activity is null for 103151469
+10-11 02:08:16.050 28634 28670 I HiAnalyticsSDK: HttpTransportCommander=> report data is empty
+10-11 02:08:16.051 28634 28671 I HMSSDK_BaseAdapter: In constructor, WeakReference is java.lang.ref.WeakReference@2421b00
+10-11 02:08:16.051 28634 28634 D Cocos2dxActivity: onWindowFocusChanged() hasFocus=true
+10-11 02:08:16.051 28634 28918 W HiAnalyticsSDK: RecordMission=> autoReport timeout. interval < 30s 
+10-11 02:08:16.051 28634 28634 I HandWritingStubImpl: refreshLastKeyboardType: 1
+10-11 02:08:16.051 28634 28634 I HandWritingStubImpl: getCurrentKeyboardType: 1
+10-11 02:08:16.051 28634 28671 I HMSSDK_BaseAdapter: in baseRequest + uri is :iap.getPurchase, transactionId is : 103151469rchase20261011020816047100411
+10-11 02:08:16.051 28634 28670 E HiAnalyticsSDK: HttpTransportCommander=> NE-006|Invalid URL.No address associated with hostname
+10-11 02:08:16.052 28634 28670 I HiAnalyticsSDK: HttpTransportCommander=> report data is empty
+10-11 02:08:16.052 28634 28670 E HiAnalyticsSDK: HttpTransportCommander=> NE-006|Invalid URL.No address associated with hostname
+10-11 02:08:16.052 28634 28670 D HiAnalyticsSDK: HttpTransportCommander=> request times: 2
+10-11 02:08:16.052 28634 28670 W HiAnalyticsSDK: RequestBas=> GET location policy failed,errorCode: -104
+10-11 02:08:16.052 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:16.052 28634 28671 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:16.053 28634 28671 I HMSSDK_PendingResultImpl: init uri:iap.getPurchase
+10-11 02:08:16.053 28634 28671 I HMSSDK_PendingResultImpl: setResultCallback
+10-11 02:08:16.065 28634 28687 I FormalHASDK: hmsSdk=> events PostRequest sendevent TYPE : maint, TAG : _hms_config_tag, resultCode: 200 ,reqID:a3554a10d9224836b0dce8620e33050d
+10-11 02:08:16.103 28634 28687 I SecurityComp10200303: SecureSSLSocketFactory: createSocket s host port autoClose
+10-11 02:08:16.104 28634 28687 I SecurityComp10200303: SecureSSLSocketFactory: set default protocols
+10-11 02:08:16.104 28634 28687 I SecurityComp10200303: SecureSSLSocketFactory: set default cipher suites
+10-11 02:08:16.123 28634 28634 I FinalHttp: post request success 
+10-11 02:08:16.123 28634 28634 W sqsdk_m : 推送--》上传push至服务器response -> {"state":1,"msg":"success","data":null}
+10-11 02:08:16.143 28634 28687 I SecurityComp10200303: : verify: certificate is : CN=petalsearch.com,O=Huawei Software Technologies Co.\, Ltd.,L=Nanjing,ST=Jiangsu,C=CN
+10-11 02:08:16.177 28634 28645 I HMSSDK_PendingResultImpl: setResult:0
+10-11 02:08:16.178 28634 28634 I HMSSDK_BaseAdapter: BaseRequestResultCallback onResult
+10-11 02:08:16.178 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:16.178 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:16.179 28634 28634 I HMSSDK_BaseAdapter: api is: iap.getPurchase, resolution: null, status_code: 0
+10-11 02:08:16.179 28634 28634 I HMSSDK_BaseAdapter: baseCallBack.onComplete
+10-11 02:08:16.179 28634 28634 I HMSSDK_HmsClient: receive msg status_code:0, error_code:0, api_name:iap.getPurchase, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, session_id:*, transaction_id:103151469rchase20261011020816047100411, resolution:null
+10-11 02:08:16.179 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:16.179 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:16.179 28634 28634 I HMSSDK_TaskApiCall: doExecute, uri:iap.getPurchase, errorCode:0, transactionId:103151469rchase20261011020816047100411
+10-11 02:08:16.179 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:16.179 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:16.179 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:16.179 28634 28634 I HMSSDK_OwnedPurchasesTaskApiCall: dealSuccess
+10-11 02:08:16.180 28634 28645 I HMSSDK_PendingResultImpl: setResult:0
+10-11 02:08:16.180 28634 28634 I HMSSDK_RequestManager: removeReqByTransId
+10-11 02:08:16.180 28634 28634 I HMSSDK_BaseAdapter: BaseRequestResultCallback onResult
+10-11 02:08:16.180 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:16.180 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_CALL_AIDL
+10-11 02:08:16.180 28634 28634 I HMSSDK_BaseAdapter: api is: iap.getPurchase, resolution: null, status_code: 0
+10-11 02:08:16.180 28634 28634 I HMSSDK_BaseAdapter: baseCallBack.onComplete
+10-11 02:08:16.180 28634 28634 I HMSSDK_HmsClient: receive msg status_code:0, error_code:0, api_name:iap.getPurchase, app_id:103151469|, pkg_name:com.hnzh.dldlwhjx.huawei, session_id:*, transaction_id:103151469rchase20261011020816043124616, resolution:null
+10-11 02:08:16.181 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:16.181 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_BASE_API_CALLED
+10-11 02:08:16.181 28634 28634 I HMSSDK_TaskApiCall: doExecute, uri:iap.getPurchase, errorCode:0, transactionId:103151469rchase20261011020816043124616
+10-11 02:08:16.181 28634 28634 I HMSSDK_HMSPackageManager: Enter getHMSPackageNameForMultiService
+10-11 02:08:16.181 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 0, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:16.181 28634 28634 I FormalHASDK: hmsSdk=> onEvent. TAG: _hms_config_tag, TYPE: 1, eventId : HMS_SDK_KIT_API_CALLED
+10-11 02:08:16.181 28634 28634 I HMSSDK_OwnedPurchasesTaskApiCall: dealSuccess
+10-11 02:08:16.181 28634 28634 I HMSSDK_RequestManager: removeReqByTransId
+10-11 02:08:16.181 28634 28634 W sqsdk_m : 订阅商品查询: 0 : success
+10-11 02:08:16.181 28634 28634 I IapRequestHelper: obtainOwnedPurchases, success
+10-11 02:08:16.181 28634 28634 W sqsdk_m : 华为--》obtainOwnedPurchases, success
+10-11 02:08:16.181 28634 28634 W sqsdk_m : 华为--》用户已支付但为未发货数量：0
+10-11 02:08:16.220 28634 28634 W sqsdk_m : response: > https://track.37.com.cn/api/event/
+10-11 02:08:16.220 28634 28634 W sqsdk_m :    
+10-11 02:08:16.220 28634 28634 W sqsdk_m : response: > event = hw_succ, trackActionSuccess
+10-11 02:08:16.224 28634 28687 I FormalHASDK: hmsSdk=> events PostRequest sendevent TYPE : oper, TAG : _hms_config_tag, resultCode: 200 ,reqID:9de9d00ad1b9415f82a44a18d97542a2
+10-11 02:08:16.659 28634 29019 D JniHelper: JniHelper::getJavaVM(), pthread_self() = 529461057328
+10-11 02:08:16.681 28634 28695 D JniHelper: JniHelper::getJavaVM(), pthread_self() = 530671699760
+10-11 02:08:16.681 28634 28695 D Cocos2dxActivity: lua stack: stack traceback:
+10-11 02:08:16.681 28634 28695 D Cocos2dxActivity: 	[C]: in function 'callFunc'
+10-11 02:08:16.681 28634 28695 D Cocos2dxActivity: 	[string "call_function.luac"]:179: in function 'callFunc'
+10-11 02:08:16.681 28634 28695 D Cocos2dxActivity: 	[string "sdk_function.luac"]:358: in function 'setCrashUserId'
+10-11 02:08:16.681 28634 28695 D Cocos2dxActivity: 	[string "sdk_function.luac"]:384: in function <[string "sdk_function.luac"]:378>
+10-11 02:08:16.682 28634 28695 I cocos2dx: sdkCallFunc_todo==setHitbugUserId
+10-11 02:08:16.778 28634 29022 D JniHelper: JniHelper::getJavaVM(), pthread_self() = 529461057328
+10-11 02:08:16.785 28634 28695 D cocos   : ====================getNotchHeight isNotchScreen: 122
+10-11 02:08:16.801 28634 28695 D cocos2d-x debug info: gamecore_lua_print==>请求全部服务器列表 url = https://register-whjx.shiyuegame.com/index.php/server/lists?channelId=1012517%7C17&account=1012517%7C17%5F2313586771&ext=&date_time=1791655696&sign=d5da4eef67ca0dd6c5982506ea3c7767&srv_id=yinghe_3360&type=3&flag=c442dcda54d98924fac51fff05357b68&ctime=1791655694&lua=1
+10-11 02:08:16.869 28634 28835 W BatteryInfo: Battery left: 0 current: 403000.0
+10-11 02:08:16.869 28634 28835 D BatteryInfo: Current batter: -403000.0
+10-11 02:08:17.210 28634 29025 D JniHelper: JniHelper::getJavaVM(), pthread_self() = 531561748272
+10-11 02:08:17.230 28634 28639 I dldlwhjx.huawei: This is sticky GC, maxfree is 8388608 minfree is 2097152
+10-11 02:08:20.879 28634 28835 W BatteryInfo: Battery left: 0 current: 0.0
+10-11 02:08:20.879 28634 28835 D BatteryInfo: Current batter: -0.0
+10-11 02:08:21.400 28634 28807 D AudioTrack: [audioTrackData][fine] 5s(f:5002 m:0 s:0 k:0 z:0) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 8085
+10-11 02:08:24.886 28634 28835 W BatteryInfo: Battery left: 0 current: 296000.0
+10-11 02:08:24.886 28634 28835 D BatteryInfo: Current batter: -296000.0
+10-11 02:08:26.399 28634 28807 D AudioTrack: [audioTrackData][fine] 10s(f:10000 m:0 s:0 k:0 z:0) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 6139
+10-11 02:08:28.893 28634 28835 W BatteryInfo: Battery left: 0 current: 122000.0
+10-11 02:08:28.893 28634 28835 D BatteryInfo: Current batter: -122000.0
+10-11 02:08:30.227 28634 28690 I DrmHalHidl: found instance=clearkey version=android.hardware.drm@1.4::IDrmFactory
+10-11 02:08:30.227 28634 28690 I DrmHalHidl: found instance=widevine version=android.hardware.drm@1.4::IDrmFactory
+10-11 02:08:30.325 28634 28690 W Settings: Setting adb_enabled has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+10-11 02:08:31.401 28634 28807 D AudioTrack: [audioTrackData][fine] 15s(f:15003 m:0 s:0 k:0 z:0) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 3939
+10-11 02:08:32.902 28634 28835 W BatteryInfo: Battery left: 0 current: 203000.0
+10-11 02:08:32.902 28634 28835 D BatteryInfo: Current batter: -203000.0
+10-11 02:08:36.399 28634 28807 D AudioTrack: [audioTrackData][fine] 20s(f:20000 m:0 s:0 k:0 z:0) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 13233
+10-11 02:08:36.910 28634 28835 W BatteryInfo: Battery left: 0 current: 129000.0
+10-11 02:08:36.910 28634 28835 D BatteryInfo: Current batter: -129000.0
+10-11 02:08:40.922 28634 28835 W BatteryInfo: Battery left: 0 current: 163000.0
+10-11 02:08:40.923 28634 28835 D BatteryInfo: Current batter: -163000.0
+10-11 02:08:41.402 28634 28807 D AudioTrack: [audioTrackData][fine] 25s(f:25003 m:0 s:0 k:0 z:0) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 8485
+10-11 02:08:42.223 28634 28634 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=22008482, downTime=22008482, phoneEventTime=02:08:42.214 } moveCount:0
+10-11 02:08:42.225 28634 28634 D VRI[GameSdkActivity]: getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+10-11 02:08:42.305 28634 28634 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=22008571, downTime=22008482, phoneEventTime=02:08:42.303 } moveCount:0
+10-11 02:08:42.395 28634 28695 D cocos2d-x debug info: gamecore_lua_print==>[file_update][down_load_url_by_xml][request] is_re_login=	true	 package_ver=	1.3.8	 url_lua_config=	https://whjx-cdn.38ejed.com/whjx/config_encrypt/url_config_37dldlmix.lua	 request_url=	https://whjx-cdn.38ejed.com/whjx/config_encrypt/url_config_37dldlmix.lua?build_ver=201&package_ver=1.3.8&1791655722
+10-11 02:08:42.517 28634 29615 D JniHelper: JniHelper::getJavaVM(), pthread_self() = 531551074096
+10-11 02:08:42.531 28634 28695 D cocos2d-x debug info: gamecore_lua_print==>[file_update][down_load_url_by_xml][response] readyState=	4	 status=	200	 is_re_login=	true
+10-11 02:08:42.553 28634 28695 D cocos2d-x debug info: gamecore_lua_print==>[file_update][down_load_url_by_xml][load] load_ok=	true	 load_msg=	nil	 has_URL_PATH_ALL=	true	 platform=	hwsc2
+10-11 02:08:42.553 28634 28695 D cocos2d-x debug info: gamecore_lua_print==>[file_update][get_version_info] is_enter_try_srv=false local_version=	2942	 local_try_version=	2942	 NOW_VERSION=	2425	 now_version=	2942	 target_version=	2942
+10-11 02:08:42.553 28634 28695 D cocos2d-x debug info: gamecore_lua_print==>[file_update][getReLoginIsCheck] load_ok=	true	 has_URL_PATH_ALL=	true	 now_version=	2942	 target_version=	2942	 UPDATE_SKIP=	false
+10-11 02:08:42.553 28634 28695 D cocos2d-x debug info: gamecore_lua_print==>[file_update][getReLoginIsCheck][result] is_need_down=	false	 need_restart=	false	 re_login_error_sum=	1
+10-11 02:08:42.647 28634 28695 I cocos2dx: Exception===carrier_name
+10-11 02:08:42.648 28634 28695 D Cocos2dxActivity: callCommonFunc_todo: getAdId
+10-11 02:08:42.648 28634 28695 D Cocos2dxActivity: callCommonFunc_todo: getYWIdfa
+10-11 02:08:43.126 28634 28695 E         : scaleX = 1.500000
+10-11 02:08:43.132 28634 28634 D View    : setBackgroundBlur blurRadius=0
+10-11 02:08:43.137 28634 28695 W sqsdk_m : Platform-->提交角色信息接口:
+10-11 02:08:43.137 28634 28695 W sqsdk_m : {vipLevel=2, roleLevelMTime=1677047098, balance=9989, roleCTime=1658046542, roleId=5317, roleName=维纳斯帕梅拉, partyName=斗罗大陆, serverName=天使3360服, serverTime=1657971000, roleLevel=60, serverId=yinghe_3360}
+10-11 02:08:43.137 28634 28695 I ThinkingDataManager: 数数埋点, 事件名:channel_enter_game 参数 {"event":"channel_enter_game"}
+10-11 02:08:43.137 28634 28695 I sqsdk   : mac, get from cache
+10-11 02:08:43.138 28634 28695 I sqsdk   : imei, get from cache
+10-11 02:08:43.138 28634 28695 I sqsdk   : 生成的随机数为：7iLtR7F98Vo0c95R
+10-11 02:08:43.139 28634 28695 W sqsdk_m : BaseSQwanCore-->调用提交角色信息接口
+10-11 02:08:43.139 28634 28695 I System.out: 签名串:37SDK DEBUG: <-pid->17<-gid->1012517<-refer->sy00000_1<-dev->231f5f9a6f4a4f00fea72b0b5f89fba3<-version->1.3.8<-time->1791655723<-key->DNB*qyVE···rRIM6wzl
+10-11 02:08:43.139 28634 28695 I sqsdk   : 生成的随机数为：2ihm73867g9z151d
+10-11 02:08:43.139 28634 28695 I ActivityLifeCycleUtils: appCount:1
+10-11 02:08:43.144 28634 28737 I ActivityLifeCycleUtils: appCount:1
+10-11 02:08:43.147 28634 28737 I sqsdk   : 生成的随机数为：s70s9sjc6sfyXSB8
+10-11 02:08:43.230 28634 28634 W sqsdk_m : response: > http://m-api.37.com.cn/sdk/enter/
+10-11 02:08:43.230 28634 28634 W sqsdk_m :    {"isvideo":0}
+10-11 02:08:43.230 28634 28634 W sqsdk_m : 37提交用户角色信息成功:{"isvideo":0}
+10-11 02:08:43.585 28634 29658 D JniHelper: JniHelper::getJavaVM(), pthread_self() = 531550009136
+10-11 02:08:44.927 28634 28835 W BatteryInfo: Battery left: 0 current: 244000.0
+10-11 02:08:44.927 28634 28835 D BatteryInfo: Current batter: -244000.0
+10-11 02:08:46.814 28634 28807 D AudioTrack: [audioTrackData][fine] 30s(f:30000 m:0 s:0 k:0 z:0) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 1217
+10-11 02:08:48.166 28634 28634 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=22014427, downTime=22014427, phoneEventTime=02:08:48.160 } moveCount:0
+10-11 02:08:48.167 28634 28634 D VRI[GameSdkActivity]: getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+10-11 02:08:48.243 28634 28634 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=22014510, downTime=22014427, phoneEventTime=02:08:48.242 } moveCount:0
+10-11 02:08:48.936 28634 28835 W BatteryInfo: Battery left: 0 current: 93000.0
+10-11 02:08:48.937 28634 28835 D BatteryInfo: Current batter: -93000.0
+10-11 02:08:51.818 28634 28807 D AudioTrack: [audioTrackData][fine] 35s(f:35003 m:0 s:0 k:0 z:0) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 3348
+10-11 02:08:52.942 28634 28835 W BatteryInfo: Battery left: 0 current: 129000.0
+10-11 02:08:52.942 28634 28835 D BatteryInfo: Current batter: -129000.0
+10-11 02:08:52.965 28634 28700 I HiAnalyticsSDK: InteractionManager=> connectManager onEvent
+10-11 02:08:53.153 28634 28695 D Cocos2dxActivity: Perfmate insertGameInfo upload callBack: true
+10-11 02:08:53.155 28634 28847 W System.err: java.lang.NullPointerException: Attempt to get length of null array
+10-11 02:08:53.155 28634 28847 W System.err: 	at v7y8.xc5v.fj32(CpuTools.java:14)
+10-11 02:08:53.155 28634 28847 W System.err: 	at v7y8.d5te.run(DataMakeTools.java:62)
+10-11 02:08:53.155 28634 28847 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1291)
+10-11 02:08:53.155 28634 28847 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:670)
+10-11 02:08:53.155 28634 28847 W System.err: 	at java.lang.Thread.run(Thread.java:1012)
+10-11 02:08:55.280 28634 28634 I sqsdk   : common sgin: signStr :dev=231f5f9a6f4a4f00fea72b0b5f89fba3from=androidgid=1012517gwversion=1.6.8pid=17refer=sy00000_1sversion=3.6.4time=1791655735version=1.3.8DNB*qyVE3CdPuj/kbO1iJTX4rRIM6wzl
+10-11 02:08:55.282 28634 28634 I sqsdk   : 生成的随机数为：mRg56l041Rb6ul5w
+10-11 02:08:55.283 28634 28634 I ActivityLifeCycleUtils: appCount:1
+10-11 02:08:55.290 28634 28634 I sqsdk   : common sgin: signStr :dev=231f5f9a6f4a4f00fea72b0b5f89fba3from=androidgid=1012517gwversion=1.6.8pid=17refer=sy00000_1sversion=3.6.4time=1791655735version=1.3.8DNB*qyVE3CdPuj/kbO1iJTX4rRIM6wzl
+10-11 02:08:55.290 28634 28634 I sqsdk   : 生成的随机数为：5L8c7Q9qP2aGRg8Y
+10-11 02:08:55.290 28634 28634 I ActivityLifeCycleUtils: appCount:1
+10-11 02:08:55.294 28634 28735 W NO_TAG  : 【Dns】beian-game-report.akbkgame.com既不在保护域名列表也不在主域保护列表中, 无法解析
+10-11 02:08:55.296 28634 28735 I ActivityLifeCycleUtils: appCount:1
+10-11 02:08:55.298 28634 28735 I sqsdk   : 生成的随机数为：2O2cAj18m9x69PPK
+10-11 02:08:55.298 28634 28734 W NO_TAG  : 【Dns】beian-game-report.95k.com既不在保护域名列表也不在主域保护列表中, 无法解析
+10-11 02:08:55.299 28634 28734 I ActivityLifeCycleUtils: appCount:1
+10-11 02:08:55.303 28634 28734 I sqsdk   : 生成的随机数为：449gPe4OeD3ORBr8
+10-11 02:08:55.949 28634 28639 I dldlwhjx.huawei: This is non sticky GC, maxfree is 8388608 minfree is 2097152
+10-11 02:08:56.815 28634 28807 D AudioTrack: [audioTrackData][fine] 40s(f:40001 m:0 s:0 k:0 z:0) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 1808
+10-11 02:08:56.952 28634 28835 W BatteryInfo: Battery left: 0 current: 85000.0
+10-11 02:08:56.952 28634 28835 D BatteryInfo: Current batter: -85000.0
+10-11 02:09:00.958 28634 28835 W BatteryInfo: Battery left: 0 current: 211000.0
+10-11 02:09:00.958 28634 28835 D BatteryInfo: Current batter: -211000.0
+10-11 02:09:01.818 28634 28807 D AudioTrack: [audioTrackData][fine] 45s(f:45003 m:0 s:0 k:0 z:0) : pid 28634 uid 10303 sessionId 337 sr 48000 ch 2 fmt 1  mMaxAmplitude 2355
+10-11 02:09:01.901 28634 28634 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=22028165, downTime=22028165, phoneEventTime=02:09:01.897 } moveCount:0
+10-11 02:09:01.902 28634 28634 D VRI[GameSdkActivity]: getMiuiFreeformStackInfo mTmpFrames.miuiFreeFormStackInfo: null
+10-11 02:09:01.906 28634 28634 I MIUIInput: [MotionEvent] ViewRootImpl windowName 'com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=22028165, downTime=22028165, phoneEventTime=02:09:01.897 } moveCount:0

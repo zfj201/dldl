@@ -1,0 +1,9 @@
+{
+  "type": "send",
+  "payload": {
+    "kind": "native",
+    "base": "0x7b8da54000",
+    "exports": [],
+    "symbols": []
+  }
+}

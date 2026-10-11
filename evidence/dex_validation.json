@@ -1,0 +1,62 @@
+[
+  {
+    "file": "classes3.dex",
+    "size": 768836,
+    "magic": "6465780a30333800",
+    "file_size_header": 768836,
+    "classes": 772,
+    "methods": 6709,
+    "adler32_ok": true,
+    "sha1_ok": true
+  },
+  {
+    "file": "classes6.dex",
+    "size": 2596596,
+    "magic": "6465780a30333800",
+    "file_size_header": 2596596,
+    "classes": 2660,
+    "methods": 19993,
+    "adler32_ok": true,
+    "sha1_ok": true
+  },
+  {
+    "file": "classes.dex",
+    "size": 3371464,
+    "magic": "6465780a30333800",
+    "file_size_header": 3371464,
+    "classes": 3398,
+    "methods": 26520,
+    "adler32_ok": true,
+    "sha1_ok": true
+  },
+  {
+    "file": "classes5.dex",
+    "size": 1607996,
+    "magic": "6465780a30333800",
+    "file_size_header": 1607996,
+    "classes": 1235,
+    "methods": 10891,
+    "adler32_ok": true,
+    "sha1_ok": true
+  },
+  {
+    "file": "classes2.dex",
+    "size": 2789408,
+    "magic": "6465780a30333800",
+    "file_size_header": 2789408,
+    "classes": 2391,
+    "methods": 23623,
+    "adler32_ok": true,
+    "sha1_ok": true
+  },
+  {
+    "file": "classes4.dex",
+    "size": 1528732,
+    "magic": "6465780a30333800",
+    "file_size_header": 1528732,
+    "classes": 1499,
+    "methods": 10283,
+    "adler32_ok": true,
+    "sha1_ok": true
+  }
+]

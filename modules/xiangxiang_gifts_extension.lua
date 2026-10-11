@@ -1,0 +1,255 @@
+-- Two local helper tasks; no business sends at installation, no paid-gift path.
+local M = {}
+local active_install
+function M.install(Gifts, Actions, GameActions)
+    if active_install then return active_install end
+    assert(OneKeyBurdenMainWindow and OneKeyBurdenAutoWindow and OneKeyBurdenAutoItem, 'helper classes missing')
+    local helper = OneKeyBurdenController:getInstance()
+    local vip = VipController:getInstance()
+    assert(not helper.onekeyburden_main_window and not helper.onekeyburden_auto_window, 'close helper windows first')
+    local TYPE = OneKeyBurdenConst.SimplifyType.DAILY_TASK
+    local specs = {
+        {pos = -2101802, kind = 1, title = '斗罗集市·每日礼包领取'},
+        {pos = -2101801, kind = 6, title = '学院活动·每日特惠领取'}
+    }
+    if Actions then
+        specs[#specs+1] = {pos=-2101800,kind=2,title='斗罗集市·每周礼包领取'}
+        specs[#specs+1] = {pos=-2101799,kind=3,title='斗罗集市·每月礼包领取'}
+        specs[#specs+1] = {pos=-2101798,kind='sweep',title='乾坤问情谷·免费扫荡'}
+        specs[#specs+1] = {pos=-2101797,kind='pantheon',title='众神殿·自动膜拜'}
+        specs[#specs+1] = {pos=-2101796,kind='domain',title='魂域之境·自动膜拜'}
+        specs[#specs+1] = {pos=-2101795,kind='summon',title='镜之屋·每日契约召唤'}
+    end
+    local COUNT_KEY = 9020
+    local custom, patches, clock = {}, {}, GlobalTimeTicket:getInstance()
+    local function roleKey()
+        local role = RoleController:getInstance():getRoleVo()
+        if not role or not role.rid or not role.srv_id then return nil end
+        return tostring(role.srv_id) .. ':' .. tostring(role.rid), role
+    end
+    local function identity()
+        local key, role = roleKey()
+        return key and key .. ':' .. tostring(role) or nil
+    end
+    local function prefKey(pos)
+        local key = roleKey()
+        return key and 'dldl_gifts_v1:' .. key .. ':' .. pos or nil
+    end
+    local function now() return GameNet:getInstance():getTime() end
+    local function patch(obj, key, wrap)
+        local old = obj[key]; assert(type(old) == 'function', key)
+        local new = wrap(old); obj[key] = new
+        patches[#patches+1] = {obj = obj, key = key, old = old, new = new}
+    end
+    local list = OneKeyBurdenConst.SimplifyTypeList[TYPE]
+    for _, spec in ipairs(specs) do
+        for _, row in ipairs(list) do assert(row.id ~= spec.pos, 'local ID collision') end
+        custom[spec.pos] = spec
+        spec.row = {id = spec.pos, title = TI18N(spec.title), is_title = true, is_single_select = true,
+            option_list = {{TI18N('开启'), TRUE}, {TI18N('关闭'), FALSE}}, default_option = FALSE}
+        if spec.kind == 'summon' then
+            spec.row.close_subitem_list = {{},{1}}
+            spec.row.subitem_list = {{{title=TI18N('每日次数（仅灵魂契约）'),is_title=false,
+                is_single_select=true,proto_key_args=COUNT_KEY,
+                option_list={{TI18N('10次'),TRUE,10},{TI18N('20次'),TRUE,20}}}}}
+        end
+    end
+    local timer, owner, internal_claim, manual_until = nil, nil, false, 0
+    local runner = Gifts.new({identity = identity, now = now, timeout = 10,
+        refresh = function(kind) vip:sender21017(kind) end,
+        freeId = function(kind)
+            if kind >= 1 and kind <= 3 then return 9990 + kind end
+            local _, _, id = vip:getModel():getCurDailyData(); return id
+        end,
+        isFree = function(kind, id)
+            local cfg = ChargeLoopData.data_award_name[id]
+            if not cfg or cfg.is_free ~= 1 or cfg.gift_type ~= kind or cfg.buy_charge_id ~= 0 then return false end
+            if kind >= 1 and kind <= 3 then return id == 9990 + kind end
+            return kind == 6 and vip:getModel():checkFreeDailyGift(id)
+        end,
+        claim = function(id)
+            internal_claim = true
+            local ok, err = pcall(function() vip:sender21018(id) end)
+            internal_claim = false
+            if not ok then error(err) end
+        end})
+    local action_runner, action_pending
+    local function cleanup()
+        if timer then clock:remove(timer); timer = nil end
+        owner = nil
+    end
+    local function safe(fn)
+        local ok, err = pcall(fn)
+        if not ok then
+            print('[dldl_daily] '..tostring(err))
+            if runner.active then runner:finish('error','runtime_error') end
+            if action_runner and action_runner.active then action_runner:finish('uncertain','runtime_error') end
+        end
+    end
+    if Actions then
+        action_runner, action_pending = GameActions.bind(Actions,{roleKey=roleKey,identity=identity,now=now,
+            patch=patch,busy=function() return owner~=nil end,safe=safe})
+    end
+    patch(vip, 'sender21018', function(old)
+        return function(self, id)
+            if owner and not internal_claim then
+                message(TI18N('免费礼包任务正在核实，请稍后手动领取')); return
+            end
+            if not internal_claim then manual_until = now() + 15 end
+            return old(self, id)
+        end
+    end)
+    patch(vip, 'handle21017', function(old)
+        return function(self, data)
+            old(self, data)
+            safe(function() for _, group in ipairs(data and data.gift_loop_list or {}) do runner:onInfo(group) end end)
+        end
+    end)
+    patch(vip, 'handle21018', function(old)
+        return function(self, data)
+            old(self, data)
+            if not runner.active then manual_until = 0 end
+            safe(function() runner:onReply(data) end)
+        end
+    end)
+    patch(OneKeyBurdenMainWindow, 'getPosExecuteData', function(old)
+        return function(self, key, cfg)
+            local data = old(self, key, cfg)
+            if custom[cfg.id] then
+                local pref = prefKey(cfg.id)
+                data.is_open = pref and cc.UserDefault:getInstance():getBoolForKey(pref, false) and TRUE or FALSE
+                if custom[cfg.id].kind=='summon' and pref then
+                    local count=cc.UserDefault:getInstance():getIntegerForKey(pref..':count',10)
+                    if count~=10 and count~=20 then count=10 end
+                    for _,arg in ipairs(data.args) do if arg.args_key==COUNT_KEY then arg.args_val=count end end
+                end
+            end
+            return data
+        end
+    end)
+    patch(helper, 'sender31601', function(old)
+        return function(self, values)
+            local filtered, ud = {}, cc.UserDefault:getInstance()
+            for _, group in ipairs(values) do
+                local copy = {type = group.type, type_list = {}}
+                for _, row in ipairs(group.type_list) do
+                    if custom[row.pos] then
+                        local key = prefKey(row.pos)
+                        if key then
+                            ud:setBoolForKey(key, row.is_open == TRUE)
+                            if custom[row.pos].kind=='summon' then
+                                for _,arg in ipairs(row.args or {}) do
+                                    if arg.args_key==COUNT_KEY and (arg.args_val==10 or arg.args_val==20) then
+                                        ud:setIntegerForKey(key..':count',arg.args_val)
+                                    end
+                                end
+                            end
+                        end
+                    else copy.type_list[#copy.type_list+1] = row end
+                end
+                if #copy.type_list > 0 then filtered[#filtered+1] = copy end
+            end
+            ud:flush()
+            if #filtered > 0 then return old(self, filtered) end
+        end
+    end)
+    patch(helper, 'sender31602', function(old)
+        return function(self, kind, pos)
+            assert(not custom[pos], 'local task cannot use native task protocol')
+            return old(self, kind, pos)
+        end
+    end)
+    local advance = OneKeyBurdenAutoWindow.updateDataList
+    patch(OneKeyBurdenAutoWindow, 'updateDataList', function(old)
+        return function(self, data)
+            local row = self.execute_request_list[self.execute_index]
+            if not row or custom[row.pos] then return end
+            if not data or data.type ~= row.type or data.pos ~= row.pos then return end
+            return old(self, data)
+        end
+    end)
+    patch(OneKeyBurdenAutoWindow, 'requestTask', function(old)
+        return function(self)
+            local row = self.execute_request_list[self.execute_index]
+            local spec = row and custom[row.pos]
+            if not spec then return old(self) end
+            if owner then return end
+            owner = self
+            local function done(result)
+                if Actions then
+                    pcall(function()
+                        local fu=cc.FileUtils:getInstance()
+                        local f=assert(io.open(fu:getWritablePath()..'dldl_daily_results.log','a'))
+                        f:write(tostring(os.time()),'|',spec.title,'|',result.status,'|',tostring(result.reason),'|',tostring(result.count or 0),'\n');f:close()
+                    end)
+                end
+                cleanup(); row.local_result, row.local_reason = result.status, result.reason
+                if result.status == 'confirmed' or result.status == 'skipped' then
+                    advance(self, {args = {}})
+                else
+                    self.is_execute_finish = true
+                    helper:sender31604(self.operate_type, 0)
+                    self.stop_btn_lb:setString(TI18N('关闭'))
+                    self:updateLoopList()
+                end
+            end
+            if now() < manual_until or (action_pending and action_pending()) then done({status = 'error', reason = 'manual_claim_pending'}); return end
+            local selected = type(spec.kind)=='number' and runner or action_runner
+            timer = clock:add(function() safe(function() selected:tick() end) end, 0.5)
+            local count=10
+            for _,arg in ipairs(row.args or {}) do if arg.args_key==COUNT_KEY then count=arg.args_val end end
+            safe(function()
+                local ok, why = selected:start(spec.kind, done, count)
+                if not ok then done({status = 'error', reason = why}) end
+            end)
+        end
+    end)
+    patch(OneKeyBurdenAutoItem, 'setData', function(old)
+        return function(self, data, index)
+            old(self, data, index)
+            if custom[data.pos] and data.local_result then
+                local labels = {confirmed = '已核实完成', skipped = '已完成或无可用次数', uncertain = '结果未确认',
+                    error = '暂未执行', cancelled = '已停止'}
+                self.un_finish_node:setVisible(true)
+                local reasons={insufficient_contracts='灵魂契约不足，已阻断',hero_bag_full='魂师背包空间不足',
+                    daily_target_done='今日召唤已完成',previous_request_unresolved='上次结果不明，已阻断',
+                    inventory_timeout='背包未同步，已停止',summon_busy='正在召唤，请稍后',not_open='暂未开放'}
+                self.un_finish_lb:setString(TI18N(reasons[data.local_reason] or labels[data.local_result] or '结果未确认'))
+            end
+        end
+    end)
+    patch(OneKeyBurdenAutoWindow, 'close_callback', function(old)
+        return function(self, ...)
+            if owner == self then
+                if runner.active then runner.active.done = function() end end
+                runner:cancel()
+                if action_runner then
+                    if action_runner.active then action_runner.active.done=function() end end
+                    action_runner:cancel()
+                end
+                cleanup()
+            end
+            return old(self, ...)
+        end
+    end)
+    -- Insert first so both entries are immediately visible in the daily category.
+    for i = #specs, 1, -1 do table.insert(list, 1, specs[i].row) end
+    local installation = {runner = runner, specs = specs, actions=action_runner, version = Actions and 'daily_actions_v2' or 'daily_gifts_v1'}
+    function installation.uninstall()
+        assert(not helper.onekeyburden_main_window and not helper.onekeyburden_auto_window, 'close helper windows first')
+        for _, p in ipairs(patches) do assert(p.obj[p.key] == p.new, 'patch changed: '..p.key) end
+        if runner.active then runner.active.done = function() end end
+        runner:cancel()
+                if action_runner then
+                    if action_runner.active then action_runner.active.done=function() end end
+                    action_runner:cancel()
+                end
+                cleanup()
+        for i = #patches, 1, -1 do local p = patches[i]; p.obj[p.key] = p.old end
+        for i = #list, 1, -1 do if custom[list[i].id] then table.remove(list, i) end end
+        active_install = nil
+    end
+    active_install = installation
+    return installation
+end
+return M

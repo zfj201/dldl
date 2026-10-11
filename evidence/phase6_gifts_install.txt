@@ -1,0 +1,6 @@
+installed=true
+result=daily_gifts_v1
+loaded_at=1791655693
+game_start=/data/user/0/com.hnzh.dldlwhjx.huawei/files/assets/src/game_start.luac
+task=斗罗集市·每日礼包领取|-2101802
+task=学院活动·每日特惠领取|-2101801

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "libcocos2dlua.so",
+    "original_sha256": "3b2c6f080e7609f842fa3225f3b6b144ec69dec9bce456e6657f636af368566b",
+    "memory_sha256": "3b52c5bfd3bc591d0e2176fa479e63ff555c3e831f89f619ca795c6a2cdc17fa",
+    "merged_file_ranges": [
+      [
+        0,
+        16134144
+      ],
+      [
+        16134144,
+        16281392
+      ],
+      [
+        16349920,
+        16351232
+      ],
+      [
+        16351232,
+        16358000
+      ]
+    ],
+    "changed_bytes": 15822957,
+    "warning": "Runtime pointers, zeroed metadata, and external trampolines remain. Not reloadable."
+  },
+  {
+    "name": "libFairGuard.so",
+    "original_sha256": "cb49b318ec6e1c5197e908b5a009c314358fa6af54c468e0d5c4bffc02be0920",
+    "memory_sha256": "06bdea67a2d08610370b88d5e451cc4318cb3209c6431a5bbd89c9f38c596856",
+    "merged_file_ranges": [
+      [
+        0,
+        4878336
+      ],
+      [
+        4878336,
+        5025584
+      ],
+      [
+        5094112,
+        5095424
+      ],
+      [
+        5095424,
+        5102192
+      ]
+    ],
+    "changed_bytes": 4352790,
+    "warning": "Runtime pointers, zeroed metadata, and external trampolines remain. Not reloadable."
+  }
+]

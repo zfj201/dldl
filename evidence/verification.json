@@ -1,0 +1,16 @@
+{
+  "sample_sha256_verified": true,
+  "dump_segments_sha256_verified": 8,
+  "dex_checksums_verified": 6,
+  "python_syntax": "passed",
+  "capture_js_syntax": "node --check passed",
+  "capture_dynamic_test": "not executed",
+  "direct_xxtea_probe": {
+    "files": 8,
+    "observed_candidates": 5,
+    "successful_length_validations": 0
+  },
+  "apktool_exit": 0,
+  "jadx_exit": 3,
+  "jadx_errors": 26
+}

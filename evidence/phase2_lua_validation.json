@@ -1,0 +1,18 @@
+{
+  "apk": {
+    "decoded_files": 270,
+    "decoded_bytes": 7641483,
+    "lua51_parse_pass": 270,
+    "parse_errors": [],
+    "decode_failures": []
+  },
+  "hotupdate": {
+    "decoded_files": 106,
+    "decoded_bytes": 4984196,
+    "lua51_parse_pass": 106,
+    "parse_errors": [],
+    "decode_failures": []
+  },
+  "distinct_logical_paths": 341,
+  "note": "APK and hot-update are separate versions; parse checks do not execute game scripts."
+}

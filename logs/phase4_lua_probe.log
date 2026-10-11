@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/zfj/Documents/ChatGPT/dldl/scripts/run_lua_once.py", line 16, in <module>
+    session=frida.get_device(a.serial,timeout=10).attach(a.pid)
+  File "/Users/zfj/Documents/ChatGPT/dldl/.tools/frida/__init__.py", line 662, in attach
+    return _wrap(_invoke(self._impl.attach, (pid, _make_options(_frida.SessionOptions, kwargs, {'linker_notifier_offsets': 'add_linker_notifier_offset'}), )))
+  File "/Users/zfj/Documents/ChatGPT/dldl/.tools/frida/__init__.py", line 240, in _invoke
+    raise error
+frida.ProcessNotFoundError: process not found

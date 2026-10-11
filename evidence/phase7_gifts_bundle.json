@@ -1,0 +1,13 @@
+{
+  "output": "/Users/zfj/Documents/ChatGPT/dldl/recovered/phase7/game_start.luac",
+  "bytes": 43573,
+  "sha256": "aa7abe21f65a4956217dc295ff421f22b3d51f3d7504cd93e81bc32c9b9720c3",
+  "lua51_syntax_pass": true,
+  "inputs": {
+    "recovered/phase2/hotupdate/lua/game_start.luac": "3b8c0a56adcc9731f54dfca0c0943aa9911669e9537126e5447239ce49c2cb59",
+    "modules/daily_gifts.lua": "4bc7331621d2511e83d72b4735f45053279e6d63c4a19a359fc874ecb056b6ef",
+    "modules/xiangxiang_gifts_extension.lua": "67bad714fd4d2d46e5aa5a8a68374d13fd1308ada2ca99015191ccebd4f339f1",
+    "modules/daily_actions.lua": "c83d40d83b1e800687ac2143ab65ea7e6727e1d7b4cc3b2d339aff5d0db33465",
+    "modules/daily_actions_game.lua": "633937ba9c3a86fb36592c451bcee8cff8223c084c6ff1dd1af8eb02d07f0853"
+  }
+}

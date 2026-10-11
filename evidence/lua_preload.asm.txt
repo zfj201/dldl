@@ -1,0 +1,94 @@
+
+recovered/libcocos2dlua.so.analysis.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000000000200000 <.text>:
+  733650: 540004a1     	b.ne	0x7336e4 <.text+0x5336e4>
+  733654: a94053f3     	ldp	x19, x20, [sp]
+  733658: a9415bf5     	ldp	x21, x22, [sp, #0x10]
+  73365c: a94263f7     	ldp	x23, x24, [sp, #0x20]
+  733660: a9436bf9     	ldp	x25, x26, [sp, #0x30]
+  733664: a9447bfb     	ldp	x27, x30, [sp, #0x40]
+  733668: 9101c3ff     	add	sp, sp, #0x70
+  73366c: d65f03c0     	ret
+  733670: d00029c0     	adrp	x0, 0xc6d000 <.text+0xa6d000>
+  733674: f9402fe1     	ldr	x1, [sp, #0x58]
+  733678: 91166000     	add	x0, x0, #0x598
+  73367c: 940b316a     	bl	0x9ffc24 <.text+0x7ffc24>
+  733680: f9402fe1     	ldr	x1, [sp, #0x58]
+  733684: f947eb5a     	ldr	x26, [x26, #0xfd0]
+  733688: d1006020     	sub	x0, x1, #0x18
+  73368c: eb1a001f     	cmp	x0, x26
+  733690: 54fffd60     	b.eq	0x73363c <.text+0x53363c>
+  733694: d1002021     	sub	x1, x1, #0x8
+  733698: 885ffc22     	ldaxr	w2, [x1]
+  73369c: 51000443     	sub	w3, w2, #0x1
+  7336a0: 8804fc23     	stlxr	w4, w3, [x1]
+  7336a4: 35ffffa4     	cbnz	w4, 0x733698 <.text+0x533698>
+  7336a8: 6b1f005f     	cmp	w2, wzr
+  7336ac: 54fffc8c     	b.gt	0x73363c <.text+0x53363c>
+  7336b0: 910183e1     	add	x1, sp, #0x60
+  7336b4: 94128a2a     	bl	0xbd5f5c <.text+0x9d5f5c>
+  7336b8: 17ffffe1     	b	0x73363c <.text+0x53363c>
+  7336bc: f9402fe1     	ldr	x1, [sp, #0x58]
+  7336c0: aa0003f3     	mov	x19, x0
+  7336c4: f947eb5a     	ldr	x26, [x26, #0xfd0]
+  7336c8: d1006020     	sub	x0, x1, #0x18
+  7336cc: eb1a001f     	cmp	x0, x26
+  7336d0: 54000060     	b.eq	0x7336dc <.text+0x5336dc>
+  7336d4: 910183e1     	add	x1, sp, #0x60
+  7336d8: 97f20522     	bl	0x3b4b60 <.text+0x1b4b60>
+  7336dc: aa1303e0     	mov	x0, x19
+  7336e0: 9412f2b0     	bl	0xbf01a0 <.text+0x9f01a0>
+  7336e4: 97f1fb0f     	bl	0x3b2320 <.text+0x1b2320>
+  7336e8: d10043ff     	sub	sp, sp, #0x10
+  7336ec: a9007bf3     	stp	x19, x30, [sp]
+  7336f0: 90004033     	adrp	x19, 0xf37000
+  7336f4: f946fa60     	ldr	x0, [x19, #0xdf0]
+  7336f8: b4000080     	cbz	x0, 0x733708 <.text+0x533708>
+  7336fc: a9407bf3     	ldp	x19, x30, [sp]
+  733700: 910043ff     	add	sp, sp, #0x10
+  733704: d65f03c0     	ret
+  733708: d2800020     	mov	x0, #0x1                // =1
+  73370c: 94115e06     	bl	0xb8af24 <.text+0x98af24>
+  733710: aa0003e1     	mov	x1, x0
+  733714: f906fa61     	str	x1, [x19, #0xdf0]
+  733718: a9407bf3     	ldp	x19, x30, [sp]
+  73371c: 910043ff     	add	sp, sp, #0x10
+  733720: d65f03c0     	ret
+  733724: d102c3ff     	sub	sp, sp, #0xb0
+  733728: aa0103e0     	mov	x0, x1
+  73372c: a90053f3     	stp	x19, x20, [sp]
+  733730: b0003f54     	adrp	x20, 0xf1c000
+  733734: aa0103f3     	mov	x19, x1
+  733738: a9037bf9     	stp	x25, x30, [sp, #0x30]
+  73373c: a9015bf5     	stp	x21, x22, [sp, #0x10]
+  733740: f944ca81     	ldr	x1, [x20, #0x990]
+  733744: a90263f7     	stp	x23, x24, [sp, #0x20]
+  733748: f9400021     	ldr	x1, [x1]
+  73374c: f90057e1     	str	x1, [sp, #0xa8]
+  733750: 94005da5     	bl	0x74ade4 <.text+0x54ade4>
+  733754: b0003ee1     	adrp	x1, 0xf10000
+  733758: aa1303e0     	mov	x0, x19
+  73375c: 52800002     	mov	w2, #0x0                // =0
+  733760: f9449821     	ldr	x1, [x1, #0x930]
+  733764: 97fe5a52     	bl	0x6ca0ac <.text+0x4ca0ac>
+  733768: d00029c2     	adrp	x2, 0xc6d000 <.text+0xa6d000>
+  73376c: aa1303e0     	mov	x0, x19
+  733770: 1284e221     	mov	w1, #-0x2712            // =-10002
+  733774: 9116c042     	add	x2, x2, #0x5b0
+  733778: 97fe5b6e     	bl	0x6ca530 <.text+0x4ca530>
+  73377c: f9003fff     	str	xzr, [sp, #0x78]
+  733780: d2800020     	mov	x0, #0x1                // =1
+  733784: 94115de8     	bl	0xb8af24 <.text+0x98af24>
+  733788: 90000002     	adrp	x2, 0x733000 <.text+0x533000>
+  73378c: f90037e0     	str	x0, [sp, #0x68]
+  733790: 910fa042     	add	x2, x2, #0x3e8
+  733794: f90043e2     	str	x2, [sp, #0x80]
+  733798: 90000002     	adrp	x2, 0x733000 <.text+0x533000>
+  73379c: 9101a3f8     	add	x24, sp, #0x68
+  7337a0: 910d5042     	add	x2, x2, #0x354
+  7337a4: f9003fe2     	str	x2, [sp, #0x78]
+  7337a8: 94002228     	bl	0x73c048 <.text+0x53c048>
+  7337ac: f9403fe3     	ldr	x3, [sp, #0x78]

@@ -1,0 +1,62 @@
+19372
+Name:	dldlwhjx.huawei
+Umask:	0077
+State:	S (sleeping)
+Tgid:	19372
+Ngid:	0
+Pid:	19372
+PPid:	938
+TracerPid:	0
+Uid:	10303	10303	10303	10303
+Gid:	10303	10303	10303	10303
+FDSize:	512
+Groups:	3001 3002 3003 9997 20303 50303 
+VmPeak:	18001320 kB
+VmSize:	17712720 kB
+VmLck:	       0 kB
+VmPin:	       0 kB
+VmHWM:	  789568 kB
+VmRSS:	  718012 kB
+RssAnon:	  449524 kB
+RssFile:	  266864 kB
+RssShmem:	    1624 kB
+VmData:	 1518604 kB
+VmStk:	    8192 kB
+VmExe:	       8 kB
+VmLib:	  202404 kB
+VmPTE:	    3040 kB
+VmSwap:	   26080 kB
+CoreDumping:	0
+THP_enabled:	1
+Threads:	113
+SigQ:	0/26351
+SigPnd:	0000000000000000
+ShdPnd:	0000000000000000
+SigBlk:	0000000080001200
+SigIgn:	0000000000000001
+SigCgt:	0000006e400084fc
+CapInh:	0000000000000000
+CapPrm:	0000000000000000
+CapEff:	0000000000000000
+CapBnd:	0000000000000000
+CapAmb:	0000000000000000
+NoNewPrivs:	0
+Seccomp:	2
+Seccomp_filters:	1
+Speculation_Store_Bypass:	thread vulnerable
+Cpus_allowed:	0f
+Cpus_allowed_list:	0-3
+Mems_allowed:	1
+Mems_allowed_list:	0
+voluntary_ctxt_switches:	6835
+nonvoluntary_ctxt_switches:	1203
+--------- beginning of crash
+10-09 01:25:55.256  1310  1310 I libimsma_adapt: mtk-brm-commit-id:8783a29bae0ae84a456239f3212f27bdafa94c91
+10-09 01:25:55.256  1310  1310 I libimsma_adapt: mtk-brm-change-id:Iee598bb542f5de895a4b71649fbc79b2d93bc3de
+10-09 01:25:55.256  1310  1310 I libimsma_adapt: mtk-brm-merge-id:none
+10-09 01:25:55.463  1442  1442 I emdlogger: mtk-brm-commit-id:d0df48aa8f322c846a0ee2934fb5db5ae2bfa375
+10-09 01:25:55.463  1442  1442 I emdlogger: mtk-brm-change-id:If94188b9963eb72d8d14a663ce767eefa5d45906
+10-09 01:25:55.463  1442  1442 I emdlogger: mtk-brm-merge-id:none
+10-09 01:26:21.081  2650  2650 I SmartRatSwitch: mtk-brm-commit-id:b5a60cc69a1756c521ec182159b2accf61e98864
+10-09 01:26:21.081  2650  2650 I SmartRatSwitch: mtk-brm-change-id:I4b61c3110cf0ec624b06cc6b58c35cc1bb10baec
+10-09 01:26:21.081  2650  2650 I SmartRatSwitch: mtk-brm-merge-id:none

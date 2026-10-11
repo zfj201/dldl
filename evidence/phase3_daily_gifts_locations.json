@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-11",
+  "scope": "Static location only; no game network calls",
+  "targets": [
+    {
+      "name": "斗罗集市-每日礼包",
+      "gift_type": 1,
+      "tab": 101,
+      "free_charge_id": 9991
+    },
+    {
+      "name": "学院活动-每日特惠",
+      "gift_type": 6,
+      "tab": 176,
+      "configured_free_charge_id": 9995,
+      "selection": "VipModel:getCurDailyData / checkFreeDailyGift"
+    }
+  ],
+  "evidence": [
+    {
+      "label": "market_entry",
+      "file": "recovered/phase2/hotupdate/lua/sys/jump_controller.luac",
+      "line": 306,
+      "sha256": "410fa960aba7ead568548dd5e96d19e70c28c30f070afdb6fba1e4f70cade908",
+      "excerpt": "    elseif evt_id == 614 then   -- 斗罗集市\n        VipController:getInstance():openVipMainWindow(true, VipConst.VipTabConst.DayGift)\n    elseif evt_id == 615 then   -- 限时礼包\n        ActionController:getInstance():openActionMainPanel(true, nil, ActionRankCommonType.action_time_limit_gift)\n    elseif evt_id == 616 then   -- 活动\n        ActionController:getInstance():openActionMainPanel(true)\n        -- VipController:getInstance():openVipMainWindow(true, VipConst.VipTabConst.TimeLimitGift)\n    elseif evt_id == 617 then   -- 全英雄签到"
+    },
+    {
+      "label": "daily_panel",
+      "file": "recovered/phase2/hotupdate/lua/game/vip/vip_const.luac",
+      "line": 40,
+      "sha256": "81486e5790297476f174dd55469893b98dee26d3da5a6799b218f75ff756fa07",
+      "excerpt": "    [VTC.DayGift] = {class = \"MonthWeekPanel\", param = 1},\n    [VTC.WeekGift] = {class = \"MonthWeekPanel\", param = 2},\n    [VTC.MonthGift] = {class = \"MonthWeekPanel\", param = 3},\n    [VTC.NewHandGift] = {class = \"MonthWeekPanel\", param = 4},\n    [VTC.DayActionGift] = {class = \"MonthWeekPanel\", param = 7},\n    -- [VTC.TimeLimitGift] = { class = \"TimeLimitGift\", param = 991006 },\n    [VTC.SnappedUp] = {class = \"TimeLimitGift\", param = 91039},\n    -- [VTC.SmallPay] = { class = \"TimeLimitGift\", param = 991044},"
+    },
+    {
+      "label": "market_free",
+      "file": "recovered/phase2/hotupdate/lua/config/charge_loop_data.luac",
+      "line": 26,
+      "sha256": "d2dcbd1fdb260f39d336103941407e85337dd602f985a1293a0712fb3405f232",
+      "excerpt": "\t[9991] = {charge_id=9991, gift_name=\"每日福利\", gift_type=1, limit_count=1, condition={}, buy_charge_id=0, sort_id=1, over_flow=0, is_free=1},\n\t[420] = {charge_id=420, gift_name=\"每日福利\", gift_type=1, limit_count=1, condition={}, buy_charge_id=0, sort_id=2, over_flow=0, is_free=0},\n\t[404] = {charge_id=404, gift_name=\"每日福利\", gift_type=1, limit_count=1, condition={}, buy_charge_id=0, sort_id=3, over_flow=0, is_free=0},\n\t[405] = {charge_id=405, gift_name=\"每日福利\", gift_type=1, limit_count=1, condition={}, buy_charge_id=404, sort_id=4, over_flow=0, is_free=0},\n\t[396] = {charge_id=396, gift_name=\"每日福利\", gift_type=1, limit_count=1, condition={}, buy_charge_id=405, sort_id=5, over_flow=0, is_free=0},\n\t[406] = {charge_id=406, gift_name=\"每日福利\", gift_type=1, limit_count=1, condition={}, buy_charge_id=0, sort_id=6, over_flow=0, is_free=0},\n\t[407] = {charge_id=407, gift_name=\"每日福利\", gift_type=1, limit_count=1, condition={}, buy_charge_id=406, sort_id=7, over_flow=0, is_free=0},\n\t[395] = {charge_id=395, gift_name=\"每日福利\", gift_type=1, limit_count=1, condition={}, buy_charge_id=407, sort_id=8, over_flow=0, is_free=0},"
+    },
+    {
+      "label": "academy_entry",
+      "file": "recovered/phase2/hotupdate/lua/sys/jump_controller.luac",
+      "line": 340,
+      "sha256": "410fa960aba7ead568548dd5e96d19e70c28c30f070afdb6fba1e4f70cade908",
+      "excerpt": "    elseif evt_id == 625 then  -- 每日特惠\n        WelfareController:getInstance():openMainWindow(true, WelfareIcon.every_day_gift)\n    elseif evt_id == 626 then  -- 新魂师剧情副本\n        MainuiController:getInstance():changeMainUIStatus(MainuiConst.btn_index.main_scene, MainuiConst.sub_type.hero_story)\n        -- ActionController:getInstance():openActionMainPanel(true, nil, ActionRankCommonType.hero_story)\n    elseif evt_id == 627 then  -- 镜灵还原\n        ActionController:getInstance():openActionMainPanel(true, nil, ActionRankCommonType.multiwheel_gift)\n    elseif evt_id == 628 then  -- 地狱路活动"
+    },
+    {
+      "label": "academy_panel",
+      "file": "recovered/phase2/hotupdate/lua/game/welfare/welfare_constants.luac",
+      "line": 45,
+      "sha256": "ca6349229d8c27f12a7d5d9a9dc85e59fd77c73c269743db2f2dbccc63979e57",
+      "excerpt": "\t[176] = \"EveryDayGiftPanel\",\n\t[180] = \"AssetsFindPanel\",\t-- 资源找回\n\t[202] = \"BoneReturnPanel\", \t-- 魂骨回退\n\t[214] =  \"WeekCardPanel\",\t--周卡\n\t[216] =  \"ActionWeekCardPanel\",\t--周卡\n    [134] = \"ActionExchangeShopPanel\", --兑换商城\n\t[181] =  \"EquipSuitMainPanel\",\n\t[183] =  \"ActionHookPanel\",\t--周卡"
+    },
+    {
+      "label": "academy_free_config",
+      "file": "recovered/phase2/hotupdate/lua/config/charge_loop_data.luac",
+      "line": 707,
+      "sha256": "d2dcbd1fdb260f39d336103941407e85337dd602f985a1293a0712fb3405f232",
+      "excerpt": "\t[484] = {min={{2020,9,17},{5,0,0}}, max={{2123,11,16},{4,59,59}}, purchase_free=9995, one_click_purchase_id=484, one_click_purchase={6,{481,482,483,9995}}}\n}\nChargeLoopData.data_daily_deal_fun = function(key)\n\tlocal data=ChargeLoopData.data_daily_deal[key]\n\tif DATA_DEBUG and data == nil then\n\t\tprint('(ChargeLoopData.data_daily_deal['..key..'])not found') return\n\tend\n\treturn data"
+    },
+    {
+      "label": "academy_free_filter",
+      "file": "recovered/phase2/hotupdate/lua/game/vip/vip_model.luac",
+      "line": 722,
+      "sha256": "7fbc8258b0de0a2305cf7987917458390ca8777b120b7c3324260324d966ced7",
+      "excerpt": "function VipModel:checkFreeDailyGift(id)\n    local _,__,free_id = self:getCurDailyData()\n    return (id==free_id)\nend\n\nfunction VipModel:getDailyGiftPrice()\n    local need_charId,one_click_purchase_id,free_id = self:getCurDailyData()\n    local charge_data = ChargeData.data_charge_data"
+    },
+    {
+      "label": "query",
+      "file": "recovered/phase2/hotupdate/lua/game/vip/vip_controller.luac",
+      "line": 314,
+      "sha256": "27535b4e1dd726526468347139da4d1930e06d78a79839e2339b57b602f9da15",
+      "excerpt": "function VipController:sender21017(index)\n    local protocal = {}\n    protocal.gift_type = index or 1\n    self:SendProtocal(21017, protocal)\nend\n\nfunction VipController:handle21017(data)\n    if data == nil then return end"
+    },
+    {
+      "label": "claim",
+      "file": "recovered/phase2/hotupdate/lua/game/vip/vip_controller.luac",
+      "line": 386,
+      "sha256": "27535b4e1dd726526468347139da4d1930e06d78a79839e2339b57b602f9da15",
+      "excerpt": "function VipController:sender21018(id)\n    local protocal = {}\n    protocal.charge_id = id or 1\n    self:SendProtocal(21018, protocal)\nend\n\nfunction VipController:handle21018(data)\n    "
+    },
+    {
+      "label": "academy_button",
+      "file": "recovered/phase2/lua/game/welfare/view/every_day_gift_panel.luac",
+      "line": 305,
+      "sha256": "7953e85131c9532b564d10160d1f9c87b56c660012d7a2ce9abaea2601303f45",
+      "excerpt": "function EveryDayGiftItem:register_event()\n        ----点击 领取 前往 回调\n    registerButtonEventListener(self.btn,function()\n        if self.data then\n            if _model:checkFreeDailyGift(self.data.charge_id) then\n                _controller:sender21018(self.data.charge_id)\n            else\n                local charge_config = ChargeData.data_charge_data[self.data.charge_id]"
+    },
+    {
+      "label": "market_button",
+      "file": "recovered/phase2/hotupdate/lua/game/vip/view/month_week_panel.luac",
+      "line": 276,
+      "sha256": "b422abfbdde73cb2c9e6617511979fd2c1c63872d0e8e1f8c1f5f4dce88bc28c",
+      "excerpt": "function MonthWeekPanel:itemCallback(data)\n    if data.charge_id > 9990 then\n        playOtherSound(1014)\n        _controller:sender21018(data.charge_id)\n    else\n        local fun = function()\n            -- _model:setMonthWeekChargeIDAndType(data.charge_id, data.gift_type)\n            local charge_config = ChargeData.data_charge_data[data.charge_id]"
+    }
+  ]
+}

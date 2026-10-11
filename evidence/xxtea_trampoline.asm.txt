@@ -1,0 +1,20 @@
+
+recovered/xxtea_trampoline.elf:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000007f03fe2000 <.text>:
+7f03fe2000: 58000051   	ldr	x17, 0x7f03fe2008 <.text+0x8>
+7f03fe2004: d61f0220   	br	x17
+7f03fe2008: a9b949ec   	stp	x12, x18, [x15, #-0x70]!
+7f03fe200c: 0000007b   	udf	#0x7b
+7f03fe2010: 00000000   	udf	#0x0
+7f03fe2014: d10143ff   	sub	sp, sp, #0x50
+7f03fe2018: 71003c7f   	cmp	w3, #0xf
+7f03fe201c: b900009f   	str	wzr, [x4]
+7f03fe2020: 2a0103e5   	mov	w5, w1
+7f03fe2024: 58000051   	ldr	x17, 0x7f03fe202c <.text+0x2c>
+7f03fe2028: d61f0220   	br	x17
+7f03fe202c: a90e4fd8   	stp	x24, x19, [x30, #0xe0]
+7f03fe2030: 0000007b   	udf	#0x7b
+		...

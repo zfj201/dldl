@@ -1,0 +1,59 @@
+
+extracted/lib/arm64-v8a/libcocos2dlua.so:	file format elf64-littleaarch64
+
+Program Header:
+    LOAD off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**16
+         filesz 0x0000000000f86f30 memsz 0x0000000000f86f30 flags r-x
+    LOAD off    0x0000000000f97ae0 vaddr 0x0000000000f97ae0 paddr 0x0000000000f97ae0 align 2**16
+         filesz 0x0000000000001f90 memsz 0x0000000000002488 flags rw-
+ DYNAMIC off    0x0000000000f98010 vaddr 0x0000000000f98010 paddr 0x0000000000f98010 align 2**3
+         filesz 0x0000000000000320 memsz 0x0000000000000320 flags rw-
+EH_FRAME off    0x0000000000cf9cd8 vaddr 0x0000000000cf9cd8 paddr 0x0000000000cf9cd8 align 2**2
+         filesz 0x0000000000033ea4 memsz 0x0000000000033ea4 flags r--
+   STACK off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**4
+         filesz 0x0000000000000000 memsz 0x0000000000000000 flags rw-
+   RELRO off    0x0000000000e940e0 vaddr 0x0000000000e940e0 paddr 0x0000000000e940e0 align 2**0
+         filesz 0x000000000008af20 memsz 0x000000000008af20 flags r--
+
+Dynamic Section:
+  NEEDED       libFairGuard.so
+  NEEDED       libevent.so
+  NEEDED       libgmesdk.so
+  NEEDED       libtraeimp.so
+  NEEDED       libsilk.so
+  NEEDED       libgmecodec.so
+  NEEDED       libfmod.so
+  NEEDED       libfmodL.so
+  NEEDED       libfmodstudio.so
+  NEEDED       libfmodstudioL.so
+  NEEDED       libGLESv1_CM.so
+  NEEDED       libGLESv2.so
+  NEEDED       libEGL.so
+  NEEDED       liblog.so
+  NEEDED       libandroid.so
+  NEEDED       libOpenSLES.so
+  NEEDED       libdl.so
+  NEEDED       libstdc++.so
+  NEEDED       libm.so
+  NEEDED       libc.so
+  SONAME       libcocos2dlua.so
+  SYMBOLIC     0x0000000000000000
+  INIT_ARRAY   0x0000000000f97ae0
+  INIT_ARRAYSZ 0x0000000000000020
+  FINI_ARRAY   0x0000000000f97b00
+  FINI_ARRAYSZ 0x0000000000000010
+  HASH         0x0000000000f53190
+  STRTAB       0x0000000000f5a9f8
+  SYMTAB       0x0000000000f549c8
+  STRSZ        0x0000000000007a3c
+  SYMENT       0x0000000000000018
+  PLTGOT       0x0000000000f97da0
+  PLTRELSZ     0x00000000000000f0
+  PLTREL       0x0000000000000007
+  JMPREL       0x0000000000f62b58
+  RELA         0x0000000000f62438
+  RELASZ       0x0000000000000720
+  RELAENT      0x0000000000000018
+  BIND_NOW     0x0000000000000000
+  FLAGS_1      0x0000000000000001
+  RELACOUNT    0x0000000000000049

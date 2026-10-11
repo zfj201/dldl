@@ -1,0 +1,12 @@
+installed=true
+result=daily_actions_v2
+loaded_at=1791657253
+game_start=/data/user/0/com.hnzh.dldlwhjx.huawei/files/assets/src/game_start.luac
+task=斗罗集市·每日礼包领取|-2101802
+task=学院活动·每日特惠领取|-2101801
+task=斗罗集市·每周礼包领取|-2101800
+task=斗罗集市·每月礼包领取|-2101799
+task=乾坤问情谷·免费扫荡|-2101798
+task=众神殿·自动膜拜|-2101797
+task=魂域之境·自动膜拜|-2101796
+task=镜之屋·每日契约召唤|-2101795

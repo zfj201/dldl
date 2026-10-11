@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/zfj/Documents/ChatGPT/dldl/scripts/decrypt_resource_rpc.py", line 15, in <module>
+    device=frida.get_device(a.device,timeout=10);session=device.attach(a.pid)
+  File "/Users/zfj/Documents/ChatGPT/dldl/.tools/frida/__init__.py", line 662, in attach
+    return _wrap(_invoke(self._impl.attach, (pid, _make_options(_frida.SessionOptions, kwargs, {'linker_notifier_offsets': 'add_linker_notifier_offset'}), )))
+  File "/Users/zfj/Documents/ChatGPT/dldl/.tools/frida/__init__.py", line 240, in _invoke
+    raise error
+frida.ProcessNotFoundError: unable to find process with pid 12854

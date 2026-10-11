@@ -1,0 +1,6 @@
+Collecting unicorn
+  Downloading unicorn-2.1.4-cp37-abi3-macosx_11_0_arm64.whl (12.1 MB)
+Collecting capstone
+  Downloading capstone-5.0.9-py3-none-macosx_11_0_arm64.whl (1.2 MB)
+Installing collected packages: unicorn, capstone
+Successfully installed capstone-5.0.9 unicorn-2.1.4

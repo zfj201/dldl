@@ -1,0 +1,6 @@
+Collecting frida==17.18.0
+  Downloading frida-17.18.0-cp37-abi3-macosx_11_0_arm64.whl (37.6 MB)
+Collecting typing_extensions
+  Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Installing collected packages: typing-extensions, frida
+Successfully installed frida-17.18.0 typing-extensions-4.16.0

@@ -1,0 +1,45 @@
+{
+  "resource": "assets/res/4/8/obk364w4z0k0oj248804e895vf968526wa845824b",
+  "pid": 19372,
+  "fairguard_base": "0x7b93104000",
+  "instructions": 41679,
+  "seconds": 0.9395204169999971,
+  "pc": "0x3000000000",
+  "pc_rva": "-0x4b93104000",
+  "failure": null,
+  "completed": true,
+  "calls": {
+    "malloc": 23,
+    "free": 23
+  },
+  "new_remote_pages": [
+    {
+      "address": "0x7f04fd1000",
+      "sha256": "0de8961f7919aeba7338aa6d38297aed6d947b5b1a74834d23d3fd9e4c6b69bd"
+    },
+    {
+      "address": "0x7d6db09000",
+      "sha256": "067ccdeb21586d707fa99bd19f0f07e11f7af9024be570937a3749012629455a"
+    },
+    {
+      "address": "0x7f04f19000",
+      "sha256": "4a217dee49af61ef3f2596d5865f2f2e27c7cde8e906b84ea1c20b3afc355c29"
+    },
+    {
+      "address": "0x7cad6d6000",
+      "sha256": "4f6944885d75b0b535486689287df82f8243afaad9514680d9f17e40fc4f5741"
+    }
+  ],
+  "changed_bytes": 4081,
+  "xxtea_length_valid": true,
+  "decoded_size": 2096647,
+  "head_hex": "0a63632e434347616d65456e763a676574496e7374616e636528293a73657446696c655661722827616c6c5f7265735f66696c652e6c7561272c27612f632f62",
+  "registers": {
+    "x0": "0x1ffe0c",
+    "x1": "0x9076eeefbf71453",
+    "x2": "0x9076eeefbf71453",
+    "x3": "0x6",
+    "x4": "0xc8066606",
+    "x5": "0x0"
+  }
+}

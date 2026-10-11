@@ -1,0 +1,2384 @@
+[
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/134/txt_cn_actioncommonsigntitle_134.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/134/113d6fb27373dacfc865a7907e9eaab4.g",
+    "size": 40380,
+    "group": "language/china/resource/txt_cn_actioncommonsign/134"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/155/txt_cn_actioncommonsigntitle_155.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/155/60719add6023fd4061e532fd851fe3c1.g",
+    "size": 54992,
+    "group": "language/china/resource/txt_cn_actioncommonsign/155"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/167/txt_cn_actioncommonsigntitle_167.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/167/471118a88347cfe1e1afacb73dde7209.g",
+    "size": 57000,
+    "group": "language/china/resource/txt_cn_actioncommonsign/167"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/181/txt_cn_actioncommonsigntitle_181.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/181/9c80766251e953f0e8ebe98c4f899ffc.g",
+    "size": 48412,
+    "group": "language/china/resource/txt_cn_actioncommonsign/181"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/199/txt_cn_actioncommonsigntitle_199.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/199/8836125e07959f0032179a9a500bc845.g",
+    "size": 54652,
+    "group": "language/china/resource/txt_cn_actioncommonsign/199"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/303/txt_cn_actioncommonsigntitle_303.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/303/3b79d002997ef7dd37c1599553ab4e68.g",
+    "size": 66760,
+    "group": "language/china/resource/txt_cn_actioncommonsign/303"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/321/txt_cn_actioncommonsigntitle_321.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/321/76a33e6afadaafba01b556bac7b0e079.g",
+    "size": 58984,
+    "group": "language/china/resource/txt_cn_actioncommonsign/321"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/338/txt_cn_actioncommonsigntitle_338.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/338/5c56b2b750b39af27f0019732775b32f.g",
+    "size": 24244,
+    "group": "language/china/resource/txt_cn_actioncommonsign/338"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/356/txt_cn_actioncommonsigntitle_356.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/356/e133ffa44514cc9cf607dae9d708030f.g",
+    "size": 57800,
+    "group": "language/china/resource/txt_cn_actioncommonsign/356"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/358/txt_cn_actioncommonsigntitle_358.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/358/e133ffa44514cc9cf607dae9d708030f.g",
+    "size": 57800,
+    "group": "language/china/resource/txt_cn_actioncommonsign/358"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/403/txt_cn_actioncommonsigntitle_403.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/403/4807631195638b5de15f146ef348f96e.g",
+    "size": 59972,
+    "group": "language/china/resource/txt_cn_actioncommonsign/403"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/404/txt_cn_actioncommonsigntitle_404.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/404/4807631195638b5de15f146ef348f96e.g",
+    "size": 59972,
+    "group": "language/china/resource/txt_cn_actioncommonsign/404"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/507/txt_cn_actioncommonsigntitle_507.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/507/cd74d7f142e19666da8d5b1770ae90c9.g",
+    "size": 22212,
+    "group": "language/china/resource/txt_cn_actioncommonsign/507"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/706/txt_cn_actioncommonsigntitle_706.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/706/4a7d1b5e7e70d4d06f5551ec8e91548e.g",
+    "size": 80540,
+    "group": "language/china/resource/txt_cn_actioncommonsign/706"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/842/txt_cn_actioncommonsigntitle_842.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/842/256cc787138d99087249eab227862daa.g",
+    "size": 87216,
+    "group": "language/china/resource/txt_cn_actioncommonsign/842"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/871/txt_cn_actioncommonsigntitle_871.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/871/256cc787138d99087249eab227862daa.g",
+    "size": 87216,
+    "group": "language/china/resource/txt_cn_actioncommonsign/871"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actioncommonsign/881/txt_cn_actioncommonsigntitle_881.png",
+    "packaged": "language/china/resource/txt_cn_actioncommonsign/881/b71e584cb0345b0c005f14c5457faff9.g",
+    "size": 88416,
+    "group": "language/china/resource/txt_cn_actioncommonsign/881"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiondailychargetask/txt_cn_actiondailychargetask.png",
+    "packaged": "language/china/resource/txt_cn_actiondailychargetask/7c27f1d80f0eb47fd14d7a8a2aaf510c.g",
+    "size": 65520,
+    "group": "language/china/resource/txt_cn_actiondailychargetask"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actionseasign/txt_cn_actionseasign.png",
+    "packaged": "language/china/resource/txt_cn_actionseasign/559c21641535fa93ea1fdeb86e4a34b4.g",
+    "size": 49596,
+    "group": "language/china/resource/txt_cn_actionseasign"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actionsign/txt_cn_actionsign.png",
+    "packaged": "language/china/resource/txt_cn_actionsign/ecd4e040f9e060f8d83e7f0632c463b4.g",
+    "size": 47844,
+    "group": "language/china/resource/txt_cn_actionsign"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actionsignup/txt_cn_actionsignup/txt_cn_actionsignup_title_1.png",
+    "packaged": "language/china/resource/txt_cn_actionsignup/txt_cn_actionsignup/048effeda84f6769115f51dd4e44330d.g",
+    "size": 82848,
+    "group": "language/china/resource/txt_cn_actionsignup/txt_cn_actionsignup"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actionsignup/txt_cn_actionsignup_title_1.png",
+    "packaged": "language/china/resource/txt_cn_actionsignup/048effeda84f6769115f51dd4e44330d.g",
+    "size": 82848,
+    "group": "language/china/resource/txt_cn_actionsignup"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actionsignup/txt_cn_actionsignup_title_2.png",
+    "packaged": "language/china/resource/txt_cn_actionsignup/35f398c916ebd5b65e5d9ab3331b2a26.g",
+    "size": 135656,
+    "group": "language/china/resource/txt_cn_actionsignup"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actionspringsign/txt_cn_actionspringsign.png",
+    "packaged": "language/china/resource/txt_cn_actionspringsign/bc411ad279537d6df17bada1eda7ee0d.g",
+    "size": 35860,
+    "group": "language/china/resource/txt_cn_actionspringsign"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actionthreedaysign/txt_cn_actionthreedaysign.png",
+    "packaged": "language/china/resource/txt_cn_actionthreedaysign/734e53eda59a417a21438736b720f728.g",
+    "size": 76284,
+    "group": "language/china/resource/txt_cn_actionthreedaysign"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/a1d0a0b729bbb4514ec54dd54b7f8364.g",
+    "size": 25344,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g1.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/6f595ed06f394ca51ea58cc15f81d9a7.g",
+    "size": 21364,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g10.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/7b23f1d04e8b89f64614c391335bd5dc.g",
+    "size": 88148,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g11.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/50087d5dcdb5be655d4773eeecb17538.g",
+    "size": 71256,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g12.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/18703d07b1f68bc719dd8360a8b1e60b.g",
+    "size": 69172,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g13.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/1680386baaf2e55301c9388265c7d287.g",
+    "size": 66816,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g14.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/5ce336fa4e42acdd579c1caf8e7ea3ac.g",
+    "size": 58332,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g15.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/5d71d0bd6d6e13aea4e8a1471e105a1f.g",
+    "size": 73316,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g17.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/bc2a23d1109ed192eb849496a498a13b.g",
+    "size": 70800,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g18.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/c6a27ebfce3a4fc4b4dcaf5170b4f894.g",
+    "size": 54000,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g19.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/9dadc2f6681f38992898cf093f6e38b8.g",
+    "size": 56784,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g2.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/7f0a55358319e1f0bdf26d08888c3005.g",
+    "size": 57980,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g20.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/14c872370851e015bab1f4289a4f551a.g",
+    "size": 70116,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g20513.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/187d3081dad7fa841f1570ded6015e5d.g",
+    "size": 61660,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g21.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/fa759a22bed58e811c23f512f8f3f9b0.g",
+    "size": 88228,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g21516.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/f4161c265c9fe179d2d20038c286a4aa.g",
+    "size": 54796,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g21518.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/66b39c5cda4db0fb0d819d60c3791227.g",
+    "size": 72964,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g22511.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/92e16c8d0197be5933a8fc057f4b485f.g",
+    "size": 65896,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g22513.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/bc2a23d1109ed192eb849496a498a13b.g",
+    "size": 70800,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g22514.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/106d0682fc9e6616e6a726a73b499764.g",
+    "size": 56028,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g23.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/187d3081dad7fa841f1570ded6015e5d.g",
+    "size": 61660,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g23515.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/ddcd89ebd2f51efc717bb8da36275bb8.g",
+    "size": 71408,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g23516.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/89a7397843caf58ebfdf542dd9cd364d.g",
+    "size": 78108,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g24.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/2488363d5fa5abf1e09b6d1d3332b30d.g",
+    "size": 57068,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g24503.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/89a7397843caf58ebfdf542dd9cd364d.g",
+    "size": 78108,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g24510.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/0991158d3153be05dc3772a4e1bd46f4.g",
+    "size": 66508,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g24511.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/5c9573ecc8812a5f1de2a606959eb84d.g",
+    "size": 71068,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g25.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/106d0682fc9e6616e6a726a73b499764.g",
+    "size": 56028,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g25510.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/bcdce1b41780cb1ed70aff59a2d647e0.g",
+    "size": 55252,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g25512.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/033c7ddfc352defb8c2464b03fdff90a.g",
+    "size": 51540,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g27.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/b0a853790b59c135a43c14260eb7ebf7.g",
+    "size": 53568,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g28.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/5fbf1c192bf44b728435fedfd797d84a.g",
+    "size": 57436,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g29.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/66b39c5cda4db0fb0d819d60c3791227.g",
+    "size": 72964,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g3.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/5c2ad32f54748ebc601c2c2a3b07af16.g",
+    "size": 58248,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g31.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/5d3ef3c192370fa41c402653af5bdc05.g",
+    "size": 74648,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g32.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/6033a92f75300e5fbc81997eac01ba69.g",
+    "size": 70588,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g33.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/9dd7ce6ad39a027bb9a583a899da0cdf.g",
+    "size": 74628,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g34.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/6a2d26e1104664b706eb4bb0b49db4ed.g",
+    "size": 68956,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g4.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/4f44a22e841190a2bbf26b3462c44c3d.g",
+    "size": 70632,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g5.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/584d96e4374c0eefc91f88ab3673a0a4.g",
+    "size": 67892,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g6.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/920343412a4e973e49a1346e3777a984.g",
+    "size": 72600,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g8.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/3d062146a328fae95b84cae103f37693.g",
+    "size": 70320,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_g9.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/5fc15626a20662db1bcff2a6a47e01aa.g",
+    "size": 72132,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_actiontimesummon_gt1.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/5d889a0aa6c75a8c56d4096e707ddd4f.g",
+    "size": 91988,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time1.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/8f50c333b22fba6438a48d6f909b9c50.g",
+    "size": 10556,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time10.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/f01124edfc8cbc330187f82731e0fad3.g",
+    "size": 11172,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time11.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/08114575b7cb051344aa30cedbfb9f31.g",
+    "size": 10652,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time12.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/0513e914eb588ff48cffe1a8edc53292.g",
+    "size": 9860,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time13.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/39c35c76f976a2332561fa4a88eda2ef.g",
+    "size": 12384,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time14.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/623d9ad2b6a1ba4dd79c1cbdde82f217.g",
+    "size": 7744,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time15.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/7ce60686e286b81d4c0cf30504c0fe7e.g",
+    "size": 10976,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time16.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/8ccb139e5e36601697f3dc78cf8c301b.g",
+    "size": 9684,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time17.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/bfe7640337207466e83b76c162221f02.g",
+    "size": 12048,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time18.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/2c6264ef120ff627651d45144a4abdc1.g",
+    "size": 12304,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time19.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/594503ab2a161095752778a410dcfe2d.g",
+    "size": 13428,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time2.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/02773866b51aae98973317a246ecb966.g",
+    "size": 9932,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time20.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/42a236ebc8e56b8eebef96420cdbcce6.g",
+    "size": 12788,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time21.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/2bc7d21f460cb8e0b35a1ac0679a8c35.g",
+    "size": 17184,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time22.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/9e220e1f38dad4fd941980c09ccf25ba.g",
+    "size": 12280,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time23.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/bb962321d1f5cafb033d6f1650ebfbfc.g",
+    "size": 11072,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time24.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/4c5ef642825a6bfca6c521670882b0fc.g",
+    "size": 11116,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time25.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/2772cd396e292ed9944612df12b74e7a.g",
+    "size": 11516,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time26.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/de5b6d8a109c28eb7b4bc24850914aad.g",
+    "size": 10408,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time27.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/2723d60165ed94f1908d3053386bef7e.g",
+    "size": 8000,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time28.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/6eac263583b0951bc214aea181d339e0.g",
+    "size": 10516,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time29.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/6da289ce19c7d20c3b62ebec2162b422.g",
+    "size": 12004,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time3.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/0c93897d97e973b5dab85e388c1a01c4.g",
+    "size": 9524,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time30.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/93f19e7dc45ec5304ca5c8ab9ab5354f.g",
+    "size": 11168,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time31.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/c8a37f71f41df4b957009ca6aa8243da.g",
+    "size": 10552,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time32.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/57de72a9fd1b6a42ad991093c9657a8f.g",
+    "size": 11196,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time33.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/5f2c89833830f0e7bb9e958e3f737315.g",
+    "size": 11532,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time34.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/1f38ba2c7079d2748275859813fbbecb.g",
+    "size": 12004,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time4.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/c96cbf7a8b694c09ffd5f6f9060fb308.g",
+    "size": 10480,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time5.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/a9ed4d99cfaf3e386a6f74a843b94a31.g",
+    "size": 8504,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time6.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/54771dae43a3cfa990f6b8b3f519ee70.g",
+    "size": 9624,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time7.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/3eecaa375367bec8506ede1fe3800f00.g",
+    "size": 9156,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time8.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/cda81c1447cd0ce5b28cc108c8f74ac2.g",
+    "size": 8368,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_actiontimesummon/txt_cn_icon_time9.png",
+    "packaged": "language/china/resource/txt_cn_actiontimesummon/e16bc85d6f7d432e08674f4428bac3f9.g",
+    "size": 9456,
+    "group": "language/china/resource/txt_cn_actiontimesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_cyclesummon/txt_cn_cyclesummon.png",
+    "packaged": "language/china/resource/txt_cn_cyclesummon/5d48a65b0c81948f52a2f88f8fa2cdcd.g",
+    "size": 94712,
+    "group": "language/china/resource/txt_cn_cyclesummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_firstcharge/txt_cn_dailycharge.png",
+    "packaged": "language/china/resource/txt_cn_firstcharge/d89072690164c56cddeec9a3107647ef.g",
+    "size": 100432,
+    "group": "language/china/resource/txt_cn_firstcharge"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_firstcharge_new/txt_cn_dailycharge.png",
+    "packaged": "language/china/resource/txt_cn_firstcharge_new/d89072690164c56cddeec9a3107647ef.g",
+    "size": 100432,
+    "group": "language/china/resource/txt_cn_firstcharge_new"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_lucksummontips/txt_cn_lucksummontips.png",
+    "packaged": "language/china/resource/txt_cn_lucksummontips/0db285ed0eacc05abb177333ff6b8317.g",
+    "size": 38484,
+    "group": "language/china/resource/txt_cn_lucksummontips"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_multiwheelsummon/txt_cn_multiwheelsummon.png",
+    "packaged": "language/china/resource/txt_cn_multiwheelsummon/1a34525f021822c02e8b1bcd064d87ca.g",
+    "size": 178388,
+    "group": "language/china/resource/txt_cn_multiwheelsummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_newdailyfirstcharge/txt_cn_newdailyfirstcharge.png",
+    "packaged": "language/china/resource/txt_cn_newdailyfirstcharge/227fbf3f5489253075b50dd565e926f1.g",
+    "size": 76668,
+    "group": "language/china/resource/txt_cn_newdailyfirstcharge"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_pre_summon/txt_cn_pre_summon_1.png",
+    "packaged": "language/china/resource/txt_cn_pre_summon/c62d73e4e7db3b41690fe3de79692751.g",
+    "size": 187464,
+    "group": "language/china/resource/txt_cn_pre_summon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_signgivehero/txt_cn_signgivehero_1.png",
+    "packaged": "language/china/resource/txt_cn_signgivehero/5d3bbb6bf40f18565aada36b7985c781.g",
+    "size": 66560,
+    "group": "language/china/resource/txt_cn_signgivehero"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/0/txt_cn_summonchat_0_1.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/0/228e65bf6ad6e5172b9795e8934bbc98.g",
+    "size": 6956,
+    "group": "language/china/resource/txt_cn_summonchat/0"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/0/txt_cn_summonchat_0_2.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/0/72f3ba1789cff44d2bca3c618a64ccbd.g",
+    "size": 7180,
+    "group": "language/china/resource/txt_cn_summonchat/0"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/0/txt_cn_summonchat_0_3.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/0/7a123eb25b36bdb6fdbd348894c52141.g",
+    "size": 6852,
+    "group": "language/china/resource/txt_cn_summonchat/0"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/0/txt_cn_summonchat_0_4.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/0/0f37044e8ebe4ed57c31056a0112f29a.g",
+    "size": 7104,
+    "group": "language/china/resource/txt_cn_summonchat/0"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/1/txt_cn_summonchat_1_1.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/1/af026df623e00bef45eec028b3399198.g",
+    "size": 6732,
+    "group": "language/china/resource/txt_cn_summonchat/1"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/1/txt_cn_summonchat_1_2.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/1/fb3b5d46bbe70b98ac210d1d23f7f612.g",
+    "size": 6888,
+    "group": "language/china/resource/txt_cn_summonchat/1"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/1/txt_cn_summonchat_1_3.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/1/75e9b46e64f1683c7beb41b2c80238ff.g",
+    "size": 6664,
+    "group": "language/china/resource/txt_cn_summonchat/1"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/1/txt_cn_summonchat_1_4.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/1/73d9245ba15d2523c2b7907fb7438e47.g",
+    "size": 6844,
+    "group": "language/china/resource/txt_cn_summonchat/1"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/2/txt_cn_summonchat_2_1.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/2/826f7208ceda067d2123edf4bc04bed5.g",
+    "size": 7252,
+    "group": "language/china/resource/txt_cn_summonchat/2"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/2/txt_cn_summonchat_2_2.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/2/84627867afc97376c7df07a66a68a643.g",
+    "size": 7484,
+    "group": "language/china/resource/txt_cn_summonchat/2"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/2/txt_cn_summonchat_2_3.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/2/3561f652315e5c4b74e20baba63301af.g",
+    "size": 7132,
+    "group": "language/china/resource/txt_cn_summonchat/2"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/2/txt_cn_summonchat_2_4.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/2/ca88d341be0bda146d188aecb64cd1c3.g",
+    "size": 7328,
+    "group": "language/china/resource/txt_cn_summonchat/2"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/txt_cn_summonchat_title_1.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/37cb21478e91cb07035d9a8715983158.g",
+    "size": 27436,
+    "group": "language/china/resource/txt_cn_summonchat"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/txt_cn_summonchat_title_2.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/d40f964e4cbb5c45ddeae5d3b8d5588f.g",
+    "size": 28252,
+    "group": "language/china/resource/txt_cn_summonchat"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/txt_cn_summonchat_title_3.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/07a075f88635253b36e24db6c5aa345e.g",
+    "size": 27624,
+    "group": "language/china/resource/txt_cn_summonchat"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonchat/txt_cn_summonchat_title_4.png",
+    "packaged": "language/china/resource/txt_cn_summonchat/17cecace77c5e66520d9dd161b2a7873.g",
+    "size": 27852,
+    "group": "language/china/resource/txt_cn_summonchat"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_summonhelp/txt_cn_summonhelp_1.png",
+    "packaged": "language/china/resource/txt_cn_summonhelp/688a1d1e85a3837ca269a11dbb806454.g",
+    "size": 200380,
+    "group": "language/china/resource/txt_cn_summonhelp"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_team_summon/txt_cn_team_summon.png",
+    "packaged": "language/china/resource/txt_cn_team_summon/9cd9eb24eb81724c1651d693701dbb80.g",
+    "size": 98580,
+    "group": "language/china/resource/txt_cn_team_summon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_unlimitsummon/txt_cn_unlimitsummon_form.png",
+    "packaged": "language/china/resource/txt_cn_unlimitsummon/6f0821d2f8080aedde83a5b81f8eeb47.g",
+    "size": 25652,
+    "group": "language/china/resource/txt_cn_unlimitsummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_unlimitsummon/txt_cn_unlimitsummon_form3.png",
+    "packaged": "language/china/resource/txt_cn_unlimitsummon/62dde1eb0af26026a309d1e96e76dbe3.g",
+    "size": 26188,
+    "group": "language/china/resource/txt_cn_unlimitsummon"
+  },
+  {
+    "logical": "language/china/resource/txt_cn_unlimitsummon/txt_cn_unlimitsummon_goods.png",
+    "packaged": "language/china/resource/txt_cn_unlimitsummon/a929ff3be44ffbd6d1347db125e815c6.g",
+    "size": 26352,
+    "group": "language/china/resource/txt_cn_unlimitsummon"
+  },
+  {
+    "logical": "resource/actioncommonsign/134/actioncommonsign_bg_134.jpg",
+    "packaged": "resource/actioncommonsign/134/4662755cf56135e322efc55a84770bd5.g",
+    "size": 361224,
+    "group": "resource/actioncommonsign/134"
+  },
+  {
+    "logical": "resource/actioncommonsign/134/actioncommonsign_npc_134.png",
+    "packaged": "resource/actioncommonsign/134/02e43fa3797b05a9b2069c00692190f3.g",
+    "size": 550788,
+    "group": "resource/actioncommonsign/134"
+  },
+  {
+    "logical": "resource/actioncommonsign/134/actioncommonsign_timebg_134.png",
+    "packaged": "resource/actioncommonsign/134/e8949773922f3b41d607421638c8696d.g",
+    "size": 7376,
+    "group": "resource/actioncommonsign/134"
+  },
+  {
+    "logical": "resource/actioncommonsign/134/actioncommonsign_title_134.png",
+    "packaged": "resource/actioncommonsign/134/ac4457fe912f6b46c8ee2652e04e25c0.g",
+    "size": 10076,
+    "group": "resource/actioncommonsign/134"
+  },
+  {
+    "logical": "resource/actioncommonsign/155/actioncommonsign_155_item_20409.png",
+    "packaged": "resource/actioncommonsign/155/34c1e04738fe27e7adb5af1ddeef3269.g",
+    "size": 45720,
+    "group": "resource/actioncommonsign/155"
+  },
+  {
+    "logical": "resource/actioncommonsign/155/actioncommonsign_bg_155.jpg",
+    "packaged": "resource/actioncommonsign/155/7dd13d0a6fed1dbb997fe27f36e68295.g",
+    "size": 304680,
+    "group": "resource/actioncommonsign/155"
+  },
+  {
+    "logical": "resource/actioncommonsign/155/actioncommonsign_npc_155.png",
+    "packaged": "resource/actioncommonsign/155/ab662f42f3a115cbc7b916e3b024c907.g",
+    "size": 719472,
+    "group": "resource/actioncommonsign/155"
+  },
+  {
+    "logical": "resource/actioncommonsign/155/actioncommonsign_timebg_155.png",
+    "packaged": "resource/actioncommonsign/155/e8949773922f3b41d607421638c8696d.g",
+    "size": 7376,
+    "group": "resource/actioncommonsign/155"
+  },
+  {
+    "logical": "resource/actioncommonsign/155/actioncommonsign_title_155.png",
+    "packaged": "resource/actioncommonsign/155/ac4457fe912f6b46c8ee2652e04e25c0.g",
+    "size": 10076,
+    "group": "resource/actioncommonsign/155"
+  },
+  {
+    "logical": "resource/actioncommonsign/167/actioncommonsign_167_item_21414.png",
+    "packaged": "resource/actioncommonsign/167/c449ddbb0aa0d6c730f61bb41af8edd1.g",
+    "size": 47028,
+    "group": "resource/actioncommonsign/167"
+  },
+  {
+    "logical": "resource/actioncommonsign/167/actioncommonsign_bg_167.jpg",
+    "packaged": "resource/actioncommonsign/167/7bc32beb432553216c2860bb7511fbb0.g",
+    "size": 68844,
+    "group": "resource/actioncommonsign/167"
+  },
+  {
+    "logical": "resource/actioncommonsign/167/actioncommonsign_npc_167.png",
+    "packaged": "resource/actioncommonsign/167/bb25be8e5e850dc14009914017b0ba20.g",
+    "size": 578688,
+    "group": "resource/actioncommonsign/167"
+  },
+  {
+    "logical": "resource/actioncommonsign/167/actioncommonsign_timebg_167.png",
+    "packaged": "resource/actioncommonsign/167/a3286436b0c5e23524f4cd4f105c3775.g",
+    "size": 9772,
+    "group": "resource/actioncommonsign/167"
+  },
+  {
+    "logical": "resource/actioncommonsign/167/actioncommonsign_title_167.png",
+    "packaged": "resource/actioncommonsign/167/b978230e6d34882b4175da0495865917.g",
+    "size": 7496,
+    "group": "resource/actioncommonsign/167"
+  },
+  {
+    "logical": "resource/actioncommonsign/181/actioncommonsign_181_item_23413.png",
+    "packaged": "resource/actioncommonsign/181/8df701d2743c58b35ff28b7859a7ed12.g",
+    "size": 48656,
+    "group": "resource/actioncommonsign/181"
+  },
+  {
+    "logical": "resource/actioncommonsign/181/actioncommonsign_bg_181.jpg",
+    "packaged": "resource/actioncommonsign/181/819afec68dcdfea74c6e511e62cadd6a.g",
+    "size": 575276,
+    "group": "resource/actioncommonsign/181"
+  },
+  {
+    "logical": "resource/actioncommonsign/181/actioncommonsign_bg_181.png",
+    "packaged": "resource/actioncommonsign/181/8afeb668176f218fdae08dab168a2556.g",
+    "size": 299196,
+    "group": "resource/actioncommonsign/181"
+  },
+  {
+    "logical": "resource/actioncommonsign/181/actioncommonsign_npc_181.png",
+    "packaged": "resource/actioncommonsign/181/949128402434fc477f3b2f3739b65caa.g",
+    "size": 100856,
+    "group": "resource/actioncommonsign/181"
+  },
+  {
+    "logical": "resource/actioncommonsign/181/actioncommonsign_timebg_181.png",
+    "packaged": "resource/actioncommonsign/181/d3ec7480b946d24b04ea57f28f70af34.g",
+    "size": 10028,
+    "group": "resource/actioncommonsign/181"
+  },
+  {
+    "logical": "resource/actioncommonsign/181/actioncommonsign_title_181.png",
+    "packaged": "resource/actioncommonsign/181/fb52c1532d92fd8554b14f39fb35c494.g",
+    "size": 7812,
+    "group": "resource/actioncommonsign/181"
+  },
+  {
+    "logical": "resource/actioncommonsign/199/actioncommonsign_199_item_20411.png",
+    "packaged": "resource/actioncommonsign/199/8b50f8c25e9579ceb074e6f5b11b20b6.g",
+    "size": 40548,
+    "group": "resource/actioncommonsign/199"
+  },
+  {
+    "logical": "resource/actioncommonsign/199/actioncommonsign_bg_199.jpg",
+    "packaged": "resource/actioncommonsign/199/90674f99c77583a281047cb89e055e40.g",
+    "size": 309768,
+    "group": "resource/actioncommonsign/199"
+  },
+  {
+    "logical": "resource/actioncommonsign/199/actioncommonsign_npc_199.png",
+    "packaged": "resource/actioncommonsign/199/5543705b5461ef74492446df708df015.g",
+    "size": 413188,
+    "group": "resource/actioncommonsign/199"
+  },
+  {
+    "logical": "resource/actioncommonsign/199/actioncommonsign_timebg_199.png",
+    "packaged": "resource/actioncommonsign/199/85cd192009c43bb240038f4a67c87651.g",
+    "size": 11996,
+    "group": "resource/actioncommonsign/199"
+  },
+  {
+    "logical": "resource/actioncommonsign/199/actioncommonsign_title_199.png",
+    "packaged": "resource/actioncommonsign/199/976c37d14ef40d04a0559017e2f611e6.g",
+    "size": 9096,
+    "group": "resource/actioncommonsign/199"
+  },
+  {
+    "logical": "resource/actioncommonsign/303/actioncommonsign_303_item_22411.png",
+    "packaged": "resource/actioncommonsign/303/2d082916526c26ecf28393c9ff859ecb.g",
+    "size": 45296,
+    "group": "resource/actioncommonsign/303"
+  },
+  {
+    "logical": "resource/actioncommonsign/303/actioncommonsign_bg_303.jpg",
+    "packaged": "resource/actioncommonsign/303/1329c69191f1ec3f4559859f19116c79.g",
+    "size": 315320,
+    "group": "resource/actioncommonsign/303"
+  },
+  {
+    "logical": "resource/actioncommonsign/303/actioncommonsign_npc_303.png",
+    "packaged": "resource/actioncommonsign/303/21d4d40a0a84cbb54e7d9051eb8b5e8b.g",
+    "size": 481204,
+    "group": "resource/actioncommonsign/303"
+  },
+  {
+    "logical": "resource/actioncommonsign/303/actioncommonsign_timebg_303.png",
+    "packaged": "resource/actioncommonsign/303/c356324c34fdf71b52ba5af65d972df1.g",
+    "size": 5560,
+    "group": "resource/actioncommonsign/303"
+  },
+  {
+    "logical": "resource/actioncommonsign/303/actioncommonsign_title_303.png",
+    "packaged": "resource/actioncommonsign/303/6683e1212b5de2fe04922adaecde62d9.g",
+    "size": 8808,
+    "group": "resource/actioncommonsign/303"
+  },
+  {
+    "logical": "resource/actioncommonsign/321/actioncommonsign_321_item_21415.png",
+    "packaged": "resource/actioncommonsign/321/d5742523f89ed844e2d17de84edf966d.g",
+    "size": 49672,
+    "group": "resource/actioncommonsign/321"
+  },
+  {
+    "logical": "resource/actioncommonsign/321/actioncommonsign_321_item_22411.png",
+    "packaged": "resource/actioncommonsign/321/ed8eb33963b7526826b1b8bd0d08fdbb.g",
+    "size": 55404,
+    "group": "resource/actioncommonsign/321"
+  },
+  {
+    "logical": "resource/actioncommonsign/321/actioncommonsign_bg_321.jpg",
+    "packaged": "resource/actioncommonsign/321/884a065f5a0b85d9435cf86e2fbec1d0.g",
+    "size": 69812,
+    "group": "resource/actioncommonsign/321"
+  },
+  {
+    "logical": "resource/actioncommonsign/321/actioncommonsign_npc_321.png",
+    "packaged": "resource/actioncommonsign/321/eb804bd3c89e68304cc56a2b20d1b427.g",
+    "size": 127968,
+    "group": "resource/actioncommonsign/321"
+  },
+  {
+    "logical": "resource/actioncommonsign/321/actioncommonsign_timebg_321.png",
+    "packaged": "resource/actioncommonsign/321/f2f93f8e94f64a6581428d667074b5f9.g",
+    "size": 9692,
+    "group": "resource/actioncommonsign/321"
+  },
+  {
+    "logical": "resource/actioncommonsign/321/actioncommonsign_title_321.png",
+    "packaged": "resource/actioncommonsign/321/79c0223c8060fd5393da9af8276d591a.g",
+    "size": 7508,
+    "group": "resource/actioncommonsign/321"
+  },
+  {
+    "logical": "resource/actioncommonsign/338/actioncommonsign_338_item_23414.png",
+    "packaged": "resource/actioncommonsign/338/d8331e6c48649b407b4f66c9c026acf3.g",
+    "size": 54452,
+    "group": "resource/actioncommonsign/338"
+  },
+  {
+    "logical": "resource/actioncommonsign/338/actioncommonsign_bg_338.jpg",
+    "packaged": "resource/actioncommonsign/338/3d2fc66be6c1023be7dca854b4b24cbf.g",
+    "size": 52392,
+    "group": "resource/actioncommonsign/338"
+  },
+  {
+    "logical": "resource/actioncommonsign/338/actioncommonsign_npc_338.png",
+    "packaged": "resource/actioncommonsign/338/b8189726f4c0a6b10a83fb5ee281889d.g",
+    "size": 588044,
+    "group": "resource/actioncommonsign/338"
+  },
+  {
+    "logical": "resource/actioncommonsign/338/actioncommonsign_timebg_338.png",
+    "packaged": "resource/actioncommonsign/338/d3ec7480b946d24b04ea57f28f70af34.g",
+    "size": 10028,
+    "group": "resource/actioncommonsign/338"
+  },
+  {
+    "logical": "resource/actioncommonsign/338/actioncommonsign_title_338.png",
+    "packaged": "resource/actioncommonsign/338/f75d305894b55a3a16ec531ba0f855da.g",
+    "size": 8036,
+    "group": "resource/actioncommonsign/338"
+  },
+  {
+    "logical": "resource/actioncommonsign/356/actioncommonsign_bg_356.jpg",
+    "packaged": "resource/actioncommonsign/356/83ec14164321c8da457766747fa19c32.g",
+    "size": 59488,
+    "group": "resource/actioncommonsign/356"
+  },
+  {
+    "logical": "resource/actioncommonsign/356/actioncommonsign_timebg_356.png",
+    "packaged": "resource/actioncommonsign/356/5a41bc12e7f04f8cbed0b4d35354259f.g",
+    "size": 7332,
+    "group": "resource/actioncommonsign/356"
+  },
+  {
+    "logical": "resource/actioncommonsign/356/actioncommonsign_title_356.png",
+    "packaged": "resource/actioncommonsign/356/f75d305894b55a3a16ec531ba0f855da.g",
+    "size": 8036,
+    "group": "resource/actioncommonsign/356"
+  },
+  {
+    "logical": "resource/actioncommonsign/358/actioncommonsign_bg_358.jpg",
+    "packaged": "resource/actioncommonsign/358/83ec14164321c8da457766747fa19c32.g",
+    "size": 59488,
+    "group": "resource/actioncommonsign/358"
+  },
+  {
+    "logical": "resource/actioncommonsign/358/actioncommonsign_timebg_358.png",
+    "packaged": "resource/actioncommonsign/358/5a41bc12e7f04f8cbed0b4d35354259f.g",
+    "size": 7332,
+    "group": "resource/actioncommonsign/358"
+  },
+  {
+    "logical": "resource/actioncommonsign/358/actioncommonsign_title_358.png",
+    "packaged": "resource/actioncommonsign/358/f75d305894b55a3a16ec531ba0f855da.g",
+    "size": 8036,
+    "group": "resource/actioncommonsign/358"
+  },
+  {
+    "logical": "resource/actioncommonsign/403/actioncommonsign_bg_403.jpg",
+    "packaged": "resource/actioncommonsign/403/83ec14164321c8da457766747fa19c32.g",
+    "size": 59488,
+    "group": "resource/actioncommonsign/403"
+  },
+  {
+    "logical": "resource/actioncommonsign/403/actioncommonsign_timebg_403.png",
+    "packaged": "resource/actioncommonsign/403/5a41bc12e7f04f8cbed0b4d35354259f.g",
+    "size": 7332,
+    "group": "resource/actioncommonsign/403"
+  },
+  {
+    "logical": "resource/actioncommonsign/403/actioncommonsign_title_403.png",
+    "packaged": "resource/actioncommonsign/403/f75d305894b55a3a16ec531ba0f855da.g",
+    "size": 8036,
+    "group": "resource/actioncommonsign/403"
+  },
+  {
+    "logical": "resource/actioncommonsign/507/actioncommonsign_bg_507.jpg",
+    "packaged": "resource/actioncommonsign/507/2b0c06a32a517b89d6581ce804b30353.g",
+    "size": 361152,
+    "group": "resource/actioncommonsign/507"
+  },
+  {
+    "logical": "resource/actioncommonsign/507/actioncommonsign_npc_507.png",
+    "packaged": "resource/actioncommonsign/507/862ac47e33c0795b46b0353f5f35afcb.g",
+    "size": 451896,
+    "group": "resource/actioncommonsign/507"
+  },
+  {
+    "logical": "resource/actioncommonsign/507/actioncommonsign_timebg_507.png",
+    "packaged": "resource/actioncommonsign/507/5a41bc12e7f04f8cbed0b4d35354259f.g",
+    "size": 7332,
+    "group": "resource/actioncommonsign/507"
+  },
+  {
+    "logical": "resource/actioncommonsign/507/actioncommonsign_title_507.png",
+    "packaged": "resource/actioncommonsign/507/f75d305894b55a3a16ec531ba0f855da.g",
+    "size": 8036,
+    "group": "resource/actioncommonsign/507"
+  },
+  {
+    "logical": "resource/actioncommonsign/706/actioncommonsign_bg_706.jpg",
+    "packaged": "resource/actioncommonsign/706/c6fc210a1acc911febce5b7f2e9878ac.g",
+    "size": 871948,
+    "group": "resource/actioncommonsign/706"
+  },
+  {
+    "logical": "resource/actioncommonsign/842/actioncommonsign_bg_842.jpg",
+    "packaged": "resource/actioncommonsign/842/f018dc017943b5fba5320df198a93116.g",
+    "size": 564544,
+    "group": "resource/actioncommonsign/842"
+  },
+  {
+    "logical": "resource/actioncommonsign/842/actioncommonsign_npc_842.png",
+    "packaged": "resource/actioncommonsign/842/190842ce52fe2b73bba77b45f49f083c.g",
+    "size": 748112,
+    "group": "resource/actioncommonsign/842"
+  },
+  {
+    "logical": "resource/actioncommonsign/842/actioncommonsign_timebg_842.png",
+    "packaged": "resource/actioncommonsign/842/d3ec7480b946d24b04ea57f28f70af34.g",
+    "size": 10028,
+    "group": "resource/actioncommonsign/842"
+  },
+  {
+    "logical": "resource/actioncommonsign/842/actioncommonsign_title_842.png",
+    "packaged": "resource/actioncommonsign/842/fb52c1532d92fd8554b14f39fb35c494.g",
+    "size": 7812,
+    "group": "resource/actioncommonsign/842"
+  },
+  {
+    "logical": "resource/actioncommonsign/871/actioncommonsign_bg_871.jpg",
+    "packaged": "resource/actioncommonsign/871/f018dc017943b5fba5320df198a93116.g",
+    "size": 564544,
+    "group": "resource/actioncommonsign/871"
+  },
+  {
+    "logical": "resource/actioncommonsign/871/actioncommonsign_timebg_871.png",
+    "packaged": "resource/actioncommonsign/871/5a41bc12e7f04f8cbed0b4d35354259f.g",
+    "size": 7332,
+    "group": "resource/actioncommonsign/871"
+  },
+  {
+    "logical": "resource/actioncommonsign/871/actioncommonsign_title_871.png",
+    "packaged": "resource/actioncommonsign/871/f75d305894b55a3a16ec531ba0f855da.g",
+    "size": 8036,
+    "group": "resource/actioncommonsign/871"
+  },
+  {
+    "logical": "resource/actioncommonsign/881/actioncommonsign_bg_881.jpg",
+    "packaged": "resource/actioncommonsign/881/21e374a1eec1ab85cbc70c1e2b7c2cb1.g",
+    "size": 660508,
+    "group": "resource/actioncommonsign/881"
+  },
+  {
+    "logical": "resource/actioncommonsign/actioncommonsign.png",
+    "packaged": "resource/actioncommonsign/1ddb61c0d01342112a3ec288cafbfcb4.g",
+    "size": 49500,
+    "group": "resource/actioncommonsign"
+  },
+  {
+    "logical": "resource/actioncommonsign/actioncommonsign_timebg.png",
+    "packaged": "resource/actioncommonsign/e96b81f2036fe644b80bf857a7374166.g",
+    "size": 2064,
+    "group": "resource/actioncommonsign"
+  },
+  {
+    "logical": "resource/actiondailychargetask/actiondailychargetask.png",
+    "packaged": "resource/actiondailychargetask/7f5029377141ed9f9895830de6ca7719.g",
+    "size": 32328,
+    "group": "resource/actiondailychargetask"
+  },
+  {
+    "logical": "resource/actiondailychargetask/actiondailychargetask_bg.png",
+    "packaged": "resource/actiondailychargetask/4028865e3b2ddcfa64f62876e3ad2b80.g",
+    "size": 152992,
+    "group": "resource/actiondailychargetask"
+  },
+  {
+    "logical": "resource/actiondailychargetask/actiondailychargetask_hero.png",
+    "packaged": "resource/actiondailychargetask/ca1170860f139de5917e681aceb44ebf.g",
+    "size": 367516,
+    "group": "resource/actiondailychargetask"
+  },
+  {
+    "logical": "resource/actionmultiwheelsummon/actionmultiwheelsummon.png",
+    "packaged": "resource/actionmultiwheelsummon/0a522398ae49542ca09986bdd838ce39.g",
+    "size": 87408,
+    "group": "resource/actionmultiwheelsummon"
+  },
+  {
+    "logical": "resource/actionmultiwheelsummon/actionmultiwheelsummon_bg.jpg",
+    "packaged": "resource/actionmultiwheelsummon/f597294e77aaa0f35f5527fb98cfea9e.g",
+    "size": 373468,
+    "group": "resource/actionmultiwheelsummon"
+  },
+  {
+    "logical": "resource/actionmultiwheelsummon/actionmultiwheelsummon_bg2.jpg",
+    "packaged": "resource/actionmultiwheelsummon/30bb5dd1f695667b6c8968f6c58f22a0.g",
+    "size": 324836,
+    "group": "resource/actionmultiwheelsummon"
+  },
+  {
+    "logical": "resource/actionmultiwheelsummon/actionmultiwheelsummon_hero.png",
+    "packaged": "resource/actionmultiwheelsummon/b808f6276f5ccce842433623e3ee6be4.g",
+    "size": 432956,
+    "group": "resource/actionmultiwheelsummon"
+  },
+  {
+    "logical": "resource/actionmultiwheelsummon/actionmultiwheelsummon_hero2.png",
+    "packaged": "resource/actionmultiwheelsummon/0edaffa1cae25b690e592fddd4c37e71.g",
+    "size": 455064,
+    "group": "resource/actionmultiwheelsummon"
+  },
+  {
+    "logical": "resource/actionmultiwheelsummon/actionmultiwheelsummon_icon.png",
+    "packaged": "resource/actionmultiwheelsummon/aea351d37118548e6e8d117a8233cbbc.g",
+    "size": 12512,
+    "group": "resource/actionmultiwheelsummon"
+  },
+  {
+    "logical": "resource/actionseasign/actionseasign.png",
+    "packaged": "resource/actionseasign/afc61896dfa542c8fc2d6647993dbce4.g",
+    "size": 3344,
+    "group": "resource/actionseasign"
+  },
+  {
+    "logical": "resource/actionseasign/actionseasign_bg.jpg",
+    "packaged": "resource/actionseasign/edc66d68bacb7cb421c48977ebd35f72.g",
+    "size": 376556,
+    "group": "resource/actionseasign"
+  },
+  {
+    "logical": "resource/actionseasign/actionseasign_bg_2.png",
+    "packaged": "resource/actionseasign/3aecfc160529bbc0ac117f8a1e36734c.g",
+    "size": 1039300,
+    "group": "resource/actionseasign"
+  },
+  {
+    "logical": "resource/actionsignup/actionsignup.png",
+    "packaged": "resource/actionsignup/d1e6668eb271b49bb376ae12601486cb.g",
+    "size": 16836,
+    "group": "resource/actionsignup"
+  },
+  {
+    "logical": "resource/actionsignup/actionsignup_bg_1.jpg",
+    "packaged": "resource/actionsignup/0dd5d70610bfcb444a4d2251ec449d51.g",
+    "size": 466760,
+    "group": "resource/actionsignup"
+  },
+  {
+    "logical": "resource/actionsignup/actionsignup_bg_2.jpg",
+    "packaged": "resource/actionsignup/5409a9601023942b8d83177854a4a79c.g",
+    "size": 493452,
+    "group": "resource/actionsignup"
+  },
+  {
+    "logical": "resource/actionsignup/actionsignup_hero_99997.png",
+    "packaged": "resource/actionsignup/09f1b2703c3d395f1e318640561d6811.g",
+    "size": 281876,
+    "group": "resource/actionsignup"
+  },
+  {
+    "logical": "resource/actionsignup/actionsignup_hero_99998.png",
+    "packaged": "resource/actionsignup/239c53ad573617b1e19100e837c35e43.g",
+    "size": 280104,
+    "group": "resource/actionsignup"
+  },
+  {
+    "logical": "resource/actionsignup/actionsignup_time_1.png",
+    "packaged": "resource/actionsignup/9fc3d81dd83b3597a57f8c0c5766fa7e.g",
+    "size": 2628,
+    "group": "resource/actionsignup"
+  },
+  {
+    "logical": "resource/actionsignup/actionsignup_time_2.png",
+    "packaged": "resource/actionsignup/806f13e4a74f6deb91ee7123260212e4.g",
+    "size": 1936,
+    "group": "resource/actionsignup"
+  },
+  {
+    "logical": "resource/actionsignup/actionsignup_title_1.png",
+    "packaged": "resource/actionsignup/d75d67d18e923ed933d867709e962ac2.g",
+    "size": 5796,
+    "group": "resource/actionsignup"
+  },
+  {
+    "logical": "resource/actionsignup/actionsignup_title_2.png",
+    "packaged": "resource/actionsignup/dad2421164bfc1c7f4f7cf59856223d8.g",
+    "size": 5924,
+    "group": "resource/actionsignup"
+  },
+  {
+    "logical": "resource/actionspringsign/actionspringsign.png",
+    "packaged": "resource/actionspringsign/9a4ebb5674843df777a2ee1fed41ac99.g",
+    "size": 36128,
+    "group": "resource/actionspringsign"
+  },
+  {
+    "logical": "resource/actionspringsign/actionspringsign_bg_1.jpg",
+    "packaged": "resource/actionspringsign/760a2c35c21345ff60b22d47712e4b66.g",
+    "size": 322012,
+    "group": "resource/actionspringsign"
+  },
+  {
+    "logical": "resource/actionspringsign/actionspringsign_bg_2.png",
+    "packaged": "resource/actionspringsign/c169fd5c26b460f6f0ce2c1711ed37fc.g",
+    "size": 646812,
+    "group": "resource/actionspringsign"
+  },
+  {
+    "logical": "resource/actionsummonwelfare/actionsummonwelfare_pic_1.png",
+    "packaged": "resource/actionsummonwelfare/120a4ad155999914491e1d988875ba2b.g",
+    "size": 155756,
+    "group": "resource/actionsummonwelfare"
+  },
+  {
+    "logical": "resource/actionsummonwelfare/actionsummonwelfare_pic_2.png",
+    "packaged": "resource/actionsummonwelfare/20773e387c7f838f017fc86d4730e956.g",
+    "size": 162732,
+    "group": "resource/actionsummonwelfare"
+  },
+  {
+    "logical": "resource/actionsummonwelfare/actionsummonwelfare_pic_3.png",
+    "packaged": "resource/actionsummonwelfare/c19e6a195de2cda40d7cfe48d32da955.g",
+    "size": 87512,
+    "group": "resource/actionsummonwelfare"
+  },
+  {
+    "logical": "resource/actionteamsummons/actionteamsummonbg.jpg",
+    "packaged": "resource/actionteamsummons/4b26beff7832d5c9ed21fb74f711262a.g",
+    "size": 364528,
+    "group": "resource/actionteamsummons"
+  },
+  {
+    "logical": "resource/actionteamsummons/actionteamsummons.png",
+    "packaged": "resource/actionteamsummons/c1bfe2115dc4f1332be76121f54a3e1a.g",
+    "size": 134368,
+    "group": "resource/actionteamsummons"
+  },
+  {
+    "logical": "resource/actionteamsummons/actteamsummon_bg2.png",
+    "packaged": "resource/actionteamsummons/47252d22500c951a6babb0961b3e4b60.g",
+    "size": 406000,
+    "group": "resource/actionteamsummons"
+  },
+  {
+    "logical": "resource/actionteamsummons/actteamsummon_bghero.png",
+    "packaged": "resource/actionteamsummons/ef5ef5da2c66260f209c23b1d80fa535.g",
+    "size": 1310052,
+    "group": "resource/actionteamsummons"
+  },
+  {
+    "logical": "resource/actionthreedaysign/actionthreedaysign.png",
+    "packaged": "resource/actionthreedaysign/fbc946fc26a6cc190380f5a31a90a333.g",
+    "size": 21836,
+    "group": "resource/actionthreedaysign"
+  },
+  {
+    "logical": "resource/actionthreedaysign/actionthreedaysign_bg1.png",
+    "packaged": "resource/actionthreedaysign/a87ca0429c5fe9b335dc86b03b13b072.g",
+    "size": 459716,
+    "group": "resource/actionthreedaysign"
+  },
+  {
+    "logical": "resource/actionthreedaysign/actionthreedaysign_bg2.png",
+    "packaged": "resource/actionthreedaysign/a1e5774b12680eab06e134b57239793d.g",
+    "size": 549228,
+    "group": "resource/actionthreedaysign"
+  },
+  {
+    "logical": "resource/actionthreedaysign/actionthreedaysign_bg3.png",
+    "packaged": "resource/actionthreedaysign/5e15297084c60340dddcd3f245cb12b6.g",
+    "size": 174736,
+    "group": "resource/actionthreedaysign"
+  },
+  {
+    "logical": "resource/actionthreedaysign/actionthreedaysign_bg4.png",
+    "packaged": "resource/actionthreedaysign/5985e7ebe9e19a295a15b18d02190f8b.g",
+    "size": 3768,
+    "group": "resource/actionthreedaysign"
+  },
+  {
+    "logical": "resource/actionthreedaysign/actionthreedaysign_bg5.png",
+    "packaged": "resource/actionthreedaysign/7dd88dc00ad6a68ab115397c39a4b8bc.g",
+    "size": 347504,
+    "group": "resource/actionthreedaysign"
+  },
+  {
+    "logical": "resource/actionthreedaysign/actionthreedaysign_bg6.png",
+    "packaged": "resource/actionthreedaysign/560ffd3e6bc26eba318952854098bc43.g",
+    "size": 114836,
+    "group": "resource/actionthreedaysign"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon.png",
+    "packaged": "resource/actiontimesummon/11b1c69dc2157f7dc72ad9ea016ca69f.g",
+    "size": 111036,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g1.jpg",
+    "packaged": "resource/actiontimesummon/7708383306dbbafd1899e0391addc951.g",
+    "size": 219500,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g10.jpg",
+    "packaged": "resource/actiontimesummon/ce800ed2a058d4f6e5fdc2881ac7e07c.g",
+    "size": 95256,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g11.jpg",
+    "packaged": "resource/actiontimesummon/5393934acac5ae5dbd75feca419f0016.g",
+    "size": 121532,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g12.jpg",
+    "packaged": "resource/actiontimesummon/4380f3b3e2f37f9662691633c12fb8ad.g",
+    "size": 419720,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g13.jpg",
+    "packaged": "resource/actiontimesummon/16824531ceb58b314549c699424dc7b1.g",
+    "size": 117324,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g14.jpg",
+    "packaged": "resource/actiontimesummon/72ce0ebc2cf667fcbeb2c5c63c0945ee.g",
+    "size": 99132,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g15.jpg",
+    "packaged": "resource/actiontimesummon/13316b482c953b3f207a04f8787091e1.g",
+    "size": 106100,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g16.jpg",
+    "packaged": "resource/actiontimesummon/1a30da15e7017a25e2b242304bcb247f.g",
+    "size": 175796,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g17.jpg",
+    "packaged": "resource/actiontimesummon/b3666050d7589fc9b408b3a0aef34e40.g",
+    "size": 526864,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g18.jpg",
+    "packaged": "resource/actiontimesummon/5ddf20a9ad7d20a50b91f0a53534deea.g",
+    "size": 620624,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g19.jpg",
+    "packaged": "resource/actiontimesummon/6e33e30030a8ff0222314e777993db47.g",
+    "size": 148924,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g2.jpg",
+    "packaged": "resource/actiontimesummon/99ab5abe63cba83c17b6cdde741a98fb.g",
+    "size": 427072,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g20.jpg",
+    "packaged": "resource/actiontimesummon/c266017fa68b2761e66f0879a7803510.g",
+    "size": 266912,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g21.jpg",
+    "packaged": "resource/actiontimesummon/468271295b3b565f0aa2ad97f84c4fd8.g",
+    "size": 608080,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g22.jpg",
+    "packaged": "resource/actiontimesummon/6e33e30030a8ff0222314e777993db47.g",
+    "size": 148924,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g23.jpg",
+    "packaged": "resource/actiontimesummon/af708528a62dbf72ff888c1140616ca7.g",
+    "size": 730044,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g24.jpg",
+    "packaged": "resource/actiontimesummon/2551b35694f7ecb70f5c6c630ab139de.g",
+    "size": 411380,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g25.jpg",
+    "packaged": "resource/actiontimesummon/9c8db7c61428d77d45f783df6bc32f49.g",
+    "size": 705908,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g26.jpg",
+    "packaged": "resource/actiontimesummon/9c8db7c61428d77d45f783df6bc32f49.g",
+    "size": 705908,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g27.jpg",
+    "packaged": "resource/actiontimesummon/b4c5088b66e4613708bcd70578cd3441.g",
+    "size": 530532,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g28.jpg",
+    "packaged": "resource/actiontimesummon/e0fbf07c780a9911907cff7512b938c3.g",
+    "size": 608656,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g29.jpg",
+    "packaged": "resource/actiontimesummon/5246bd22ff7e3a6ecd281361df6ff19a.g",
+    "size": 503504,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g3.jpg",
+    "packaged": "resource/actiontimesummon/e915be80d21c98fbefeb640e30c6205e.g",
+    "size": 523740,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g30.jpg",
+    "packaged": "resource/actiontimesummon/1a30da15e7017a25e2b242304bcb247f.g",
+    "size": 175796,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g31.jpg",
+    "packaged": "resource/actiontimesummon/388f033a128de1f7cd11fdcbc6e999f1.g",
+    "size": 625332,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g32.jpg",
+    "packaged": "resource/actiontimesummon/ce800ed2a058d4f6e5fdc2881ac7e07c.g",
+    "size": 95256,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g33.jpg",
+    "packaged": "resource/actiontimesummon/33125d752fbd5fec307f58bf0ba36014.g",
+    "size": 422848,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g34.jpg",
+    "packaged": "resource/actiontimesummon/4c2d8c16ed10627cc50e7af146882d1a.g",
+    "size": 663168,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g4.jpg",
+    "packaged": "resource/actiontimesummon/c90ab5a723ffb6668909f02fdb5b03ac.g",
+    "size": 388304,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g5.jpg",
+    "packaged": "resource/actiontimesummon/e4d9f09ad1deb6cf62d69f2bd0583af8.g",
+    "size": 91768,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g6.jpg",
+    "packaged": "resource/actiontimesummon/2e4b26932403d3285d8abf65df87f6e2.g",
+    "size": 273612,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g7.jpg",
+    "packaged": "resource/actiontimesummon/0119de145b47d2e3e10a2a9668b2c9ba.g",
+    "size": 563388,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g8.jpg",
+    "packaged": "resource/actiontimesummon/65d7ee927e0c366debbdd479c29819a4.g",
+    "size": 106912,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/actiontimesummon_bg_g9.jpg",
+    "packaged": "resource/actiontimesummon/d0d22bfb689da1d332c0309653ea7cd1.g",
+    "size": 119784,
+    "group": "resource/actiontimesummon"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h1.png",
+    "packaged": "resource/actiontimesummon/builditem/692a4621e11db1e6db5e641b1405d087.g",
+    "size": 24212,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h10.png",
+    "packaged": "resource/actiontimesummon/builditem/9fdfef27814d8895c83fbede097559f4.g",
+    "size": 31472,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h11.png",
+    "packaged": "resource/actiontimesummon/builditem/419108f031492de7e21e6fd9fd4362cd.g",
+    "size": 24676,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h12.png",
+    "packaged": "resource/actiontimesummon/builditem/429d0aa9e27ad1a96593ff6f92c2c227.g",
+    "size": 19956,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h13.png",
+    "packaged": "resource/actiontimesummon/builditem/2fb1d8c8fa9c4bd761fe9a2e87675c6f.g",
+    "size": 22516,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h14.png",
+    "packaged": "resource/actiontimesummon/builditem/94ee5ba9c6a1102327cdb28bb2e09bea.g",
+    "size": 16132,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h15.png",
+    "packaged": "resource/actiontimesummon/builditem/f50268d901f62c4301c45fd7dffa72f8.g",
+    "size": 26076,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h16.png",
+    "packaged": "resource/actiontimesummon/builditem/16c4dced18e975638a4be61937bab841.g",
+    "size": 25688,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h17.png",
+    "packaged": "resource/actiontimesummon/builditem/9c768288a421cca4cb64b66d2afacb98.g",
+    "size": 20560,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h18.png",
+    "packaged": "resource/actiontimesummon/builditem/e04ec758d632d22274a10d35ad65c360.g",
+    "size": 30976,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h19.png",
+    "packaged": "resource/actiontimesummon/builditem/9e56f6d8b5ac2a5ec6d24238ec9989c3.g",
+    "size": 22420,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h2.png",
+    "packaged": "resource/actiontimesummon/builditem/bf780a9816ec4a0a9e12d15d40860abc.g",
+    "size": 24768,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h20.png",
+    "packaged": "resource/actiontimesummon/builditem/3e71fec3747d750718ac574ac6736f38.g",
+    "size": 17892,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h21.png",
+    "packaged": "resource/actiontimesummon/builditem/5d46bd9193a8cf73aacf036b361a5496.g",
+    "size": 29012,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h22.png",
+    "packaged": "resource/actiontimesummon/builditem/25a6f0ef00eaa46082195625368c5221.g",
+    "size": 25464,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h23.png",
+    "packaged": "resource/actiontimesummon/builditem/55121a534a3d5d669350487c0b9bca11.g",
+    "size": 24844,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h24.png",
+    "packaged": "resource/actiontimesummon/builditem/089b05f0d01c8f90afca9688342f0485.g",
+    "size": 24272,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h25.png",
+    "packaged": "resource/actiontimesummon/builditem/a5dd19d474c509125d7e316ea15c0bc3.g",
+    "size": 20860,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h26.png",
+    "packaged": "resource/actiontimesummon/builditem/27faf09f41aacdd226daccc4584f652b.g",
+    "size": 21844,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h27.png",
+    "packaged": "resource/actiontimesummon/builditem/b1f39569075c3756d74d2543002ecb14.g",
+    "size": 20204,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h28.png",
+    "packaged": "resource/actiontimesummon/builditem/56ad69d33e1a329400acbcf91a1404f4.g",
+    "size": 22236,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h29.png",
+    "packaged": "resource/actiontimesummon/builditem/f2b4c341591614ad3fda855d088b9ec4.g",
+    "size": 20616,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h3.png",
+    "packaged": "resource/actiontimesummon/builditem/90d28a96aa09967c5d97b8df409a10aa.g",
+    "size": 23888,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h30.png",
+    "packaged": "resource/actiontimesummon/builditem/6c7c5df01c9ce6703fa2d8e216198b48.g",
+    "size": 22884,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h31.png",
+    "packaged": "resource/actiontimesummon/builditem/452de08dbb4a77d94ac950b8c1909ea5.g",
+    "size": 23712,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h32.png",
+    "packaged": "resource/actiontimesummon/builditem/65db5deea73a9afb6c72a76b4f8f61fb.g",
+    "size": 24704,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h33.png",
+    "packaged": "resource/actiontimesummon/builditem/65991777325a13257c30006951a5b115.g",
+    "size": 32452,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h34.png",
+    "packaged": "resource/actiontimesummon/builditem/1a6f9c912f671968aa036010731ecf9e.g",
+    "size": 32120,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h4.png",
+    "packaged": "resource/actiontimesummon/builditem/a6870e8ab56e1cf3697c9a1764ff6cb3.g",
+    "size": 22344,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h5.png",
+    "packaged": "resource/actiontimesummon/builditem/e9894523c7b19bc4e2b036b63d5eab26.g",
+    "size": 22356,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h6.png",
+    "packaged": "resource/actiontimesummon/builditem/208a3b848967ba5a44b26e930ca1ae09.g",
+    "size": 25300,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h7.png",
+    "packaged": "resource/actiontimesummon/builditem/2cdf718c4f68238acfd7f0e910ae1c7b.g",
+    "size": 22804,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h8.png",
+    "packaged": "resource/actiontimesummon/builditem/4228c1b3ce6d4d55c586bb74c04d308f.g",
+    "size": 30084,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summon_h9.png",
+    "packaged": "resource/actiontimesummon/builditem/c74d132e62b21db70ac5f9eaab831966.g",
+    "size": 27268,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/builditem/icon_time_summonbg.png",
+    "packaged": "resource/actiontimesummon/builditem/ebe5659e26fe88eaf522cf7c41a6e530.g",
+    "size": 4896,
+    "group": "resource/actiontimesummon/builditem"
+  },
+  {
+    "logical": "resource/actiontimesummon/role_stage_bg/role_stage_bg_34.png",
+    "packaged": "resource/actiontimesummon/role_stage_bg/c59a56455394068aa52548809b04812b.g",
+    "size": 50024,
+    "group": "resource/actiontimesummon/role_stage_bg"
+  },
+  {
+    "logical": "resource/actiontimesummon/sub_bg/actiontimesummon_sub_bg1.png",
+    "packaged": "resource/actiontimesummon/sub_bg/a8e6381db6d388fdc9f87eea12a7b1e8.g",
+    "size": 386148,
+    "group": "resource/actiontimesummon/sub_bg"
+  },
+  {
+    "logical": "resource/bosshelper/bosshelper.png",
+    "packaged": "resource/bosshelper/28a4d43ea11ffee11f5f4345c1b7800c.g",
+    "size": 89132,
+    "group": "resource/bosshelper"
+  },
+  {
+    "logical": "resource/bosshelper/bosshelper_bg.png",
+    "packaged": "resource/bosshelper/416cd0160aec9275db2689c6e357e451.g",
+    "size": 431452,
+    "group": "resource/bosshelper"
+  },
+  {
+    "logical": "resource/cyclesummon/cyclesummon.png",
+    "packaged": "resource/cyclesummon/49eb55347f09c9698f0307ae6bfcc85f.g",
+    "size": 573464,
+    "group": "resource/cyclesummon"
+  },
+  {
+    "logical": "resource/cyclesummon/cyclesummon_bg.jpg",
+    "packaged": "resource/cyclesummon/c052d095bfadbec1f621071eb1d10938.g",
+    "size": 108984,
+    "group": "resource/cyclesummon"
+  },
+  {
+    "logical": "resource/cyclesummon/cyclesummon_bg2.png",
+    "packaged": "resource/cyclesummon/c452a252b7233ae1358442b37b012600.g",
+    "size": 222932,
+    "group": "resource/cyclesummon"
+  },
+  {
+    "logical": "resource/cyclesummon/cyclesummon_bg_new.jpg",
+    "packaged": "resource/cyclesummon/1a30da15e7017a25e2b242304bcb247f.g",
+    "size": 175796,
+    "group": "resource/cyclesummon"
+  },
+  {
+    "logical": "resource/cyclesummon/cyclesummon_buy_bg.png",
+    "packaged": "resource/cyclesummon/f9dd980db021171436d5ee3821018c2b.g",
+    "size": 841416,
+    "group": "resource/cyclesummon"
+  },
+  {
+    "logical": "resource/cyclesummon/cyclesummon_buy_role.png",
+    "packaged": "resource/cyclesummon/b88e3b075b1a58d2f04a839182aae793.g",
+    "size": 375824,
+    "group": "resource/cyclesummon"
+  },
+  {
+    "logical": "resource/firstcharge/dailycharge/daily_charge.png",
+    "packaged": "resource/firstcharge/dailycharge/ba80d9e7bcbb85927603ce4cd49a94b5.g",
+    "size": 526552,
+    "group": "resource/firstcharge/dailycharge"
+  },
+  {
+    "logical": "resource/godpalace/godpalaceworship/godpalaceworship.png",
+    "packaged": "resource/godpalace/godpalaceworship/52fb1887d82fa7950ed6081ab1ebadea.g",
+    "size": 635752,
+    "group": "resource/godpalace/godpalaceworship"
+  },
+  {
+    "logical": "resource/godpalace/godpalaceworship/godpalaceworship_bg.jpg",
+    "packaged": "resource/godpalace/godpalaceworship/5a4232cf503a1bce44b1bfd6e2c33045.g",
+    "size": 60484,
+    "group": "resource/godpalace/godpalaceworship"
+  },
+  {
+    "logical": "resource/heaven/heavensweep.png",
+    "packaged": "resource/heaven/27e366633f4d4d613675e592147316a3.g",
+    "size": 5324,
+    "group": "resource/heaven"
+  },
+  {
+    "logical": "resource/lucksummontips/lucksummontips.png",
+    "packaged": "resource/lucksummontips/845a5583dfe99cd1a2049939506cb920.g",
+    "size": 41060,
+    "group": "resource/lucksummontips"
+  },
+  {
+    "logical": "resource/lucksummontips/lucksummontips_hero.png",
+    "packaged": "resource/lucksummontips/35a71ed513600e066ae70f0484ff0711.g",
+    "size": 263612,
+    "group": "resource/lucksummontips"
+  },
+  {
+    "logical": "resource/newdailyfirstcharge/newdailyfirstcharge.png",
+    "packaged": "resource/newdailyfirstcharge/25fedf12b2807135e4a9b777d7126613.g",
+    "size": 24032,
+    "group": "resource/newdailyfirstcharge"
+  },
+  {
+    "logical": "resource/newdailyfirstcharge/newdailyfirstcharge_bg_1.png",
+    "packaged": "resource/newdailyfirstcharge/134d0b3e8c18113ce1c04557d27574d5.g",
+    "size": 757236,
+    "group": "resource/newdailyfirstcharge"
+  },
+  {
+    "logical": "resource/pre_summon/pre_summon.png",
+    "packaged": "resource/pre_summon/fe730aba2a94f54a2918248c2b1451ef.g",
+    "size": 51412,
+    "group": "resource/pre_summon"
+  },
+  {
+    "logical": "resource/pre_summon/pre_summon_hero_img.png",
+    "packaged": "resource/pre_summon/e0e07bf5db629baa6054b2fd5d0f7c38.g",
+    "size": 970692,
+    "group": "resource/pre_summon"
+  },
+  {
+    "logical": "resource/pre_summon/pre_summon_panel_bg.jpg",
+    "packaged": "resource/pre_summon/6832a72d3f54016f0a3f8ca41be48d17.g",
+    "size": 254252,
+    "group": "resource/pre_summon"
+  },
+  {
+    "logical": "resource/pre_summon/pre_summon_panel_bg_sub.png",
+    "packaged": "resource/pre_summon/dac6bca5f9176526abfda3c877eb93f8.g",
+    "size": 323612,
+    "group": "resource/pre_summon"
+  },
+  {
+    "logical": "resource/signgivehero/signgivehero.png",
+    "packaged": "resource/signgivehero/75fa35c254ce77579b0c1b2d00acc514.g",
+    "size": 79540,
+    "group": "resource/signgivehero"
+  },
+  {
+    "logical": "resource/signgivehero/signgivehero_bg_1.jpg",
+    "packaged": "resource/signgivehero/a9b93c2da4ddb9bafbe26f0218f81f2f.g",
+    "size": 359504,
+    "group": "resource/signgivehero"
+  },
+  {
+    "logical": "resource/signgivehero/signgivehero_bg_2.jpg",
+    "packaged": "resource/signgivehero/56c2af647d7931b285a5d334f2565d45.g",
+    "size": 328500,
+    "group": "resource/signgivehero"
+  },
+  {
+    "logical": "resource/signgivehero/signgivehero_bottombg.png",
+    "packaged": "resource/signgivehero/b269ce3f50f29d9cca6fa79b14eb0365.g",
+    "size": 186172,
+    "group": "resource/signgivehero"
+  },
+  {
+    "logical": "resource/signgiveheropoker/signgiveheropoker.png",
+    "packaged": "resource/signgiveheropoker/d7d1b911f25dc64c945bb85e34a1cfc2.g",
+    "size": 110880,
+    "group": "resource/signgiveheropoker"
+  },
+  {
+    "logical": "resource/soulbodysummon/soulbodysummon.png",
+    "packaged": "resource/soulbodysummon/438c10899a0ce4795e6be3fcac8caa42.g",
+    "size": 94868,
+    "group": "resource/soulbodysummon"
+  },
+  {
+    "logical": "resource/soulbodysummon/soulbodysummon_bg.jpg",
+    "packaged": "resource/soulbodysummon/f285907de1a6f3f9d7d44b5c04ffc07b.g",
+    "size": 563968,
+    "group": "resource/soulbodysummon"
+  },
+  {
+    "logical": "resource/soulbodysummon/soulbodysummon_bg_2.png",
+    "packaged": "resource/soulbodysummon/2e4e41d59dfc594beb106229e1d882bb.g",
+    "size": 181476,
+    "group": "resource/soulbodysummon"
+  },
+  {
+    "logical": "resource/soulbodysummonshop/soulbodysummonshop.png",
+    "packaged": "resource/soulbodysummonshop/6b5c86024266ce876886cfab33d490f8.g",
+    "size": 422092,
+    "group": "resource/soulbodysummonshop"
+  },
+  {
+    "logical": "resource/summon_main/summon_main_bg_3.png",
+    "packaged": "resource/summon_main/adcacd95d466d05a053a6bbcdbdc0f6e.g",
+    "size": 239912,
+    "group": "resource/summon_main"
+  },
+  {
+    "logical": "resource/summon_main/summon_main_bg_4.png",
+    "packaged": "resource/summon_main/5ae9a06afe84465cd89a71f54e8098d7.g",
+    "size": 244420,
+    "group": "resource/summon_main"
+  },
+  {
+    "logical": "resource/summon_main/summon_main_seer_bg.jpg",
+    "packaged": "resource/summon_main/0214f522a60f3cf6a88caeb3f99e1a0a.g",
+    "size": 614376,
+    "group": "resource/summon_main"
+  },
+  {
+    "logical": "resource/summon_main/summon_main_wish_bg.png",
+    "packaged": "resource/summon_main/8bd47d51137f4930da02dd7079e2620d.g",
+    "size": 132800,
+    "group": "resource/summon_main"
+  },
+  {
+    "logical": "resource/summon_show/summon_show_10.jpg",
+    "packaged": "resource/summon_show/20b426be00ae55605c3b52f778b855db.g",
+    "size": 479008,
+    "group": "resource/summon_show"
+  },
+  {
+    "logical": "resource/summon_show/summon_show_bg_2.jpg",
+    "packaged": "resource/summon_show/8dde4624c4a7c777c3ea556eddcfc567.g",
+    "size": 511144,
+    "group": "resource/summon_show"
+  },
+  {
+    "logical": "resource/summonchat/summonchat_0.png",
+    "packaged": "resource/summonchat/68a21774a3fbea35a6bbaa572c2d9b89.g",
+    "size": 38724,
+    "group": "resource/summonchat"
+  },
+  {
+    "logical": "resource/summonchat/summonchat_1.png",
+    "packaged": "resource/summonchat/978f8dc571b50fa777942f907730186d.g",
+    "size": 33596,
+    "group": "resource/summonchat"
+  },
+  {
+    "logical": "resource/summonchat/summonchat_2.png",
+    "packaged": "resource/summonchat/6d198449e17fbf32a5b7b41f513514a8.g",
+    "size": 46316,
+    "group": "resource/summonchat"
+  },
+  {
+    "logical": "resource/summonunlimithelp/summonunlimithelp.png",
+    "packaged": "resource/summonunlimithelp/0c0a8e1423af2832f35995e88df304bb.g",
+    "size": 58924,
+    "group": "resource/summonunlimithelp"
+  },
+  {
+    "logical": "resource/summonunlimithelp/summonunlimithelp_bg.png",
+    "packaged": "resource/summonunlimithelp/bcad00705b0d4193984d3b344205a62b.g",
+    "size": 373756,
+    "group": "resource/summonunlimithelp"
+  },
+  {
+    "logical": "resource/summonunlimitsavelog/summonunlimitsavelog.png",
+    "packaged": "resource/summonunlimitsavelog/5b575097081d2a224fc5204284173eac.g",
+    "size": 1208,
+    "group": "resource/summonunlimitsavelog"
+  },
+  {
+    "logical": "resource/timesummonfetter/timesummonfetter.png",
+    "packaged": "resource/timesummonfetter/7f57b74d434b7eda51c867974e11a373.g",
+    "size": 72356,
+    "group": "resource/timesummonfetter"
+  },
+  {
+    "logical": "resource/unlimitsummon/unlimitsummon_moon.png",
+    "packaged": "resource/unlimitsummon/a2820537a2ecf58212f32d33852cc483.g",
+    "size": 129504,
+    "group": "resource/unlimitsummon"
+  },
+  {
+    "logical": "resource/unlimitsummon/unlimitsummon_npc_1.png",
+    "packaged": "resource/unlimitsummon/782a7f6c8c0c6daec36278a6a24c9f06.g",
+    "size": 444732,
+    "group": "resource/unlimitsummon"
+  },
+  {
+    "logical": "resource/unlimitsummon/unlimitsummon_npc_2.png",
+    "packaged": "resource/unlimitsummon/b337a2250f03af6826ceb258fd114bc2.g",
+    "size": 427436,
+    "group": "resource/unlimitsummon"
+  },
+  {
+    "logical": "resource/unlimitsummon/unlimitsummon_npc_3.png",
+    "packaged": "resource/unlimitsummon/cfdc58f09b5a8844fc044e0baa3aa3dd.g",
+    "size": 573644,
+    "group": "resource/unlimitsummon"
+  },
+  {
+    "logical": "resource/unlimitsummon/unlimitsummon_npc_4.png",
+    "packaged": "resource/unlimitsummon/94cf76e88a3d82d21e34aba1b35d7bee.g",
+    "size": 372108,
+    "group": "resource/unlimitsummon"
+  },
+  {
+    "logical": "resource/wallbulletin/dailynewnewpaper.png",
+    "packaged": "resource/wallbulletin/fc987809ab54c8d38961b315027b53ba.g",
+    "size": 196256,
+    "group": "resource/wallbulletin"
+  },
+  {
+    "logical": "resource/wallbulletin/dailynewspaper.png",
+    "packaged": "resource/wallbulletin/9d0bd98d1f179fc234fa5620cafc46fa.g",
+    "size": 354920,
+    "group": "resource/wallbulletin"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_50.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/08800c6d8f2ba6910ac2420b2d6e1bbb.g",
+    "size": 94360,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_51.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/be8db7f33a8c6aaaac3035b520975b90.g",
+    "size": 106984,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_52.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/c2ec610945661bafe49da0aaaa0e6060.g",
+    "size": 88980,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_53.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/7e96f4b7cd6128ab5b58d7a05538cdb5.g",
+    "size": 107740,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_54.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/5c7f4aa42003b64a7560832daee57a71.g",
+    "size": 114988,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_55.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/432d61efc81698cce11aa06bed9e9919.g",
+    "size": 112716,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_56.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/252a2baef86bf1bab63b17d1c7e7c2a4.g",
+    "size": 90976,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_57.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/38c58fdf4ff961f8f81b64c93b7b6ad1.g",
+    "size": 95740,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_58.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/27aa1ff506f50e46658871114fa640d4.g",
+    "size": 95536,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_59.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/55609054e22a047b91d0317fa05df6fc.g",
+    "size": 108072,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_60.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/bc8480aad3ceb834c9d1b467ac193960.g",
+    "size": 99692,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_61.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/e2ea56841088b3daaa3c13a1b763e47e.g",
+    "size": 108920,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_62.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/b771ccab1902794741df9c76883d9931.g",
+    "size": 119776,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_63.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/b7e26a511fea3bb00b267cc50b75a889.g",
+    "size": 87264,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_64.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/13417c56cd6fbcbbf8245708731aece1.g",
+    "size": 85908,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_65.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/e99353a87b5794bb15043c2579d163e3.g",
+    "size": 107632,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_66.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/36339885a9c8607728eeb0d451193957.g",
+    "size": 109212,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/wallbulletin/wallbulletin_bg/dailynewnewspaper_67.png",
+    "packaged": "resource/wallbulletin/wallbulletin_bg/555dfcb093ced528c064e2a86960d7b0.g",
+    "size": 100876,
+    "group": "resource/wallbulletin/wallbulletin_bg"
+  },
+  {
+    "logical": "resource/welfare/action_sign/action_sign.png",
+    "packaged": "resource/welfare/action_sign/18bbc5ddccae138f1079607f4ca08a34.g",
+    "size": 80636,
+    "group": "resource/welfare/action_sign"
+  },
+  {
+    "logical": "resource/welfare/action_sign/action_sign_10.png",
+    "packaged": "resource/welfare/action_sign/51fa20802d63149eabd87d50119b832e.g",
+    "size": 596,
+    "group": "resource/welfare/action_sign"
+  },
+  {
+    "logical": "resource/welfare/action_sign/action_sign_bg.jpg",
+    "packaged": "resource/welfare/action_sign/24b510245e600793f578861e73175e72.g",
+    "size": 172252,
+    "group": "resource/welfare/action_sign"
+  },
+  {
+    "logical": "resource/welfare/action_sign/action_sign_bg2.png",
+    "packaged": "resource/welfare/action_sign/16a49f4d15645dbb068270d9d5441599.g",
+    "size": 614852,
+    "group": "resource/welfare/action_sign"
+  },
+  {
+    "logical": "resource/welfare/action_sign/sign_role_img.png",
+    "packaged": "resource/welfare/action_sign/207e8d2baa55ee58040224f657d1d16c.g",
+    "size": 470504,
+    "group": "resource/welfare/action_sign"
+  },
+  {
+    "logical": "sound/bank/b_voice_baichenxiang.assets.bank",
+    "packaged": "sound/bank/8fe038a0129353c5f7f144dd260aedbd.g",
+    "size": 12000,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/b_voice_baichenxiang.bank",
+    "packaged": "sound/bank/610fe27650c8b3ce330a779f3f922411.g",
+    "size": 1648,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/b_voice_chaotianxiang.assets.bank",
+    "packaged": "sound/bank/e7693bf61d85fcdd56b72e63228db5a5.g",
+    "size": 24384,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/b_voice_chaotianxiang.bank",
+    "packaged": "sound/bank/737c9ddc6f5f541599433fa453add230.g",
+    "size": 2708,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/d_baichenxiang.assets.bank",
+    "packaged": "sound/bank/6aaa4eec394afb382ffe3d55ef636742.g",
+    "size": 251488,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/d_baichenxiang.bank",
+    "packaged": "sound/bank/df3c851f6e988160a0d7416f3c58c0f5.g",
+    "size": 4604,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/d_skin_baichengxiang.assets.bank",
+    "packaged": "sound/bank/3df5525a9c9ca75337550891be3e0d24.g",
+    "size": 238656,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/d_skin_baichengxiang.bank",
+    "packaged": "sound/bank/d5e167dd04aea8c50010b844b0987ff9.g",
+    "size": 6236,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/d_skin_baichenxiang.assets.bank",
+    "packaged": "sound/bank/8a7506373e14f626cab9c0e163af38cc.g",
+    "size": 508256,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/d_skin_baichenxiang.bank",
+    "packaged": "sound/bank/68ff4cbf65c511bceb66af3c20c519b4.g",
+    "size": 10316,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/hero_baichenxiang.assets.bank",
+    "packaged": "sound/bank/34fa8193f863881627292d5c89a9ab6c.g",
+    "size": 125440,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/hero_baichenxiang.bank",
+    "packaged": "sound/bank/db17ffcafd6c571fa592565e9d92d8f9.g",
+    "size": 8012,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/hero_chaotianxiang.assets.bank",
+    "packaged": "sound/bank/3dd924856edfc4e69a5eac9ae8ab12b3.g",
+    "size": 105216,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/hero_chaotianxiang.bank",
+    "packaged": "sound/bank/4ac709ae68df587f1791601f091049e1.g",
+    "size": 5564,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/hero_skin_baichenxiang.assets.bank",
+    "packaged": "sound/bank/e4e4a6a0fff41efceb2976af2d23f405.g",
+    "size": 71392,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/hero_skin_baichenxiang.bank",
+    "packaged": "sound/bank/69d3d372b864563a5b7268eeb904d281.g",
+    "size": 2156,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/hero_skin_spbaichenxiang.assets.bank",
+    "packaged": "sound/bank/f25c8c59705fd2659f4d262348517ec2.g",
+    "size": 104032,
+    "group": "sound/bank"
+  },
+  {
+    "logical": "sound/bank/hero_skin_spbaichenxiang.bank",
+    "packaged": "sound/bank/77c8824d5d7d7b88b6e440e33186a915.g",
+    "size": 3788,
+    "group": "sound/bank"
+  }
+]

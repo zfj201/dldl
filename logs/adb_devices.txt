@@ -1,0 +1,3 @@
+List of devices attached
+4XQ4U4Z94T85TGAY       device usb:1245184X product:pearl model:23054RA19C device:pearl transport_id:63
+

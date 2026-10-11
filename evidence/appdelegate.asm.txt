@@ -1,0 +1,78 @@
+
+recovered/libcocos2dlua.so.analysis.so:	file format elf64-littleaarch64
+
+Disassembly of section .text:
+
+0000000000200000 <.text>:
+  3c4b20: f9400c21     	ldr	x1, [x1, #0x18]
+  3c4b24: d63f0020     	blr	x1
+  3c4b28: 941921e5     	bl	0xa0d2bc <.text+0x80d2bc>
+  3c4b2c: aa0003f5     	mov	x21, x0
+  3c4b30: 1e2703e0     	fmov	s0, wzr
+  3c4b34: aa1303e0     	mov	x0, x19
+  3c4b38: f90017f3     	str	x19, [sp, #0x28]
+  3c4b3c: 1e204001     	fmov	s1, s0
+  3c4b40: 1e204002     	fmov	s2, s0
+  3c4b44: 1e204003     	fmov	s3, s0
+  3c4b48: 9419ba7f     	bl	0xa33544 <.text+0x833544>
+  3c4b4c: f94017e1     	ldr	x1, [sp, #0x28]
+  3c4b50: aa1503e0     	mov	x0, x21
+  3c4b54: 94191b13     	bl	0xa0b7a0 <.text+0x80b7a0>
+  3c4b58: 94002ca3     	bl	0x3cfde4 <.text+0x1cfde4>
+  3c4b5c: aa0003f3     	mov	x19, x0
+  3c4b60: 9419837f     	bl	0xa2595c <.text+0x82595c>
+  3c4b64: aa1303e1     	mov	x1, x19
+  3c4b68: 9419836f     	bl	0xa25924 <.text+0x825924>
+  3c4b6c: f9400660     	ldr	x0, [x19, #0x8]
+  3c4b70: f9401415     	ldr	x21, [x0, #0x28]
+  3c4b74: aa1503e0     	mov	x0, x21
+  3c4b78: 94006b8d     	bl	0x3df9ac <.text+0x1df9ac>
+  3c4b7c: f9400660     	ldr	x0, [x19, #0x8]
+  3c4b80: b0004163     	adrp	x3, 0xbf1000 <.text+0x9f1000>
+  3c4b84: b0004161     	adrp	x1, 0xbf1000 <.text+0x9f1000>
+  3c4b88: 528000c2     	mov	w2, #0x6                // =6
+  3c4b8c: 9133e063     	add	x3, x3, #0xcf8
+  3c4b90: 528000a4     	mov	w4, #0x5                // =5
+  3c4b94: f9400005     	ldr	x5, [x0]
+  3c4b98: 9133c021     	add	x1, x1, #0xcf0
+  3c4b9c: f94074a5     	ldr	x5, [x5, #0xe8]
+  3c4ba0: d63f00a0     	blr	x5
+  3c4ba4: 940dbad1     	bl	0x7336e8 <.text+0x5336e8>
+  3c4ba8: aa1503e1     	mov	x1, x21
+  3c4bac: 940dbade     	bl	0x733724 <.text+0x533724>
+  3c4bb0: b0004160     	adrp	x0, 0xbf1000 <.text+0x9f1000>
+  3c4bb4: 91340000     	add	x0, x0, #0xd00
+  3c4bb8: 9418ec1b     	bl	0x9ffc24 <.text+0x7ffc24>
+  3c4bbc: f9400262     	ldr	x2, [x19]
+  3c4bc0: b0004161     	adrp	x1, 0xbf1000 <.text+0x9f1000>
+  3c4bc4: 91348021     	add	x1, x1, #0xd20
+  3c4bc8: aa1303e0     	mov	x0, x19
+  3c4bcc: f9403442     	ldr	x2, [x2, #0x68]
+  3c4bd0: d63f0040     	blr	x2
+  3c4bd4: f9400262     	ldr	x2, [x19]
+  3c4bd8: b0004161     	adrp	x1, 0xbf1000 <.text+0x9f1000>
+  3c4bdc: aa1303e0     	mov	x0, x19
+  3c4be0: 91356021     	add	x1, x1, #0xd58
+  3c4be4: f9403442     	ldr	x2, [x2, #0x68]
+  3c4be8: d63f0040     	blr	x2
+  3c4bec: 350001c0     	cbnz	w0, 0x3c4c24 <.text+0x1c4c24>
+  3c4bf0: b0004160     	adrp	x0, 0xbf1000 <.text+0x9f1000>
+  3c4bf4: 91360000     	add	x0, x0, #0xd80
+  3c4bf8: 9418ec0b     	bl	0x9ffc24 <.text+0x7ffc24>
+  3c4bfc: 52800020     	mov	w0, #0x1                // =1
+  3c4c00: f944ca94     	ldr	x20, [x20, #0x990]
+  3c4c04: f94027e2     	ldr	x2, [sp, #0x48]
+  3c4c08: f9400281     	ldr	x1, [x20]
+  3c4c0c: eb01005f     	cmp	x2, x1
+  3c4c10: 54000141     	b.ne	0x3c4c38 <.text+0x1c4c38>
+  3c4c14: a94053f3     	ldp	x19, x20, [sp]
+  3c4c18: a9417bf5     	ldp	x21, x30, [sp, #0x10]
+  3c4c1c: 910143ff     	add	sp, sp, #0x50
+  3c4c20: d65f03c0     	ret
+  3c4c24: b0004160     	adrp	x0, 0xbf1000 <.text+0x9f1000>
+  3c4c28: 9135a000     	add	x0, x0, #0xd68
+  3c4c2c: 9418ebfe     	bl	0x9ffc24 <.text+0x7ffc24>
+  3c4c30: 52800000     	mov	w0, #0x0                // =0
+  3c4c34: 17fffff3     	b	0x3c4c00 <.text+0x1c4c00>
+  3c4c38: 97ffb5ba     	bl	0x3b2320 <.text+0x1b2320>
+  3c4c3c: 3c888889     	<unknown>

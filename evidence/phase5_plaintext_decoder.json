@@ -1,0 +1,39 @@
+{
+  "decoder_rva": "0x73ca9c",
+  "signature_check_rva": "0x73c808",
+  "scope": "Synthetic resource decoder only; does not establish Android require/FileUtils acceptance",
+  "cases": [
+    {
+      "case": "short",
+      "bytes": 8,
+      "input_sha256": "ea66986c22b11851d150829053c4b9d8d62c55a8c68d3d2aaff3b45526527579",
+      "same_pointer_size_and_bytes": true,
+      "instructions": 135,
+      "decrypt_wrapper_called": false
+    },
+    {
+      "case": "module",
+      "bytes": 65,
+      "input_sha256": "d93954a9228424ff3f9a02ef51d797b935446e79ac427d22372c966d73509348",
+      "same_pointer_size_and_bytes": true,
+      "instructions": 185,
+      "decrypt_wrapper_called": false
+    },
+    {
+      "case": "long",
+      "bytes": 288,
+      "input_sha256": "7b325913b524bc99734a542f5640b0ada3f1e9f4c3947c84fc8cbbe7e7349dc3",
+      "same_pointer_size_and_bytes": true,
+      "instructions": 185,
+      "decrypt_wrapper_called": false
+    },
+    {
+      "case": "staged_resource",
+      "bytes": 15384,
+      "input_sha256": "7e614a57358e2f7d1fdb0807eaf16cfb5348d67a725d9e754317495408a48929",
+      "same_pointer_size_and_bytes": true,
+      "instructions": 185,
+      "decrypt_wrapper_called": false
+    }
+  ]
+}

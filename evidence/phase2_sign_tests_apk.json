@@ -1,0 +1,21 @@
+{
+  "runtime": "Lua 5.1",
+  "passed": 15,
+  "cases": [
+    "fresh query, single claim, confirmed success",
+    "ordinary and VIP already claimed; no supplemental claim",
+    "lost reply verified by state without resubmission",
+    "uncertain claim blocks same-period retry",
+    "query timeout sends nothing",
+    "verification timeout leaves uncertainty",
+    "role switch cancels before claiming",
+    "cancelled submitted request remains guarded",
+    "period rollover does not confirm old request",
+    "malformed state rejected",
+    "local task opt-in default and duplicate install rejected",
+    "actual game save builds local queue but strips custom server task",
+    "real welfare controller reply completes local task and resumes native queue",
+    "real failure reply does not advance or resubmit",
+    "uninstall restores original functions and registration"
+  ]
+}
