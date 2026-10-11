@@ -1,0 +1,34 @@
+{
+  "role": "yinghe_3356:5005",
+  "keys": [
+    "dldl_gifts_v1:yinghe_3356:5005:-2101802",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101801",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101800",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101799",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101798",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101797",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101796",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101795",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101794",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101791",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101793",
+    "dldl_gifts_v1:yinghe_3356:5005:-2101792"
+  ],
+  "baseline_sha256": "6f2e912d3e46068b095e9906249f23d289d653894f596a944c5947b8cdc4651f",
+  "baseline_all_true": true,
+  "changed_lines": 12,
+  "isolated_restored_byte_identical": true,
+  "isolate_restore_idempotent": true,
+  "other_roles_new_four_integer_and_journal_sentinels_unchanged": true,
+  "scripts": {
+    "isolate": {
+      "path": "/Users/zfj/Documents/ChatGPT/dldl/evidence/phase9_isolate_old12.sed",
+      "sha256": "51a7783efda7cc9c934b97721f5fd823c8925b33db6a2f8feb543c2f980193f4"
+    },
+    "restore": {
+      "path": "/Users/zfj/Documents/ChatGPT/dldl/evidence/phase9_restore_old12.sed",
+      "sha256": "be5b51033b2a1d996e91ca67681353030bb18c84ec96260b586b526b7bc63c8f"
+    }
+  },
+  "device_operations": "none; parent force-stops, pushes and executes"
+}

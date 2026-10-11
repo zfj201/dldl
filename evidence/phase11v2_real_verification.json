@@ -1,0 +1,38 @@
+{
+  "role": "yinghe_3356:5005",
+  "sent_at": 1791715275,
+  "day": 1791666000,
+  "source_sha256": "7789ef7f68b74ad86e950d09ce36b9a3649e82f36872d948f2743c3346d66dcb",
+  "before": {
+    "boss_id": 11315,
+    "kill_time": 2,
+    "hp_per": 0,
+    "fight_time": 0,
+    "end_time": 1791789774,
+    "diamonds": 94178
+  },
+  "accepted": {
+    "id": 0,
+    "code": 1
+  },
+  "settlement": {
+    "observed": true,
+    "result": 1,
+    "own_runner_passed_scope_check": true
+  },
+  "after": {
+    "boss_id": 11201,
+    "kill_time": 1,
+    "hp_per": 0,
+    "fight_time": 1,
+    "end_time": 1791801676,
+    "diamonds": 94178
+  },
+  "unexpected_condition": "server rotates boss and end_time after win; same-end check caused verify_timeout",
+  "trace_sha256": "4f4e72bd80658830cd596b9f449b007c996abc7ba8e2783d040980101158b082",
+  "challenged_count": 1,
+  "win_packets": 1,
+  "stable_after_responses": 12,
+  "native_skip_sent": 0,
+  "pending_retained": true
+}

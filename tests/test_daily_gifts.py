@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Offline Lua 5.1 tests with recovered hot-update protocol/controller code."""
-import json
+import json,os
 from pathlib import Path
 from lupa.lua51 import LuaRuntime
 ROOT=Path(__file__).resolve().parents[1]
@@ -169,5 +169,5 @@ end)
 ''')
 names=[lua.globals().passed[i] for i in range(1,len(lua.globals().passed)+1)]
 result={'runtime':lua.eval('_VERSION'),'passed':len(names),'cases':names,'network':'mocked; no device calls'}
-(ROOT/'evidence/phase6_gifts_tests.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+(ROOT/'evidence'/f'{os.environ.get("DLDL_TEST_PHASE","phase6")}_gifts_tests.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
 print(json.dumps(result,ensure_ascii=False,indent=2))

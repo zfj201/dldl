@@ -1,0 +1,35 @@
+{
+  "bundle": {
+    "output": "/Users/zfj/Documents/ChatGPT/dldl/recovered/phase9/game_start.luac",
+    "bytes": 109753,
+    "sha256": "fa5f9ff98a5e697c33eafd1b6a2fcb0ec9c4625e867908ccdbad514d50b2038c",
+    "lua51_syntax_pass": true,
+    "inputs": {
+      "recovered/phase2/hotupdate/lua/game_start.luac": "3b8c0a56adcc9731f54dfca0c0943aa9911669e9537126e5447239ce49c2cb59",
+      "modules/daily_gifts.lua": "4bc7331621d2511e83d72b4735f45053279e6d63c4a19a359fc874ecb056b6ef",
+      "modules/daily_actions.lua": "7e7ad11f7def769f2f7e8f8efbdfe659e5a82066b1bae764d4919687d2a5d0f8",
+      "modules/daily_actions_game.lua": "633937ba9c3a86fb36592c451bcee8cff8223c084c6ff1dd1af8eb02d07f0853",
+      "modules/daily_training.lua": "26ade9e8d388be10880b199f59243a9918c10cf82e5c159a1ce9af6ae0addef1",
+      "modules/daily_training_game.lua": "0786d06a0fb993fa5e56490a8204efe7e92396b6753ac4f635111257669b73bb",
+      "modules/daily_quests.lua": "2c5a9b970bd08c044520f7107f09c36311f614cd64a5a463c02dc85d2562ddfd",
+      "modules/daily_quests_game.lua": "129a8794fd71e33f1f1343e0ce7898cd155ad155009798328cc0ca933bd61605",
+      "modules/xiangxiang_gifts_extension.lua": "4eb90b574fd1ed2f49c7e62d230a6e9f8ffe7bd57404c125dd03795311a77e08"
+    }
+  },
+  "tests_passed": 91,
+  "rollback_and_old_training_hashes": {
+    "recovered/phase7/game_start.luac": "aa7abe21f65a4956217dc295ff421f22b3d51f3d7504cd93e81bc32c9b9720c3",
+    "recovered/phase8/game_start.luac": "d748a07770eb965dc8d0450fc572afe09928f4ddf18355956ef38d2134f2b3d3",
+    "recovered/phase8_v7/game_start.luac": "d748a07770eb965dc8d0450fc572afe09928f4ddf18355956ef38d2134f2b3d3",
+    "modules/daily_training.lua": "26ade9e8d388be10880b199f59243a9918c10cf82e5c159a1ce9af6ae0addef1",
+    "modules/daily_training_game.lua": "0786d06a0fb993fa5e56490a8204efe7e92396b6753ac4f635111257669b73bb"
+  },
+  "real_phone_validation": "Not performed by implementer. Parent owns deployment and device evidence.",
+  "current_role": "Queries at execution time; no old role or diamond baselines reused.",
+  "recovered_parse": {
+    "apk": 327,
+    "hotupdate": 170,
+    "total": 497,
+    "distinct": 428
+  }
+}

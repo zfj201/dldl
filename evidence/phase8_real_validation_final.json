@@ -1,0 +1,49 @@
+{
+  "arena_free": {
+    "count": 8,
+    "first": 1791695198,
+    "last": 1791695226,
+    "elapsed_seconds": 28,
+    "intervals_seconds": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "arena_tickets": {
+    "count": 10,
+    "first": 1791695741,
+    "last": 1791695777,
+    "elapsed_seconds": 36,
+    "intervals_seconds": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "totals": {
+    "free_used": 10,
+    "ticket_used": 10,
+    "combat_before": 0,
+    "combat_after": 20,
+    "tickets_before": 47,
+    "tickets_after": 37,
+    "diamond_before_arena_validation": 10549,
+    "diamond_after_arena_validation": 10549
+  },
+  "limitations": [
+    "20-ticket target covered offline; only10-ticket target spent on device",
+    "2.5-second minimum not experimentally established; tested4 timestamp-second interval",
+    "fresh matching and interval were both changed; first rejection root cause not independently isolated"
+  ]
+}

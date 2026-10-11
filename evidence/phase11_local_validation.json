@@ -1,0 +1,25 @@
+{
+  "module_forbidden_references_absent": {
+    "modules/daily_quests.lua": true,
+    "modules/daily_quests_game.lua": true,
+    "modules/xiangxiang_gifts_extension.lua": true
+  },
+  "test_counts": {
+    "phase11_gifts_tests.json": 14,
+    "phase11_daily_tests.json": 26,
+    "phase11_training_tests.json": 66,
+    "phase11_quests_tests.json": 94,
+    "phase11_battle_tests.json": 5
+  },
+  "bundle_sha256": "737c2f2005ba892952c1508f8f91790e5ee5c289d28212f9da93da23f2aa26b8",
+  "bundle_bytes": 106944,
+  "lua51_syntax_pass": true,
+  "historical_artifacts_unchanged_and_build_rejected": {
+    "phase7": "aa7abe21f65a4956217dc295ff421f22b3d51f3d7504cd93e81bc32c9b9720c3",
+    "phase8": "d748a07770eb965dc8d0450fc572afe09928f4ddf18355956ef38d2134f2b3d3",
+    "phase9": "fa5f9ff98a5e697c33eafd1b6a2fcb0ec9c4625e867908ccdbad514d50b2038c",
+    "phase10": "356c3c5babfe3ce93d2652b73386a5283840de29a8fc71580cb9cb7928286860"
+  },
+  "device_before_sha256": "4ea701045c541a8d52abd6a80ddc7a28a06fb43ff647c106c1bae6e525a96b97",
+  "device_operations": "none by implementation agent; deployment and verification owned by main task"
+}

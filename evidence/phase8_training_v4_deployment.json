@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-11T12:20:59.874027",
+  "local_source": "recovered/phase8/game_start.luac",
+  "previous_sha256": "de888cb965ffd9e297814074135f167771dc71f6988d20bc4498f29f49192689",
+  "installed_sha256": "51cdd97c3de5b774bcc93564fc1d58e7ef47651304a073c38c09e56ed5ee0d78",
+  "target": "/data/user/0/com.hnzh.dldlwhjx.huawei/files/assets/src/game_start.luac",
+  "backup": "/data/user/0/com.hnzh.dldlwhjx.huawei/files/dldl_backup_20261011/game_start.luac",
+  "backup_sha256": "033b45a3d279ef2302003ba6f7ec9a6e740f200d9d8c5b775336307d65c35d7f",
+  "uid": 10303,
+  "mode": "600",
+  "selinux": "u:object_r:app_data_file:s0:c47,c257,c512,c768"
+}

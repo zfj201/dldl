@@ -1,0 +1,1225 @@
+--------- beginning of main
+10-11 18:44:13.511  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.511  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.512  5085 27819 D voiceprint: VoiceprintRecognition: 234,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.512  5085 27819 D voiceprint: VoiceprintRecognition: 235,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.512  5085 27819 D voiceprint: VoiceprintRecognition: 236,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.512  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.512  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.512  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.512   954 27820 D AudioALSACaptureDataProviderVOW: readThread(), mEnable_debug = 1
+10-11 18:44:13.512  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.512  5085 27819 D voiceprint: VoiceprintRecognition: 237,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.513  5085 27819 D voiceprint: VoiceprintRecognition: 238,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.514  5085 27819 D voiceprint: VoiceprintRecognition: 239,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.514  5085 27819 D voiceprint: VoiceprintRecognition: 240,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.514  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.514  5085 27819 D voiceprint: VoiceprintRecognition: 241,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.514  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.514  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.514  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.515  5085 27819 D voiceprint: VoiceprintRecognition: 242,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.515  5085 27819 D voiceprint: VoiceprintRecognition: 243,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.515  5085 27819 D voiceprint: VoiceprintRecognition: 244,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.515  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.515  5085 27819 D voiceprint: VoiceprintRecognition: 245,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.515  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.515  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.516  5085 27819 D voiceprint: VoiceprintRecognition: 246,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.516  5085 27819 D voiceprint: VoiceprintRecognition: 247,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.586  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.586  5085 27819 D voiceprint: VoiceprintRecognition: 248,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.588  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.588  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.588  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.588  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.588  5085 27819 D voiceprint: VoiceprintRecognition: 249,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.590  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.590  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.590  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.590  5085 27819 D voiceprint: VoiceprintRecognition: 250,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.590  5085 27819 D voiceprint: VoiceprintRecognition: 251,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.590  5085 27819 D voiceprint: VoiceprintRecognition: 252,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.590  5085 27819 D voiceprint: VoiceprintRecognition: 253,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.592  5085 27819 D voiceprint: VoiceprintRecognition: 254,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.592  5085 27819 D voiceprint: VoiceprintRecognition: 255,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.593   954 27820 D AudioALSACaptureDataProviderVOW: readThread(), mEnable_debug = 1
+10-11 18:44:13.594   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:13.595   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:60
+10-11 18:44:13.601   888  1083 I bt_btif_dm: btif_dm.cc:574 get_cod: remote_cod=0x00001f00
+10-11 18:44:13.662 26078 26281 W BatteryInfo: Battery left: 0 current: -11000.0
+10-11 18:44:13.663 26078 26281 D BatteryInfo: Current batter: 11000.0
+10-11 18:44:13.667  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.668  5085 27819 D voiceprint: VoiceprintRecognition: 256,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.669   888  1083 I bt_btif_dm: btif_dm.cc:574 get_cod: remote_cod=0x00001f00
+10-11 18:44:13.669  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.670  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.670  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.670  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.670  5085 27819 D voiceprint: VoiceprintRecognition: 257,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.672  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.672  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.672  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.672  5085 27819 D voiceprint: VoiceprintRecognition: 258,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.673  5085 27819 D voiceprint: VoiceprintRecognition: 259,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.673  5085 27819 D voiceprint: VoiceprintRecognition: 260,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.673  5085 27819 D voiceprint: VoiceprintRecognition: 261,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.673   954 27820 D AudioALSACaptureDataProviderVOW: readThread(), mEnable_debug = 1
+10-11 18:44:13.675  5085 27819 D voiceprint: VoiceprintRecognition: 262,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.675  5085 27819 D voiceprint: VoiceprintRecognition: 263,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.709  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.22 dur=1012.76 max=27.75 min=6.42
+10-11 18:44:13.746  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.747  5085 27819 D voiceprint: VoiceprintRecognition: 264,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.749  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.749  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.749  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.749  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.749  5085 27819 D voiceprint: VoiceprintRecognition: 265,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.751  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.752  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.752  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.752  5085 27819 D voiceprint: VoiceprintRecognition: 266,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.752  5085 27819 D voiceprint: VoiceprintRecognition: 267,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.752  5085 27819 D voiceprint: VoiceprintRecognition: 268,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.752  5085 27819 D voiceprint: VoiceprintRecognition: 269,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.753   954 27820 D AudioALSACaptureDataProviderVOW: readThread(), mEnable_debug = 1
+10-11 18:44:13.754  5085 27819 D voiceprint: VoiceprintRecognition: 270,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.755  5085 27819 D voiceprint: VoiceprintRecognition: 271,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.828  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.828  5085 27819 D voiceprint: VoiceprintRecognition: 272,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.831  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.831  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.831  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.831  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.831  5085 27819 D voiceprint: VoiceprintRecognition: 273,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.834  5085 27819 D voiceprint: VoiceprintRecognition: 274,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.834   954 27820 D AudioALSACaptureDataProviderVOW: readThread(), mEnable_debug = 1
+10-11 18:44:13.834  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.834  5085 27819 D voiceprint: VoiceprintRecognition: 275,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.834  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.834  5085 27819 D voiceprint: VoiceprintRecognition: 276,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.834  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.834  5085 27819 D voiceprint: VoiceprintRecognition: 277,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.837  5085 27819 D voiceprint: VoiceprintRecognition: 278,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.837  5085 27819 D voiceprint: VoiceprintRecognition: 279,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.861 26078 26254 D AudioTrack: [audioTrackData][zero] 17s(f:33041 m:0 s:0 k:0 z:17004) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:13.908  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.908  5085 27819 D voiceprint: VoiceprintRecognition: 280,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.912  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.912  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.912  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.913  5085 27819 D voiceprint: VoiceprintRecognition: 281,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.913  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.914   954 27820 D AudioALSACaptureDataProviderVOW: readThread(), mEnable_debug = 1
+10-11 18:44:13.917  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.917  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.917  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.918  5085 27819 D voiceprint: VoiceprintRecognition: 282,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.918  5085 27819 D voiceprint: VoiceprintRecognition: 283,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.918  5085 27819 D voiceprint: VoiceprintRecognition: 284,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.918  5085 27819 D voiceprint: VoiceprintRecognition: 285,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.923  5085 27819 D voiceprint: VoiceprintRecognition: 286,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.923  5085 27819 D voiceprint: VoiceprintRecognition: 287,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.988  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.988  5085 27819 D voiceprint: VoiceprintRecognition: 288,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.994  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.994  5085 27819 D voiceprint: VoiceprintRecognition: 289,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:13.994  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.994  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:13.994   954 27820 D AudioALSACaptureDataProviderVOW: readThread(), mEnable_debug = 1
+10-11 18:44:13.995  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:14.000  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:14.001  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:14.001  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:14.001  5085 27819 D voiceprint: VoiceprintRecognition: 290,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.002  5085 27819 D voiceprint: VoiceprintRecognition: 291,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.003  5085 27819 D voiceprint: VoiceprintRecognition: 292,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.004  5085 27819 D voiceprint: VoiceprintRecognition: 293,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.009  5085 27819 D voiceprint: VoiceprintRecognition: 294,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.009  5085 27819 D voiceprint: VoiceprintRecognition: 295,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.066   888  1131 I bt_btif_dm: btif_dm.cc:835 btif_update_remote_properties: cod from storage is also unclassified
+10-11 18:44:14.068  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:14.069  5085 27819 D voiceprint: VoiceprintRecognition: 296,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.074  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:14.075  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:14.075  5085  9333 D flexkws_jni: [test-callback] data name: stream_out_vp 320
+10-11 18:44:14.075   954 27820 D AudioALSACaptureDataProviderVOW: readThread(), mEnable_debug = 1
+10-11 18:44:14.075  5085  9333 W VT_AudioFlow: Record onEnoughData 97280 96000
+10-11 18:44:14.076  5085  9333 I VT_WakeupTask: onEnoughData true
+10-11 18:44:14.076  5085  9333 I VT_AudioFlow: stop 259177037 220920066
+10-11 18:44:14.076  5085  9333 I VT_AudioFlow: releaseAudio
+10-11 18:44:14.077  5085  9333 D AudioRecord: stop(5366): 0x7d5d6d45d0, mActive: 1  packageName: com.miui.voicetrigger
+10-11 18:44:14.077  5085  9333 D AudioTrackShared: this(0x7d9d7225b0), mCblk(0x7eecfef000), front(48640), mIsOut 0, interrupt() FUTEX_WAKE
+10-11 18:44:14.078  5085 27819 D voiceprint: VoiceprintRecognition: 297,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.084  5085 27819 D voiceprint: VoiceprintRecognition: 298,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.084  5085 27819 D voiceprint: VoiceprintRecognition: 299,pcmBuffer:0x7cad6d2970,frameSize:320, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:0,L2_wakeup_end:0,lastFrame:0
+10-11 18:44:14.116   888  1083 I bt_btif_dm: btif_dm.cc:574 get_cod: remote_cod=0x00001f00
+10-11 18:44:14.148  1052 27817 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+10-11 18:44:14.149  1052 27817 D AudioFlinger_Threads: updateWakeLockUids_l AudioIn_46 uids:
+10-11 18:44:14.149   954  1124 D AudioALSAStreamIn: updateSinkMetadataV7(), sink_metadata->tracks  NULL!
+10-11 18:44:14.149   954  2271 D AudioALSAStreamIn: standby(), halRequest 0, mDestroy 0, flag 0
+10-11 18:44:14.149   954  2271 D AudioALSAStreamIn: close()
+10-11 18:44:14.149   954  2271 D AudioALSAStreamIn: updateStandByFrameCount(), update the mStandbyFrameCount = 0-> 0
+10-11 18:44:14.149   954  2271 D AudioALSACaptureHandlerVOW: +close()
+10-11 18:44:14.149   954  2271 D AudioALSACaptureDataClient: ~AudioALSACaptureDataClient()
+10-11 18:44:14.149   954  2271 D AudioALSACaptureDataClient: IsLowLatencyCapture(), low_latency_on: 0, voip_on: 0
+10-11 18:44:14.149   954  2271 D AudioALSACaptureDataProviderBase: detach(), 0xb40000707071b090, mCaptureDataClientVector.size()=1, Identity=0xb400007150786980
+10-11 18:44:14.149   954  2271 D AudioALSACaptureDataProviderVOW: close()+
+--------- beginning of system
+10-11 18:44:14.150  1817  1990 D ProcessManager: add temp remove audio inactive uid : 10129
+10-11 18:44:14.155   954 27820 D AudioALSACaptureDataProviderVOW: -readThread(), pid: 954, tid: 27820
+10-11 18:44:14.156   954  2271 D AudioALSACaptureDataProviderVOW: pthread_join hReadThread done
+10-11 18:44:14.156   954  2271 D AudioALSACaptureDataProviderVOW: close()-
+10-11 18:44:14.156   954  2271 D AudioALSACaptureDataClient: +StopBesRecord()
+10-11 18:44:14.156   954  2271 D AudioSPELayer: Stop
+10-11 18:44:14.156   954  2271 D AudioSPELayer: not start before
+10-11 18:44:14.156   954  2271 D AudioALSACaptureDataClient: -StopBesRecord()
+10-11 18:44:14.156   954  2271 D AudioSPELayer: ~SPELayer+
+10-11 18:44:14.156   954  2271 D AudioSPELayer: Clear
+10-11 18:44:14.156   954  2271 D AudioSPELayer: ~Clear
+10-11 18:44:14.156   954  2271 D AudioSPELayer: FlushBufferQ+
+10-11 18:44:14.156   954  2271 D AudioSPELayer: FlushBufferQ mULOutBufferQ size=0,mULInBufferQ.size=0,mDLOutBufferQ.size()=0,mDLInBufferQ.size()=0,mDLDelayBufferQ.size()=0
+10-11 18:44:14.156   954  2271 D AudioSPELayer: FlushBufferQ-
+10-11 18:44:14.157   954  2271 D AudioSPELayer: ~SPELayer-
+10-11 18:44:14.157   954  2271 D AudioPreProcess: ~AudioPreProcess()+
+10-11 18:44:14.157   954  2271 D AudioPreProcess: ~AudioPreProcess()-
+10-11 18:44:14.157   954  2271 D AudioALSACaptureDataClient: -~AudioALSACaptureDataClient()
+10-11 18:44:14.157   954  2271 D AudioALSAStreamIn: closeWavDump()
+10-11 18:44:14.157   954  2271 D AudioALSAStreamManager: hasNonVowCaptureHandler_l(), ret = 0
+10-11 18:44:14.157   954  2271 D AudioALSAStreamManager: destroyCaptureHandler(), resume voice wake up
+10-11 18:44:14.157   954  2271 D AudioALSAStreamManager: setVoiceWakeUpEnable_l(), enable = 1
+10-11 18:44:14.157   954  2271 D AudioALSAStreamManager: hasNonVowCaptureHandler_l(), ret = 0
+10-11 18:44:14.157   954  2271 D AudioUtility: power_hal_hint: 2677: power_hal_hint+ mPowerHalHintCount 1 hint 1 enable 0
+10-11 18:44:14.157   954  2271 D AudioUtility: power_hal_hint - custPowerHint 37, data 0
+10-11 18:44:14.157   954  2271 D AudioUtility: power_hal_hint: 2677: power_hal_hint+ mPowerHalHintCount 1 hint 3 enable 0
+10-11 18:44:14.158   954  2271 D AudioUtility: power_hal_hint - custPowerHint 45, data 0
+10-11 18:44:14.163  1052 15629 D APM_AudioPolicyManager: [MTK_APM_Input]stopInput input 70 portId 5366 old_source 1999
+10-11 18:44:14.163  1052 15629 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+10-11 18:44:14.163  5815  6374 I PowerKeeper.Event: noteStopAudioInNeed uid is 10129, sessionid is 57, port is 5366, type is 1
+10-11 18:44:14.163  5815  6374 I PowerCheckerService: uid:10129change to inactive
+10-11 18:44:14.164  5815  6166 I AppActiveChecker: uid:10129change to inactive
+10-11 18:44:14.165  1052 15629 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+10-11 18:44:14.166  1817 11053 D AS.AudioService: handleRecordingConfigurationChanged: event = 1 ,sampleRate = 16000 ,uid = 10129 ,source = 1999 ,device = 15
+10-11 18:44:14.166  1817 11053 D AS.AudioDeviceBroker: handleStop, hd and normal record do not contain this uid
+10-11 18:44:14.167  1052  1624 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:20
+10-11 18:44:14.168  1052 27817 D AudioFlinger_Threads: updateWakeLockUids_l AudioIn_46 uids:
+10-11 18:44:14.168  1052 27817 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:20
+10-11 18:44:14.168  1052 27817 D AudioFlinger_Threads: threadLoop set prio: 3 config event pid 1052 tid 27817
+10-11 18:44:14.169   954  1124 D AudioALSAHardware: +releaseAudioPatch() handle [0x6ed] current mAudioHalPatchVector size 3
+10-11 18:44:14.169   954  1124 D AudioALSAHardware: releaseAudioPatch() releaseAudioPatch 0x80000004->Mixer, handle 1773
+10-11 18:44:14.169   954  1124 D AudioALSAStreamManager: +setParameters(), IOport = 70, keyValuePairs = routing=0
+10-11 18:44:14.169   954  1124 D AudioALSAStreamManager: +routingInputDevice(), input_device: 0x80000004 => 0x0
+10-11 18:44:14.169   954  1124 W AudioALSAStreamManager: -routingInputDevice(), input_device(0x0) is AUDIO_DEVICE_NONE(0x0) or current_input_device(0x80000004), return
+10-11 18:44:14.169   954  1124 D AudioALSAStreamManager: updateInputSource(), Update input source form mStreamInVector [0]
+10-11 18:44:14.169   954  1124 D AudioALSAHardware: releaseAudioPatch() remove handle [6ed] OK, current mAudioHalPatchVector size 2
+10-11 18:44:14.169   954  1124 D AudioALSAHardware: -releaseAudioPatch() handle [0x6ed] status [0]
+10-11 18:44:14.170  1052 27817 D AudioFlinger_Threads: processConfigEvents_l(): boost thread AudioIn_46 to RT priority
+10-11 18:44:14.170  1052 27817 D AudioFlinger_Threads: push2RTGroup+, tid 27817
+10-11 18:44:14.183  1052 27817 E AudioFlinger_Threads: push2RTGroup, tid 27817 push to RT group fail!
+10-11 18:44:14.184  1052 15629 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+10-11 18:44:14.188  1052 15629 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+10-11 18:44:14.189  1052  1624 D AudioSystem: +setParameters(): app_name=-com.miui.voicetrigger 
+10-11 18:44:14.189  1052  1624 D AudioSystem: start get log level!
+10-11 18:44:14.190  1052  1624 D AudioFlinger: +mAudioHwDevs(primary)->setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.190   954  1124 D AudioALSAHardware: +setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.190   954  1124 D AudioALSAHardware: setParameters: [DEBUG] setParameters misound AppName: -com.miui.voicetrigger
+10-11 18:44:14.190   954  1124 D AudioALSAStreamOutCustom: setParameters(): app_name -com.miui.voicetrigger
+10-11 18:44:14.190   954  1124 D AudioALSAStreamOut: +setParameters(): flag 2, app_name=-com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 D AudioALSAStreamOutCustom: setParameters(): app_name -com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 D AudioALSAStreamOut: +setParameters(): flag 8, app_name=-com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 D AudioALSAStreamOutCustom: setParameters(): app_name -com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 D AudioALSAStreamOut: +setParameters(): flag 4, app_name=-com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 D AudioALSAStreamOutCustom: setParameters(): app_name -com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 D AudioALSAStreamOut: +setParameters(): flag 32768, app_name=-com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 D AudioALSAStreamOutCustom: setParameters(): app_name -com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 D AudioALSAStreamOut: +setParameters(): flag 65536, app_name=-com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 D AudioALSAHardware: -setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.191  1052  1624 D AudioFlinger: -mAudioHwDevs(primary)->setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.191  1052  1624 D AudioFlinger: +mAudioHwDevs(bluetooth)->setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.191   954  1124 W BTAudioHw: adev_set_parameterserror paremeter : : ParamsMap=[key: 'app_name' value: '-com.miui.voicetrigger'
+10-11 18:44:14.191   954  1124 W BTAudioHw: ]
+10-11 18:44:14.192  1052  1624 D AudioFlinger: -mAudioHwDevs(bluetooth)->setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.192  1052  1624 D AudioFlinger: +mAudioHwDevs(usb)->setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.193  1052  1624 D AudioFlinger: -mAudioHwDevs(usb)->setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.193  1052  1624 D AudioFlinger: +mAudioHwDevs(r_submix)->setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.193   954  1124 D r_submix: adev_set_parameters() kvpairs='app_name=-com.miui.voicetrigger'
+10-11 18:44:14.194  1052  1624 D AudioFlinger: -mAudioHwDevs(r_submix)->setParameters(): app_name=-com.miui.voicetrigger
+10-11 18:44:14.194  1052 15629 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+10-11 18:44:14.195  1052  1624 D AudioSystem: +setParameters(): app_name=-com.miui.voicetrigger 
+10-11 18:44:14.195  1052  1624 D AudioSystem: start get log level!
+10-11 18:44:14.195  1052  1624 D AudioFlinger: +thread->setParameters(): io = 70, app_name=-com.miui.voicetrigger
+10-11 18:44:14.195  1052  1624 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:20
+10-11 18:44:14.197  1052 27817 D AudioFlinger_Threads: updateWakeLockUids_l AudioIn_46 uids:
+10-11 18:44:14.197  1052 27817 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:20
+10-11 18:44:14.197  1052 27817 D AudioFlinger_Threads: threadLoop set prio: 3 config event pid 1052 tid 27817
+10-11 18:44:14.197  1052 27817 I AudioFlinger_Threads: checkForGameParameter_l() set events app_name=-com.miui.voicetrigger
+10-11 18:44:14.197  1052 27817 D AudioFlinger_Threads: processConfigEvents_l(): boost thread AudioIn_46 to RT priority
+10-11 18:44:14.197  1052 27817 D AudioFlinger_Threads: push2RTGroup+, tid 27817
+10-11 18:44:14.212  1052 27817 E AudioFlinger_Threads: push2RTGroup, tid 27817 push to RT group fail!
+10-11 18:44:14.213  1052  1624 D AudioFlinger: -thread->setParameters(): io = 70, app_name=-com.miui.voicetrigger
+10-11 18:44:14.214  1052 23371 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.214  1052 14188 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.215  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.215  1052 23038 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.216  5085  9333 D AudioRecord: stop(5366) done
+10-11 18:44:14.216  1817  3502 D AudioService.RecordingActivityMonitor: recorderEvent, event = 1
+10-11 18:44:14.216  5085  9333 D AudioRecord: stop(5366): 0x7d5d6d45d0, mActive: 0  packageName: com.miui.voicetrigger
+10-11 18:44:14.216  5085  9333 D AudioRecord: ~AudioRecord(5366): mStatus 0
+10-11 18:44:14.216  1052 14188 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.216  5085  9333 D AudioRecord: stop(5366): 0x7d5d6d45d0, mActive: 0  packageName: com.miui.voicetrigger
+10-11 18:44:14.218  5085  9333 D AudioRecordStub: ~AudioRecordStub() destroy
+10-11 18:44:14.218  1052 23371 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.219  1817  3502 D AudioServiceStubImpl: event: 1
+10-11 18:44:14.219  1817  3502 D AudioServiceStubImpl: audioConfig: null
+10-11 18:44:14.219  5085  9333 I VT_MIXWVPWakeupSession: onStopAudio 
+10-11 18:44:14.220  1052 23038 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.220  5085  9333 I VT_WakeupTask: stop
+10-11 18:44:14.221  5085  9333 I VT_AsrTask: stop
+10-11 18:44:14.223  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.225  1052 15629 D APM_AudioPolicyManager: [MTK_APM_Input]releaseInput input 70 portId 5366
+10-11 18:44:14.225  1052 15629 D APM_AudioPolicyManager: closeInput(70)
+10-11 18:44:14.225  1052 15629 D APM_AudioPolicyManager: closeInput input 70
+10-11 18:44:14.227  5085  9333 I VT_WakeupTask: stop
+10-11 18:44:14.227  5085  9333 I VT_MixWakeupManager: stop
+10-11 18:44:14.227  5085  9333 I VT_MixWakeupManager: notifyMIXWVPResult:0
+10-11 18:44:14.227  5085  9333 I VT_MixWakeupManager: notify the callback result!
+10-11 18:44:14.228  5085  9333 I VT_WakeupTask: setEnginePassed false
+10-11 18:44:14.228  5085  9333 I VT_WakeupTask: stop
+10-11 18:44:14.228  5085  9333 I VT_WakeupTask: engine not pass
+10-11 18:44:14.228  5085  9333 I VT_AudioFlow: stop null 220920066
+10-11 18:44:14.228  5085  9333 I VT_WakeupTask: stop
+10-11 18:44:14.228  5085  9333 I VT_AsrTask: stop
+10-11 18:44:14.228  5085  9333 I VT_CommandSettings: getKeyWord, commandID=XATX, keyWord=小爱同学
+10-11 18:44:14.228  5085  9333 I VT_MIXWVPCallback: onDebugInfoSpotted: PhraseWakeupResult{mVoconPhrase='小爱同学', mCommandId=XATX, isVoconWakeupPassed=false, mWakeupStartTime=0, mWakeupEndTime=0, mWakeupResultStart=0, mWakeupResultEnd=0, mScore=0.0, isAec=true, isVBPassed=false, mVpScore=0.0, mCacheSVData size= 96000, mCacheCMVNData size= 96000}
+10-11 18:44:14.229  5085  9333 I VT_CommandSettings: getKeyWord, commandID=XATX, keyWord=小爱同学
+10-11 18:44:14.229  5085  9333 I VT_CommandSettings: getKeyWord, commandID=XATX, keyWord=小爱同学
+10-11 18:44:14.229  5085  9333 I VT_CommandSettings: getKeyWord, commandID=XATX, keyWord=小爱同学
+10-11 18:44:14.229  5085  5814 I VT_ReportFile: statisticsWakeupTimes , currentTypeKey: record_date_id=XATX_type=wakeup_suspect_error=voiceprint_failed_aec=true, currentTimeKey: record_times_id=XATX_type=wakeup_suspect_error=voiceprint_failed_aec=true, datePreferred: 2026-10-11, numPreferred: 914, isUpload: false
+10-11 18:44:14.230  5085  9333 I VT_CommandSettings: getKeyWord, commandID=XATX, keyWord=小爱同学
+10-11 18:44:14.230  5085  9333 I VT_WakeupTask: stop
+10-11 18:44:14.230  5085  9333 I VT_MixWakeupManager: stop
+10-11 18:44:14.230  5085  9333 D voiceprint: VoiceprintRecognition: 300,pcmBuffer:0x7cad6d2970,frameSize:-1, aecMode:1 globalThreshold:0.350000,aecThreshold:0.300000,platform:1,L2_wakeup_start:-1,L2_wakeup_end:-1,lastFrame:1
+10-11 18:44:14.230  5085  9333 I POTATO_ENGINE: VoiceprintRecognition: buf size is -1, last frame.
+10-11 18:44:14.230  5085  9333 I POTATO_ENGINE: VoiceprintRecognition: L2 wakeup failed.
+10-11 18:44:14.230  5085  9333 I POTATO_ENGINE: VoiceprintRecognition: recognize end.
+10-11 18:44:14.230  5085  9333 I POTATO_ENGINE: now do PotatoEngineReset !!!
+10-11 18:44:14.230  5085  9333 D voiceprint: Recognition finish. Begin: -1, End:-1 aecMode 1 , global 0.350000 , aec 0.300000 , platform 1 , frameSize -1 ;
+10-11 18:44:14.230  5085  9333 D voiceprint:  err_code 3 , result: Still not find last frame or wakeup word!
+10-11 18:44:14.230  5085  9333 D voiceprint:  , speaker:  , score 0.000000 , volume 0.000000 , snr 0.000000 .
+10-11 18:44:14.230  5085  9333 W VT_OneshotUtils: system not support!
+10-11 18:44:14.230  5085  9333 I VT_FlexKwsImpl: exit start 539512420592
+10-11 18:44:14.230  5085  9333 E flexkws_jni: flexkws(0)(I): flexkws_version:flexkws_Release_git_2025-10-14_16:50:53_+0800_b40a397
+10-11 18:44:14.230  5085  9333 E flexkws_jni: flexkws(0)(I): -------- audioflow reset --------
+10-11 18:44:14.230  5085  9333 E flexkws_jni: flexkws(0)(I): feature: feature reset
+10-11 18:44:14.230  5085  9333 E flexkws_jni: flexkws(0)(I): inference: inference reset
+10-11 18:44:14.230  5085  9333 E flexkws_jni: flexkws(0)(I): decoder: decoder reset
+10-11 18:44:14.230  5085  9333 D flexkws_jni: flexkws_exit real 0 0
+10-11 18:44:14.230  5085  9333 I VT_FlexKwsImpl: exit done
+10-11 18:44:14.231  5085  9274 I VT_FlexKwsImpl: exit start 539512420592
+10-11 18:44:14.231  5085  9274 E flexkws_jni: flexkws(0)(I): flexkws_version:flexkws_Release_git_2025-10-14_16:50:53_+0800_b40a397
+10-11 18:44:14.231  5085  9274 E flexkws_jni: flexkws(0)(I): -------- audioflow reset --------
+10-11 18:44:14.231  5085  9274 E flexkws_jni: flexkws(0)(I): feature: feature reset
+10-11 18:44:14.231  5085  9274 E flexkws_jni: flexkws(0)(I): inference: inference reset
+10-11 18:44:14.231  5085  9274 E flexkws_jni: flexkws(0)(I): decoder: decoder reset
+10-11 18:44:14.231  5085  9274 D flexkws_jni: flexkws_exit real 0 0
+10-11 18:44:14.231  5085  9274 I VT_FlexKwsImpl: exit done
+10-11 18:44:14.232  1052 27817 D AudioFlinger_Threads: updateWakeLockUids_l AudioIn_46 uids:
+10-11 18:44:14.232  1052 27817 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:20
+10-11 18:44:14.232  1052 27817 D AudioFlinger_Threads: threadLoop set prio: 3 config event pid 1052 tid 27817
+10-11 18:44:14.233  1052 27817 D AudioFlinger_Threads: processConfigEvents_l(): boost thread AudioIn_46 to RT priority
+10-11 18:44:14.233  1052 27817 D AudioFlinger_Threads: push2RTGroup+, tid 27817
+10-11 18:44:14.236  5085  5814 I VT_ReportFile: statisticsWakeupTimes , currentTypeKey: record_date_id=XATX_type=wakeup_suspect_error=wakeup_failed_aec=true, currentTimeKey: record_times_id=XATX_type=wakeup_suspect_error=wakeup_failed_aec=true, datePreferred: 2026-10-11, numPreferred: 914, isUpload: false
+10-11 18:44:14.239  5085  5814 I VT_CommandSettings: getKeyWord, commandID=XATX, keyWord=小爱同学
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils: handleFeedBackWakeupInformation, information=wakeup information: 	 keyPhrase=小爱同学	 wakeupType=wakeup_suspect	 isL2WakeupModelPass=false	 isL2VoiceprintModelPass=false
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  dialogId=32ff285abe7a40b19b01b72441636b3e
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  scheme=mtk_pangaea
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  l2WakeupScore=0.0
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  l2VoiceprintScore=0.0
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  l2WakeupEngineVersion=V1.059_10_14
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  l2VoiceprintEngineVersion=sr_xatx_custom_e4.2#sr_ma62_xatx_custom_1.2.3
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  screenStatus=on
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  lockStatus=unlock
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  audioMd5=95BACC637B2A68C13F0840543EADFC39
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  wakeupTime=1791715454228
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  l2WakeupAudioLength=96000
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  l2VPAudioLength=96000
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  l2WakeupStart=0
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  l2WakeupEnd=0
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  audioRecordChannel=1
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  wakeupCostTime=998
+10-11 18:44:14.241  5085  5814 I VT_WakeupAudioUtils:  isMdSpeechLoaded=true
+10-11 18:44:14.247  1052 27817 E AudioFlinger_Threads: push2RTGroup, tid 27817 push to RT group fail!
+10-11 18:44:14.247  1052 27817 V audio_utils::mutex: remove_from_registry: unregistered for 27817
+10-11 18:44:14.248   954  1124 D DeviceHAL: closeInputStream mOpenedStreamsCount 6
+10-11 18:44:14.248   954  1124 D AudioALSAStreamManager: +closeInputStream(), in = 0xb400007080729700, size() = 1
+10-11 18:44:14.248   954  1124 D AudioALSAStreamIn: ~AudioALSAStreamIn()
+10-11 18:44:14.248   954  1124 D AudioUtility: ~AudioThrottleTimeControl()
+10-11 18:44:14.249  1052 15629 W AudioPolicyClientImpl: setSoundTriggerCaptureState active 0
+10-11 18:44:14.250  1052 15629 V audio_utils::mutex: mutex_impl: audio_mutex initialized: ret:0  order:6
+10-11 18:44:14.250  1817  2280 I SoundTriggerMiddlewareLogging: RESOURCES_AVAILABLE ()
+10-11 18:44:14.250  1817  2280 I SoundTriggerMiddlewareLogging: RESOURCES_AVAILABLE ()
+10-11 18:44:14.250  1817  1817 D SoundTriggerHelper: mIsAppOpPermitted = true,mDeviceState = ENABLE
+10-11 18:44:14.253  1052 15629 D audioserver: logFgsApiEnd: FGS Logger Transaction failed, -129
+10-11 18:44:14.255  5085  5814 I VT_GlobalResourceFilePath: isRestrictionUploadInformation, default policy, scheme=mtk_pangaea, wakeupType=wakeup_suspect, isVoconWakeupPassed=false, isVBPassed=false, currentCounts=1, susp_g=false, susp_f=true
+10-11 18:44:14.256  1052 23038 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.256  1052  2973 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.257  5085  5814 W VT_ReportFile: recordWakeupInformation, Current conditions are not satisfied
+10-11 18:44:14.257  1052  2973 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.258  5085  5814 I VT_GlobalResourceFilePath: isRestrictionUploadFile, default policy, scheme=mtk_pangaea, wakeupType=wakeup_suspect, isVoconWakeupPassed=false, isVBPassed=false, currentCounts=1, susp_g=false, susp_f=true
+10-11 18:44:14.259  5085  5814 W VT_ReportFile: handleUploadWakeupFile, Current conditions are not satisfied
+10-11 18:44:14.259  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.260  1052  2973 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.261  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.264  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.264  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.346   888  1083 I bt_btif_dm: btif_dm.cc:574 get_cod: remote_cod=0x00001f00
+10-11 18:44:14.356  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.356  5085  6058 W AIVSBT  : Timer:Run timer id: BLE_SCAN_TIMER
+10-11 18:44:14.356  5085  6058 I AIVSBT  : BlueWakeController:scan timeout, mode:3 time:1000
+10-11 18:44:14.356  5085  6058 I AIVSBT  : BLEScanController:Scan-stop
+10-11 18:44:14.356  5085  6058 D BluetoothAdapter: isLeEnabled(): ON
+10-11 18:44:14.356  1052  2973 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.358  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.360  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.360  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.361  1052  2973 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.361   888   912 I AppScanStats: BLE_SCAN_RESULT_RECEIVED[5]reportBleScanResults=20
+10-11 18:44:14.363  1052 15629 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.363   888   912 I AppScanStats: BLE_SCAN_STATE_CHANGED[5]reportBleScanStopped=true
+10-11 18:44:14.364  1052 23861 D APM_AudioPolicyManager: listAudioPorts mAvailableInputDevices 0x80000004, 0x80000040, 0x80000080, 0x80000100, 0x80002000, 0x90000000
+10-11 18:44:14.365   888  1224 I BtGatt.ScanManager: msg.what = MSG_STOP_BLE_SCAN, msg.arg1 = None
+10-11 18:44:14.367   888  1224 E BluetoothUtils: isDeepDozeMode? false
+10-11 18:44:14.369   888  1224 I bt_stack: [INFO:le_scanning_manager.cc(214)] ScanFilterParamSetup in shim layer
+10-11 18:44:14.369   888  1083 I bt_btif_dm: btif_dm.cc:574 get_cod: remote_cod=0x00001f00
+10-11 18:44:14.371   888  1492 I bt_stack: [INFO:le_scanning_manager.cc(172)] Unregister in shim layer, scanner_id:5
+10-11 18:44:14.372   888  1224 I bt_stack: [INFO:le_scanning_manager.cc(178)] Scan in shim layer stopped
+10-11 18:44:14.372   888  1107 I bluetooth: le_address_manager.cc:204 unregister_client: Client unregistered
+10-11 18:44:14.372   888  1224 I bt_stack: [INFO:le_scanning_manager.cc(358)] SetScanParameters in shim layer
+10-11 18:44:14.372   888  1224 I bt_stack: [INFO:le_scanning_manager.cc(368)] SetScanParameters scan_phy 1 phy 1
+10-11 18:44:14.372   888  1224 I bt_stack: [INFO:le_scanning_manager.cc(358)] SetScanParameters in shim layer
+10-11 18:44:14.372   888  1224 I bt_stack: [INFO:le_scanning_manager.cc(368)] SetScanParameters scan_phy 1 phy 1
+10-11 18:44:14.372   888  1224 I bt_stack: [INFO:le_scanning_manager.cc(178)] Scan in shim layer started
+10-11 18:44:14.373   888  1107 I bluetooth: le_scanning_manager.cc:646 stop_scan: Scanning already stopped, return!
+10-11 18:44:14.373   888  1107 I bluetooth: le_address_manager.cc:189 register_client: Client registered
+10-11 18:44:14.374   955  5190 D mtk.hal.bt@1.1-impl: BtHostDebugInfo
+10-11 18:44:14.374   955  5190 D [BT]    : mtk_bt_op: BT_VND_OP_SET_BTHOST
+10-11 18:44:14.381   955  5190 D mtk.hal.bt@1.1-impl: BtHostDebugInfo
+10-11 18:44:14.381   955  5190 D [BT]    : mtk_bt_op: BT_VND_OP_SET_BTHOST
+10-11 18:44:14.389  1817 11053 D GreezeManager: Uid 10303 is using audio or GPS client:10304
+10-11 18:44:14.497   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:61.211147,dur:1012.89,max:27.20,min:6.82  
+10-11 18:44:14.595   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:14.596   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:14.717  1817  2246 D MiuiNM  : tcp fail rate reach: 100
+10-11 18:44:14.722  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.22 dur=1012.82 max=27.46 min=6.75
+10-11 18:44:14.749  1817  2236 I MiuiNetworkPolicy: bandwidth: 0 KB/s, Max bandwidth: 1310 KB/s
+10-11 18:44:14.751  1817  1817 D BatteryStatsManagerStub: audio off uid=10129
+10-11 18:44:14.751  1817  2298 D ProcessManager: real remove inactive uid : 10129 flag : 1
+10-11 18:44:14.857 26078 26254 D AudioTrack: [audioTrackData][zero] 18s(f:33041 m:0 s:0 k:0 z:18000) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:14.958  2693  2693 D NotificationHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:14.970  1063  1063 I BufferQueueProducer: [StatusBar#110](this:0xb40000733d65bdb8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=0.50 dur=4009.99 max=4003.44 min=6.54
+10-11 18:44:15.087  1817  1991 D BatteryStatsImpl: status:4, plugType:1, level:100, chargeUah:3820000
+10-11 18:44:15.088  1817  1991 D BatteryStatsImpl: mOnBattery:false, mBatteryChargeUah:3820000, mBatteryStatus:2
+10-11 18:44:15.094  2693  2693 I MiuiChargeManager: notifyBatteryStatusChanged:  status: 4 isPlugged: 1 level: 100 wireState: 11 chargeSpeed: 0 mChargeType: 0 chargeDeviceType: 0 maxChargingWattage: -1 isCarCharge: 0 SUPPORT_BROADCAST_QUICK_CHARGE: true
+10-11 18:44:15.094  2693  2693 I MiuiChargeController: checkBatteryStatus: wireState 11 status 4 plugged 1 chargeSpeed 0 maxChargingWattage -1 isRapidCharge false isSuperCharge false isStrongSuperCharge false isCarMode false mChargeDeviceType 0 mChargeDeviceForAnalytic -1 isChargeAnimationDisabled false
+10-11 18:44:15.094  2693  2693 I MiuiChargeController: dealWithAnimationShow mWireState=11,wireState=11,mFastChargeChanged=false,mIsFastCharge=false,hasShowdChargeAnim=true
+10-11 18:44:15.094  2693  2693 I MiuiChargeController:  dealWithAnimationShow same 
+10-11 18:44:15.103  2662  2662 D DynamicServiceSarV8550:  ACTION_BATTERY_CHANGED change,USB plug = 1
+10-11 18:44:15.105  3364  3364 D OfflineFindBroadcastManager: onReceive: action = android.intent.action.BATTERY_CHANGED
+10-11 18:44:15.105  3364  3364 D OfflineFindBroadcastManager: mBatteryPercentage = 100
+10-11 18:44:15.105  4095  4095 I BatteryInfoReceiver: Save charge details,  startLevel 78 endLevel 100 totalChargedTime 6511717
+10-11 18:44:15.107  4095  4095 I BatteryInfoReceiver: charge detail, startLevel 78 endLevel 100 plugType 1 useMaxOrMin false isChargeProtection false chargedTime 6174730
+10-11 18:44:15.109  2693  2693 D DeviceNotificationListenerImpl: {status=4,plugged=1,level=100,wireState=11,chargeSpeed=0,chargeDeviceType=0,chargingStatus=0,maxChargingWattage=-1,present=false,incompatibleCharger=Optional.empty}
+10-11 18:44:15.110  1817  1991 D BatteryStatsImpl: status:4, plugType:1, level:100, chargeUah:3820000
+10-11 18:44:15.110  1817  1991 D BatteryStatsImpl: mOnBattery:false, mBatteryChargeUah:3820000, mBatteryStatus:4
+10-11 18:44:15.115  1817  1817 D MBrainLocalService: isVendorFreezeConditionPass is false
+10-11 18:44:15.115  1817  1817 E ChargeIntentReceiver: notifyChange failed
+10-11 18:44:15.116  1817  1817 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mCar=false; mPowerSave=false; mOverrideNightModeOn=false; mOverrideNightModeOff=false; mComputedNightMode=false; mWaitForDeviceInactive=false; mNightModeValue=1; uiMode=17
+10-11 18:44:15.116  1817  1817 D WifiFeatureControl: isCharging = false mInWifiBclMode = false chargePercent = 100
+10-11 18:44:15.118  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:15.121  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:15.121  4095  4095 I BatteryInfoReceiver: Charge status changed, prev status true, status false
+10-11 18:44:15.121  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:15.121  5815  8826 D powerkeeper.dfscollect: plug type 1
+10-11 18:44:15.122  5815  8824 D PowerCheckerService: onBatteryChanged, mBatteryLevel = 100, status = 4, level = 100, plug = 1, scale = 100
+10-11 18:44:15.122  5815  8824 D PowerCheckerService: reset
+10-11 18:44:15.125  4095  5837 I BaseChargeProtect_Night: isCompleteCharge false isNightCharge false
+10-11 18:44:15.125  4095  4095 I PowerUtils: getSurfaceTemprature temp: 36
+10-11 18:44:15.125  4095  4095 I PowerSaveService: onReceive: android.intent.action.BATTERY_CHANGED
+10-11 18:44:15.126  4095  4095 I ChargeWarningManager: isCharging = false, needShowBatteryError = true
+10-11 18:44:15.126  4095  4095 I PowerNoticeUI: handleBatteryChanged oldPlugType 1 mPlugType 1 oldBatteryLevel 100 mBatteryLevel 100 temperature 367
+10-11 18:44:15.126  4095  4095 I ChargerBatteryIntelligenceReceiver: onBatteryChanged temperature：36,plugType:1
+10-11 18:44:15.126  4095  4095 I BaseChargeProtect_Navigation: status = 4, level = 100, scale = 100, newPercent = 100, isCharging = false, plugType = 1
+10-11 18:44:15.126  5815  6130 D PowerKeeper.Thermal: mBatteryTemperature: 36
+10-11 18:44:15.126  4095  4095 I SmartChargeProtectReminder: getThisTimeNoProtect: -1
+10-11 18:44:15.126  4095  4095 I BaseIntellectProtect: setCanWork: false getThisTimeNoProtect: -1
+10-11 18:44:15.126  4095  4095 I BaseChargeProtect_: MODE_NAVIGATION,setCanWork fromShouldWork:false,to:false,canWork:false
+10-11 18:44:15.126  4095  4095 I BaseChargeProtect_: onProtectChange:false
+10-11 18:44:15.127  4095  4095 W BatteryHistoryManager: battery state changed check reset : 100
+10-11 18:44:15.127  4095  4095 W BatteryHistoryManager: checkReset
+10-11 18:44:15.127  4095  5790 W BatteryHistoryManager: check reset inner : 2026.10.11  18:44
+10-11 18:44:15.128  1063  1251 D MI-SF   : updateScene: module = 263 (chargeFull), value = 0, pkg = com.hnzh.dldlwhjx.huawei
+10-11 18:44:15.128  1063  1251 D MI-SF   : updateScene mFullCharge 0
+10-11 18:44:15.131  1817  2269 D AS.AudioService: onReceive action = com.miui.powerkeeper.TEMP_MODE_CHANGE
+10-11 18:44:15.131  1817  2269 D AS.AudioService: received ACTION_AUDIO_LOWTEMP_SWITCH
+10-11 18:44:15.132  1817  1817 D WifiFeatureControl: mCurrentBcasLevel is 9
+10-11 18:44:15.132  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:15.133  5815  6191 D PowerKeeper.FrozenApp: onBatteryChanged plug=true mBatteryPlugged=1
+10-11 18:44:15.133  4095  5837 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.xiaomi.hardware.micharge@1.0::IMiCharge/default
+10-11 18:44:15.134  4095  5784 I SmartChargeProtectManager: handleMessage MSG_WHAT_THIS_TIME_NO_PROTECT_RESET
+10-11 18:44:15.134  1000  9025 I vendor.xiaomi.hardware.micharge@1.0-service: ReadFilePathValue path = /sys/class/power_supply/battery/night_charging value = 0
+10-11 18:44:15.134  4095  5837 I ChargeProtectionUtils: getNightChargingState: 0
+10-11 18:44:15.136  4095  5837 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.xiaomi.hardware.micharge@1.0::IMiCharge/default
+10-11 18:44:15.136  1000  9025 I vendor.xiaomi.hardware.micharge@1.0-service: ReadFilePathValue path = /sys/class/power_supply/battery/night_charging value = 0
+10-11 18:44:15.137  4095  5837 I ChargeProtectionUtils: getNightChargingState: 0
+10-11 18:44:15.138  4095  5837 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.xiaomi.hardware.micharge@1.0::IMiCharge/default
+10-11 18:44:15.139  1000  9025 I vendor.xiaomi.hardware.micharge@1.0-service: ReadFilePathValue path = /sys/class/power_supply/battery/night_charging value = 0
+10-11 18:44:15.139  4095  5837 I ChargeProtectionUtils: getNightChargingState: 0
+10-11 18:44:15.139  4095  5837 I BaseChargeProtect_Night: Charge status changed, mOldCharging true, isCharging false
+10-11 18:44:15.141  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:15.154  4095  5790 I BatteryDataUtils: getFirstHistoryData baseTime =0
+10-11 18:44:15.154  4095  5790 I BatteryDataUtils: getFirstHistoryData time =2184784439
+10-11 18:44:15.154  4095  5790 I PowerRankHelperHolder: refreshStats begin
+10-11 18:44:15.154  4095  5790 I PowerRankHelperHolder: mDesktopPkgSet =[com.ss.android.ugc.aweme, com.milink.service, com.miui.securitymanager, com.xs.fm, com.mipay.wallet, com.tencent.mm, com.miui.player, com.rosan.installer.x.revived, com.xiaomi.vipaccount, com.microsoft.emmx, com.zfj.feishureceiptblocker, org.frknkrc44.hma_oss, com.android.fileexplorer, com.termux, com.mi.health, com.miui.compass, com.didjdk.adbhelper, com.miui.huanji, com.autonavi.minimap, com.miui.mishare.connectivity, com.miui.calculator, com.android.contacts, com.miui.greenguard, com.android.deskclock, com.xiaomi.scanner, com.follow.clash, com.emanuelef.remote_capture, com.qq.reader, io.github.bbzq, com.android.vending, com.github.android, com.sevtinge.hyperceiler, com.duokan.reader, com.android.chrome, com.xiaomi.finddevice, com.dragon.read, tv.danmaku.bili, com.android.nfc, com.openai.chatgpt, com.duokan.phone.remotecontroller, com.miui.gallery, com.mt.maomao, com.android.email, com.sankuai.meituan, com.eg.android.AlipayGphone, com.hnzh.dldlwhjx.huawei, com.resukisu.resukisu, com.sina.weibo, com.mfashiongallery.emag, com.xiaomi.market, com.chunqiunativecheck, com.sohu.inputmethod.sogou.xiaomi, com.miui.notes, com.miui.home, com.xiaomi.youpin, com.smile.gifmaker, com.xiaomi.gamecenter, me.feimeng.vip, org.telegram.messenger, com.android.browser, com.miui.virtualsim, com.android.quicksearchbox, com.miui.weather2, com.google.android.documentsui, com.ss.android.article.news, com.xiaomi.smarthome, com.miui.miwallpaper, com.taobao.idlefish, com.miui.voiceassistProxy, com.quark.browser, com.android.mms, com.miui.fm, com.android.providers.downloads.ui, com.pcapdroid.mitm, com.baidu.input_mi, com.iflytek.inputmethod.miui, com.android.camera, com.miui.findmy, com.miui.themestore, com.android.incallui, com.ss.android.lark, com.android.calendar, com.android.settings, com.larus.nova, com.android.soundrecorder]
+10-11 18:44:15.168 29660  6334 D JavaheapMonitor: Java heap used=4M max=512M, proc: android.process.acore
+10-11 18:44:15.169 29660  6334 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:15.184   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:15.184   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:15.184   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:15.193   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:15.194   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:15.194   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:15.194   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:15.194   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:15.231  1817  3500 D TelephonyManager: requestModemActivityInfo: Sending result to app: ModemActivityInfo{ mTimestamp=235108336 mSleepTimeMs=177597735 mIdleTimeMs=20505961 mActivityStatsTechSpecificInfo=[{mRat=UNKNOWN,mFrequencyRange=UNKNOWN,mTxTimeMs[]=[0, 0, 0, 0, 0],mRxTimeMs=4202795}]}
+10-11 18:44:15.267   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup4 (../../devices/platform/1c804000.spmi/spmi-0/0-05/wakeup/wakeup4): Permission denied
+10-11 18:44:15.269   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup38 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:tcpc/tcpc/type_c_port0/wakeup38): Permission denied
+10-11 18:44:15.270   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup164 (../../devices/platform/soc/1e000000.adspsys/wakeup/wakeup164): Permission denied
+10-11 18:44:15.275   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup46 (../../devices/platform/soc/11d04000.i2c/i2c-7/7-0066/power_supply/cp_slave/wakeup46): Permission denied
+10-11 18:44:15.276   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup2 (../../devices/platform/1c804000.spmi/spmi-0/0-06/wakeup/wakeup2): Permission denied
+10-11 18:44:15.278   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup36 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:tcpc/tcpc/type_c_port0/wakeup36): Permission denied
+10-11 18:44:15.283   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup180 (../../devices/virtual/input/input6/wakeup180): Permission denied
+10-11 18:44:15.284   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup44 (../../devices/virtual/power_supply/mtk-gauge/wakeup44): Permission denied
+10-11 18:44:15.286   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup34 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:chg/power_supply/11280000.i2c:mt6375@34:chg/wakeup34): Permission denied
+10-11 18:44:15.289   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup24 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:auxadc/wakeup/wakeup24): Permission denied
+10-11 18:44:15.292   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup179 (../../devices/platform/soc/11d05000.i2c/i2c-8/8-0010/wakeup/wakeup179): Permission denied
+10-11 18:44:15.295   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup32 (../../devices/platform/charger/power_supply/mtk-slv-div-chg/wakeup32): Permission denied
+10-11 18:44:15.298   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup22 (../../devices/platform/1c804000.spmi/spmi-0/0-09/mt6685-rtc/rtc/rtc0/alarmtimer.0.auto/wakeup/wakeup22): Permission denied
+10-11 18:44:15.299   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup50 (../../devices/platform/soc/11013000.spi3/spi_master/spi3/spi3.0/wakeup/wakeup50): Permission denied
+10-11 18:44:15.300   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup7 (../../devices/platform/soc/1f800000.mmlsys_config/wakeup/wakeup7): Permission denied
+10-11 18:44:15.301   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup177 (../../devices/platform/soc/11d01000.i2c/i2c-2/2-0010/wakeup/wakeup177): Permission denied
+10-11 18:44:15.309   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup49 (../../devices/platform/soc/11d02000.i2c/i2c-3/3-0028/wakeup/wakeup49): Permission denied
+10-11 18:44:15.309   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup5 (../../devices/platform/soc/1e980000.gce/wakeup/wakeup5): Permission denied
+10-11 18:44:15.310   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup175 (../../devices/platform/soc/11d00000.i2c/i2c-1/1-005a/wakeup/wakeup175): Permission denied
+10-11 18:44:15.310   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup39 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:tcpc/wakeup/wakeup39): Permission denied
+10-11 18:44:15.313   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup211 (../../devices/platform/10001000.consys/wakeup/wakeup211): Permission denied
+10-11 18:44:15.313   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup19 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/wakeup/wakeup19): Permission denied
+10-11 18:44:15.314   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup47 (../../devices/platform/soc/11d06000.i2c/i2c-9/9-0066/power_supply/cp_master/wakeup47): Permission denied
+10-11 18:44:15.315   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup3 (../../devices/platform/1c804000.spmi/spmi-0/0-07/wakeup/wakeup3): Permission denied
+10-11 18:44:15.315   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup37 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:tcpc/tcpc/type_c_port0/wakeup37): Permission denied
+10-11 18:44:15.317   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup27 (../../devices/platform/soc/11d04000.i2c/i2c-7/7-0055/power_supply/bms/wakeup27): Permission denied
+10-11 18:44:15.319   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup1 (../../devices/platform/1c804000.spmi/spmi-0/0-04/wakeup/wakeup1): Permission denied
+10-11 18:44:15.320   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup35 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:tcpc/tcpc/type_c_port0/wakeup35): Permission denied
+10-11 18:44:15.321   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup25 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:auxadc/wakeup/wakeup25): Permission denied
+10-11 18:44:15.323   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup43 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:mtk_gauge/power_supply/battery/wakeup43): Permission denied
+10-11 18:44:15.324   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup33 (../../devices/platform/charger/power_supply/usb/wakeup33): Permission denied
+10-11 18:44:15.325   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup23 (../../devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:adc/wakeup/wakeup23): Permission denied
+10-11 18:44:15.326   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup8 (../../devices/platform/soc/1f000000.mdp/wakeup/wakeup8): Permission denied
+10-11 18:44:15.326   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup13 (../../devices/platform/soc/14017000.dsi/wakeup/wakeup13): Permission denied
+10-11 18:44:15.326   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup178 (../../devices/platform/soc/11d03000.i2c/i2c-4/4-0037/wakeup/wakeup178): Permission denied
+10-11 18:44:15.327   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup31 (../../devices/platform/charger/power_supply/mtk-mst-div-chg/wakeup31): Permission denied
+10-11 18:44:15.328   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup21 (../../devices/platform/1c804000.spmi/spmi-0/0-09/mt6685-rtc/wakeup/wakeup21): Permission denied
+10-11 18:44:15.328  1817  3113 I NetworkAccelerateSwitchService: EVENT_RSSI_POLL. mRssiPoll=true
+10-11 18:44:15.328   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup6 (../../devices/platform/soc/1e990000.gce/wakeup/wakeup6): Permission denied
+10-11 18:44:15.329   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup11 (../../devices/platform/soc/11211000.usb1/wakeup/wakeup11): Permission denied
+10-11 18:44:15.329   630   635 E android.system.suspend-service: Error opening kernel wakelock stats for: wakeup176 (../../devices/platform/soc/11d01000.i2c/i2c-2/2-002d/wakeup/wakeup176): Permission denied
+10-11 18:44:15.334   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:15.334   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:15.334   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:15.352   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:15.352   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:15.352   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:15.352   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:15.352   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:15.355  1817  3113 E MiuiWifiService: exception:java.lang.ArrayIndexOutOfBoundsException: length=20; index=48
+10-11 18:44:15.355  1817  3113 I NetworkAccelerateSwitchService: checkWifiRssiAndLinkSpeed mWifiFastFade:false mWifiFastFadeAdjustThreshold:false
+10-11 18:44:15.355  1817  3113 I NetworkAccelerateSwitchService: getAverageWifiRssi:54
+10-11 18:44:15.356  1817  3113 D NetworkAccelerateSwitchService: checkIntervalModeChange mMovementState:false mIntervalMode:0 mIsBadLinkLayerQoE:false mBadLinkLayerQoETimes = 0
+10-11 18:44:15.358   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:15.358   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:15.358   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:15.363   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:15.364   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:15.364   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:15.364   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:15.364   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:15.374  1440  1440 I wificond: station_bandwidth: 
+10-11 18:44:15.375  1817  2238 D MiuiWifiCommonBase: band: 1, compensate: 0
+10-11 18:44:15.378  1817 31537 D WifiScoreReportInjector: mCcaBusyRate change to 5; mBeaconLostRate change to 60
+10-11 18:44:15.380  2662  8883 E PhoneInterfaceManager: getServiceStateForSlot retuning null for invalid slotIndex=-1
+10-11 18:44:15.380  1817  2238 D WifiScoreReportInjector: isMobileDataSiganlPoor signalStrength or serviceState is null
+10-11 18:44:15.387  1817  2901 I NetworkBoostStatusManager: handle: 102
+10-11 18:44:15.387  1817  2901 I NetworkBoostStatusManager: interfaceOnCapabilitiesChanged interface name:wlan0
+10-11 18:44:15.394  3031  7368 I IDMManager: onCapabilitiesChanged: network is 103
+10-11 18:44:15.395  5932  6099 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+10-11 18:44:15.395  5932  6099 I JoyoseCloudControlManager3: network metered changed, network metered: false, deviceProvisioned: true, scAllowConn: false, try to setNetworkAccessEnabled: false
+10-11 18:44:15.396  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged Cellular
+10-11 18:44:15.396  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged WIFI isPrimary = true
+10-11 18:44:15.398  3031  7368 I IDMManager: network is not MiuiCarSoftAp
+10-11 18:44:15.404  5059  5153 I NetBusNetworkMonitor: gateway=192.$)+.$%'.1
+10-11 18:44:15.425  5059  5153 I NetBusNetworkMonitor: addConnectNetworkInterface mediumType:256, detail:NetworkDetailInfo{mIsConnected=false, mIsSupportTdls=true, mNetworkType=0, mIpAddress=192.$)+.$%'.139, mIfName=wlan0, mGateway=192.$)+.$%'.1, mNetmask=255.%((.%((.0, mSsid=2**5G}
+10-11 18:44:15.425  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged WIFI handle=445787328525, mediumType=256, ifName=wlan0
+10-11 18:44:15.427  1817  2253 D ConnectivityServiceImpl: teardown wifi type 1 state: CONNECTED primary: true
+10-11 18:44:15.427  1817  2253 D ConnectivityServiceImpl: nai type 1 state: CONNECTED primary: true
+10-11 18:44:15.429  1817  2253 D ConnectivityServiceImpl: teardown wifi type 1 state: CONNECTED primary: true
+10-11 18:44:15.429  1817  2253 D ConnectivityServiceImpl: nai type 1 state: CONNECTED primary: true
+10-11 18:44:15.431 11837 15441 I NearbyMediums: Wifi changed new SSID: "2801_5G"
+10-11 18:44:15.431 11837 15441 I NearbyMediums: WifiLanConnectivityInfo is not changed, skip notify.
+10-11 18:44:15.432  1817  2253 D ConnectivityService: NetReassign [no changes] [c 0] [a 3] [i 2]
+10-11 18:44:15.487  4095  5790 I PowerRankHelperHolder: mMiscUsageList size = 1
+10-11 18:44:15.487  4095  5790 I PowerRankHelperHolder: refreshStats end
+10-11 18:44:15.503   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:92.474968,dur:1005.68,max:21.27,min:5.32  
+10-11 18:44:15.522  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:15.522  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:15.528  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:15.535  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:15.595   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:147
+10-11 18:44:15.595   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:60
+10-11 18:44:15.597  1817  1977 I SmartPower: com.miui.voicetrigger/10129(5085): idle->background(38270ms) R(broadcast start Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }) adj=200.
+10-11 18:44:15.598  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{1543bd5 8492:com.tencent.mm/u0a286} (uid 10286) need cached broadcast
+10-11 18:44:15.599  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{1543bd5 8492:com.tencent.mm/u0a286} (uid 10286) need cached broadcast
+10-11 18:44:15.599  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{e5cdffb 9970:com.tencent.mm:push/u0a286} (uid 10286) need cached broadcast
+10-11 18:44:15.600  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{e5cdffb 9970:com.tencent.mm:push/u0a286} (uid 10286) need cached broadcast
+10-11 18:44:15.602  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:15.602  9463  9463 I AIRC_BatteryChangedPerception: calculatingBatteryChange true currBatteryStatus:normal, lastBatteryStatus:charging, currBatteryLevel:100, lastBatteryLevel:100
+10-11 18:44:15.602  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:15.603  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:15.603  9463 30263 I AIRC_CounterTrack: collect: signal-BatteryChangedPerception
+10-11 18:44:15.603  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:15.603  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:15.604  1817  1977 I SmartPower: com.xiaomi.market/10152(13313): idle->background(38269ms) R(broadcast start Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }) adj=905.
+10-11 18:44:15.604  9463 30263 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 1
+10-11 18:44:15.605  1817  1977 I SmartPower: com.google.android.gms/10119(11837): idle->background(11290ms) R(broadcast start Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }) adj=100.
+10-11 18:44:15.605  9463  9510 I AIRC_PerceptionEventBus: event=BatteryChangedEvent,traceId=d45c0234591c415995c0e06441412404 send result=true
+10-11 18:44:15.605  9463  9637 I AIRC_CounterTrack: collect: base_event-BatteryChangedEvent
+10-11 18:44:15.605  9463  9511 I AIRC_Cognition_CognitionTriggerManager: dispatchEvent event=BatteryChangedEvent, traceId=d45c0234591c415995c0e06441412404
+10-11 18:44:15.605  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{736a0b0 32645:com.ss.android.lark:sandboxed_process3/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:15.608 11837 11837 I NearbyPresence: (REDACTED) %s: Charging state changed: %b
+10-11 18:44:15.608  9463  9511 I AIRC_CognitionEnableManager: LocationChange enable: true
+10-11 18:44:15.609 11837 15441 I NearbyPresence: (REDACTED) %s verified [==] new request %s equals to the old request
+10-11 18:44:15.609  9463  9637 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 1
+10-11 18:44:15.611  9463  9511 I AIRC_CognitionEnableManager: FrequentLocationCognition enable: true
+10-11 18:44:15.613  9463  9511 I AIRC_CognitionEnableManager: MetroCodeCognition enable: true
+10-11 18:44:15.615  9463  9511 I AIRC_CognitionEnableManager: TravelCognition enable: true
+10-11 18:44:15.618  9463  9511 I AIRC_CognitionEnableManager: ScanCodeCognition enable: true
+10-11 18:44:15.620  9463  9511 I AIRC_CognitionEnableManager: GeekCognition enable: true
+10-11 18:44:15.622  9463  9511 I AIRC_CognitionEnableManager: AudioCognition enable: true
+10-11 18:44:15.624  9463  9511 I AIRC_CognitionEnableManager: BatteryCognition enable: true
+10-11 18:44:15.624  9463  9511 I AIRC_LocationChange: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:15.625  9463  9511 I AIRC_FrequentLocationCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:15.626  9463  9511 I AIRC_MetroCodeCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:15.626  9463  9511 I AIRC_TravelCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:15.627  9463  9511 I AIRC_ScanCodeCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:15.627  9463  9511 I AIRC_GeekCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:15.628  9463  9511 I AIRC_AudioCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:15.628  9463  9511 I AIRC_BatteryCognition: dispatchEvent needHandle:true, event:BatteryChangedEvent
+10-11 18:44:15.629  9463  9511 I AIRC_Cognition_BatteryCognitionTrigger: handleNormalEvent diffLevel[0]>=0 [batteryLevel:100, lastBatteryLevel:100, batteryScale:100, currBatteryPercent:100.0%, batteryChargingType:ac_charging]
+10-11 18:44:15.630  9463  9637 I AIRC_Cognition_CognitionTriggerManager: not in test mode
+10-11 18:44:15.685 26078 26133 D Cocos2dxActivity: Perfmate insertGameInfo upload callBack: true
+10-11 18:44:15.688 26078 26279 W System.err: java.lang.NullPointerException: Attempt to get length of null array
+10-11 18:44:15.688 26078 26279 W System.err: 	at v7y8.xc5v.fj32(CpuTools.java:14)
+10-11 18:44:15.688 26078 26279 W System.err: 	at v7y8.d5te.run(DataMakeTools.java:62)
+10-11 18:44:15.688 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1291)
+10-11 18:44:15.688 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:670)
+10-11 18:44:15.688 26078 26279 W System.err: 	at java.lang.Thread.run(Thread.java:1012)
+10-11 18:44:15.690  1817  2947 D FileUtils: Rounded bytes from 7849676800 to 8000000000
+10-11 18:44:15.735  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=60.22 dur=1012.95 max=27.81 min=6.30
+10-11 18:44:15.743 11837 11955 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (24543): 1 [CONTEXT service_id=168 ]
+10-11 18:44:15.762 11837 11955 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (24544): 1 [CONTEXT service_id=168 ]
+10-11 18:44:15.763 11837 11955 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (24545): 1 [CONTEXT service_id=168 ]
+10-11 18:44:15.777  1669  3671 D JavaheapMonitor: Java heap used=12M max=256M, proc: com.xiaomi.xmsf:services
+10-11 18:44:15.777  1669  3671 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:15.860 26078 26254 D AudioTrack: [audioTrackData][zero] 19s(f:33041 m:0 s:0 k:0 z:19003) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:16.154  1817  1991 D BatteryStatsImpl: status:2, plugType:1, level:100, chargeUah:3820000
+10-11 18:44:16.154  1817  1991 D BatteryStatsImpl: mOnBattery:false, mBatteryChargeUah:3820000, mBatteryStatus:4
+10-11 18:44:16.170  2693  2693 I MiuiChargeManager: notifyBatteryStatusChanged:  status: 2 isPlugged: 1 level: 100 wireState: 11 chargeSpeed: 0 mChargeType: 0 chargeDeviceType: 0 maxChargingWattage: -1 isCarCharge: 0 SUPPORT_BROADCAST_QUICK_CHARGE: true
+10-11 18:44:16.170  2693  2693 I MiuiChargeController: checkBatteryStatus: wireState 11 status 2 plugged 1 chargeSpeed 0 maxChargingWattage -1 isRapidCharge false isSuperCharge false isStrongSuperCharge false isCarMode false mChargeDeviceType 0 mChargeDeviceForAnalytic -1 isChargeAnimationDisabled false
+10-11 18:44:16.170  2693  2693 I MiuiChargeController: dealWithAnimationShow mWireState=11,wireState=11,mFastChargeChanged=false,mIsFastCharge=false,hasShowdChargeAnim=true
+10-11 18:44:16.170  2693  2693 I MiuiChargeController:  dealWithAnimationShow same 
+10-11 18:44:16.173  2662  2662 D DynamicServiceSarV8550:  ACTION_BATTERY_CHANGED change,USB plug = 1
+10-11 18:44:16.174  3364  3364 D OfflineFindBroadcastManager: onReceive: action = android.intent.action.BATTERY_CHANGED
+10-11 18:44:16.174  3364  3364 D OfflineFindBroadcastManager: mBatteryPercentage = 100
+10-11 18:44:16.177  1817  1817 D MBrainLocalService: isVendorFreezeConditionPass is false
+10-11 18:44:16.177  1817  1817 E ChargeIntentReceiver: notifyChange failed
+10-11 18:44:16.182  1817  1817 D UiModeManager: updateConfigurationLocked: mDockState=0; mCarMode=false; mCar=false; mPowerSave=false; mOverrideNightModeOn=false; mOverrideNightModeOff=false; mComputedNightMode=false; mWaitForDeviceInactive=false; mNightModeValue=1; uiMode=17
+10-11 18:44:16.182  1817  1817 D WifiFeatureControl: isCharging = true mInWifiBclMode = false chargePercent = 100
+10-11 18:44:16.183  4095  4095 I BatteryInfoReceiver: Charge status changed, prev status false, status true
+10-11 18:44:16.183  4095 30386 W BatteryHistoryLoadMgr: getHistoryInfo begin
+10-11 18:44:16.184  4095  4095 I PowerUtils: getSurfaceTemprature temp: 36
+10-11 18:44:16.186  4095  4095 I PowerSaveService: onReceive: android.intent.action.BATTERY_CHANGED
+10-11 18:44:16.186  5815  6130 D PowerKeeper.Thermal: mBatteryTemperature: 36
+10-11 18:44:16.186  4095  4095 I ChargeWarningManager: isCharging = true, needShowBatteryError = true
+10-11 18:44:16.186  1817  1991 D BatteryStatsImpl: status:2, plugType:1, level:100, chargeUah:3820000
+10-11 18:44:16.186  1817  1991 D BatteryStatsImpl: mOnBattery:false, mBatteryChargeUah:3820000, mBatteryStatus:2
+10-11 18:44:16.187  4095  4095 D ChargeWarningManager: checkBatteryErrorState: mChargeWarningMap is null
+10-11 18:44:16.187  2693  2693 D DeviceNotificationListenerImpl: {status=2,plugged=1,level=100,wireState=11,chargeSpeed=0,chargeDeviceType=0,chargingStatus=0,maxChargingWattage=-1,present=false,incompatibleCharger=Optional.empty}
+10-11 18:44:16.187  5815  8824 D PowerCheckerService: onBatteryChanged, mBatteryLevel = 100, status = 2, level = 100, plug = 1, scale = 100
+10-11 18:44:16.187  5815  6191 D PowerKeeper.FrozenApp: onBatteryChanged plug=true mBatteryPlugged=1
+10-11 18:44:16.187  5815  8826 D powerkeeper.dfscollect: plug type 1
+10-11 18:44:16.187  1063  1252 D MI-SF   : updateScene: module = 263 (chargeFull), value = 1, pkg = com.hnzh.dldlwhjx.huawei
+10-11 18:44:16.187  1063  1252 D MI-SF   : updateScene mFullCharge 0
+10-11 18:44:16.187  4095  4095 I PowerNoticeUI: handleBatteryChanged oldPlugType 1 mPlugType 1 oldBatteryLevel 100 mBatteryLevel 100 temperature 367
+10-11 18:44:16.188  4095  4095 I ChargerBatteryIntelligenceReceiver: onBatteryChanged temperature：36,plugType:1
+10-11 18:44:16.188  4095  4095 I BaseChargeProtect_Navigation: status = 2, level = 100, scale = 100, newPercent = 100, isCharging = true, plugType = 1
+10-11 18:44:16.189  4095  5837 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.xiaomi.hardware.micharge@1.0::IMiCharge/default
+10-11 18:44:16.189  1000  9025 I vendor.xiaomi.hardware.micharge@1.0-service: ReadFilePathValue path = /sys/class/power_supply/battery/night_charging value = 0
+10-11 18:44:16.190  4095  5837 I ChargeProtectionUtils: getNightChargingState: 0
+10-11 18:44:16.190  4095  5837 I BaseChargeProtect_Night: isInCharging:true,isNotUsb:true,isNightChargeProtectionOpen:false,isNeedChargeProtection:false,isFirstProtectionToday:true
+10-11 18:44:16.190  4095  5837 I BaseChargeProtect_Night: Charge status changed, mOldCharging false, isCharging true
+10-11 18:44:16.191  1817  2269 D AS.AudioService: onReceive action = com.miui.powerkeeper.TEMP_MODE_CHANGE
+10-11 18:44:16.191  1817  2269 D AS.AudioService: received ACTION_AUDIO_LOWTEMP_SWITCH
+10-11 18:44:16.192  1817  1817 D WifiFeatureControl: mCurrentBcasLevel is 9
+10-11 18:44:16.197  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:16.200  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:16.200  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:16.205  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:16.206  4095 30386 D BatteryHistory: batteryState : 2184784439_100_0_3_36413_0,2345102944_77_1_2_2671_0,2352421258_100_1_5_121_0,
+10-11 18:44:16.206  4095 30386 I BatteryHistoryLoadMgr: lastIncreasingIntervalStartIndex=0
+10-11 18:44:16.206  4095 30386 W BatteryHistoryLoadMgr: get firstHistoryInfo time: 2184784439
+10-11 18:44:16.208  4095 30386 I BatteryDataUtils: usageRealTime = 160316799000
+10-11 18:44:16.208  4095 30386 D BatteryHistoryLoadMgr: getHistoryInfo end
+10-11 18:44:16.210  2693  2693 D ControlCenterHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:16.210  4095 30386 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.xiaomi.hardware.micharge@1.0::IMiCharge/default
+10-11 18:44:16.211  1063  1063 I BufferQueueProducer: [StatusBar#110](this:0xb40000733d65bdb8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=48.37 dur=1240.40 max=675.64 min=6.38
+10-11 18:44:16.211  1000  9025 I vendor.xiaomi.hardware.micharge@1.0-service: ReadFilePathValue path = /sys/class/power_supply/usb/quick_charge_type value = 0
+10-11 18:44:16.211  4095 30386 I IMiChargeUtils: getIMiChargeStringValue method:getQuickChargeType,value:0
+10-11 18:44:16.214  4095 30386 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.xiaomi.hardware.micharge@1.0::IMiCharge/default
+10-11 18:44:16.214  1000  9025 I vendor.xiaomi.hardware.micharge@1.0-service: ReadFilePathValue path = /sys/class/power_supply/usb/quick_charge_type value = 0
+10-11 18:44:16.215  4095 30386 I IMiChargeUtils: getIMiChargeStringValue method:getQuickChargeType,value:0
+10-11 18:44:16.216  4095 30386 I BatteryChargeTimeHelper: calculateTimeByHistory chargeDetail leftChargeTime: 0  startLevel: 78  endLevel: 100
+10-11 18:44:16.218  4095 30386 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.xiaomi.hardware.micharge@1.0::IMiCharge/default
+10-11 18:44:16.219  1000  9025 I vendor.xiaomi.hardware.micharge@1.0-service: ReadFilePathValue path = /sys/class/power_supply/usb/quick_charge_type value = 0
+10-11 18:44:16.219  4095 30386 I IMiChargeUtils: getIMiChargeStringValue method:getQuickChargeType,value:0
+10-11 18:44:16.220  4095 30386 I BatteryChargeTimeHelper: Use history time, 0.0 0ms
+10-11 18:44:16.220  4095 30386 I BatteryChargeTimeHelper: Left charge time in if, 0.0 1m
+10-11 18:44:16.492 13313 13811 D JavaheapMonitor: Java heap used=38M max=512M, proc: com.xiaomi.market
+10-11 18:44:16.492 13313 13811 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:16.508   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:89.504807,dur:1005.53,max:27.72,min:5.82  
+10-11 18:44:16.595   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:147
+10-11 18:44:16.596   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:16.668  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{1543bd5 8492:com.tencent.mm/u0a286} (uid 10286) need cached broadcast
+10-11 18:44:16.669  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{1543bd5 8492:com.tencent.mm/u0a286} (uid 10286) need cached broadcast
+10-11 18:44:16.669  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{e5cdffb 9970:com.tencent.mm:push/u0a286} (uid 10286) need cached broadcast
+10-11 18:44:16.669  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{e5cdffb 9970:com.tencent.mm:push/u0a286} (uid 10286) need cached broadcast
+10-11 18:44:16.671  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:16.671  9463  9463 I AIRC_BatteryChangedPerception: calculatingBatteryChange true currBatteryStatus:charging, lastBatteryStatus:normal, currBatteryLevel:100, lastBatteryLevel:100
+10-11 18:44:16.671  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:16.671  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:16.672  9463  9637 I AIRC_CounterTrack: collect: signal-BatteryChangedPerception
+10-11 18:44:16.672  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:16.672  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{7056df6 9653:com.ss.android.lark/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:16.673  1817  1977 W BroadcastQueue: Greezer Denial: sending Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }, action: android.intent.action.BATTERY_CHANGED from null (uid=1000) due to receiver ProcessRecord{736a0b0 32645:com.ss.android.lark:sandboxed_process3/u0a282} (uid 10282) need cached broadcast
+10-11 18:44:16.675 11837 11837 I NearbyPresence: (REDACTED) %s: Charging state changed: %b
+10-11 18:44:16.675 11837 15441 I NearbyPresence: (REDACTED) %s verified [==] new request %s equals to the old request
+10-11 18:44:16.677  9463  9637 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 1
+10-11 18:44:16.678  9463 30263 I AIRC_CounterTrack: collect: base_event-BatteryChangedEvent
+10-11 18:44:16.679  9463  9510 I AIRC_PerceptionEventBus: event=BatteryChangedEvent,traceId=fc9051e5707047008fede98396630889 send result=true
+10-11 18:44:16.679  9463  9511 I AIRC_Cognition_CognitionTriggerManager: dispatchEvent event=BatteryChangedEvent, traceId=fc9051e5707047008fede98396630889
+10-11 18:44:16.680  9463 30263 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 1
+10-11 18:44:16.682  9463  9511 I AIRC_CognitionEnableManager: LocationChange enable: true
+10-11 18:44:16.683  9463  9511 I AIRC_CognitionEnableManager: FrequentLocationCognition enable: true
+10-11 18:44:16.685  9463  9511 I AIRC_CognitionEnableManager: MetroCodeCognition enable: true
+10-11 18:44:16.686  9463  9511 I AIRC_CognitionEnableManager: TravelCognition enable: true
+10-11 18:44:16.687  9463  9511 I AIRC_CognitionEnableManager: ScanCodeCognition enable: true
+10-11 18:44:16.689  9463  9511 I AIRC_CognitionEnableManager: GeekCognition enable: true
+10-11 18:44:16.690  9463  9511 I AIRC_CognitionEnableManager: AudioCognition enable: true
+10-11 18:44:16.691  9463  9511 I AIRC_CognitionEnableManager: BatteryCognition enable: true
+10-11 18:44:16.692  9463  9511 I AIRC_LocationChange: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:16.692  9463  9511 I AIRC_FrequentLocationCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:16.693  9463  9511 I AIRC_MetroCodeCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:16.693  9463  9511 I AIRC_TravelCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:16.693  9463  9511 I AIRC_ScanCodeCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:16.694  9463  9511 I AIRC_GeekCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:16.694  9463  9511 I AIRC_AudioCognition: dispatchEvent needHandle:false, event:BatteryChangedEvent
+10-11 18:44:16.695  9463  9511 I AIRC_BatteryCognition: dispatchEvent needHandle:true, event:BatteryChangedEvent
+10-11 18:44:16.695  9463  9511 I AIRC_Cognition_BatteryCognitionTrigger: handleChargingEvent triggerEvent[First_Charging] traceId:fc9051e5707047008fede98396630889, batteryStatus:charging, lastBatteryStatus:normal, batteryLevel:100, lastBatteryLevel:100, batteryChargingType:ac_charging
+10-11 18:44:16.696  9463  9511 I AIRC_BatteryCognition: not in test mode
+10-11 18:44:16.697  9463 30263 I AIRC_CounterTrack: collect: cognition_event-PowerChangeEvent
+10-11 18:44:16.697  9463  9511 I AiCrEngine_DeviceUtils: isSupportIntention isInternationalDevice=false, isFoldDevice=false, isLiteDevice=false
+10-11 18:44:16.697  9463  9511 I AiCrEngine_OpenCapabilityProvider: is support xiao ai capability = true
+10-11 18:44:16.697  9463  9511 I AiCrEngine_DeviceUtils: isSupportIntention isInternationalDevice=false, isFoldDevice=false, isLiteDevice=false
+10-11 18:44:16.698  9463 30263 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 1
+10-11 18:44:16.698  9463  9511 I AiCrEngine_OpenCapabilityProvider: call capCode=3100, isSupportCapability=true, method=check_cta_agreed, arg=com.xiaomi.aicr
+10-11 18:44:16.699  9463  9511 I AiCrEngine_I_.permissionUtils.checkCTASwitch: checkCTASwitch is 1789238194235
+10-11 18:44:16.699  9463  9511 I AiCrEngine_OpenCapabilityProvider: call checkCtaAgreed =true
+10-11 18:44:16.699  9463  9511 I AiCrEngine_OpenCapabilityCaller: checkCtaAgreed checkCTASwitch=true
+10-11 18:44:16.700  9463  9511 I AiCrEngine_DeviceUtils: isSupportIntention isInternationalDevice=false, isFoldDevice=false, isLiteDevice=false
+10-11 18:44:16.700  9463  9511 I AiCrEngine_OpenCapabilityProvider: is support xiao ai capability = true
+10-11 18:44:16.700  9463  9511 I AiCrEngine_DeviceUtils: isSupportIntention isInternationalDevice=false, isFoldDevice=false, isLiteDevice=false
+10-11 18:44:16.700  9463  9511 I AiCrEngine_OpenCapabilityProvider: call capCode=3100, isSupportCapability=true, method=check_cta_agreed, arg=com.xiaomi.aicr
+10-11 18:44:16.701  9463  9511 I AiCrEngine_I_.permissionUtils.checkCTASwitch: checkCTASwitch is 1789238194235
+10-11 18:44:16.701  9463  9511 I AiCrEngine_OpenCapabilityProvider: call checkCtaAgreed =true
+10-11 18:44:16.701  9463  9511 I AiCrEngine_OpenCapabilityCaller: checkCtaAgreed checkCTASwitch=true
+10-11 18:44:16.703  9463 30263 I AIRC_Cognition_CognitionTriggerManager: not in test mode
+10-11 18:44:16.703  1817  3505 I ClipboardServiceI: checkProviderWakePathForClipboard: primaryClip is null
+10-11 18:44:16.706 28900 28910 I AIRC_[Intent]_AssistantContentProvider: call method=triggerEvent, callingPkg=com.xiaomi.aicr
+10-11 18:44:16.706 28900 28910 I AIRC_[Intent]_AbsContentProvider: onCreate
+10-11 18:44:16.708 28900 28922 I MMKV    : <MMKV.cpp:1170::sync> MMKV::sync, SyncFlag = 1
+10-11 18:44:16.709  1817  2947 I ClipboardServiceI: checkProviderWakePathForClipboard: primaryClip is null
+10-11 18:44:16.710 28900 28922 I AIRC_JsonUtils: isJsonFormat failed: jsonStr is empty
+10-11 18:44:16.710 28900 28922 E AIRC_[Intent]_CommHelper: updateGetIntentionInfo failed paramString is not JSON
+10-11 18:44:16.710  9463  9637 I AiCrEngine_DeviceUtils: isSupportIntention isInternationalDevice=false, isFoldDevice=false, isLiteDevice=false
+10-11 18:44:16.710  9463  9637 I AiCrEngine_OpenCapabilityProvider: is support xiao ai capability = true
+10-11 18:44:16.710  9463  9637 I AiCrEngine_DeviceUtils: isSupportIntention isInternationalDevice=false, isFoldDevice=false, isLiteDevice=false
+10-11 18:44:16.710  9463  9637 I AiCrEngine_OpenCapabilityProvider: call capCode=3100, isSupportCapability=true, method=check_cta_agreed, arg=com.xiaomi.aicr
+10-11 18:44:16.711  9463  9637 I AiCrEngine_I_.permissionUtils.checkCTASwitch: checkCTASwitch is 1789238194235
+10-11 18:44:16.711  9463  9637 I AiCrEngine_OpenCapabilityProvider: call checkCtaAgreed =true
+10-11 18:44:16.712 28900 28910 I AiCrEngine_OpenCapabilityCaller: checkCtaAgreed checkCTASwitch=true
+10-11 18:44:16.712 28900 28910 I AIRC_[Intent]_AssistantContentProviderProxy: triggerEvent
+10-11 18:44:16.713 28900 28910 I AIRC_[Intent]_AssistantContentProviderProxy: triggerEvent className=com.xiaomi.aireco.entity.event.PowerChangeEvent
+10-11 18:44:16.713 28900 28910 I AIRC_[Intent]_IntentionModelManager: handleTriggerEvent event:PowerChangeEvent, traceId:fc9051e5707047008fede98396630889
+10-11 18:44:16.714 28900 28910 I AIRC_[Intent]_IntentionModelManager: handleEvent rate:0.1, isSampled:false
+10-11 18:44:16.714 28900 28910 I AIRC_[Intent]_IntentionModelManager: oldActualHandleEvent event=PowerChangeEvent, traceId=fc9051e5707047008fede98396630889, time=1791715456677, 
+10-11 18:44:16.715 28900 28910 I AIRC_[Intent]_MetroCodeReminderIntentionModel: needHandle false checkResult=the event is not LocationStatusChangedEvent
+10-11 18:44:16.715 28900 28910 I AIRC_[Intent]_ScheduleToDayReminderIntentionModel: isScheduleEvent = false , isPullIntentionEvent = false
+10-11 18:44:16.716 28900 28910 I AIRC_[Intent]_BoardingReminderIntentionModel: needHandle startPowerChangeEvent,fc9051e5707047008fede98396630889
+10-11 18:44:16.716 28900 28910 I AIRC_[Intent]_CountDownIntentionModel: needHandle
+10-11 18:44:16.717 28900 28910 I AIRC_[Intent]_ScanIntentionModel: needHandle startPowerChangeEvent,fc9051e5707047008fede98396630889
+10-11 18:44:16.718 28900 28910 I AIRC_[Intent]_ScanIntentionModel: not LocationStatusChangedEvent
+10-11 18:44:16.718 28900 28910 I AIRC_[Intent]_ScanIntentionModel: not GeekEvent
+10-11 18:44:16.719 28900 28910 I AIRC_[Intent]_PowerBankIntentionModel: needHandle 
+10-11 18:44:16.719 28900 28910 I AIRC_[Intent]_PowerBankIntentionModel: hasFrontLocationPermission  =true
+10-11 18:44:16.719 28900 28910 I AIRC_[Intent]_PowerBankIntentionModel: hasBgLocationPermission     =true
+10-11 18:44:16.719 28900 28910 I AIRC_[Intent]_PowerBankIntentionModel: isGPSEnable                 =true
+10-11 18:44:16.719 28900 28910 I AIRC_[Intent]_IntentionRepository:  deleteByInstanceId instanceId=tools.charge.view_power_bank
+10-11 18:44:16.720 28900 28910 I AIRC_[Intent]_IntentionRepository:  deleteByInstanceId instanceId=tools.charge.open_power_saving_mode
+10-11 18:44:16.721 28900 28910 E AIRC_[Intent]_IntentionModelManager: handleModelEvent execute fail PowerBankIntentionModel, error=Device is charging
+10-11 18:44:16.722 28900 28910 I AIRC_[Intent]_IntentionModelManager: afterHandleModelEvent modelCostTime=8
+10-11 18:44:16.722 28900 28910 I AIRC_[Intent]_IntentionModelManager: afterHandleModelEvent runResult={"MetroCodeReminderIntentionModel":"not handle nTime=0","MetroCodeEduIntentionModel":"not handle nTime=0","ParkAsstReminderIntentionModel":"not handle nTime=0","ParkAsstGetOffIntentionModel":"not handle nTime=0","ScheduleToDayReminderIntentionModel":"not handle nTime=1","ScheduleTomorrowReminderIntentionModel":"not handle nTime=0","ScheduleEnterCompanyReminderIntentionModel":"not handle nTime=0","ScheduleEnterHomeReminderIntentionModel":"not handle nTime=0","ScheduleOffWorkReminderIntentionModel":"not handle nTime=0","ScheduleToWorkReminderIntentionModel":"not handle nTime=0","ScheduleEducationReminderIntentionModel":"not handle nTime=0","BoardingReminderIntentionModel":"not handle nTime=0","CountDownIntentionModel":"not handle nTime=1","MyBirthdayIntentionModel":"not handle nTime=0","OtherBirthdayIntentModel":"not handle nTime=0","AnniversaryIntentModel":"not handle nTime=0","ScanIntentionModel":"not handle nTime=1","TravelEducationIntentionModel":"not handle nTime=0","ListenAudioIntentionModel":"not handle nTime=0","PowerBankIntentionModel":"fail error='Device is charging', nTime=1 bTime=2"}
+10-11 18:44:16.723  9463  9637 I AiCrEngine_DeviceUtils: isSupportIntention isInternationalDevice=false, isFoldDevice=false, isLiteDevice=false
+10-11 18:44:16.723  9463  9637 I AiCrEngine_OpenCapabilityProvider: is support xiao ai capability = true
+10-11 18:44:16.724  9463  9637 I AiCrEngine_DeviceUtils: isSupportIntention isInternationalDevice=false, isFoldDevice=false, isLiteDevice=false
+10-11 18:44:16.724  9463  9637 I AiCrEngine_OpenCapabilityProvider: call capCode=3100, isSupportCapability=true, method=check_cta_agreed, arg=com.xiaomi.aicr
+10-11 18:44:16.724  9463  9637 I AiCrEngine_I_.permissionUtils.checkCTASwitch: checkCTASwitch is 1789238194235
+10-11 18:44:16.724  9463  9637 I AiCrEngine_OpenCapabilityProvider: call checkCtaAgreed =true
+10-11 18:44:16.725 28900 28910 I AiCrEngine_OpenCapabilityCaller: checkCtaAgreed checkCTASwitch=true
+10-11 18:44:16.726 28900 28926 I AIRC_[FN]_NotModelMG: handleNotificationEvent traceId=fc9051e5707047008fede98396630889, time=1791715456677, eventName=PowerChangeEvent
+10-11 18:44:16.726 28900 28910 I AIRC_[Intent]_IntentionModule: getAssistMethodCloudConfig cloudConfig is [getIntentionData]
+10-11 18:44:16.726 28900 28926 I AIRC_[FN]_NotModelMG: actualHandleNotificationEvent notifyModelEnable=true
+10-11 18:44:16.726 28900 28926 I AIRC_[FN]_MetroMD: needHandle false, metro not open!
+10-11 18:44:16.727 28900 28926 I AIRC_[FN]_NotModelMG: actualHandleNotificationEvent service=MetroMD, needHandle=false
+10-11 18:44:16.727  9463  9637 I AIRC_Cognition: triggerEvent code=0, message=success
+10-11 18:44:16.727 28900 28926 I AIRC_[FN]_NotModelMG: actualHandleNotificationEvent service=MovieMD, needHandle=false
+10-11 18:44:16.727 28900 28926 I AIRC_[FN]_NotECompMD: needHandle false not LocationStatusChangedEvent
+10-11 18:44:16.728 28900 28926 I AIRC_[FN]_NotModelMG: actualHandleNotificationEvent service=NotECompMD, needHandle=false
+10-11 18:44:16.728 28900 28926 I AIRC_[FN]_NotEHomeMD: needHandle false not LocationStatusChangedEvent
+10-11 18:44:16.729 28900 28926 I AIRC_[FN]_NotModelMG: actualHandleNotificationEvent service=NotEHomeMD, needHandle=false
+10-11 18:44:16.729 28900 28926 I AIRC_[FN]_NotCompMD: needHandle false not LocationStatusChangedEvent
+10-11 18:44:16.729 28900 28926 I AIRC_[FN]_NotModelMG: actualHandleNotificationEvent service=NotCompMD, needHandle=false
+10-11 18:44:16.730 28900 28926 I AIRC_[FN]_NotLHomeMD: needHandle false not LocationStatusChangedEvent
+10-11 18:44:16.730 28900 28926 I AIRC_[FN]_NotModelMG: actualHandleNotificationEvent service=NotLHomeMD, needHandle=false
+10-11 18:44:16.731 28900 28926 I AIRC_[FN]_absNoFT: filterByTime delete by endTime : []
+10-11 18:44:16.732 28900 28926 I AIRC_[FN]_absNoFT: filterByFeature delete by feature : []
+10-11 18:44:16.733 28900 28926 I AIRC_[FN]_absNoFT: onPostFilter isAtHomeAccurate:true
+10-11 18:44:16.734 28900 28926 I AIRC_[FN]_absNoFT: filterByHome delete by Home : []
+10-11 18:44:16.734 28900 28926 I AIRC_[FN]_absNoFT: onPostFilter isAtCompanyAccurate:false
+10-11 18:44:16.735 28900 28926 I AIRC_[FN]_absNoFT: filterByCompany delete by Company : []
+10-11 18:44:16.736 28900 28926 I AIRC_[FN]_NotIntentMG: sendNotifyIntentList 
+10-11 18:44:16.736 28900 28926 I AIRC_Utils: isSupportIntention isInternationalDevice=false, isFoldDevice=false, isLiteDevice=false
+10-11 18:44:16.737 28900 28926 I AIRC_Utils: overOS1 osVersionCode:3
+10-11 18:44:16.737 28900 28926 I AIRC_Utils: isSupportNotify true
+10-11 18:44:16.738 28900 28926 I AIRC_[FN]_NotRepo:  queryOrderByStartTime
+10-11 18:44:16.738 28900 28926 I AIRC_[FN]_NotIntentMG: sendNotifyIntentList postFilteredNotifications:
+10-11 18:44:16.739 28900 28926 I AIRC_FocusNotifyStatistic: sendIntentionStatistics intentStaticsData.requestId is empty. don't track
+10-11 18:44:16.739 28900 28926 W AIRC_[FN]_F[Int]DP: observeFocusEvent size= 0
+10-11 18:44:16.740 28900 28926 I AIRC_[FN]_F[Int]DP: dispatchEvent received 
+10-11 18:44:16.740 28900 28926 I AIRC_[FN]_FNMG: ensureDeleteNotify
+10-11 18:44:16.741 28900 28926 I AIRC_[FN]_Slot-991: dismissSelf=991
+10-11 18:44:16.741 28900 28926 I AIRC_[FN]_FNMG: createNotificationTag tag=##
+10-11 18:44:16.742 28900 28926 I AIRC_[FN]_Slot-991: cancel notify=991
+10-11 18:44:16.743 28900 28926 W AIRC_[FN]_Slot-991: clearIntentInfo
+10-11 18:44:16.743 28900 28926 I AIRC_[FN]_Slot-992: dismissSelf=992
+10-11 18:44:16.744 28900 28926 I AIRC_[FN]_FNMG: createNotificationTag tag=##
+10-11 18:44:16.744 28900 28926 I AIRC_[FN]_Slot-992: cancel notify=992
+10-11 18:44:16.745 28900 28926 W AIRC_[FN]_Slot-992: clearIntentInfo
+10-11 18:44:16.755  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.77 dur=1019.87 max=27.91 min=6.74
+10-11 18:44:16.857 26078 26254 D AudioTrack: [audioTrackData][zero] 20s(f:33041 m:0 s:0 k:0 z:20000) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:16.962  2693  2693 D NotificationHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:17.324  9463 11184 D JavaheapMonitor: Java heap used=6M max=512M, proc: com.xiaomi.aicr:cognitionService
+10-11 18:44:17.324  9463 11184 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:17.358  1817  2904 D SLM-SRV-SLAService: checktemp temperature = 36759 temperature_average = 36771 isPerformanceMode = false thermal_enable_slm = true
+10-11 18:44:17.444 19809 19991 D JavaheapMonitor: Java heap used=8M max=256M, proc: com.android.vending
+10-11 18:44:17.444 19809 19991 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:17.515   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:70.544090,dur:1006.46,max:26.62,min:6.39  
+10-11 18:44:17.596   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:17.596   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:17.632  3997  6977 D JavaheapMonitor: Java heap used=7M max=256M, proc: com.mediatek.voicecommand
+10-11 18:44:17.632  3997  6977 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:17.668 26078 26281 W BatteryInfo: Battery left: 0 current: 18000.0
+10-11 18:44:17.668 26078 26281 D BatteryInfo: Current batter: -18000.0
+10-11 18:44:17.724  1817  2246 D MiuiNM  : tcp fail rate reach: 100
+10-11 18:44:17.725  1817  2246 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1260 android.content.ContextWrapper.sendBroadcast:522 com.android.server.wifi.MiuiNetworkMonitor.sendBroadcastForNetwork:752 com.android.server.wifi.MiuiNetworkMonitor.notifyNetworkWarning:693 com.android.server.wifi.MiuiNetworkMonitor.evaluateNetworkQoE:624 
+10-11 18:44:17.753  1817  2236 I MiuiNetworkPolicy: bandwidth: 0 KB/s, Max bandwidth: 1310 KB/s
+10-11 18:44:17.775  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=60.81 dur=1019.64 max=26.96 min=6.78
+10-11 18:44:17.860 26078 26254 D AudioTrack: [audioTrackData][zero] 21s(f:33041 m:0 s:0 k:0 z:21003) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:18.360  1817  3113 I NetworkAccelerateSwitchService: EVENT_RSSI_POLL. mRssiPoll=true
+10-11 18:44:18.363   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:18.363   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:18.363   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:18.377   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:18.377   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:18.377   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:18.377   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:18.377   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:18.380  1817  3113 E MiuiWifiService: exception:java.lang.ArrayIndexOutOfBoundsException: length=20; index=48
+10-11 18:44:18.380  1817  3113 I NetworkAccelerateSwitchService: checkWifiRssiAndLinkSpeed mWifiFastFade:false mWifiFastFadeAdjustThreshold:false
+10-11 18:44:18.381  1817  3113 I NetworkAccelerateSwitchService: getAverageWifiRssi:54
+10-11 18:44:18.381  1817  3113 D NetworkAccelerateSwitchService: checkIntervalModeChange mMovementState:false mIntervalMode:0 mIsBadLinkLayerQoE:false mBadLinkLayerQoETimes = 0
+10-11 18:44:18.388   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:18.388   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:18.388   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:18.395   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:18.395   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:18.395   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:18.395   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:18.395   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:18.405  1440  1440 I wificond: station_bandwidth: 
+10-11 18:44:18.406  1817  2238 D MiuiWifiCommonBase: band: 1, compensate: 0
+10-11 18:44:18.409  1817 31537 D WifiScoreReportInjector: mCcaBusyRate change to 5; mBeaconLostRate change to 73
+10-11 18:44:18.411  2662  3529 E PhoneInterfaceManager: getServiceStateForSlot retuning null for invalid slotIndex=-1
+10-11 18:44:18.412  1817  2238 D WifiScoreReportInjector: isMobileDataSiganlPoor signalStrength or serviceState is null
+10-11 18:44:18.528   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:61.205502,dur:1012.98,max:22.36,min:6.26  
+10-11 18:44:18.596   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:18.597   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:18.598  1817  2322 I SmartPower: com.miui.voicetrigger/10129(5085): background->idle(3001ms) R(broadcast start Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }) adj=200.
+10-11 18:44:18.611  1817  2322 I SmartPower: com.xiaomi.market/10152(13313): background->idle(3007ms) R(broadcast start Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }) adj=905.
+10-11 18:44:18.614  1817  2322 I SmartPower: com.google.android.gms/10119(11837): background->idle(3009ms) R(broadcast start Intent { act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras) }) adj=100.
+10-11 18:44:18.788  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.21 dur=1012.87 max=21.67 min=6.84
+10-11 18:44:18.858 26078 26254 D AudioTrack: [audioTrackData][zero] 22s(f:33041 m:0 s:0 k:0 z:22000) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:18.975  2693  2693 D NotificationHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:18.995  1063  1063 I BufferQueueProducer: [StatusBar#110](this:0xb40000733d65bdb8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=21.55 dur=2783.85 max=2018.97 min=6.41
+10-11 18:44:19.016 26078 26133 D Cocos2dxActivity: Perfmate insertGameInfo upload callBack: true
+10-11 18:44:19.019 26078 26279 W System.err: java.lang.NullPointerException: Attempt to get length of null array
+10-11 18:44:19.019 26078 26279 W System.err: 	at v7y8.xc5v.fj32(CpuTools.java:14)
+10-11 18:44:19.019 26078 26279 W System.err: 	at v7y8.d5te.run(DataMakeTools.java:62)
+10-11 18:44:19.019 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1291)
+10-11 18:44:19.020 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:670)
+10-11 18:44:19.020 26078 26279 W System.err: 	at java.lang.Thread.run(Thread.java:1012)
+10-11 18:44:19.022  1817  3505 D FileUtils: Rounded bytes from 7849676800 to 8000000000
+10-11 18:44:19.156 20135 20187 D JavaheapMonitor: Java heap used=4M max=256M, proc: com.miui.misightservice
+10-11 18:44:19.156 20135 20187 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:19.307  5815  6191 D JavaheapMonitor: Java heap used=28M max=256M, proc: com.miui.powerkeeper
+10-11 18:44:19.308  5815  6191 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:19.400  1817  3505 D GreezeManager: Uid 10303 is using audio or GPS client:10304
+10-11 18:44:19.533   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:62.643394,dur:1005.69,max:22.11,min:6.16  
+10-11 18:44:19.588 28900 29016 D JavaheapMonitor: Java heap used=6M max=512M, proc: com.xiaomi.aicr
+10-11 18:44:19.589 28900 29016 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:19.596   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:19.596   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:19.609   983  1033 I libPowerHal: perfUserScnCheckAll
+10-11 18:44:19.610   983  1033 I libPowerHal: perfScnDumpAll cmd:0
+10-11 18:44:19.610   983  1033 I libPowerHal: ========================
+10-11 18:44:19.610   983  1033 I libPowerHal: MTKPOWER_HINT_AUDIO_POWER_DL - freq:800000, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: MTKPOWER_HINT_AUDIO_POWER_DL - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: MTKPOWER_HINT_AUDIO_POWER_DL - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: MTKPOWER_HINT_AUDIO_POWER_DL - gpu freq min:-1, max:-1, scn_action:1
+10-11 18:44:19.610   983  1033 I libPowerHal: MTKPOWER_HINT_AUDIO_POWER_SPK - freq:1200000, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: MTKPOWER_HINT_AUDIO_POWER_SPK - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: MTKPOWER_HINT_AUDIO_POWER_SPK - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: MTKPOWER_HINT_AUDIO_POWER_SPK - gpu freq min:-1, max:-1, scn_action:1
+10-11 18:44:19.610   983  1033 I libPowerHal: fpsgo - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: fpsgo - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: fpsgo - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: fpsgo - gpu freq min:-1, max:-1, scn_action:0
+10-11 18:44:19.610   983  1033 I libPowerHal: fpsgo cmd:1404500 param:1
+10-11 18:44:19.610   983  1033 I libPowerHal: fpsgo - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: fpsgo - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: fpsgo - freq:-1, -1, HL:-1, -1
+10-11 18:44:19.610   983  1033 I libPowerHal: fpsgo - gpu freq min:-1, max:-1, scn_action:0
+10-11 18:44:19.610   983  1033 I libPowerHal: ========================
+10-11 18:44:19.732 20801 21855 D JavaheapMonitor: Java heap used=10M max=256M, proc: com.xiaomi.xmsf
+10-11 18:44:19.732 20801 21855 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:19.794  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.63 dur=1006.06 max=21.59 min=12.90
+10-11 18:44:19.823 12518 14050 D JavaheapMonitor: Java heap used=6M max=256M, proc: com.android.htmlviewer:remote
+10-11 18:44:19.823 12518 14050 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:19.861 26078 26254 D AudioTrack: [audioTrackData][zero] 23s(f:33041 m:0 s:0 k:0 z:23003) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:20.553   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:60.782990,dur:1020.02,max:27.75,min:5.71  
+10-11 18:44:20.597   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:20.597   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:20.733  1817  2246 D MiuiNM  : tcp fail rate reach: 100
+10-11 18:44:20.759  1817  2236 I MiuiNetworkPolicy: bandwidth: 0 KB/s, Max bandwidth: 1310 KB/s
+10-11 18:44:20.800  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=60.61 dur=1006.47 max=27.68 min=6.61
+10-11 18:44:20.859 26078 26254 D AudioTrack: [audioTrackData][zero] 24s(f:33041 m:0 s:0 k:0 z:24001) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:20.974  2693  2693 D NotificationHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:20.986  1063  1063 I BufferQueueProducer: [StatusBar#110](this:0xb40000733d65bdb8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=1.00 dur=1991.31 max=1984.31 min=7.00
+10-11 18:44:21.313 27583 30979 D JavaheapMonitor: Java heap used=6M max=256M, proc: com.google.android.gms.unstable
+10-11 18:44:21.313 27583 30979 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:21.384  1817  3113 I NetworkAccelerateSwitchService: EVENT_RSSI_POLL. mRssiPoll=true
+10-11 18:44:21.388   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:21.388   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:21.388   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:21.403   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:21.403   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:21.403   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:21.403   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:21.403   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:21.405  1817  3113 E MiuiWifiService: exception:java.lang.ArrayIndexOutOfBoundsException: length=20; index=48
+10-11 18:44:21.405  1817  3113 I NetworkAccelerateSwitchService: checkWifiRssiAndLinkSpeed mWifiFastFade:false mWifiFastFadeAdjustThreshold:false
+10-11 18:44:21.405  1817  3113 I NetworkAccelerateSwitchService: getAverageWifiRssi:55
+10-11 18:44:21.406  1817  3113 D NetworkAccelerateSwitchService: checkIntervalModeChange mMovementState:false mIntervalMode:0 mIsBadLinkLayerQoE:false mBadLinkLayerQoETimes = 0
+10-11 18:44:21.419   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:21.420   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:21.420   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:21.423   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:21.423   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:21.423   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:21.423   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:21.423   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:21.435  1440  1440 I wificond: station_bandwidth: 
+10-11 18:44:21.436  1817  2238 D MiuiWifiCommonBase: band: 1, compensate: 0
+10-11 18:44:21.439  1817 31537 D WifiScoreReportInjector: mCcaBusyRate change to 5; mBeaconLostRate change to 73
+10-11 18:44:21.442  2662  3529 E PhoneInterfaceManager: getServiceStateForSlot retuning null for invalid slotIndex=-1
+10-11 18:44:21.442  1817  2238 D WifiScoreReportInjector: isMobileDataSiganlPoor signalStrength or serviceState is null
+10-11 18:44:21.447  1817  2901 I NetworkBoostStatusManager: handle: 102
+10-11 18:44:21.448  1817  2901 I NetworkBoostStatusManager: interfaceOnCapabilitiesChanged interface name:wlan0
+10-11 18:44:21.459  5932  6099 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+10-11 18:44:21.459  5932  6099 I JoyoseCloudControlManager3: network metered changed, network metered: false, deviceProvisioned: true, scAllowConn: false, try to setNetworkAccessEnabled: false
+10-11 18:44:21.460  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged Cellular
+10-11 18:44:21.460  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged WIFI isPrimary = true
+10-11 18:44:21.461  3031  7368 I IDMManager: onCapabilitiesChanged: network is 103
+10-11 18:44:21.461  3031  7368 I IDMManager: network is not MiuiCarSoftAp
+10-11 18:44:21.462  5059  5153 I NetBusNetworkMonitor: gateway=192.$)+.$%'.1
+10-11 18:44:21.475  5059  5153 I NetBusNetworkMonitor: addConnectNetworkInterface mediumType:256, detail:NetworkDetailInfo{mIsConnected=false, mIsSupportTdls=true, mNetworkType=0, mIpAddress=192.$)+.$%'.139, mIfName=wlan0, mGateway=192.$)+.$%'.1, mNetmask=255.%((.%((.0, mSsid=2**5G}
+10-11 18:44:21.475  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged WIFI handle=445787328525, mediumType=256, ifName=wlan0
+10-11 18:44:21.493  1817  2253 D ConnectivityServiceImpl: teardown wifi type 1 state: CONNECTED primary: true
+10-11 18:44:21.493  1817  2253 D ConnectivityServiceImpl: nai type 1 state: CONNECTED primary: true
+10-11 18:44:21.496  1817  2253 D ConnectivityServiceImpl: teardown wifi type 1 state: CONNECTED primary: true
+10-11 18:44:21.496  1817  2253 D ConnectivityServiceImpl: nai type 1 state: CONNECTED primary: true
+10-11 18:44:21.498 11837 15441 I NearbyMediums: Wifi changed new SSID: "2801_5G"
+10-11 18:44:21.498 11837 15441 I NearbyMediums: WifiLanConnectivityInfo is not changed, skip notify.
+10-11 18:44:21.499  1817  2253 D ConnectivityService: NetReassign [no changes] [c 1] [a 2] [i 3]
+10-11 18:44:21.566   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:62.201244,dur:1012.84,max:22.21,min:6.07  
+10-11 18:44:21.597   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:21.597   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:21.675 26078 26281 W BatteryInfo: Battery left: 0 current: -7000.0
+10-11 18:44:21.675 26078 26281 D BatteryInfo: Current batter: 7000.0
+10-11 18:44:21.808   888  1080 D JavaheapMonitor: Java heap used=5M max=512M, proc: com.android.bluetooth
+10-11 18:44:21.809   888  1080 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:21.813  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.24 dur=1012.48 max=21.51 min=6.84
+10-11 18:44:21.860 26078 26254 D AudioTrack: [audioTrackData][zero] 25s(f:33041 m:0 s:0 k:0 z:25003) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:22.353 26078 26133 D Cocos2dxActivity: Perfmate insertGameInfo upload callBack: true
+10-11 18:44:22.354 26078 26279 W System.err: java.io.FileNotFoundException: shiyue_channel_config.properties
+10-11 18:44:22.355 26078 26279 W System.err: 	at android.content.res.AssetManager.nativeOpenAsset(Native Method)
+10-11 18:44:22.355 26078 26279 W System.err: 	at android.content.res.AssetManager.open(AssetManager.java:1021)
+10-11 18:44:22.355 26078 26279 W System.err: 	at android.content.res.AssetManager.open(AssetManager.java:998)
+10-11 18:44:22.355 26078 26279 W System.err: 	at com.sy.perfermence.utils.ttre.OvOTVT(CommonUtil.java:4)
+10-11 18:44:22.355 26078 26279 W System.err: 	at v7y8.ttre.OvOTVT(DataMakeTools.java:193)
+10-11 18:44:22.355 26078 26279 W System.err: 	at v7y8.d5te.run(DataMakeTools.java:29)
+10-11 18:44:22.355 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1291)
+10-11 18:44:22.356 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:670)
+10-11 18:44:22.356 26078 26279 W System.err: 	at java.lang.Thread.run(Thread.java:1012)
+10-11 18:44:22.356 26078 26279 W System.err: java.io.FileNotFoundException: shiyue_channel_config.properties
+10-11 18:44:22.356 26078 26279 W System.err: 	at android.content.res.AssetManager.nativeOpenAsset(Native Method)
+10-11 18:44:22.357 26078 26279 W System.err: 	at android.content.res.AssetManager.open(AssetManager.java:1021)
+10-11 18:44:22.357 26078 26279 W System.err: 	at android.content.res.AssetManager.open(AssetManager.java:998)
+10-11 18:44:22.357 26078 26279 W System.err: 	at com.sy.perfermence.utils.ttre.OvOTVT(CommonUtil.java:4)
+10-11 18:44:22.357 26078 26279 W System.err: 	at v7y8.ttre.OvOTVT(DataMakeTools.java:206)
+10-11 18:44:22.357 26078 26279 W System.err: 	at v7y8.d5te.run(DataMakeTools.java:29)
+10-11 18:44:22.357 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1291)
+10-11 18:44:22.357 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:670)
+10-11 18:44:22.358 26078 26279 W System.err: 	at java.lang.Thread.run(Thread.java:1012)
+10-11 18:44:22.359 26078 26279 W System.err: java.lang.NullPointerException: Attempt to get length of null array
+10-11 18:44:22.359 26078 26279 W System.err: 	at v7y8.xc5v.fj32(CpuTools.java:14)
+10-11 18:44:22.360 26078 26279 W System.err: 	at v7y8.d5te.run(DataMakeTools.java:62)
+10-11 18:44:22.360 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1291)
+10-11 18:44:22.360 26078 26279 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:670)
+10-11 18:44:22.360 26078 26279 W System.err: 	at java.lang.Thread.run(Thread.java:1012)
+10-11 18:44:22.362  1817  2972 D FileUtils: Rounded bytes from 7849676800 to 8000000000
+10-11 18:44:22.381 11837 11955 W AOSP-MdnsDiscoveryManag: Error while decoding multicast packet (24546): 1 [CONTEXT service_id=168 ]
+10-11 18:44:22.586   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:60.791153,dur:1019.89,max:22.11,min:12.44  
+10-11 18:44:22.597   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:22.597   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:60
+10-11 18:44:22.724 26078 26078 I sqsdk   : common sgin: signStr :dev=231f5f9a6f4a4f00fea72b0b5f89fba3from=androidgid=1012517gwversion=1.6.8pid=17refer=sy00000_1sversion=3.6.4time=1791715462version=1.3.8DNB*qyVE3CdPuj/kbO1iJTX4rRIM6wzl
+10-11 18:44:22.725 26078 26078 I sqsdk   : 生成的随机数为：q3ZmHCJi0iG006NJ
+10-11 18:44:22.726 26078 26078 I ActivityLifeCycleUtils: appCount:1
+10-11 18:44:22.734 26078 26078 I sqsdk   : common sgin: signStr :dev=231f5f9a6f4a4f00fea72b0b5f89fba3from=androidgid=1012517gwversion=1.6.8pid=17refer=sy00000_1sversion=3.6.4time=1791715462version=1.3.8DNB*qyVE3CdPuj/kbO1iJTX4rRIM6wzl
+10-11 18:44:22.735 26078 26078 I sqsdk   : 生成的随机数为：F41Uat609rq0m05O
+10-11 18:44:22.735 26078 26078 I ActivityLifeCycleUtils: appCount:1
+10-11 18:44:22.736 26078 26180 W NO_TAG  : 【Dns】beian-game-report.akbkgame.com既不在保护域名列表也不在主域保护列表中, 无法解析
+10-11 18:44:22.737 26078 26180 I ActivityLifeCycleUtils: appCount:1
+10-11 18:44:22.739 26078 26180 I sqsdk   : 生成的随机数为：a20pXCHlXA153kD2
+10-11 18:44:22.743 26078 26181 W NO_TAG  : 【Dns】beian-game-report.95k.com既不在保护域名列表也不在主域保护列表中, 无法解析
+10-11 18:44:22.744 26078 26181 I ActivityLifeCycleUtils: appCount:1
+10-11 18:44:22.747 26078 26181 I sqsdk   : 生成的随机数为：zTUmZN1o0A6BHb19
+10-11 18:44:22.826  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.19 dur=1013.16 max=21.51 min=13.07
+10-11 18:44:22.858 26078 26254 D AudioTrack: [audioTrackData][zero] 26s(f:33041 m:0 s:0 k:0 z:26001) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:22.987  2693  2693 D NotificationHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:23.005  1063  1063 I BufferQueueProducer: [StatusBar#110](this:0xb40000733d65bdb8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=0.99 dur=2018.75 max=2011.23 min=7.52
+10-11 18:44:23.412  6689  6897 D JavaheapMonitor: Java heap used=10M max=256M, proc: com.android.vending:background
+10-11 18:44:23.412  6689  6897 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:23.534  1817  1991 D BatteryStatsImpl: status:2, plugType:1, level:100, chargeUah:3820000
+10-11 18:44:23.535  1817  1991 D BatteryStatsImpl: mOnBattery:false, mBatteryChargeUah:3820000, mBatteryStatus:2
+10-11 18:44:23.544  1817  1991 D BatteryStatsImpl: status:2, plugType:1, level:100, chargeUah:3820000
+10-11 18:44:23.544  1817  1991 D BatteryStatsImpl: mOnBattery:false, mBatteryChargeUah:3820000, mBatteryStatus:2
+10-11 18:44:23.592   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:62.637413,dur:1005.79,max:21.70,min:6.19  
+10-11 18:44:23.597   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:23.598   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:23.740  1817  2246 D MiuiNM  : tcp fail rate reach: 100
+10-11 18:44:23.740  1817  2246 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1260 android.content.ContextWrapper.sendBroadcast:522 com.android.server.wifi.MiuiNetworkMonitor.sendBroadcastForNetwork:752 com.android.server.wifi.MiuiNetworkMonitor.notifyNetworkWarning:693 com.android.server.wifi.MiuiNetworkMonitor.evaluateNetworkQoE:624 
+10-11 18:44:23.763  1817  2236 I MiuiNetworkPolicy: bandwidth: 0 KB/s, Max bandwidth: 1310 KB/s
+10-11 18:44:23.804  1817  2901 I NetworkBoostStatusManager: handle: 107
+10-11 18:44:23.806  2662  8883 E PhoneInterfaceManager: getServiceStateForSlot retuning null for invalid slotIndex=-1
+10-11 18:44:23.807  1817  2901 D NetworkBoostStatusManager: isModemSingnalStrengthStatus signalStrength or serviceState is null
+10-11 18:44:23.838  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.23 dur=1012.61 max=21.36 min=6.72
+10-11 18:44:23.860 26078 26254 D AudioTrack: [audioTrackData][zero] 27s(f:33041 m:0 s:0 k:0 z:27003) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:24.244  2629 10903 D JavaheapMonitor: Java heap used=4M max=256M, proc: com.mediatek.ims
+10-11 18:44:24.244  2629 10903 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:24.409  1817  3113 I NetworkAccelerateSwitchService: EVENT_RSSI_POLL. mRssiPoll=true
+10-11 18:44:24.414   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:24.414   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:24.414   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:24.422  1817  2972 D GreezeManager: Uid 10303 is using audio or GPS client:10304
+10-11 18:44:24.430   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:24.430   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:24.430   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:24.430   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:24.430   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:24.432  1817  3113 E MiuiWifiService: exception:java.lang.ArrayIndexOutOfBoundsException: length=20; index=48
+10-11 18:44:24.432  1817  3113 I NetworkAccelerateSwitchService: checkWifiRssiAndLinkSpeed mWifiFastFade:false mWifiFastFadeAdjustThreshold:false
+10-11 18:44:24.432  1817  3113 I NetworkAccelerateSwitchService: getAverageWifiRssi:55
+10-11 18:44:24.433  1817  3113 D NetworkAccelerateSwitchService: checkIntervalModeChange mMovementState:false mIntervalMode:0 mIsBadLinkLayerQoE:false mBadLinkLayerQoETimes = 0
+10-11 18:44:24.448   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:24.448   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:24.448   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:24.463   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:24.463   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:24.463   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:24.463   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:24.463   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:24.472  1440  1440 I wificond: station_bandwidth: 
+10-11 18:44:24.473  1817  2238 D MiuiWifiCommonBase: band: 1, compensate: 0
+10-11 18:44:24.475  1817 31537 D WifiScoreReportInjector: mCcaBusyRate change to 5; mBeaconLostRate change to 80
+10-11 18:44:24.477  2662  8883 E PhoneInterfaceManager: getServiceStateForSlot retuning null for invalid slotIndex=-1
+10-11 18:44:24.478  1817  2238 D WifiScoreReportInjector: isMobileDataSiganlPoor signalStrength or serviceState is null
+10-11 18:44:24.482  1817  2901 I NetworkBoostStatusManager: handle: 102
+10-11 18:44:24.482  1817  2901 I NetworkBoostStatusManager: interfaceOnCapabilitiesChanged interface name:wlan0
+10-11 18:44:24.491  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged Cellular
+10-11 18:44:24.492  5932  6099 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+10-11 18:44:24.493  5932  6099 I JoyoseCloudControlManager3: network metered changed, network metered: false, deviceProvisioned: true, scAllowConn: false, try to setNetworkAccessEnabled: false
+10-11 18:44:24.495  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged WIFI isPrimary = true
+10-11 18:44:24.495  3031  7368 I IDMManager: onCapabilitiesChanged: network is 103
+10-11 18:44:24.497  3031  7368 I IDMManager: network is not MiuiCarSoftAp
+10-11 18:44:24.498  5059  5153 I NetBusNetworkMonitor: gateway=192.$)+.$%'.1
+10-11 18:44:24.510  5059  5153 I NetBusNetworkMonitor: addConnectNetworkInterface mediumType:256, detail:NetworkDetailInfo{mIsConnected=false, mIsSupportTdls=true, mNetworkType=0, mIpAddress=192.$)+.$%'.139, mIfName=wlan0, mGateway=192.$)+.$%'.1, mNetmask=255.%((.%((.0, mSsid=2**5G}
+10-11 18:44:24.510  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged WIFI handle=445787328525, mediumType=256, ifName=wlan0
+10-11 18:44:24.525  1817  2253 D ConnectivityServiceImpl: teardown wifi type 1 state: CONNECTED primary: true
+10-11 18:44:24.525  1817  2253 D ConnectivityServiceImpl: nai type 1 state: CONNECTED primary: true
+10-11 18:44:24.528  1817  2253 D ConnectivityServiceImpl: teardown wifi type 1 state: CONNECTED primary: true
+10-11 18:44:24.528  1817  2253 D ConnectivityServiceImpl: nai type 1 state: CONNECTED primary: true
+10-11 18:44:24.529 11837 15441 I NearbyMediums: Wifi changed new SSID: "2801_5G"
+10-11 18:44:24.530 11837 15441 I NearbyMediums: WifiLanConnectivityInfo is not changed, skip notify.
+10-11 18:44:24.530  1817  2253 D ConnectivityService: NetReassign [no changes] [c 0] [a 2] [i 3]
+10-11 18:44:24.595  1817  1991 D BatteryStatsImpl: status:2, plugType:1, level:100, chargeUah:3820000
+10-11 18:44:24.595  1817  1991 D BatteryStatsImpl: mOnBattery:false, mBatteryChargeUah:3820000, mBatteryStatus:2
+10-11 18:44:24.598   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:24.598   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:24.607  1817  1991 D BatteryStatsImpl: status:2, plugType:1, level:100, chargeUah:3820000
+10-11 18:44:24.607  1817  1991 D BatteryStatsImpl: mOnBattery:false, mBatteryChargeUah:3820000, mBatteryStatus:2
+10-11 18:44:24.612   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:60.748962,dur:1020.59,max:28.11,min:6.19  
+10-11 18:44:24.843  5815  5893 I iui.powerkeeper: This is non sticky GC, maxfree is 8388608 minfree is 2097152
+10-11 18:44:24.844  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.63 dur=1005.95 max=27.50 min=6.61
+10-11 18:44:24.857 26078 26254 D AudioTrack: [audioTrackData][zero] 28s(f:33041 m:0 s:0 k:0 z:28000) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:24.991  2693  2693 D NotificationHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:25.010  1063  1063 I BufferQueueProducer: [StatusBar#110](this:0xb40000733d65bdb8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=1.00 dur=2005.12 max=1998.14 min=6.98
+10-11 18:44:25.187   955  1129 D [BT]    : mtk_bt_op: BT_VND_OP_LPM_WAKE_SET_STATE
+10-11 18:44:25.422  1817  2168 W ActivityManagerServiceImpl: Sending non-protected broadcast miui.intent.action.CYCLE_CHECK from system uid 1000 pkg android
+10-11 18:44:25.430  1817  1934 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.xiaomi.hardware.micharge@1.0::IMiCharge/default
+10-11 18:44:25.431  1000  9025 I vendor.xiaomi.hardware.micharge@1.0-service: ReadFilePathValue path = /sys/class/power_supply/battery/temp value = 367
+10-11 18:44:25.437  1817  1934 I android_os_HwBinder: HwBinder: Starting thread pool for getting: vendor.xiaomi.hardware.micharge@1.0::IMiCharge/default
+10-11 18:44:25.437  1000  9025 I vendor.xiaomi.hardware.micharge@1.0-service: ReadFilePathValue path = /sys/class/power_supply/battery/charge_control_limit value = 8
+10-11 18:44:25.598   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:25.598   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:25.632   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:62.797287,dur:1019.15,max:21.90,min:6.20  
+10-11 18:44:25.681 26078 26281 W BatteryInfo: Battery left: 0 current: -61000.0
+10-11 18:44:25.682 26078 26281 D BatteryInfo: Current batter: 61000.0
+10-11 18:44:25.698 26078 26133 D Cocos2dxActivity: Perfmate insertGameInfo upload callBack: true
+10-11 18:44:25.701 26078 26288 W System.err: java.lang.NullPointerException: Attempt to get length of null array
+10-11 18:44:25.701 26078 26288 W System.err: 	at v7y8.xc5v.fj32(CpuTools.java:14)
+10-11 18:44:25.701 26078 26288 W System.err: 	at v7y8.d5te.run(DataMakeTools.java:62)
+10-11 18:44:25.702 26078 26288 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1291)
+10-11 18:44:25.702 26078 26288 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:670)
+10-11 18:44:25.702 26078 26288 W System.err: 	at java.lang.Thread.run(Thread.java:1012)
+10-11 18:44:25.704  1817 11056 D FileUtils: Rounded bytes from 7849676800 to 8000000000
+10-11 18:44:25.860 26078 26254 D AudioTrack: [audioTrackData][zero] 29s(f:33041 m:0 s:0 k:0 z:29003) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:25.865  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=59.78 dur=1020.36 max=27.64 min=6.84
+10-11 18:44:26.060  9381 11601 D JavaheapMonitor: Java heap used=9M max=256M, proc: com.miui.analytics
+10-11 18:44:26.062  9381 11601 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:26.197  3900  4541 D JavaheapMonitor: Java heap used=6M max=256M, proc: com.miui.daemon
+10-11 18:44:26.198  3900  4541 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:26.298   888  1224 I BtGatt.ScanManager: msg.what = MSG_CHECK_SCAN_STATUS, msg.arg1 = CHECK_BACKGROUND_TIMEOUT
+10-11 18:44:26.598   983  1013 I libPerfCtl: xgfGetFPS pid:2693 fps:-1
+10-11 18:44:26.598   983  1013 I libPerfCtl: xgfGetFPS pid:26078 fps:61
+10-11 18:44:26.636  5085  9148 D JavaheapMonitor: Java heap used=13M max=256M, proc: com.miui.voicetrigger
+10-11 18:44:26.636  5085  9148 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:26.645   964  1100 I hwcomposer: [HWCDisplay] [Display_0 (type:1)] fps:61.189926,dur:1013.24,max:27.76,min:6.77  
+10-11 18:44:26.751  1817  2246 D MiuiNM  : tcp fail rate reach: 100
+10-11 18:44:26.765  1817  2236 I MiuiNetworkPolicy: bandwidth: 0 KB/s, Max bandwidth: 1310 KB/s
+10-11 18:44:26.859 26078 26254 D AudioTrack: [audioTrackData][zero] 30s(f:33041 m:0 s:0 k:0 z:30001) : pid 26078 uid 10303 sessionId 505 sr 48000 ch 2 fmt 1  mMaxAmplitude 0
+10-11 18:44:26.870  1063  1063 I BufferQueueProducer: [SurfaceView[com.hnzh.dldlwhjx.huawei/com.game.sdk.GameSdkActivity](BLAST)#5003](this:0xb40000733d67b1c8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=61.67 dur=1005.40 max=21.68 min=12.83
+10-11 18:44:26.942  2662  3271 D JavaheapMonitor: Java heap used=16M max=256M, proc: com.android.phone
+10-11 18:44:26.943  2662  3271 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:26.956  9649 11279 D JavaheapMonitor: Java heap used=4M max=512M, proc: com.android.camera
+10-11 18:44:26.957  9649 11279 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:26.996  2693  2693 D NotificationHeaderExpandController: onExpansionChanged: progress =  0.0
+10-11 18:44:27.008  1063  1063 I BufferQueueProducer: [StatusBar#110](this:0xb40000733d65bdb8,id:-1,api:0,p:-1,c:1063) queueBuffer: fps=1.00 dur=1997.83 max=1990.96 min=6.87
+10-11 18:44:27.067 27852 27852 W BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+10-11 18:44:27.068 27852 27852 W ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+10-11 18:44:27.071  1063  2189 W libc    : Access denied finding property "ro.vendor.display.max_hdr_luminance"
+10-11 18:44:27.092 27852 27852 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_mm
+10-11 18:44:27.092 27852 27852 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_mm-uncached
+10-11 18:44:27.092 27852 27852 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_svp_page-uncached
+10-11 18:44:27.092 27852 27852 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_prot_region
+10-11 18:44:27.092 27852 27852 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_2d_fr_region
+10-11 18:44:27.092 27852 27852 I DMABUFHEAPS: Using DMA-BUF heap named: mtk_wfd_page-uncached
+10-11 18:44:27.172  4095  5374 D JavaheapMonitor: Java heap used=20M max=256M, proc: com.miui.securitycenter.remote
+10-11 18:44:27.172  4095  5374 V JavaheapMonitor: Check java heap usage finished! Next check delay: 300000
+10-11 18:44:27.370  1817  2904 D SLM-SRV-SLAService: checktemp temperature = 36755 temperature_average = 36767 isPerformanceMode = false thermal_enable_slm = true
+10-11 18:44:27.436  1817  3113 I NetworkAccelerateSwitchService: EVENT_RSSI_POLL. mRssiPoll=true
+10-11 18:44:27.438   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:27.438   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:27.438   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:27.442 27852 27852 W RefBase : RefBase: Explicit destruction, weak count = 0 (in 0x74849e2c30). Use sp<> to manage this object.
+10-11 18:44:27.443   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:27.443   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:27.443   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:27.443   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:27.443   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:27.445  1817  3113 E MiuiWifiService: exception:java.lang.ArrayIndexOutOfBoundsException: length=20; index=48
+10-11 18:44:27.445  1817  3113 I NetworkAccelerateSwitchService: checkWifiRssiAndLinkSpeed mWifiFastFade:false mWifiFastFadeAdjustThreshold:false
+10-11 18:44:27.445  1817  3113 I NetworkAccelerateSwitchService: getAverageWifiRssi:55
+10-11 18:44:27.445  1817  3113 D NetworkAccelerateSwitchService: checkIntervalModeChange mMovementState:false mIntervalMode:0 mIsBadLinkLayerQoE:false mBadLinkLayerQoETimes = 0
+10-11 18:44:27.447 27852 27852 D RefBase :   #00 pc 000000000005eb10  /apex/com.android.runtime/lib64/bionic/libc.so (__cxa_finalize+224) (BuildId: 4f9662f2c4cc93880474c7b483cce276)
+10-11 18:44:27.447 27852 27852 D RefBase :   #01 pc 0000000000063c28  /apex/com.android.runtime/lib64/bionic/libc.so (exit+24) (BuildId: 4f9662f2c4cc93880474c7b483cce276)
+10-11 18:44:27.447 27852 27852 D RefBase :   #02 pc 0000000000057678  /apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+120) (BuildId: 4f9662f2c4cc93880474c7b483cce276)
+10-11 18:44:27.483   887   887 I WifiHAL : Get link layer stats
+10-11 18:44:27.484   887   887 I WifiHAL : GetLinkStatsCommand::create
+10-11 18:44:27.484   887   887 D android.hardware.wifi@1.0-service-lazy: WifiRequest::create vendor command to iface 38, vendor_id=0x1a11, subcmd=0x1200, res=0
+10-11 18:44:27.488   887   887 I WifiHAL : GetLinkStatsCommand::handleResponse
+10-11 18:44:27.488   887   887 E WifiHAL : handleResponse: data=0xb40000707bca4e60, len=2432
+10-11 18:44:27.488   887   887 I WifiHAL : check_data_sanity: confirmed_size=2432, len=2432
+10-11 18:44:27.488   887   887 I WifiHAL : handleResponse: iface_stat_ptr=0xb40000707bca4e60, num_radios=2, radio_stats_ptr=0xb40000707bca5578
+10-11 18:44:27.488   887   887 I WifiHAL : wifi_get_link_stats: result=0
+10-11 18:44:27.495  1440  1440 I wificond: station_bandwidth: 
+10-11 18:44:27.496  1817  2238 D MiuiWifiCommonBase: band: 1, compensate: 0
+10-11 18:44:27.497  1271  1271 I adbd    : in ShellService: export ANDROID_LOG_TAGS=''; exec logcat '-d' '-t' '1200'
+10-11 18:44:27.502  1817 31537 D MiuiNM  : bcn lr reach: 79
+10-11 18:44:27.502  1817 31537 D WifiScoreReportInjector: mCcaBusyRate change to 5; mBeaconLostRate change to 93
+10-11 18:44:27.502  2662  8883 E PhoneInterfaceManager: getServiceStateForSlot retuning null for invalid slotIndex=-1
+10-11 18:44:27.503  1817  2238 D WifiScoreReportInjector: isMobileDataSiganlPoor signalStrength or serviceState is null
+10-11 18:44:27.506  1817  2901 I NetworkBoostStatusManager: handle: 102
+10-11 18:44:27.506  1817  2901 I NetworkBoostStatusManager: interfaceOnCapabilitiesChanged interface name:wlan0
+10-11 18:44:27.511  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged Cellular
+10-11 18:44:27.512  5932  6099 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+10-11 18:44:27.513  5932  6099 I JoyoseCloudControlManager3: network metered changed, network metered: false, deviceProvisioned: true, scAllowConn: false, try to setNetworkAccessEnabled: false
+10-11 18:44:27.514  5059  5153 I NetBusNetworkMonitor: onCapabilitiesChanged WIFI isPrimary = true
+10-11 18:44:27.514  3031  7368 I IDMManager: onCapabilitiesChanged: network is 103
+10-11 18:44:27.514  3031  7368 I IDMManager: network is not MiuiCarSoftAp

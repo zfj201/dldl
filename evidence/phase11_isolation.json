@@ -1,0 +1,58 @@
+{
+  "role": "yinghe_3356:5005",
+  "switches": [
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101800",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101802",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101801",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101792",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101791",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101794",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101793",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101796",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101795",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101798",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101797",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101790",
+      "true"
+    ],
+    [
+      "dldl_gifts_v1:yinghe_3356:5005:-2101799",
+      "true"
+    ]
+  ],
+  "scope": "13 local switches only, ruins kept, journals unchanged"
+}

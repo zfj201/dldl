@@ -11,7 +11,9 @@ for label,name in [('apk','phase2_modules.json'),('hotupdate','phase2_hotupdate_
  for row in rows:
   if row['status']!='decoded':continue
   data=(root/row['path']).read_bytes();assert hashlib.sha256(data).hexdigest()==row['sha256']
-  ok,error=check(data.decode('utf-8'),'@'+row['logical'])
+  # Cocos' source loader accepts UTF-8 BOM; loadstring does not strip it.
+  # Preserve recovered bytes/hash and remove only BOM for standalone parsing.
+  ok,error=check(data.decode('utf-8-sig'),'@'+row['logical'])
   (valid if ok else errors).append(row['logical'] if ok else {'path':row['logical'],'error':error})
   logical.add(row['logical'])
  result[label]={'decoded_files':len(valid)+len(errors),'decoded_bytes':sum(r.get('size',0) for r in rows),

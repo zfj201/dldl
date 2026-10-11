@@ -1,0 +1,12 @@
+{
+  "runtime": "Lua 5.1",
+  "passed": 5,
+  "cases": [
+    "battle start before acknowledgement preserves exact own challenge confirmation",
+    "settlement before acknowledgement cannot clear pending until exact callback and state agree",
+    "reconnect resets ruins skip and unrelated combat notifications leave phase unchanged",
+    "confirmed loss preserves rewards and stops its own task without a second challenge",
+    "missing final settlement retains journal and no remaining-count push can retry it"
+  ],
+  "network": "mocked; no device calls"
+}

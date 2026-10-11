@@ -1110,5 +1110,253 @@
     "size": 30951,
     "sha256": "8debc0e5b9f5574a71646819a9e6c4437e3f3ce8797c01f46f510d33b88f3575",
     "path": "recovered/phase2/hotupdate/lua/game/hero/view/holyequipment/holyequipment_refine_panel.luac"
+  },
+  {
+    "logical": "game/backpack/backpack_model.luac",
+    "encrypted_sha256": "4e3229ec41ab9587a9de61d84085492f65d4379f2504b0ea973c840bf95a8080",
+    "status": "decoded",
+    "size": 49754,
+    "sha256": "4ac55142347885e0deb296987bb6e8d9c5e6d92fa0f241e97e2078d0bb7251b2",
+    "path": "recovered/phase2/hotupdate/lua/game/backpack/backpack_model.luac"
+  },
+  {
+    "logical": "game/backpack/backpack_const.luac",
+    "encrypted_sha256": "7f616b35a109c8d35a0cafae874e983c0bb8fab56d9c18db1fd78ed52e5aa55e",
+    "status": "decoded",
+    "size": 45671,
+    "sha256": "30677c9e97851819543644195d17d473a6dd60f753b4932afd4a92358a76656c",
+    "path": "recovered/phase2/hotupdate/lua/game/backpack/backpack_const.luac"
+  },
+  {
+    "logical": "game/backpack/goods_vo.luac",
+    "encrypted_sha256": "a3da6e2f672a18d48e5b2860f38aee91039d73ce5edef4e1971400bb0b989edc",
+    "status": "decoded",
+    "size": 18300,
+    "sha256": "b0a4a558a518320c846d1ce467bbb8da793b94c4c17659597597ef7ad86e38d4",
+    "path": "recovered/phase2/hotupdate/lua/game/backpack/goods_vo.luac"
+  },
+  {
+    "logical": "game/resonate/resonate_model.luac",
+    "encrypted_sha256": "efc45904b86a8be4d470ecd97f8d214fe921ad203c997b6e116f1b9f0330dc59",
+    "status": "decoded",
+    "size": 20968,
+    "sha256": "8c552a989bd1172ce68f65b26aa546502f44d63d70682889603dab610105506b",
+    "path": "recovered/phase2/hotupdate/lua/game/resonate/resonate_model.luac"
+  },
+  {
+    "logical": "game/battle/battle_controller.luac",
+    "encrypted_sha256": "ed3f9dddef3024bf8678871362e1c8819eae1a6fa0851d7f7965c0dd93f7b259",
+    "status": "decoded",
+    "size": 56994,
+    "sha256": "b16cb9238c5f5dec1aefd32ed4e16b8bf54c9aa4a1ac89b26ad1f3efa3217af1",
+    "path": "recovered/phase2/hotupdate/lua/game/battle/battle_controller.luac"
+  },
+  {
+    "logical": "game/battle/battle_model.luac",
+    "encrypted_sha256": "33dbf2bfe2c9c748893b5d1bf2a45bfb2be1f03112a4fde01cbf2db6a3b401b3",
+    "status": "decoded",
+    "size": 215192,
+    "sha256": "202f1f803980a4f7c0be4dfe7adbd075e94a21255f17bb61e1549de769209d32",
+    "path": "recovered/phase2/hotupdate/lua/game/battle/battle_model.luac"
+  },
+  {
+    "logical": "game/hero/view/form/form_go_fight_window.luac",
+    "encrypted_sha256": "12cd4e222fa91206867794d623ae01f9e254e873c465baf3e681153441d38e63",
+    "status": "decoded",
+    "size": 258783,
+    "sha256": "f3bea907e52f15baab682662fca82cab38818e541cf9a3c90df57a0a4a1ff9f0",
+    "path": "recovered/phase2/hotupdate/lua/game/hero/view/form/form_go_fight_window.luac"
+  },
+  {
+    "logical": "game/battle/new_view/battle_ui_panel.luac",
+    "encrypted_sha256": "1b5a23f604b4d15a5feebdac030a7a58a99345cadb8ff94f46d797338bf9b627",
+    "status": "decoded",
+    "size": 181272,
+    "sha256": "c39deb675b9775a89816f2f1f3e75cdb96e6abfad9713b8683db9eec25913b82",
+    "path": "recovered/phase2/hotupdate/lua/game/battle/new_view/battle_ui_panel.luac"
+  },
+  {
+    "logical": "game/partner/partner_const.luac",
+    "encrypted_sha256": "4e2e90b5f994e10bb9de825e068d1633669a95d1929e89de49164533752447bc",
+    "status": "decoded",
+    "size": 16304,
+    "sha256": "ec55caa1f7571b6684fb13fa3a1bdca05af2478f65ddd4aab8b08ad920c9baca",
+    "path": "recovered/phase2/hotupdate/lua/game/partner/partner_const.luac"
+  },
+  {
+    "logical": "config/combat_type_data.luac",
+    "encrypted_sha256": "75d3d2688540e81d682e1d2fe8ef33dc605597be4298eb5336f6d7d08d1fcefa",
+    "status": "decoded",
+    "size": 58641,
+    "sha256": "84a2a84f4a9aecf9ab3d78356a6f7f744e157f7464beb969c7c2e6f6b496cbe7",
+    "path": "recovered/phase2/hotupdate/lua/config/combat_type_data.luac"
+  },
+  {
+    "logical": "game/battle/new_view/battle_mvp_view.luac",
+    "encrypted_sha256": "3a9e7ec9f55215912c754c0e967f61c9be02f0c2e7c6953a85ff65c28d632ef8",
+    "status": "decoded",
+    "size": 142656,
+    "sha256": "722aafa47fd01e321fc3233b200173b66f269046aa0c4ce89b78675f7db376fa",
+    "path": "recovered/phase2/hotupdate/lua/game/battle/new_view/battle_mvp_view.luac"
+  },
+  {
+    "logical": "game/battle/new_view/battle_fail_view.luac",
+    "encrypted_sha256": "50209ba9001353f59764ed10547609fee614924923f28def3851f4045ad1ab4d",
+    "status": "decoded",
+    "size": 34581,
+    "sha256": "e61c1d305cde045d91c6ed1604f5b24a3e36c5366519e7df5c6379c44031341b",
+    "path": "recovered/phase2/hotupdate/lua/game/battle/new_view/battle_fail_view.luac"
+  },
+  {
+    "logical": "base/baseview.luac",
+    "encrypted_sha256": "f423b526f046f4291adc0fcce2156a2bf5672ed98d626688964176dc77d07c28",
+    "status": "decoded",
+    "size": 54935,
+    "sha256": "aa5bc4fe454e85fd8bea4807ec9663c3b94405985da7750a3485556e6a99c630",
+    "path": "recovered/phase2/hotupdate/lua/base/baseview.luac"
+  },
+  {
+    "logical": "config/temple_boss_data.luac",
+    "encrypted_sha256": "18cf3da9782eb3d5eed7cc10dac8523ce496ee3686c3a618ad5dd10b1e3d80b0",
+    "status": "decoded",
+    "size": 93795,
+    "sha256": "7fc73206c5c98102d020c2de49eb80113029b22901dd5b75396c7162c2895892",
+    "path": "recovered/phase2/hotupdate/lua/config/temple_boss_data.luac"
+  },
+  {
+    "logical": "config/guild_wish_gift_data.luac",
+    "encrypted_sha256": "bbf90c2f15f27eddeb6f3023cdd8d0c792769c25885b6d17e2a97fd97dbecfcc",
+    "status": "decoded",
+    "size": 4789,
+    "sha256": "a1c741d683cab3fc07557ac222d47ff6c05b6be24229810015a77c43eb4599df",
+    "path": "recovered/phase2/hotupdate/lua/config/guild_wish_gift_data.luac"
+  },
+  {
+    "logical": "config/arena_level_data.luac",
+    "encrypted_sha256": "cf454271025e57bfefc6c6ceda1dffada034bbdd82d7c156fc87f3fb60799921",
+    "status": "decoded",
+    "size": 35868,
+    "sha256": "ed72ceab2d3ddf9d45a4631160cf0d56faadc3058a1e2f5003635fedf57dc146",
+    "path": "recovered/phase2/hotupdate/lua/config/arena_level_data.luac"
+  },
+  {
+    "logical": "game/danmatch/view/danmatch_mate_window.luac",
+    "encrypted_sha256": "c05083c38e63a5753b24a57cf93d00d76fa892f302129e4f7ef18ee35dc92ae7",
+    "status": "decoded",
+    "size": 13745,
+    "sha256": "1079341652cec752fd8e69e791e7d85eed126fc5a8e2e6e7ef5cf469ad4e5e0a",
+    "path": "recovered/phase2/hotupdate/lua/game/danmatch/view/danmatch_mate_window.luac"
+  },
+  {
+    "logical": "game/danmatch/view/danmatch_main_window.luac",
+    "encrypted_sha256": "f95f35e9e158d2e8277d2e83f9f0857b878c488c0e3d97aeefae451da7cbb06f",
+    "status": "decoded",
+    "size": 4964,
+    "sha256": "37f515441c24a951274c2f523ab0848a30c38f225aa2e1dafe2f3bb6d4ec4aa5",
+    "path": "recovered/phase2/hotupdate/lua/game/danmatch/view/danmatch_main_window.luac"
+  },
+  {
+    "logical": "game/danmatch/danmatch_controller.luac",
+    "encrypted_sha256": "5091f31f75ccf139c2829a7fb57e97f8642760b59f90957aa74f38583b67086c",
+    "status": "decoded",
+    "size": 18947,
+    "sha256": "44d2a857fb81a37afa9d97f1b7b50f39ff6747c7939f4785dca7749f33f48dcc",
+    "path": "recovered/phase2/hotupdate/lua/game/danmatch/danmatch_controller.luac"
+  },
+  {
+    "logical": "game/danmatch/danmatch_model.luac",
+    "encrypted_sha256": "27853291163c0d67387b829110e10542dbf2b22ea8b37de32df13b42b5c16680",
+    "status": "decoded",
+    "size": 12680,
+    "sha256": "fb269a74ee5c9280c6639066481f365acf9e10fe996fe922c3db4f164be485dc",
+    "path": "recovered/phase2/hotupdate/lua/game/danmatch/danmatch_model.luac"
+  },
+  {
+    "logical": "game/danmatch/danmatch_const.luac",
+    "encrypted_sha256": "ac10e7fdec1d60cdf122c9ebadbe756966d35692d8ff8686b663ed92a5f528c9",
+    "status": "decoded",
+    "size": 2047,
+    "sha256": "434ef44a71013abbc6bbd313cce2e6f684e86973dba0e061a1ee1e1b002ea61f",
+    "path": "recovered/phase2/hotupdate/lua/game/danmatch/danmatch_const.luac"
+  },
+  {
+    "logical": "game/godruins/view/god_ruins_main_panel.luac",
+    "encrypted_sha256": "2d241c20fb6c5fbdd01ce6066d56f93d7185bbb676cb7a0483030abd2be2f5dd",
+    "status": "decoded",
+    "size": 13356,
+    "sha256": "9d5c7d745f0d6a7e0a4eb0b55fb78eaee9cc8a21656262c85072332937e132ae",
+    "path": "recovered/phase2/hotupdate/lua/game/godruins/view/god_ruins_main_panel.luac"
+  },
+  {
+    "logical": "game/godruins/god_ruins_controller.luac",
+    "encrypted_sha256": "cfc10608d78408544db11b52b1c59e0d7f7e094c6e6b6275d67bbcaed6006b57",
+    "status": "decoded",
+    "size": 7376,
+    "sha256": "2c05df7c287bf410a521d981ddadf5b1633bb5575f573f61e6041851103ee2e5",
+    "path": "recovered/phase2/hotupdate/lua/game/godruins/god_ruins_controller.luac"
+  },
+  {
+    "logical": "game/godruins/god_ruins_const.luac",
+    "encrypted_sha256": "acffebf12c3428bc7fc8b7340edd2050fef8e646d0c2e4f22b9fe9b6c5ea8d39",
+    "status": "decoded",
+    "size": 416,
+    "sha256": "f8dbbd0e00b1a7a068a76c6d97807f8e95093689e5c47045690cc6fd7d86429e",
+    "path": "recovered/phase2/hotupdate/lua/game/godruins/god_ruins_const.luac"
+  },
+  {
+    "logical": "game/godruins/god_ruins_model.luac",
+    "encrypted_sha256": "0d7b83e05ff9c6bea5b646e2fed3579cc4f7460fda08831343ef7640133ce9fc",
+    "status": "decoded",
+    "size": 10628,
+    "sha256": "29a4690fe98bfa8fe4f8db322f5afa2f4f9b29ce5019453d7f2b855f56de611a",
+    "path": "recovered/phase2/hotupdate/lua/game/godruins/god_ruins_model.luac"
+  },
+  {
+    "logical": "game/guild/view/guild_wish_preview_window.luac",
+    "encrypted_sha256": "2e8b8852e3f3e03956fca722042ad0b574c4af60e1d4667f3eceeb555d62e0e4",
+    "status": "decoded",
+    "size": 6565,
+    "sha256": "489d05349340cc12cc08c1a2be1d9d80a3549a950f37038b69916991db0dfb69",
+    "path": "recovered/phase2/hotupdate/lua/game/guild/view/guild_wish_preview_window.luac"
+  },
+  {
+    "logical": "game/guild/view/guild_wish_window.luac",
+    "encrypted_sha256": "cbf7684975cea477e12f9fa041eee336569834c482366872a3331135ea02730d",
+    "status": "decoded",
+    "size": 5766,
+    "sha256": "54607fdc829f8c88894dc6b3a6e277a6661f281e1ae18e6660213788a32460ef",
+    "path": "recovered/phase2/hotupdate/lua/game/guild/view/guild_wish_window.luac"
+  },
+  {
+    "logical": "game/guild/guild_model.luac",
+    "encrypted_sha256": "e270e58f76fc2cd45f85adfbe7ec8cf3c803f33cadb1bed9cf958fa9ad276aab",
+    "status": "decoded",
+    "size": 60306,
+    "sha256": "7f6a71d8356b0b3b6ab55eba63af58fdf3a91f4bb8f93dba899796302e9d573b",
+    "path": "recovered/phase2/hotupdate/lua/game/guild/guild_model.luac"
+  },
+  {
+    "logical": "game/guild/guild_controller.luac",
+    "encrypted_sha256": "254a0070aaab2fae179f3aee249ac3d3b36d5c466638490725ba20ea79cb065a",
+    "status": "decoded",
+    "size": 68622,
+    "sha256": "1bddc08d6b79f9c70cae50695c1560d8ee85b687b8babdfbc7967e5bf0609702",
+    "path": "recovered/phase2/hotupdate/lua/game/guild/guild_controller.luac"
+  },
+  {
+    "logical": "game/role/role_vo.luac",
+    "encrypted_sha256": "6b9e5ec5024bb6f33cc88fb32130468bc253a483c0fc3b7c2d0172f60b131860",
+    "status": "decoded",
+    "size": 20810,
+    "sha256": "aeb7819a04afe9ab0d44c866d2a06bd821aff759e6d0353969475114fbabccb2",
+    "path": "recovered/phase2/hotupdate/lua/game/role/role_vo.luac"
+  },
+  {
+    "logical": "base/basecontroller.luac",
+    "encrypted_sha256": "d15586048bc5a7786a98f31265b53bef499c6beb1c7925edb47199e2b022c792",
+    "status": "decoded",
+    "size": 9645,
+    "sha256": "96335b24afb749623ded659e8f1e3e1cbf0a18b377b44f7e4772c0608003d517",
+    "path": "recovered/phase2/hotupdate/lua/base/basecontroller.luac"
   }
 ]

@@ -1,0 +1,17 @@
+{
+  "output": "/Users/zfj/Documents/ChatGPT/dldl/recovered/phase11v2/game_start.luac",
+  "bytes": 107226,
+  "sha256": "7789ef7f68b74ad86e950d09ce36b9a3649e82f36872d948f2743c3346d66dcb",
+  "lua51_syntax_pass": true,
+  "inputs": {
+    "recovered/phase2/hotupdate/lua/game_start.luac": "3b8c0a56adcc9731f54dfca0c0943aa9911669e9537126e5447239ce49c2cb59",
+    "modules/daily_gifts.lua": "4bc7331621d2511e83d72b4735f45053279e6d63c4a19a359fc874ecb056b6ef",
+    "modules/daily_actions.lua": "7e7ad11f7def769f2f7e8f8efbdfe659e5a82066b1bae764d4919687d2a5d0f8",
+    "modules/daily_actions_game.lua": "28688d99a60c85b5e9e1194840598e0d4e11b2ddbd6bbb43b6608f8ed219f854",
+    "modules/daily_training.lua": "26ade9e8d388be10880b199f59243a9918c10cf82e5c159a1ce9af6ae0addef1",
+    "modules/daily_training_game.lua": "f704fb9b705e235050d9163486abd0d81b296958f1316eb10a33517a8f8b15f8",
+    "modules/daily_quests.lua": "ff61913eb258ddeca081bd76791e0fea8254770da491269cb9de388d396e0e58",
+    "modules/daily_quests_game.lua": "c77e9f69a83e2f0061aef12c26eb24822b9206af2316d271f0d1e8e81697b30a",
+    "modules/xiangxiang_gifts_extension.lua": "507d7d813d4d3178f9a67bee4650cbb15952aedb5526a5c5e60242c136b43af5"
+  }
+}

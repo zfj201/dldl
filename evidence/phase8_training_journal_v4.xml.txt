@@ -1,0 +1,12 @@
+<int name="dldl_training_v1:yinghe_3360:5317:1791666000:hero:pending" value="0" />
+    
+<int name="dldl_training_v1:yinghe_3360:5317:1791666000:bone:pending" value="0" />
+    
+<int name="dldl_training_v1:yinghe_3360:5317:1791666000:arena_free:used" value="0" />
+    
+<int name="dldl_training_v1:yinghe_3360:5317:1791666000:bone:used" value="1" />
+    
+<int name="dldl_training_v1:yinghe_3360:5317:1791666000:arena_free:pending" value="1" />
+    
+<int name="dldl_training_v1:yinghe_3360:5317:1791666000:hero:used" value="1" />
+    

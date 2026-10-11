@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Offline integration: real recovered senders, models, protocol dispatch and helper UI settings."""
-import runpy,json
+import runpy,json,os
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 ns=runpy.run_path(str(ROOT/'tests/test_daily_gifts.py'))
@@ -155,5 +155,5 @@ ext.uninstall()
 ''')
 names=[lua.globals().passed[i] for i in range(1,len(lua.globals().passed)+1)]
 result={'runtime':lua.eval('_VERSION'),'passed':len(names),'cases':names,'network':'mocked; no device calls'}
-(ROOT/'evidence/phase7_daily_tests.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
+(ROOT/'evidence'/f'{os.environ.get("DLDL_TEST_PHASE","phase7")}_daily_tests.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
 print(json.dumps(result,ensure_ascii=False,indent=2))

@@ -32,7 +32,7 @@ function M.new(env)
             self.active.used=used
             if used>=count then self:finish('skipped','daily_target_done');return true end
             local why=env.summonGuard(count-used)
-            if why then self:finish('error',why);return true end
+            if why then self:finish(why=='insufficient_contracts' and 'skipped' or 'error',why);return true end
         end
         self:query();return true
     end
@@ -45,7 +45,7 @@ function M.new(env)
     function self:summon()
         local a=self.active
         local why=env.summonGuard(a.target-a.used)
-        if why then self:finish('error',why);return end
+        if why then self:finish(why=='insufficient_contracts' and 'skipped' or 'error',why);return end
         a.inventory=env.contracts()
         self:send({group_id=200,times=10,recruit_type=4})
     end

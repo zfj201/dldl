@@ -1,0 +1,41 @@
+{
+  "role": "yinghe_3356:5005",
+  "installed_sha256": "bc73670fab9465e93957e6a11a9001c0ac2727f370d8a7e0b5e98685059eee32",
+  "custom_tasks": 14,
+  "danmatch_removed": true,
+  "recovery": {
+    "read_only_queries": 2,
+    "interval_seconds": 2,
+    "challenge_sends": 0,
+    "pending_cleared_after_exact_match": true,
+    "token_removed": true
+  },
+  "last_challenge": {
+    "sent_at": 1791716463,
+    "settled_at": 1791716477,
+    "result": 1,
+    "before_remaining": 1,
+    "after_remaining": 0,
+    "before_boss": 11201,
+    "after_boss": 11410,
+    "before_end_time": 1791801676,
+    "after_end_time": 1791802877,
+    "fight_time_before": 1,
+    "fight_time_after": 2,
+    "diamonds_before": 94178,
+    "diamonds_after": 94178,
+    "confirmed": true,
+    "native_result_closed": true,
+    "queue_continued": true,
+    "own_pending": 0
+  },
+  "overall_remaining": [
+    2,
+    1,
+    0
+  ],
+  "actual_native_skip_sends": 0,
+  "observed_mode": "server background settlement, no battle presentation; first win 2 seconds, second win 14 seconds",
+  "other_local_switches_restored": 13,
+  "loss_path": "offline tests only"
+}

@@ -1,0 +1,28 @@
+<int name="dldl_gifts_v1:yinghe_3356:5005:-2101795:count" value="20" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101800" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101802" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101801" value="false" />
+    
+<int name="dldl_gifts_v1:yinghe_3356:5005:-2101791:tickets" value="10" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101792" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101791" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101794" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101793" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101796" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101795" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101798" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101797" value="false" />
+    
+<boolean name="dldl_gifts_v1:yinghe_3356:5005:-2101799" value="false" />
+    

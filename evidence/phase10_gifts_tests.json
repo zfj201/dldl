@@ -1,0 +1,21 @@
+{
+  "runtime": "Lua 5.1",
+  "passed": 14,
+  "cases": [
+    "each correct free gift claims once and requires post-reply verification",
+    "already claimed and missing gifts never claim",
+    "paid or mismatched config cannot claim",
+    "failure code and unchanged count are not success",
+    "lost response queries and verifies without resending",
+    "query timeout and verification timeout terminate",
+    "period rollover and identity changes never confirm old claim",
+    "cancelled claim remains protected on repeat",
+    "invalid or duplicated counts rejected",
+    "installation is idempotent, registers two visible default-off rows, sends nothing",
+    "original helper queue keeps both tasks but native save strips both IDs",
+    "registered real protocol callbacks run both gifts serially and resume native task",
+    "manual in-flight claim prevents custom send and stops local queue",
+    "uninstall restores functions and leaves no custom rows or timers"
+  ],
+  "network": "mocked; no device calls"
+}

@@ -1,0 +1,13 @@
+s|dldl_gifts_v1:yinghe_3356:5005:-2101800" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101800" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101802" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101802" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101801" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101801" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101792" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101792" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101791" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101791" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101794" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101794" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101793" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101793" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101796" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101796" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101795" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101795" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101798" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101798" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101797" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101797" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101790" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101790" value="true"|
+s|dldl_gifts_v1:yinghe_3356:5005:-2101799" value="false"|dldl_gifts_v1:yinghe_3356:5005:-2101799" value="true"|

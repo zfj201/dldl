@@ -1,0 +1,47 @@
+{
+  "version": "daily_training_v4",
+  "installed_sha256": "51cdd97c3de5b774bcc93564fc1d58e7ef47651304a073c38c09e56ed5ee0d78",
+  "trace": "evidence/phase8_training_real_trace_v4.log",
+  "arena": {
+    "confirmed_free_fights": 1,
+    "free_before": 10,
+    "free_after": 9,
+    "combat_before": 0,
+    "combat_after": 1,
+    "tickets_before": 47,
+    "tickets_after": 47,
+    "opponent_index": 5,
+    "native_skip": true,
+    "second_request": "29403 code=0; stopped; pending retained",
+    "ticket_fights_verified": 0
+  },
+  "hero": {
+    "confirmed": true,
+    "partner_id": 3,
+    "level_before": 1,
+    "level_after": 6,
+    "configured_gold_cost": 427,
+    "configured_hero_exp_cost": 107
+  },
+  "bone": {
+    "confirmed": true,
+    "source": "equipment backpack; unequipped",
+    "bone_id": 3,
+    "partner_id": 0,
+    "experience_before": 0,
+    "experience_after": 100,
+    "ordinary_stones_before": 147,
+    "ordinary_stones_after": 146,
+    "configured_gold_cost": 1000
+  },
+  "ui": {
+    "summon_temporarily_disabled": true,
+    "summon_count_preserved": 20,
+    "arena_free_temporarily_disabled": true,
+    "arena_tickets_temporarily_disabled": true,
+    "ticket_count_selected": 10,
+    "hero_enabled": true,
+    "bone_enabled": true
+  },
+  "journal": "evidence/phase8_training_journal_v4.xml.txt"
+}

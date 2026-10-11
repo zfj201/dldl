@@ -105,6 +105,15 @@ function M.bind(Actions, context)
             return function(self,data) old(self,data);context.safe(function() runner:onReply(task,data) end) end
         end)
     end
-    return runner,function() return context.now()<manual_until end
+    return runner,function(current)
+        if context.now()<manual_until then return true end
+        -- Keep unresolved mutations as a cross-module queue barrier.  The
+        -- caller may record and skip the current row, but must never resend
+        -- an action or clear its journal implicitly.
+        for kind in pairs(defs) do
+            if kind~=current and ud:getIntegerForKey(key(kind)..':pending',0)~=0 then return true end
+        end
+        return false
+    end
 end
 return M

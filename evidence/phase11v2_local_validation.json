@@ -1,0 +1,26 @@
+{
+  "test_counts": {
+    "phase11v2_gifts_tests.json": 14,
+    "phase11v2_daily_tests.json": 26,
+    "phase11v2_training_tests.json": 66,
+    "phase11v2_quests_tests.json": 96,
+    "phase11v2_battle_tests.json": 5
+  },
+  "bundle_sha256": "7789ef7f68b74ad86e950d09ce36b9a3649e82f36872d948f2743c3346d66dcb",
+  "bundle_bytes": 107226,
+  "lua51_syntax_pass": true,
+  "module_forbidden_references_absent": {
+    "modules/daily_quests.lua": true,
+    "modules/daily_quests_game.lua": true,
+    "modules/xiangxiang_gifts_extension.lua": true
+  },
+  "phase11_frozen_sha256": "737c2f2005ba892952c1508f8f91790e5ee5c289d28212f9da93da23f2aa26b8",
+  "old_phase_builds_rejected_and_bytes_unchanged": true,
+  "hp_per_semantics": "cumulative HP depleted: 0=full boss HP; 10000=fully depleted",
+  "native_semantic_evidence": {
+    "remaining_hp": "recovered/phase2/hotupdate/lua/game/battle/new_view/battle_fail_view.luac:825",
+    "model_percent": "recovered/phase2/hotupdate/lua/game/godruins/god_ruins_model.luac:93",
+    "share_progress": "recovered/phase2/hotupdate/lua/game/godruins/view/god_ruins_main_panel.luac:257"
+  },
+  "network": "mocked; no device calls by implementation agent"
+}

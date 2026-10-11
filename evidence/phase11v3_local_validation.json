@@ -1,0 +1,67 @@
+{
+  "test_counts": {
+    "phase11v3_training_tests.json": 66,
+    "phase11v3_quests_tests.json": 102,
+    "phase11v3_battle_tests.json": 5,
+    "phase11v3_daily_tests.json": 26,
+    "phase11v3_gifts_tests.json": 14
+  },
+  "bundle_sha256": "bc73670fab9465e93957e6a11a9001c0ac2727f370d8a7e0b5e98685059eee32",
+  "bundle_bytes": 111350,
+  "lua51_syntax_pass": true,
+  "module_forbidden_references_absent": {
+    "modules/daily_quests.lua": true,
+    "modules/daily_quests_game.lua": true,
+    "modules/xiangxiang_gifts_extension.lua": true
+  },
+  "old_phase_builds_rejected_and_bytes_unchanged": {
+    "phase7": {
+      "sha256": "aa7abe21f65a4956217dc295ff421f22b3d51f3d7504cd93e81bc32c9b9720c3",
+      "build_rejected": true,
+      "bytes_unchanged": true
+    },
+    "phase8": {
+      "sha256": "d748a07770eb965dc8d0450fc572afe09928f4ddf18355956ef38d2134f2b3d3",
+      "build_rejected": true,
+      "bytes_unchanged": true
+    },
+    "phase9": {
+      "sha256": "fa5f9ff98a5e697c33eafd1b6a2fcb0ec9c4625e867908ccdbad514d50b2038c",
+      "build_rejected": true,
+      "bytes_unchanged": true
+    },
+    "phase10": {
+      "sha256": "356c3c5babfe3ce93d2652b73386a5283840de29a8fc71580cb9cb7928286860",
+      "build_rejected": true,
+      "bytes_unchanged": true
+    },
+    "phase11": {
+      "sha256": "737c2f2005ba892952c1508f8f91790e5ee5c289d28212f9da93da23f2aa26b8",
+      "build_rejected": true,
+      "bytes_unchanged": true
+    },
+    "phase11v2": {
+      "sha256": "7789ef7f68b74ad86e950d09ce36b9a3649e82f36872d948f2743c3346d66dcb",
+      "build_rejected": true,
+      "bytes_unchanged": true
+    }
+  },
+  "source_real_verification": "evidence/phase11v2_real_verification.json",
+  "recovery_request": "evidence/phase11v3_ruins_recovery.request",
+  "recovery_queries_only": [
+    13100
+  ],
+  "recovery_second_query_min_interval_seconds": 2,
+  "recovery_success_stops_without_challenge": true,
+  "win_checks": [
+    "owned13105 code1 id0",
+    "own13106 result1 type77",
+    "valid boss config",
+    "hp_per0",
+    "kill_time before-1",
+    "fight_time before+1",
+    "diamonds unchanged",
+    "valid future end_time including same-ID redraw"
+  ],
+  "network": "mocked; no device calls by implementation agent"
+}

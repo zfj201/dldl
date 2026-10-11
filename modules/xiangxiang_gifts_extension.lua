@@ -1,7 +1,7 @@
 -- Two local helper tasks; no business sends at installation, no paid-gift path.
 local M = {}
 local active_install
-function M.install(Gifts, Actions, GameActions)
+function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, GameQuests)
     if active_install then return active_install end
     assert(OneKeyBurdenMainWindow and OneKeyBurdenAutoWindow and OneKeyBurdenAutoItem, 'helper classes missing')
     local helper = OneKeyBurdenController:getInstance()
@@ -20,7 +20,21 @@ function M.install(Gifts, Actions, GameActions)
         specs[#specs+1] = {pos=-2101796,kind='domain',title='魂域之境·自动膜拜'}
         specs[#specs+1] = {pos=-2101795,kind='summon',title='镜之屋·每日契约召唤'}
     end
+    if Training then
+        specs[#specs+1]={pos=-2101794,kind='arena_free',title='积分赛·每日免费挑战',training=true}
+        specs[#specs+1]={pos=-2101791,kind='arena_tickets',title='积分赛·挑战券挑战',training=true}
+        specs[#specs+1]={pos=-2101793,kind='hero',title='魂师·1级升五级',training=true}
+        specs[#specs+1]={pos=-2101792,kind='bone',title='魂骨·背包单石强化',training=true}
+    end
+    if Quests then
+        specs[#specs+1]={pos=-2101790,kind='guild_wish',title='宗门祈愿·冒险者奖励',quest=true}
+        specs[#specs+1]={pos=-2101787,kind='ruins',title='至高遗迹·奖励次数挑战',quest=true}
+    end
+    -- Retired local IDs are swallowed if an old queue/save still contains
+    -- them.  Their preferences and journals are never read or modified.
+    local retired = {[-2101789]=true,[-2101788]=true}
     local COUNT_KEY = 9020
+    local TICKET_KEY = 9021
     local custom, patches, clock = {}, {}, GlobalTimeTicket:getInstance()
     local function roleKey()
         local role = RoleController:getInstance():getRoleVo()
@@ -42,7 +56,8 @@ function M.install(Gifts, Actions, GameActions)
         patches[#patches+1] = {obj = obj, key = key, old = old, new = new}
     end
     local list = OneKeyBurdenConst.SimplifyTypeList[TYPE]
-    for _, spec in ipairs(specs) do
+    for index, spec in ipairs(specs) do
+        spec.order=index
         for _, row in ipairs(list) do assert(row.id ~= spec.pos, 'local ID collision') end
         custom[spec.pos] = spec
         spec.row = {id = spec.pos, title = TI18N(spec.title), is_title = true, is_single_select = true,
@@ -51,6 +66,12 @@ function M.install(Gifts, Actions, GameActions)
             spec.row.close_subitem_list = {{},{1}}
             spec.row.subitem_list = {{{title=TI18N('每日次数（仅灵魂契约）'),is_title=false,
                 is_single_select=true,proto_key_args=COUNT_KEY,
+                option_list={{TI18N('10次'),TRUE,10},{TI18N('20次'),TRUE,20}}}}}
+        end
+        if spec.kind=='arena_tickets' then
+            spec.row.close_subitem_list={{},{1}}
+            spec.row.subitem_list={{{title=TI18N('每日用券次数（仅挑战券）'),is_title=false,
+                is_single_select=true,proto_key_args=TICKET_KEY,
                 option_list={{TI18N('10次'),TRUE,10},{TI18N('20次'),TRUE,20}}}}}
         end
     end
@@ -74,6 +95,15 @@ function M.install(Gifts, Actions, GameActions)
             if not ok then error(err) end
         end})
     local action_runner, action_pending
+    local training_runner, training_pending
+    local quest_runner, quest_pending
+    local function gift_pending()
+        if runner.active then return true end
+        for _, pending in pairs(runner.uncertain or {}) do
+            if pending then return true end
+        end
+        return false
+    end
     local function cleanup()
         if timer then clock:remove(timer); timer = nil end
         owner = nil
@@ -84,7 +114,17 @@ function M.install(Gifts, Actions, GameActions)
             print('[dldl_daily] '..tostring(err))
             if runner.active then runner:finish('error','runtime_error') end
             if action_runner and action_runner.active then action_runner:finish('uncertain','runtime_error') end
+            if training_runner and training_runner.active then training_runner:finish('uncertain','runtime_error') end
+            if quest_runner and quest_runner.active then quest_runner:finish('uncertain','runtime_error') end
         end
+    end
+    if Training then
+        training_runner,training_pending=GameTraining.bind(Training,{roleKey=roleKey,identity=identity,now=now,
+            patch=patch,busy=function() return owner~=nil end,safe=safe})
+    end
+    if Quests then
+        quest_runner,quest_pending=GameQuests.bind(Quests,{roleKey=roleKey,identity=identity,now=now,
+            patch=patch,busy=function() return owner~=nil end,safe=safe})
     end
     if Actions then
         action_runner, action_pending = GameActions.bind(Actions,{roleKey=roleKey,identity=identity,now=now,
@@ -123,6 +163,11 @@ function M.install(Gifts, Actions, GameActions)
                     if count~=10 and count~=20 then count=10 end
                     for _,arg in ipairs(data.args) do if arg.args_key==COUNT_KEY then arg.args_val=count end end
                 end
+                if custom[cfg.id].kind=='arena_tickets' and pref then
+                    local count=cc.UserDefault:getInstance():getIntegerForKey(pref..':tickets',10)
+                    if count~=10 and count~=20 then count=10 end
+                    for _,arg in ipairs(data.args) do if arg.args_key==TICKET_KEY then arg.args_val=count end end
+                end
             end
             return data
         end
@@ -144,8 +189,15 @@ function M.install(Gifts, Actions, GameActions)
                                     end
                                 end
                             end
+                            if custom[row.pos].kind=='arena_tickets' then
+                                for _,arg in ipairs(row.args or {}) do
+                                    if arg.args_key==TICKET_KEY and (arg.args_val==10 or arg.args_val==20) then
+                                        ud:setIntegerForKey(key..':tickets',arg.args_val)
+                                    end
+                                end
+                            end
                         end
-                    else copy.type_list[#copy.type_list+1] = row end
+                    elseif not retired[row.pos] then copy.type_list[#copy.type_list+1] = row end
                 end
                 if #copy.type_list > 0 then filtered[#filtered+1] = copy end
             end
@@ -155,8 +207,32 @@ function M.install(Gifts, Actions, GameActions)
     end)
     patch(helper, 'sender31602', function(old)
         return function(self, kind, pos)
+            if retired[pos] then return end
             assert(not custom[pos], 'local task cannot use native task protocol')
             return old(self, kind, pos)
+        end
+    end)
+    patch(OneKeyBurdenMainWindow,'saveOperateRequest',function(old)
+        return function(self,is_all)
+            local queue=old(self,is_all)
+            for i=#queue,1,-1 do if retired[queue[i].pos] then table.remove(queue,i) end end
+            -- Native queues carry only type/pos. Snapshot local args for this run.
+            for _,row in ipairs(queue) do
+                if custom[row.pos] then
+                    local source=self.operate_list[row.type] and self.operate_list[row.type][row.pos]
+                    assert(source and type(source.args)=='table','local task settings missing')
+                    row.args={}
+                    for _,arg in ipairs(source.args) do
+                        row.args[#row.args+1]={args_key=arg.args_key,args_val=arg.args_val,args_str=arg.args_str}
+                    end
+                end
+            end
+            -- Keep preserved preference IDs while running free before tickets/养成.
+            local indices,rows={},{}
+            for i,row in ipairs(queue) do if custom[row.pos] then indices[#indices+1]=i;rows[#rows+1]=row end end
+            table.sort(rows,function(a,b) return custom[a.pos].order<custom[b.pos].order end)
+            for i,index in ipairs(indices) do queue[index]=rows[i] end
+            return queue
         end
     end)
     local advance = OneKeyBurdenAutoWindow.updateDataList
@@ -171,6 +247,11 @@ function M.install(Gifts, Actions, GameActions)
     patch(OneKeyBurdenAutoWindow, 'requestTask', function(old)
         return function(self)
             local row = self.execute_request_list[self.execute_index]
+            if row and retired[row.pos] then
+                if owner then return end
+                row.local_result,row.local_reason='skipped','task_removed'
+                advance(self,{args={}});return
+            end
             local spec = row and custom[row.pos]
             if not spec then return old(self) end
             if owner then return end
@@ -183,8 +264,16 @@ function M.install(Gifts, Actions, GameActions)
                         f:write(tostring(os.time()),'|',spec.title,'|',result.status,'|',tostring(result.reason),'|',tostring(result.count or 0),'\n');f:close()
                     end)
                 end
+                if quest_runner then
+                    if quest_runner.active then quest_runner.active.done=function() end end
+                    quest_runner:cancel()
+                end
                 cleanup(); row.local_result, row.local_reason = result.status, result.reason
-                if result.status == 'confirmed' or result.status == 'skipped' then
+                -- An uncertain/error result is journaled on this row, then the
+                -- queue moves on.  The module journal remains pending, so a
+                -- later run still refuses to resend the unresolved action.
+                if result.status == 'confirmed' or result.status == 'skipped'
+                    or result.status == 'error' or result.status == 'uncertain' then
                     advance(self, {args = {}})
                 else
                     self.is_execute_finish = true
@@ -193,11 +282,17 @@ function M.install(Gifts, Actions, GameActions)
                     self:updateLoopList()
                 end
             end
-            if now() < manual_until or (action_pending and action_pending()) then done({status = 'error', reason = 'manual_claim_pending'}); return end
-            local selected = type(spec.kind)=='number' and runner or action_runner
-            timer = clock:add(function() safe(function() selected:tick() end) end, 0.5)
+            if now() < manual_until or gift_pending() or (action_pending and action_pending(spec.kind)) or (training_pending and training_pending(spec.kind)) or (quest_pending and quest_pending(spec.kind)) then done({status = 'error', reason = 'manual_claim_pending'}); return end
+            local selected = spec.quest and quest_runner or spec.training and training_runner or (type(spec.kind)=='number' and runner or action_runner)
             local count=10
-            for _,arg in ipairs(row.args or {}) do if arg.args_key==COUNT_KEY then count=arg.args_val end end
+            local found=0
+            for _,arg in ipairs(row.args or {}) do if arg.args_key==(spec.kind=='arena_tickets' and TICKET_KEY or COUNT_KEY) then count=arg.args_val;found=found+1 end end
+            if spec.kind=='arena_tickets' and (found~=1 or (count~=10 and count~=20)) then
+                done({status='error',reason='invalid_ticket_target'});return
+            elseif spec.kind=='summon' and (found~=1 or (count~=10 and count~=20)) then
+                done({status='error',reason='invalid_summon_count'});return
+            end
+            timer = clock:add(function() safe(function() selected:tick() end) end, 0.5)
             safe(function()
                 local ok, why = selected:start(spec.kind, done, count)
                 if not ok then done({status = 'error', reason = why}) end
@@ -210,10 +305,21 @@ function M.install(Gifts, Actions, GameActions)
             if custom[data.pos] and data.local_result then
                 local labels = {confirmed = '已核实完成', skipped = '已完成或无可用次数', uncertain = '结果未确认',
                     error = '暂未执行', cancelled = '已停止'}
+                local daily_done={summon='今日召唤已完成',arena_free='今日免费挑战已完成',
+                    arena_tickets='今日用券目标已完成',hero='今日养成已完成',bone='今日养成已完成'}
                 self.un_finish_node:setVisible(true)
-                local reasons={insufficient_contracts='灵魂契约不足，已阻断',hero_bag_full='魂师背包空间不足',
-                    daily_target_done='今日召唤已完成',previous_request_unresolved='上次结果不明，已阻断',
-                    inventory_timeout='背包未同步，已停止',summon_busy='正在召唤，请稍后',not_open='暂未开放'}
+                local reasons={wish_already_claimed='今日祈愿奖励已领取',no_guild='尚未加入宗门',ruins_defeat='遗迹挑战失败，已跳过本项',
+                    empty_quest_formation='请先保存对应进攻阵容',invalid_quest_formation='对应进攻阵容无效',
+                    ruins_no_boss='暂无可挑战遗迹首领',
+                    ruins_boss_defeated='当前遗迹首领已击败，已跳过本项',
+                    insufficient_contracts='灵魂契约不足，已跳过本项',hero_bag_full='魂师背包空间不足',
+                    daily_target_done=daily_done[custom[data.pos].kind] or '今日任务已完成',previous_request_unresolved='上次结果不明，已阻断',
+                    inventory_timeout='背包未同步，已停止',summon_busy='正在召唤，请稍后',not_open='暂未开放',
+                    insufficient_tickets='斗魂挑战券不足，已阻断',empty_attack_formation='请先保存积分赛进攻阵容',
+                    free_challenges_remaining='免费次数尚未用完，请先执行免费挑战',
+                    skip_unavailable='无法启用原生跳过战斗，已停止',insufficient_hero_materials='升五级所需金币或魂力不足',
+                    insufficient_stones='普通魂骨强化石不足',insufficient_coin='魂骨养成所需金币不足',
+                    no_eligible_target='暂无符合条件的养成对象',battle_busy='其他战斗未结束，已停止'}
                 self.un_finish_lb:setString(TI18N(reasons[data.local_reason] or labels[data.local_result] or '结果未确认'))
             end
         end
@@ -227,6 +333,14 @@ function M.install(Gifts, Actions, GameActions)
                     if action_runner.active then action_runner.active.done=function() end end
                     action_runner:cancel()
                 end
+                if training_runner then
+                    if training_runner.active then training_runner.active.done=function() end end
+                    training_runner:cancel()
+                end
+                if quest_runner then
+                    if quest_runner.active then quest_runner.active.done=function() end end
+                    quest_runner:cancel()
+                end
                 cleanup()
             end
             return old(self, ...)
@@ -234,15 +348,29 @@ function M.install(Gifts, Actions, GameActions)
     end)
     -- Insert first so both entries are immediately visible in the daily category.
     for i = #specs, 1, -1 do table.insert(list, 1, specs[i].row) end
-    local installation = {runner = runner, specs = specs, actions=action_runner, version = Actions and 'daily_actions_v2' or 'daily_gifts_v1'}
+    local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner, version = Quests and 'daily_quests_v2' or Training and 'daily_training_v7' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
     function installation.uninstall()
         assert(not helper.onekeyburden_main_window and not helper.onekeyburden_auto_window, 'close helper windows first')
-        for _, p in ipairs(patches) do assert(p.obj[p.key] == p.new, 'patch changed: '..p.key) end
+        local checked={}
+        for i=#patches,1,-1 do
+            local p=patches[i];checked[p.obj]=checked[p.obj] or {}
+            if not checked[p.obj][p.key] then
+                assert(p.obj[p.key]==p.new,'patch changed: '..p.key);checked[p.obj][p.key]=true
+            end
+        end
         if runner.active then runner.active.done = function() end end
         runner:cancel()
                 if action_runner then
                     if action_runner.active then action_runner.active.done=function() end end
                     action_runner:cancel()
+                end
+                if training_runner then
+                    if training_runner.active then training_runner.active.done=function() end end
+                    training_runner:cancel()
+                end
+                if quest_runner then
+                    if quest_runner.active then quest_runner.active.done=function() end end
+                    quest_runner:cancel()
                 end
                 cleanup()
         for i = #patches, 1, -1 do local p = patches[i]; p.obj[p.key] = p.old end
