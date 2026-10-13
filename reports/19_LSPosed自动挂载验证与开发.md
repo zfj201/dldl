@@ -49,3 +49,11 @@ Java 层存在 `Cocos2dxRenderer.onDrawFrame` 与 `Cocos2dxLuaJavaBridge.callLua
 - `assembleDebug`、`lintDebug`通过。lint只有目标SDK/备份配置/图标与文案的提示，无错误。
 
 真实官方APK覆盖升级、真实同进程热更新、新Lua状态重建仍未验收；不能把模拟代次测试或冷启动称为每周更新保证。
+
+## 实机迁移验收
+
+- 迁移后助手首屏显示礼包与乾坤问情谷，下方显示积分赛挑战券10/20、魂师、背包魂骨、宗门祈愿和至高遗迹。挂载状态为14项、generation=1。
+- 迁移前后194条 `dldl_` 配置/消费journal逐项相同，没有新增、丢失或改写。
+- 同进程创建disabled：助手打开时为 `disable_waiting_helper_close`；关闭后为 `disabled`，再打开是官方原生“自动收送友情点”等条目。
+- 同进程解除disabled：窗口打开时 `waiting_helper_close`；关闭后重新 `installed:14`、generation=2，入口恢复。此项是实际卸载/重挂测试，不等于真实热更新。
+- 发布包另验证灵魂契约不足只跳过召唤并进入宗门任务、未知魂师pending跨重挂仍保留。

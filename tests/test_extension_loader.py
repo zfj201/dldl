@@ -51,6 +51,21 @@ beginGame=function() end
 assert(dofile(boot)==0 and DLDL_EXTENSION_LOADER.generation==3)
 assert(DLDL_DAILY_GIFTS~=old and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+14)
 assert(#sent==n and ud:getIntegerForKey(key,0)==1)
+-- The release bundle preserves pending isolation and skips contract shortage.
+ext=DLDL_DAILY_GIFTS
+freshQuest();contracts=0
+local w=window({{type=1,pos=-2101795,args={{args_key=9020,args_val=10}}},{type=1,pos=-2101790,args={}}})
+w:requestTask();receive(23200,{recruit_list={{recruit_type=4}}});ext.actions:tick()
+assert(w.execute_index==2 and w.execute_request_list[1].local_reason=='insufficient_contracts')
+w:requestTask();assert(sent[#sent].id==13518);ext.quests:cancel()
+freshQuest();local k=heroKey();ud:setIntegerForKey(k..':pending',1)
+local hero=trainingTask('hero');local requests=#sent;hero:requestTask()
+assert(hero.execute_request_list[1].local_reason=='previous_request_unresolved')
+noUpgradeSince(requests);assert(ud:getIntegerForKey(k..':pending',0)==1)
+-- Mounting never clears the pending record, including after a generation change.
+beginGame=function() end;assert(dofile(boot)==0)
+assert(ud:getIntegerForKey(k..':pending',0)==1)
+n=#sent
 -- A later wrapper is owned by another party and must not be overwritten.
 local foreign=function() end
 VipController:getInstance().sender21018=foreign
@@ -58,4 +73,4 @@ DLDL_DAILY_GIFTS.detach()
 assert(VipController:getInstance().sender21018==foreign)
 assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and #sent==n)
 ''')
-print(json.dumps({'existing_regression_cases':len(lua.globals().passed),'payload_lua51':True,'lifecycle':['partial installation rollback','14 entries without requests','20 repeated callbacks idempotent','disable restores rows and preserves journal','reenable','generation remount','foreign wrapper preserved'],'network':'none'},ensure_ascii=False,indent=2))
+print(json.dumps({'existing_regression_cases':len(lua.globals().passed),'payload_lua51':True,'lifecycle':['partial installation rollback','14 entries without requests','20 repeated callbacks idempotent','disable restores rows and preserves journal','reenable','generation remount','foreign wrapper preserved','release contract shortage continues to guild task','release unknown hero pending retained across remount'],'network':'none'},ensure_ascii=False,indent=2))
