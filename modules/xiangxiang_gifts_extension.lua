@@ -1,4 +1,5 @@
--- Two local helper tasks; no business sends at installation, no paid-gift path.
+-- 香香小助手的界面与队列接入层：完整发布包加入14项本地任务。
+-- install 只加条目、保存原方法并包装回调；实际任务从 requestTask 开始，不在挂载时执行。
 local M = {}
 local active_install
 function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, GameQuests)
@@ -52,6 +53,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     local function now() return GameNet:getInstance():getTime() end
     local function connected() return GameNet:getInstance():IsServerConnect()==true end
     local function patch(obj, key, wrap)
+        -- 记录自身字段而不只记录继承结果，卸载时才能恢复原来的继承关系。
         local old = obj[key]; assert(type(old) == 'function', key)
         local own = rawget(obj,key)
         local new = wrap(old); obj[key] = new
@@ -177,6 +179,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             return data
         end
     end)
+    -- 自定义负数 ID 只在客户端使用：设置存本地，过滤后才交给官方设置协议。
     patch(helper, 'sender31601', function(old)
         return function(self, values)
             local filtered, ud = {}, cc.UserDefault:getInstance()
@@ -249,6 +252,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             return old(self, data)
         end
     end)
+    -- 真正的执行入口：官方条目仍走原方法，自定义条目分派给对应业务状态机。
     patch(OneKeyBurdenAutoWindow, 'requestTask', function(old)
         return function(self)
             local row = self.execute_request_list[self.execute_index]
@@ -274,9 +278,8 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                     quest_runner:cancel()
                 end
                 cleanup(); row.local_result, row.local_reason = result.status, result.reason
-                -- An uncertain/error result is journaled on this row, then the
-                -- queue moves on.  The module journal remains pending, so a
-                -- later run still refuses to resend the unresolved action.
+                -- 单项失败或结果不明也推进后续任务，避免整个助手挂住。
+                -- 消费请求的 pending 记录仍保留，下一轮不会盲目重发造成重复消费。
                 if result.status == 'confirmed' or result.status == 'skipped'
                     or result.status == 'error' or result.status == 'uncertain' then
                     advance(self, {args = {}})
@@ -304,6 +307,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             elseif spec.kind=='summon' and (found~=1 or (count~=10 and count~=20)) then
                 done({status='error',reason='invalid_summon_count'});return
             end
+            -- tick 驱动查询、等待回复和超时；start 才启动用户本次选中的任务。
             timer = clock:add(function() safe(function() selected:tick() end) end, 0.5)
             safe(function()
                 local ok, why = selected:start(spec.kind, done, count)
@@ -367,11 +371,11 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             return old(self, ...)
         end
     end)
-    -- Insert first so both entries are immediately visible in the daily category.
+    -- 将扩展条目放到日常页顶部，沿用游戏原有设置窗口与执行窗口。
     for i = #specs, 1, -1 do table.insert(list, 1, specs[i].row) end
     local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner, version = Quests and 'daily_quests_v3' or Training and 'daily_training_v8' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
-    -- Lifecycle detachment only restores wrappers and rows still owned by us.
-    -- It never edits preferences or pending journals and suppresses callbacks.
+    -- 自动重挂只撤销仍属于我们的包装/条目，不覆盖后来接入的其他包装。
+    -- 停止回调，但保留用户设置和未确认消费记录。
     function installation.detach()
         for _,r in pairs({runner,action_runner,training_runner,quest_runner}) do
             if r and r.active then r.active.done=function() end;r:cancel() end
@@ -419,6 +423,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     return installation
     end)
     if not install_ok then
+        -- 安装中途失败也撤销已完成的改动，避免留下一半可见、一半不可用的助手。
         for i=#patches,1,-1 do
             local p=patches[i]
             if rawget(p.obj,p.key)==p.new then rawset(p.obj,p.key,p.own) end

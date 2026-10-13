@@ -10,7 +10,7 @@ import android.os.SystemClock;
 import io.github.libxposed.api.XposedModule;
 import io.github.libxposed.api.XposedInterface;
 
-/** Staged probe. Original game methods always complete before our callback. */
+/** LSPosed 加载入口：阶段5挂载独立 Lua 扩展；阶段1～4保留作分层接入诊断。 */
 public final class DldlModule extends XposedModule {
     private static final String TARGET = "com.hnzh.dldlwhjx.huawei";
     private boolean mainProcess;
@@ -19,6 +19,7 @@ public final class DldlModule extends XposedModule {
     private File bootstrap;
 
     @Override public void onModuleLoaded(ModuleLoadedParam param) {
+        // 只在游戏主进程工作，避免在 SDK/服务子进程重复加载。
         mainProcess = TARGET.equals(param.getProcessName());
     }
 
@@ -34,6 +35,7 @@ public final class DldlModule extends XposedModule {
     @Override public void onPackageLoaded(PackageLoadedParam param) {
         if (!mainProcess || !TARGET.equals(param.getPackageName()) || !param.isFirstPackage()) return;
         try {
+            // 扩展使用独立目录；不写官方 game_start 或游戏热更新资源目录。
             directory = new File(param.getApplicationInfo().dataDir, "files/dldl_extension");
             if (!directory.isDirectory() && !directory.mkdirs()) throw new IllegalStateException("Cannot create extension directory");
             record("java_ready");
@@ -57,6 +59,7 @@ public final class DldlModule extends XposedModule {
         try {
             Class<?> renderer = param.getClassLoader().loadClass("org.cocos2dx.lib.Cocos2dxRenderer");
             Method draw = renderer.getDeclaredMethod("onDrawFrame", javax.microedition.khronos.opengles.GL10.class);
+            // 引擎初始化是第一道门槛；Lua 引导器还会等待业务控制器和助手列表就绪。
             Field initialized = renderer.getDeclaredField("mNativeInitCompleted");
             initialized.setAccessible(true);
             Class<?> gameBridge = param.getClassLoader().loadClass("org.cocos2dx.lib.Cocos2dxLuaJavaBridge");
@@ -75,6 +78,8 @@ public final class DldlModule extends XposedModule {
                 private long nextTick;
                 private int lastResult = Integer.MIN_VALUE;
                 @Override public Object intercept(XposedInterface.Chain chain) throws Throwable {
+                    // 原渲染必须先完成，且其异常不能被扩展的 catch 吞掉。
+                    // 借用游戏的 GL 线程调用 Lua，不能换到自行创建的后台线程。
                     Object result = chain.proceed();
                     try {
                         if (!observed) {
@@ -91,10 +96,12 @@ public final class DldlModule extends XposedModule {
                         }
                         if (BuildConfig.PROBE_STAGE >= 5 && bootstrap != null && !called
                                 && SystemClock.elapsedRealtime() >= nextTick && initialized.getBoolean(chain.getThisObject())) {
+                            // 每秒只检查是否需要挂载；已挂载时 Lua 立即返回，不会每秒执行日常任务。
                             nextTick = SystemClock.elapsedRealtime() + 1000;
                             int value = NativeBridge.callGlobal(gameBridge, "dofile", bootstrap.getAbsolutePath());
                             if (value != lastResult) { lastResult = value; record("loader_result:value=" + value); }
                         }
+                    // 扩展侧 Java 异常停止后续尝试，保留本帧原结果；此处不能拦截 native 内存崩溃。
                     } catch (Throwable error) { called = true; record("render_probe_failed:" + error); }
                     return result;
                 }

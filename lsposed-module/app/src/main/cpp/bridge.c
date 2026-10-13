@@ -1,7 +1,7 @@
 #include <jni.h>
 #include <unistd.h>
 
-/* No Lua pointers, fixed offsets, inline hooks or native worker threads. */
+/* 加载时只注册 JNI 版本，不查找 Lua 指针、不修改游戏 native 指令、不创建线程。 */
 JNIEXPORT jint JNICALL JNI_OnLoad(JavaVM *vm, void *reserved) {
     (void)vm; (void)reserved;
     return JNI_VERSION_1_6;
@@ -13,8 +13,8 @@ Java_com_zfj_dldlextension_NativeBridge_ping(JNIEnv *env, jclass type) {
     return (jint)gettid();
 }
 
-/* The engine owns its Lua state and stack. Invoke its public JNI contract on
- * the calling GL thread; never cache a Lua_State or resolve private offsets. */
+/* 这里只是转接：在调用者的 GL 线程上，调用游戏已有的 Java/JNI Lua 接口。
+ * Lua 状态与栈仍由游戏管理；不解密、不缓存 Lua_State，也不依赖 so 固定偏移。 */
 JNIEXPORT jint JNICALL
 Java_com_zfj_dldlextension_NativeBridge_callGlobal(JNIEnv *env, jclass type,
         jclass game_bridge, jstring name, jstring argument) {

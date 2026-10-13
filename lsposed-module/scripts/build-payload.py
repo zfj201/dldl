@@ -3,6 +3,8 @@
 import hashlib,json,pathlib
 ROOT=pathlib.Path(__file__).resolve().parents[2]
 OUT=ROOT/'lsposed-module/app/src/main/assets/extension'
+# 业务源码在 modules/；生成的 payload.lua 只是打包结果，修改功能应改这些源文件。
+# 每组状态机负责流程，带 _game 的适配层负责调用游戏控制器和接收协议回复。
 PAIRS=[('Gifts','daily_gifts.lua'),('Actions','daily_actions.lua'),('GameActions','daily_actions_game.lua'),('Training','daily_training.lua'),('GameTraining','daily_training_game.lua'),('Quests','daily_quests.lua'),('GameQuests','daily_quests_game.lua'),('Extension','xiangxiang_gifts_extension.lua')]
 def cut(s,start,end,replacement=''):
     assert s.count(start)==1,(start,s.count(start))

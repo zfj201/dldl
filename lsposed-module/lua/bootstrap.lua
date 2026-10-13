@@ -1,6 +1,8 @@
--- Invoked after nativeRender, in the engine GL thread. Returns an integer for JNI.
+-- Java 在原渲染结束后的 GL 线程调用本文件。返回码供 JNI 记录状态：
+-- 0=已挂载，1=等待，2=停用，3=发现旧组合包，-1=失败。
 local source=debug.getinfo(1,'S').source
 local root=assert(source:match('^@(.*/)'),'bootstrap path missing')
+-- dofile 每秒重读本文件，用游戏全局表保存状态，避免每次重新安装。
 local state=rawget(_G,'DLDL_EXTENSION_LOADER')
 if not state then state={generation=0};rawset(_G,'DLDL_EXTENSION_LOADER',state) end
 local function status(value)
@@ -17,6 +19,7 @@ local names={'OneKeyBurdenController','VipController','GlobalTimeTicket','RoleCo
  'DungeonstoneController','PantheonController','SoulDomainController','PartnersummonController',
  'ElitematchController','HeroController','BackpackController','BattleController','GuildController','GodRuinsController'}
 local ok,result=pcall(function()
+    -- game_start 只用来判断官方启动是否完成；本方案不修改或替换它。
     if not package.loaded.game_start or not GAME_INITED then status('waiting_game_start');return 1 end
     local refs={beginGame,OneKeyBurdenMainWindow,OneKeyBurdenAutoWindow,OneKeyBurdenAutoItem,OneKeyBurdenConst,package.loaded.game_start}
     for _,name in ipairs(names) do
@@ -28,10 +31,14 @@ local ok,result=pcall(function()
     local list=OneKeyBurdenConst and OneKeyBurdenConst.SimplifyTypeList[OneKeyBurdenConst.SimplifyType.DAILY_TASK]
     if type(list)~='table' then status('waiting_helper_list');return 1 end
     refs[#refs+1]=list
+    -- “同一代”指运行中的函数、类、控制器实例及列表仍是同一对象，不是游戏版本或日期。
+    -- 对象被重新初始化时才拆旧挂新，适应可观察到的业务对象重建。
     local same=state.refs and #state.refs==#refs
     if same then for i,v in ipairs(refs) do if state.refs[i]~=v then same=false;break end end end
     local disabled=exists(root..'../disabled')
+    -- 常规每秒回调到此立即结束；重复检查不会新增条目或发任务请求。
     if same and state.installation and not disabled then return 0 end
+    -- 窗口打开时先等关闭，避免拆挂过程中破坏正在执行的助手队列。
     if helper.onekeyburden_main_window or helper.onekeyburden_auto_window then
         status(disabled and 'disable_waiting_helper_close' or 'waiting_helper_close');return 1
     end
@@ -43,13 +50,14 @@ local ok,result=pcall(function()
     if disabled then status('disabled');return 2 end
     if same and state.failed then return -1 end
     state.refs=refs;state.failed=false
-    -- An old game_start payload must be migrated, never installed twice.
+    -- 旧 game_start 组合包若还在运行，拒绝再挂一份，需先迁移回对应版本官方启动文件。
     if rawget(_G,'DLDL_DAILY_GIFTS') then status('legacy_payload_present');return 3 end
     for _,row in ipairs(list) do
         if type(row.id)=='number' and row.id>=-2101802 and row.id<=-2101787 then
             status('custom_id_collision');state.failed=true;return -1
         end
     end
+    -- payload 返回安装工厂：这里只加菜单和方法包装；用户点“执行”后才发送业务请求。
     local factory=assert(loadfile(root..'payload.lua'))()
     state.generation=state.generation+1
     local installed=factory()
