@@ -14,6 +14,8 @@
 |---|---|---|
 |0：不启用模块|PID 5809，登录主城、进入助手、后台恢复后同 PID|基线正常|
 |1：空 Java 模块|两次冷启 PID 10298、12053，均写入 java_ready 并登录主城；首轮进入助手及后台恢复正常|当前环境未观察到由空 LSPosed 引起的退出|
+|2：空 native 桥|PID 14526 同时记录 java_ready/native_ready，JNI tid 与 Java 一致；登录主城、助手、后台恢复同 PID|空 so 实际加载后未观察到退出|
+|3：仅观察渲染回调|PID 16286，render_hook_ready，GLThread 80/tid 16354；回调先运行原方法再写标记|已找到实际 GL 线程入口，未使用固定地址|
 
 阶段1系统退出记录只有测试主动强停，没有新发生的异常退出。原始截图、系统记录保存在本地 `evidence/phase13/`（含账号内容，不上传）。这些观测不能证明未来版本绝无检测。
 
@@ -22,3 +24,5 @@
 Java 层存在 `Cocos2dxRenderer.onDrawFrame` 与 `Cocos2dxLuaJavaBridge.callLuaGlobalFunctionWithString(String,String)`。计划在原渲染回调完成后调用原游戏 JNI 接口执行本地 Lua，引擎自己处理 Lua 状态与栈；先观察线程再执行无业务探针。不采用固定 RVA，不安装 native inline hook，不拦截 exit/kill。
 
 空 native 桥只实现 JNI_OnLoad 与返回当前 tid 的 ping，不访问引擎状态。NDK r27d 取自 Google 官方下载，ZIP 完整解压通过；本地构建 arm64-v8a、Android API29、16KiB 最大页对齐。
+
+阶段2第一次打包使用压缩 native 库，现代 LSPosed 的 `base.apk!/lib/arm64-v8a` 路径无法加载，产生 UnsatisfiedLinkError。此轮不算通过。修正 `useLegacyPackaging=false` 后才记录 native_ready；不属于游戏自杀。

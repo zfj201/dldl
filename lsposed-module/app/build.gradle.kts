@@ -11,7 +11,8 @@ android {
         buildConfigField("int", "PROBE_STAGE", providers.gradleProperty("probeStage").getOrElse("1"))
     }
     buildFeatures { buildConfig = true }
-    packaging { jniLibs { useLegacyPackaging = true } }
+    // Modern LSPosed resolves module libraries from base.apk!/lib/<abi>.
+    packaging { jniLibs { useLegacyPackaging = false } }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_11; targetCompatibility = JavaVersion.VERSION_11 }
 }
 dependencies { compileOnly("io.github.libxposed:api:102.0.0") }
