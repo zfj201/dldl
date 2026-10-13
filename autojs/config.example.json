@@ -1,0 +1,12 @@
+{
+  "role": {"rid": "填写实际角色ID", "srv_id": "填写实际服务器ID"},
+  "closeGameOnComplete": true,
+  "templates": [
+    {"name": "关闭SDK启动广告", "file": "sdk-ad-close.png", "region": [830, 500, 250, 500]},
+    {"name": "APK更新以后再说", "file": "update-later.png", "region": [460, 1850, 360, 300]},
+    {"name": "开始冒险", "file": "start-adventure.png", "region": [250, 1800, 600, 400]},
+    {"name": "关闭活动公告", "file": "notice-blank-close.png", "region": [200, 1450, 700, 650]},
+    {"name": "关闭游戏提示弹窗", "file": "game-popup-close.png", "region": [700, 500, 380, 1100]}
+  ],
+  "readyTemplate": "city-ready.png"
+}
