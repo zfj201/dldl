@@ -6,11 +6,11 @@
 
 以前是把扩展接在游戏的 `game_start` 文件后面，游戏读这个文件时顺便启动扩展。现在扩展单独装在模块 APK 里，由 LSPosed 在游戏进程启动后把它带进去，再请游戏自己的 Lua 接口运行它。业务逻辑沿用原来的 Lua，换的是启动入口，不再改官方启动文件。
 
-可以理解为：官方游戏先正常开门，模块再进去给香香小助手加菜单。加菜单不会自动做任务；你点助手的执行按钮时，扩展才接管选中的自定义条目。每秒回调只是检查菜单是否已挂好，已挂好就立即返回。
+可以理解为：官方游戏先正常开门，模块再进去给香香小助手加菜单。加菜单不会自动做任务；你点助手的执行按钮时，扩展接管选中的自定义条目。若另外部署 [AutoJs 定时脚本](../autojs/README.md)，脚本会通过私有指令目录明确请求执行完整助手列表。每秒回调检查挂载及自动化指令，没有指令就不执行任务。
 
 LSPosed 在进程启动时加载小型 JNI 桥，在 `Cocos2dxRenderer.onDrawFrame` 原方法结束后，每秒一次调用游戏已有的 `Cocos2dxLuaJavaBridge.callLuaGlobalFunctionWithString`。通过 `dofile` 执行独立引导器，不使用固定 RVA、Lua_State 指针或 native inline hook。渲染尚未初始化则不调用。
 
-官方 `game_start` 完成后安装 14 项入口；不自动执行任务。控制器、窗口类、配置列表或 beginGame 对象变化时重新挂载；同一代次不重复安装。安装失败回滚自己已改动的方法；不清配置或消费 journal。历史单笔修复入口不进入发布包。
+官方 `game_start` 完成后安装 14 项入口；收到执行操作或自动化指令后才执行任务。控制器、窗口类、配置列表或 beginGame 对象变化时重新挂载；同一代次不重复安装。安装失败回滚自己已改动的方法；不清配置或消费 journal。历史单笔修复入口不进入发布包。
 
 native 和 Lua SHA-256 来自签名 APK 内资源。复制到游戏 `files/dldl_extension/bundle-<hash>/`，逐文件校验并原子替换。冷启动会恢复缺失或损坏的副本。官方资源哈希不作为长期启动门槛，也不会被模块覆盖。
 
@@ -27,6 +27,7 @@ native 和 Lua SHA-256 来自签名 APK 内资源。复制到游戏 `files/dldl_
 | `modules/daily_actions.lua` / `daily_actions_game.lua` | 扫荡、膜拜、契约召唤的流程及游戏接口适配 |
 | `modules/daily_training.lua` / `daily_training_game.lua` | 积分赛、魂师升级、背包魂骨强化的流程及游戏接口适配 |
 | `modules/daily_quests.lua` / `daily_quests_game.lua` | 宗门祈愿奖励、至高遗迹的流程及游戏接口适配 |
+| `modules/helper_automation.lua` / `helper_automation_game.lua` | 自动执行完整助手列表、角色和游戏日绑定、持久去重及完成回执 |
 | `lsposed-module/scripts/build-payload.py` | 把上述源码打包成 APK 内独立 Lua，不拼入官方 game_start |
 
 优先读 `bootstrap.lua` 的挂载判断和 `xiangxiang_gifts_extension.lua` 的 `requestTask` 包装，分别对应“扩展怎么进来”和“点执行后怎么工作”。`app/src/main/assets/extension/payload.lua` 是构建生成文件，不是维护业务逻辑的位置。
@@ -46,6 +47,8 @@ PYTHONPATH=.tools python3 tests/test_extension_loader.py
 ```
 
 上述测试从仓库根目录运行，依赖本机 Lua 5.1/Lupa 与已恢复游戏类，包含已有111项回归及加载器生命周期检查，不调用设备或网络。
+
+自动化状态机测试：`PYTHONPATH=.tools python3 tests/test_helper_automation.py`。自动化通道位于游戏 `files/dldl_extension/automation/`，使用 `ready.tsv`、`request.tsv`、`result.tsv` 与 `tasks.tsv`。协议及定时安装见 AutoJs 文档。
 
 ## 使用与回退
 
