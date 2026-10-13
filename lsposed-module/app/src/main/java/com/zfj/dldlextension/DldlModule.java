@@ -16,6 +16,7 @@ public final class DldlModule extends XposedModule {
     private boolean mainProcess;
     private boolean nativeReady;
     private File directory;
+    private File bootstrap;
 
     @Override public void onModuleLoaded(ModuleLoadedParam param) {
         mainProcess = TARGET.equals(param.getProcessName());
@@ -37,10 +38,15 @@ public final class DldlModule extends XposedModule {
             if (!directory.isDirectory() && !directory.mkdirs()) throw new IllegalStateException("Cannot create extension directory");
             record("java_ready");
             if (BuildConfig.PROBE_STAGE >= 2) {
+                if (BuildConfig.PROBE_STAGE >= 5) PayloadStore.verifyNative(getModuleApplicationInfo().sourceDir);
                 NativeBridge.load();
                 if (NativeBridge.ping() != Process.myTid()) throw new IllegalStateException("Native thread mismatch");
                 nativeReady = true;
                 record("native_ready");
+                if (BuildConfig.PROBE_STAGE >= 5) {
+                    bootstrap = PayloadStore.prepare(getModuleApplicationInfo().sourceDir, directory);
+                    record("payload_ready:" + bootstrap.getParentFile().getName());
+                }
             }
         } catch (Throwable error) { record("initialization_failed:" + error); }
     }
@@ -55,7 +61,7 @@ public final class DldlModule extends XposedModule {
             initialized.setAccessible(true);
             Class<?> gameBridge = param.getClassLoader().loadClass("org.cocos2dx.lib.Cocos2dxLuaJavaBridge");
             File probe = new File(directory, "probe.lua");
-            if (BuildConfig.PROBE_STAGE >= 4) {
+            if (BuildConfig.PROBE_STAGE == 4) {
                 String output = new File(directory, "lua_probe.log").getAbsolutePath();
                 try (FileWriter writer = new FileWriter(probe)) {
                     writer.write("local f=assert(io.open('" + output + "','a')); "
@@ -66,6 +72,8 @@ public final class DldlModule extends XposedModule {
                 private boolean observed;
                 private boolean called;
                 private long readyAt;
+                private long nextTick;
+                private int lastResult = Integer.MIN_VALUE;
                 @Override public Object intercept(XposedInterface.Chain chain) throws Throwable {
                     Object result = chain.proceed();
                     try {
@@ -74,12 +82,18 @@ public final class DldlModule extends XposedModule {
                             readyAt = SystemClock.elapsedRealtime() + 2000;
                             record("render_observed:thread=" + Thread.currentThread().getName() + ":native_tid=" + NativeBridge.ping());
                         }
-                        if (BuildConfig.PROBE_STAGE >= 4 && !called && SystemClock.elapsedRealtime() >= readyAt
+                        if (BuildConfig.PROBE_STAGE == 4 && !called && SystemClock.elapsedRealtime() >= readyAt
                                 && initialized.getBoolean(chain.getThisObject())) {
                             called = true;
                             record("lua_probe_begin");
                             int value = NativeBridge.callGlobal(gameBridge, "dofile", probe.getAbsolutePath());
                             record("lua_probe_return:value=" + value);
+                        }
+                        if (BuildConfig.PROBE_STAGE >= 5 && bootstrap != null && !called
+                                && SystemClock.elapsedRealtime() >= nextTick && initialized.getBoolean(chain.getThisObject())) {
+                            nextTick = SystemClock.elapsedRealtime() + 1000;
+                            int value = NativeBridge.callGlobal(gameBridge, "dofile", bootstrap.getAbsolutePath());
+                            if (value != lastResult) { lastResult = value; record("loader_result:value=" + value); }
                         }
                     } catch (Throwable error) { called = true; record("render_probe_failed:" + error); }
                     return result;

@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <application android:label="斗罗扩展接入验证" android:allowBackup="false">
+    <queries><package android:name="com.hnzh.dldlwhjx.huawei" /></queries>
+    <application android:label="香香小助手扩展" android:allowBackup="false">
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

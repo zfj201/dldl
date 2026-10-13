@@ -26,3 +26,26 @@ Java 层存在 `Cocos2dxRenderer.onDrawFrame` 与 `Cocos2dxLuaJavaBridge.callLua
 空 native 桥只实现 JNI_OnLoad 与返回当前 tid 的 ping，不访问引擎状态。NDK r27d 取自 Google 官方下载，ZIP 完整解压通过；本地构建 arm64-v8a、Android API29、16KiB 最大页对齐。
 
 阶段2第一次打包使用压缩 native 库，现代 LSPosed 的 `base.apk!/lib/arm64-v8a` 路径无法加载，产生 UnsatisfiedLinkError。此轮不算通过。修正 `useLegacyPackaging=false` 后才记录 native_ready；不属于游戏自杀。
+
+## Lua 桥与真实模块
+
+阶段4 PID17769、GLThread82/tid17989，native调用原游戏JNI `dofile`，成功写出独立 `lua_probe.log`，返回0。登录主城与后台恢复后仍同 PID，未新增异常退出。
+
+阶段5先保留旧组合包，实机状态为 `legacy_payload_present`、generation=0，确认不会重复安装。
+
+当前文件 SHA-256 与 Phase12 已部署产物完全一致（e04492f…），官方原密文备份与该组合包的构建来源一致（033b45a…），启动页仍 v1.3.2942。保存 Phase12 回退副本与扩展偏好后，通过现有哈希保护的原子部署脚本恢复当前对应的官方密文。该精确哈希只用于本次迁移，不进入模块长期加载条件。
+
+迁移后 PID24949，独立 bundle 成功记录 `installed:14:version=0.2.0`、generation=1，官方 game_start 不再包含自定义扩展。
+
+## 工程实现与检查
+
+- Gradle 自动构建小型JNI桥、纯Lua包、APK内SHA-256清单；NDK与SDK路径在不提交的local.properties中。
+- 渲染完成且引擎已初始化后，每秒运行一次引导器。官方 game_start 加载成功、GAME_INITED 为真才检查业务代次。不会主动运行任务。
+- 控制器实例、类、列表、beginGame身份作为代次依据；同代重复回调幂等。助手打开时等待关闭再卸载/重挂。
+- 安装局部失败时回滚已安装的包装；使用rawget/rawset恢复实例原始属性，避免将旧继承方法固定到新实例。
+- 拆除仅修改仍属于自己的包装与行，不覆盖后来他方的改动；不修改偏好/消费journal。
+- 发布包移除历史单笔积分赛、遗迹和魂师恢复入口。未知pending仍保留，已确认目标的正常魂师恢复逻辑保留。
+- 已有111项回归、5项战斗状态机回归通过；新增加载器验证覆盖局部安装失败回滚、无业务请求安装14项、20次重复调用、关闭/重新启用、代次变化重挂、journal保留和外来包装保留。
+- `assembleDebug`、`lintDebug`通过。lint只有目标SDK/备份配置/图标与文案的提示，无错误。
+
+真实官方APK覆盖升级、真实同进程热更新、新Lua状态重建仍未验收；不能把模拟代次测试或冷启动称为每周更新保证。

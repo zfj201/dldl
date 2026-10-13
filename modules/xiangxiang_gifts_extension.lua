@@ -53,8 +53,9 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     local function connected() return GameNet:getInstance():IsServerConnect()==true end
     local function patch(obj, key, wrap)
         local old = obj[key]; assert(type(old) == 'function', key)
+        local own = rawget(obj,key)
         local new = wrap(old); obj[key] = new
-        patches[#patches+1] = {obj = obj, key = key, old = old, new = new}
+        patches[#patches+1] = {obj = obj, key = key, old = old, own = own, new = new}
     end
     local list = OneKeyBurdenConst.SimplifyTypeList[TYPE]
     for index, spec in ipairs(specs) do
@@ -121,6 +122,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             if quest_runner and quest_runner.active then quest_runner:finish('uncertain','runtime_error') end
         end
     end
+    local install_ok, install_result = pcall(function()
     if Training then
         training_runner,training_pending=GameTraining.bind(Training,{roleKey=roleKey,identity=identity,now=now,
             patch=patch,busy=function() return owner~=nil end,safe=safe,connected=connected})
@@ -368,6 +370,23 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     -- Insert first so both entries are immediately visible in the daily category.
     for i = #specs, 1, -1 do table.insert(list, 1, specs[i].row) end
     local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner, version = Quests and 'daily_quests_v3' or Training and 'daily_training_v8' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
+    -- Lifecycle detachment only restores wrappers and rows still owned by us.
+    -- It never edits preferences or pending journals and suppresses callbacks.
+    function installation.detach()
+        for _,r in pairs({runner,action_runner,training_runner,quest_runner}) do
+            if r and r.active then r.active.done=function() end;r:cancel() end
+        end
+        cleanup()
+        for i=#patches,1,-1 do
+            local p=patches[i]
+            if rawget(p.obj,p.key)==p.new then rawset(p.obj,p.key,p.own) end
+        end
+        for i=#list,1,-1 do
+            local spec=custom[list[i].id]
+            if spec and list[i]==spec.row then table.remove(list,i) end
+        end
+        active_install=nil
+    end
     function installation.uninstall()
         assert(not helper.onekeyburden_main_window and not helper.onekeyburden_auto_window, 'close helper windows first')
         local checked={}
@@ -392,11 +411,25 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                     quest_runner:cancel()
                 end
                 cleanup()
-        for i = #patches, 1, -1 do local p = patches[i]; p.obj[p.key] = p.old end
+        for i = #patches, 1, -1 do local p = patches[i]; rawset(p.obj,p.key,p.own) end
         for i = #list, 1, -1 do if custom[list[i].id] then table.remove(list, i) end end
         active_install = nil
     end
     active_install = installation
     return installation
+    end)
+    if not install_ok then
+        for i=#patches,1,-1 do
+            local p=patches[i]
+            if rawget(p.obj,p.key)==p.new then rawset(p.obj,p.key,p.own) end
+        end
+        for i=#list,1,-1 do
+            local spec=custom[list[i].id]
+            if spec and list[i]==spec.row then table.remove(list,i) end
+        end
+        cleanup()
+        error(install_result)
+    end
+    return install_result
 end
 return M
