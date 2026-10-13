@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileWriter;
 import io.github.libxposed.api.XposedModule;
 
-/** Stage 1 has no hooks, native loads, Lua access or protocol calls. */
+/** Staged probe: stage 1 only Java; stage 2 adds an inert JNI library. */
 public final class DldlModule extends XposedModule {
     private static final String TARGET = "com.hnzh.dldlwhjx.huawei";
     private boolean mainProcess;
@@ -22,6 +22,14 @@ public final class DldlModule extends XposedModule {
                 + " tid=" + Process.myTid() + " time=" + System.currentTimeMillis();
             try (FileWriter writer = new FileWriter(new File(directory, "loader.log"), true)) { writer.write(event + "\n"); }
             log(Log.INFO, "DldlExtension", event);
+            if (BuildConfig.PROBE_STAGE >= 2) {
+                NativeBridge.load();
+                int nativeTid = NativeBridge.ping();
+                try (FileWriter writer = new FileWriter(new File(directory, "loader.log"), true)) {
+                    writer.write("stage=" + BuildConfig.PROBE_STAGE + " event=native_ready pid="
+                        + Process.myPid() + " tid=" + nativeTid + " time=" + System.currentTimeMillis() + "\n");
+                }
+            }
         } catch (Throwable error) {
             log(Log.ERROR, "DldlExtension", "Probe initialization failed", error);
         }
