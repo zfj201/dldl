@@ -11,7 +11,7 @@ function M.bind(Training,ctx)
     local battle=BattleController:getInstance()
     local ud=cc.UserDefault:getInstance()
     local runner,internal,manual_until=nil,false,0
-    local bone_scan
+    local bone_scan,hero_scan
     local result_views
     local function log(event,detail)
         pcall(function()
@@ -81,6 +81,7 @@ function M.bind(Training,ctx)
         return bag:getBagItemById(BackPackConst.Bag_Code.EQUIPS,a.id)
     end
     local function guard(kind,a)
+        if ctx.connected and not ctx.connected() then return 'connection_unavailable' end
         if arena(kind) then
             local sc=elite:getModel():getSCData()
             if not sc or sc.state~=1 or sc.day_combat_count~=a.remaining or sc.combat_time~=a.combat then return 'arena_state_changed' end
@@ -97,6 +98,7 @@ function M.bind(Training,ctx)
             if not target or not a.opponent or target.rid~=a.opponent.rid or target.srv_id~=a.opponent.srv_id
                 or target.order_id~=a.opponent.order_id then return 'opponent_changed' end
         elseif kind=='hero' then
+            if not hero_scan or not hero_scan.verified or hero_scan.partner_id~=a.partner_id then return 'hero_details_unverified' end
             if not heroEligible(hm:getHeroById(a.partner_id)) then return 'hero_target_changed' end
             local total=costs();if not total then return 'hero_cost_config_mismatch' end
             for id,c in pairs(total) do if c~=a.cost[id] or num(id)<c then return 'insufficient_hero_materials' end end
@@ -134,14 +136,46 @@ function M.bind(Training,ctx)
         end,
         saveJournal=function(kind,used,pending,a)
             local k=key(kind)
-            if a then
+            if a and arena(kind) then
                 ud:setIntegerForKey(key('arena')..':last_sent_at',a.sent_at)
                 for _,field in ipairs({'remaining','combat','tickets','sent_at','start_time','end_time'}) do
                     ud:setIntegerForKey(k..':before_'..field,type(a[field])=='number' and a[field] or -1)
                 end
                 ud:setIntegerForKey(k..':explicit_rejected',0)
+            elseif a and kind=='hero' then
+                for _,field in ipairs({'partner_id','bid','level','sent_at'}) do
+                    ud:setIntegerForKey(k..':before_'..field,a[field])
+                end
             end
             ud:setIntegerForKey(k..':used',used);ud:setIntegerForKey(k..':pending',pending);ud:flush()
+        end,
+        queryHeroDetails=function(id) log('query_hero_details','partner='..id..'|protocol=11025');hero:SendProtocal(11025,{}) end,
+        heroRecoveryBaseline=function()
+            local k=key('hero')
+            local a={partner_id=ud:getIntegerForKey(k..':before_partner_id',0),bid=ud:getIntegerForKey(k..':before_bid',0),
+                level=ud:getIntegerForKey(k..':before_level',0),sent_at=ud:getIntegerForKey(k..':before_sent_at',0)}
+            if a.partner_id>0 and a.bid>0 and a.level==1 and a.sent_at>0 then return a end
+            -- Exact migration for the audited disconnected Phase11v3 request;
+            -- no generic clearing of old journals without target evidence.
+            if ctx.roleKey()~='yinghe_3356:5005' or day()~=1791752400 or ud:getIntegerForKey(k..':used',0)~=0
+                or ctx.now()<1791779059+300 then return nil end
+            local token='phase11v3|bc73670fab9465e93957e6a11a9001c0ac2727f370d8a7e0b5e98685059eee32|yinghe_3356:5005|1791752400|1791779059|33794|1|reply_timeout'
+            local f=io.open(cc.FileUtils:getInstance():getWritablePath()..'dldl_hero_reconcile.request','r')
+            if not f then return nil end;local value=f:read('*a');f:close()
+            if value:match('^%s*(.-)%s*$')~=token then return nil end
+            log('hero_recovery_baseline',token)
+            return {partner_id=33794,level=1,sent_at=1791779059,legacy=true}
+        end,
+        heroRecoveryLevel=function(data,a)
+            if ctx.connected and not ctx.connected() then return nil,'connection_unavailable' end
+            for _,v in ipairs(data.partners or {}) do
+                if v.partner_id==a.partner_id then
+                    log('hero_recovery_snapshot','partner='..v.partner_id..'|level='..tostring(v.lev))
+                    if (a.bid and v.bid~=a.bid) or (v.end_time or 0)~=0 or (v.resonate_lev or 0)~=0 then return nil,'hero_target_changed' end
+                    if v.lev==6 or (a.legacy and v.lev==1) then return v.lev end
+                    return nil,'previous_request_unresolved'
+                end
+            end
         end,
         markRejected=function(kind) ud:setIntegerForKey(key(kind)..':explicit_rejected',1);ud:flush() end,
         refreshInterval=refreshInterval,challengeNotBefore=challengeNotBefore,
@@ -156,6 +190,12 @@ function M.bind(Training,ctx)
         end,
         reportRecovery=function(status,reason)
             pcall(function()
+                if runner.active and runner.active.kind=='hero' then
+                    local path=cc.FileUtils:getInstance():getWritablePath()..'dldl_hero_reconcile.'
+                    local f=assert(io.open(path..'result','a'));f:write(ctx.now(),'|',ctx.roleKey(),'|',day(),'|',status,'|',reason,'\n');f:close()
+                    if reason=='hero_recovered_completed' or reason=='hero_recovered_unchanged' then os.remove(path..'request') end
+                    return
+                end
                 local f=assert(io.open(recoveryFile('result'),'a'));f:write(tostring(ctx.now()),'|',ctx.roleKey(),'|',tostring(day()),'|',status,'|',tostring(reason),'\n');f:close()
                 if reason=='action_rejected_unchanged' then os.remove(recoveryFile('request')) end
             end)
@@ -185,6 +225,12 @@ function M.bind(Training,ctx)
         isOpen=function(kind) return not arena(kind) or elite:getModel():checkElitematchIsOpen(true) end,
         query=function(kind)
             log('query',kind)
+            if kind=='hero' then
+                hero_scan={verified=false}
+                -- 11026 contains attributes, not level. 11025 is the game's
+                -- read-only base list and carries partner_id/bid/lev.
+                log('query_hero_details','protocol=11025');hero:SendProtocal(11025,{})
+            end
             if kind=='form' then result_views=nil;hero:sender11211(45)
             elseif kind=='base' then elite:sender29400()
             elseif kind=='opponents' then elite:sender29401()
@@ -203,12 +249,14 @@ function M.bind(Training,ctx)
         end,
         prepare=function(kind)
             if kind=='hero' then
+                if not hero_scan then return nil,'no_eligible_target' end
+                if not hero_scan.verified then return nil,hero_scan.reason or 'awaiting_details' end
+                local v=hm:getHeroById(hero_scan.partner_id)
+                if not heroEligible(v) then return nil,'hero_target_changed' end
                 local total=costs();if not total then return nil,'hero_cost_config_mismatch' end
                 for id,c in pairs(total) do if num(id)<c then return nil,'insufficient_hero_materials' end end
-                for _,v in ipairs(sorted(hm:getHeroList())) do if heroEligible(v) then
-                    log('hero_selected','partner='..v.partner_id..'|level=1|coin='..tostring(total[1])..'|hero_exp='..tostring(total[22]))
-                    return {partner_id=v.partner_id,cost=total}
-                end end
+                log('hero_selected','partner='..v.partner_id..'|level=1|coin='..tostring(total[1])..'|hero_exp='..tostring(total[22]))
+                return {partner_id=v.partner_id,bid=v.bid,level=1,cost=total}
             else
                 if bone_scan and bone_scan.wait then return nil,'awaiting_details' end
                 local cfg=PartnerHolyEqmData.data_const.common_strengthen_item
@@ -317,10 +365,18 @@ function M.bind(Training,ctx)
         if runner.active and arena(runner.active.kind) then log('message',tostring(text):gsub('[\r\n]',' ')) end
         return old(text,...)
     end end)
-    for _,pair in ipairs({{elite,29400},{elite,29401},{elite,29402},{elite,29403},{elite,29406},{elite,29446},{elite,29450},{hero,11211},{hero,11003},{hero,11083}}) do
+    for _,pair in ipairs({{elite,29400},{elite,29401},{elite,29402},{elite,29403},{elite,29406},{elite,29446},{elite,29450},{hero,11211},{hero,11003},{hero,11083},{hero,11025}}) do
         local id=pair[2]
         ctx.patch(pair[1],'handle'..id,function(old) return function(obj,data)
             old(obj,data);ctx.safe(function()
+                if id==11025 and runner.active and runner.active.kind=='hero' and runner.active.phase=='prepare' and hero_scan then
+                    hero_scan.reason='no_eligible_target'
+                    for _,v in ipairs(sorted(data.partners)) do
+                        if v.lev==1 and heroEligible(hm:getHeroById(v.partner_id)) then
+                            hero_scan.partner_id=v.partner_id;hero_scan.verified=true;hero_scan.reason=nil;break
+                        end
+                    end
+                end
                 if id==29406 and runner.active and arena(runner.active.kind)
                     and (runner.active.phase=='reply' or runner.active.phase=='battle') and (not data.combat_type or data.combat_type==23) then
                     result_views={won=battle.finish_result_view_list and battle.finish_result_view_list[23],
@@ -332,13 +388,8 @@ function M.bind(Training,ctx)
     end
     return runner,function(current)
         if ctx.now()<manual_until then return true end
-        -- Preserve unresolved training mutations as a read-only barrier for
-        -- every custom row; skipping a row must never resend or clear them.
-        local arena_current = current=='arena_free' or current=='arena_tickets'
-        for _,kind in ipairs({'arena','arena_free','arena_tickets','hero','bone'}) do
-            local same = (arena_current and (kind=='arena' or kind=='arena_free' or kind=='arena_tickets')) or kind==current
-            if not same and ud:getIntegerForKey(key(kind)..':pending',0)~=0 then return true end
-        end
+        -- Own start/journal protects unresolved actions (arena free/tickets
+        -- remain coupled); unrelated tasks use their fresh server state.
         return false
     end
 end

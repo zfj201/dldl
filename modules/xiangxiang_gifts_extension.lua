@@ -50,6 +50,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
         return key and 'dldl_gifts_v1:' .. key .. ':' .. pos or nil
     end
     local function now() return GameNet:getInstance():getTime() end
+    local function connected() return GameNet:getInstance():IsServerConnect()==true end
     local function patch(obj, key, wrap)
         local old = obj[key]; assert(type(old) == 'function', key)
         local new = wrap(old); obj[key] = new
@@ -97,10 +98,12 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     local action_runner, action_pending
     local training_runner, training_pending
     local quest_runner, quest_pending
-    local function gift_pending()
+    local function gift_pending(kind)
         if runner.active then return true end
-        for _, pending in pairs(runner.uncertain or {}) do
-            if pending then return true end
+        -- Gift replies have no charge ID: unresolved different gift kinds
+        -- share a response channel. Own kind may perform read-only recovery.
+        for key, pending in pairs(runner.uncertain or {}) do
+            if pending and tonumber(key:match(':(%d+):%d+:%d+$'))~=kind then return true end
         end
         return false
     end
@@ -120,7 +123,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     end
     if Training then
         training_runner,training_pending=GameTraining.bind(Training,{roleKey=roleKey,identity=identity,now=now,
-            patch=patch,busy=function() return owner~=nil end,safe=safe})
+            patch=patch,busy=function() return owner~=nil end,safe=safe,connected=connected})
     end
     if Quests then
         quest_runner,quest_pending=GameQuests.bind(Quests,{roleKey=roleKey,identity=identity,now=now,
@@ -282,7 +285,14 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                     self:updateLoopList()
                 end
             end
-            if now() < manual_until or gift_pending() or (action_pending and action_pending(spec.kind)) or (training_pending and training_pending(spec.kind)) or (quest_pending and quest_pending(spec.kind)) then done({status = 'error', reason = 'manual_claim_pending'}); return end
+            if not connected() then done({status='error',reason='connection_unavailable'});return end
+            if type(spec.kind)=='number' and gift_pending(spec.kind) then done({status='uncertain',reason='gift_request_unresolved'});return end
+            if (type(spec.kind)=='number' and now()<manual_until)
+                or (not spec.training and not spec.quest and type(spec.kind)~='number' and action_pending and action_pending(spec.kind))
+                or (spec.training and training_pending and training_pending(spec.kind))
+                or (spec.quest and quest_pending and quest_pending(spec.kind)) then
+                done({status='error',reason='manual_claim_pending'});return
+            end
             local selected = spec.quest and quest_runner or spec.training and training_runner or (type(spec.kind)=='number' and runner or action_runner)
             local count=10
             local found=0
@@ -304,7 +314,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             old(self, data, index)
             if custom[data.pos] and data.local_result then
                 local labels = {confirmed = '已核实完成', skipped = '已完成或无可用次数', uncertain = '结果未确认',
-                    error = '暂未执行', cancelled = '已停止'}
+                    error = '执行失败，已跳过', cancelled = '已停止'}
                 local daily_done={summon='今日召唤已完成',arena_free='今日免费挑战已完成',
                     arena_tickets='今日用券目标已完成',hero='今日养成已完成',bone='今日养成已完成'}
                 self.un_finish_node:setVisible(true)
@@ -313,7 +323,15 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                     ruins_no_boss='暂无可挑战遗迹首领',
                     ruins_boss_defeated='当前遗迹首领已击败，已跳过本项',
                     insufficient_contracts='灵魂契约不足，已跳过本项',hero_bag_full='魂师背包空间不足',
-                    daily_target_done=daily_done[custom[data.pos].kind] or '今日任务已完成',previous_request_unresolved='上次结果不明，已阻断',
+                    daily_target_done=daily_done[custom[data.pos].kind] or '今日任务已完成',previous_request_unresolved='上次结果待核实，已跳过本项',
+                    manual_claim_pending='正在手动操作，已跳过本项',gift_request_unresolved='礼包请求待核实，已跳过本项',
+                    connection_unavailable='连接不可用，已跳过本项',query_timeout='状态查询超时，已跳过本项',
+                    form_timeout='阵容查询超时，已跳过本项',details_timeout='详情查询超时，已跳过本项',
+                    reply_timeout='请求未收到回复，待核实',hero_recovery_timeout='升级结果查询超时，待核实',
+                    hero_recovered_completed='已核实上次升级完成',hero_recovered_unchanged='已核实等级未变，可再次执行',
+                    hero_recovery_changed='等级核对不一致，已跳过本项',hero_target_changed='魂师状态已变，已跳过本项',
+                    hero_details_unverified='魂师详情未确认，已跳过本项',
+                    already_claimed='礼包已领取',gift_unavailable='暂无可领取礼包',no_remaining_action='今日免费次数已完成',
                     inventory_timeout='背包未同步，已停止',summon_busy='正在召唤，请稍后',not_open='暂未开放',
                     insufficient_tickets='斗魂挑战券不足，已阻断',empty_attack_formation='请先保存积分赛进攻阵容',
                     free_challenges_remaining='免费次数尚未用完，请先执行免费挑战',
@@ -321,6 +339,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                     insufficient_stones='普通魂骨强化石不足',insufficient_coin='魂骨养成所需金币不足',
                     no_eligible_target='暂无符合条件的养成对象',battle_busy='其他战斗未结束，已停止'}
                 self.un_finish_lb:setString(TI18N(reasons[data.local_reason] or labels[data.local_result] or '结果未确认'))
+                self.un_finish_lb:setFontSize(24)
             end
         end
     end)
@@ -348,7 +367,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     end)
     -- Insert first so both entries are immediately visible in the daily category.
     for i = #specs, 1, -1 do table.insert(list, 1, specs[i].row) end
-    local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner, version = Quests and 'daily_quests_v2' or Training and 'daily_training_v7' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
+    local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner, version = Quests and 'daily_quests_v3' or Training and 'daily_training_v8' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
     function installation.uninstall()
         assert(not helper.onekeyburden_main_window and not helper.onekeyburden_auto_window, 'close helper windows first')
         local checked={}

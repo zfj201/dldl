@@ -2,7 +2,7 @@
 """Phase11v2 guild/ruins integration, real recovered senders/handlers with mock server and rendering."""
 import os,runpy,json
 from pathlib import Path
-os.environ['DLDL_TEST_PHASE']='phase11v3'
+os.environ.setdefault('DLDL_TEST_PHASE','phase12')
 ROOT=Path(__file__).resolve().parents[1]
 ns=runpy.run_path(str(ROOT/'tests/test_daily_training.py'))
 lua=ns['lua'];original=ns['original']
@@ -78,7 +78,7 @@ local original_multiform_sender=hc.send11253
 local install_sent=#sent
 ext=Extension.install(Gifts,Actions,GameActions,Training,GameTraining,Quests,GameQuests)
 case('fourteen optional rows preserve original twelve and only guild ruins remain',function()
- assert(#ext.specs==14 and ext.version=='daily_quests_v2' and #sent==install_sent)
+ assert(#ext.specs==14 and ext.version=='daily_quests_v3' and #sent==install_sent)
  local old_ids={-2101802,-2101801,-2101800,-2101799,-2101798,-2101797,-2101796,-2101795,-2101794,-2101791,-2101793,-2101792}
  for i,id in ipairs(old_ids) do assert(ext.specs[i].pos==id) end
  for i=13,14 do assert(OneKeyBurdenMainWindow:getPosExecuteData(1,ext.specs[i].row).is_open==0) end
@@ -197,12 +197,12 @@ case('partial20 summon depletion skips remaining contract batch and continues qu
  for i=n+1,#sent do assert(sent[i].id~=23201) end
  w:requestTask();receive(13518,{gid=10,gsrv_id='guild',wish_gift_type=2});assert(w.is_execute_finish)
 end)
-case('mirror pending remains uncertain and later guild row is skipped without retry',function()
+case('mirror pending protects summon while unrelated guild row proceeds',function()
  freshQuest();local w=window({{type=1,pos=-2101795,args={{args_key=9020,args_val=10}}},{type=1,pos=-2101790,args={}}})
  w:requestTask();receive(23200,{});now=now+20;ext.actions:tick();assert(w.execute_index==2 and not w.is_execute_finish)
  local n=#sent;w:requestTask()
- assert(w.execute_request_list[1].local_result=='uncertain' and w.execute_request_list[2].local_result=='error'
-   and w.execute_request_list[2].local_reason=='manual_claim_pending' and w.execute_index==2 and w.is_execute_finish)
+ assert(w.execute_request_list[1].local_result=='uncertain' and sent[#sent].id==13518 and w.execute_index==2)
+ receive(13518,{gid=10,gsrv_id='guild',wish_gift_type=2});assert(w.is_execute_finish)
  for i=n+1,#sent do assert(sent[i].id~=13548 and sent[i].id~=23201) end
 end)
 case('role/day change cannot apply late owned callback or clear old journal',function()
@@ -220,25 +220,28 @@ case('ruins native skip77 and reordered settlement callback retain own battle st
  freshQuest();w=startQ('ruins',1);b=ext.quests.active.base;bc:scInitFightStart({combat_type=77,current_wave=1,total_wave=1})
  ext.quests:cancel();assert(w.execute_request_list[1].local_result=='cancelled')
 end)
-case('guild pending still blocks ruins and own ruins pending still blocks a restart',function()
+case('guild pending is isolated while own ruins pending still blocks a restart',function()
  freshQuest();local key='dldl_quests_v1:'..role.srv_id..':'..role.rid
  ud:setIntegerForKey(key..':guild_wish:pending',1)
  local n=#sent;local w=qtask('ruins');w:requestTask()
- assert(w.execute_request_list[1].local_reason=='manual_claim_pending')
- for i=n+1,#sent do assert(sent[i].id~=11211 and sent[i].id~=13105) end
+ assert(sent[#sent].id==11211)
+ receive(11211,{type=92,formation_type=1,pos_info={}})
+ assert(w.execute_request_list[1].local_reason=='empty_quest_formation')
+ for i=n+1,#sent do assert(sent[i].id~=13105) end
  freshQuest();w=startQ('ruins',1);local own='dldl_quests_v1:'..role.srv_id..':'..role.rid..':ruins:pending'
  receive(13105,{code=1,id=0});now=now+91;ext.quests:tick();assert(ext.quests.env.pending('ruins'))
  n=#sent;w=qtask('ruins');w:requestTask()
  assert(w.execute_request_list[1].local_result=='uncertain' and w.execute_request_list[1].local_reason=='previous_request_unresolved' and ud:getIntegerForKey(own,0)==1)
  for i=n+1,#sent do assert(sent[i].id~=11211 and sent[i].id~=13100 and sent[i].id~=13105) end
 end)
-case('unknown ruins result advances queue while its pending skips later guild without retry',function()
+case('unknown ruins result advances unrelated guild without retrying ruins',function()
  freshQuest();local w=window({{type=1,pos=-2101787,args={}},{type=1,pos=-2101790,args={}}})
  w:requestTask();receive(11211,{type=92,formation_type=1,pos_info={{pos=1,id=2}}});receive(13100,rbase(2))
  receive(13106,{result=2,is_self=1,combat_type=77,hp_per=8000});now=now+21;ext.quests:tick()
  assert(w.execute_index==2 and w.execute_request_list[1].local_result=='uncertain' and ext.quests.env.pending('ruins'))
- local n=#sent;w:requestTask();assert(w.is_execute_finish and w.execute_request_list[2].local_reason=='manual_claim_pending')
- for i=n+1,#sent do assert(sent[i].id~=13105 and sent[i].id~=13518 and sent[i].id~=13548) end
+ local n=#sent;w:requestTask();assert(sent[#sent].id==13518)
+ receive(13518,{gid=10,gsrv_id='guild',wish_gift_type=2});assert(w.is_execute_finish)
+ for i=n+1,#sent do assert(sent[i].id~=13105 and sent[i].id~=13548) end
 end)
 case('ruins runs all remaining rewards using only own id zero challenge with fresh verification',function()
  freshQuest();local w=startQ('ruins',2);local n=#sent-1
@@ -444,5 +447,5 @@ ext.uninstall()
 ''')
 names=[lua.globals().passed[i] for i in range(1,len(lua.globals().passed)+1)]
 record={'runtime':lua.eval('_VERSION'),'passed':len(names),'cases':names,'network':'mocked; no device calls','real_code':'original ruins/hero/guild senders and handlers; protocol dispatch and recovered configs; rendering/inventories mocked'}
-(ROOT/'evidence/phase11v3_quests_tests.json').write_text(json.dumps(record,ensure_ascii=False,indent=2))
+(ROOT/'evidence'/f'{os.environ["DLDL_TEST_PHASE"]}_quests_tests.json').write_text(json.dumps(record,ensure_ascii=False,indent=2))
 print(json.dumps(record,ensure_ascii=False,indent=2))

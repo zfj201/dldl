@@ -172,9 +172,6 @@ function M.bind(Quests,ctx)
  end
  return runner,function(current)
   if ctx.now()<manual_until then return true end
-  for _,k in ipairs({'guild_wish','ruins'}) do
-   if k~=current and ud:getIntegerForKey(key(k)..':pending',0)~=0 then return true end
-  end
   return false
  end
 end

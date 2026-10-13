@@ -87,7 +87,7 @@ bus={Fire=function() end};GlobalEvent={getInstance=function() return bus end}
 clock={timers={}};function clock:add(fn) local t={fn=fn};self.timers[t]=true;return t end
 function clock:remove(t) self.timers[t]=nil end
 GlobalTimeTicket={getInstance=function() return clock end}
-now=0;GameNet={getInstance=function() return {getTime=function() return now end} end}
+now=0;connected=true;GameNet={getInstance=function() return {getTime=function() return now end,IsServerConnect=function() return connected end} end}
 role={rid=11,srv_id='srv'};RoleController={getInstance=function() return {getRoleVo=function() return role end} end}
 SortTools={KeyLowerSorter=function(k) return function(a,b) return a[k]<b[k] end end,
  tableLowerSorter=function(keys) return function(a,b) for _,k in ipairs(keys) do if a[k]~=b[k] then return a[k]<b[k] end end return false end end}

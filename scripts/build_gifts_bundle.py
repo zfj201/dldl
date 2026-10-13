@@ -3,8 +3,8 @@
 import argparse,hashlib,json,pathlib
 from lupa.lua51 import LuaRuntime
 root=pathlib.Path(__file__).resolve().parents[1]
-p=argparse.ArgumentParser();p.add_argument('--phase',default='phase11v3');a=p.parse_args()
-assert a.phase=='phase11v3','phase7/phase8/phase9/phase10/phase11/phase11v2 artifacts are immutable'
+p=argparse.ArgumentParser();p.add_argument('--phase',default='phase12');a=p.parse_args()
+assert a.phase=='phase12','phase7/phase8/phase9/phase10/phase11/phase11v2/phase11v3 artifacts are immutable'
 base=root/'recovered/phase2/hotupdate/lua/game_start.luac'
 assert hashlib.sha256(base.read_bytes()).hexdigest()=='3b8c0a56adcc9731f54dfca0c0943aa9911669e9537126e5447239ce49c2cb59'
 parts=[base.read_text(),'\n-- DLDL free-gift extension: local tasks, default off.\ndo\nlocal ok, result = pcall(function()\n']

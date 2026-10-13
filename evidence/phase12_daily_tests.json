@@ -1,0 +1,33 @@
+{
+  "runtime": "Lua 5.1",
+  "passed": 26,
+  "cases": [
+    "each correct free gift claims once and requires post-reply verification",
+    "already claimed and missing gifts never claim",
+    "paid or mismatched config cannot claim",
+    "failure code and unchanged count are not success",
+    "lost response queries and verifies without resending",
+    "query timeout and verification timeout terminate",
+    "period rollover and identity changes never confirm old claim",
+    "cancelled claim remains protected on repeat",
+    "invalid or duplicated counts rejected",
+    "installation is idempotent, registers two visible default-off rows, sends nothing",
+    "original helper queue keeps both tasks but native save strips both IDs",
+    "registered real protocol callbacks run both gifts serially and resume native task",
+    "manual in-flight claim prevents custom send and stops local queue",
+    "uninstall restores functions and leaves no custom rows or timers",
+    "all eight rows register without sends; six new rows default off",
+    "summon count 10/20 persists locally and never reaches native save",
+    "weekly and monthly claims use actual free configuration only",
+    "both worship tasks confirm refreshed state and skip already claimed",
+    "sweep uses highest passed dungeon and only free remaining count; no purchase",
+    "10-contract summon validates matching reply and daily persistence",
+    "20-contract summon waits for inventory update between two item-only tens",
+    "insufficient total contracts and bag capacity block before any summon",
+    "contract depletion and config change before sending never select diamonds",
+    "lost or rejected summon response never retries, including reinstallation",
+    "manual requests cannot collide; role/day changes and cancel stop further batches",
+    "all summon requests in integration suite use contracts and exactly ten"
+  ],
+  "network": "mocked; no device calls"
+}

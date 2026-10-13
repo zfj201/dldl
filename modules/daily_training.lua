@@ -31,6 +31,13 @@ function M.new(env)
         self.active={kind=kind,done=done,target=kind=='arena_free' and 0 or (target or 1),used=used,completed=0,identity=env.identity(),day=env.day()}
         if not uint(used) or (arena(kind) and used>20) or (not arena(kind) and used>1) then self:finish('error','invalid_journal');return true end
         if pending~=0 then
+            if kind=='hero' and env.heroRecoveryBaseline then
+                local baseline=env.heroRecoveryBaseline()
+                if baseline then
+                    self.active.action=baseline;self.active.reconcile_only=true
+                    self:phase('hero_recovery');env.queryHeroDetails(baseline.partner_id);return true
+                end
+            end
             if kind=='arena_free' and env.legacyRequest and env.legacyRequest() then
                 self.active.reconcile_only=true;self:phase('legacy_scope');env.query('base');return true
             end
@@ -64,8 +71,9 @@ function M.new(env)
             a.wait_until=env.challengeNotBefore();self:phase('cooldown',math.min(a.wait_until-env.now()+15,300));return
         end
         if why then self:finish('error',why);return end
-        if arena(a.kind) then a.action.sent_at=env.now();a.action.start_time=a.base.start_time;a.action.end_time=a.base.end_time end
-        env.saveJournal(a.kind,a.used,1,arena(a.kind) and a.action or nil)
+        a.action.sent_at=env.now()
+        if arena(a.kind) then a.action.start_time=a.base.start_time;a.action.end_time=a.base.end_time end
+        env.saveJournal(a.kind,a.used,1,(arena(a.kind) or a.kind=='hero') and a.action or nil)
         self:phase('reply');env.act(name,data)
     end
     function self:arenaBase(data)
@@ -141,6 +149,20 @@ function M.new(env)
         end
         if data.match_list then fields[#fields+1]='list_count='..#data.match_list end
         self:log('reply',tostring(id)..'|phase='..a.phase..'|now='..env.now()..'|'..table.concat(fields,'|'))
+        if a.kind=='hero' and a.reconcile_only and id==11025 and a.phase=='hero_recovery' then
+            local level,why=env.heroRecoveryLevel(data,a.action)
+            if not level then
+                if why then self:finish('uncertain',why) end
+                return
+            end
+            if a.recovery_level and level~=a.recovery_level then self:finish('uncertain','hero_recovery_changed');return end
+            if not a.recovery_level then
+                a.recovery_level=level;a.wait_until=env.now()+2;self:phase('hero_recovery_wait');return
+            end
+            env.saveJournal('hero',level==6 and 1 or a.used,0)
+            a.completed=level==6 and 1 or 0
+            self:finish(level==6 and 'confirmed' or 'skipped',level==6 and 'hero_recovered_completed' or 'hero_recovered_unchanged');return
+        end
         if not arena(a.kind) then
             local reply=a.kind=='hero' and 11003 or 11083
             if id==reply and a.phase=='reply' then
@@ -209,6 +231,9 @@ function M.new(env)
     function self:tick()
         if not self:valid() then return end
         local a=self.active
+        if a.phase=='hero_recovery_wait' and env.now()>=a.wait_until then
+            self:phase('hero_recovery');env.queryHeroDetails(a.action.partner_id);return
+        end
         if a.phase=='cooldown' and env.now()>=a.wait_until then self:phase('base');env.query('base');return
         elseif a.phase=='matching' and env.now()<a.deadline and env.now()>=a.match_query_at then
             a.match_query_at=env.now()+env.refreshInterval();env.query('opponents');return

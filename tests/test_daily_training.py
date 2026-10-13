@@ -21,6 +21,12 @@ heroList={};bones={};stocks={[1]=100000,[22]=1000,[10011]=10,[10019]=47}
 local model=setmetatable({hero_list=heroList,hero_holy_list={}}, {__index=HeroModel})
 function model:getHeroMaxCount() return capacity,hero_count end
 function model:getHeroMaxLevel() return 100 end
+function model:setHeroMaxCount() end
+function model:setHeroBuyNum() end
+function model:sendAllHeroInfo() end
+function model:sendAllHeroHolyEquipInfo() end
+function model:sendAllHeroSoulBeastInfo() end
+HeroSoulRingController={getInstance=function() return {getModel=function() return {sendAllHeroGodSoulInfo=function() end} end} end}
 function model:updateHeroVo(v) for k,x in pairs(v) do self.hero_list[v.partner_id][k]=x end end
 function model:updateHeroList(list) for _,v in ipairs(list) do self:updateHeroVo(v) end end
 function model:isOpenHolyEquipMentByHerovo(v) return v.open_bones==true end
@@ -73,11 +79,12 @@ bc={finish_result_view_list={},finish_fail_view_list={},isInFight=function() ret
 BattleController={getInstance=function() return bc end}
 BattleConst={Fight_Type={EliteMatchWar=23}}
 for _,pair in ipairs({{ec,29400},{ec,29401},{ec,29402},{ec,29403},{ec,29406},{ec,29446},{ec,29450},
- {hc,11211},{hc,11003},{hc,11083},{hc,11002},{hc,11007}}) do
+ {hc,11211},{hc,11003},{hc,11083},{hc,11002},{hc,11007},{hc,11025}}) do
  ProtoMgr:RegisterCmdCallback(pair[2],'handle'..pair[2],pair[1])
 end
 ProtoMgr:RegisterCmdCallback(11092,'handle11092',hc)
 function freshTraining()
+ autoHeroDetails=true;connected=true
  resetRole();fight=false;bc.finish_result_view_list={};bc.finish_fail_view_list={};bones={}
  heroList={[1]={partner_id=1,lev=1,bid=21401,star=5,break_lev=0},[2]={partner_id=2,lev=20,bid=21401,star=5,break_lev=0}}
  model.hero_list=heroList;model.hero_holy_list={}
@@ -86,7 +93,18 @@ end
 function trainingTask(kind,count)
  if kind=='arena' then kind=(count or 0)>0 and 'arena_tickets' or 'arena_free' end
  local positions={arena_free=-2101794,arena_tickets=-2101791,hero=-2101793,bone=-2101792}
- return window({{type=1,pos=positions[kind],args={{args_key=9021,args_val=count or 0}}}})
+ local w=window({{type=1,pos=positions[kind],args={{args_key=9021,args_val=count or 0}}}})
+ if kind=='hero' then
+  local original=w.requestTask
+  function w:requestTask()
+   original(self)
+   if autoHeroDetails and ext.training.active and ext.training.active.phase=='prepare' and sent[#sent].id==11025 then
+    local list={};for _,v in pairs(heroList) do list[#list+1]=deepCopy(v) end
+    receive(11025,{partners=list,num=100,buy_num=0});ext.training:tick()
+   end
+  end
+ end
+ return w
 end
 function arenaBase(free,combat,skip,cd)
  return {day_combat_count=free,combat_time=combat,is_skip=skip or 1,match_cd_time=cd or 0,state=1,start_time=0,end_time=9999999999}
