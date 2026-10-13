@@ -5,7 +5,7 @@ ROOT=pathlib.Path(__file__).resolve().parents[2]
 OUT=ROOT/'lsposed-module/app/src/main/assets/extension'
 # 业务源码在 modules/；生成的 payload.lua 只是打包结果，修改功能应改这些源文件。
 # 每组状态机负责流程，带 _game 的适配层负责调用游戏控制器和接收协议回复。
-PAIRS=[('Gifts','daily_gifts.lua'),('Actions','daily_actions.lua'),('GameActions','daily_actions_game.lua'),('Training','daily_training.lua'),('GameTraining','daily_training_game.lua'),('Quests','daily_quests.lua'),('GameQuests','daily_quests_game.lua'),('Extension','xiangxiang_gifts_extension.lua')]
+PAIRS=[('Gifts','daily_gifts.lua'),('Actions','daily_actions.lua'),('GameActions','daily_actions_game.lua'),('Training','daily_training.lua'),('GameTraining','daily_training_game.lua'),('Quests','daily_quests.lua'),('GameQuests','daily_quests_game.lua'),('Extension','xiangxiang_gifts_extension.lua'),('Automation','helper_automation.lua'),('GameAutomation','helper_automation_game.lua')]
 def cut(s,start,end,replacement=''):
     assert s.count(start)==1,(start,s.count(start))
     a=s.index(start);b=s.index(end,a)
@@ -41,11 +41,12 @@ def build():
     parts=['-- Pure local extension factory. No task runs during installation.\nreturn function()\n']
     for var,name in PAIRS:
         parts += ['local '+var+'=(function()\n',release_source(name,(ROOT/'modules'/name).read_text()),'\nend)()\n']
-    parts += ['return Extension.install(Gifts,Actions,GameActions,Training,GameTraining,Quests,GameQuests)\nend\n']
+    parts += ['local installed=Extension.install(Gifts,Actions,GameActions,Training,GameTraining,Quests,GameQuests)\n',
+              'installed.automation=GameAutomation.bind(Automation)\nreturn installed\nend\n']
     (OUT/'payload.lua').write_text(''.join(parts))
     (OUT/'bootstrap.lua').write_bytes((ROOT/'lsposed-module/lua/bootstrap.lua').read_bytes())
     manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUT.glob('*.lua'))}
-    (OUT/'manifest.json').write_text(json.dumps({'version':'0.2.0','files':manifest},indent=2)+'\n')
+    (OUT/'manifest.json').write_text(json.dumps({'version':'0.3.0','files':manifest},indent=2)+'\n')
     native=ROOT/'lsposed-module/app/src/main/jniLibs/arm64-v8a/libdldl_bridge.so'
     (OUT/'native.sha256').write_text(hashlib.sha256(native.read_bytes()).hexdigest()+'\n')
     print(json.dumps(manifest))

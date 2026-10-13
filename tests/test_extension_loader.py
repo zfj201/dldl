@@ -15,6 +15,8 @@ lua.globals().factory=lua.execute((asset/'payload.lua').read_text())
 lua.execute('''
 freshQuest()
 original_rows=#OneKeyBurdenConst.SimplifyTypeList[1]
+oc.model.getTypeOperateList=function() return {} end
+oc.model.type_func_list={}
 local n=#sent
 local before=VipController:getInstance().sender21018
 local original=VipController:getInstance().handle21018
@@ -27,7 +29,7 @@ assert(#sent==n,'installation sent a game request')
 VipController:getInstance().handle21018=original
 ''')
 with tempfile.TemporaryDirectory(prefix='dldl-loader-') as temp:
-    base=pathlib.Path(temp);bundle=base/'bundle';bundle.mkdir()
+    base=pathlib.Path(temp);bundle=base/'bundle';bundle.mkdir();(base/'automation').mkdir()
     for name in ('bootstrap.lua','payload.lua'):(bundle/name).write_bytes((asset/name).read_bytes())
     lua.globals().boot=str(bundle/'bootstrap.lua');lua.globals().disabled_path=str(base/'disabled')
     lua.execute('''

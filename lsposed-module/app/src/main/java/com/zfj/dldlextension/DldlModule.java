@@ -38,6 +38,8 @@ public final class DldlModule extends XposedModule {
             // 扩展使用独立目录；不写官方 game_start 或游戏热更新资源目录。
             directory = new File(param.getApplicationInfo().dataDir, "files/dldl_extension");
             if (!directory.isDirectory() && !directory.mkdirs()) throw new IllegalStateException("Cannot create extension directory");
+            File automation = new File(directory, "automation");
+            if (!automation.isDirectory() && !automation.mkdirs()) throw new IllegalStateException("Cannot create automation directory");
             record("java_ready");
             if (BuildConfig.PROBE_STAGE >= 2) {
                 if (BuildConfig.PROBE_STAGE >= 5) PayloadStore.verifyNative(getModuleApplicationInfo().sourceDir);

@@ -18,6 +18,9 @@ local function exists(path) local f=io.open(path,'r');if f then f:close();return
 local names={'OneKeyBurdenController','VipController','GlobalTimeTicket','RoleController','GameNet',
  'DungeonstoneController','PantheonController','SoulDomainController','PartnersummonController',
  'ElitematchController','HeroController','BackpackController','BattleController','GuildController','GodRuinsController'}
+local function pollAutomation()
+    if state.installation.automation then state.installation.automation:poll(root..'../automation/') end
+end
 local ok,result=pcall(function()
     -- game_start 只用来判断官方启动是否完成；本方案不修改或替换它。
     if not package.loaded.game_start or not GAME_INITED then status('waiting_game_start');return 1 end
@@ -37,7 +40,7 @@ local ok,result=pcall(function()
     if same then for i,v in ipairs(refs) do if state.refs[i]~=v then same=false;break end end end
     local disabled=exists(root..'../disabled')
     -- 常规每秒回调到此立即结束；重复检查不会新增条目或发任务请求。
-    if same and state.installation and not disabled then return 0 end
+    if same and state.installation and not disabled then pollAutomation();return 0 end
     -- 窗口打开时先等关闭，避免拆挂过程中破坏正在执行的助手队列。
     if helper.onekeyburden_main_window or helper.onekeyburden_auto_window then
         status(disabled and 'disable_waiting_helper_close' or 'waiting_helper_close');return 1
@@ -63,7 +66,8 @@ local ok,result=pcall(function()
     local installed=factory()
     assert(installed and #installed.specs==14,'unexpected entry count')
     state.installation=installed;_G.DLDL_DAILY_GIFTS=installed
-    status('installed:14:version=0.2.0')
+    status('installed:14:version=0.3.0')
+    pollAutomation()
     return 0
 end)
 if not ok then state.failed=true;status('failed:'..tostring(result));return -1 end
