@@ -57,3 +57,13 @@ Java 层存在 `Cocos2dxRenderer.onDrawFrame` 与 `Cocos2dxLuaJavaBridge.callLua
 - 同进程创建disabled：助手打开时为 `disable_waiting_helper_close`；关闭后为 `disabled`，再打开是官方原生“自动收送友情点”等条目。
 - 同进程解除disabled：窗口打开时 `waiting_helper_close`；关闭后重新 `installed:14`、generation=2，入口恢复。此项是实际卸载/重挂测试，不等于真实热更新。
 - 发布包另验证灵魂契约不足只跳过召唤并进入宗门任务、未知魂师pending跨重挂仍保留。
+
+## 最终交付
+
+最终开发APK 0.2.0（versionCode2）已安装；PID28512 冷启动再次自动 `installed:14`、generation=1。强停后将独立payload临时移走，再启动时模块从自身APK重新生成，SHA-256与manifest一致。官方game_start仍为原密文033b45a…，没有被重新拼接。
+
+本轮系统记录的10次进程退出均为测试主动强停（USER REQUESTED / FORCE STOP），没有新出现的EXIT_SELF或native crash。该结论限定于本轮当前版本的分层与挂载验证。
+
+最终APK：`lsposed-module/app/build/outputs/apk/debug/app-debug.apk`，2610347字节，SHA-256 `bf8e7abf06a1f99c930f4a821b18e7d3ca85a4d092b5a8db17cea1dddb18f5a3`。这是本机开发签名产物。安装与重挂测试没有点击助手执行按钮，业务端到端沿用前轮验收，本轮增加离线回归。
+
+Git按项目骨架、native探针、GL/JNI探针、真实加载器、迁移验证分批提交，已推送到 `https://github.com/zfj201/dldl` 的master分支。原始截图、账号偏好和进程日志留在本机忽略目录，不上传。
