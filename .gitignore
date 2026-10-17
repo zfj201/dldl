@@ -5,6 +5,8 @@ recovered/
 .venv/
 .tools/
 __pycache__/
+.DS_Store
+lsposed-module/app/release/
 *.apk
 *.i64
 *.id0
