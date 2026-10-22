@@ -3268,5 +3268,37 @@
     "sha256": "74ff33c4385214392e5773545a342ef9eae2cce27617a60558bbd640b0a8a509",
     "path": "recovered/phase2/lua/game/godruins/view/god_ruins_window.luac",
     "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/login/login_model.luac",
+    "asset": "assets/res/1/c/f143b1c3cb455b3d04b2af552632bc00",
+    "encrypted_sha256": "a4ed8eb0415ee6e1e94b0eddcb8a1b1cb563ef8a60cc5e7fa46846158532bb84",
+    "status": "failed"
+  },
+  {
+    "logical": "game/login/view/enter_panel.luac",
+    "asset": "assets/res/1/f/6cb28c372151fa97336f9482baed37b7",
+    "encrypted_sha256": "ffea350f7e80538921901da0a3989ccc4ca29cd532811e363417534c7957f1e1",
+    "status": "failed"
+  },
+  {
+    "logical": "game/login/view/login_window.luac",
+    "asset": "assets/res/6/d/37190acd48cf12e06eb95ae65c12dd7a",
+    "encrypted_sha256": "8e2f0bc90eddd7350d839f118b8130fd27c77b4a122d3c4ada5cf58bde09affd",
+    "status": "decoded",
+    "size": 10785,
+    "sha256": "21dd771f7155ca68e99ed25fe0cd4fc37bbc52e4cd9c99affe31e0e626ebdf65",
+    "path": "recovered/phase2/lua/game/login/view/login_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/notice/view/notice_window.luac",
+    "asset": "assets/res/6/8/a3dec953c5929b65d1e466061c81c1fb",
+    "encrypted_sha256": "30aada8ab20004c571212113da5c59fd4df68232d8efa5fb1283e49d5dc5b264",
+    "status": "decoded",
+    "size": 10907,
+    "sha256": "54144203cb1f15fd60a7b5bce5f0f783ec512c12c048ba1a934257ee25fa8c96",
+    "path": "recovered/phase2/lua/game/notice/view/notice_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
   }
 ]

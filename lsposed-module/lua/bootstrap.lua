@@ -15,6 +15,15 @@ local function status(value)
     end)
 end
 local function exists(path) local f=io.open(path,'r');if f then f:close();return true end;return false end
+-- 登录早于 GAME_INITED；启动状态机须先于业务挂载检查运行。
+-- 没有显式指令或模块已停用时不加载、不操作游戏页面。
+if not exists(root..'../disabled') and exists(root..'../automation/launch.tsv') then
+    local ok,err=pcall(function()
+        if not state.startup then state.startup=assert(loadfile(root..'startup.lua'))()(root..'../automation/') end
+        state.startup:poll()
+    end)
+    if not ok then status('startup_failed:'..tostring(err)) end
+end
 local names={'OneKeyBurdenController','VipController','GlobalTimeTicket','RoleController','GameNet',
  'DungeonstoneController','PantheonController','SoulDomainController','PartnersummonController',
  'ElitematchController','HeroController','BackpackController','BattleController','GuildController','GodRuinsController'}
@@ -66,7 +75,7 @@ local ok,result=pcall(function()
     local installed=factory()
     assert(installed and #installed.specs==14,'unexpected entry count')
     state.installation=installed;_G.DLDL_DAILY_GIFTS=installed
-    status('installed:14:version=0.3.0')
+    status('installed:14:version=0.4.0')
     pollAutomation()
     return 0
 end)

@@ -34,7 +34,7 @@ final class PayloadStore {
             // 目录随扩展内容变化；不绑定某个官方 game_start 哈希或游戏版本。
             File directory = new File(base, "bundle-" + digest(manifest).substring(0, 16));
             if (!directory.isDirectory() && !directory.mkdirs()) throw new IOException("Cannot create payload directory");
-            for (String name : new String[]{"bootstrap.lua", "payload.lua"}) {
+            for (String name : new String[]{"bootstrap.lua", "payload.lua", "startup.lua"}) {
                 byte[] bytes = entry(zip, "assets/extension/" + name);
                 if (!digest(bytes).equals(files.getString(name))) throw new IOException("APK payload hash mismatch: " + name);
                 File destination = new File(directory, name);

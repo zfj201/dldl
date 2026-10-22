@@ -6,7 +6,7 @@
 
 以前是把扩展接在游戏的 `game_start` 文件后面，游戏读这个文件时顺便启动扩展。现在扩展单独装在模块 APK 里，由 LSPosed 在游戏进程启动后把它带进去，再请游戏自己的 Lua 接口运行它。业务逻辑沿用原来的 Lua，换的是启动入口，不再改官方启动文件。
 
-可以理解为：官方游戏先正常开门，模块再进去给香香小助手加菜单。加菜单不会自动做任务；你点助手的执行按钮时，扩展接管选中的自定义条目。若另外部署 [AutoJs 定时脚本](../autojs/README.md)，脚本会通过私有指令目录明确请求执行完整助手列表。每秒回调检查挂载及自动化指令，没有指令就不执行任务。
+模块给官方香香小助手加菜单；普通手动打开游戏不会自动做任务。0.4.0 起，模块自身提供北京时间每天07:00调度、“立即运行”和不执行任务的启动诊断。由 LSPosed 处理已识别的 SDK 推广/可选更新，调用游戏内开始冒险逻辑，确认主城与绑定角色后执行完整助手。无需 AutoJs 或图片模板。配置、权限、协议及限制见 [独立自动运行](docs/automation.md)。
 
 LSPosed 在进程启动时加载小型 JNI 桥，在 `Cocos2dxRenderer.onDrawFrame` 原方法结束后，每秒一次调用游戏已有的 `Cocos2dxLuaJavaBridge.callLuaGlobalFunctionWithString`。通过 `dofile` 执行独立引导器，不使用固定 RVA、Lua_State 指针或 native inline hook。渲染尚未初始化则不调用。
 
@@ -28,6 +28,8 @@ native 和 Lua SHA-256 来自签名 APK 内资源。复制到游戏 `files/dldl_
 | `modules/daily_training.lua` / `daily_training_game.lua` | 积分赛、魂师升级、背包魂骨强化的流程及游戏接口适配 |
 | `modules/daily_quests.lua` / `daily_quests_game.lua` | 宗门祈愿奖励、至高遗迹的流程及游戏接口适配 |
 | `modules/helper_automation.lua` / `helper_automation_game.lua` | 自动执行完整助手列表、角色和游戏日绑定、持久去重及完成回执 |
+| `modules/startup_automation.lua` / `startup_automation_game.lua` | 单次开始冒险、公告正常关闭、主城稳定检查和启动诊断 |
+| `lsposed-module/app/src/main/java/com/zfj/dldlextension/AutomationService.java` / `DailySchedule.java` | 模块应用的精确闹钟、Root启动、前台保活和结果收集 |
 | `lsposed-module/scripts/build-payload.py` | 把上述源码打包成 APK 内独立 Lua，不拼入官方 game_start |
 
 优先读 `bootstrap.lua` 的挂载判断和 `xiangxiang_gifts_extension.lua` 的 `requestTask` 包装，分别对应“扩展怎么进来”和“点执行后怎么工作”。`app/src/main/assets/extension/payload.lua` 是构建生成文件，不是维护业务逻辑的位置。
@@ -48,7 +50,7 @@ PYTHONPATH=.tools python3 tests/test_extension_loader.py
 
 上述测试从仓库根目录运行，依赖本机 Lua 5.1/Lupa 与已恢复游戏类，包含已有111项回归及加载器生命周期检查，不调用设备或网络。
 
-自动化状态机测试：`PYTHONPATH=.tools python3 tests/test_helper_automation.py`。自动化通道位于游戏 `files/dldl_extension/automation/`，使用 `ready.tsv`、`request.tsv`、`result.tsv` 与 `tasks.tsv`。协议及定时安装见 AutoJs 文档。
+自动化测试：`PYTHONPATH=.tools python3 tests/test_helper_automation.py`、`PYTHONPATH=.tools python3 tests/test_startup_automation.py`、`sh tests/test_launch_request.sh`。自动化通道位于游戏 `files/dldl_extension/automation/`，协议及定时安装见 [独立自动运行](docs/automation.md)。
 
 ## 使用与回退
 
@@ -62,4 +64,4 @@ APK 为本机开发签名；更新须保持签名密钥。正式发布应配置�
 
 ## 实测边界
 
-阶段进展与实际证据见 `reports/19_LSPosed自动挂载验证与开发.md`。业务函数、Java JNI 接口、ABI、框架或初始化流程变化时仍可能失效。真实 APK 覆盖升级及热更新尚未完成验收，不保证所有未来版本。
+阶段进展与实际证据见 [自动挂载报告](../reports/19_LSPosed自动挂载验证与开发.md) 和 [独立定时与执行报告](../reports/21_LSPosed独立定时启动与执行.md)。业务函数、Java JNI 接口、ABI、框架或初始化流程变化时仍可能失效。真实游戏 APK 覆盖升级及热更新尚未完成验收，不保证所有未来版本。

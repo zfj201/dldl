@@ -1358,5 +1358,29 @@
     "size": 9645,
     "sha256": "96335b24afb749623ded659e8f1e3e1cbf0a18b377b44f7e4772c0608003d517",
     "path": "recovered/phase2/hotupdate/lua/base/basecontroller.luac"
+  },
+  {
+    "logical": "game/login/view/enter_panel.luac",
+    "encrypted_sha256": "b21bb7239eba0a0ddeb360836f2d626987281d5229c17904105b45b0ca015a55",
+    "status": "decoded",
+    "size": 25913,
+    "sha256": "70450400d8731d8a55998fb1109079f66e3b3448df4561e3c68edf471d1d7e7d",
+    "path": "recovered/phase2/hotupdate/lua/game/login/view/enter_panel.luac"
+  },
+  {
+    "logical": "game/login/login_controller.luac",
+    "encrypted_sha256": "6b89d2fc74d3d923b4c4f9d369bda7d7bcb97fb681d29bc7a659afe04b4f8700",
+    "status": "decoded",
+    "size": 32628,
+    "sha256": "50989c93d17ef98629693169dd85f38f467b444980a65ade5b50671198133bc3",
+    "path": "recovered/phase2/hotupdate/lua/game/login/login_controller.luac"
+  },
+  {
+    "logical": "game/login/login_model.luac",
+    "encrypted_sha256": "725765f391e32ce29a8b2434450df8b6c19c72b6cb25089526c4cb7b5e7e6dc9",
+    "status": "decoded",
+    "size": 31796,
+    "sha256": "99ae2c46eb8e84047534f4e12dbb5eb8f654cb5e8673447b7596593c521147bc",
+    "path": "recovered/phase2/hotupdate/lua/game/login/login_model.luac"
   }
 ]

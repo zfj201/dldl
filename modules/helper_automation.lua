@@ -25,6 +25,7 @@ function M.new(env)
         if not id or #id>80 then return end
         local a={id=id,rid=rid,srv=srv,day=tonumber(day),created=tonumber(created),expires=tonumber(expires),mode=mode}
         self.last=a
+        if env.cancelled and env.cancelled(id) then self:report('rejected','user_cancelled');return end
         if env.now()<a.created-5 or env.now()>a.expires or a.expires-a.created>300 or a.expires<a.created then
             self:report('rejected','expired_request');return
         end
@@ -49,6 +50,9 @@ function M.new(env)
     function self:tick(text)
         if not self.active then self:accept(text);return end
         local a=self.active
+        if env.cancelled and env.cancelled(a.id) then
+            env.cancel();self:finish('uncertain','user_cancelled');return
+        end
         local role=env.role()
         if not role or tostring(role.rid)~=a.rid or tostring(role.srv_id)~=a.srv or env.day()~=a.day or not env.connected() then
             env.cancel();self:finish('uncertain','connection_or_role_changed');return

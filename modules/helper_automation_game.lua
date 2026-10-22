@@ -16,6 +16,10 @@ function M.bind(Automation)
         return r and r.rid and r.srv_id and connected() and m:getTypeOperateList()~=nil and m.type_func_list~=nil
     end
     local env={now=os.time,day=day,role=role,connected=connected,ready=ready,
+        cancelled=function(id)
+            local f=io.open(root..'cancel.tsv','r');if not f then return false end
+            local s=f:read(100);f:close();return s==id..'\n'
+        end,
         recall=function(k) return ud:getStringForKey(k,'') end,
         remember=function(k,v) ud:setStringForKey(k,v);ud:flush() end,
         report=function(text) write('result.tsv',text) end,
