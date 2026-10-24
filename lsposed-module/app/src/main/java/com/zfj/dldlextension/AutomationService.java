@@ -11,6 +11,7 @@ import android.os.IBinder;
 import android.os.PowerManager;
 import android.os.SystemClock;
 import java.io.File;
+import java.io.FileWriter;
 import java.nio.file.Files;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -57,12 +58,14 @@ public final class AutomationService extends Service {
             long now=System.currentTimeMillis()/1000;
             RootAccess.run("id -u");
             // Clear only transport state, never the daily completion/consumption journal.
-            RootAccess.run("rm -f "+RootAccess.quote(RootAccess.BASE+"java-block.tsv")+" "+RootAccess.quote(RootAccess.BASE+"cancel.tsv"));
+            RootAccess.run("rm -f "+RootAccess.quote(RootAccess.BASE+"java-block.tsv")+" "+RootAccess.quote(RootAccess.BASE+"cancel.tsv")
+                +" "+RootAccess.quote(RootAccess.BASE+"sdk-loading.tsv"));
             RootAccess.write("launch.tsv","v1\t"+id+"\t"+rid+"\t"+server+"\t"+now+"\t"+(now+300)+"\t"+mode+"\n");
             published=true;
             RootAccess.run("input keyevent KEYCODE_WAKEUP; wm dismiss-keyguard; am start -W -n "
                 +RootAccess.TARGET+"/com.game.sdk.GameSdkActivity");
             long deadline=SystemClock.elapsedRealtime()+36*60*1000L;
+            LoadingRecovery recovery=new LoadingRecovery();
             String last="";
             while (SystemClock.elapsedRealtime()<deadline) {
                 if (cancelled) {RootAccess.write("cancel.tsv",id+"\n");update("已停止；未确认的助手执行不会自动重跑");return;}
@@ -82,7 +85,26 @@ public final class AutomationService extends Service {
                 } else if (System.currentTimeMillis()/1000>now+320) {
                     throw new IllegalStateException("启动超时：请检查 LSPosed 作用域、锁屏、SDK 登录或加载器日志");
                 }
-                Thread.sleep(2000);
+                if (!recovery.observing(id,status)) {Thread.sleep(2000);continue;}
+                String loading=RootAccess.read("sdk-loading.tsv");
+                LoadingRecovery.Decision decision=recovery.inspect(loading,id,status,SystemClock.elapsedRealtime());
+                if (decision==LoadingRecovery.Decision.EXHAUSTED) {
+                    String stopped="v1\t"+id+"\tblocked\tsdk_loading_retry_exhausted\t"+System.currentTimeMillis()/1000+"\n";
+                    RootAccess.write("startup.tsv",stopped);
+                    Files.write(new File(getFilesDir(),"last-startup.tsv").toPath(),stopped.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+                    throw new IllegalStateException("华为启动加载连续卡住，已重启3次，请检查网络或SDK登录");
+                }
+                if (decision==LoadingRecovery.Decision.RESTART && !cancelled) {
+                    String[] observed=loading.trim().split("\t");
+                    String pid=observed[2];
+                    String result=RootAccess.restartLoading(id,pid,observed[3],status);
+                    if (result.startsWith("restarted")) recovery.restarted();
+                    try (FileWriter log=new FileWriter(new File(getFilesDir(),"loading-recovery.log"),true)) {
+                        log.write(System.currentTimeMillis()+"\t"+id+"\t"+pid+"\t"+recovery.restarts()+"\t"+result.replace('\n',' ')+"\n");
+                    }
+                    if (result.startsWith("restarted")) update("启动加载超过15秒，已重启游戏（"+recovery.restarts()+"/3）");
+                }
+                Thread.sleep(1000);
             }
             RootAccess.write("cancel.tsv",id+"\n");
             throw new IllegalStateException("执行等待超时，结果未确认，请查看游戏");

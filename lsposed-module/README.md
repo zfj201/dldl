@@ -8,6 +8,8 @@
 
 模块给官方香香小助手加菜单；普通手动打开游戏不会自动做任务。0.4.0 起，模块自身提供北京时间每天07:00调度、“立即运行”和不执行任务的启动诊断。由 LSPosed 处理已识别的 SDK 推广/可选更新，调用游戏内开始冒险逻辑，确认主城与绑定角色后执行完整助手。无需 AutoJs 或图片模板。配置、权限、协议及限制见 [独立自动运行](docs/automation.md)。
 
+0.4.1 起，自动启动时华为“正在加载中...”框连续显示超过15秒会杀进程重启，每次最多3次。离开该框重新计时；已进入登录或助手执行阶段不会触发这项恢复，普通手动启动不触发。
+
 LSPosed 在进程启动时加载小型 JNI 桥，在 `Cocos2dxRenderer.onDrawFrame` 原方法结束后，每秒一次调用游戏已有的 `Cocos2dxLuaJavaBridge.callLuaGlobalFunctionWithString`。通过 `dofile` 执行独立引导器，不使用固定 RVA、Lua_State 指针或 native inline hook。渲染尚未初始化则不调用。
 
 官方 `game_start` 完成后安装 14 项入口；收到执行操作或自动化指令后才执行任务。控制器、窗口类、配置列表或 beginGame 对象变化时重新挂载；同一代次不重复安装。安装失败回滚自己已改动的方法；不清配置或消费 journal。历史单笔修复入口不进入发布包。
@@ -50,7 +52,7 @@ PYTHONPATH=.tools python3 tests/test_extension_loader.py
 
 上述测试从仓库根目录运行，依赖本机 Lua 5.1/Lupa 与已恢复游戏类，包含已有111项回归及加载器生命周期检查，不调用设备或网络。
 
-自动化测试：`PYTHONPATH=.tools python3 tests/test_helper_automation.py`、`PYTHONPATH=.tools python3 tests/test_startup_automation.py`、`sh tests/test_launch_request.sh`。自动化通道位于游戏 `files/dldl_extension/automation/`，协议及定时安装见 [独立自动运行](docs/automation.md)。
+自动化测试：`PYTHONPATH=.tools python3 tests/test_helper_automation.py`、`PYTHONPATH=.tools python3 tests/test_startup_automation.py`、`sh tests/test_launch_request.sh`、`sh tests/test_loading_recovery.sh`。自动化通道位于游戏 `files/dldl_extension/automation/`，协议及定时安装见 [独立自动运行](docs/automation.md)。
 
 ## 使用与回退
 

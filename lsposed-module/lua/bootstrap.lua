@@ -75,7 +75,7 @@ local ok,result=pcall(function()
     local installed=factory()
     assert(installed and #installed.specs==14,'unexpected entry count')
     state.installation=installed;_G.DLDL_DAILY_GIFTS=installed
-    status('installed:14:version=0.4.0')
+    status('installed:14:version=0.4.1')
     pollAutomation()
     return 0
 end)

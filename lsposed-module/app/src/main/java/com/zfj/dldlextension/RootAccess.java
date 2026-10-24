@@ -29,6 +29,25 @@ final class RootAccess {
     static String read(String name) throws Exception {
         return run("if [ -f "+quote(BASE+name)+" ]; then head -c 4096 "+quote(BASE+name)+"; fi");
     }
+    static String restartLoading(String id,String pid,String since,String status) throws Exception {
+        if (!id.matches("[A-Za-z0-9_-]{1,80}") || !pid.matches("[0-9]+") || !since.matches("[0-9]+"))
+            throw new IllegalArgumentException("Invalid recovery request");
+        // Re-check immediately before stopping: a later login/queue transition must win.
+        String prefix="v1\t"+id+"\t";
+        return run("if [ \"$(pidof "+TARGET+")\" != "+quote(pid)+" ]; then echo process_changed; exit 0; fi; "
+            +"if ! dumpsys window | grep mCurrentFocus | grep -q "+quote(TARGET)
+            +"; then echo not_foreground; exit 0; fi; "
+            +"if ! grep -q "+quote("^"+prefix+pid+"\t"+since+"\t[0-9]*\tvisible$")+" "+quote(BASE+"sdk-loading.tsv")
+            +"; then echo loading_changed; exit 0; fi; "
+            +"task_status=$(cat "+quote(BASE+"startup.tsv")+" 2>/dev/null); "
+            +"if [ \"$task_status\" != "+quote(status.trim())+" ]; then echo state_changed; exit 0; fi; "
+            +"if [ -f "+quote(BASE+"request.tsv")+" ] && grep -q "+quote("^"+prefix)+" "+quote(BASE+"request.tsv")
+            +"; then echo helper_requested; exit 0; fi; "
+            +"if [ -f "+quote(BASE+"cancel.tsv")+" ] && grep -qx "+quote(id)+" "+quote(BASE+"cancel.tsv")
+            +"; then echo cancelled; exit 0; fi; "
+            +"am force-stop "+TARGET+" && rm -f "+quote(BASE+"sdk-loading.tsv")
+            +" && echo restarted && am start -n "+TARGET+"/com.game.sdk.GameSdkActivity");
+    }
     static void write(String name,String text) throws Exception {
         String encoded=android.util.Base64.encodeToString(text.getBytes(StandardCharsets.UTF_8),android.util.Base64.NO_WRAP);
         String tmp=quote(BASE+name+".tmp"), path=quote(BASE+name);

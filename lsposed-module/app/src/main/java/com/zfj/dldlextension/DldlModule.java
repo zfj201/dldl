@@ -20,25 +20,42 @@ public final class DldlModule extends XposedModule {
     private File directory;
     private File bootstrap;
 
-    private boolean startupActive() {
-        if (directory == null || new File(directory, "disabled").exists()) return false;
+    private LaunchRequest startupRequest() {
+        if (directory == null || new File(directory, "disabled").exists()) return null;
         try {
             File f=new File(directory,"automation/launch.tsv");
-            if (!f.isFile() || f.length()>512) return false;
+            if (!f.isFile() || f.length()>512) return null;
             LaunchRequest r=LaunchRequest.parse(new String(Files.readAllBytes(f.toPath()),StandardCharsets.UTF_8),System.currentTimeMillis()/1000);
-            if (r==null) return false;
+            if (r==null) return null;
             File cancel=new File(directory,"automation/cancel.tsv");
-            if (cancel.isFile() && new String(Files.readAllBytes(cancel.toPath()),StandardCharsets.UTF_8).equals(r.id+"\n")) return false;
+            if (cancel.isFile() && new String(Files.readAllBytes(cancel.toPath()),StandardCharsets.UTF_8).equals(r.id+"\n")) return null;
             File status=new File(directory,"automation/startup.tsv");
             if (status.isFile() && status.length()<2048) {
                 String[] p=new String(Files.readAllBytes(status.toPath()),StandardCharsets.UTF_8).split("\t");
-                if (p.length>2 && p[1].equals(r.id) && !p[2].equals("waiting") && !p[2].equals("entering")) return false;
+                if (p.length>2 && p[1].equals(r.id) && !p[2].equals("waiting") && !p[2].equals("entering")) return null;
             }
-            return true;
-        } catch (Exception e) { return false; }
+            return r;
+        } catch (Exception e) { return null; }
     }
 
+    private boolean startupActive() { return startupRequest()!=null; }
+
     private void installSdkHooks(ClassLoader loader) {
+        try {
+            Class<?> huawei=loader.loadClass("com.sqwan.msdk.api.sdk.Huawei");
+            Field dialog=huawei.getDeclaredField("loadingDialog");dialog.setAccessible(true);
+            SdkLoadingMonitor monitor=new SdkLoadingMonitor(directory,this::startupRequest);
+            hook(huawei.getDeclaredMethod("showLoading")).intercept(chain -> {
+                Object result=chain.proceed();
+                try {monitor.shown((android.app.Dialog)dialog.get(chain.getThisObject()));}
+                catch (Exception e) {record("sdk_loading_monitor_failed:"+e);}
+                return result;
+            });
+            hook(huawei.getDeclaredMethod("hideLoading")).intercept(chain -> {
+                Object result=chain.proceed();monitor.hidden();return result;
+            });
+            record("sdk_loading_hook_ready");
+        } catch (Throwable e) { record("sdk_loading_hook_unavailable:"+e); }
         // Only these SDK notice responses carry the optional Huawei promotion Intent.
         // Returning no notice leaves login, identity verification and payment callbacks intact.
         for (String name : new String[]{"com.huawei.hms.support.api.entity.core.JosGetNoticeResp",

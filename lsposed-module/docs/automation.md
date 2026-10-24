@@ -1,4 +1,4 @@
-# 独立定时运行（0.4.0）
+# 独立定时运行（0.4.1）
 
 调度与游戏入口均在模块 APK 内。无需 AutoJs、截图模板或无障碍服务。LSPosed 仍只勾选 `com.hnzh.dldlwhjx.huawei`；模块配置应用另使用 Root 唤醒和启动游戏、读写游戏私有指令目录。
 
@@ -21,6 +21,10 @@
 - `JosGetNoticeResp.getNoticeIntent()` / `GameNoticeResp.getNoticeIntent()`：让华为 SDK 的可选推广公告返回无展示 Intent。
 - `AppUpdateActivity.c(ApkUpgradeInfo)`：确认非强制更新后，设置 SDK 的取消状态 `m=4 / o=100` 并调用原 `finish()` 通知回调。强制更新保留展示并报告阻塞。
 
+0.4.1 增加华为初始化加载框恢复：监听 `com.sqwan.msdk.api.sdk.Huawei.showLoading()` / `hideLoading()`，观察其实际 `ProgressDialog` 的显示和窗口焦点。图中“健康游戏忠告”上的“正在加载中...”连续显示超过15秒时，配置应用杀掉游戏进程并重新启动；约每秒检查一次，实际触发可能稍晚于15秒。计时使用单调时钟，离开该框或失去焦点时重新计时；即使游戏主线程停止更新，外部服务仍可根据最后显示状态计时。
+
+杀进程前重新检查游戏PID、前台窗口、加载状态、启动进度、撤销标记和助手请求。已经进入登录/主城或提交助手后不再使用这项恢复。每次自动启动最多重启3次，之后报告 `sdk_loading_retry_exhausted` 并停止；重启保留本次请求ID、原300秒有效期、角色绑定和持久去重记录。此功能适用于每日任务、立即运行和仅验证启动；普通手动打开游戏不触发恢复或自动任务。它仅识别该SDK加载框，不把其他窗口或下载界面当作加载卡住。
+
 游戏端 Lua 在原 GL 线程内执行状态机：等待官方初始化，关闭普通 `NoticeController` 公告并保留其后续回调，确认当前服务器、用户已有协议勾选和按钮可用，再单次调用 `EnterPanel:onEnterGame()`。进入角色后检查连接、登录窗关闭、主UI、助手模型和扩展就绪，连续稳定3秒后才发完整助手请求。未知接口变化报告 `startup_api_error`；没有全局屏蔽所有弹窗，也不点击未知窗口。
 
 完整队列继续使用既有 `helper_automation`。按服务器、角色、北京时间05:00刷新的游戏日持久去重；执行中断或结果未确认时返回 `uncertain`，不重跑可能消费资源的队列。不切服、不创角、不修改用户协议选项、不绕过强制更新。
@@ -34,11 +38,12 @@
 |`launch.tsv`|本次启动指令，最多300秒有效；正常退出调度时清理|
 |`startup.tsv` / `startup.log`|启动状态及变化记录|
 |`java-block.tsv`|SDK 强制更新阻塞标记，新运行清理|
+|`sdk-loading.tsv`|华为初始化加载框状态：请求ID、PID、连续可见起点、采样时间及visible/hidden，时间均为开机后毫秒|
 |`cancel.tsv`|被撤销的请求 ID|
 |`ready.tsv`|角色、服务器和助手就绪心跳|
 |`request.tsv` / `result.tsv` / `tasks.tsv`|原有助手队列协议和逐项结果|
 
-模块自己的 `files/last-startup.tsv` / `last-tasks.tsv` 保存最近收到的结果。配置页可刷新最近状态。文件可能包含角色信息，不要提交到仓库。
+模块自己的 `files/last-startup.tsv` / `last-tasks.tsv` 保存最近收到的结果，`files/loading-recovery.log` 记录加载恢复的重启或跳过原因。配置页可刷新最近状态。文件可能包含角色信息，不要提交到仓库。
 
 `launch.tsv` 格式：`v1<TAB>request_id<TAB>rid<TAB>srv_id<TAB>created_epoch<TAB>expires_epoch<TAB>verify|run_all`。外部应用没有公开的自动执行广播入口；服务和闹钟接收器不导出。
 
@@ -48,4 +53,4 @@
 
 关闭每日开关取消后续预约，关闭 LSPosed 模块并重启游戏恢复官方流程。旧 AutoJs 定时任务需同步停用，防止两边同时启动游戏。旧脚本作为历史材料保留。
 
-当前设备已完成旧 AutoJs 单条任务迁移，并安装0.4.0。已通过冷启动、短时熄屏闹钟、完整助手及去重收尾验证，详情见 [实机报告](../../reports/21_LSPosed独立定时启动与执行.md)。
+当前设备已完成旧 AutoJs 单条任务迁移，并安装0.4.1。此前冷启动、短时熄屏闹钟、完整助手及去重收尾验证见 [0.4.0实机报告](../../reports/21_LSPosed独立定时启动与执行.md)，加载框恢复验证见 [0.4.1报告](../../reports/22_启动加载卡住自动重启.md)。
