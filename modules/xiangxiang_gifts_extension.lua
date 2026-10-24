@@ -1,8 +1,8 @@
--- 香香小助手的界面与队列接入层：完整发布包加入14项本地任务。
+-- 香香小助手的界面与队列接入层：完整发布包加入17项本地任务。
 -- install 只加条目、保存原方法并包装回调；实际任务从 requestTask 开始，不在挂载时执行。
 local M = {}
 local active_install
-function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, GameQuests)
+function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, GameQuests, Extras, GameExtras)
     if active_install then return active_install end
     assert(OneKeyBurdenMainWindow and OneKeyBurdenAutoWindow and OneKeyBurdenAutoItem, 'helper classes missing')
     local helper = OneKeyBurdenController:getInstance()
@@ -30,6 +30,11 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     if Quests then
         specs[#specs+1]={pos=-2101790,kind='guild_wish',title='宗门祈愿·冒险者奖励',quest=true}
         specs[#specs+1]={pos=-2101787,kind='ruins',title='至高遗迹·奖励次数挑战',quest=true}
+    end
+    if Extras then
+        specs[#specs+1]={pos=-2101786,kind='guild_trial',title='联盟幻境·每日挑战一次',extra=true}
+        specs[#specs+1]={pos=-2101785,kind='temple_duel',title='决战武魂殿·每日挑战一次',extra=true}
+        specs[#specs+1]={pos=-2101784,kind='workshop_gift',title='魂导器工坊·每日免费礼包',extra=true}
     end
     -- Retired local IDs are swallowed if an old queue/save still contains
     -- them.  Their preferences and journals are never read or modified.
@@ -101,6 +106,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     local action_runner, action_pending
     local training_runner, training_pending
     local quest_runner, quest_pending
+    local extra_runner, extra_pending
     local function gift_pending(kind)
         if runner.active then return true end
         -- Gift replies have no charge ID: unresolved different gift kinds
@@ -122,9 +128,14 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             if action_runner and action_runner.active then action_runner:finish('uncertain','runtime_error') end
             if training_runner and training_runner.active then training_runner:finish('uncertain','runtime_error') end
             if quest_runner and quest_runner.active then quest_runner:finish('uncertain','runtime_error') end
+            if extra_runner and extra_runner.active then extra_runner:finish('uncertain','runtime_error') end
         end
     end
     local install_ok, install_result = pcall(function()
+    if Extras then
+        extra_runner,extra_pending=GameExtras.bind(Extras,{roleKey=roleKey,identity=identity,now=now,
+            patch=patch,busy=function() return owner~=nil end,safe=safe,connected=connected})
+    end
     if Training then
         training_runner,training_pending=GameTraining.bind(Training,{roleKey=roleKey,identity=identity,now=now,
             patch=patch,busy=function() return owner~=nil end,safe=safe,connected=connected})
@@ -273,6 +284,13 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                         f:write(tostring(os.time()),'|',spec.title,'|',result.status,'|',tostring(result.reason),'|',tostring(result.count or 0),'\n');f:close()
                     end)
                 end
+                if result.status=='deferred' and result.job then
+                    result.job.window=self
+                    result.job.done=function(later)
+                        row.local_result,row.local_reason=later.status,later.reason
+                        if self.updateLoopList then self:updateLoopList() end
+                    end
+                end
                 if quest_runner then
                     if quest_runner.active then quest_runner.active.done=function() end end
                     quest_runner:cancel()
@@ -281,7 +299,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                 -- 单项失败或结果不明也推进后续任务，避免整个助手挂住。
                 -- 消费请求的 pending 记录仍保留，下一轮不会盲目重发造成重复消费。
                 if result.status == 'confirmed' or result.status == 'skipped'
-                    or result.status == 'error' or result.status == 'uncertain' then
+                    or result.status == 'error' or result.status == 'uncertain' or result.status=='deferred' then
                     advance(self, {args = {}})
                 else
                     self.is_execute_finish = true
@@ -293,12 +311,13 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             if not connected() then done({status='error',reason='connection_unavailable'});return end
             if type(spec.kind)=='number' and gift_pending(spec.kind) then done({status='uncertain',reason='gift_request_unresolved'});return end
             if (type(spec.kind)=='number' and now()<manual_until)
-                or (not spec.training and not spec.quest and type(spec.kind)~='number' and action_pending and action_pending(spec.kind))
+                or (not spec.training and not spec.quest and not spec.extra and type(spec.kind)~='number' and action_pending and action_pending(spec.kind))
                 or (spec.training and training_pending and training_pending(spec.kind))
-                or (spec.quest and quest_pending and quest_pending(spec.kind)) then
+                or (spec.quest and quest_pending and quest_pending(spec.kind))
+                or (spec.extra and extra_pending and extra_pending(spec.kind)) then
                 done({status='error',reason='manual_claim_pending'});return
             end
-            local selected = spec.quest and quest_runner or spec.training and training_runner or (type(spec.kind)=='number' and runner or action_runner)
+            local selected = spec.extra and extra_runner or spec.quest and quest_runner or spec.training and training_runner or (type(spec.kind)=='number' and runner or action_runner)
             local count=10
             local found=0
             for _,arg in ipairs(row.args or {}) do if arg.args_key==(spec.kind=='arena_tickets' and TICKET_KEY or COUNT_KEY) then count=arg.args_val;found=found+1 end end
@@ -324,7 +343,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                 local daily_done={summon='今日召唤已完成',arena_free='今日免费挑战已完成',
                     arena_tickets='今日用券目标已完成',hero='今日养成已完成',bone='今日养成已完成'}
                 self.un_finish_node:setVisible(true)
-                local reasons={wish_already_claimed='今日祈愿奖励已领取',no_guild='尚未加入宗门',ruins_defeat='遗迹挑战失败，已跳过本项',
+                local reasons={challenge_started='已发起挑战，继续后续任务',challenge_deferred='等待可发起挑战，其余任务继续',deferred_timeout='暂未能发起挑战，请稍后核实',gift_config_changed='免费礼包配置已变化，已跳过本项',wish_already_claimed='今日祈愿奖励已领取',no_guild='尚未加入宗门',ruins_defeat='遗迹挑战失败，已跳过本项',
                     empty_quest_formation='请先保存对应进攻阵容',invalid_quest_formation='对应进攻阵容无效',
                     ruins_no_boss='暂无可挑战遗迹首领',
                     ruins_boss_defeated='当前遗迹首领已击败，已跳过本项',
@@ -351,7 +370,9 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     end)
     patch(OneKeyBurdenAutoWindow, 'close_callback', function(old)
         return function(self, ...)
-            if owner == self then
+            local deferred_owner=extra_runner and extra_runner.active and extra_runner.active.window==self
+            if extra_runner then for _,a in pairs(extra_runner.deferred) do if a.window==self then deferred_owner=true end end end
+            if owner == self or deferred_owner then
                 if runner.active then runner.active.done = function() end end
                 runner:cancel()
                 if action_runner then
@@ -361,6 +382,10 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                 if training_runner then
                     if training_runner.active then training_runner.active.done=function() end end
                     training_runner:cancel()
+                end
+                if extra_runner then
+                    if extra_runner.active then extra_runner.active.done=function() end end
+                    extra_runner:cancel()
                 end
                 if quest_runner then
                     if quest_runner.active then quest_runner.active.done=function() end end
@@ -373,12 +398,16 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     end)
     -- 将扩展条目放到日常页顶部，沿用游戏原有设置窗口与执行窗口。
     for i = #specs, 1, -1 do table.insert(list, 1, specs[i].row) end
-    local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner, version = Quests and 'daily_quests_v3' or Training and 'daily_training_v8' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
+    local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner,extras=extra_runner, version = Extras and 'daily_extras_v1' or Quests and 'daily_quests_v3' or Training and 'daily_training_v8' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
     -- 自动重挂只撤销仍属于我们的包装/条目，不覆盖后来接入的其他包装。
     -- 停止回调，但保留用户设置和未确认消费记录。
     function installation.detach()
-        for _,r in pairs({runner,action_runner,training_runner,quest_runner}) do
-            if r and r.active then r.active.done=function() end;r:cancel() end
+        for _,r in pairs({runner,action_runner,training_runner,quest_runner,extra_runner}) do
+            if r then
+                if r.active then r.active.done=function() end end
+                for _,a in pairs(r.deferred or {}) do a.done=function() end end
+                r:cancel()
+            end
         end
         cleanup()
         for i=#patches,1,-1 do
@@ -409,6 +438,10 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                 if training_runner then
                     if training_runner.active then training_runner.active.done=function() end end
                     training_runner:cancel()
+                end
+                if extra_runner then
+                    if extra_runner.active then extra_runner.active.done=function() end end
+                    extra_runner:cancel()
                 end
                 if quest_runner then
                     if quest_runner.active then quest_runner.active.done=function() end end

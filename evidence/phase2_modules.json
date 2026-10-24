@@ -3300,5 +3300,95 @@
     "sha256": "54144203cb1f15fd60a7b5bce5f0f783ec512c12c048ba1a934257ee25fa8c96",
     "path": "recovered/phase2/lua/game/notice/view/notice_window.luac",
     "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/jialingpass/jialingpass_model.luac",
+    "asset": "assets/res/0/c/0a79eb37dbb6bfc3070709e4abd10b69",
+    "encrypted_sha256": "c6c2a9bc2cb15cd2890f42c87102b8dedccaa8b45022561b7d68bda48013658b",
+    "status": "decoded",
+    "size": 3947,
+    "sha256": "30a438c6acb27252999b86004d58e613f46591614a6ba0aad64e79ebb5bc2e1a",
+    "path": "recovered/phase2/lua/game/jialingpass/jialingpass_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/soulguider/view/soulguider_treasure_panel.luac",
+    "asset": "assets/res/a/a/3cbe191eb8a2e39033c2a30e17ac8df0",
+    "encrypted_sha256": "659041bd246cae84b8e302cc77bbdf9754c2671f4bdfbd46dfcb94c3553d9d30",
+    "status": "decoded",
+    "size": 50872,
+    "sha256": "57b00ec70a5a437fdc2379bae128dfaf098b9804532c52c3be2cb49265f78574",
+    "path": "recovered/phase2/lua/game/soulguider/view/soulguider_treasure_panel.luac",
+    "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/common_gift_shop/common_gift_shop_const.luac",
+    "asset": "assets/res/8/b/11884b3d0efcd9c8c385db7effbd67de",
+    "encrypted_sha256": "254a7549025514dd3f5bcd73d98c43ed4dcf6ee06eda33418436ee9b9bb8dc26",
+    "status": "decoded",
+    "size": 1347,
+    "sha256": "b81a380146ed1a7a84f5bf3056d8b59ba82ddeb0ac056d9066f4ff2e313dfde7",
+    "path": "recovered/phase2/lua/game/common_gift_shop/common_gift_shop_const.luac",
+    "head_hex": "436f6d6d6f6e4769667453686f70436f"
+  },
+  {
+    "logical": "game/common_gift_shop/common_gift_shop_event.luac",
+    "asset": "assets/res/0/b/625126bff8e3c776ae69843c0ce411a5",
+    "encrypted_sha256": "60076e2aff6f6c71a887e98ee2f653a44c8faa2a33f613487073182d5f636249",
+    "status": "decoded",
+    "size": 127,
+    "sha256": "50681720e4cf6410d8a38fb7b6c935fc44bc9387743bb1c81e1b9b50e40223e2",
+    "path": "recovered/phase2/lua/game/common_gift_shop/common_gift_shop_event.luac",
+    "head_hex": "436f6d6d6f6e4769667453686f704576"
+  },
+  {
+    "logical": "game/common_gift_shop/common_gift_shop_item_vo.luac",
+    "asset": "assets/res/9/6/7c30b6991b6a3bee3473a10e993eb10b",
+    "encrypted_sha256": "0c6e717d8d30b2d7bc069c0f23a6f2e0513e91500a6f8daaf4a3e4cd74707b68",
+    "status": "decoded",
+    "size": 1897,
+    "sha256": "4ef6d18b28d377b7d689773b078559ba6159eb61726e75c1bc3f21022af1953a",
+    "path": "recovered/phase2/lua/game/common_gift_shop/common_gift_shop_item_vo.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/common_gift_shop/common_gift_shop_model.luac",
+    "asset": "assets/res/e/3/9fc435b852b0eea5b04c98ef6a2e7bec",
+    "encrypted_sha256": "851e85c0908f5bc75ee16a5eef0c1feb4c06098b033dd67cd9eed06155e108ac",
+    "status": "decoded",
+    "size": 3985,
+    "sha256": "b58deb0039c749692f1b38fee200d6f40885c558bbf05fbdee55412d6ff19b50",
+    "path": "recovered/phase2/lua/game/common_gift_shop/common_gift_shop_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/common_gift_shop/view/common_gift_shop_btn.luac",
+    "asset": "assets/res/e/d/6c5def4449a701edf1cfcdffe11dc2fe",
+    "encrypted_sha256": "ca4fa63ec41e73f3bba78ddf3187aa3b735c287c1683d12825e4538a471b62c9",
+    "status": "decoded",
+    "size": 3686,
+    "sha256": "2f7238a9750fd2756de84cc0cbe260de22f79a4b74d0bdadd9bf855b150d7e84",
+    "path": "recovered/phase2/lua/game/common_gift_shop/view/common_gift_shop_btn.luac",
+    "head_hex": "436f6d6d6f6e4769667453686f704274"
+  },
+  {
+    "logical": "game/common_gift_shop/view/common_gift_shop_window.luac",
+    "asset": "assets/res/7/5/79c1f1235fb044597cea722944473349",
+    "encrypted_sha256": "3400180e600bfe73a3427ddbae1551f902454119cf7718d3fb47467e73665bd4",
+    "status": "decoded",
+    "size": 15387,
+    "sha256": "64213a0b65b3868d08f36de312fbf6e795b859e31f5de79df81a5b87282d873c",
+    "path": "recovered/phase2/lua/game/common_gift_shop/view/common_gift_shop_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/jialingpass/jialingpass_const.luac",
+    "asset": "assets/res/f/1/e57dc03f4fa85e1a9fede92611f34ec8",
+    "encrypted_sha256": "3f8a148deb0e663510e269bd6e2a80c6b85b21ffde19c370f684789e852de545",
+    "status": "decoded",
+    "size": 232,
+    "sha256": "3283d8a51f012421fff4167489b51fbcf93e1d2617620947dae3afe6920c59e9",
+    "path": "recovered/phase2/lua/game/jialingpass/jialingpass_const.luac",
+    "head_hex": "4a69614c696e6750617373436f6e7374"
   }
 ]

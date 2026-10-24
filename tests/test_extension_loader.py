@@ -6,6 +6,7 @@ os.environ['DLDL_TEST_PHASE']='phase13'
 with contextlib.redirect_stdout(io.StringIO()):
     ns=runpy.run_path(str(ROOT/'tests/test_daily_recovery.py'))
 lua=ns['lua']
+runpy.run_path(str(ROOT/'tests/fixtures_daily_extras.py'))['setup'](lua,ns['ns']['original'])
 build=runpy.run_path(str(ROOT/'lsposed-module/scripts/build-payload.py'))
 with contextlib.redirect_stdout(io.StringIO()):build['build']()
 asset=ROOT/'lsposed-module/app/src/main/assets/extension'
@@ -39,7 +40,7 @@ GAME_INITED=true;package.loaded.game_start=true
 local n=#sent
 assert(dofile(boot)==0)
 local a=DLDL_DAILY_GIFTS
-assert(#a.specs==14 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+14 and #sent==n)
+assert(#a.specs==17 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+17 and #sent==n)
 for i=1,20 do assert(dofile(boot)==0) end
 assert(DLDL_DAILY_GIFTS==a and DLDL_EXTENSION_LOADER.generation==1)
 local key='loader_test_pending';ud:setIntegerForKey(key,1)
@@ -51,7 +52,7 @@ assert(dofile(boot)==0 and DLDL_EXTENSION_LOADER.generation==2)
 local old=DLDL_DAILY_GIFTS
 beginGame=function() end
 assert(dofile(boot)==0 and DLDL_EXTENSION_LOADER.generation==3)
-assert(DLDL_DAILY_GIFTS~=old and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+14)
+assert(DLDL_DAILY_GIFTS~=old and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+17)
 assert(#sent==n and ud:getIntegerForKey(key,0)==1)
 -- The release bundle preserves pending isolation and skips contract shortage.
 ext=DLDL_DAILY_GIFTS
@@ -75,4 +76,4 @@ DLDL_DAILY_GIFTS.detach()
 assert(VipController:getInstance().sender21018==foreign)
 assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and #sent==n)
 ''')
-print(json.dumps({'existing_regression_cases':len(lua.globals().passed),'payload_lua51':True,'lifecycle':['partial installation rollback','14 entries without requests','20 repeated callbacks idempotent','disable restores rows and preserves journal','reenable','generation remount','foreign wrapper preserved','release contract shortage continues to guild task','release unknown hero pending retained across remount'],'network':'none'},ensure_ascii=False,indent=2))
+print(json.dumps({'existing_regression_cases':len(lua.globals().passed),'payload_lua51':True,'lifecycle':['partial installation rollback','17 entries without requests','20 repeated callbacks idempotent','disable restores rows and preserves journal','reenable','generation remount','foreign wrapper preserved','release contract shortage continues to guild task','release unknown hero pending retained across remount'],'network':'none'},ensure_ascii=False,indent=2))

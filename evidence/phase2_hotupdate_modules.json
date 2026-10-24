@@ -1382,5 +1382,157 @@
     "size": 31796,
     "sha256": "99ae2c46eb8e84047534f4e12dbb5eb8f654cb5e8673447b7596593c521147bc",
     "path": "recovered/phase2/hotupdate/lua/game/login/login_model.luac"
+  },
+  {
+    "logical": "game/guildboss/guildboss_model.luac",
+    "encrypted_sha256": "1c8f1820c8e6b0dc54f52a0c32d77eabb653fbebe9e01c1eee1ddb774fba927a",
+    "status": "decoded",
+    "size": 12704,
+    "sha256": "d8869f464dc17f2d80af1258310151fd3d5118f7a6287018890746fcc1ed2062",
+    "path": "recovered/phase2/hotupdate/lua/game/guildboss/guildboss_model.luac"
+  },
+  {
+    "logical": "game/guildboss/guildboss_controller.luac",
+    "encrypted_sha256": "1a8e1df8d5eae0098fed670647b4e2fcd81ed599d1dfa4208b82dfe2e157f1e6",
+    "status": "decoded",
+    "size": 16994,
+    "sha256": "f0c31442b2530fdc010c2c33f0fe3a9a899ace3b6cb589deb223710349e2ca17",
+    "path": "recovered/phase2/hotupdate/lua/game/guildboss/guildboss_controller.luac"
+  },
+  {
+    "logical": "game/guildboss/view/guildboss_fight_window.luac",
+    "encrypted_sha256": "e1c7d804b202dc71d85587e30df708dc4dbcd1d0ab9b035ae1d85ba96cd12ba8",
+    "status": "decoded",
+    "size": 33182,
+    "sha256": "8a5c462ca3a8ee58018f4e513b88e5570f216172963158854f6bd2ad84c03813",
+    "path": "recovered/phase2/hotupdate/lua/game/guildboss/view/guildboss_fight_window.luac"
+  },
+  {
+    "logical": "game/guildboss/view/guildboss_fight_new_window.luac",
+    "encrypted_sha256": "77fdcf0876f509e4a839f0d1c3773c99329bd90d34a385ff52f3d2cc6631e39e",
+    "status": "decoded",
+    "size": 34030,
+    "sha256": "f352d09fa4472063bbcd950476f43eff77f97e7fef7266bebd4b215f12b0f756",
+    "path": "recovered/phase2/hotupdate/lua/game/guildboss/view/guildboss_fight_new_window.luac"
+  },
+  {
+    "logical": "game/soulguider/view/soulguider_treasure_panel.luac",
+    "encrypted_sha256": "435a0b645405e8f869c2f1a8fcc4bb776683b7a411d8d3941cf6ee508b925440",
+    "status": "decoded",
+    "size": 51632,
+    "sha256": "984f5f1b43e00769b322473a6b670a6046e2bacbbafaa358b0f6a90526596e4e",
+    "path": "recovered/phase2/hotupdate/lua/game/soulguider/view/soulguider_treasure_panel.luac"
+  },
+  {
+    "logical": "game/soulguider/soulguider_model.luac",
+    "encrypted_sha256": "38be90229e022cd3d1f94339cda1d1740c9dbd2a5642f10b7fa3d3a0c3e20b5a",
+    "status": "decoded",
+    "size": 19760,
+    "sha256": "8661c8619c7bd0e35ea797f567350f2befb454909f263af2a69d0d160cbfee8b",
+    "path": "recovered/phase2/hotupdate/lua/game/soulguider/soulguider_model.luac"
+  },
+  {
+    "logical": "game/soulguider/soulguider_controller.luac",
+    "encrypted_sha256": "d0169148a91df35f473949c932b32f3b540a32ce8a05d2477da15c77a449c0de",
+    "status": "decoded",
+    "size": 14535,
+    "sha256": "8092456f653204d22f7020d4359d098770dd560db73e6ec087baee0119cd9e0d",
+    "path": "recovered/phase2/hotupdate/lua/game/soulguider/soulguider_controller.luac"
+  },
+  {
+    "logical": "game/jialingpass/jialingpass_controller.luac",
+    "encrypted_sha256": "8f33451d317e76d86e92ac385a0ad8f922303058a8199dffba897c8f9b3931e3",
+    "status": "decoded",
+    "size": 9253,
+    "sha256": "1a55322b19c1c8ba487bf9b8069388d6a6ddb544cf26024153a9afb1f4b22eea",
+    "path": "recovered/phase2/hotupdate/lua/game/jialingpass/jialingpass_controller.luac"
+  },
+  {
+    "logical": "config/guild_new_boss_data.luac",
+    "encrypted_sha256": "9a492b10efbf8491b4bd49918829d81fe6b042ed55f19215441ac3c945315f7e",
+    "status": "decoded",
+    "size": 79244,
+    "sha256": "79684c475e593ce623c951c9cc6b8b9766570c4a52955a9effb48e6e61f7cca1",
+    "path": "recovered/phase2/hotupdate/lua/config/guild_new_boss_data.luac"
+  },
+  {
+    "logical": "game/jialingpass/view/jialingpass_main_view.luac",
+    "encrypted_sha256": "9392654c7418ca7c1a1cab6db81adffbfecd7241b1ce21f1a8f517936a4f233e",
+    "status": "decoded",
+    "size": 13883,
+    "sha256": "20eea9b654fd1ac6d0f13a5b02781b131b422a4d2356f0ad2702cc013aca3fd5",
+    "path": "recovered/phase2/hotupdate/lua/game/jialingpass/view/jialingpass_main_view.luac"
+  },
+  {
+    "logical": "game/common_gift_shop/common_gift_shop_model.luac",
+    "encrypted_sha256": "e994ae9e748c9c3e6f942adb92b18ab6ab14ee79b29335f543134b36a7095381",
+    "status": "decoded",
+    "size": 3990,
+    "sha256": "a319a9f7947e84b9877fe7c8076413ed490717c7acee8ea43819faf0347819cb",
+    "path": "recovered/phase2/hotupdate/lua/game/common_gift_shop/common_gift_shop_model.luac"
+  },
+  {
+    "logical": "game/common_gift_shop/common_gift_shop_event.luac",
+    "encrypted_sha256": "999edcee161d0ffeba667fd2c48917be2c328179844609a50214480126ab6194",
+    "status": "decoded",
+    "size": 338,
+    "sha256": "957c4ca9f2814ff5cb9f73efa9a506e9426746d8298a3c48b8b68414103e99ee",
+    "path": "recovered/phase2/hotupdate/lua/game/common_gift_shop/common_gift_shop_event.luac"
+  },
+  {
+    "logical": "game/common_gift_shop/common_gift_shop_controller.luac",
+    "encrypted_sha256": "62d27fb66f6cb8800a39ead4741a91ea42acb025e90dbbe349e6f1cbfc680a0c",
+    "status": "decoded",
+    "size": 4235,
+    "sha256": "82c448262aa972846e66776604d1985d9126e0cb6b744c256aeb18f3947028bf",
+    "path": "recovered/phase2/hotupdate/lua/game/common_gift_shop/common_gift_shop_controller.luac"
+  },
+  {
+    "logical": "game/common_gift_shop/view/common_gift_shop_window.luac",
+    "encrypted_sha256": "1b01bf339c7884e598d3171f6d144c9c42ee239c4b632f188b589be34b2ab39a",
+    "status": "decoded",
+    "size": 16566,
+    "sha256": "522feae96066b2fa9c7ee4e6710097ab9d6d40dab24543e397fa9b2c06e17478",
+    "path": "recovered/phase2/hotupdate/lua/game/common_gift_shop/view/common_gift_shop_window.luac"
+  },
+  {
+    "logical": "game/common_gift_shop/view/common_gift_shop_btn.luac",
+    "encrypted_sha256": "ea33aea4ba2b47aa0cc59751e19f56be61dc6fca50e9c5d5b92924a3ecf452fb",
+    "status": "decoded",
+    "size": 4567,
+    "sha256": "01f24d982aabb67e4a20fc1f20dea6305cccd345c8828d8bbcf78363580b7476",
+    "path": "recovered/phase2/hotupdate/lua/game/common_gift_shop/view/common_gift_shop_btn.luac"
+  },
+  {
+    "logical": "game/common_gift_shop/common_gift_shop_const.luac",
+    "encrypted_sha256": "2e29a74cbae319e78484d6fe20fb9de5b4c845a7b3975a814765bbd4d0a17a4a",
+    "status": "decoded",
+    "size": 2664,
+    "sha256": "19d800e71c346e8c4be49ca4cc8604e7a6eff5553b3ac769f89ac24998d25cb5",
+    "path": "recovered/phase2/hotupdate/lua/game/common_gift_shop/common_gift_shop_const.luac"
+  },
+  {
+    "logical": "config/desisive_battle_data.luac",
+    "encrypted_sha256": "4e0020a8c230b769e1d8ccb73c3fcdb96d804c33fd03e17f8baee01520860946",
+    "status": "decoded",
+    "size": 69368,
+    "sha256": "6c995c6208b9ab1961628a5100174807c680cd1bc79e2b4ea3dc315175c20717",
+    "path": "recovered/phase2/hotupdate/lua/config/desisive_battle_data.luac"
+  },
+  {
+    "logical": "config/common_gift_data.luac",
+    "encrypted_sha256": "85216ece863588b2bcdb4cd7b224829f19cb18a22242785f4741230a34b2dd5c",
+    "status": "decoded",
+    "size": 67052,
+    "sha256": "990c8f3bfd6bd10cba59f15b92f181b006c6eaf46ee85586376392e1327e632d",
+    "path": "recovered/phase2/hotupdate/lua/config/common_gift_data.luac"
+  },
+  {
+    "logical": "game/action/action_constants.luac",
+    "encrypted_sha256": "37df80e30b94970ae6fa42b1fe3b93ab15a5b5a47e0bb2e7f32b3aed9b22bf76",
+    "status": "decoded",
+    "size": 82962,
+    "sha256": "3dbb350f41c383e4de49597087bf6bcbc70d49c30420f80e7f7ef314931a4988",
+    "path": "recovered/phase2/hotupdate/lua/game/action/action_constants.luac"
   }
 ]

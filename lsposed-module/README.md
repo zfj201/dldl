@@ -10,9 +10,11 @@
 
 0.4.1 起，自动启动时华为“正在加载中...”框连续显示超过15秒会杀进程重启，每次最多3次。离开该框重新计时；已进入登录或助手执行阶段不会触发这项恢复，普通手动启动不触发。
 
+0.5.0 新增联盟幻境每日挑战一次、决战武魂殿每日挑战一次、魂导器工坊每日免费礼包三个独立开关，默认关闭。挑战以成功发起回执为完成，不跳过、不等结算；第二场被明确拒绝且助手自己的前一场仍在战斗时，先继续其他任务，后台重新核对次数后仅补发一次。自动关闭游戏会等补发处理结束。工坊只领取高级晶片×1、初级晶片×100的免费礼包。详见[三项扩展报告](../reports/23_联盟幻境武魂殿与工坊礼包.md)。
+
 LSPosed 在进程启动时加载小型 JNI 桥，在 `Cocos2dxRenderer.onDrawFrame` 原方法结束后，每秒一次调用游戏已有的 `Cocos2dxLuaJavaBridge.callLuaGlobalFunctionWithString`。通过 `dofile` 执行独立引导器，不使用固定 RVA、Lua_State 指针或 native inline hook。渲染尚未初始化则不调用。
 
-官方 `game_start` 完成后安装 14 项入口；收到执行操作或自动化指令后才执行任务。控制器、窗口类、配置列表或 beginGame 对象变化时重新挂载；同一代次不重复安装。安装失败回滚自己已改动的方法；不清配置或消费 journal。历史单笔修复入口不进入发布包。
+官方 `game_start` 完成后安装 17 项入口；收到执行操作或自动化指令后才执行任务。控制器、窗口类、配置列表或 beginGame 对象变化时重新挂载；同一代次不重复安装。安装失败回滚自己已改动的方法；不清配置或消费 journal。历史单笔修复入口不进入发布包。
 
 native 和 Lua SHA-256 来自签名 APK 内资源。复制到游戏 `files/dldl_extension/bundle-<hash>/`，逐文件校验并原子替换。冷启动会恢复缺失或损坏的副本。官方资源哈希不作为长期启动门槛，也不会被模块覆盖。
 
@@ -24,11 +26,12 @@ native 和 Lua SHA-256 来自签名 APK 内资源。复制到游戏 `files/dldl_
 | `lsposed-module/app/src/main/java/com/zfj/dldlextension/PayloadStore.java` | 从模块 APK 取 Lua，校验并恢复独立副本 |
 | `lsposed-module/app/src/main/cpp/bridge.c` | 小型转接器，调用游戏已有 Lua 接口 |
 | `lsposed-module/lua/bootstrap.lua` | 等官方业务准备好，判断是否已挂载，必要时拆旧挂新 |
-| `modules/xiangxiang_gifts_extension.lua` | 14项菜单、设置、队列分派、结果显示和卸载回滚 |
+| `modules/xiangxiang_gifts_extension.lua` | 17项菜单、设置、队列分派、结果显示和卸载回滚 |
 | `modules/daily_gifts.lua` | 免费礼包领取流程 |
 | `modules/daily_actions.lua` / `daily_actions_game.lua` | 扫荡、膜拜、契约召唤的流程及游戏接口适配 |
 | `modules/daily_training.lua` / `daily_training_game.lua` | 积分赛、魂师升级、背包魂骨强化的流程及游戏接口适配 |
 | `modules/daily_quests.lua` / `daily_quests_game.lua` | 宗门祈愿奖励、至高遗迹的流程及游戏接口适配 |
+| `modules/daily_extras.lua` / `daily_extras_game.lua` | 两项每日发起挑战、后台补发及工坊免费晶片礼包 |
 | `modules/helper_automation.lua` / `helper_automation_game.lua` | 自动执行完整助手列表、角色和游戏日绑定、持久去重及完成回执 |
 | `modules/startup_automation.lua` / `startup_automation_game.lua` | 单次开始冒险、公告正常关闭、主城稳定检查和启动诊断 |
 | `lsposed-module/app/src/main/java/com/zfj/dldlextension/AutomationService.java` / `DailySchedule.java` | 模块应用的精确闹钟、Root启动、前台保活和结果收集 |
@@ -50,7 +53,7 @@ Gradle 自动构建 JNI 桥、生成独立 Lua 包及 manifest。开发 APK 位�
 PYTHONPATH=.tools python3 tests/test_extension_loader.py
 ```
 
-上述测试从仓库根目录运行，依赖本机 Lua 5.1/Lupa 与已恢复游戏类，包含已有111项回归及加载器生命周期检查，不调用设备或网络。
+上述测试从仓库根目录运行，依赖本机 Lua 5.1/Lupa 与已恢复游戏类，包含已有111项回归及加载器生命周期检查，不调用设备或网络。新增三项集成测试：`PYTHONPATH=.tools python3 tests/test_daily_extras.py`，共132项，含后台补发、提前关闭防护与礼包配置变更验证。
 
 自动化测试：`PYTHONPATH=.tools python3 tests/test_helper_automation.py`、`PYTHONPATH=.tools python3 tests/test_startup_automation.py`、`sh tests/test_launch_request.sh`、`sh tests/test_loading_recovery.sh`。自动化通道位于游戏 `files/dldl_extension/automation/`，协议及定时安装见 [独立自动运行](docs/automation.md)。
 

@@ -42,7 +42,9 @@ function M.bind(Automation)
             local w=helper.onekeyburden_auto_window;if not w then return end
             local rows=w.execute_request_list;local all=#rows>0
             for _,row in ipairs(rows) do if not row.is_execute then all=false end end
-            return {index=w.execute_index,total=#rows,finished=w.is_execute_finish==true,all_executed=all,rows=rows}
+            local extension=rawget(_G,'DLDL_DAILY_GIFTS')
+            local waiting=extension and extension.extras and extension.extras:hasDeferred()
+            return {index=w.execute_index,total=#rows,finished=w.is_execute_finish==true and not waiting,all_executed=all,rows=rows}
         end,
         results=function(rows)
             local out={}

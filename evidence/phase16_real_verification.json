@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-24",
+  "version": "0.5.0",
+  "entries": 17,
+  "apk_sha256": "e113a63eb7b8544c5ea812e091ced096e998997f4b9d199ed12043e3226e8485",
+  "bundle": "bundle-b9ea819b53938e6a",
+  "live": {
+    "guild_trial": "accepted code=1; advanced immediately without settlement",
+    "temple_duel": "accepted code=1 in isolated retry after two pristine quota reads following an explicit rejected first attempt",
+    "workshop": {
+      "accepted": true,
+      "advanced_chip_delta": 1,
+      "basic_chip_delta": 100,
+      "diamond_delta": 0
+    },
+    "cold_start": "17 entries installed; ordinary launch sent no task mutations"
+  },
+  "limits": [
+    "First combined run accepted guild trial and gift but rejected temple duel; rejection was not marked completed.",
+    "Deferred-retry and delayed automatic-close branches covered offline, not re-consumed on device after both daily challenges had succeeded."
+  ],
+  "offline_integration_cases": 132,
+  "lint": {
+    "errors": 0,
+    "existing_warnings": 8
+  },
+  "private_device_evidence": "evidence/phase16/ (gitignored)",
+  "final_asset_hashes_verified_on_device": true,
+  "final_cold_start_status": "installed:17:version=0.5.0; generation=1",
+  "daily_alarm_preserved": "2026-10-25 07:00:00 Asia/Shanghai"
+}

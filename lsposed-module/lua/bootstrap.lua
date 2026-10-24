@@ -26,8 +26,9 @@ if not exists(root..'../disabled') and exists(root..'../automation/launch.tsv') 
 end
 local names={'OneKeyBurdenController','VipController','GlobalTimeTicket','RoleController','GameNet',
  'DungeonstoneController','PantheonController','SoulDomainController','PartnersummonController',
- 'ElitematchController','HeroController','BackpackController','BattleController','GuildController','GodRuinsController'}
+ 'ElitematchController','HeroController','BackpackController','BattleController','GuildController','GodRuinsController','GuildbossController','JiaLingPassController','CommonGiftShopController'}
 local function pollAutomation()
+    if state.installation.extras then state.installation.extras:pollDeferred() end
     if state.installation.automation then state.installation.automation:poll(root..'../automation/') end
 end
 local ok,result=pcall(function()
@@ -65,7 +66,7 @@ local ok,result=pcall(function()
     -- 旧 game_start 组合包若还在运行，拒绝再挂一份，需先迁移回对应版本官方启动文件。
     if rawget(_G,'DLDL_DAILY_GIFTS') then status('legacy_payload_present');return 3 end
     for _,row in ipairs(list) do
-        if type(row.id)=='number' and row.id>=-2101802 and row.id<=-2101787 then
+        if type(row.id)=='number' and row.id>=-2101802 and row.id<=-2101784 then
             status('custom_id_collision');state.failed=true;return -1
         end
     end
@@ -73,9 +74,9 @@ local ok,result=pcall(function()
     local factory=assert(loadfile(root..'payload.lua'))()
     state.generation=state.generation+1
     local installed=factory()
-    assert(installed and #installed.specs==14,'unexpected entry count')
+    assert(installed and #installed.specs==17,'unexpected entry count')
     state.installation=installed;_G.DLDL_DAILY_GIFTS=installed
-    status('installed:14:version=0.4.1')
+    status('installed:17:version=0.5.0')
     pollAutomation()
     return 0
 end)
