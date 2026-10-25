@@ -49,7 +49,7 @@ def build():
         +'\nend)()\nlocal Game=(function()\n'+(ROOT/'modules/startup_automation_game.lua').read_text()
         +'\nend)()\nreturn function(root) return Game.bind(Startup,root) end\n')
     manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUT.glob('*.lua'))}
-    (OUT/'manifest.json').write_text(json.dumps({'version':'0.5.0','files':manifest},indent=2)+'\n')
+    (OUT/'manifest.json').write_text(json.dumps({'version':'0.5.1','files':manifest},indent=2)+'\n')
     native=ROOT/'lsposed-module/app/src/main/jniLibs/arm64-v8a/libdldl_bridge.so'
     (OUT/'native.sha256').write_text(hashlib.sha256(native.read_bytes()).hexdigest()+'\n')
     print(json.dumps(manifest))

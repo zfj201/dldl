@@ -1,4 +1,4 @@
-# 独立定时运行（0.5.0）
+# 独立定时运行（0.5.1）
 
 调度与游戏入口均在模块 APK 内。无需 AutoJs、截图模板或无障碍服务。LSPosed 仍只勾选 `com.hnzh.dldlwhjx.huawei`；模块配置应用另使用 Root 唤醒和启动游戏、读写游戏私有指令目录。
 
@@ -19,7 +19,10 @@
 游戏端 Java Hook 只在有效的启动指令期间拦截：
 
 - `JosGetNoticeResp.getNoticeIntent()` / `GameNoticeResp.getNoticeIntent()`：让华为 SDK 的可选推广公告返回无展示 Intent。
+- `NoticeTaskApiCall.a(Parcelable)` 和账号 SDK 的 `hwid.k` / `hwid.ae` 私有公告启动器：0.5.1 补齐 Intent / PendingIntent 展示入口，只跳过可选推广，外层响应处理继续执行。没有有效启动指令、请求过期、取消或启动完成后恢复原方法。
 - `AppUpdateActivity.c(ApkUpgradeInfo)`：确认非强制更新后，设置 SDK 的取消状态 `m=4 / o=100` 并调用原 `finish()` 通知回调。强制更新保留展示并报告阻塞。
+
+0.5.1 增加华为登录进程内部推广的正常关闭兜底。这类推广在华为自己的进程里阻塞登录，游戏端公告 Hook 无法覆盖。模块前台服务在本次300秒启动有效期内，每约3秒检查前台窗口；仅已识别的华为组件处于游戏任务中时，使用原有Root能力读取原生控件树，要求推广主图、今日不再展示标识和唯一可用的“关闭”控件同时匹配。点击位置来自关闭控件当前边界，点击前再次检查窗口token、请求ID、取消和有效期；窗口变化则重新识别。每轮最多6次，未知页面不点击。不使用AutoJs或截图模板，不扩大LSPosed作用域；普通手动打开游戏不执行这项关闭。
 
 0.4.1 增加华为初始化加载框恢复：监听 `com.sqwan.msdk.api.sdk.Huawei.showLoading()` / `hideLoading()`，观察其实际 `ProgressDialog` 的显示和窗口焦点。图中“健康游戏忠告”上的“正在加载中...”连续显示超过15秒时，配置应用杀掉游戏进程并重新启动；约每秒检查一次，实际触发可能稍晚于15秒。计时使用单调时钟，离开该框或失去焦点时重新计时；即使游戏主线程停止更新，外部服务仍可根据最后显示状态计时。
 
@@ -45,7 +48,7 @@
 |`ready.tsv`|角色、服务器和助手就绪心跳|
 |`request.tsv` / `result.tsv` / `tasks.tsv`|原有助手队列协议和逐项结果|
 
-模块自己的 `files/last-startup.tsv` / `last-tasks.tsv` 保存最近收到的结果，`files/loading-recovery.log` 记录加载恢复的重启或跳过原因。配置页可刷新最近状态。文件可能包含角色信息，不要提交到仓库。
+模块自己的 `files/last-startup.tsv` / `last-tasks.tsv` 保存最近收到的结果，`files/loading-recovery.log` 记录加载恢复的重启或跳过原因。`files/last-launch.txt` 保存系统拉起游戏的回执，`files/promotion-close.log` 记录推广正常关闭或窗口变化。原生控件树临时文件在模块私有cache内，读取后删除。配置页可刷新最近状态。文件可能包含角色信息，不要提交到仓库。
 
 `launch.tsv` 格式：`v1<TAB>request_id<TAB>rid<TAB>srv_id<TAB>created_epoch<TAB>expires_epoch<TAB>verify|run_all`。外部应用没有公开的自动执行广播入口；服务和闹钟接收器不导出。
 
@@ -55,4 +58,4 @@
 
 关闭每日开关取消后续预约，关闭 LSPosed 模块并重启游戏恢复官方流程。旧 AutoJs 定时任务需同步停用，防止两边同时启动游戏。旧脚本作为历史材料保留。
 
-当前设备已完成旧 AutoJs 单条任务迁移，并安装0.5.0。此前冷启动、短时熄屏闹钟、完整助手及去重收尾验证见 [0.4.0实机报告](../../reports/21_LSPosed独立定时启动与执行.md)，加载框恢复验证见 [0.4.1报告](../../reports/22_启动加载卡住自动重启.md)。
+当前设备已完成旧 AutoJs 单条任务迁移，并安装0.5.1。此前冷启动、短时熄屏闹钟、完整助手及去重收尾验证见 [0.4.0实机报告](../../reports/21_LSPosed独立定时启动与执行.md)，加载框恢复验证见 [0.4.1报告](../../reports/22_启动加载卡住自动重启.md)，本次推广修复见[0.5.1报告](../../reports/24_华为启动推广拦截补齐.md)。

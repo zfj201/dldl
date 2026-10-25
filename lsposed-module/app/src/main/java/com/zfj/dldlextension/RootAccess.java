@@ -29,6 +29,27 @@ final class RootAccess {
     static String read(String name) throws Exception {
         return run("if [ -f "+quote(BASE+name)+" ]; then head -c 4096 "+quote(BASE+name)+"; fi");
     }
+    private static String promotionGuard(String id,long expires) {
+        if (!id.matches("[A-Za-z0-9_-]{1,80}") || expires<=0) throw new IllegalArgumentException("Invalid promotion request");
+        return "if [ $(date +%s) -gt "+expires+" ] || [ -f "+quote(BASE+"../disabled")+" ]"
+            +" || ! grep -q "+quote("^v1\t"+id+"\t")+" "+quote(BASE+"launch.tsv")
+            +" || { [ -f "+quote(BASE+"cancel.tsv")+" ] && grep -qx "+quote(id)+" "+quote(BASE+"cancel.tsv")
+            +"; }; then exit 0; fi; ";
+    }
+    static String promotionSnapshot(String id,long expires,String temp) throws Exception {
+        return run(promotionGuard(id,expires)
+            +"focus=$(dumpsys window | grep mCurrentFocus | sed 's/^ *//'); case \"$focus\" in *"
+            +quote(" u0 "+HuaweiPromotion.COMPONENT+"}")+"*) ;; *) exit 0;; esac; "
+            +"printf '%s\\n' \"$focus\"; dumpsys activity top | grep -E '^TASK |^  ACTIVITY '; "
+            +"uiautomator dump --compressed "+quote(temp)+" >/dev/null 2>&1 && head -c 32769 "+quote(temp)
+            +"; rm -f "+quote(temp));
+    }
+    static String closePromotion(String id,long expires,HuaweiPromotion.Target target) throws Exception {
+        return run(promotionGuard(id,expires)
+            +"focus=$(dumpsys window | grep mCurrentFocus | sed 's/^ *//'); "
+            +"if [ \"$focus\" != "+quote(target.focus)+" ]; then echo window_changed; exit 0; fi; "
+            +"input tap "+target.x+" "+target.y+" && echo promotion_close_sent");
+    }
     static String restartLoading(String id,String pid,String since,String status) throws Exception {
         if (!id.matches("[A-Za-z0-9_-]{1,80}") || !pid.matches("[0-9]+") || !since.matches("[0-9]+"))
             throw new IllegalArgumentException("Invalid recovery request");

@@ -62,10 +62,13 @@ public final class AutomationService extends Service {
                 +" "+RootAccess.quote(RootAccess.BASE+"sdk-loading.tsv"));
             RootAccess.write("launch.tsv","v1\t"+id+"\t"+rid+"\t"+server+"\t"+now+"\t"+(now+300)+"\t"+mode+"\n");
             published=true;
-            RootAccess.run("input keyevent KEYCODE_WAKEUP; wm dismiss-keyguard; am start -W -n "
+            String launchOutput=RootAccess.run("input keyevent KEYCODE_WAKEUP; wm dismiss-keyguard; am start -W -n "
                 +RootAccess.TARGET+"/com.game.sdk.GameSdkActivity");
+            Files.write(new File(getFilesDir(),"last-launch.txt").toPath(),launchOutput.getBytes(java.nio.charset.StandardCharsets.UTF_8));
             long deadline=SystemClock.elapsedRealtime()+36*60*1000L;
             LoadingRecovery recovery=new LoadingRecovery();
+            long nextPromotion=0;
+            int promotionCloses=0;
             String last="";
             while (SystemClock.elapsedRealtime()<deadline) {
                 if (cancelled) {RootAccess.write("cancel.tsv",id+"\n");update("已停止；未确认的助手执行不会自动重跑");return;}
@@ -84,6 +87,24 @@ public final class AutomationService extends Service {
                     }
                 } else if (System.currentTimeMillis()/1000>now+320) {
                     throw new IllegalStateException("启动超时：请检查 LSPosed 作用域、锁屏、SDK 登录或加载器日志");
+                }
+                if (SystemClock.elapsedRealtime()>=nextPromotion && System.currentTimeMillis()/1000<=now+300
+                        && promotionCloses<6 && !cancelled) {
+                    nextPromotion=SystemClock.elapsedRealtime()+3000;
+                    try {
+                        HuaweiPromotion.Target promotion=HuaweiPromotion.find(RootAccess.promotionSnapshot(id,now+300,
+                            new File(getCacheDir(),"huawei-promotion.xml").getAbsolutePath()));
+                        if (promotion!=null && !cancelled) {
+                            String closed=RootAccess.closePromotion(id,now+300,promotion).trim();
+                            if (closed.equals("promotion_close_sent")) promotionCloses++;
+                            try (FileWriter log=new FileWriter(new File(getFilesDir(),"promotion-close.log"),true)) {
+                                log.write(System.currentTimeMillis()+"\t"+id+"\t"+closed+"\n");
+                            }
+                        }
+                    } catch (Exception e) {
+                        // Optional close must not interrupt loading recovery or the startup timeout.
+                        android.util.Log.w("DldlExtension","Promotion inspection failed",e);
+                    }
                 }
                 if (!recovery.observing(id,status)) {Thread.sleep(2000);continue;}
                 String loading=RootAccess.read("sdk-loading.tsv");

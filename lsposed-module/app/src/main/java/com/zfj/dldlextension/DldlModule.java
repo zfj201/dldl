@@ -62,12 +62,27 @@ public final class DldlModule extends XposedModule {
                 "com.huawei.hms.support.api.entity.game.GameNoticeResp"}) {
             try {
                 Method notice=loader.loadClass(name).getDeclaredMethod("getNoticeIntent");
-                hook(notice).intercept(chain -> {
-                    if (startupActive()) { record("sdk_promotion_suppressed:"+name); return null; }
-                    return chain.proceed();
-                });
+                hook(notice).intercept(new SdkPromotionHook(this::startupActive,this::record,name));
                 record("sdk_notice_hook_ready:"+name);
             } catch (Throwable e) { record("sdk_notice_hook_unavailable:"+name+":"+e); }
+        }
+        // JOS initialization and both account sign-in clients have their own notice
+        // launchers. All consume core.getNoticeIntent, without using legacy getters.
+        // Skip only these private launchers; response handling and analytics stay intact.
+        for (String[] target : new String[][]{
+                {"com.huawei.hms.jos.NoticeTaskApiCall"},
+                {"com.huawei.hms.hwid.k", "com.huawei.hms.hwid.c"},
+                {"com.huawei.hms.hwid.ae", "com.huawei.hms.hwid.u"}}) {
+            String name=target[0];
+            try {
+                Class<?>[] args=target.length==1 ? new Class<?>[]{android.os.Parcelable.class}
+                    : new Class<?>[]{android.os.Parcelable.class,loader.loadClass(target[1]),
+                        loader.loadClass("com.huawei.hms.common.internal.ResponseErrorCode"),
+                        loader.loadClass("com.huawei.hmf.tasks.TaskCompletionSource")};
+                Method launch=loader.loadClass(name).getDeclaredMethod("a",args);
+                hook(launch).intercept(new SdkPromotionHook(this::startupActive,this::record,name));
+                record("sdk_notice_hook_ready:"+name);
+            } catch (Throwable e) { record("sdk_notice_launcher_hook_unavailable:"+name+":"+e); }
         }
         try {
             Class<?> activity=loader.loadClass("com.huawei.updatesdk.service.otaupdate.AppUpdateActivity");

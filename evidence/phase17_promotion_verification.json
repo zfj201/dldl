@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-25",
+  "module_version": "0.5.1",
+  "version_code": 7,
+  "device": "Redmi Note 12T Pro / Android 15",
+  "mode": "verify",
+  "controlled_cold_starts": [
+    {"promotion_close_count": 2, "status": "verified", "reason": "city_and_role_ready", "helper_request_sent": false},
+    {"promotion_close_count": 2, "status": "verified", "reason": "city_and_role_ready", "helper_request_sent": false}
+  ],
+  "window_changed_click_skipped": true,
+  "manual_launch": {"promotion_remained_visible": true, "automatic_close_sent": false, "automation_command_present": false},
+  "test_setup": "Only this game's two daily promotion counters temporarily reset; Huawei process caches reloaded. Original counters restored after testing.",
+  "cleanup": {"launch_removed": true, "automation_service_stopped": true, "ui_dump_removed": true, "original_settings_preserved": true},
+  "next_daily_run": "2026-10-26T07:00:00+08:00",
+  "apk_sha256": "0f608b152b0770f81fd14fdc8db6e6d542f23126ae3f703d921f6839a228e148",
+  "limitations": ["No full helper queue rerun during this verification", "Next real 07:00 overnight run not observed"]
+}
