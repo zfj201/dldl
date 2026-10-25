@@ -23,7 +23,7 @@ function M.bind(Voyage,installed)
  local history={id=HISTORY,title='查看最近派遣结果',is_title=true,item_funname='createVoyageHistoryItem',default_option=FALSE}
  local rows={setting,history}
  local runner,timer,window,row,internal,manual_until=nil,nil,nil,nil,false,0
- local complete
+ local complete,advance
  local function role() return RoleController:getInstance():getRoleVo() end
  local function key()
   local r=role();if r and r.rid and r.srv_id then return tostring(r.srv_id)..':'..tostring(r.rid) end
@@ -222,7 +222,7 @@ function M.bind(Voyage,installed)
    for i=#queue,1,-1 do if queue[i].pos==HISTORY or (selected and queue[i].pos==13) then table.remove(queue,i) end end
    return queue
   end end)
-  local advance=OneKeyBurdenAutoWindow.updateDataList
+  advance=OneKeyBurdenAutoWindow.updateDataList
   patch(OneKeyBurdenAutoWindow,'updateDataList',function(old) return function(w,d)
    local r=w.execute_request_list[w.execute_index]
    if r and r.type==TYPE then return end;return old(w,d)
@@ -302,7 +302,7 @@ function M.bind(Voyage,installed)
   restore();oldUninstall()
  end
  local binding={runner=runner,type=TYPE,pos=POS,setting=setting,history=history,category=category,
-  load=load,showHistory=showHistory,display=display,rewardText=rewardText}
+  load=load,showHistory=showHistory,display=display,rewardText=rewardText,advance=advance}
  function binding:export()
   local a=runner.active or runner.last
   if not a or a.identity~=identity() then a=load() end

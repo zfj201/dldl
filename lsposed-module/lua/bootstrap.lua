@@ -26,7 +26,7 @@ if not exists(root..'../disabled') and exists(root..'../automation/launch.tsv') 
 end
 local names={'OneKeyBurdenController','VipController','GlobalTimeTicket','RoleController','GameNet',
  'DungeonstoneController','PantheonController','SoulDomainController','PartnersummonController',
- 'ElitematchController','HeroController','BackpackController','BattleController','GuildController','GodRuinsController','GuildbossController','JiaLingPassController','CommonGiftShopController','VoyageController'}
+ 'ElitematchController','HeroController','BackpackController','BattleController','GuildController','GodRuinsController','GuildbossController','JiaLingPassController','CommonGiftShopController','VoyageController','MineController'}
 local function pollAutomation()
     if state.installation.extras then state.installation.extras:pollDeferred() end
     if state.installation.automation then state.installation.automation:poll(root..'../automation/') end
@@ -76,7 +76,7 @@ local ok,result=pcall(function()
     local installed=factory()
     assert(installed and #installed.specs==17,'unexpected entry count')
     state.installation=installed;_G.DLDL_DAILY_GIFTS=installed
-    status('installed:17+voyage:version=0.6.0')
+    status('installed:17+voyage+mine:version=0.6.1')
     pollAutomation()
     return 0
 end)

@@ -1,0 +1,55 @@
+{
+  "verified_sources": [
+    {
+      "source": "phase2_modules.json",
+      "logical": "game/mine/mine_controller.luac",
+      "sha256": "d4dbe7838055e28d6f3e816678f126ac31acbc07aa5fd5dfef44deffa9d49fea"
+    },
+    {
+      "source": "phase2_modules.json",
+      "logical": "game/mine/mine_const.luac",
+      "sha256": "b140d26fc8bd609d4d7ad573c96796ad4108d4acad54e529f9dc1b5da3ed82df"
+    },
+    {
+      "source": "phase2_modules.json",
+      "logical": "game/mine/mine_event.luac",
+      "sha256": "5a71a0fe315c3ae76390ef3e8f030ce59199c19d4b1f537e0598c9c98318d97f"
+    },
+    {
+      "source": "phase2_modules.json",
+      "logical": "game/mine/mine_model.luac",
+      "sha256": "cedcc898d65e7ae7aadb076268973d3aa8bddcf3a313739c4df5f958ec6909ed"
+    },
+    {
+      "source": "phase2_modules.json",
+      "logical": "game/mine/view/mine_build_item.luac",
+      "sha256": "dbbb50a61d243dc293e889479fd621843b8d8a3165318e557fbb60bffea57c54"
+    },
+    {
+      "source": "phase2_modules.json",
+      "logical": "game/mine/view/mine_defend_info_window.luac",
+      "sha256": "7366594e33e514351455c3d0f34d0e815c75cb18279268474e75b4898b082f30"
+    },
+    {
+      "source": "phase2_modules.json",
+      "logical": "game/mine/view/mine_scene_main_panel.luac",
+      "sha256": "1bf12a10ff40daa890fc27ceff42d33d5b22d8ae1b106d8d2fe98ac021370f0a"
+    },
+    {
+      "source": "phase2_hotupdate_modules.json",
+      "logical": "game/mine/view/mine_build_item.luac",
+      "sha256": "f43ac086726b17a9f4ae59b6208eb2fb220c5763db0e3a07bda40d01faacabbc"
+    },
+    {
+      "source": "phase2_hotupdate_modules.json",
+      "logical": "game/mine/view/mine_scene_main_panel.luac",
+      "sha256": "fa44250c583c29ccb69295f3a68f21882cbddb9295fa0552eb818ff819ea70ff"
+    },
+    {
+      "source": "phase2_hotupdate_modules.json",
+      "logical": "game/mine/mine_model.luac",
+      "sha256": "92ddb93b53be9f164bc57ec950f6e16837445c3c31d7465959a5e44d82760467"
+    }
+  ],
+  "lua51_parse": "passed"
+}

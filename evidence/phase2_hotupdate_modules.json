@@ -1566,5 +1566,29 @@
     "size": 18185,
     "sha256": "f23903b0f4b810a0c44e26f66b3f95e39d3023cfd58b0da1f7033ac27abf60b3",
     "path": "recovered/phase2/hotupdate/lua/game/voyage/view/voyage_main_window.luac"
+  },
+  {
+    "logical": "game/mine/view/mine_build_item.luac",
+    "encrypted_sha256": "606edae2deb16288c46fc4e0f4d6007e7b834e100c6b605ffc3d768e088ddd6e",
+    "status": "decoded",
+    "size": 8051,
+    "sha256": "f43ac086726b17a9f4ae59b6208eb2fb220c5763db0e3a07bda40d01faacabbc",
+    "path": "recovered/phase2/hotupdate/lua/game/mine/view/mine_build_item.luac"
+  },
+  {
+    "logical": "game/mine/view/mine_scene_main_panel.luac",
+    "encrypted_sha256": "6469ca8e031708cccc441783dc955d6633736801c125d98f17d4df7b58aef6a3",
+    "status": "decoded",
+    "size": 35367,
+    "sha256": "fa44250c583c29ccb69295f3a68f21882cbddb9295fa0552eb818ff819ea70ff",
+    "path": "recovered/phase2/hotupdate/lua/game/mine/view/mine_scene_main_panel.luac"
+  },
+  {
+    "logical": "game/mine/mine_model.luac",
+    "encrypted_sha256": "f4db554ac4efe1edb3c7f0cdf126e1f7229424677522b9bbc2dccc4411688cd7",
+    "status": "decoded",
+    "size": 8228,
+    "sha256": "92ddb93b53be9f164bc57ec950f6e16837445c3c31d7465959a5e44d82760467",
+    "path": "recovered/phase2/hotupdate/lua/game/mine/mine_model.luac"
   }
 ]

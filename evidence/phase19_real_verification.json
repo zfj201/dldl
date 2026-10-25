@@ -1,0 +1,93 @@
+{
+  "date": "2026-10-26",
+  "version": "0.6.1",
+  "version_code": 9,
+  "apk_sha256": "fb162c2ab9bc33b6ce7f5e29a9520f91ba612814ff352e89455c387e51996565",
+  "build": {
+    "assemble_debug": "passed",
+    "lint_debug": {
+      "errors": 0,
+      "existing_warnings": 8
+    }
+  },
+  "offline": {
+    "mine_suite_passed": 128,
+    "mine_specific_cases": 17,
+    "voyage_suite_passed": 126,
+    "loader": "passed",
+    "helper_automation": "passed",
+    "startup_automation": "passed"
+  },
+  "device": {
+    "android": 15,
+    "lsposed_api": 102
+  },
+  "mine_live": {
+    "floor_id": 50,
+    "area_id": 1,
+    "mine_id": 5,
+    "challenge_requests": 1,
+    "ack_code": 1,
+    "finished_on_ack": true,
+    "waited_for_settlement": false,
+    "sent_skip_or_occupy": false,
+    "diamonds_before": 115350,
+    "diamonds_after": 115350,
+    "intelligence_before": 1453,
+    "intelligence_after": 1453,
+    "completed_persisted": true
+  },
+  "final_apk_cold_restart": {
+    "same_day_reason": "daily_target_done",
+    "same_day_mine_requests": [],
+    "completed_retained": true,
+    "target_retained": true,
+    "voyage_enabled": true,
+    "mine_enabled": true,
+    "voyage_history_entries": 3,
+    "all_category_queue": {
+      "voyage": true,
+      "mine": true,
+      "native13": false
+    },
+    "native_preferences_unchanged": true,
+    "manual_launch_auto_executed": false
+  },
+  "schedule": {
+    "enabled": true,
+    "timezone": "Asia/Shanghai",
+    "daily_time": "07:00",
+    "registered_next": "2026-10-26T07:00:00+08:00",
+    "role_server_binding_matches": true,
+    "alarm_tag": "com.zfj.dldlextension.DAILY",
+    "full_schedule_run_executed_in_this_verification": false
+  },
+  "cleanup": {
+    "dedup_callback_cleared": true,
+    "mine_inactive": true,
+    "mine_enabled": true,
+    "main_closed": true,
+    "voyage_enabled": 1,
+    "auto_closed": true,
+    "temporary_probe_removed": true,
+    "bootstrap_restored": true,
+    "device_assets_match_final_apk_sources": {
+      "bootstrap.lua": true,
+      "payload.lua": true,
+      "startup.lua": true
+    }
+  },
+  "live_scope": "One accepted challenge, cold-start deduplication, saved settings and queue construction; success at launch was checked before the final rebuild, whose remaining changes only narrow the displayed title and retain target fields on daily deduplication.",
+  "offline_only_scenarios": [
+    "unavailable targets",
+    "protection and cooldown",
+    "invalid formations",
+    "explicit rejection and another target",
+    "lost acknowledgement",
+    "concurrent automated combat",
+    "role or game-day changes",
+    "persistence failure",
+    "manual interference"
+  ],
+  "privacy": "No account identifiers, device serials, private raw logs or screenshots included."
+}

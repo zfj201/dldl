@@ -3490,5 +3490,65 @@
     "sha256": "ea710141a638e0dc050831971e4b90adda681dfcff8d98d309d4a70e531c0c57",
     "path": "recovered/phase2/lua/game/voyage/voyage_order_vo.luac",
     "head_hex": "2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mine/mine_const.luac",
+    "asset": "assets/res/b/1/f5e3aa9b091bfeeeddb5894ad7753f87",
+    "encrypted_sha256": "be6ccc92b66611ca935f431a75723cca6f2a30bbb5d67d61083609d3d71e3f96",
+    "status": "decoded",
+    "size": 885,
+    "sha256": "b140d26fc8bd609d4d7ad573c96796ad4108d4acad54e529f9dc1b5da3ed82df",
+    "path": "recovered/phase2/lua/game/mine/mine_const.luac",
+    "head_hex": "4d696e65436f6e7374203d204d696e65"
+  },
+  {
+    "logical": "game/mine/mine_event.luac",
+    "asset": "assets/res/d/d/6c38b6d5b1131118fed5f129d2591d5c",
+    "encrypted_sha256": "d73185e13253806aee947f9f064b6e7f385e9ad2b6e52a89a9fcf55242bf1402",
+    "status": "decoded",
+    "size": 1602,
+    "sha256": "5a71a0fe315c3ae76390ef3e8f030ce59199c19d4b1f537e0598c9c98318d97f",
+    "path": "recovered/phase2/lua/game/mine/mine_event.luac",
+    "head_hex": "4d696e654576656e74203d204d696e65"
+  },
+  {
+    "logical": "game/mine/mine_model.luac",
+    "asset": "assets/res/8/d/b0152a9fbad871d81a9ddbb19754b94e",
+    "encrypted_sha256": "c48464111e87b6e9ef5b349de6b58926911620e69fcbd404d894c3d507ea3a84",
+    "status": "decoded",
+    "size": 7922,
+    "sha256": "cedcc898d65e7ae7aadb076268973d3aa8bddcf3a313739c4df5f958ec6909ed",
+    "path": "recovered/phase2/lua/game/mine/mine_model.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mine/view/mine_build_item.luac",
+    "asset": "assets/res/5/a/4b25b65b3a3205ed7bfeb1a703ddaa55",
+    "encrypted_sha256": "bcffd919c9381cd29fd7f9ce270c11d2145cd34a544250f3eb0877324457c4cf",
+    "status": "decoded",
+    "size": 8078,
+    "sha256": "dbbb50a61d243dc293e889479fd621843b8d8a3165318e557fbb60bffea57c54",
+    "path": "recovered/phase2/lua/game/mine/view/mine_build_item.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mine/view/mine_defend_info_window.luac",
+    "asset": "assets/res/1/1/c886f417cb4decab061e0a46d21a6c14",
+    "encrypted_sha256": "e0de928dbc8cced713b0b2a883704ced5059d00485a211bb3ec1b3720e943c15",
+    "status": "decoded",
+    "size": 12096,
+    "sha256": "7366594e33e514351455c3d0f34d0e815c75cb18279268474e75b4898b082f30",
+    "path": "recovered/phase2/lua/game/mine/view/mine_defend_info_window.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
+  },
+  {
+    "logical": "game/mine/view/mine_scene_main_panel.luac",
+    "asset": "assets/res/e/b/f0089fffa23e2c32e3e331bbb87efeb0",
+    "encrypted_sha256": "e6a898fed130bbad33e1edc9916eba415c2ca18694467699b0641fe6989460d1",
+    "status": "decoded",
+    "size": 33979,
+    "sha256": "1bf12a10ff40daa890fc27ceff42d33d5b22d8ae1b106d8d2fe98ac021370f0a",
+    "path": "recovered/phase2/lua/game/mine/view/mine_scene_main_panel.luac",
+    "head_hex": "2d2d202d2d2d2d2d2d2d2d2d2d2d2d2d"
   }
 ]

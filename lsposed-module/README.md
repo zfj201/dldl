@@ -22,6 +22,8 @@ native 和 Lua SHA-256 来自签名 APK 内资源。复制到游戏 `files/dldl_
 
 ## 从哪里读核心代码
 
+0.6.1 在左侧“商店”之后的“其他自动化”提供敏堂派遣/刷新与极地矿场每日挑战。敏堂按品质和目标奖励筛选、派完再刷新，情报不足停止，全部派遣逐笔显示并保留历史。矿场固定50层1区，使用已有三队伍进攻阵容，优先选择符合条件的闲置矿点，成功发起即完成，不等待结算；按北京时间05:00游戏日去重。两项初次默认关闭，开启保存后加入原07:00全分类队列。详见[敏堂实现](../reports/26_敏堂自动派遣与刷新实现.md)及[矿场验证](../reports/27_极地矿场每日挑战与双任务启用.md)。
+
 | 位置（相对仓库根目录） | 负责什么 |
 | --- | --- |
 | `lsposed-module/app/src/main/java/com/zfj/dldlextension/DldlModule.java` | LSPosed 入口、等待引擎初始化、借用游戏渲染线程调用 Lua |
@@ -34,6 +36,8 @@ native 和 Lua SHA-256 来自签名 APK 内资源。复制到游戏 `files/dldl_
 | `modules/daily_training.lua` / `daily_training_game.lua` | 积分赛、魂师升级、背包魂骨强化的流程及游戏接口适配 |
 | `modules/daily_quests.lua` / `daily_quests_game.lua` | 宗门祈愿奖励、至高遗迹的流程及游戏接口适配 |
 | `modules/daily_extras.lua` / `daily_extras_game.lua` | 两项每日发起挑战、后台补发及工坊免费晶片礼包 |
+| `modules/voyage_automation.lua` / `voyage_automation_game.lua` | 其他自动化分类、敏堂串行派遣与刷新、全部明细与历史 |
+| `modules/mine_automation.lua` / `mine_automation_game.lua` | 极地矿场50层1区每日挑战、三队伍验证和发起确认 |
 | `modules/helper_automation.lua` / `helper_automation_game.lua` | 自动执行完整助手列表、角色和游戏日绑定、持久去重及完成回执 |
 | `modules/startup_automation.lua` / `startup_automation_game.lua` | 单次开始冒险、公告正常关闭、主城稳定检查和启动诊断 |
 | `lsposed-module/app/src/main/java/com/zfj/dldlextension/AutomationService.java` / `DailySchedule.java` | 模块应用的精确闹钟、Root启动、前台保活和结果收集 |
@@ -61,7 +65,7 @@ PYTHONPATH=.tools python3 tests/test_extension_loader.py
 
 ## 使用与回退
 
-在 LSPosed 中启用模块、仅勾选游戏，重启游戏。打开游戏内香香小助手，在日常页设置与执行。停用模块并重启游戏即可回到官方助手；消费 journal 与偏好保留。
+在 LSPosed 中启用模块、仅勾选游戏，重启游戏。打开游戏内香香小助手，在日常页或“其他自动化”设置并保存。敏堂与矿场均开启后会加入每天07:00全分类队列；普通手动打开游戏不自动执行。停用模块并重启游戏即可回到官方助手；消费 journal 与偏好保留。
 
 旧 `game_start` 组合包必须先按当前资源版本精确迁移。发现 `DLDL_DAILY_GIFTS` 或相同自定义 ID 时，模块拒绝重复安装。不要把旧官方备份复制到已更新的游戏。
 
