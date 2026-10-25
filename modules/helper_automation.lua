@@ -79,8 +79,9 @@ function M.new(env)
             else self:finish('uncertain','queue_stopped_early') end
             return
         end
-        if a.index~=a.last_index then a.last_index=a.index;a.progress_at=env.now() end
-        if env.now()-a.progress_at>180 or env.now()-a.start>1800 then
+        local progress=snapshot.progress or 0
+        if a.index~=a.last_index or progress~=(a.last_progress or 0) then a.last_index=a.index;a.last_progress=progress;a.progress_at=env.now() end
+        if env.now()-a.progress_at>180 then
             env.cancel();self:finish('uncertain','queue_progress_timeout');return
         end
         self:report('running','executing',a.index,a.total)

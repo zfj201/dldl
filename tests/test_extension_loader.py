@@ -7,6 +7,7 @@ with contextlib.redirect_stdout(io.StringIO()):
     ns=runpy.run_path(str(ROOT/'tests/test_daily_recovery.py'))
 lua=ns['lua']
 runpy.run_path(str(ROOT/'tests/fixtures_daily_extras.py'))['setup'](lua,ns['ns']['original'])
+runpy.run_path(str(ROOT/'tests/fixtures_voyage.py'))['setup'](lua,ns['ns']['original'])
 build=runpy.run_path(str(ROOT/'lsposed-module/scripts/build-payload.py'))
 with contextlib.redirect_stdout(io.StringIO()):build['build']()
 asset=ROOT/'lsposed-module/app/src/main/assets/extension'
@@ -41,12 +42,14 @@ local n=#sent
 assert(dofile(boot)==0)
 local a=DLDL_DAILY_GIFTS
 assert(#a.specs==17 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+17 and #sent==n)
+assert(a.voyage and SimplifyData.data_list[a.voyage.type].name=='其他自动化')
 for i=1,20 do assert(dofile(boot)==0) end
 assert(DLDL_DAILY_GIFTS==a and DLDL_EXTENSION_LOADER.generation==1)
 local key='loader_test_pending';ud:setIntegerForKey(key,1)
 local f=assert(io.open(disabled_path,'w'));f:close()
 assert(dofile(boot)==2)
 assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and DLDL_DAILY_GIFTS==nil and ud:getIntegerForKey(key,0)==1)
+assert(not SimplifyData.data_list[-2101803] and not OneKeyBurdenConst.SimplifyTypeList[-2101803])
 os.remove(disabled_path)
 assert(dofile(boot)==0 and DLDL_EXTENSION_LOADER.generation==2)
 local old=DLDL_DAILY_GIFTS

@@ -44,7 +44,7 @@ function M.bind(Automation)
             for _,row in ipairs(rows) do if not row.is_execute then all=false end end
             local extension=rawget(_G,'DLDL_DAILY_GIFTS')
             local waiting=extension and extension.extras and extension.extras:hasDeferred()
-            return {index=w.execute_index,total=#rows,finished=w.is_execute_finish==true and not waiting,all_executed=all,rows=rows}
+            return {index=w.execute_index,total=#rows,finished=w.is_execute_finish==true and not waiting,all_executed=all,rows=rows,progress=w.voyage_progress or 0}
         end,
         results=function(rows)
             local out={}
@@ -53,6 +53,8 @@ function M.bind(Automation)
                     tostring(r.local_reason or ''):gsub('[\t\r\n]',' ')},'\t')
             end
             write('tasks.tsv',table.concat(out,'\n')..'\n')
+            local extension=rawget(_G,'DLDL_DAILY_GIFTS')
+            if extension and extension.voyage then write('voyage_tasks.tsv',extension.voyage:export()) end
         end}
     local runner=Automation.new(env)
     function runner:poll(directory)

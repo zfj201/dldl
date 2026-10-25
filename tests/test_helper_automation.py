@@ -49,4 +49,13 @@ f=fixture();f.env.open=function() error('injected open failure') end
 local ok=pcall(function() f.runner:tick(f.command) end);assert(not ok);f.runner:fail('open_failed')
 f.runner=Automation.new(f.env);f.runner:tick(f.command);assert(f.runner.status=='uncertain')
 ''')
+lua.execute(r'''
+-- Confirmed subtask progress keeps a legitimate long refresh loop alive.
+f=fixture();f:start();f.snapshot={index=1,total=2,finished=false,progress=0};f.runner:tick(f.command)
+for i=1,25 do
+ f.time=f.time+100;f.snapshot.progress=i;f.runner:tick(f.command)
+ assert(f.runner.active and f.cancels==0)
+end
+f.time=f.time+181;f.runner:tick(f.command);assert(f.runner.status=='uncertain' and f.cancels==1)
+''')
 print('automation: validation, full queue, completion, daily deduplication, crash/stall/role isolation passed')

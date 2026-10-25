@@ -1,0 +1,108 @@
+{
+  "date": "2026-10-26",
+  "version": "0.6.0",
+  "version_code": 8,
+  "apk_sha256": "75ff532f31feca5a4637f41751d4333d9d9bf6e84d55e234cbc2974850d3fcd7",
+  "offline_integration_passed": 126,
+  "loader_regression_passed": true,
+  "helper_startup_daily_regressions_passed": true,
+  "java_checks": [
+    "huawei_promotion",
+    "sdk_promotion",
+    "launch_request",
+    "loading_recovery"
+  ],
+  "build": {
+    "assembleDebug": "passed",
+    "lintDebug": "passed",
+    "lint_errors": 0,
+    "lint_warnings": 8
+  },
+  "device": {
+    "android": 15,
+    "lsposed_api": 102,
+    "extension_installed": true,
+    "normal_launch_does_not_execute": true
+  },
+  "live": {
+    "entry": "商店下同级其他自动化",
+    "default_enabled": false,
+    "confirmed_dispatches": 3,
+    "entries": [
+      {
+        "sequence": 1,
+        "name": "狩猎魂兽",
+        "quality": 2,
+        "award": [
+          [
+            3,
+            60
+          ]
+        ],
+        "cost": 2000,
+        "status": "dispatched"
+      },
+      {
+        "sequence": 2,
+        "name": "狩猎魂兽",
+        "quality": 2,
+        "award": [
+          [
+            3,
+            60
+          ]
+        ],
+        "cost": 2000,
+        "status": "dispatched"
+      },
+      {
+        "sequence": 3,
+        "name": "狩猎魂兽",
+        "quality": 2,
+        "award": [
+          [
+            3,
+            60
+          ]
+        ],
+        "cost": 2000,
+        "status": "dispatched"
+      }
+    ],
+    "intelligence_before": 7453,
+    "intelligence_after": 1453,
+    "intelligence_spent": 6000,
+    "refresh": {
+      "diamond": 2,
+      "ticket": 0,
+      "free": 0,
+      "tickets": 0,
+      "diamonds": 60
+    },
+    "diamond_delta": -60,
+    "reason": "insufficient_intelligence",
+    "pending": false,
+    "ongoing_tasks_preserved_after_refresh": 3,
+    "display_rows": 4,
+    "history_reopen_no_consumption": true,
+    "process_restart_history_retained": true,
+    "native_settings_unchanged": true,
+    "enabled_after_verification": false
+  },
+  "cleanup": {
+    "temporary_probe_removed": true,
+    "bootstrap_payload_startup_match_apk": true,
+    "schedule_enabled": true,
+    "next_schedule_local": "2026-10-26 07:00 Asia/Shanghai"
+  },
+  "not_live_covered": [
+    "free refresh",
+    "ticket refresh",
+    "orange/red orders",
+    "challenge-ticket rewards",
+    "activity discount",
+    "level-1 hero assignment",
+    "energy cache",
+    "lost acknowledgement and interrupted pending recovery"
+  ]
+}
