@@ -1534,5 +1534,37 @@
     "size": 82962,
     "sha256": "3dbb350f41c383e4de49597087bf6bcbc70d49c30420f80e7f7ef314931a4988",
     "path": "recovered/phase2/hotupdate/lua/game/action/action_constants.luac"
+  },
+  {
+    "logical": "config/color_data.luac",
+    "encrypted_sha256": "ddec1e059ce16ceda9972ce606941d4730d9be5626d19fd9250658b45f082170",
+    "status": "decoded",
+    "size": 25362,
+    "sha256": "317b0eaf217d94e57a2218e4adea8b727df2be61b41108f456317727e08e1824",
+    "path": "recovered/phase2/hotupdate/lua/config/color_data.luac"
+  },
+  {
+    "logical": "config/shipping_data.luac",
+    "encrypted_sha256": "f7a0e82895d38423d4b9622b2955e0a975e1a0f9882051e1248cacc08d0ad5d8",
+    "status": "decoded",
+    "size": 647527,
+    "sha256": "63e2671e6061d24f89d69a3da9d9f7455f523982f117e817ef5d32c1b6d6050a",
+    "path": "recovered/phase2/hotupdate/lua/config/shipping_data.luac"
+  },
+  {
+    "logical": "game/voyage/view/voyage_order_item.luac",
+    "encrypted_sha256": "dfd6aae609a2d20f721c281dfca423c83a377dd609b5568ae54bb58f55e9c67b",
+    "status": "decoded",
+    "size": 12953,
+    "sha256": "9a0ec08f0fb62a024712eb25ad5be0646c25ae6c35bb59829f584b56235b0408",
+    "path": "recovered/phase2/hotupdate/lua/game/voyage/view/voyage_order_item.luac"
+  },
+  {
+    "logical": "game/voyage/view/voyage_main_window.luac",
+    "encrypted_sha256": "3434730ea3c0bfcf1083473028bee210254049396a32c5a9d0503200f364fe1c",
+    "status": "decoded",
+    "size": 18185,
+    "sha256": "f23903b0f4b810a0c44e26f66b3f95e39d3023cfd58b0da1f7033ac27abf60b3",
+    "path": "recovered/phase2/hotupdate/lua/game/voyage/view/voyage_main_window.luac"
   }
 ]

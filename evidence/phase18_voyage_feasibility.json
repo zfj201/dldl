@@ -1,0 +1,270 @@
+{
+  "date": "2026-10-26",
+  "scope": "offline feasibility analysis; no live requests or module changes",
+  "validation": {
+    "scoped_files": 14,
+    "hashes_and_lua51_parse": "pass",
+    "files": [
+      {
+        "path": "recovered/phase2/lua/game/voyage/voyage_controller.luac",
+        "sha256": "ca02acdb1f2aeb6eb09c43d25c058468ca03a27b3e1dfb6a7ce635cd6dbea76e",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/config/shipping_data.luac",
+        "sha256": "27ab8c365b8497a6cd2f37440c96dcb602f90b0c2a711ab6150a1261b89dac34",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/game/voyage/view/voyage_dispatch_window.luac",
+        "sha256": "858b61028a1e1d47e2db6ac3dca52168f967da6357db6dfe1609fc3dc8dca10e",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/game/voyage/view/voyage_lev_data_window.luac",
+        "sha256": "0e79bc07c8104052c82dfdc5cfcaab51cb598170e93884595493c72bd692ced2",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/game/voyage/view/voyage_lev_result_window.luac",
+        "sha256": "10d94bbbe377a116decf16672a3a96f376b09978afbec43319ce659349f74333",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/game/voyage/view/voyage_main_window.luac",
+        "sha256": "3511ae07c8aff74991ace72a785e68644ba3265ce42a99a81501e7fe1bafe193",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/game/voyage/view/voyage_order_item.luac",
+        "sha256": "8995d05617519cb02e835b4bd9faf6ff952f9cde2dda2c4762dea9f9331a5ec2",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/game/voyage/voyage_const.luac",
+        "sha256": "65c291e6bc41db70c9808c2a2ae721e80562c925b97d8afb5a6a594361143cd9",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/game/voyage/voyage_event.luac",
+        "sha256": "41feedee273ec6397cce517d664a5a8c3b1266876880bb642b989fff9b6685ed",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/game/voyage/voyage_model.luac",
+        "sha256": "2a7e969d1e8e6dca787a2f46885defa55e7242a2a081d6b273b1e6ee70848e24",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/lua/game/voyage/voyage_order_vo.luac",
+        "sha256": "ea710141a638e0dc050831971e4b90adda681dfcff8d98d309d4a70e531c0c57",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/hotupdate/lua/config/shipping_data.luac",
+        "sha256": "63e2671e6061d24f89d69a3da9d9f7455f523982f117e817ef5d32c1b6d6050a",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/hotupdate/lua/game/voyage/view/voyage_order_item.luac",
+        "sha256": "9a0ec08f0fb62a024712eb25ad5be0646c25ae6c35bb59829f584b56235b0408",
+        "lua51_parse": "pass"
+      },
+      {
+        "path": "recovered/phase2/hotupdate/lua/game/voyage/view/voyage_main_window.luac",
+        "sha256": "f23903b0f4b810a0c44e26f66b3f95e39d3023cfd58b0da1f7033ac27abf60b3",
+        "lua51_parse": "pass"
+      }
+    ],
+    "global_validation": "All decoded sources parse; global validator still fails on two pre-existing undecoded APK login resources.",
+    "pre_existing_decode_failures": [
+      "game/login/login_model.luac",
+      "game/login/view/enter_panel.luac"
+    ]
+  },
+  "task_config": {
+    "total": 2020,
+    "quality_counts": {
+      "白": 132,
+      "绿": 132,
+      "蓝": 266,
+      "紫": 683,
+      "橙": 388,
+      "红": 419
+    },
+    "selected_counts": {
+      "绿": 33,
+      "蓝": 36,
+      "紫": 99,
+      "橙": 388,
+      "红": 419
+    },
+    "note": "Counts are configuration variants, not a live task list or refresh probabilities.",
+    "base_expend_unique": [
+      [
+        [
+          7,
+          2000
+        ]
+      ]
+    ],
+    "target_reward_config_hits_for_green_blue_purple": {
+      "3": 163,
+      "10019": 5
+    },
+    "activity_discount_per_mille": 900,
+    "quick_dispatch_from_voyage_level": 2,
+    "white_policy": "excluded; user only specifies green/blue/purple and qualities above purple",
+    "selection_examples": [
+      {
+        "order_bid": 10304,
+        "name": "教训劫匪",
+        "quality": 3,
+        "award": [
+          [
+            10001,
+            120
+          ]
+        ],
+        "selected": false
+      },
+      {
+        "order_bid": 10202,
+        "name": "护送拍卖品",
+        "quality": 2,
+        "award": [
+          [
+            10001,
+            60
+          ]
+        ],
+        "selected": false
+      },
+      {
+        "order_bid": 10501,
+        "name": "深海魔鲸王",
+        "quality": 5,
+        "award": [
+          [
+            3,
+            500
+          ]
+        ],
+        "selected": true
+      },
+      {
+        "order_bid": 10401,
+        "name": "狩猎魂兽",
+        "quality": 4,
+        "award": [
+          [
+            3,
+            300
+          ]
+        ],
+        "selected": true
+      },
+      {
+        "order_bid": 10301,
+        "name": "狩猎魂兽",
+        "quality": 3,
+        "award": [
+          [
+            3,
+            120
+          ]
+        ],
+        "selected": true
+      },
+      {
+        "order_bid": 10102,
+        "name": "教训流氓",
+        "quality": 1,
+        "award": [
+          [
+            10001,
+            30
+          ]
+        ],
+        "selected": false
+      },
+      {
+        "order_bid": 10001,
+        "name": "狩猎魂兽",
+        "quality": 0,
+        "award": [
+          [
+            3,
+            15
+          ]
+        ],
+        "selected": false
+      },
+      {
+        "order_bid": 10101,
+        "name": "狩猎魂兽",
+        "quality": 1,
+        "award": [
+          [
+            3,
+            30
+          ]
+        ],
+        "selected": true
+      },
+      {
+        "order_bid": 10201,
+        "name": "狩猎魂兽",
+        "quality": 2,
+        "award": [
+          [
+            3,
+            60
+          ]
+        ],
+        "selected": true
+      }
+    ]
+  },
+  "refresh_config": {
+    "unique_rules": [
+      [
+        1,
+        99999,
+        [
+          [
+            3,
+            30
+          ]
+        ]
+      ]
+    ],
+    "vip_entries": 41,
+    "ticket": [
+      [
+        10014,
+        1
+      ]
+    ],
+    "priority": [
+      "free",
+      "ticket",
+      "diamond"
+    ],
+    "server_costs_not_live_verified": true
+  },
+  "protocols": {
+    "query": 23800,
+    "order_update": 23801,
+    "dispatch": 23802,
+    "refresh": 23804,
+    "activity": 23805,
+    "dispatch_and_refresh_ack_include_order_id": false
+  },
+  "unverified": [
+    "current device hot-update matches offline snapshot",
+    "cache-energy debit and refill timing",
+    "refresh retains active orders and creates new dispatchable orders",
+    "success/rejection and update ordering in live session"
+  ]
+}
