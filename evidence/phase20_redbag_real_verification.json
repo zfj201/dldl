@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-29",
+  "version": "0.6.2",
+  "version_code": 10,
+  "apk_sha256": "516d729fa5b48de0a627a120432b608bf7f3cf1d61600b6849e64faf1b105afb",
+  "build": {
+    "assemble_debug": "passed",
+    "lint_debug": {
+      "errors": 0,
+      "existing_warnings": 8
+    }
+  },
+  "offline": {
+    "redbag_suite_passed": 127,
+    "redbag_specific_cases": 16,
+    "loader": "passed",
+    "mine_suite_passed": 128,
+    "voyage_suite_passed": 126,
+    "helper_automation": "passed",
+    "startup_automation": "passed"
+  },
+  "redbag_live": {
+    "claims": 4,
+    "exact_success_replies": 4,
+    "diamond_reward": 20,
+    "coin_reward": 0,
+    "diamond_balance_increase": 20,
+    "request_protocols": [
+      13523,
+      13534,
+      13536
+    ],
+    "finished": true,
+    "pending": false
+  },
+  "cold_restart": {
+    "saved_switches": {
+      "voyage": true,
+      "mine": true,
+      "redbag": true
+    },
+    "all_category_queue_counts": {
+      "voyage": 1,
+      "mine": 1,
+      "redbag": 1
+    },
+    "manual_launch_auto_executed": false,
+    "repeat_request_protocols": [
+      13523,
+      13534
+    ],
+    "repeat_claims": 0,
+    "repeat_diamond_balance_change": 0,
+    "repeat_result": "no_claimable_redbag",
+    "native_preferences_unchanged": true
+  },
+  "schedule": {
+    "enabled": true,
+    "timezone": "Asia/Shanghai",
+    "daily_time": "07:00",
+    "registered_next": "2026-10-30T07:00:00+08:00",
+    "alarm_registered": true,
+    "full_schedule_run_executed_in_this_verification": false
+  },
+  "cleanup": {
+    "mine_inactive": true,
+    "wrappers_restored": true,
+    "redbag_inactive": true,
+    "auto_closed": true,
+    "main_closed": true,
+    "voyage_inactive": true,
+    "temporary_probe_removed": true,
+    "bootstrap_restored": true,
+    "device_assets_match_final_apk": {
+      "bootstrap.lua": true,
+      "payload.lua": true,
+      "startup.lua": true
+    }
+  },
+  "offline_only_scenarios": [
+    "member and special redbag quotas",
+    "expired or full bags",
+    "new arrivals in repeated same-day runs",
+    "server rejection",
+    "lost acknowledgement and pending recovery",
+    "role guild or game-day changes",
+    "manual operation conflict",
+    "persistence failure",
+    "timeouts and cancellation"
+  ],
+  "privacy": "No account identifiers, device serials, raw logs or screenshots included."
+}

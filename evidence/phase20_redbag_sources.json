@@ -1,0 +1,34 @@
+{
+  "verified_sources": [
+    {
+      "logical": "game/redbag/redbag_controller.luac",
+      "path": "recovered/phase2/hotupdate/lua/game/redbag/redbag_controller.luac",
+      "sha256": "67c4a308843510b55569f87352d692ad543d63b9500f32dab0d3eb90881ac66c"
+    },
+    {
+      "logical": "game/redbag/redbag_model.luac",
+      "path": "recovered/phase2/hotupdate/lua/game/redbag/redbag_model.luac",
+      "sha256": "beb6248f95b52f2ecf6924c23ccbe0a2760f0028dfdb01d6851af8ebff8d55c4"
+    },
+    {
+      "logical": "game/redbag/redbag_coust.luac",
+      "path": "recovered/phase2/hotupdate/lua/game/redbag/redbag_coust.luac",
+      "sha256": "a99fcc38d7e825a810925550656145ff371d71ec0badb346b4b63eaa36597461"
+    },
+    {
+      "logical": "config/guild_data.luac",
+      "path": "recovered/phase2/hotupdate/lua/config/guild_data.luac",
+      "sha256": "8e5e88da7339d1b9875c6f2e8427362d4584c40d2e3521f5ef1596a88eaf02be"
+    },
+    {
+      "logical": "sys/net/proto_mate.luac",
+      "path": "recovered/phase2/hotupdate/lua/sys/net/proto_mate.luac",
+      "sha256": "2129fc5c5ba81283a2f62951a8e1c8201f92d72f17c7c4f05ccc39b62e322c83"
+    }
+  ],
+  "claim_protocol": 13536,
+  "read_only_protocols": [
+    13523,
+    13534
+  ]
+}

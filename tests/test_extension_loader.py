@@ -9,6 +9,7 @@ lua=ns['lua']
 runpy.run_path(str(ROOT/'tests/fixtures_daily_extras.py'))['setup'](lua,ns['ns']['original'])
 runpy.run_path(str(ROOT/'tests/fixtures_voyage.py'))['setup'](lua,ns['ns']['original'])
 runpy.run_path(str(ROOT/'tests/fixtures_mine.py'))['setup'](lua,ns['ns']['original'])
+runpy.run_path(str(ROOT/'tests/fixtures_redbag.py'))['setup'](lua,ns['ns']['original'])
 build=runpy.run_path(str(ROOT/'lsposed-module/scripts/build-payload.py'))
 with contextlib.redirect_stdout(io.StringIO()):build['build']()
 asset=ROOT/'lsposed-module/app/src/main/assets/extension'
@@ -44,7 +45,7 @@ assert(dofile(boot)==0)
 local a=DLDL_DAILY_GIFTS
 assert(#a.specs==17 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+17 and #sent==n)
 assert(a.voyage and SimplifyData.data_list[a.voyage.type].name=='其他自动化')
-assert(a.mine and #OneKeyBurdenConst.SimplifyTypeList[a.voyage.type]==3)
+assert(a.mine and a.redbag and #OneKeyBurdenConst.SimplifyTypeList[a.voyage.type]==4)
 for i=1,20 do assert(dofile(boot)==0) end
 assert(DLDL_DAILY_GIFTS==a and DLDL_EXTENSION_LOADER.generation==1)
 local key='loader_test_pending';ud:setIntegerForKey(key,1)
