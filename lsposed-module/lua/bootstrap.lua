@@ -76,7 +76,7 @@ local ok,result=pcall(function()
     local installed=factory()
     assert(installed and #installed.specs==17,'unexpected entry count')
     state.installation=installed;_G.DLDL_DAILY_GIFTS=installed
-    status('installed:17+voyage+mine+redbag:version=0.6.2')
+    status('installed:17+voyage+mine+redbag:version=0.6.3')
     pollAutomation()
     return 0
 end)

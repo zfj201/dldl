@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-31",
+  "version": "0.6.3",
+  "version_code": 11,
+  "apk_sha256": "2f8224fddb00f4c3df5d0e36980a490a43e281b62ae6334cda7230569a35dd26",
+  "tests": {
+    "loading_recovery": "passed; strict 15s boundary, shared limit, visibility and frozen-thread handling",
+    "splash_scene": "passed; current scene, hidden ancestors, fading, detached or disposed nodes, failed API",
+    "launch_protocol": "passed",
+    "huawei_promotion": "passed",
+    "sdk_promotion": "passed",
+    "startup_automation": "passed",
+    "helper_automation": "passed",
+    "extension_loader": "passed; 111 baseline cases and package lifecycle",
+    "assemble_debug": "passed",
+    "lint_debug": {
+      "errors": 0,
+      "existing_warnings": 8
+    }
+  },
+  "normal_cold_start": {
+    "result": [
+      "verified",
+      "city_and_role_ready"
+    ],
+    "restarts": 0
+  },
+  "controlled_splash_hold": {
+    "method": "Temporarily stop the official flash_png departure action in the private observer; original game resources and APK unchanged. Restored in finally and verified against APK.",
+    "screenshot_matches_reported_health_advice_screen": true,
+    "sdk_loading_dialog_absent": true,
+    "max_observed_continuous_visibility_ms": 16081,
+    "restarts": 1,
+    "process_changed": true,
+    "result": [
+      "verified",
+      "city_and_role_ready"
+    ],
+    "helper_request_sent": false,
+    "naturally_reproduced_sdk_fault": false
+  },
+  "schedule": {
+    "enabled": true,
+    "time": "07:00",
+    "timezone": "Asia/Shanghai",
+    "next": "2026-11-01T07:00:00+08:00",
+    "alarm_registered": true,
+    "binding_and_user_settings_unchanged": true,
+    "full_daily_task_run_in_this_test": false
+  },
+  "cleanup": {
+    "temporary_observer_edit_removed": true,
+    "device_assets_match_apk": {
+      "bootstrap.lua": true,
+      "payload.lua": true,
+      "startup.lua": true,
+      "splash.lua": true
+    },
+    "launch_removed": true,
+    "verification_service_stopped": true
+  },
+  "privacy": "No account IDs, device serial, private raw logs or screenshots included."
+}

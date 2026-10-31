@@ -59,7 +59,8 @@ public final class AutomationService extends Service {
             RootAccess.run("id -u");
             // Clear only transport state, never the daily completion/consumption journal.
             RootAccess.run("rm -f "+RootAccess.quote(RootAccess.BASE+"java-block.tsv")+" "+RootAccess.quote(RootAccess.BASE+"cancel.tsv")
-                +" "+RootAccess.quote(RootAccess.BASE+"sdk-loading.tsv"));
+                +" "+RootAccess.quote(RootAccess.BASE+LoadingRecovery.SDK_SAMPLE)
+                +" "+RootAccess.quote(RootAccess.BASE+LoadingRecovery.SPLASH_SAMPLE));
             RootAccess.write("launch.tsv","v1\t"+id+"\t"+rid+"\t"+server+"\t"+now+"\t"+(now+300)+"\t"+mode+"\n");
             published=true;
             String launchOutput=RootAccess.run("input keyevent KEYCODE_WAKEUP; wm dismiss-keyguard; am start -W -n "
@@ -107,23 +108,31 @@ public final class AutomationService extends Service {
                     }
                 }
                 if (!recovery.observing(id,status)) {Thread.sleep(2000);continue;}
-                String loading=RootAccess.read("sdk-loading.tsv");
+                String sampleFile=LoadingRecovery.SDK_SAMPLE;
+                String loading=RootAccess.read(sampleFile);
                 LoadingRecovery.Decision decision=recovery.inspect(loading,id,status,SystemClock.elapsedRealtime());
+                if (decision==LoadingRecovery.Decision.NONE) {
+                    sampleFile=LoadingRecovery.SPLASH_SAMPLE;
+                    loading=RootAccess.read(sampleFile);
+                    decision=recovery.inspect(loading,id,status,SystemClock.elapsedRealtime());
+                }
                 if (decision==LoadingRecovery.Decision.EXHAUSTED) {
-                    String stopped="v1\t"+id+"\tblocked\tsdk_loading_retry_exhausted\t"+System.currentTimeMillis()/1000+"\n";
+                    String reason=sampleFile.equals(LoadingRecovery.SPLASH_SAMPLE)?"startup_splash_retry_exhausted":"sdk_loading_retry_exhausted";
+                    String stopped="v1\t"+id+"\tblocked\t"+reason+"\t"+System.currentTimeMillis()/1000+"\n";
                     RootAccess.write("startup.tsv",stopped);
                     Files.write(new File(getFilesDir(),"last-startup.tsv").toPath(),stopped.getBytes(java.nio.charset.StandardCharsets.UTF_8));
-                    throw new IllegalStateException("华为启动加载连续卡住，已重启3次，请检查网络或SDK登录");
+                    throw new IllegalStateException("启动画面或加载窗口连续卡住，已重启3次，请检查网络或SDK登录");
                 }
                 if (decision==LoadingRecovery.Decision.RESTART && !cancelled) {
                     String[] observed=loading.trim().split("\t");
                     String pid=observed[2];
-                    String result=RootAccess.restartLoading(id,pid,observed[3],status);
+                    String result=RootAccess.restartLoading(id,pid,observed[3],status,sampleFile,now+300);
                     if (result.startsWith("restarted")) recovery.restarted();
                     try (FileWriter log=new FileWriter(new File(getFilesDir(),"loading-recovery.log"),true)) {
-                        log.write(System.currentTimeMillis()+"\t"+id+"\t"+pid+"\t"+recovery.restarts()+"\t"+result.replace('\n',' ')+"\n");
+                        log.write(System.currentTimeMillis()+"\t"+id+"\t"+pid+"\t"+recovery.restarts()+"\t"+result.replace('\n',' ')+"\t"+sampleFile+"\n");
                     }
-                    if (result.startsWith("restarted")) update("启动加载超过15秒，已重启游戏（"+recovery.restarts()+"/3）");
+                    if (result.startsWith("restarted")) update((sampleFile.equals(LoadingRecovery.SPLASH_SAMPLE)?"健康忠告画面":"启动加载")
+                        +"停留超过15秒，已重启游戏（"+recovery.restarts()+"/3）");
                 }
                 Thread.sleep(1000);
             }

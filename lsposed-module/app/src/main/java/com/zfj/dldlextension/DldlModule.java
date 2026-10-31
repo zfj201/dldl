@@ -19,6 +19,7 @@ public final class DldlModule extends XposedModule {
     private boolean nativeReady;
     private File directory;
     private File bootstrap;
+    private StartupSplashMonitor splashMonitor;
 
     private LaunchRequest startupRequest() {
         if (directory == null || new File(directory, "disabled").exists()) return null;
@@ -41,6 +42,15 @@ public final class DldlModule extends XposedModule {
     private boolean startupActive() { return startupRequest()!=null; }
 
     private void installSdkHooks(ClassLoader loader) {
+        try {
+            splashMonitor=new StartupSplashMonitor(directory,this::startupRequest);
+            Class<?> activity=loader.loadClass("com.game.sdk.GameSdkActivity");
+            hook(activity.getDeclaredMethod("onCreate",android.os.Bundle.class)).intercept(chain -> {
+                splashMonitor.attach((android.app.Activity)chain.getThisObject());
+                return chain.proceed();
+            });
+            record("startup_splash_hook_ready");
+        } catch (Throwable e) { splashMonitor=null;record("startup_splash_hook_unavailable:"+e); }
         try {
             Class<?> huawei=loader.loadClass("com.sqwan.msdk.api.sdk.Huawei");
             Field dialog=huawei.getDeclaredField("loadingDialog");dialog.setAccessible(true);
@@ -170,12 +180,26 @@ public final class DldlModule extends XposedModule {
                 private boolean called;
                 private long readyAt;
                 private long nextTick;
+                private long nextSplash;
                 private int lastResult = Integer.MIN_VALUE;
                 @Override public Object intercept(XposedInterface.Chain chain) throws Throwable {
                     // 原渲染必须先完成，且其异常不能被扩展的 catch 吞掉。
                     // 借用游戏的 GL 线程调用 Lua，不能换到自行创建的后台线程。
                     Object result = chain.proceed();
                     try {
+                        if (splashMonitor!=null && bootstrap!=null && SystemClock.elapsedRealtime()>=nextSplash
+                                && initialized.getBoolean(chain.getThisObject())) {
+                            nextSplash=SystemClock.elapsedRealtime()+500;
+                            LaunchRequest run=startupRequest();
+                            if (run!=null) {
+                                try {
+                                    int shown=NativeBridge.callGlobal(gameBridge,"dofile",new File(bootstrap.getParentFile(),"splash.lua").getPath());
+                                    splashMonitor.observed(run.id,shown==1);
+                                } catch (Throwable error) {
+                                    splashMonitor.observed(run.id,false);record("startup_splash_sample_failed:"+error);
+                                }
+                            } else splashMonitor.observed("",false);
+                        }
                         if (!observed) {
                             observed = true;
                             readyAt = SystemClock.elapsedRealtime() + 2000;

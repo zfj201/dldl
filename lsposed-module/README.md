@@ -1,6 +1,6 @@
 # 香香小助手扩展 · Android 模块
 
-《斗罗大陆：武魂觉醒》华为渠道版的 LSPosed 扩展，当前版本 **0.6.2**。为游戏内香香小助手增加 17 项日常任务，以及敏堂自动派遣与刷新、极地矿场每日挑战、联盟红包自动领取，并提供每天北京时间 07:00 的独立自动运行。
+《斗罗大陆：武魂觉醒》华为渠道版的 LSPosed 扩展，当前版本 **0.6.3**。为游戏内香香小助手增加 17 项日常任务，以及敏堂自动派遣与刷新、极地矿场每日挑战、联盟红包自动领取，并提供每天北京时间 07:00 的独立自动运行。
 
 完整功能列表、资源消耗说明与常见问题见[项目首页](../README.md)。
 
@@ -51,6 +51,7 @@ app/build/outputs/apk/debug/app-debug.apk
 | `modules/redbag_automation*.lua` | 联盟红包筛选、串行领取与奖励汇总 |
 | `modules/helper_automation*.lua` | 完整助手队列、角色绑定和执行去重 |
 | `modules/startup_automation*.lua` | 开始冒险、主城检查和启动流程 |
+| `lsposed-module/lua/splash.lua` | 健康忠告启动画面的实际节点检测 |
 | `lsposed-module/scripts/` | native 构建与 Lua 打包 |
 | `tests/` | 离线联调和启动恢复测试 |
 
@@ -67,6 +68,8 @@ PYTHONPATH=.tools python3 tests/test_mine_automation.py
 PYTHONPATH=.tools python3 tests/test_redbag_automation.py
 PYTHONPATH=.tools python3 tests/test_helper_automation.py
 PYTHONPATH=.tools python3 tests/test_startup_automation.py
+PYTHONPATH=.tools python3 tests/test_startup_splash.py
+bash tests/test_loading_recovery.sh
 ```
 
 测试依赖 Lua 5.1/Lupa 和本地已恢复的游戏类；原始游戏资源不随源码提供，纯源码检出不足以运行全部联调。

@@ -45,11 +45,12 @@ def build():
               'local ok,err=pcall(function() GameVoyage.bind(Voyage,installed);GameMine.bind(Mine,installed);GameRedbag.bind(Redbag,installed);installed.automation=GameAutomation.bind(Automation) end)\nif not ok then installed.detach();error(err) end\nreturn installed\nend\n']
     (OUT/'payload.lua').write_text(''.join(parts))
     (OUT/'bootstrap.lua').write_bytes((ROOT/'lsposed-module/lua/bootstrap.lua').read_bytes())
+    (OUT/'splash.lua').write_bytes((ROOT/'lsposed-module/lua/splash.lua').read_bytes())
     (OUT/'startup.lua').write_text('local Startup=(function()\n'+(ROOT/'modules/startup_automation.lua').read_text()
         +'\nend)()\nlocal Game=(function()\n'+(ROOT/'modules/startup_automation_game.lua').read_text()
         +'\nend)()\nreturn function(root) return Game.bind(Startup,root) end\n')
     manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUT.glob('*.lua'))}
-    (OUT/'manifest.json').write_text(json.dumps({'version':'0.6.2','files':manifest},indent=2)+'\n')
+    (OUT/'manifest.json').write_text(json.dumps({'version':'0.6.3','files':manifest},indent=2)+'\n')
     native=ROOT/'lsposed-module/app/src/main/jniLibs/arm64-v8a/libdldl_bridge.so'
     (OUT/'native.sha256').write_text(hashlib.sha256(native.read_bytes()).hexdigest()+'\n')
     print(json.dumps(manifest))

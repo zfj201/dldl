@@ -1,9 +1,12 @@
 package com.zfj.dldlextension;
 
-/** Monotonic, request-bound recovery policy for the Huawei initialization dialog. */
+/** Shared monotonic, request-bound budget for the SDK dialog and health-advice splash. */
 final class LoadingRecovery {
     static final long STUCK_MS=15_000;
     static final int MAX_RESTARTS=3;
+    static final String SDK_SAMPLE="sdk-loading.tsv";
+    static final String SPLASH_SAMPLE="startup-splash.tsv";
+    static boolean validSampleFile(String name) {return SDK_SAMPLE.equals(name) || SPLASH_SAMPLE.equals(name);}
     enum Decision { NONE, RESTART, EXHAUSTED }
     private boolean advanced;
     private int restarts;
