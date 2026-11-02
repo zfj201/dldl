@@ -1,8 +1,8 @@
--- 香香小助手的界面与队列接入层：完整发布包加入18项本地任务。
+-- 香香小助手的界面与队列接入层：完整发布包加入22项本地任务。
 -- install 只加条目、保存原方法并包装回调；实际任务从 requestTask 开始，不在挂载时执行。
 local M = {}
 local active_install
-function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, GameQuests, Extras, GameExtras, Recast, GameRecast)
+function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, GameQuests, Extras, GameExtras, Recast, GameRecast, Supplies, GameSupplies)
     if active_install then return active_install end
     assert(OneKeyBurdenMainWindow and OneKeyBurdenAutoWindow and OneKeyBurdenAutoItem, 'helper classes missing')
     local helper = OneKeyBurdenController:getInstance()
@@ -37,11 +37,18 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
         specs[#specs+1]={pos=-2101784,kind='workshop_gift',title='魂导器工坊·每日免费礼包',extra=true}
     end
     if Recast then specs[#specs+1]={pos=-2101779,kind='artifact_recast',title='八蛛矛·金紫品质每日重铸一次',recast=true} end
+    if Supplies then
+        specs[#specs+1]={pos=-2101778,kind='tree_shop',title='神树浇灌商店·周限购买满',supplies=true}
+        specs[#specs+1]={pos=-2101777,kind='guild_shop',title='联盟特殊商店·周月限购买满',supplies=true}
+        specs[#specs+1]={pos=-2101776,kind='fishing_shop',title='钓鱼商店·日周限购买满',supplies=true}
+        specs[#specs+1]={pos=-2101775,kind='daily_rewards',title='每日任务·奖励与活跃度领取',supplies=true,footer=true}
+    end
     -- Retired local IDs are swallowed if an old queue/save still contains
     -- them.  Their preferences and journals are never read or modified.
     local retired = {[-2101789]=true,[-2101788]=true}
     local COUNT_KEY = 9020
     local TICKET_KEY = 9021
+    local FISH_KEY = 9022
     local custom, patches, clock = {}, {}, GlobalTimeTicket:getInstance()
     local function roleKey()
         local role = RoleController:getInstance():getRoleVo()
@@ -78,6 +85,12 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                 is_single_select=true,proto_key_args=COUNT_KEY,
                 option_list={{TI18N('10次'),TRUE,10},{TI18N('20次'),TRUE,20}}}}}
         end
+        if spec.kind=='fishing_shop' then
+            spec.row.close_subitem_list={{},{1}}
+            spec.row.subitem_list={{{title=TI18N('购买日限购刷新券（钓鱼积分）'),is_title=false,
+                is_single_select=true,proto_key_args=FISH_KEY,
+                option_list={{TI18N('不购买'),TRUE,0},{TI18N('购买'),TRUE,1}}}}}
+        end
         if spec.kind=='arena_tickets' then
             spec.row.close_subitem_list={{},{1}}
             spec.row.subitem_list={{{title=TI18N('每日用券次数（仅挑战券）'),is_title=false,
@@ -109,6 +122,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     local quest_runner, quest_pending
     local extra_runner, extra_pending
     local recast_runner, recast_pending
+    local supply_runner, supply_pending
     local function gift_pending(kind)
         if runner.active then return true end
         -- Gift replies have no charge ID: unresolved different gift kinds
@@ -132,9 +146,14 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             if quest_runner and quest_runner.active then quest_runner:finish('uncertain','runtime_error') end
             if extra_runner and extra_runner.active then extra_runner:finish('uncertain','runtime_error') end
             if recast_runner and recast_runner.active then recast_runner:finish('uncertain','runtime_error') end
+            if supply_runner and supply_runner.active then supply_runner:finish('uncertain','runtime_error') end
         end
     end
     local install_ok, install_result = pcall(function()
+    if Supplies then
+        supply_runner,supply_pending=GameSupplies.bind(Supplies,{roleKey=roleKey,identity=identity,now=now,
+            patch=patch,busy=function() return owner~=nil end,safe=safe,connected=connected})
+    end
     if Recast then
         recast_runner,recast_pending=GameRecast.bind(Recast,{roleKey=roleKey,identity=identity,now=now,
             patch=patch,busy=function() return owner~=nil end,safe=safe,connected=connected})
@@ -177,6 +196,20 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             safe(function() runner:onReply(data) end)
         end
     end)
+    if Supplies then
+        -- Official login data can append daily rows after installation.
+        -- Move the reward row again immediately before the menu is rendered.
+        patch(OneKeyBurdenMainWindow, 'updateAutoList', function(old)
+            return function(self,...)
+                for i,row in ipairs(list) do
+                    if custom[row.id] and custom[row.id].footer then
+                        table.remove(list,i);list[#list+1]=row;break
+                    end
+                end
+                return old(self,...)
+            end
+        end)
+    end
     patch(OneKeyBurdenMainWindow, 'getPosExecuteData', function(old)
         return function(self, key, cfg)
             local data = old(self, key, cfg)
@@ -187,6 +220,11 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                     local count=cc.UserDefault:getInstance():getIntegerForKey(pref..':count',10)
                     if count~=10 and count~=20 then count=10 end
                     for _,arg in ipairs(data.args) do if arg.args_key==COUNT_KEY then arg.args_val=count end end
+                end
+                if custom[cfg.id].kind=='fishing_shop' and pref then
+                    local value=cc.UserDefault:getInstance():getIntegerForKey(pref..':refresh',0)
+                    if value~=1 then value=0 end
+                    for _,arg in ipairs(data.args) do if arg.args_key==FISH_KEY then arg.args_val=value end end
                 end
                 if custom[cfg.id].kind=='arena_tickets' and pref then
                     local count=cc.UserDefault:getInstance():getIntegerForKey(pref..':tickets',10)
@@ -212,6 +250,13 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                                 for _,arg in ipairs(row.args or {}) do
                                     if arg.args_key==COUNT_KEY and (arg.args_val==10 or arg.args_val==20) then
                                         ud:setIntegerForKey(key..':count',arg.args_val)
+                                    end
+                                end
+                            end
+                            if custom[row.pos].kind=='fishing_shop' then
+                                for _,arg in ipairs(row.args or {}) do
+                                    if arg.args_key==FISH_KEY and (arg.args_val==0 or arg.args_val==1) then
+                                        ud:setIntegerForKey(key..':refresh',arg.args_val)
                                     end
                                 end
                             end
@@ -258,6 +303,12 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             for i,row in ipairs(queue) do if custom[row.pos] then indices[#indices+1]=i;rows[#rows+1]=row end end
             table.sort(rows,function(a,b) return custom[a.pos].order<custom[b.pos].order end)
             for i,index in ipairs(indices) do queue[index]=rows[i] end
+            -- Rewards run after every selected task, including native tasks and other tabs.
+            for i=#queue,1,-1 do
+                if custom[queue[i].pos] and custom[queue[i].pos].footer then
+                    local r=table.remove(queue,i);queue[#queue+1]=r;break
+                end
+            end
             return queue
         end
     end)
@@ -304,6 +355,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                 end
                 cleanup(); row.local_result, row.local_reason = result.status, result.reason
                 row.local_target=result.target
+                row.local_entries=result.entries
                 -- 单项失败或结果不明也推进后续任务，避免整个助手挂住。
                 -- 消费请求的 pending 记录仍保留，下一轮不会盲目重发造成重复消费。
                 if result.status == 'confirmed' or result.status == 'skipped'
@@ -319,18 +371,21 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             if not connected() then done({status='error',reason='connection_unavailable'});return end
             if type(spec.kind)=='number' and gift_pending(spec.kind) then done({status='uncertain',reason='gift_request_unresolved'});return end
             if (type(spec.kind)=='number' and now()<manual_until)
-                or (not spec.training and not spec.quest and not spec.extra and not spec.recast and type(spec.kind)~='number' and action_pending and action_pending(spec.kind))
+                or (not spec.training and not spec.quest and not spec.extra and not spec.recast and not spec.supplies and type(spec.kind)~='number' and action_pending and action_pending(spec.kind))
                 or (spec.training and training_pending and training_pending(spec.kind))
                 or (spec.quest and quest_pending and quest_pending(spec.kind))
                 or (spec.extra and extra_pending and extra_pending(spec.kind))
-                or (spec.recast and recast_pending and recast_pending(spec.kind)) then
+                or (spec.recast and recast_pending and recast_pending(spec.kind))
+                or (spec.supplies and supply_pending and supply_pending(spec.kind)) then
                 done({status='error',reason='manual_claim_pending'});return
             end
-            local selected = spec.recast and recast_runner or spec.extra and extra_runner or spec.quest and quest_runner or spec.training and training_runner or (type(spec.kind)=='number' and runner or action_runner)
+            local selected = spec.supplies and supply_runner or spec.recast and recast_runner or spec.extra and extra_runner or spec.quest and quest_runner or spec.training and training_runner or (type(spec.kind)=='number' and runner or action_runner)
             local count=10
             local found=0
-            for _,arg in ipairs(row.args or {}) do if arg.args_key==(spec.kind=='arena_tickets' and TICKET_KEY or COUNT_KEY) then count=arg.args_val;found=found+1 end end
-            if spec.kind=='arena_tickets' and (found~=1 or (count~=10 and count~=20)) then
+            for _,arg in ipairs(row.args or {}) do if arg.args_key==(spec.kind=='fishing_shop' and FISH_KEY or spec.kind=='arena_tickets' and TICKET_KEY or COUNT_KEY) then count=arg.args_val;found=found+1 end end
+            if spec.kind=='fishing_shop' and (found~=1 or (count~=0 and count~=1)) then
+                done({status='error',reason='invalid_fishing_option'});return
+            elseif spec.kind=='arena_tickets' and (found~=1 or (count~=10 and count~=20)) then
                 done({status='error',reason='invalid_ticket_target'});return
             elseif spec.kind=='summon' and (found~=1 or (count~=10 and count~=20)) then
                 done({status='error',reason='invalid_summon_count'});return
@@ -352,7 +407,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                 local daily_done={summon='今日召唤已完成',arena_free='今日免费挑战已完成',
                     arena_tickets='今日用券目标已完成',hero='今日养成已完成',bone='今日养成已完成'}
                 self.un_finish_node:setVisible(true)
-                local reasons={recast_confirmed='已重铸一次，原属性保留',no_recast_target='暂无可重铸金紫八蛛矛（幸运重铸已跳过）',
+                local reasons={supply_complete='指定商品已买满',rewards_complete='当前可领奖励已领完',shop_funds_short='商店货币不足',shop_locked='部分商品尚未解锁',shop_product_missing='部分指定商品当前未上架',supply_rejected='购买或领奖被拒绝',invalid_fishing_option='刷新券设置无效',shop_period_changed='商店刷新周期变化',guild_changed='联盟已变化',supply_step_limit='本次执行次数已达上限',recast_confirmed='已重铸一次，原属性保留',no_recast_target='暂无可重铸金紫八蛛矛（幸运重铸已跳过）',
                     insufficient_recast_materials='魂力精华或金币不足',recast_config_changed='重铸配置已变化',recast_target_changed='重铸对象已变化',
                     recast_resources_changed='重铸材料已变化',recast_result_missing='未查到新重铸结果',recast_rejected='重铸被拒绝，已停止',
                     unexpected_recast_cost='重铸消耗不符，请核实',verify_timeout='重铸结果核实超时',challenge_started='已发起挑战，继续后续任务',challenge_deferred='等待可发起挑战，其余任务继续',deferred_timeout='暂未能发起挑战，请稍后核实',gift_config_changed='免费礼包配置已变化，已跳过本项',wish_already_claimed='今日祈愿奖励已领取',no_guild='尚未加入宗门',ruins_defeat='遗迹挑战失败，已跳过本项',
@@ -377,6 +432,10 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                     no_eligible_target='暂无符合条件的养成对象',battle_busy='其他战斗未结束，已停止'}
                 local text=reasons[data.local_reason] or labels[data.local_result] or '结果未确认'
                 if custom[data.pos].recast and data.local_target then text=data.local_target.name..'：'..text end
+                if custom[data.pos].supplies and data.local_entries and #data.local_entries>0 then
+                    text=text..'（'..#data.local_entries..'项）'
+                    -- The result remains compact; full details are retained in the local result journal.
+                end
                 self.un_finish_lb:setString(TI18N(text))
                 self.un_finish_lb:setFontSize(24)
             end
@@ -397,6 +456,10 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                     if training_runner.active then training_runner.active.done=function() end end
                     training_runner:cancel()
                 end
+                if supply_runner then
+                    if supply_runner.active then supply_runner.active.done=function() end end
+                    supply_runner:cancel()
+                end
                 if recast_runner then
                     if recast_runner.active then recast_runner.active.done=function() end end
                     recast_runner:cancel()
@@ -415,12 +478,13 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
         end
     end)
     -- 将扩展条目放到日常页顶部，沿用游戏原有设置窗口与执行窗口。
-    for i = #specs, 1, -1 do table.insert(list, 1, specs[i].row) end
-    local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner,extras=extra_runner,recast=recast_runner, version = Extras and 'daily_extras_v1' or Quests and 'daily_quests_v3' or Training and 'daily_training_v8' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
+    for i = #specs, 1, -1 do if not specs[i].footer then table.insert(list, 1, specs[i].row) end end
+    for _,spec in ipairs(specs) do if spec.footer then list[#list+1]=spec.row end end
+    local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner,extras=extra_runner,recast=recast_runner,supplies=supply_runner, version = Extras and 'daily_extras_v1' or Quests and 'daily_quests_v3' or Training and 'daily_training_v8' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
     -- 自动重挂只撤销仍属于我们的包装/条目，不覆盖后来接入的其他包装。
     -- 停止回调，但保留用户设置和未确认消费记录。
     function installation.detach()
-        for _,r in pairs({runner,action_runner,training_runner,quest_runner,extra_runner,recast_runner}) do
+        for _,r in pairs({runner,action_runner,training_runner,quest_runner,extra_runner,recast_runner,supply_runner}) do
             if r then
                 if r.active then r.active.done=function() end end
                 for _,a in pairs(r.deferred or {}) do a.done=function() end end
@@ -456,6 +520,10 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                 if training_runner then
                     if training_runner.active then training_runner.active.done=function() end end
                     training_runner:cancel()
+                end
+                if supply_runner then
+                    if supply_runner.active then supply_runner.active.done=function() end end
+                    supply_runner:cancel()
                 end
                 if recast_runner then
                     if recast_runner.active then recast_runner.active.done=function() end end

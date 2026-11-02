@@ -21,3 +21,7 @@ evidence/phase19/
 evidence/phase20/
 evidence/phase21/
 evidence/phase22/
+evidence/phase23/
+
+# Private live-device verification results
+evidence/phase23_supplies_device.json

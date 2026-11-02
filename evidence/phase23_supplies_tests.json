@@ -1,0 +1,18 @@
+{
+  "passed": 135,
+  "new_cases": [
+    "22 daily entries default off, rewards at bottom and final full-queue position",
+    "tree buys only five weekly products to remaining limits and repeat is read-only",
+    "guild chooses monthly and weekly products, excludes lifetime lookalikes",
+    "new guild goods match weekly allowlist; changed config never spends",
+    "period rollover reconciles stale pending; missing identity prevents queries",
+    "fish refresh option buys only limited score voucher, never diamond voucher",
+    "partial balance buys affordable count; locked items and exhausted balance skip",
+    "lost purchase ack is reconciled by exact count, never blindly resent",
+    "wrong shop ack ignored; fresh count required; day and guild changes cancel",
+    "daily claims chain into newly unlocked daily reward then activity boxes only",
+    "unconfirmed daily rewards stay pending and missing ready rewards do not claim",
+    "manual request conflict, query timeout, disconnect, disk failure and uninstall are bounded"
+  ],
+  "network": "offline; recovered mall/task controllers, config, helper queue"
+}
