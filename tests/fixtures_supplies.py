@@ -27,7 +27,7 @@ function freshSupplies()
 end
 function supplyTask(k,opt)
  local ids={tree_shop=-2101778,guild_shop=-2101777,fishing_shop=-2101776,daily_rewards=-2101775}
- return window({{type=1,pos=ids[k],args={{args_key=9022,args_val=opt or 0}}},{type=1,pos=999,args={}}})
+ return window({{type=k=='daily_rewards' and -2101774 or 1,pos=ids[k],args={{args_key=9022,args_val=opt or 0}}},{type=1,pos=999,args={}}})
 end
 function shopData(typ)
  local items={};for id,c in pairs(counts) do local ext={};for k,n in pairs(c) do ext[#ext+1]={key=k,val=n} end;items[#items+1]={item_id=id,ext=ext} end

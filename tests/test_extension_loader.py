@@ -45,15 +45,16 @@ GAME_INITED=true;package.loaded.game_start=true
 local n=#sent
 assert(dofile(boot)==0)
 local a=DLDL_DAILY_GIFTS
-assert(#a.specs==22 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+22 and #sent==n)
+assert(#a.specs==22 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+21 and #sent==n)
 assert(a.voyage and SimplifyData.data_list[a.voyage.type].name=='其他自动化')
 assert(a.mine and a.redbag and #OneKeyBurdenConst.SimplifyTypeList[a.voyage.type]==4)
 for i=1,20 do assert(dofile(boot)==0) end
 assert(DLDL_DAILY_GIFTS==a and DLDL_EXTENSION_LOADER.generation==1)
 -- Other automation wrappers must preserve the final rewards position.
-local t=a.voyage.type
-local w=setmetatable({select_index=1,task_list={SimplifyData.data_list[1],a.voyage.category},operate_list={[1]={},[t]={}}},{__index=OneKeyBurdenMainWindow})
-for _,typ in ipairs({1,t}) do
+local t=a.voyage.type;local rt=a.reward_type
+assert(SimplifyData.data_list[rt].sort_id>a.voyage.category.sort_id)
+local w=setmetatable({select_index=1,task_list={SimplifyData.data_list[1],a.voyage.category,SimplifyData.data_list[rt]},operate_list={[1]={},[t]={},[rt]={}}},{__index=OneKeyBurdenMainWindow})
+for _,typ in ipairs({1,t,rt}) do
  for _,cfg in ipairs(OneKeyBurdenConst.SimplifyTypeList[typ]) do
   local d=w:getPosExecuteData(typ,cfg);d.is_open=cfg.id==a.voyage.history and 0 or 1;w.operate_list[typ][cfg.id]=d
  end
@@ -65,13 +66,14 @@ local key='loader_test_pending';ud:setIntegerForKey(key,1)
 local f=assert(io.open(disabled_path,'w'));f:close()
 assert(dofile(boot)==2)
 assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and DLDL_DAILY_GIFTS==nil and ud:getIntegerForKey(key,0)==1)
+assert(not SimplifyData.data_list[rt] and not OneKeyBurdenConst.SimplifyTypeList[rt])
 assert(not SimplifyData.data_list[-2101803] and not OneKeyBurdenConst.SimplifyTypeList[-2101803])
 os.remove(disabled_path)
 assert(dofile(boot)==0 and DLDL_EXTENSION_LOADER.generation==2)
 local old=DLDL_DAILY_GIFTS
 beginGame=function() end
 assert(dofile(boot)==0 and DLDL_EXTENSION_LOADER.generation==3)
-assert(DLDL_DAILY_GIFTS~=old and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+22)
+assert(DLDL_DAILY_GIFTS~=old and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+21)
 assert(#sent==n and ud:getIntegerForKey(key,0)==1)
 -- The release bundle preserves pending isolation and skips contract shortage.
 ext=DLDL_DAILY_GIFTS
@@ -95,4 +97,4 @@ DLDL_DAILY_GIFTS.detach()
 assert(VipController:getInstance().sender21018==foreign)
 assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and #sent==n)
 ''')
-print(json.dumps({'existing_regression_cases':len(lua.globals().passed),'payload_lua51':True,'lifecycle':['partial installation rollback','22 entries without requests','20 repeated callbacks idempotent','disable restores rows and preserves journal','reenable','generation remount','foreign wrapper preserved','release contract shortage continues to guild task','release unknown hero pending retained across remount'],'network':'none'},ensure_ascii=False,indent=2))
+print(json.dumps({'existing_regression_cases':len(lua.globals().passed),'payload_lua51':True,'lifecycle':['partial installation rollback','21 daily entries plus rewards without requests','20 repeated callbacks idempotent','disable restores rows and preserves journal','reenable','generation remount','foreign wrapper preserved','release contract shortage continues to guild task','release unknown hero pending retained across remount'],'network':'none'},ensure_ascii=False,indent=2))

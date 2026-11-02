@@ -1,7 +1,7 @@
 {
   "passed": 135,
   "new_cases": [
-    "22 daily entries default off, rewards at bottom and final full-queue position",
+    "21 daily entries plus reward category preserve settings and run rewards last",
     "tree buys only five weekly products to remaining limits and repeat is read-only",
     "guild chooses monthly and weekly products, excludes lifetime lookalikes",
     "new guild goods match weekly allowlist; changed config never spends",

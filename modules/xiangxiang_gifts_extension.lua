@@ -1,4 +1,4 @@
--- 香香小助手的界面与队列接入层：完整发布包加入22项本地任务。
+-- 香香小助手的界面与队列接入层：完整发布包加入21项日常任务和独立奖励领取分类。
 -- install 只加条目、保存原方法并包装回调；实际任务从 requestTask 开始，不在挂载时执行。
 local M = {}
 local active_install
@@ -9,6 +9,8 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     local vip = VipController:getInstance()
     assert(not helper.onekeyburden_main_window and not helper.onekeyburden_auto_window, 'close helper windows first')
     local TYPE = OneKeyBurdenConst.SimplifyType.DAILY_TASK
+    local REWARD_TYPE = -2101774
+    local reward_category, reward_rows
     local specs = {
         {pos = -2101802, kind = 1, title = '斗罗集市·每日礼包领取'},
         {pos = -2101801, kind = 6, title = '学院活动·每日特惠领取'}
@@ -41,7 +43,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
         specs[#specs+1]={pos=-2101778,kind='tree_shop',title='神树浇灌商店·周限购买满',supplies=true}
         specs[#specs+1]={pos=-2101777,kind='guild_shop',title='联盟特殊商店·周月限购买满',supplies=true}
         specs[#specs+1]={pos=-2101776,kind='fishing_shop',title='钓鱼商店·日周限购买满',supplies=true}
-        specs[#specs+1]={pos=-2101775,kind='daily_rewards',title='每日任务·奖励与活跃度领取',supplies=true,footer=true}
+        specs[#specs+1]={pos=-2101775,kind='daily_rewards',title='每日任务·奖励与活跃度领取',supplies=true,footer=true,type=REWARD_TYPE}
     end
     -- Retired local IDs are swallowed if an old queue/save still contains
     -- them.  Their preferences and journals are never read or modified.
@@ -149,6 +151,10 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             if supply_runner and supply_runner.active then supply_runner:finish('uncertain','runtime_error') end
         end
     end
+    local function removeRewardCategory()
+        if reward_category and SimplifyData.data_list[REWARD_TYPE]==reward_category then SimplifyData.data_list[REWARD_TYPE]=nil end
+        if reward_rows and OneKeyBurdenConst.SimplifyTypeList[REWARD_TYPE]==reward_rows then OneKeyBurdenConst.SimplifyTypeList[REWARD_TYPE]=nil end
+    end
     local install_ok, install_result = pcall(function()
     if Supplies then
         supply_runner,supply_pending=GameSupplies.bind(Supplies,{roleKey=roleKey,identity=identity,now=now,
@@ -197,18 +203,18 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
         end
     end)
     if Supplies then
-        -- Official login data can append daily rows after installation.
-        -- Move the reward row again immediately before the menu is rendered.
-        patch(OneKeyBurdenMainWindow, 'updateAutoList', function(old)
-            return function(self,...)
-                for i,row in ipairs(list) do
-                    if custom[row.id] and custom[row.id].footer then
-                        table.remove(list,i);list[#list+1]=row;break
-                    end
-                end
-                return old(self,...)
-            end
-        end)
+        patch(helper, 'sender31609', function(old) return function(self,t,id)
+            if id==REWARD_TYPE then return end
+            return old(self,t,id)
+        end end)
+        patch(helper, 'sender31604', function(old) return function(self,t,op)
+            if t==REWARD_TYPE then return end
+            return old(self,t,op)
+        end end)
+        patch(helper:getModel(), 'getTipsTypeRed', function(old) return function(self,t,id)
+            if id==REWARD_TYPE then return false end
+            return old(self,t,id)
+        end end)
     end
     patch(OneKeyBurdenMainWindow, 'getPosExecuteData', function(old)
         return function(self, key, cfg)
@@ -270,7 +276,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                         end
                     elseif not retired[row.pos] then copy.type_list[#copy.type_list+1] = row end
                 end
-                if #copy.type_list > 0 then filtered[#filtered+1] = copy end
+                if group.type~=REWARD_TYPE and #copy.type_list > 0 then filtered[#filtered+1] = copy end
             end
             ud:flush()
             if #filtered > 0 then return old(self, filtered) end
@@ -279,7 +285,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     patch(helper, 'sender31602', function(old)
         return function(self, kind, pos)
             if retired[pos] then return end
-            assert(not custom[pos], 'local task cannot use native task protocol')
+            assert(kind~=REWARD_TYPE and not custom[pos], 'local task cannot use native task protocol')
             return old(self, kind, pos)
         end
     end)
@@ -479,8 +485,15 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
     end)
     -- 将扩展条目放到日常页顶部，沿用游戏原有设置窗口与执行窗口。
     for i = #specs, 1, -1 do if not specs[i].footer then table.insert(list, 1, specs[i].row) end end
-    for _,spec in ipairs(specs) do if spec.footer then list[#list+1]=spec.row end end
-    local installation = {runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner,extras=extra_runner,recast=recast_runner,supplies=supply_runner, version = Extras and 'daily_extras_v1' or Quests and 'daily_quests_v3' or Training and 'daily_training_v8' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
+    if Supplies then
+        assert(not SimplifyData.data_list[REWARD_TYPE] and not OneKeyBurdenConst.SimplifyTypeList[REWARD_TYPE], 'reward category collision')
+        -- Other automation sorts at shop + 0.5; rewards is the next sibling.
+        reward_category={id=REWARD_TYPE,sort_id=SimplifyData.data_list[16].sort_id+0.75,name='奖励领取',key='',limit={},type=0}
+        reward_rows={specs[#specs].row}
+        SimplifyData.data_list[REWARD_TYPE]=reward_category
+        OneKeyBurdenConst.SimplifyTypeList[REWARD_TYPE]=reward_rows
+    end
+    local installation = {reward_type=Supplies and REWARD_TYPE or nil,runner = runner, specs = specs, actions=action_runner,training=training_runner,quests=quest_runner,extras=extra_runner,recast=recast_runner,supplies=supply_runner, version = Extras and 'daily_extras_v1' or Quests and 'daily_quests_v3' or Training and 'daily_training_v8' or (Actions and 'daily_actions_v2' or 'daily_gifts_v1')}
     -- 自动重挂只撤销仍属于我们的包装/条目，不覆盖后来接入的其他包装。
     -- 停止回调，但保留用户设置和未确认消费记录。
     function installation.detach()
@@ -500,6 +513,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             local spec=custom[list[i].id]
             if spec and list[i]==spec.row then table.remove(list,i) end
         end
+        removeRewardCategory()
         active_install=nil
     end
     function installation.uninstall()
@@ -540,6 +554,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
                 cleanup()
         for i = #patches, 1, -1 do local p = patches[i]; rawset(p.obj,p.key,p.own) end
         for i = #list, 1, -1 do if custom[list[i].id] then table.remove(list, i) end end
+        removeRewardCategory()
         active_install = nil
     end
     active_install = installation
@@ -555,6 +570,7 @@ function M.install(Gifts, Actions, GameActions, Training, GameTraining, Quests, 
             local spec=custom[list[i].id]
             if spec and list[i]==spec.row then table.remove(list,i) end
         end
+        removeRewardCategory()
         cleanup()
         error(install_result)
     end

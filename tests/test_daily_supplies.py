@@ -9,20 +9,27 @@ for v,n in [('Supplies','daily_supplies'),('GameSupplies','daily_supplies_game')
 lua.execute('''
 function installSupplies() return Extension.install(Gifts,Actions,GameActions,Training,GameTraining,Quests,GameQuests,Extras,GameExtras,Recast,GameRecast,Supplies,GameSupplies) end
 freshSupplies();local n=#sent;ext=installSupplies()
-case('22 daily entries default off, rewards at bottom and final full-queue position',function()
+case('21 daily entries plus reward category preserve settings and run rewards last',function()
  assert(#ext.specs==22 and #sent==n)
- local rows=OneKeyBurdenConst.SimplifyTypeList[1];assert(rows[#rows].id==-2101775)
- rows[#rows+1]={id=999991};OneKeyBurdenMainWindow.updateAutoList({})
- assert(rows[#rows].id==-2101775 and rows[#rows-1].id==999991)
- table.remove(rows,#rows-1)
- for i=19,22 do assert(OneKeyBurdenMainWindow:getPosExecuteData(1,ext.specs[i].row).is_open==0) end
- local w=setmetatable({select_index=1,task_list={{id=1}},operate_list={[1]={}}},{__index=OneKeyBurdenMainWindow})
- for _,r in ipairs(rows) do local d=w:getPosExecuteData(1,r);d.is_open=1;w.operate_list[1][r.id]=d end
- local q=w:saveOperateRequest(true);assert(q[#q].pos==-2101775)
+ local t=ext.reward_type;local rows=OneKeyBurdenConst.SimplifyTypeList[1]
+ for _,r in ipairs(rows) do assert(r.id~=-2101775) end
+ assert(SimplifyData.data_list[t].name=='奖励领取' and #OneKeyBurdenConst.SimplifyTypeList[t]==1)
+ assert(SimplifyData.data_list[t].sort_id==SimplifyData.data_list[16].sort_id+0.75)
+ for i=19,22 do assert(OneKeyBurdenMainWindow:getPosExecuteData(ext.specs[i].type or 1,ext.specs[i].row).is_open==0) end
+ local w=setmetatable({select_index=1,task_list={{id=1},{id=t}},operate_list={[1]={},[t]={}}},{__index=OneKeyBurdenMainWindow})
+ for _,typ in ipairs({1,t}) do for _,r in ipairs(OneKeyBurdenConst.SimplifyTypeList[typ]) do local d=w:getPosExecuteData(typ,r);d.is_open=1;w.operate_list[typ][r.id]=d end end
+ local q=w:saveOperateRequest(true);assert(q[#q].pos==-2101775 and q[#q].type==t)
  local pref=w:getPosExecuteData(1,ext.specs[21].row);assert(pref.args[1].args_val==0)
  w.operate_list[1][-2101776].args[1].args_val=1;w:saveOperateRequest(true)
  assert(w:getPosExecuteData(1,ext.specs[21].row).args[1].args_val==1)
- for _,s in ipairs(sent) do if s.id==31601 then for _,g in ipairs(s.data.list) do for _,r in ipairs(g.type_list) do assert(r.pos>0) end end end end
+ -- Existing daily-tab settings use the same key after the move.
+ oc:sender31601({{type=1,type_list={{pos=-2101775,is_open=1,args={}}}}})
+ assert(w:getPosExecuteData(t,ext.specs[22].row).is_open==1)
+ w.select_index=2;q=w:saveOperateRequest(false);assert(#q==1 and q[1].type==t)
+ local before=#sent;oc:sender31609(1,t)
+ for _,op in ipairs({0,1,2}) do oc:sender31604(t,op) end
+ assert(not oc:getModel():getTipsTypeRed(1,t) and #sent==before)
+ for _,s in ipairs(sent) do if s.id==31601 then for _,g in ipairs(s.data.list) do assert(g.type>0);for _,r in ipairs(g.type_list) do assert(r.pos>0) end end end end
 end)
 case('tree buys only five weekly products to remaining limits and repeat is read-only',function()
  freshSupplies();counts[27005]={[2]=1};local w=supplyTask('tree_shop');w:requestTask();supplyQuery('tree_shop')
@@ -119,7 +126,7 @@ case('manual request conflict, query timeout, disconnect, disk failure and unins
  freshSupplies();w=supplyTask('tree_shop');w:requestTask();receive(13401,shopData(27))
  local old=ext.supplies.env.save;ext.supplies.env.save=function() error('disk full') end;n=#sent
  for t in pairs(clock.timers) do t.fn() end;assert(#sent==n);ext.supplies.env.save=old
- ext.uninstall();assert(OneKeyBurdenConst.SimplifyTypeList[1][#OneKeyBurdenConst.SimplifyTypeList[1]].id~=-2101775)
+ ext.uninstall();assert(not SimplifyData.data_list[-2101774] and not OneKeyBurdenConst.SimplifyTypeList[-2101774]);assert(OneKeyBurdenConst.SimplifyTypeList[1][#OneKeyBurdenConst.SimplifyTypeList[1]].id~=-2101775)
 end)
 ''')
 names=[lua.globals().passed[i] for i in range(1,len(lua.globals().passed)+1)]
