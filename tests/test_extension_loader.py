@@ -12,6 +12,7 @@ runpy.run_path(str(ROOT/'tests/fixtures_mine.py'))['setup'](lua,ns['ns']['origin
 runpy.run_path(str(ROOT/'tests/fixtures_redbag.py'))['setup'](lua,ns['ns']['original'])
 runpy.run_path(str(ROOT/'tests/fixtures_recast.py'))['setup'](lua,ns['ns']['original'])
 runpy.run_path(str(ROOT/'tests/fixtures_supplies.py'))['setup'](lua,ns['ns']['original'])
+runpy.run_path(str(ROOT/'tests/fixtures_fishing_mail.py'))['setup'](lua,ns['ns']['original'])
 build=runpy.run_path(str(ROOT/'lsposed-module/scripts/build-payload.py'))
 with contextlib.redirect_stdout(io.StringIO()):build['build']()
 asset=ROOT/'lsposed-module/app/src/main/assets/extension'
@@ -47,7 +48,10 @@ assert(dofile(boot)==0)
 local a=DLDL_DAILY_GIFTS
 assert(#a.specs==22 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+21 and #sent==n)
 assert(a.voyage and SimplifyData.data_list[a.voyage.type].name=='其他自动化')
-assert(a.mine and a.redbag and #OneKeyBurdenConst.SimplifyTypeList[a.voyage.type]==4)
+assert(a.mine and a.redbag and a.fishing and a.mail and #OneKeyBurdenConst.SimplifyTypeList[a.voyage.type]==6)
+oc.onekeyburden_auto_window={execute_request_list={{is_execute=false}},execute_index=1,other_progress=9,voyage_progress=4}
+assert(a.automation.env.snapshot().progress==13,'fishing progress missing from scheduled watchdog')
+oc.onekeyburden_auto_window=nil
 for i=1,20 do assert(dofile(boot)==0) end
 assert(DLDL_DAILY_GIFTS==a and DLDL_EXTENSION_LOADER.generation==1)
 -- Other automation wrappers must preserve the final rewards position.

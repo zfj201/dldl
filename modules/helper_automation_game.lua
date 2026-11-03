@@ -44,7 +44,7 @@ function M.bind(Automation)
             for _,row in ipairs(rows) do if not row.is_execute then all=false end end
             local extension=rawget(_G,'DLDL_DAILY_GIFTS')
             local waiting=extension and extension.extras and extension.extras:hasDeferred()
-            return {index=w.execute_index,total=#rows,finished=w.is_execute_finish==true and not waiting,all_executed=all,rows=rows,progress=w.voyage_progress or 0}
+            return {index=w.execute_index,total=#rows,finished=w.is_execute_finish==true and not waiting,all_executed=all,rows=rows,progress=(w.voyage_progress or 0)+(w.other_progress or 0)}
         end,
         results=function(rows)
             local out={}

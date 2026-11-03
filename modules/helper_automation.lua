@@ -7,7 +7,7 @@ function M.new(env)
     function self:report(status, reason, index, total)
         self.status=status;self.reason=reason
         local a=self.active or self.last
-        env.report(table.concat({'v1',a and a.id or '-',status,clean(reason),index or 0,total or 0,env.now()},'\t')..'\n')
+        env.report(table.concat({'v1',a and a.id or '-',status,clean(reason),index or 0,total or 0,env.now(),a and a.progress_at or 0},'\t')..'\n')
     end
     function self:finish(status,reason)
         local a=self.active

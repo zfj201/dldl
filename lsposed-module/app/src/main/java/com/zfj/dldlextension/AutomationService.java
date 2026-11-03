@@ -43,6 +43,7 @@ public final class AutomationService extends Service {
         cancelled=false;update("正在准备启动游戏");
         String mode="verify".equals(intent.getAction())?"verify":"run_all";
         wake=getSystemService(PowerManager.class).newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,"dldl:automation");
+        wake.setReferenceCounted(false);
         wake.acquire(40*60*1000L);
         new Thread(() -> execute(mode),"dldl-automation").start();
         return START_NOT_STICKY;
@@ -68,11 +69,21 @@ public final class AutomationService extends Service {
             Files.write(new File(getFilesDir(),"last-launch.txt").toPath(),launchOutput.getBytes(java.nio.charset.StandardCharsets.UTF_8));
             long deadline=SystemClock.elapsedRealtime()+36*60*1000L;
             LoadingRecovery recovery=new LoadingRecovery();
+            ExecutionProgress progress=new ExecutionProgress();
+            long nextProgressCheck=0;
             long nextPromotion=0;
             int promotionCloses=0;
             String last="";
             while (SystemClock.elapsedRealtime()<deadline) {
                 if (cancelled) {RootAccess.write("cancel.tsv",id+"\n");update("已停止；未确认的助手执行不会自动重跑");return;}
+                if (SystemClock.elapsedRealtime()>=nextProgressCheck) {
+                    nextProgressCheck=SystemClock.elapsedRealtime()+15000;
+                    if (progress.advanced(RootAccess.read("result.tsv"),id,System.currentTimeMillis()/1000)) {
+                        // Long fishing runs may exceed the initial budget while still making progress.
+                        deadline=Math.max(deadline,SystemClock.elapsedRealtime()+5*60*1000L);
+                        wake.acquire(40*60*1000L);
+                    }
+                }
                 String status=RootAccess.read("startup.tsv");
                 String[] parts=status.trim().split("\t");
                 if (parts.length>=5 && parts[1].equals(id)) {
