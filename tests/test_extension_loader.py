@@ -13,6 +13,7 @@ runpy.run_path(str(ROOT/'tests/fixtures_redbag.py'))['setup'](lua,ns['ns']['orig
 runpy.run_path(str(ROOT/'tests/fixtures_recast.py'))['setup'](lua,ns['ns']['original'])
 runpy.run_path(str(ROOT/'tests/fixtures_supplies.py'))['setup'](lua,ns['ns']['original'])
 runpy.run_path(str(ROOT/'tests/fixtures_fishing_mail.py'))['setup'](lua,ns['ns']['original'])
+runpy.run_path(str(ROOT/'tests/fixtures_forest.py'))['setup'](lua,ns['ns']['original'])
 build=runpy.run_path(str(ROOT/'lsposed-module/scripts/build-payload.py'))
 with contextlib.redirect_stdout(io.StringIO()):build['build']()
 asset=ROOT/'lsposed-module/app/src/main/assets/extension'
@@ -34,6 +35,12 @@ assert(VipController:getInstance().sender21018==before,'partial installation not
 assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows,'failed install added rows')
 assert(#sent==n,'installation sent a game request')
 VipController:getInstance().handle21018=original
+local forestSend=forestc.SendProtocal;forestc.SendProtocal=false
+ok,err=pcall(factory)
+assert(not ok and tostring(err):find('SendProtocal'),tostring(err))
+forestc.SendProtocal=forestSend
+assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and #sent==n,'forest partial installation leaked')
+assert(not ProtoMgr:hasReg(31906),'forest reply registration leaked')
 ''')
 with tempfile.TemporaryDirectory(prefix='dldl-loader-') as temp:
     base=pathlib.Path(temp);bundle=base/'bundle';bundle.mkdir();(base/'automation').mkdir()
@@ -46,9 +53,9 @@ GAME_INITED=true;package.loaded.game_start=true
 local n=#sent
 assert(dofile(boot)==0)
 local a=DLDL_DAILY_GIFTS
-assert(#a.specs==22 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+21 and #sent==n)
+assert(#a.specs==22 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+22 and #sent==n)
 assert(a.voyage and SimplifyData.data_list[a.voyage.type].name=='其他自动化')
-assert(a.mine and a.redbag and a.fishing and a.mail and #OneKeyBurdenConst.SimplifyTypeList[a.voyage.type]==6)
+assert(a.mine and a.redbag and a.fishing and a.mail and a.forest and #OneKeyBurdenConst.SimplifyTypeList[a.voyage.type]==6)
 oc.onekeyburden_auto_window={execute_request_list={{is_execute=false}},execute_index=1,other_progress=9,voyage_progress=4}
 assert(a.automation.env.snapshot().progress==13,'fishing progress missing from scheduled watchdog')
 oc.onekeyburden_auto_window=nil
@@ -77,7 +84,7 @@ assert(dofile(boot)==0 and DLDL_EXTENSION_LOADER.generation==2)
 local old=DLDL_DAILY_GIFTS
 beginGame=function() end
 assert(dofile(boot)==0 and DLDL_EXTENSION_LOADER.generation==3)
-assert(DLDL_DAILY_GIFTS~=old and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+21)
+assert(DLDL_DAILY_GIFTS~=old and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+22)
 assert(#sent==n and ud:getIntegerForKey(key,0)==1)
 -- The release bundle preserves pending isolation and skips contract shortage.
 ext=DLDL_DAILY_GIFTS
@@ -101,4 +108,4 @@ DLDL_DAILY_GIFTS.detach()
 assert(VipController:getInstance().sender21018==foreign)
 assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and #sent==n)
 ''')
-print(json.dumps({'existing_regression_cases':len(lua.globals().passed),'payload_lua51':True,'lifecycle':['partial installation rollback','21 daily entries plus rewards without requests','20 repeated callbacks idempotent','disable restores rows and preserves journal','reenable','generation remount','foreign wrapper preserved','release contract shortage continues to guild task','release unknown hero pending retained across remount'],'network':'none'},ensure_ascii=False,indent=2))
+print(json.dumps({'existing_regression_cases':len(lua.globals().passed),'payload_lua51':True,'lifecycle':['partial installation rollback','22 daily entries plus rewards without requests','20 repeated callbacks idempotent','disable restores rows and preserves journal','reenable','generation remount','foreign wrapper preserved','release contract shortage continues to guild task','release unknown hero pending retained across remount'],'network':'none'},ensure_ascii=False,indent=2))
