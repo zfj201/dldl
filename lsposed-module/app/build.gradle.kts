@@ -8,8 +8,8 @@ android {
         applicationId = "com.zfj.dldlextension"
         minSdk = 29
         targetSdk = 35
-        versionCode = 16
-        versionName = "0.6.8"
+        versionCode = 17
+        versionName = "0.6.9"
         buildConfigField("int", "PROBE_STAGE", providers.gradleProperty("probeStage").getOrElse("5"))
     }
     buildFeatures { buildConfig = true }

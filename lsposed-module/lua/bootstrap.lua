@@ -26,7 +26,7 @@ if not exists(root..'../disabled') and exists(root..'../automation/launch.tsv') 
 end
 local names={'OneKeyBurdenController','MallController','TaskController','VipController','GlobalTimeTicket','RoleController','GameNet',
  'DungeonstoneController','PantheonController','SoulDomainController','PartnersummonController',
- 'ElitematchController','HeroController','BackpackController','BattleController','GuildController','GodRuinsController','GuildbossController','JiaLingPassController','CommonGiftShopController','VoyageController','MineController','RedbagController','FishingController','MailController','ProtoMgr','GiantWoodForestController','MainuiController'}
+ 'ElitematchController','HeroController','BackpackController','BattleController','GuildController','GodRuinsController','GuildbossController','JiaLingPassController','CommonGiftShopController','VoyageController','MineController','RedbagController','FishingController','MailController','ProtoMgr','GiantWoodForestController','MainuiController','ActionController'}
 local function pollAutomation()
     if state.installation.extras then state.installation.extras:pollDeferred() end
     if state.installation.automation then state.installation.automation:poll(root..'../automation/') end
@@ -74,9 +74,9 @@ local ok,result=pcall(function()
     local factory=assert(loadfile(root..'payload.lua'))()
     state.generation=state.generation+1
     local installed=factory()
-    assert(installed and #installed.specs==22 and installed.forest,'unexpected entry count')
+    assert(installed and #installed.specs==22 and installed.forest and installed.limited,'unexpected entry count')
     state.installation=installed;_G.DLDL_DAILY_GIFTS=installed
-    status('installed:22+rewards+voyage+mine+redbag+fishing+mail:version=0.6.8')
+    status('installed:22+rewards+voyage+mine+redbag+fishing+mail+limited:version=0.6.9')
     pollAutomation()
     return 0
 end)

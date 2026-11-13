@@ -14,6 +14,7 @@ runpy.run_path(str(ROOT/'tests/fixtures_recast.py'))['setup'](lua,ns['ns']['orig
 runpy.run_path(str(ROOT/'tests/fixtures_supplies.py'))['setup'](lua,ns['ns']['original'])
 runpy.run_path(str(ROOT/'tests/fixtures_fishing_mail.py'))['setup'](lua,ns['ns']['original'])
 runpy.run_path(str(ROOT/'tests/fixtures_forest.py'))['setup'](lua,ns['ns']['original'])
+runpy.run_path(str(ROOT/'tests/fixtures_limited.py'))['setup'](lua,ns['ns']['original'])
 build=runpy.run_path(str(ROOT/'lsposed-module/scripts/build-payload.py'))
 with contextlib.redirect_stdout(io.StringIO()):build['build']()
 asset=ROOT/'lsposed-module/app/src/main/assets/extension'
@@ -41,6 +42,10 @@ assert(not ok and tostring(err):find('SendProtocal'),tostring(err))
 forestc.SendProtocal=forestSend
 assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and #sent==n,'forest partial installation leaked')
 assert(not ProtoMgr:hasReg(31906),'forest reply registration leaked')
+local actionSend=limitedc.SendProtocal;limitedc.SendProtocal=false
+ok,err=pcall(factory);assert(not ok and tostring(err):find('SendProtocal'),tostring(err));limitedc.SendProtocal=actionSend
+assert(not SimplifyData.data_list[-2101770] and not OneKeyBurdenConst.SimplifyTypeList[-2101770])
+assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and #sent==n,'limited partial install leaked')
 ''')
 with tempfile.TemporaryDirectory(prefix='dldl-loader-') as temp:
     base=pathlib.Path(temp);bundle=base/'bundle';bundle.mkdir();(base/'automation').mkdir()
@@ -55,6 +60,7 @@ assert(dofile(boot)==0)
 local a=DLDL_DAILY_GIFTS
 assert(#a.specs==22 and #OneKeyBurdenConst.SimplifyTypeList[1]==original_rows+22 and #sent==n)
 assert(a.voyage and SimplifyData.data_list[a.voyage.type].name=='其他自动化')
+assert(a.limited and SimplifyData.data_list[a.limited.type].name=='限时活动')
 assert(a.mine and a.redbag and a.fishing and a.mail and a.forest and #OneKeyBurdenConst.SimplifyTypeList[a.voyage.type]==6)
 oc.onekeyburden_auto_window={execute_request_list={{is_execute=false}},execute_index=1,other_progress=9,voyage_progress=4}
 assert(a.automation.env.snapshot().progress==13,'fishing progress missing from scheduled watchdog')
@@ -62,21 +68,25 @@ oc.onekeyburden_auto_window=nil
 for i=1,20 do assert(dofile(boot)==0) end
 assert(DLDL_DAILY_GIFTS==a and DLDL_EXTENSION_LOADER.generation==1)
 -- Other automation wrappers must preserve the final rewards position.
-local t=a.voyage.type;local rt=a.reward_type
+local t=a.voyage.type;local rt=a.reward_type;local lt=a.limited.type
+assert(SimplifyData.data_list[lt].sort_id>a.voyage.category.sort_id and SimplifyData.data_list[lt].sort_id<SimplifyData.data_list[rt].sort_id)
 assert(SimplifyData.data_list[rt].sort_id>a.voyage.category.sort_id)
-local w=setmetatable({select_index=1,task_list={SimplifyData.data_list[1],a.voyage.category,SimplifyData.data_list[rt]},operate_list={[1]={},[t]={},[rt]={}}},{__index=OneKeyBurdenMainWindow})
-for _,typ in ipairs({1,t,rt}) do
+local w=setmetatable({select_index=1,task_list={SimplifyData.data_list[1],a.voyage.category,SimplifyData.data_list[lt],SimplifyData.data_list[rt]},operate_list={[1]={},[t]={},[lt]={},[rt]={}}},{__index=OneKeyBurdenMainWindow})
+for _,typ in ipairs({1,t,lt,rt}) do
  for _,cfg in ipairs(OneKeyBurdenConst.SimplifyTypeList[typ]) do
   local d=w:getPosExecuteData(typ,cfg);d.is_open=cfg.id==a.voyage.history and 0 or 1;w.operate_list[typ][cfg.id]=d
  end
 end
 local q=w:saveOperateRequest(true);assert(q[#q].pos==-2101775)
+local limited=false;for _,v in ipairs(q) do if v.type==lt then limited=true end end;assert(limited)
+assert(not pcall(function() oc:sender31602(lt,a.limited.pos) end))
 local other=false;for _,v in ipairs(q) do if v.type==t then other=true end end;assert(other)
 n=#sent
 local key='loader_test_pending';ud:setIntegerForKey(key,1)
 local f=assert(io.open(disabled_path,'w'));f:close()
 assert(dofile(boot)==2)
 assert(#OneKeyBurdenConst.SimplifyTypeList[1]==original_rows and DLDL_DAILY_GIFTS==nil and ud:getIntegerForKey(key,0)==1)
+assert(not SimplifyData.data_list[lt] and not OneKeyBurdenConst.SimplifyTypeList[lt])
 assert(not SimplifyData.data_list[rt] and not OneKeyBurdenConst.SimplifyTypeList[rt])
 assert(not SimplifyData.data_list[-2101803] and not OneKeyBurdenConst.SimplifyTypeList[-2101803])
 os.remove(disabled_path)
