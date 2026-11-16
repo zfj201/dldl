@@ -6,6 +6,7 @@ function M.bind(Quests,ctx)
  local gc=GuildController:getInstance();local rc=GodRuinsController:getInstance()
  local hc=HeroController:getInstance();local hm=hc:getModel();local bc=BattleController:getInstance();local ud=cc.UserDefault:getInstance()
  local runner,internal,manual_until,result_views=nil,false,0,nil
+ local main=MainuiController:getInstance();local view_context
  local function role() return RoleController:getInstance():getRoleVo() end
  local function day() local t=ctx.now();local d=TimeTool.getDayAnyHourTime(t,5);return d>t and d-86400 or d end
  local function key(kind) assert(supported(kind),'unknown quest');return 'dldl_quests_v1:'..assert(ctx.roleKey())..':'..kind end
@@ -55,9 +56,27 @@ function M.bind(Quests,ctx)
   return not bc:isInFight()
  end
  local function openGuard(k)
+  if not GameNet:getInstance():IsServerConnect() then return 'connection_unavailable' end
   local r=role()
   if k=='guild_wish' then if not uint(r.gid) or r.gid==0 then return 'no_guild' end
   elseif not SysController:getInstance():checkIsOpenByKey('temple_boss_open') then return 'not_open' end
+ end
+ local function sessionGuard()
+  if not GameNet:getInstance():IsServerConnect() then return 'connection_unavailable' end
+  if view_context and main:getUIFightType()~=BattleConst.getUIFightByFightType(77) then return 'battle_view_changed' end
+ end
+ local function leave()
+  if not view_context then return end
+  local v=view_context;view_context=nil
+  if main:getUIFightType()==BattleConst.getUIFightByFightType(77) then
+   main:setUIFightType(v.ui);bc:send20060(v.fight or 0)
+  end
+ end
+ local function stalePending()
+  local k=key('ruins');local d=ud:getIntegerForKey(k..':day',-1);local sent=ud:getIntegerForKey(k..':sent_at',-1)
+  local expires=ud:getIntegerForKey(k..':before_end_time',-1);local current=day()
+  if not uint(d) or not uint(sent) or not uint(expires) or d>=current or sent<d or sent>=d+86400 or expires<=sent or expires>=ctx.now() then return end
+  return {day=d,sent_at=sent,end_time=expires}
  end
  local function guildScope(d) local r=role();return d.gid==r.gid and d.gid>0 and d.gsrv_id==r.gsrv_id end
  runner=Quests.new({identity=ctx.identity,day=day,now=ctx.now,log=log,diamonds=diamonds,checkForm=checkForm,
@@ -70,6 +89,11 @@ function M.bind(Quests,ctx)
    end)
   end,
   guildScope=guildScope,openGuard=openGuard,ruinsBoss=function(id) return TempleBossData.data_get_boss[id]~=nil end,
+  stalePending=stalePending,sessionGuard=sessionGuard,leave=leave,
+  enter=function()
+   if not view_context then view_context={ui=main:getUIFightType(),fight=bc:getCurFightType()} end
+   main:setUIFightType(BattleConst.getUIFightByFightType(77));bc:send20060(77)
+  end,
   pending=function(k) return supported(k) and ud:getIntegerForKey(key(k)..':pending',0)~=0 end,
   savePending=function(k,pending,a)
    local base=key(k);ud:setIntegerForKey(base..':pending',pending and 1 or 0)
@@ -136,14 +160,16 @@ function M.bind(Quests,ctx)
  end
  -- Only the owned ruins battle is observed; original handlers still run.
  ctx.patch(bc,'scInitFightStart',function(old) return function(obj,data)
+  local owned=data and data.combat_type==77
   old(obj,data)
-  if runner.active and runner.active.kind=='ruins' and data and data.combat_type==77 then
+  if runner.active and runner.active.kind=='ruins' and owned then
    ctx.safe(function() runner:onBattleStart(data) end)
   end
  end end)
  ctx.patch(bc,'scReBattleFight',function(old) return function(obj,data)
+  local owned=data and data.combat_type==77
   old(obj,data)
-  if runner.active and runner.active.kind=='ruins' and data and data.combat_type==77 then
+  if runner.active and runner.active.kind=='ruins' and owned then
    ctx.safe(function() runner:onBattleStart(data) end)
   end
  end end)
@@ -153,7 +179,7 @@ function M.bind(Quests,ctx)
   end
   return old(obj,data)
  end end)
- for _,p in ipairs({{gc,13518},{rc,13100},{rc,13106},{hc,11211}}) do local id=p[2]
+ for _,p in ipairs({{gc,13518},{rc,13100},{rc,13106},{hc,11211},{bc,20060}}) do local id=p[2]
   ctx.patch(p[1],'handle'..id,function(old) return function(obj,data)
    old(obj,data)
    ctx.safe(function()

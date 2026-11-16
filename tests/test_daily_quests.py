@@ -37,6 +37,24 @@ HolyPillarTrialController={};SoulController={}
 for _,p in ipairs({{gc,13518},{rc,13100},{rc,13106}}) do
  ProtoMgr:RegisterCmdCallback(p[2],'handle'..p[2],p[1])
 end
+MainuiController=MainuiController or {}
+MainuiController.getInstance=function() return MainuiController end
+MainuiController.getUIFightType=function(self) return self.quest_ui or 1 end
+MainuiController.setUIFightType=function(self,v) self.quest_ui=v end
+BattleConst.getUIFightByFightType=function(t) return t end
+bc.getCurFightType=function(self) return self.quest_fight or 0 end
+bc.handle20060=function(self,d) self.quest_fight=d.combat_type end
+bc.send20060=function(self,t)
+ capture(self,20060,{combat_type=t})
+ if t==77 and autoQuestEnter~=false then questEnterBase=true end
+ if autoQuestEnter~=false then receive(20060,{combat_type=t,type=0}) end
+end
+ProtoMgr:RegisterCmdCallback(20060,'handle20060',bc)
+local baseSender=rc.reqBaseData
+rc.reqBaseData=function(self)
+ baseSender(self)
+ if questEnterBase then questEnterBase=nil;receive(13100,GodRuinsModel.baseData) end
+end
 bc.getWatchReplayStatus=function() return replay or false end
 bc.getIsSameBattleType=function(self,t) return fight_type==t end
 bc.getFightTypeInfo=function(self,t) return fight and fight_type==t end
@@ -53,7 +71,7 @@ bc.openFinishView=function(self,open,t,data)
  end
 end
 function freshQuest()
- freshTraining();role.gid=10;role.gsrv_id='guild';role.vip_lev=3;stocks[3]=1000
+ freshTraining();autoQuestEnter=true;questEnterBase=nil;MainuiController.quest_ui=1;bc.quest_fight=0;role.gid=10;role.gsrv_id='guild';role.vip_lev=3;stocks[3]=1000
  ProtoMgr.cmd_callback_table[13548]=nil;ProtoMgr.cmd_callback_table[13105]=nil;fight=false;fight_type=nil;replay=false;panel=nil
 end
 function qtask(kind)
@@ -325,7 +343,7 @@ case('real untouched ruins boss with hp_per zero and remaining rewards is challe
  freshQuest();now=1791714000;local w=startQ('ruins');local n=#sent
  receive(13100,{boss_id=11315,kill_time=2,hp_per=0,fight_time=0,end_time=1791789774})
  assert(sent[#sent].id==13105 and sent[#sent].data.id==0 and not w.execute_request_list[1].local_result and ext.quests.env.pending('ruins'))
- assert(#sent==n+1);ext.quests:cancel()
+ assert(#sent==n+3 and sent[n+1].id==20060 and sent[n+2].id==13100);ext.quests:cancel()
 end)
 case('fully depleted ruins boss at hp_per10000 skips while damaged bosses below10000 can challenge',function()
  for _,hp in ipairs({10000,8000,9999}) do

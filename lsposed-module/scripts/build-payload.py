@@ -31,8 +31,7 @@ def release_source(name,s):
         s=cut(s,"   if kind=='ruins' and env.recoveryRequest", '   return true', "   self:finish('uncertain','previous_request_unresolved')\n")
         s=cut(s,"  if a.phase=='recovery_verify' then", "  if a.phase=='verify' then")
         s=s.replace(" or a.phase=='recovery_verify'",'')
-        s=cut(s,"  if a.phase=='recovery_verify' and", "  elseif a.phase=='battle'")
-        s=s.replace("  elseif a.phase=='battle' and a.battle_started", "  if a.phase=='battle' and a.battle_started")
+        s=cut(s,"  elseif a.phase=='recovery_verify' and", "  elseif a.phase=='battle'")
     assert 'yinghe_' not in s and 'recovery_token' not in s and 'legacyRequest' not in s,name
     return s
 
@@ -50,7 +49,7 @@ def build():
         +'\nend)()\nlocal Game=(function()\n'+(ROOT/'modules/startup_automation_game.lua').read_text()
         +'\nend)()\nreturn function(root) return Game.bind(Startup,root) end\n')
     manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUT.glob('*.lua'))}
-    (OUT/'manifest.json').write_text(json.dumps({'version':'0.6.9','files':manifest},indent=2)+'\n')
+    (OUT/'manifest.json').write_text(json.dumps({'version':'0.6.10','files':manifest},indent=2)+'\n')
     native=ROOT/'lsposed-module/app/src/main/jniLibs/arm64-v8a/libdldl_bridge.so'
     (OUT/'native.sha256').write_text(hashlib.sha256(native.read_bytes()).hexdigest()+'\n')
     print(json.dumps(manifest))

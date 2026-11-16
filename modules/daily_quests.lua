@@ -9,10 +9,11 @@ function M.new(env)
   local a=self.active;if not a then return end
   self:log('finish',a.kind..'|'..status..'|'..tostring(reason)..'|'..a.completed)
   if a.recovery and env.reportRecovery then env.reportRecovery(status,reason) end
-  self.active=nil;a.done({status=status,reason=reason,count=a.completed})
+  self.active=nil;if a.kind=='ruins' and env.leave then env.leave() end;a.done({status=status,reason=reason,count=a.completed})
  end
  function self:valid()
   local a=self.active;if not a then return false end
+  local guard=a.kind=='ruins' and env.sessionGuard and env.sessionGuard();if guard then self:finish('uncertain',guard);return false end
   if a.identity~=env.identity() or a.day~=env.day() then self:finish('cancelled','role_or_day_changed');return false end
   return true
  end
@@ -23,6 +24,13 @@ function M.new(env)
   if kind~='guild_wish' and kind~='ruins' then return false,'unknown_task' end
   self.active={kind=kind,done=done,identity=env.identity(),day=env.day(),completed=0}
   if env.pending(kind) then
+   local stale=kind=='ruins' and env.stalePending and env.stalePending()
+   if stale then
+    local a=self.active;a.stale=stale;a.mutated=true
+    local why=env.openGuard(kind);if why then self:finish('uncertain',why);return true end
+    if not env.battleReady() then self:finish('uncertain','battle_busy');return true end
+    self:phase('stale_verify');env.query(kind);return true
+   end
    if kind=='ruins' and env.recoveryRequest and env.recoveryRequest() then
     local a=self.active;a.recovery=true;a.mutated=true
     local baseline,why=env.recoveryBaseline()
@@ -60,6 +68,19 @@ function M.new(env)
   end
   if not uint(data.kill_time) or not uint(data.boss_id) or not uint(data.hp_per) or data.hp_per>10000
     or not uint(data.fight_time) or not uint(data.end_time) or data.end_time<=env.now() then self:finish(a.mutated and 'uncertain' or 'error','invalid_ruins_state');return end
+  if a.phase=='stale_verify' then
+   if not env.stalePending or not env.battleReady() then self:finish('uncertain','previous_request_unresolved');return end
+   local old=env.stalePending()
+   if not old or old.day~=a.stale.day or old.sent_at~=a.stale.sent_at or old.end_time~=a.stale.end_time
+    or data.status~=0 or data.end_time<=old.end_time then self:finish('uncertain','previous_request_unresolved');return end
+   local fields={'boss_id','kill_time','hp_per','fight_time','end_time','status'}
+   if not a.stale_base then a.stale_base=copy(data);a.stale_at=env.now();a.stale_poll=env.now()+2;return end
+   for _,f in ipairs(fields) do if data[f]~=a.stale_base[f] then self:finish('uncertain','stale_state_changed');return end end
+   if not a.stale_queried or env.now()<a.stale_at+2 then return end
+   env.savePending(a.kind,false);a.mutated=false;a.stale=nil;self:log('reconciled','expired_previous_day')
+   if data.kill_time==0 then self:finish('skipped','daily_target_done');return end
+   self:phase('form');env.query('ruins_form');return
+  end
   if a.phase=='recovery_verify' then
    if env.now()>=a.deadline then self:finish('uncertain','recovery_verify_timeout');return end
    if not env.battleReady() then self:finish('uncertain','recovery_battle_busy');return end
@@ -98,6 +119,7 @@ function M.new(env)
   -- The native result view shows remaining HP as 100-hp_per/100.
   -- Zero is an untouched boss; 10000 means fully depleted.
   if data.hp_per>=10000 then self:finish('skipped','ruins_boss_defeated');return end
+  if env.enter and not a.view_ready then self:phase('enter');env.enter();return end
   a.base=copy(data);a.diamonds=env.diamonds();a.accepted=nil;a.settlement=nil;a.skip_sent=nil;a.battle_started=false;a.team_count=0;self:mutate('ruins_challenge')
  end
  function self:onBattleStart(data)
@@ -120,11 +142,14 @@ function M.new(env)
  function self:onPacket(id,data)
   if not self:valid() or type(data)~='table' then return end
   local a=self.active;self:log('packet',id..'|'..a.phase..'|code='..tostring(data.code)..'|result='..tostring(data.result)..'|remaining='..tostring(data.kill_time))
-  if a.phase=='form' and a.kind=='ruins' and id==11211 and data.type==92 then
+  if a.phase=='enter' and id==20060 and data.combat_type==77 then
+   if data.type~=0 then self:finish('error','battle_busy');return end
+   a.view_ready=true;self:phase('base');env.query(a.kind)
+  elseif a.phase=='form' and a.kind=='ruins' and id==11211 and data.type==92 then
    local why=env.checkForm(data);if why then self:finish('error',why);return end
    a.form=data;self:phase('base');env.query(a.kind)
   elseif (id==13518 and a.kind=='guild_wish') or (id==13100 and a.kind=='ruins') then
-   if a.phase=='base' or a.phase=='verify' or a.phase=='recovery_verify' then self:base(data) end
+   if a.phase=='base' or a.phase=='verify' or a.phase=='recovery_verify' or a.phase=='stale_verify' then self:base(data) end
   elseif id==13548 and a.kind=='guild_wish' and a.phase=='wish' then
    if data.code~=1 or data.wish_gift_type~=2 then self:finish('uncertain','action_rejected');return end
    a.accepted=true;self:phase('verify');env.query(a.kind)
@@ -146,7 +171,9 @@ function M.new(env)
  function self:tick()
   if not self:valid() then return end
   local a=self.active
-  if a.phase=='recovery_verify' and a.recovery_query_at and not a.recovery_second_query and env.now()>=a.recovery_query_at then
+  if a.phase=='stale_verify' and a.stale_poll and not a.stale_queried and env.now()>=a.stale_poll then
+   a.stale_queried=true;env.query(a.kind)
+  elseif a.phase=='recovery_verify' and a.recovery_query_at and not a.recovery_second_query and env.now()>=a.recovery_query_at then
    a.recovery_second_query=true;env.query(a.kind)
   elseif a.phase=='battle' and a.battle_started then env.nativeSkip(a)
   elseif a.phase=='cleanup' and env.battleReady() then
