@@ -38,10 +38,10 @@ def release_source(name,s):
 def build():
     OUT.mkdir(parents=True,exist_ok=True)
     parts=['-- Pure local extension factory. No task runs during installation.\nreturn function()\n']
-    for var,name in PAIRS:
+    for var,name in PAIRS + [('Herb','herb_automation.lua'),('GameHerb','herb_automation_game.lua')]:
         parts += ['local '+var+'=(function()\n',release_source(name,(ROOT/'modules'/name).read_text()),'\nend)()\n']
     parts += ['local installed=Extension.install(Gifts,Actions,GameActions,Training,GameTraining,Quests,GameQuests,Extras,GameExtras,Recast,GameRecast,Supplies,GameSupplies)\n',
-              'local ok,err=pcall(function() GameVoyage.bind(Voyage,installed);GameMine.bind(Mine,installed);GameRedbag.bind(Redbag,installed);GameOther.bind(Fishing,Mail,installed);GameForest.bind(Forest,installed);GameLimited.bind(Limited,installed);installed.automation=GameAutomation.bind(Automation) end)\nif not ok then installed.detach();error(err) end\nreturn installed\nend\n']
+              'local ok,err=pcall(function() GameVoyage.bind(Voyage,installed);GameMine.bind(Mine,installed);GameRedbag.bind(Redbag,installed);GameOther.bind(Fishing,Mail,installed);GameForest.bind(Forest,installed);GameLimited.bind(Limited,installed);GameHerb.bind(Herb,installed);installed.automation=GameAutomation.bind(Automation) end)\nif not ok then installed.detach();error(err) end\nreturn installed\nend\n']
     (OUT/'payload.lua').write_text(''.join(parts))
     (OUT/'bootstrap.lua').write_bytes((ROOT/'lsposed-module/lua/bootstrap.lua').read_bytes())
     (OUT/'splash.lua').write_bytes((ROOT/'lsposed-module/lua/splash.lua').read_bytes())
@@ -49,7 +49,7 @@ def build():
         +'\nend)()\nlocal Game=(function()\n'+(ROOT/'modules/startup_automation_game.lua').read_text()
         +'\nend)()\nreturn function(root) return Game.bind(Startup,root) end\n')
     manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(OUT.glob('*.lua'))}
-    (OUT/'manifest.json').write_text(json.dumps({'version':'0.6.10','files':manifest},indent=2)+'\n')
+    (OUT/'manifest.json').write_text(json.dumps({'version':'0.6.11','files':manifest},indent=2)+'\n')
     native=ROOT/'lsposed-module/app/src/main/jniLibs/arm64-v8a/libdldl_bridge.so'
     (OUT/'native.sha256').write_text(hashlib.sha256(native.read_bytes()).hexdigest()+'\n')
     print(json.dumps(manifest))
